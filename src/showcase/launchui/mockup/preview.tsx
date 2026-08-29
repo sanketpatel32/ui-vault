@@ -1,18 +1,13 @@
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            launchui
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
-        </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Mockup</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">
-          A flexible mockup component that displays screenshots in beautiful frames, perfect for
-          responsive layouts and mobile device mockups.
-        </p>
+    <div className="w-80 rounded-xl border border-border bg-panel p-2 shadow-xl">
+      <div className="flex items-center gap-1.5 px-2 py-1 mb-2 border-b border-border/50">
+        <div className="size-2 rounded-full bg-red-500/80" />
+        <div className="size-2 rounded-full bg-yellow-500/80" />
+        <div className="size-2 rounded-full bg-green-500/80" />
+      </div>
+      <div className="h-28 rounded-md bg-muted/40 flex items-center justify-center text-xs text-muted-fg">
+        Browser Window Mockup
       </div>
     </div>
   );

@@ -1,18 +1,15 @@
+import { motion } from "motion/react";
+
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            launchui
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
-        </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Fade</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">
-          CSS mask utilities for creating smooth fade effects and gradient edges on elements.
-        </p>
-      </div>
-    </div>
+    <motion.div
+      initial={{ opacity: 0, y: 12 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      className="rounded-xl border border-border bg-panel p-6 shadow-xs text-center"
+    >
+      <h4 className="text-sm font-semibold text-fg">Smooth Fade Transition</h4>
+      <p className="mt-1 text-xs text-muted-fg">Subtle entry motion for headers and sections.</p>
+    </motion.div>
   );
 }

@@ -1,18 +1,9 @@
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            launchui
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
-        </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Glass</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">
-          Glassmorphism utility classes for creating frosted glass effects with backdrop blur and
-          gradients.
-        </p>
+    <div className="relative flex items-center justify-center p-8 bg-gradient-to-tr from-accent/20 to-purple-500/20 rounded-2xl">
+      <div className="rounded-xl border border-white/20 bg-white/10 p-6 backdrop-blur-md shadow-lg text-center dark:bg-black/20">
+        <h4 className="text-sm font-semibold text-fg">Frosted Glassmorphism</h4>
+        <p className="mt-1 text-xs text-muted-fg">Backdrop blur with translucent border gradient.</p>
       </div>
     </div>
   );

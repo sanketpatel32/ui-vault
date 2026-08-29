@@ -1,18 +1,11 @@
+import { Button } from "@/components/ui/button";
+
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            launchui
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
-        </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">CTA</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">
-          A powerful Call-to-Action component built with shadcn's design system.
-        </p>
-      </div>
+    <div className="rounded-2xl border border-border bg-linear-to-r from-accent/10 via-panel to-panel p-6 text-center max-w-md">
+      <h3 className="text-lg font-bold text-fg">Ready to build your next project?</h3>
+      <p className="text-xs text-muted-fg mt-1">Get started with Launch UI blocks today.</p>
+      <Button size="sm" className="mt-4">Start Building Now</Button>
     </div>
   );
 }

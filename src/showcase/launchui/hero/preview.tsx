@@ -1,17 +1,21 @@
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            launchui
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
-        </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Hero</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">
-          A powerful hero section component built with shadcn/ui.
-        </p>
+    <div className="flex flex-col items-center justify-center p-8 text-center max-w-lg mx-auto">
+      <div className="inline-flex items-center gap-2 rounded-full border border-border bg-panel px-3 py-1 text-xs text-muted-fg mb-4">
+        <span>🚀 Launch UI Components</span>
+      </div>
+      <h1 className="text-3xl font-bold tracking-tight text-fg sm:text-4xl">
+        Build landing pages in minutes
+      </h1>
+      <p className="mt-3 text-xs text-muted-fg leading-relaxed max-w-md">
+        Pre-built, responsive React and Tailwind components to ship modern websites fast.
+      </p>
+      <div className="mt-6 flex gap-3">
+        <Button>Get Started <ArrowRight size={14} /></Button>
+        <Button variant="outline">Learn More</Button>
       </div>
     </div>
   );
