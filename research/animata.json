@@ -1,0 +1,1410 @@
+{
+  "status": "ok",
+  "id": "animata",
+  "name": "Animata",
+  "url": "https://animata.design",
+  "repo": "https://github.com/codse/animata",
+  "license": "MIT",
+  "install": "npx shadcn@latest add https://animata.design/r/<category>/<slug>.json (per component; site defaults to pnpm: pnpm dlx shadcn@latest add <url>). No npm package - shadcn-style registry + copy-paste. Base deps: npm install tailwindcss tailwind-merge clsx lucide-react (motion optional).",
+  "stack": [
+    "React 19",
+    "TypeScript",
+    "Tailwind CSS v4",
+    "Motion (motion, ex framer-motion) for complex animations",
+    "clsx + tailwind-merge",
+    "lucide-react icons",
+    "Radix UI (some components)",
+    "Next.js 16 docs site",
+    "Velite content pipeline",
+    "shadcn CLI registry distribution"
+  ],
+  "notes": "198 documented components across 23 categories (accordion, background, bento-grid, button, card, carousel, container, fabs, feature-cards, graphs, hero, icon, image, list, overlay, preloader, progress, scroll, section, skeleton, tabs, text, widget), extracted from content/docs/*.mdx in GitHub main (repo ahead of site: 154 published/live in sitemap, 44 have frontmatter published:false and their pages currently 404 until the site deploys them; URLs follow the canonical /docs/<category>/<slug> pattern). Homepage claims \"155+ components\". Components are copy-paste (no npm package); install per component via shadcn CLI pointing at animata.design/r/<category>/<slug>.json registry. Some components co-locate a .css file. Repo active (last push Aug 2026), 2.7k+ stars, built by codse (Nepal). Every docs page documents usage + manual copy steps.",
+  "components": [
+    {
+      "name": "Faq",
+      "slug": "faq",
+      "url": "https://animata.design/docs/accordion/faq",
+      "category": "Accordion",
+      "description": "its an faq accordion that looks like an chating interface with smooth animations"
+    },
+    {
+      "name": "Animated Beam",
+      "slug": "animated-beam",
+      "url": "https://animata.design/docs/background/animated-beam",
+      "category": "Background",
+      "description": "A dark section background where light beams streak diagonally down a grid of faint lines, each at its own length and speed."
+    },
+    {
+      "name": "Blurry blob",
+      "slug": "blurry-blob",
+      "url": "https://animata.design/docs/background/blurry-blob",
+      "category": "Background",
+      "description": "Animated blurry blob background"
+    },
+    {
+      "name": "Boids Ecosystem",
+      "slug": "boids-ecosystem",
+      "url": "https://animata.design/docs/background/boids-ecosystem",
+      "category": "Background",
+      "description": "A canvas flocking simulation — separation, alignment, cohesion — that parts around your cursor like a school of fish."
+    },
+    {
+      "name": "Diagonal Lines",
+      "slug": "diagonal-lines",
+      "url": "https://animata.design/docs/background/diagonal-lines",
+      "category": "Background",
+      "description": "A diagonal line background component"
+    },
+    {
+      "name": "Dot",
+      "slug": "dot",
+      "url": "https://animata.design/docs/background/dot",
+      "category": "Background",
+      "description": "A dot background component"
+    },
+    {
+      "name": "Grid",
+      "slug": "grid",
+      "url": "https://animata.design/docs/background/grid",
+      "category": "Background",
+      "description": "A grid background component"
+    },
+    {
+      "name": "Interactive Grid",
+      "slug": "interactive-grid",
+      "url": "https://animata.design/docs/background/interactive-grid",
+      "category": "Background",
+      "description": "An interactive grid background component."
+    },
+    {
+      "name": "Moving Gradient",
+      "slug": "moving-gradient",
+      "url": "https://animata.design/docs/background/moving-gradient",
+      "category": "Background",
+      "description": "Animated moving gradient background"
+    },
+    {
+      "name": "Shooting Stars",
+      "slug": "shooting-stars",
+      "url": "https://animata.design/docs/background/shooting-stars",
+      "category": "Background",
+      "description": "A dark sky where light streaks shoot across at different lengths, speeds and angles over a twinkling starfield."
+    },
+    {
+      "name": "Zigzag",
+      "slug": "zigzag",
+      "url": "https://animata.design/docs/background/zigzag",
+      "category": "Background",
+      "description": "A zigzag background component"
+    },
+    {
+      "name": "Eight",
+      "slug": "eight",
+      "url": "https://animata.design/docs/bento-grid/eight",
+      "category": "Bento Grid",
+      "description": "Bento grid with eight items"
+    },
+    {
+      "name": "Eleven",
+      "slug": "eleven",
+      "url": "https://animata.design/docs/bento-grid/eleven",
+      "category": "Bento Grid",
+      "description": "Bento grid with 11 items"
+    },
+    {
+      "name": "Five",
+      "slug": "five",
+      "url": "https://animata.design/docs/bento-grid/five",
+      "category": "Bento Grid",
+      "description": "Bento grid with five items"
+    },
+    {
+      "name": "Four",
+      "slug": "four",
+      "url": "https://animata.design/docs/bento-grid/four",
+      "category": "Bento Grid",
+      "description": "Bento grid with four items"
+    },
+    {
+      "name": "Gradient",
+      "slug": "gradient",
+      "url": "https://animata.design/docs/bento-grid/gradient",
+      "category": "Bento Grid",
+      "description": "Bento grid with gradient background cards"
+    },
+    {
+      "name": "Nine",
+      "slug": "nine",
+      "url": "https://animata.design/docs/bento-grid/nine",
+      "category": "Bento Grid",
+      "description": "Bento grid with nine items"
+    },
+    {
+      "name": "Seven",
+      "slug": "seven",
+      "url": "https://animata.design/docs/bento-grid/seven",
+      "category": "Bento Grid",
+      "description": "Bento grid with seven items"
+    },
+    {
+      "name": "Six",
+      "slug": "six",
+      "url": "https://animata.design/docs/bento-grid/six",
+      "category": "Bento Grid",
+      "description": "Bento grid with five items"
+    },
+    {
+      "name": "Ten",
+      "slug": "ten",
+      "url": "https://animata.design/docs/bento-grid/ten",
+      "category": "Bento Grid",
+      "description": "Bento grid with ten items"
+    },
+    {
+      "name": "Three",
+      "slug": "three",
+      "url": "https://animata.design/docs/bento-grid/three",
+      "category": "Bento Grid",
+      "description": "Bento grid with 3 items"
+    },
+    {
+      "name": "AI Button",
+      "slug": "ai-button",
+      "url": "https://animata.design/docs/button/ai-button",
+      "category": "Button",
+      "description": "Animated AI button with shimmer effect for loading and idle states."
+    },
+    {
+      "name": "Algolia Blue Button",
+      "slug": "algolia-blue-button",
+      "url": "https://animata.design/docs/button/algolia-blue-button",
+      "category": "Button",
+      "description": "Algolia-inspired blue primary button with brand styling and hover state."
+    },
+    {
+      "name": "Algolia White Button",
+      "slug": "algolia-white-button",
+      "url": "https://animata.design/docs/button/algolia-white-button",
+      "category": "Button",
+      "description": "Algolia-inspired white search CTA with icon and hover lift."
+    },
+    {
+      "name": "Animated Follow Button",
+      "slug": "animated-follow-button",
+      "url": "https://animata.design/docs/button/animated-follow-button",
+      "category": "Button",
+      "description": "Follow/subscribe button with entrance animation and dynamic label swap on click."
+    },
+    {
+      "name": "Duolingo",
+      "slug": "duolingo",
+      "url": "https://animata.design/docs/button/duolingo",
+      "category": "Button",
+      "description": "Duolingo-style 3D press button with depth and bounce on click."
+    },
+    {
+      "name": "External Link Button",
+      "slug": "external-link-button",
+      "url": "https://animata.design/docs/button/external-link-button",
+      "category": "Button",
+      "description": "Link button with external icon and hover affordance for new-tab navigation."
+    },
+    {
+      "name": "Get started button",
+      "slug": "get-started-button",
+      "url": "https://animata.design/docs/button/get-started-button",
+      "category": "Button",
+      "description": "Gradient CTA button with smooth color shift on hover."
+    },
+    {
+      "name": "Ripple Button",
+      "slug": "ripple-button",
+      "url": "https://animata.design/docs/button/ripple-button",
+      "category": "Button",
+      "description": "Button with a ripple effect that originates from the cursor position on click."
+    },
+    {
+      "name": "Shining Button",
+      "slug": "shining-button",
+      "url": "https://animata.design/docs/button/shining-button",
+      "category": "Button",
+      "description": "CTA button with a sweeping shine highlight on hover."
+    },
+    {
+      "name": "Slide Arrow Button",
+      "slug": "slide-arrow-button",
+      "url": "https://animata.design/docs/button/slide-arrow-button",
+      "category": "Button",
+      "description": "Arrow CTA with sliding chevron and label shift on hover."
+    },
+    {
+      "name": "Status Button",
+      "slug": "status-button",
+      "url": "https://animata.design/docs/button/status-button",
+      "category": "Button",
+      "description": "Button that animates between idle, loading, and success states on click."
+    },
+    {
+      "name": "Swipe Button",
+      "slug": "swipe-button",
+      "url": "https://animata.design/docs/button/swipe-button",
+      "category": "Button",
+      "description": "Swipe-to-confirm button with sliding fill and label transition."
+    },
+    {
+      "name": "Toggle Switch",
+      "slug": "toggle-switch",
+      "url": "https://animata.design/docs/button/toggle-switch",
+      "category": "Button",
+      "description": "Animated toggle switch for on/off settings with smooth thumb transition."
+    },
+    {
+      "name": "Work Button",
+      "slug": "work-button",
+      "url": "https://animata.design/docs/button/work-button",
+      "category": "Button",
+      "description": "Minimal button with underline and arrow slide on hover."
+    },
+    {
+      "name": "Blur Stack Card",
+      "slug": "blur-stack-card",
+      "url": "https://animata.design/docs/card/blur-stack-card",
+      "category": "Card",
+      "description": "A list of stack cards that change with animation when clicked."
+    },
+    {
+      "name": "Card Comment",
+      "slug": "card-comment",
+      "url": "https://animata.design/docs/card/card-comment",
+      "category": "Card",
+      "description": "A Skeleton of Comment Card"
+    },
+    {
+      "name": "Card Spread",
+      "slug": "card-spread",
+      "url": "https://animata.design/docs/card/card-spread",
+      "category": "Card",
+      "description": "A stacked deck of widget cards with a hover peek and a throw-on-spread animation — layout-first, CSS-only."
+    },
+    {
+      "name": "Card Stack",
+      "slug": "card-stack",
+      "url": "https://animata.design/docs/card/card-stack",
+      "category": "Card",
+      "description": "Click-through card stack. The deck loops; cards shuffle in one motion."
+    },
+    {
+      "name": "Case Study Card",
+      "slug": "case-study-card",
+      "url": "https://animata.design/docs/card/case-study-card",
+      "category": "Card",
+      "description": "An interactive case study card that expands on hover, revealing a hidden tab with a clickable link to read comments."
+    },
+    {
+      "name": "Collab Card",
+      "slug": "collab-card",
+      "url": "https://animata.design/docs/card/collab-card",
+      "category": "Card",
+      "description": "Bento tile for realtime collaboration—not a generic card. Live presence, selection frame, teammate cursors."
+    },
+    {
+      "name": "Comment Reply Card",
+      "slug": "comment-reply-card",
+      "url": "https://animata.design/docs/card/comment-reply-card",
+      "category": "Card",
+      "description": "This new React component allows users to submit comments through an input field. Once a comment is submitted, it dynamically appears at the top of the comment list."
+    },
+    {
+      "name": "Email Feature Card",
+      "slug": "email-feature-card",
+      "url": "https://animata.design/docs/card/email-feature-card",
+      "category": "Card",
+      "description": "A card component that display From, to, Subject and  Body of the email and a send icon with animation on appearance and hover over it."
+    },
+    {
+      "name": "Flip Card",
+      "slug": "flip-card",
+      "url": "https://animata.design/docs/card/flip-card",
+      "category": "Card",
+      "description": "A dynamic flip card featuring smooth 180-degree flip animations along both the X and Y axes."
+    },
+    {
+      "name": "GitHub Card - Shiny",
+      "slug": "github-card-shiny",
+      "url": "https://animata.design/docs/card/github-card-shiny",
+      "category": "Card",
+      "description": "A card component where a shiny background follows the mouse when hovered, as seen in GitHub's homepage"
+    },
+    {
+      "name": "GitHub Card - Skew",
+      "slug": "github-card-skew",
+      "url": "https://animata.design/docs/card/github-card-skew",
+      "category": "Card",
+      "description": "A card component which skews  when hovered, as seen in GitHub's homepage"
+    },
+    {
+      "name": "Glowing Card",
+      "slug": "glowing-card",
+      "url": "https://animata.design/docs/card/glowing-card",
+      "category": "Card",
+      "description": "The card glows in gradient colours when hovered"
+    },
+    {
+      "name": "Integration pills",
+      "slug": "integration-pills",
+      "url": "https://animata.design/docs/card/integration-pills",
+      "category": "Card",
+      "description": "A component that displays a list of services it can integrate with."
+    },
+    {
+      "name": "Led Board",
+      "slug": "led-board",
+      "url": "https://animata.design/docs/card/led-board",
+      "category": "Card",
+      "description": "A component that mimicks LED board and can display words; as seen in NextJS's homepage. Hover over the component to see the animation."
+    },
+    {
+      "name": "Notice Card",
+      "slug": "notice-card",
+      "url": "https://animata.design/docs/card/notice-card",
+      "category": "Card",
+      "description": "A card component for displaying important notices with an accept toggle."
+    },
+    {
+      "name": "Notification Card",
+      "slug": "notification-card",
+      "url": "https://animata.design/docs/card/notification-card",
+      "category": "Card",
+      "description": "Simple notification like componenet that beautiully expands to show its contents."
+    },
+    {
+      "name": "Staggered Card",
+      "slug": "staggered-card",
+      "url": "https://animata.design/docs/card/staggered-card",
+      "category": "Card",
+      "description": "A card component that displays a list of links with an staggered opening animation."
+    },
+    {
+      "name": "Swap Text Card",
+      "slug": "swap-text-card",
+      "url": "https://animata.design/docs/card/swap-text-card",
+      "category": "Card",
+      "description": "Text inside the card swaps"
+    },
+    {
+      "name": "Web Hooks",
+      "slug": "webhooks-card",
+      "url": "https://animata.design/docs/card/webhooks-card",
+      "category": "Card",
+      "description": "A card component with animated boxes, lines, and a ball. The component changes style on hover."
+    },
+    {
+      "name": "Expandable",
+      "slug": "expandable",
+      "url": "https://animata.design/docs/carousel/expandable",
+      "category": "Carousel",
+      "description": "On hover, the image expands to show image details."
+    },
+    {
+      "name": "Image Carousel",
+      "slug": "image-carousel",
+      "url": "https://animata.design/docs/carousel/image-carousel",
+      "category": "Carousel",
+      "description": "A responsive carousel for your projects"
+    },
+    {
+      "name": "Animated Border Trail",
+      "slug": "animated-border-trail",
+      "url": "https://animata.design/docs/container/animated-border-trail",
+      "category": "Container",
+      "description": "A container with animated border trail, this can be used for buttons as well as cards."
+    },
+    {
+      "name": "Animated Dock",
+      "slug": "animated-dock",
+      "url": "https://animata.design/docs/container/animated-dock",
+      "category": "Container",
+      "description": "A sleek dock-style navigation bar, inspired by macOS, that combines glassmorphic design with functionality. With smooth animations and responsive icons, it enhances navigation for a modern web application."
+    },
+    {
+      "name": "Announcement Ribbon",
+      "slug": "announcement-ribbon",
+      "url": "https://animata.design/docs/container/announcement-ribbon",
+      "category": "Container",
+      "description": "A sticky scrolling banner for top-of-page announcements."
+    },
+    {
+      "name": "Cursor Tracker",
+      "slug": "cursor-tracker",
+      "url": "https://animata.design/docs/container/cursor-tracker",
+      "category": "Container",
+      "description": "A wrapper component that tracks the cursor moving within it"
+    },
+    {
+      "name": "Fibonacci Lines",
+      "slug": "fibonacci-lines",
+      "url": "https://animata.design/docs/container/fibonacci-lines",
+      "category": "Container",
+      "description": "A component that creates lines using fibonacci numbers"
+    },
+    {
+      "name": "Marquee",
+      "slug": "marquee",
+      "url": "https://animata.design/docs/container/marquee",
+      "category": "Container",
+      "description": "A marquee component"
+    },
+    {
+      "name": "Nav Tabs",
+      "slug": "nav-tabs",
+      "url": "https://animata.design/docs/container/nav-tabs",
+      "category": "Container",
+      "description": "A smooth animation tabs while clicking and hover"
+    },
+    {
+      "name": "Sibling Focus Nav",
+      "slug": "sibling-focus-nav",
+      "url": "https://animata.design/docs/container/sibling-focus-nav",
+      "category": "Container",
+      "description": "A nav row that dims or blurs sibling links when one item is hovered or focused — padding-based spacing keeps the effect alive between items."
+    },
+    {
+      "name": "Flower Menu",
+      "slug": "flower-menu",
+      "url": "https://animata.design/docs/fabs/flower-menu",
+      "category": "FABs",
+      "description": "Circular FAB that fans links out from a center toggle. CSS stagger, keyboard nav."
+    },
+    {
+      "name": "Speed Dial",
+      "slug": "speed-dial",
+      "url": "https://animata.design/docs/fabs/speed-dial",
+      "category": "FABs",
+      "description": "FAB that expands into a row of actions on click. CSS stagger, no hover gate."
+    },
+    {
+      "name": "Confirmation Message",
+      "slug": "confirmation-message",
+      "url": "https://animata.design/docs/feature-cards/confirmation-message",
+      "category": "Feature Cards",
+      "description": "An animated component which shows success message with custom name and description."
+    },
+    {
+      "name": "Content Scan",
+      "slug": "content-scan",
+      "url": "https://animata.design/docs/feature-cards/content-scan",
+      "category": "Feature Cards",
+      "description": "A scanning component to highlight detected words to predict AI content probability"
+    },
+    {
+      "name": "Notify User Info",
+      "slug": "notify-user-info",
+      "url": "https://animata.design/docs/feature-cards/notify-user-info",
+      "category": "Feature Cards",
+      "description": "This component is a notification animation based on user information."
+    },
+    {
+      "name": "Reminder Scheduler",
+      "slug": "reminder-scheduler",
+      "url": "https://animata.design/docs/feature-cards/reminder-scheduler",
+      "category": "Feature Cards",
+      "description": "a simple card to set up recurring reminders along with frequency and repetition."
+    },
+    {
+      "name": "Score Card",
+      "slug": "score-card",
+      "url": "https://animata.design/docs/feature-cards/score-card",
+      "category": "Feature Cards",
+      "description": "This Score-card component is designed to track and update scores for two teams in real-time with a simple animation showing which team scored."
+    },
+    {
+      "name": "Subscribe Card",
+      "slug": "subscribe-card",
+      "url": "https://animata.design/docs/feature-cards/subscribe-card",
+      "category": "Feature Cards",
+      "description": "When the cursor hovers over the card then the card skews and when hovers over the button the check mark appears."
+    },
+    {
+      "name": "Survey Card",
+      "slug": "survey-card",
+      "url": "https://animata.design/docs/feature-cards/survey-card",
+      "category": "Feature Cards",
+      "description": "showing result of survey on hover over card"
+    },
+    {
+      "name": "Swap Card",
+      "slug": "swap-card",
+      "url": "https://animata.design/docs/feature-cards/swap-card",
+      "category": "Feature Cards",
+      "description": "When button is toggle card swipes up and down"
+    },
+    {
+      "name": "Tilted Card",
+      "slug": "tilted-card",
+      "url": "https://animata.design/docs/feature-cards/tilted-card",
+      "category": "Feature Cards",
+      "description": "A card component that tilts when hovered."
+    },
+    {
+      "name": "Bar Chart",
+      "slug": "bar-chart",
+      "url": "https://animata.design/docs/graphs/bar-chart",
+      "category": "Graphs & Charts",
+      "description": "A sample bar chart for widgets/presentation"
+    },
+    {
+      "name": "Commit Graph",
+      "slug": "commit-graph",
+      "url": "https://animata.design/docs/graphs/commit-graph",
+      "category": "Graphs & Charts",
+      "description": "A commit graph for your projects"
+    },
+    {
+      "name": "Donut Chart",
+      "slug": "donut-chart",
+      "url": "https://animata.design/docs/graphs/donut-chart",
+      "category": "Graphs & Charts",
+      "description": "A simple donut chart for showing progress. Useful for widget and bento grids."
+    },
+    {
+      "name": "Gauge Chart",
+      "slug": "gauge-chart",
+      "url": "https://animata.design/docs/graphs/gauge-chart",
+      "category": "Graphs & Charts",
+      "description": "This graph shows the progress in a donut chart with a gap at bottom."
+    },
+    {
+      "name": "Progress",
+      "slug": "progress",
+      "url": "https://animata.design/docs/graphs/progress",
+      "category": "Graphs & Charts",
+      "description": "A sample progress graph for widgets/presentation. This is not a full-fledged chart library. Just use for presentation or as an interactive part of the app."
+    },
+    {
+      "name": "Ring Chart",
+      "slug": "ring-chart",
+      "url": "https://animata.design/docs/graphs/ring-chart",
+      "category": "Graphs & Charts",
+      "description": "A simple ring-chart chart as seen in iOS apps"
+    },
+    {
+      "name": "Hero Section",
+      "slug": "hero-section",
+      "url": "https://animata.design/docs/hero/hero-section",
+      "category": "Hero",
+      "description": "A hero section with interactivity"
+    },
+    {
+      "name": "Hero Section Text Hover",
+      "slug": "hero-section-text-hover",
+      "url": "https://animata.design/docs/hero/hero-section-text-hover",
+      "category": "Hero",
+      "description": "Hover on \"Uncharted Adventures\" and \"Feel Alive\" text to reveal the images."
+    },
+    {
+      "name": "Product Features",
+      "slug": "product-features",
+      "url": "https://animata.design/docs/hero/product-features",
+      "category": "Hero",
+      "description": "A hero section showcasing product features"
+    },
+    {
+      "name": "Shape Shifter",
+      "slug": "shape-shifter",
+      "url": "https://animata.design/docs/hero/shape-shifter",
+      "category": "Hero",
+      "description": "A hero section with a shape-shifting component in the center"
+    },
+    {
+      "name": "Slack's intro screen",
+      "slug": "slack-intro",
+      "url": "https://animata.design/docs/hero/slack-intro",
+      "category": "Hero",
+      "description": "An intro hero inspired by Slack's intro screen."
+    },
+    {
+      "name": "Hover Interaction",
+      "slug": "hover-interaction",
+      "url": "https://animata.design/docs/icon/hover-interaction",
+      "category": "Icon",
+      "description": "This is a component which shows icon based on text hovered by user. By default it has alreay imported Twitter/x, Framer, Figma, Instagram, GitHub, LinkedIn, and it shows Square-Box icon by default it user tries to get other icons without importing. Importing steps are provided below."
+    },
+    {
+      "name": "Icon Ripple",
+      "slug": "icon-ripple",
+      "url": "https://animata.design/docs/icon/icon-ripple",
+      "category": "Icon",
+      "description": "Create a ripple animation on an icon"
+    },
+    {
+      "name": "Disclose Image",
+      "slug": "disclose-image",
+      "url": "https://animata.design/docs/image/disclose-image",
+      "category": "Image",
+      "description": "Reveal the image using a sliding door-like effect"
+    },
+    {
+      "name": "Image Box Shadow",
+      "slug": "image-box-shadow",
+      "url": "https://animata.design/docs/image/image-box-shadow",
+      "category": "Image",
+      "description": "Brings box shadow on hover"
+    },
+    {
+      "name": "Images Reveal",
+      "slug": "images-reveal",
+      "url": "https://animata.design/docs/image/images-reveal",
+      "category": "Image",
+      "description": "An image reveal animation"
+    },
+    {
+      "name": "Photo Booth",
+      "slug": "photo-booth",
+      "url": "https://animata.design/docs/image/photo-booth",
+      "category": "Image",
+      "description": "A component that affects images when hovered."
+    },
+    {
+      "name": "Skew Image",
+      "slug": "skew-image",
+      "url": "https://animata.design/docs/image/skew-image",
+      "category": "Image",
+      "description": "A component that skews an image on hover."
+    },
+    {
+      "name": "Tilted Cover",
+      "slug": "tilted-cover",
+      "url": "https://animata.design/docs/image/tilted-cover",
+      "category": "Image",
+      "description": "A titled image component with a background element"
+    },
+    {
+      "name": "Trailing Image",
+      "slug": "trailing-image",
+      "url": "https://animata.design/docs/image/trailing-image",
+      "category": "Image",
+      "description": "A trailing effect where the images move with the mouse."
+    },
+    {
+      "name": "Zoom Image",
+      "slug": "zoom-image",
+      "url": "https://animata.design/docs/image/zoom-image",
+      "category": "Image",
+      "description": "Image will zoom in or out while hover"
+    },
+    {
+      "name": "Avatar List",
+      "slug": "avatar-list",
+      "url": "https://animata.design/docs/list/avatar-list",
+      "category": "List",
+      "description": "A component that displays list of user's avatar"
+    },
+    {
+      "name": "Flipping cards",
+      "slug": "flipping-cards",
+      "url": "https://animata.design/docs/list/flipping-cards",
+      "category": "List",
+      "description": "A list of flip cards arranged, each card representing an item or concept. Hovering on a card flips it to reveal additional details."
+    },
+    {
+      "name": "Menu list",
+      "slug": "menu-animation",
+      "url": "https://animata.design/docs/list/menu-animation",
+      "category": "List",
+      "description": "Animation for menu list"
+    },
+    {
+      "name": "Orbiting Items",
+      "slug": "orbiting-items",
+      "url": "https://animata.design/docs/list/orbiting-items",
+      "category": "List",
+      "description": "List component with orbiting items. The items orbit around the center of the list."
+    },
+    {
+      "name": "Orbiting Items 3D",
+      "slug": "orbiting-items-3-d",
+      "url": "https://animata.design/docs/list/orbiting-items-3-d",
+      "category": "List",
+      "description": "List component with orbiting items. The items orbit around the center of an element in 3D Ellipse."
+    },
+    {
+      "name": "Reveal images",
+      "slug": "reveal-image",
+      "url": "https://animata.design/docs/list/reveal-image",
+      "category": "List",
+      "description": "Reveals the images on hover."
+    },
+    {
+      "name": "Transaction List",
+      "slug": "transaction-list",
+      "url": "https://animata.design/docs/list/transaction-list",
+      "category": "List",
+      "description": "A simple component to list all the recent transaction."
+    },
+    {
+      "name": "Transition List",
+      "slug": "transition-list",
+      "url": "https://animata.design/docs/list/transition-list",
+      "category": "List",
+      "description": "This is a list where items are removed with smooth transition."
+    },
+    {
+      "name": "Modal",
+      "slug": "modal",
+      "url": "https://animata.design/docs/overlay/modal",
+      "category": "Overlay",
+      "description": "A modal is a dialog that overlays the primary content with a window, drawing the user's attention exclusively to specific information."
+    },
+    {
+      "name": "Split Reveal",
+      "slug": "split-reveal",
+      "url": "https://animata.design/docs/preloader/split-reveal",
+      "category": "PreLoader",
+      "description": "Full-screen preloader that loads images, locks scroll, then opens from the center seam."
+    },
+    {
+      "name": "Vertical Tiles",
+      "slug": "vertical-tiles",
+      "url": "https://animata.design/docs/preloader/vertical-tiles",
+      "category": "PreLoader",
+      "description": "A preloader component that makes transition to any section look vivid"
+    },
+    {
+      "name": "Animated Timeline",
+      "slug": "animatedtimeline",
+      "url": "https://animata.design/docs/progress/animatedtimeline",
+      "category": "Progress",
+      "description": "The Animated Timeline component is an interactive, visually appealing timeline that responds to user interaction. Built with Framer Motion and React, this component highlights key events or milestones in a vertical timeline structure.When a user hovers over a specific timeline item, the associated circular dot and all previous dots in the sequence turn green, indicating progression. The dot size also enlarges slightly, enhancing the focus on the current event. The component offers a sleek and smooth animation experience, perfect for showcasing chronological steps, milestones, or achievements in an engaging and user-friendly manner.This component is highly customizable, allowing easy modifications to the timeline content and styling, making it suitable for diverse applications such as resumes, project timelines, or product roadmaps."
+    },
+    {
+      "name": "Spinner",
+      "slug": "spinner",
+      "url": "https://animata.design/docs/progress/spinner",
+      "category": "Progress",
+      "description": "Just a spinner to check the loading state"
+    },
+    {
+      "name": "Stacked Sections",
+      "slug": "stacked-sections",
+      "url": "https://animata.design/docs/scroll/stacked-sections",
+      "category": "Scroll",
+      "description": "A vertical deck primitive that pins each child as a sticky pane, leaving a thin strip of the one before visible above — a true stack of cards."
+    },
+    {
+      "name": "Pricing",
+      "slug": "pricing",
+      "url": "https://animata.design/docs/section/pricing",
+      "category": "Section",
+      "description": "Pricing component that displays the pricing options of various plans in a sleek and interactive way"
+    },
+    {
+      "name": "Code",
+      "slug": "code",
+      "url": "https://animata.design/docs/skeleton/code",
+      "category": "Skeleton",
+      "description": "Code-block skeleton with a Lucide icon and stacked text bars."
+    },
+    {
+      "name": "Cookie Banner",
+      "slug": "cookie-banner",
+      "url": "https://animata.design/docs/skeleton/cookie-banner",
+      "category": "Skeleton",
+      "description": "Consent-style skeleton with body copy lines and a full-width action bar."
+    },
+    {
+      "name": "List",
+      "slug": "list",
+      "url": "https://animata.design/docs/skeleton/list",
+      "category": "Skeleton",
+      "description": "List-row skeleton with avatar dots, text bars, and dual action buttons."
+    },
+    {
+      "name": "Receipt",
+      "slug": "receipt",
+      "url": "https://animata.design/docs/skeleton/receipt",
+      "category": "Skeleton",
+      "description": "Receipt-style loading placeholder with header icons and staggered line items."
+    },
+    {
+      "name": "Report",
+      "slug": "report",
+      "url": "https://animata.design/docs/skeleton/report",
+      "category": "Skeleton",
+      "description": "Export-card skeleton with a CSV badge and uniform data rows."
+    },
+    {
+      "name": "Wide Card",
+      "slug": "wide-card",
+      "url": "https://animata.design/docs/skeleton/wide-card",
+      "category": "Skeleton",
+      "description": "Horizontal card skeleton with thumbnail, text lines, and a compact CTA block."
+    },
+    {
+      "name": "Fluid Tabs",
+      "slug": "fluid-tabs",
+      "url": "https://animata.design/docs/tabs/fluid-tabs",
+      "category": "Tabs",
+      "description": "Composable tabs with a sliding pill indicator and manual keyboard selection."
+    },
+    {
+      "name": "Gooey Tabs",
+      "slug": "gooey-tabs",
+      "url": "https://animata.design/docs/tabs/gooey-tabs",
+      "category": "Tabs",
+      "description": "Icon tabs that merge with an SVG goo filter when one label expands to show its title."
+    },
+    {
+      "name": "Shift Tabs",
+      "slug": "shift-tabs",
+      "url": "https://animata.design/docs/tabs/shift-tabs",
+      "category": "Tabs",
+      "description": "Composable shift-style tabs with hover tilt and manual keyboard selection."
+    },
+    {
+      "name": "Animated Gradient Text",
+      "slug": "animated-gradient-text",
+      "url": "https://animata.design/docs/text/animated-gradient-text",
+      "category": "Text",
+      "description": "A component to animate the text using gradient"
+    },
+    {
+      "name": "Blur Out Up",
+      "slug": "blur-out-up",
+      "url": "https://animata.design/docs/text/blur-out-up",
+      "category": "Text",
+      "description": "Words arrive clean and depart upward with increasing blur for airy exits."
+    },
+    {
+      "name": "Bold Copy",
+      "slug": "bold-copy",
+      "url": "https://animata.design/docs/text/bold-copy",
+      "category": "Text",
+      "description": "A text effect with bold text as background"
+    },
+    {
+      "name": "Bottom-Up Letters",
+      "slug": "bottom-up-letters",
+      "url": "https://animata.design/docs/text/bottom-up-letters",
+      "category": "Text",
+      "description": "Letters rise from below in a pronounced staircase, one symbol at a time, with zero blur."
+    },
+    {
+      "name": "Circular Text",
+      "slug": "circular-text",
+      "url": "https://animata.design/docs/text/circular-text",
+      "category": "Text",
+      "description": "Displays text arranged in a rotating circular path with customizable speed."
+    },
+    {
+      "name": "Counter",
+      "slug": "counter",
+      "url": "https://animata.design/docs/text/counter",
+      "category": "Text",
+      "description": "A counter component that counts up to given number. Works with both increment and decrement."
+    },
+    {
+      "name": "Cycle Text",
+      "slug": "cycle-text",
+      "url": "https://animata.design/docs/text/cycle-text",
+      "category": "Text",
+      "description": "A component that cycles text over certain interval."
+    },
+    {
+      "name": "Double Underline",
+      "slug": "double-underline",
+      "url": "https://animata.design/docs/text/double-underline",
+      "category": "Text",
+      "description": "Show double underline for the text on hover or click"
+    },
+    {
+      "name": "Fade Through",
+      "slug": "fade-through",
+      "url": "https://animata.design/docs/text/fade-through",
+      "category": "Text",
+      "description": "A Material-style content transition: old fades out, new fades in with a soft delay."
+    },
+    {
+      "name": "Focus Blur Resolve",
+      "slug": "focus-blur-resolve",
+      "url": "https://animata.design/docs/text/focus-blur-resolve",
+      "category": "Text",
+      "description": "A premium focus pull from heavy blur to crisp text, then a soft blur-out exit."
+    },
+    {
+      "name": "Gibberish Text",
+      "slug": "gibberish-text",
+      "url": "https://animata.design/docs/text/gibberish-text",
+      "category": "Text",
+      "description": "A component that displays gibberish text initially and then reveals the actual text."
+    },
+    {
+      "name": "Glitch text",
+      "slug": "glitch-text",
+      "url": "https://animata.design/docs/text/glitch-text",
+      "category": "Text",
+      "description": "RGB-split glitch on text — two colored ghosts jitter on a loop while the label stays sharp on top."
+    },
+    {
+      "name": "Jitter Text",
+      "slug": "jitter-text",
+      "url": "https://animata.design/docs/text/jitter-text",
+      "category": "Text",
+      "description": "Animated Text component that applies a jittery effect"
+    },
+    {
+      "name": "Jumping Text (Instagram)",
+      "slug": "jumping-text-instagram",
+      "url": "https://animata.design/docs/text/jumping-text-instagram",
+      "category": "Text",
+      "description": "Jumping text effect similar to the one seen in Instagram's text effects"
+    },
+    {
+      "name": "Kinetic Center Build",
+      "slug": "kinetic-center-build",
+      "url": "https://animata.design/docs/text/kinetic-center-build",
+      "category": "Text",
+      "description": "A word appears in the center; each new word enters from right to left with a soft blur and pushes the existing line until the full phrase locks centered."
+    },
+    {
+      "name": "Line-by-Line Slide",
+      "slug": "line-by-line-slide",
+      "url": "https://animata.design/docs/text/line-by-line-slide",
+      "category": "Text",
+      "description": "Each line enters from the left with a staggered slide and exits to the right for a flowing paragraph reveal."
+    },
+    {
+      "name": "Mask Reveal Up",
+      "slug": "mask-reveal-up",
+      "url": "https://animata.design/docs/text/mask-reveal-up",
+      "category": "Text",
+      "description": "Lines reveal upward with a soft masked feel and compact stagger."
+    },
+    {
+      "name": "Mask Text",
+      "slug": "mask-text",
+      "url": "https://animata.design/docs/text/mask-text",
+      "category": "Text",
+      "description": "A cursor with a mask hover effect revealing the text"
+    },
+    {
+      "name": "Metis text",
+      "slug": "metis-text",
+      "url": "https://animata.design/docs/text/metis-text",
+      "category": "Text",
+      "description": "Hover draws an underline in from the left; on exit it retracts back out to the right."
+    },
+    {
+      "name": "Micro Scale Fade",
+      "slug": "micro-scale-fade",
+      "url": "https://animata.design/docs/text/micro-scale-fade",
+      "category": "Text",
+      "description": "A calm, tiny scale pop used as subtle premium polish for labels and headings."
+    },
+    {
+      "name": "Mirror Text",
+      "slug": "mirror-text",
+      "url": "https://animata.design/docs/text/mirror-text",
+      "category": "Text",
+      "description": "An effect where given text has the mirror/clone text and follows it."
+    },
+    {
+      "name": "Per-Character Rise",
+      "slug": "per-character-rise",
+      "url": "https://animata.design/docs/text/per-character-rise",
+      "category": "Text",
+      "description": "Letters slide up from below with no blur — crisp, deliberate, kinetic. Apple's clean tvOS-style reveal."
+    },
+    {
+      "name": "Per-Word Crossfade",
+      "slug": "per-word-crossfade",
+      "url": "https://animata.design/docs/text/per-word-crossfade",
+      "category": "Text",
+      "description": "Words gently fade into place one after another, with a short vertical drift for a calm keynote rhythm."
+    },
+    {
+      "name": "Roll text",
+      "slug": "roll-text",
+      "url": "https://animata.design/docs/text/roll-text",
+      "category": "Text",
+      "description": "Stacked text layers that roll vertically on hover — top slides up, bottom rises in. Playback latches until the animation finishes."
+    },
+    {
+      "name": "Scale Down Fade",
+      "slug": "scale-down-fade",
+      "url": "https://animata.design/docs/text/scale-down-fade",
+      "category": "Text",
+      "description": "Subtle premium settle-in with a restrained scale-down fade on exit."
+    },
+    {
+      "name": "Scroll Reveal",
+      "slug": "scroll-reveal",
+      "url": "https://animata.design/docs/text/scroll-reveal",
+      "category": "Text",
+      "description": "A component that reveals text based on the scroll position. Make sure to scroll inside the preview to see the effect."
+    },
+    {
+      "name": "Shared Axis Y",
+      "slug": "shared-axis-y",
+      "url": "https://animata.design/docs/text/shared-axis-y",
+      "category": "Text",
+      "description": "Per-word hard-cut transition with staircase timing for sharp editorial swaps."
+    },
+    {
+      "name": "Shared Axis Z",
+      "slug": "shared-axis-z",
+      "url": "https://animata.design/docs/text/shared-axis-z",
+      "category": "Text",
+      "description": "Scale-based shared-axis transition for focus shifts and context depth."
+    },
+    {
+      "name": "Shimmer Sweep",
+      "slug": "shimmer-sweep",
+      "url": "https://animata.design/docs/text/shimmer-sweep",
+      "category": "Text",
+      "description": "A subtle sweep across a clean headline, blending in while gliding from left to center."
+    },
+    {
+      "name": "Short Slide Down",
+      "slug": "short-slide-down",
+      "url": "https://animata.design/docs/text/short-slide-down",
+      "category": "Text",
+      "description": "Each new word drops in from above into its own line and pushes the existing stack downward until a centered three-line composition locks in place."
+    },
+    {
+      "name": "Short Slide Right",
+      "slug": "short-slide-right",
+      "url": "https://animata.design/docs/text/short-slide-right",
+      "category": "Text",
+      "description": "The whole phrase glides in from the left as one compact move, while the words themselves are revealed in sequence only through opacity."
+    },
+    {
+      "name": "Soft Blur In",
+      "slug": "soft-blur-in",
+      "url": "https://animata.design/docs/text/soft-blur-in",
+      "category": "Text",
+      "description": "Per-character fade-in with a gentle blur and upward motion. Apple's signature hero-title reveal."
+    },
+    {
+      "name": "Split Text",
+      "slug": "split-text",
+      "url": "https://animata.design/docs/text/split-text",
+      "category": "Text",
+      "description": "A text effect where the text splits into two when hovered"
+    },
+    {
+      "name": "Spring Scale In",
+      "slug": "spring-scale-in",
+      "url": "https://animata.design/docs/text/spring-scale-in",
+      "category": "Text",
+      "description": "Words pop in with a soft overshoot scale, like a physical spring settling into place."
+    },
+    {
+      "name": "Staggered Letter",
+      "slug": "staggered-letter",
+      "url": "https://animata.design/docs/text/staggered-letter",
+      "category": "Text",
+      "description": "A staggered up/drop letter animation."
+    },
+    {
+      "name": "Swap Text",
+      "slug": "swap-text",
+      "url": "https://animata.design/docs/text/swap-text",
+      "category": "Text",
+      "description": "A component that swaps text on click or hover."
+    },
+    {
+      "name": "Text Border Animation",
+      "slug": "text-border-animation",
+      "url": "https://animata.design/docs/text/text-border-animation",
+      "category": "Text",
+      "description": "Border animation below text"
+    },
+    {
+      "name": "Text Explode (iMessage)",
+      "slug": "text-explode-imessage",
+      "url": "https://animata.design/docs/text/text-explode-imessage",
+      "category": "Text",
+      "description": "Text explode effect as seen in iMessage"
+    },
+    {
+      "name": "Text Flip",
+      "slug": "text-flip",
+      "url": "https://animata.design/docs/text/text-flip",
+      "category": "Text",
+      "description": "Text with flipping effect"
+    },
+    {
+      "name": "Ticker",
+      "slug": "ticker",
+      "url": "https://animata.design/docs/text/ticker",
+      "category": "Text",
+      "description": "A ticker component that animates number on change"
+    },
+    {
+      "name": "Top-Down Letters",
+      "slug": "top-down-letters",
+      "url": "https://animata.design/docs/text/top-down-letters",
+      "category": "Text",
+      "description": "Letters descend from above in a pronounced staircase, one symbol at a time, with zero blur."
+    },
+    {
+      "name": "Typing Text",
+      "slug": "typing-text",
+      "url": "https://animata.design/docs/text/typing-text",
+      "category": "Text",
+      "description": "Creates a typing effect for given text"
+    },
+    {
+      "name": "Underline hover text",
+      "slug": "underline-hover-text",
+      "url": "https://animata.design/docs/text/underline-hover-text",
+      "category": "Text",
+      "description": "A customizable text component with an underline hover effect."
+    },
+    {
+      "name": "Wave Reveal",
+      "slug": "wave-reveal",
+      "url": "https://animata.design/docs/text/wave-reveal",
+      "category": "Text",
+      "description": "Reveal letter or word one by one with a wave effect & optional blur effect."
+    },
+    {
+      "name": "Alarm Clock",
+      "slug": "alarm-clock",
+      "url": "https://animata.design/docs/widget/alarm-clock",
+      "category": "Widget",
+      "description": "Toggle one or two alarms on a compact card — built for a morning routine glance."
+    },
+    {
+      "name": "Battery",
+      "slug": "battery",
+      "url": "https://animata.design/docs/widget/battery",
+      "category": "Widget",
+      "description": "This is a basic widget that shows battery percentage."
+    },
+    {
+      "name": "Battery Level",
+      "slug": "battery-level",
+      "url": "https://animata.design/docs/widget/battery-level",
+      "category": "Widget",
+      "description": "A widget that shows battery level of different devices"
+    },
+    {
+      "name": "Calendar event",
+      "slug": "calendar-event",
+      "url": "https://animata.design/docs/widget/calendar-event",
+      "category": "Widget",
+      "description": "Show today’s date plus the next events — built for a calendar home-screen widget."
+    },
+    {
+      "name": "Calendar Widget",
+      "slug": "calendar-widget",
+      "url": "https://animata.design/docs/widget/calendar-widget",
+      "category": "Widget",
+      "description": "calendar widget is calender like widget with smooth animations and cool effects"
+    },
+    {
+      "name": "Calorie Counter",
+      "slug": "calorie-counter",
+      "url": "https://animata.design/docs/widget/calorie-counter",
+      "category": "Widget",
+      "description": "A calorie counter for your app"
+    },
+    {
+      "name": "Clock With Photo",
+      "slug": "clock-with-photo",
+      "url": "https://animata.design/docs/widget/clock-with-photo",
+      "category": "Widget",
+      "description": "A widget to display clock with photo"
+    },
+    {
+      "name": "Cycling",
+      "slug": "cycling",
+      "url": "https://animata.design/docs/widget/cycling",
+      "category": "Widget",
+      "description": "A widget that shows the distance covered and heart-rate of cyclist"
+    },
+    {
+      "name": "Delivery Card",
+      "slug": "delivery-card",
+      "url": "https://animata.design/docs/widget/delivery-card",
+      "category": "Widget",
+      "description": "Show delivery ETA, status, and route progress on a single home-screen tile."
+    },
+    {
+      "name": "Direction Card",
+      "slug": "direction-card",
+      "url": "https://animata.design/docs/widget/direction-card",
+      "category": "Widget",
+      "description": "A direction card which adapts itself on directions and distance"
+    },
+    {
+      "name": "Expense Tracker",
+      "slug": "expense-tracker",
+      "url": "https://animata.design/docs/widget/expense-tracker",
+      "category": "Widget",
+      "description": "Tracks your weekly spending or expenses"
+    },
+    {
+      "name": "Flight widget",
+      "slug": "flight-widget",
+      "url": "https://animata.design/docs/widget/flight-widget",
+      "category": "Widget",
+      "description": "A widget that shows flight detail"
+    },
+    {
+      "name": "Fund Widget",
+      "slug": "fund-widget",
+      "url": "https://animata.design/docs/widget/fund-widget",
+      "category": "Widget",
+      "description": "This component is a financial dashboard-like UI element for showing the current status of the funds."
+    },
+    {
+      "name": "Live score",
+      "slug": "live-score",
+      "url": "https://animata.design/docs/widget/live-score",
+      "category": "Widget",
+      "description": "Live score widget that displays the score of a match."
+    },
+    {
+      "name": "Mobile Detail",
+      "slug": "mobile-detail",
+      "url": "https://animata.design/docs/widget/mobile-detail",
+      "category": "Widget",
+      "description": "Mobile widget"
+    },
+    {
+      "name": "Music Stack Interaction",
+      "slug": "music-stack-interaction",
+      "url": "https://animata.design/docs/widget/music-stack-interaction",
+      "category": "Widget",
+      "description": "widget for Music stack and unstacking"
+    },
+    {
+      "name": "Music Widget",
+      "slug": "music-widget",
+      "url": "https://animata.design/docs/widget/music-widget",
+      "category": "Widget",
+      "description": "Widget to display music playing/paused."
+    },
+    {
+      "name": "Notes",
+      "slug": "notes",
+      "url": "https://animata.design/docs/widget/notes",
+      "category": "Widget",
+      "description": "A notes widget"
+    },
+    {
+      "name": "Profile",
+      "slug": "profile",
+      "url": "https://animata.design/docs/widget/profile",
+      "category": "Widget",
+      "description": "A widget that shows user profile"
+    },
+    {
+      "name": "Reminder",
+      "slug": "reminder",
+      "url": "https://animata.design/docs/widget/reminder",
+      "category": "Widget",
+      "description": "Glance at open tasks by list and see what is coming up next."
+    },
+    {
+      "name": "Reminder Widget",
+      "slug": "reminder-widget",
+      "url": "https://animata.design/docs/widget/reminder-widget",
+      "category": "Widget",
+      "description": "Reminder widget"
+    },
+    {
+      "name": "Score Board",
+      "slug": "score-board",
+      "url": "https://animata.design/docs/widget/score-board",
+      "category": "Widget",
+      "description": "A widget that shows progress and score"
+    },
+    {
+      "name": "Security Alert",
+      "slug": "security-alert",
+      "url": "https://animata.design/docs/widget/security-alert",
+      "category": "Widget",
+      "description": "This widget notifies the user about a security alert in the system."
+    },
+    {
+      "name": "Shopping List",
+      "slug": "shopping-list",
+      "url": "https://animata.design/docs/widget/shopping-list",
+      "category": "Widget",
+      "description": "A shopping list widget"
+    },
+    {
+      "name": "Sleep Tracker",
+      "slug": "sleep-tracker",
+      "url": "https://animata.design/docs/widget/sleep-tracker",
+      "category": "Widget",
+      "description": "An elegant sleep tracker for your use"
+    },
+    {
+      "name": "Storage Status",
+      "slug": "storage-status",
+      "url": "https://animata.design/docs/widget/storage-status",
+      "category": "Widget",
+      "description": "This widget shows storage occupied by different file."
+    },
+    {
+      "name": "Storage Widget",
+      "slug": "storage-widget",
+      "url": "https://animata.design/docs/widget/storage-widget",
+      "category": "Widget",
+      "description": "A widget to display storage"
+    },
+    {
+      "name": "Study Timer",
+      "slug": "study-timer",
+      "url": "https://animata.design/docs/widget/study-timer",
+      "category": "Widget",
+      "description": "Displays a study timer with segmented time tracking."
+    },
+    {
+      "name": "Team Clock",
+      "slug": "team-clock",
+      "url": "https://animata.design/docs/widget/team-clock",
+      "category": "Widget",
+      "description": "A customizable, animated clock displaying multiple time zones for remote teams."
+    },
+    {
+      "name": "Video Chat",
+      "slug": "video-chat",
+      "url": "https://animata.design/docs/widget/video-chat",
+      "category": "Widget",
+      "description": "Video chat in real-time"
+    },
+    {
+      "name": "VPN Connection",
+      "slug": "vpn-widget",
+      "url": "https://animata.design/docs/widget/vpn-widget",
+      "category": "Widget",
+      "description": "See server, speed, and connection status at a glance — with a slide-to-connect control."
+    },
+    {
+      "name": "Water Tracker",
+      "slug": "water-tracker",
+      "url": "https://animata.design/docs/widget/water-tracker",
+      "category": "Widget",
+      "description": "Track daily water intake with a glanceable fill bar and one-tap top-ups."
+    },
+    {
+      "name": "Weather Card",
+      "slug": "weather-card",
+      "url": "https://animata.design/docs/widget/weather-card",
+      "category": "Widget",
+      "description": "Current temperature, feels-like, and today’s high/low for any city."
+    },
+    {
+      "name": "Weekly progress",
+      "slug": "weekly-progress",
+      "url": "https://animata.design/docs/widget/weekly-progress",
+      "category": "Widget",
+      "description": "A widget that shows weekly progress"
+    }
+  ]
+}

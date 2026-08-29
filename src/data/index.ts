@@ -5,6 +5,12 @@ import { fancy } from "./components/fancy";
 import { aceternity } from "./components/aceternity";
 import { numberflow } from "./components/numberflow";
 import { watermelon } from "./components/watermelon";
+import { shadcn } from "./components/shadcn";
+import { magicui } from "./components/magicui";
+import { animata } from "./components/animata";
+import { animateui } from "./components/animateui";
+import { launchui } from "./components/launchui";
+import { originui } from "./components/originui";
 
 // Registry policy (v0.3.0): only vendorable sources — every entry ships free code
 // with an install command. Paid/gated/gallery sources are not carried as entries.
@@ -15,6 +21,12 @@ export const entries: UIEntry[] = [
   ...aceternity,
   ...numberflow,
   ...watermelon,
+  ...shadcn,
+  ...magicui,
+  ...animata,
+  ...animateui,
+  ...launchui,
+  ...originui,
 ];
 
 export { sources } from "./sources";

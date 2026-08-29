@@ -68,6 +68,24 @@ export const categories: Category[] = [
     group: "components",
     description: "Cursor tricks, physics toys and small moments of delight.",
   },
+  {
+    slug: "feedback",
+    name: "Feedback & Status",
+    group: "components",
+    description: "Spinners, progress, skeletons, empty states and notifications.",
+  },
+  {
+    slug: "data-display",
+    name: "Data Display",
+    group: "components",
+    description: "Tables, charts, stats, badges and avatars for showing data.",
+  },
+  {
+    slug: "chat",
+    name: "Chat & AI",
+    group: "components",
+    description: "Chat and AI conversation UI — bubbles, message streams, attachments.",
+  },
 
   // ---- Blocks ----
   {

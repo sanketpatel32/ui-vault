@@ -93,4 +93,100 @@ export const sources: Source[] = [
     notes: "Free components only may be vendored. Premium blocks/templates are paid — link-out.",
     color: "#e879f9",
   },
+  {
+    id: "shadcn",
+    name: "shadcn/ui",
+    url: "https://ui.shadcn.com",
+    tagline: "The canonical copy-paste component collection you own outright.",
+    description:
+      "65 Radix-based primitives — every install vendors the source into your project. Charts via Recharts, tables via TanStack, drawer via Vaul, carousel via Embla. The de-facto foundation most libraries below build on.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "tailwind", "radix"],
+    install: "npx shadcn@latest add <component>",
+    installLabel: "shadcn CLI",
+    notes:
+      "MIT (github.com/shadcn-ui/ui). v4 docs ship radix/base/aria variants of every component; the catalog carries the radix set.",
+    color: "#fafafa",
+  },
+  {
+    id: "magicui",
+    name: "Magic UI",
+    url: "https://magicui.design",
+    tagline: "UI library for design engineers.",
+    description:
+      "76 animated components — animated beams, globes, marquees, device mocks, 18 text animations and 11 backgrounds. Distributed as a shadcn registry; templates are paid, all components are free.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "tailwind", "motion"],
+    install: "npx shadcn@latest add @magicui/<component>",
+    installLabel: "shadcn registry (@magicui)",
+    notes:
+      "MIT (github.com/magicuidesign/magicui). Some components pull peer deps automatically (cobe for Globe, canvas-confetti, react-tweet).",
+    color: "#a3e635",
+  },
+  {
+    id: "animata",
+    name: "Animata",
+    url: "https://animata.design",
+    tagline: "Move, scale, rotate and animate with real components.",
+    description:
+      "154 published motion components across text, widgets, cards, bento grids, buttons and heroes — every one installable through a shadcn-style registry. The repo documents 198; 44 are still unpublished.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "tailwind", "motion"],
+    install: "npx shadcn@latest add https://animata.design/r/<name>.json",
+    installLabel: "shadcn registry",
+    notes:
+      "MIT (github.com/codse/animata). Catalog carries the published set only — every source link resolves on the live site.",
+    color: "#22d3ee",
+  },
+  {
+    id: "animateui",
+    name: "Animate UI",
+    url: "https://animate-ui.com",
+    tagline: "Animated components for your next project.",
+    description:
+      "154 animated components in your choice of headless flavor — Radix UI, Base UI, Headless UI or native — plus 11 text animations and 14 effect primitives. All Motion-powered, installed via shadcn registry.",
+    license: "free",
+    previewMode: "live",
+    stack: ["react", "typescript", "tailwind", "motion", "radix"],
+    install: "npx shadcn@latest add @animate-ui/<slug>",
+    installLabel: "shadcn registry (@animate-ui)",
+    notes:
+      "MIT + Commons Clause (github.com/imskyleen/animate-ui): free to use anywhere including commercially — you just can't resell the components themselves.",
+    color: "#6366f1",
+  },
+  {
+    id: "launchui",
+    name: "Launch UI",
+    url: "https://www.launchuicomponents.com",
+    tagline: "Open-source components for your next launch.",
+    description:
+      "Free section library for marketing pages — navbar, hero, items, logos, FAQ, CTA, pricing, stats and footer blocks, plus button, badge, mockup, screenshot, glow, fade and glass utilities. React 19, Tailwind v4, Radix.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "nextjs", "typescript", "tailwind", "radix"],
+    install: "npx shadcn@latest add @launchui/<block>",
+    installLabel: "shadcn registry (@launchui)",
+    notes:
+      "MIT (github.com/launch-ui/launch-ui). Pro sections ($99 — bento, feature, testimonials, tabs, carousel, gallery, card) are gated and excluded from the catalog.",
+    color: "#facc15",
+  },
+  {
+    id: "originui",
+    name: "Origin UI",
+    url: "https://coss.com/origin",
+    tagline: "600+ copy-paste components, 30 families — the deepest form catalog anywhere.",
+    description:
+      "The Origin UI legacy snapshot, preserved MIT inside the COSS monorepo after the rebrand: 599 variants across 31 families. Inputs alone ship 59 variants; buttons 54; selects 51.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "tailwind", "radix"],
+    install: "npx shadcn@latest add https://coss.com/origin/r/<family>.json",
+    installLabel: "shadcn registry",
+    notes:
+      "originui.com now redirects to COSS — this is the maintained MIT snapshot at coss.com/origin (apps/origin in github.com/cosscom/coss). Entries are family-granularity; registry files cover each variant.",
+    color: "#94a3b8",
+  },
 ];

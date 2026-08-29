@@ -1,0 +1,40 @@
+# Origin UI
+> 600+ copy-paste components, 30 families — the deepest form catalog anywhere.
+- URL: https://coss.com/origin
+- License: MIT — live-previewable
+- Stack: react, typescript, tailwind, radix
+- Install: `npx shadcn@latest add https://coss.com/origin/r/<family>.json`
+- Notes: originui.com now redirects to COSS — this is the maintained MIT snapshot at coss.com/origin (apps/origin in github.com/cosscom/coss). Entries are family-granularity; registry files cover each variant.
+- Cataloged in UI Vault: 31 entries
+## Entries
+- **Accordion** https://coss.com/origin/accordion — Vertically collapsible content panels for grouping and revealing related information. 20 variants. [MIT, live-previewable, category: faq]
+- **Alert** https://coss.com/origin/alert — Attention-grabbing callout banners for inline status messages, warnings, and confirmations. 12 variants. [MIT, live-previewable, category: feedback]
+- **Avatar** https://coss.com/origin/avatar — User identity images with fallbacks and status indicators for profiles, lists, and comments. 23 variants. [MIT, live-previewable, category: data-display]
+- **Badge** https://coss.com/origin/badge — Small status labels and counters for tagging, categorizing, and highlighting states. 13 variants. [MIT, live-previewable, category: data-display]
+- **Banner** https://coss.com/origin/banner — Top-of-page strips for site-wide announcements, consent notices, and persistent alerts. 12 variants. [MIT, live-previewable, category: sections-misc]
+- **Breadcrumb** https://coss.com/origin/breadcrumb — Hierarchical navigation trail showing the user's location within nested routes. 8 variants. [MIT, live-previewable, category: navigation]
+- **Button** https://coss.com/origin/button — Largest family: primary, secondary, ghost, and icon buttons in every style, size, and state. 54 variants. [MIT, live-previewable, category: buttons]
+- **Calendar & Date picker** https://coss.com/origin/calendar-date-picker — Date selection UIs from inline month calendars to popover and range pickers. 28 variants. [MIT, live-previewable, category: forms]
+- **Checkbox** https://coss.com/origin/checkbox — Binary and multi-select checkboxes including group, indeterminate, and card styles. 20 variants. [MIT, live-previewable, category: forms]
+- **Image Cropper** https://coss.com/origin/image-cropper — In-app image cropping with zoom, rotation, and aspect-ratio controls. 11 variants. [MIT, live-previewable, category: forms]
+- **Dialog** https://coss.com/origin/dialog — Modal overlays for focused tasks, confirmations, and forms requiring user attention. 21 variants. [MIT, live-previewable, category: overlays]
+- **Dropdown** https://coss.com/origin/dropdown — Menu panels triggered by controls, for actions, navigation, and option lists. 15 variants. [MIT, live-previewable, category: overlays]
+- **File upload** https://coss.com/origin/file-upload — Drag-and-drop zones and file lists for uploading single or multiple files. 14 variants. [MIT, live-previewable, category: forms]
+- **Event calendar** https://coss.com/origin/event-calendar — Full month/week/day event calendar with drag-and-drop scheduling (dnd-kit based). 1 variants. [MIT, live-previewable, category: data-display]
+- **Input** https://coss.com/origin/input — Text, password, OTP, number, and search fields with labels, icons, and validation states. 59 variants. [MIT, live-previewable, category: forms]
+- **Navbar** https://coss.com/origin/navbar — App navigation shells with logos, menus, team switchers, and user areas. 20 variants. [MIT, live-previewable, category: navigation]
+- **Notification** https://coss.com/origin/notification — Toast-style transient messages and notification lists/feeds for user feedback. 22 variants. [MIT, live-previewable, category: feedback]
+- **Pagination** https://coss.com/origin/pagination — Page navigation controls for tables, lists, and other paginated content. 12 variants. [MIT, live-previewable, category: navigation]
+- **Popover** https://coss.com/origin/popover — Floating anchored panels for rich content, filters, and contextual information. 9 variants. [MIT, live-previewable, category: overlays]
+- **Radio** https://coss.com/origin/radio — Single-choice radio buttons and radio cards for mutually exclusive options. 20 variants. [MIT, live-previewable, category: forms]
+- **Select** https://coss.com/origin/select — Custom dropdown selects, multi-selects, comboboxes, and native select styles. 51 variants. [MIT, live-previewable, category: forms]
+- **Slider** https://coss.com/origin/slider — Range and value sliders, including dual-thumb and slider-with-input combinations. 27 variants. [MIT, live-previewable, category: forms]
+- **Stepper** https://coss.com/origin/stepper — Progress indicators for multi-step flows such as checkout and onboarding. 17 variants. [MIT, live-previewable, category: feedback]
+- **Switch** https://coss.com/origin/switch — Toggle switches for instant on/off settings and preference changes. 17 variants. [MIT, live-previewable, category: forms]
+- **Table** https://coss.com/origin/table — Data tables for structured information with sortable, empty, and loading states. 20 variants. [MIT, live-previewable, category: data-display]
+- **Tabs** https://coss.com/origin/tabs — Tabbed content switching for views, panels, and in-page navigation. 20 variants. [MIT, live-previewable, category: navigation]
+- **Textarea** https://coss.com/origin/textarea — Multi-line text inputs with character counters, resize, and limit hints. 19 variants. [MIT, live-previewable, category: forms]
+- **Timeline** https://coss.com/origin/timeline — Chronological activity displays for histories, changelogs, and feeds. 12 variants. [MIT, live-previewable, category: data-display]
+- **Tooltip** https://coss.com/origin/tooltip — Hover/focus hint bubbles that explain controls without cluttering the UI. 12 variants. [MIT, live-previewable, category: overlays]
+- **Tree** https://coss.com/origin/tree — Hierarchical tree views with expand/collapse for files, folders, and nested data. 15 variants. [MIT, live-previewable, category: navigation]
+- **Easings** https://coss.com/origin/easings — Copy-ready CSS easing curves and spring presets for consistent motion design. [MIT, live-previewable, category: micro-interactions]

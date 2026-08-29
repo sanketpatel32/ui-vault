@@ -1,0 +1,1099 @@
+{
+  "status": "ok",
+  "id": "animateui",
+  "name": "Animate UI",
+  "url": "https://animate-ui.com",
+  "repo": "https://github.com/imskyleen/animate-ui",
+  "license": "MIT + Commons Clause (GitHub SPDX: NOASSERTION; LICENSE.md)",
+  "install": "npx shadcn@latest add @animate-ui/<slug>  (e.g. npx shadcn@latest add @animate-ui/primitives-texts-sliding-number; pnpm dlx / yarn / bunx variants documented)",
+  "stack": [
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Motion (motion/react)",
+    "shadcn CLI registry distribution (copy-into-project, no npm runtime package)",
+    "Radix UI / Base UI / Headless UI variants",
+    "Next.js (docs site, fumadocs)"
+  ],
+  "notes": "Verification: animate-ui.com footer links to github.com/imskyleen; canonical repo is imskyleen/animate-ui (owner Elliot Sutton, ~4.2k stars, active, last push 2025-12-31, homepage=animate-ui.com; github.com/animate-ui/animate-ui redirects there). SalarC123/Animate-UI from the task brief returns 404 - not this project. License caveat: LICENSE.md is MIT plus a Commons Clause-style restriction - free to use, copy, modify and distribute the code as part of an app/site/product (commercial use allowed), but you may NOT sell or redistribute the components themselves in original form, alone or in a bundle. It is source-available and free to copy, but not OSI open-source; fine for a personal catalog app, do not resell the components as a component library. Distribution: shadcn-style registry, not an npm package - each item installs via 'npx shadcn@latest add @animate-ui/<slug>'; registry JSON at https://animate-ui.com/r/<slug>.json. Total count: 154 documented animated components = 73 'Components' + 81 'Primitives' (verified 1:1 against registry items and docs MDX files; complete, not sampled). category format is '<Section> / <sidebar group>' - the library's own top-level split (Components vs Primitives) plus its sidebar heading; both sections have Animate UI / Radix UI / Base UI / Headless UI / Buttons groups, so the section prefix disambiguates duplicates (e.g. two Tabs). Also in the registry but not enumerated here (no individual docs pages): 260 animated Lucide icons (beta) and 5 hooks (use-auto-height, use-controlled-state, use-data-state, use-is-in-view, use-motion-value-state). Docs also document an MCP server (animate-ui.com/docs/mcp). Community components are user-contributed via the repo.",
+  "components": [
+    {
+      "name": "Avatar Group",
+      "slug": "components-animate-avatar-group",
+      "url": "https://animate-ui.com/docs/components/animate/avatar-group",
+      "category": "Components / Animate UI",
+      "description": "An animated avatar group that displays overlapping user images and smoothly shifts each avatar forward on hover to highlight it."
+    },
+    {
+      "name": "Code",
+      "slug": "components-animate-code",
+      "url": "https://animate-ui.com/docs/components/animate/code",
+      "category": "Components / Animate UI",
+      "description": "A code component that animates the code as it is written."
+    },
+    {
+      "name": "Code Tabs",
+      "slug": "components-animate-code-tabs",
+      "url": "https://animate-ui.com/docs/components/animate/code-tabs",
+      "category": "Components / Animate UI",
+      "description": "A tabs component that displays code for different languages."
+    },
+    {
+      "name": "Cursor",
+      "slug": "components-animate-cursor",
+      "url": "https://animate-ui.com/docs/components/animate/cursor",
+      "category": "Components / Animate UI",
+      "description": "An animated cursor component that allows you to customize both the cursor and cursor follow elements with smooth animations."
+    },
+    {
+      "name": "GitHub Stars Wheel",
+      "slug": "components-animate-github-stars-wheel",
+      "url": "https://animate-ui.com/docs/components/animate/github-stars-wheel",
+      "category": "Components / Animate UI",
+      "description": "A scrolling wheel that displays GitHub stars count."
+    },
+    {
+      "name": "Tabs",
+      "slug": "components-animate-tabs",
+      "url": "https://animate-ui.com/docs/components/animate/tabs",
+      "category": "Components / Animate UI",
+      "description": "A set of layered sections of content—known as tab panels—that are displayed one at a time."
+    },
+    {
+      "name": "Tooltip",
+      "slug": "components-animate-tooltip",
+      "url": "https://animate-ui.com/docs/components/animate/tooltip",
+      "category": "Components / Animate UI",
+      "description": "A tooltip is a small box that appears when hovering over an element."
+    },
+    {
+      "name": "Accordion",
+      "slug": "components-radix-accordion",
+      "url": "https://animate-ui.com/docs/components/radix/accordion",
+      "category": "Components / Radix UI",
+      "description": "A vertically stacked set of interactive headings that each reveal an associated section of content."
+    },
+    {
+      "name": "Alert Dialog",
+      "slug": "components-radix-alert-dialog",
+      "url": "https://animate-ui.com/docs/components/radix/alert-dialog",
+      "category": "Components / Radix UI",
+      "description": "A modal dialog that interrupts the user with important content and expects a response."
+    },
+    {
+      "name": "Checkbox",
+      "slug": "components-radix-checkbox",
+      "url": "https://animate-ui.com/docs/components/radix/checkbox",
+      "category": "Components / Radix UI",
+      "description": "A control that allows the user to toggle between checked and not checked."
+    },
+    {
+      "name": "Dialog",
+      "slug": "components-radix-dialog",
+      "url": "https://animate-ui.com/docs/components/radix/dialog",
+      "category": "Components / Radix UI",
+      "description": "A window overlaid on either the primary window or another dialog window, rendering the content underneath inert."
+    },
+    {
+      "name": "Dropdown Menu",
+      "slug": "components-radix-dropdown-menu",
+      "url": "https://animate-ui.com/docs/components/radix/dropdown-menu",
+      "category": "Components / Radix UI",
+      "description": "Displays a menu to the user — such as a set of actions or functions — triggered by a button."
+    },
+    {
+      "name": "Files",
+      "slug": "components-radix-files",
+      "url": "https://animate-ui.com/docs/components/radix/files",
+      "category": "Components / Radix UI",
+      "description": "A component that allows you to display a list of files and folders."
+    },
+    {
+      "name": "Hover Card",
+      "slug": "components-radix-hover-card",
+      "url": "https://animate-ui.com/docs/components/radix/hover-card",
+      "category": "Components / Radix UI",
+      "description": "For sighted users to preview content available behind a link."
+    },
+    {
+      "name": "Popover",
+      "slug": "components-radix-popover",
+      "url": "https://animate-ui.com/docs/components/radix/popover",
+      "category": "Components / Radix UI",
+      "description": "Displays rich content in a portal, triggered by a button."
+    },
+    {
+      "name": "Preview Link Card",
+      "slug": "components-radix-preview-link-card",
+      "url": "https://animate-ui.com/docs/components/radix/preview-link-card",
+      "category": "Components / Radix UI",
+      "description": "Displays a preview image of a link when hovered."
+    },
+    {
+      "name": "Progress",
+      "slug": "components-radix-progress",
+      "url": "https://animate-ui.com/docs/components/radix/progress",
+      "category": "Components / Radix UI",
+      "description": "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar."
+    },
+    {
+      "name": "Radio Group",
+      "slug": "components-radix-radio-group",
+      "url": "https://animate-ui.com/docs/components/radix/radio-group",
+      "category": "Components / Radix UI",
+      "description": "A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time."
+    },
+    {
+      "name": "Sheet",
+      "slug": "components-radix-sheet",
+      "url": "https://animate-ui.com/docs/components/radix/sheet",
+      "category": "Components / Radix UI",
+      "description": "Extends the Dialog component to display content that complements the main content of the screen."
+    },
+    {
+      "name": "Sidebar",
+      "slug": "components-radix-sidebar",
+      "url": "https://animate-ui.com/docs/components/radix/sidebar",
+      "category": "Components / Radix UI",
+      "description": "A composable, themeable and customizable sidebar component. Created by Shadcn and animated by Animate UI."
+    },
+    {
+      "name": "Switch",
+      "slug": "components-radix-switch",
+      "url": "https://animate-ui.com/docs/components/radix/switch",
+      "category": "Components / Radix UI",
+      "description": "A control that allows the user to toggle between checked and not checked."
+    },
+    {
+      "name": "Tabs",
+      "slug": "components-radix-tabs",
+      "url": "https://animate-ui.com/docs/components/radix/tabs",
+      "category": "Components / Radix UI",
+      "description": "A set of layered sections of content—known as tab panels—that are displayed one at a time."
+    },
+    {
+      "name": "Toggle",
+      "slug": "components-radix-toggle",
+      "url": "https://animate-ui.com/docs/components/radix/toggle",
+      "category": "Components / Radix UI",
+      "description": "A two-state button that can be either on or off."
+    },
+    {
+      "name": "Toggle Group",
+      "slug": "components-radix-toggle-group",
+      "url": "https://animate-ui.com/docs/components/radix/toggle-group",
+      "category": "Components / Radix UI",
+      "description": "A set of two-state buttons that can be toggled on or off."
+    },
+    {
+      "name": "Tooltip",
+      "slug": "components-radix-tooltip",
+      "url": "https://animate-ui.com/docs/components/radix/tooltip",
+      "category": "Components / Radix UI",
+      "description": "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it."
+    },
+    {
+      "name": "Accordion",
+      "slug": "components-base-accordion",
+      "url": "https://animate-ui.com/docs/components/base/accordion",
+      "category": "Components / Base UI",
+      "description": "A set of collapsible panels with headings."
+    },
+    {
+      "name": "Alert Dialog",
+      "slug": "components-base-alert-dialog",
+      "url": "https://animate-ui.com/docs/components/base/alert-dialog",
+      "category": "Components / Base UI",
+      "description": "A dialog that requires user response to proceed."
+    },
+    {
+      "name": "Checkbox",
+      "slug": "components-base-checkbox",
+      "url": "https://animate-ui.com/docs/components/base/checkbox",
+      "category": "Components / Base UI",
+      "description": "An easily stylable checkbox component."
+    },
+    {
+      "name": "Dialog",
+      "slug": "components-base-dialog",
+      "url": "https://animate-ui.com/docs/components/base/dialog",
+      "category": "Components / Base UI",
+      "description": "A popup that opens on top of the entire page."
+    },
+    {
+      "name": "Files",
+      "slug": "components-base-files",
+      "url": "https://animate-ui.com/docs/components/base/files",
+      "category": "Components / Base UI",
+      "description": "A component that allows you to display a list of files and folders."
+    },
+    {
+      "name": "Menu",
+      "slug": "components-base-menu",
+      "url": "https://animate-ui.com/docs/components/base/menu",
+      "category": "Components / Base UI",
+      "description": "A list of actions in a dropdown, enhanced with keyboard navigation."
+    },
+    {
+      "name": "Popover",
+      "slug": "components-base-popover",
+      "url": "https://animate-ui.com/docs/components/base/popover",
+      "category": "Components / Base UI",
+      "description": "An accessible popup anchored to a button."
+    },
+    {
+      "name": "Preview Card",
+      "slug": "components-base-preview-card",
+      "url": "https://animate-ui.com/docs/components/base/preview-card",
+      "category": "Components / Base UI",
+      "description": "A popup that appears when a link is hovered, showing a preview for sighted users."
+    },
+    {
+      "name": "Preview Link Card",
+      "slug": "components-base-preview-link-card",
+      "url": "https://animate-ui.com/docs/components/base/preview-link-card",
+      "category": "Components / Base UI",
+      "description": "Displays a preview image of a link when hovered."
+    },
+    {
+      "name": "Progress",
+      "slug": "components-base-progress",
+      "url": "https://animate-ui.com/docs/components/base/progress",
+      "category": "Components / Base UI",
+      "description": "Displays the status of a task that takes a long time."
+    },
+    {
+      "name": "Radio",
+      "slug": "components-base-radio",
+      "url": "https://animate-ui.com/docs/components/base/radio",
+      "category": "Components / Base UI",
+      "description": "An easily stylable radio button component."
+    },
+    {
+      "name": "Switch",
+      "slug": "components-base-switch",
+      "url": "https://animate-ui.com/docs/components/base/switch",
+      "category": "Components / Base UI",
+      "description": "A control that indicates whether a setting is on or off."
+    },
+    {
+      "name": "Tabs",
+      "slug": "components-base-tabs",
+      "url": "https://animate-ui.com/docs/components/base/tabs",
+      "category": "Components / Base UI",
+      "description": "A component for toggling between related panels on the same page."
+    },
+    {
+      "name": "Toggle",
+      "slug": "components-base-toggle",
+      "url": "https://animate-ui.com/docs/components/base/toggle",
+      "category": "Components / Base UI",
+      "description": "A two-state button that can be on or off."
+    },
+    {
+      "name": "Toggle Group",
+      "slug": "components-base-toggle-group",
+      "url": "https://animate-ui.com/docs/components/base/toggle-group",
+      "category": "Components / Base UI",
+      "description": "Provides a shared state to a series of toggle buttons."
+    },
+    {
+      "name": "Tooltip",
+      "slug": "components-base-tooltip",
+      "url": "https://animate-ui.com/docs/components/base/tooltip",
+      "category": "Components / Base UI",
+      "description": "A popup that appears when an element is hovered or focused, showing a hint for sighted users."
+    },
+    {
+      "name": "Accordion",
+      "slug": "components-headless-accordion",
+      "url": "https://animate-ui.com/docs/components/headless/accordion",
+      "category": "Components / Headless UI",
+      "description": "A vertically stacked set of interactive headings that each reveal an associated section of content."
+    },
+    {
+      "name": "Checkbox",
+      "slug": "components-headless-checkbox",
+      "url": "https://animate-ui.com/docs/components/headless/checkbox",
+      "category": "Components / Headless UI",
+      "description": "Checkboxes provide the same functionality as native HTML checkboxes, without any of the styling, giving you a clean slate to design them however you'd like."
+    },
+    {
+      "name": "Dialog",
+      "slug": "components-headless-dialog",
+      "url": "https://animate-ui.com/docs/components/headless/dialog",
+      "category": "Components / Headless UI",
+      "description": "A fully-managed, renderless dialog component jam-packed with accessibility and keyboard features, perfect for building completely custom dialogs and alerts."
+    },
+    {
+      "name": "Popover",
+      "slug": "components-headless-popover",
+      "url": "https://animate-ui.com/docs/components/headless/popover",
+      "category": "Components / Headless UI",
+      "description": "Popovers are perfect for floating panels with arbitrary content like navigation menus, mobile menus and flyout menus."
+    },
+    {
+      "name": "Switch",
+      "slug": "components-headless-switch",
+      "url": "https://animate-ui.com/docs/components/headless/switch",
+      "category": "Components / Headless UI",
+      "description": "Switches are a pleasant interface for toggling a value between two states, and offer the same semantics and keyboard navigation as native checkbox elements."
+    },
+    {
+      "name": "Tabs",
+      "slug": "components-headless-tabs",
+      "url": "https://animate-ui.com/docs/components/headless/tabs",
+      "category": "Components / Headless UI",
+      "description": "Easily create accessible, fully customizable tab interfaces, with robust focus management and keyboard navigation support."
+    },
+    {
+      "name": "Button",
+      "slug": "components-buttons-button",
+      "url": "https://animate-ui.com/docs/components/buttons/button",
+      "category": "Components / Buttons",
+      "description": "An animated button component with a variety of styles."
+    },
+    {
+      "name": "Copy Button",
+      "slug": "components-buttons-copy",
+      "url": "https://animate-ui.com/docs/components/buttons/copy",
+      "category": "Components / Buttons",
+      "description": "A copy button component with a variety of styles and animations."
+    },
+    {
+      "name": "Flip Button",
+      "slug": "components-buttons-flip",
+      "url": "https://animate-ui.com/docs/components/buttons/flip",
+      "category": "Components / Buttons",
+      "description": "An animated flip button component with a variety of styles."
+    },
+    {
+      "name": "GitHub Stars Button",
+      "slug": "components-buttons-github-stars",
+      "url": "https://animate-ui.com/docs/components/buttons/github-stars",
+      "category": "Components / Buttons",
+      "description": "A clickable button that links to a GitHub repository and displays the number of stars."
+    },
+    {
+      "name": "Icon Button",
+      "slug": "components-buttons-icon",
+      "url": "https://animate-ui.com/docs/components/buttons/icon",
+      "category": "Components / Buttons",
+      "description": "An icon button that displays particles when clicked."
+    },
+    {
+      "name": "Liquid Button",
+      "slug": "components-buttons-liquid",
+      "url": "https://animate-ui.com/docs/components/buttons/liquid",
+      "category": "Components / Buttons",
+      "description": "A button that fills on hover."
+    },
+    {
+      "name": "Ripple Button",
+      "slug": "components-buttons-ripple",
+      "url": "https://animate-ui.com/docs/components/buttons/ripple",
+      "category": "Components / Buttons",
+      "description": "A button that animates on tap with a ripple effect."
+    },
+    {
+      "name": "Theme Toggler Button",
+      "slug": "components-buttons-theme-toggler",
+      "url": "https://animate-ui.com/docs/components/buttons/theme-toggler",
+      "category": "Components / Buttons",
+      "description": "A button that toggles the theme gradually."
+    },
+    {
+      "name": "Bubble Background",
+      "slug": "components-backgrounds-bubble",
+      "url": "https://animate-ui.com/docs/components/backgrounds/bubble",
+      "category": "Components / Backgrounds",
+      "description": "An interactive background featuring smoothly animated gradient bubbles, creating a playful, dynamic, and visually engaging backdrop."
+    },
+    {
+      "name": "Fireworks Background",
+      "slug": "components-backgrounds-fireworks",
+      "url": "https://animate-ui.com/docs/components/backgrounds/fireworks",
+      "category": "Components / Backgrounds",
+      "description": "A background component that displays a fireworks animation."
+    },
+    {
+      "name": "Gradient Background",
+      "slug": "components-backgrounds-gradient",
+      "url": "https://animate-ui.com/docs/components/backgrounds/gradient",
+      "category": "Components / Backgrounds",
+      "description": "A background component featuring a subtle yet engaging animated gradient effect, smoothly transitioning colors to enhance visual depth."
+    },
+    {
+      "name": "Gravity Stars Background",
+      "slug": "components-backgrounds-gravity-stars",
+      "url": "https://animate-ui.com/docs/components/backgrounds/gravity-stars",
+      "category": "Components / Backgrounds",
+      "description": "A background component featuring an interactive gravity stars effect."
+    },
+    {
+      "name": "Hexagon Background",
+      "slug": "components-backgrounds-hexagon",
+      "url": "https://animate-ui.com/docs/components/backgrounds/hexagon",
+      "category": "Components / Backgrounds",
+      "description": "A background component featuring an interactive hexagon grid."
+    },
+    {
+      "name": "Hole Background",
+      "slug": "components-backgrounds-hole",
+      "url": "https://animate-ui.com/docs/components/backgrounds/hole",
+      "category": "Components / Backgrounds",
+      "description": "A background component featuring an animated hole grid."
+    },
+    {
+      "name": "Stars Background",
+      "slug": "components-backgrounds-stars",
+      "url": "https://animate-ui.com/docs/components/backgrounds/stars",
+      "category": "Components / Backgrounds",
+      "description": "An interactive background featuring animated dots of varying sizes and speeds, simulating a dynamic and immersive starry space effect."
+    },
+    {
+      "name": "Flip Card",
+      "slug": "components-community-flip-card",
+      "url": "https://animate-ui.com/docs/components/community/flip-card",
+      "category": "Components / Community",
+      "description": "A 3D animated card component that flips to reveal content on the back."
+    },
+    {
+      "name": "Management Bar",
+      "slug": "components-community-management-bar",
+      "url": "https://animate-ui.com/docs/components/community/management-bar",
+      "category": "Components / Community",
+      "description": "A management bar that combines pagination, action buttons, and a call-to-action for streamlined item handling."
+    },
+    {
+      "name": "Motion Carousel",
+      "slug": "components-community-motion-carousel",
+      "url": "https://animate-ui.com/docs/components/community/motion-carousel",
+      "category": "Components / Community",
+      "description": "A carousel built on top of Embla Carousel with smooth Motion-powered animations. Each slide scales dynamically based on its active state, and the pagination uses animated pill-style dot buttons for an interactive, fluid experience."
+    },
+    {
+      "name": "Notification List",
+      "slug": "components-community-notification-list",
+      "url": "https://animate-ui.com/docs/components/community/notification-list",
+      "category": "Components / Community",
+      "description": "A fun notification list with animated stacking and cards that expand as you interact."
+    },
+    {
+      "name": "Pin List",
+      "slug": "components-community-pin-list",
+      "url": "https://animate-ui.com/docs/components/community/pin-list",
+      "category": "Components / Community",
+      "description": "A playful list for pinning and unpinning items, with smooth animated transitions as items move between groups."
+    },
+    {
+      "name": "Playful Todolist",
+      "slug": "components-community-playful-todolist",
+      "url": "https://animate-ui.com/docs/components/community/playful-todolist",
+      "category": "Components / Community",
+      "description": "A playful todolist component with animated wavy strikethroughs for each completed task."
+    },
+    {
+      "name": "Radial Intro",
+      "slug": "components-community-radial-intro",
+      "url": "https://animate-ui.com/docs/components/community/radial-intro",
+      "category": "Components / Community",
+      "description": "A circular intro animation component that arranges elements in a radial layout, smoothly transitioning them into orbit with looping motion."
+    },
+    {
+      "name": "Radial Menu",
+      "slug": "components-community-radial-menu",
+      "url": "https://animate-ui.com/docs/components/community/radial-menu",
+      "category": "Components / Community",
+      "description": "A circular context menu built with Base UI, displaying actions in a clean radial layout with full keyboard support and smooth interaction."
+    },
+    {
+      "name": "Radial Nav",
+      "slug": "components-community-radial-nav",
+      "url": "https://animate-ui.com/docs/components/community/radial-nav",
+      "category": "Components / Community",
+      "description": "A circular navigation menu with animated pointer and expanding buttons for smooth interactive transitions."
+    },
+    {
+      "name": "Share Button",
+      "slug": "components-community-share-button",
+      "url": "https://animate-ui.com/docs/components/community/share-button",
+      "category": "Components / Community",
+      "description": "A share button component with animated icons."
+    },
+    {
+      "name": "User Presence Avatar",
+      "slug": "components-community-user-presence-avatar",
+      "url": "https://animate-ui.com/docs/components/community/user-presence-avatar",
+      "category": "Components / Community",
+      "description": "A compact avatar group for showing online and offline users, with smooth animated transitions when presence changes."
+    },
+    {
+      "name": "Avatar Group",
+      "slug": "primitives-animate-avatar-group",
+      "url": "https://animate-ui.com/docs/primitives/animate/avatar-group",
+      "category": "Primitives / Animate UI",
+      "description": "An animated avatar group that displays overlapping user images and smoothly shifts each avatar forward on hover to highlight it."
+    },
+    {
+      "name": "Code Block",
+      "slug": "primitives-animate-code-block",
+      "url": "https://animate-ui.com/docs/primitives/animate/code-block",
+      "category": "Primitives / Animate UI",
+      "description": "A code block component that animates the code as it is written."
+    },
+    {
+      "name": "Cursor",
+      "slug": "primitives-animate-cursor",
+      "url": "https://animate-ui.com/docs/primitives/animate/cursor",
+      "category": "Primitives / Animate UI",
+      "description": "An animated cursor component that allows you to customize both the cursor and cursor follow elements with smooth animations."
+    },
+    {
+      "name": "GitHub Stars",
+      "slug": "primitives-animate-github-stars",
+      "url": "https://animate-ui.com/docs/primitives/animate/github-stars",
+      "category": "Primitives / Animate UI",
+      "description": "A component that animates a number of stars, smoothly animating number transitions using the SlidingNumber component."
+    },
+    {
+      "name": "Motion Grid",
+      "slug": "primitives-animate-motion-grid",
+      "url": "https://animate-ui.com/docs/primitives/animate/motion-grid",
+      "category": "Primitives / Animate UI",
+      "description": "A grid that displays animations in a grid."
+    },
+    {
+      "name": "Pinned List",
+      "slug": "primitives-animate-pinned-list",
+      "url": "https://animate-ui.com/docs/primitives/animate/pinned-list",
+      "category": "Primitives / Animate UI",
+      "description": "A pin list component that allows you to pin items to the top of the list."
+    },
+    {
+      "name": "Scroll Progress",
+      "slug": "primitives-animate-scroll-progress",
+      "url": "https://animate-ui.com/docs/primitives/animate/scroll-progress",
+      "category": "Primitives / Animate UI",
+      "description": "A scroll progress component that allows you to track the progress of a scrollable element."
+    },
+    {
+      "name": "Slot",
+      "slug": "primitives-animate-slot",
+      "url": "https://animate-ui.com/docs/primitives/animate/slot",
+      "category": "Primitives / Animate UI",
+      "description": "A slot component that allows you to use motion components with any element."
+    },
+    {
+      "name": "Spring",
+      "slug": "primitives-animate-spring",
+      "url": "https://animate-ui.com/docs/primitives/animate/spring",
+      "category": "Primitives / Animate UI",
+      "description": "A flexible, animated spring component that attaches a draggable element to its origin with a spring line."
+    },
+    {
+      "name": "Tabs",
+      "slug": "primitives-animate-tabs",
+      "url": "https://animate-ui.com/docs/primitives/animate/tabs",
+      "category": "Primitives / Animate UI",
+      "description": "A set of layered sections with the same height of content—known as tab panels—that are displayed one at a time."
+    },
+    {
+      "name": "Tooltip",
+      "slug": "primitives-animate-tooltip",
+      "url": "https://animate-ui.com/docs/primitives/animate/tooltip",
+      "category": "Primitives / Animate UI",
+      "description": "A tooltip is a small box that appears when hovering over an element."
+    },
+    {
+      "name": "Accordion",
+      "slug": "primitives-radix-accordion",
+      "url": "https://animate-ui.com/docs/primitives/radix/accordion",
+      "category": "Primitives / Radix UI",
+      "description": "A vertically stacked set of interactive headings that each reveal an associated section of content."
+    },
+    {
+      "name": "Alert Dialog",
+      "slug": "primitives-radix-alert-dialog",
+      "url": "https://animate-ui.com/docs/primitives/radix/alert-dialog",
+      "category": "Primitives / Radix UI",
+      "description": "A modal dialog that interrupts the user with important content and expects a response."
+    },
+    {
+      "name": "Checkbox",
+      "slug": "primitives-radix-checkbox",
+      "url": "https://animate-ui.com/docs/primitives/radix/checkbox",
+      "category": "Primitives / Radix UI",
+      "description": "A control that allows the user to toggle between checked and not checked."
+    },
+    {
+      "name": "Collapsible",
+      "slug": "primitives-radix-collapsible",
+      "url": "https://animate-ui.com/docs/primitives/radix/collapsible",
+      "category": "Primitives / Radix UI",
+      "description": "An interactive component which expands/collapses a panel."
+    },
+    {
+      "name": "Dialog",
+      "slug": "primitives-radix-dialog",
+      "url": "https://animate-ui.com/docs/primitives/radix/dialog",
+      "category": "Primitives / Radix UI",
+      "description": "A window overlaid on either the primary window or another dialog window, rendering the content underneath inert."
+    },
+    {
+      "name": "Dropdown Menu",
+      "slug": "primitives-radix-dropdown-menu",
+      "url": "https://animate-ui.com/docs/primitives/radix/dropdown-menu",
+      "category": "Primitives / Radix UI",
+      "description": "Displays a menu to the user — such as a set of actions or functions — triggered by a button."
+    },
+    {
+      "name": "Files",
+      "slug": "primitives-radix-files",
+      "url": "https://animate-ui.com/docs/primitives/radix/files",
+      "category": "Primitives / Radix UI",
+      "description": "A component that allows you to display a list of files and folders."
+    },
+    {
+      "name": "Hover Card",
+      "slug": "primitives-radix-hover-card",
+      "url": "https://animate-ui.com/docs/primitives/radix/hover-card",
+      "category": "Primitives / Radix UI",
+      "description": "For sighted users to preview content available behind a link."
+    },
+    {
+      "name": "Popover",
+      "slug": "primitives-radix-popover",
+      "url": "https://animate-ui.com/docs/primitives/radix/popover",
+      "category": "Primitives / Radix UI",
+      "description": "Displays rich content in a portal, triggered by a button."
+    },
+    {
+      "name": "Preview Link Card",
+      "slug": "primitives-radix-preview-link-card",
+      "url": "https://animate-ui.com/docs/primitives/radix/preview-link-card",
+      "category": "Primitives / Radix UI",
+      "description": "Displays a preview image of a link when hovered."
+    },
+    {
+      "name": "Progress",
+      "slug": "primitives-radix-progress",
+      "url": "https://animate-ui.com/docs/primitives/radix/progress",
+      "category": "Primitives / Radix UI",
+      "description": "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar."
+    },
+    {
+      "name": "Radio Group",
+      "slug": "primitives-radix-radio-group",
+      "url": "https://animate-ui.com/docs/primitives/radix/radio-group",
+      "category": "Primitives / Radix UI",
+      "description": "A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time."
+    },
+    {
+      "name": "Sheet",
+      "slug": "primitives-radix-sheet",
+      "url": "https://animate-ui.com/docs/primitives/radix/sheet",
+      "category": "Primitives / Radix UI",
+      "description": "Extends the Dialog component to display content that complements the main content of the screen."
+    },
+    {
+      "name": "Switch",
+      "slug": "primitives-radix-switch",
+      "url": "https://animate-ui.com/docs/primitives/radix/switch",
+      "category": "Primitives / Radix UI",
+      "description": "A control that allows the user to toggle between checked and not checked."
+    },
+    {
+      "name": "Tabs",
+      "slug": "primitives-radix-tabs",
+      "url": "https://animate-ui.com/docs/primitives/radix/tabs",
+      "category": "Primitives / Radix UI",
+      "description": "A set of layered sections of content—known as tab panels—that are displayed one at a time."
+    },
+    {
+      "name": "Toggle",
+      "slug": "primitives-radix-toggle",
+      "url": "https://animate-ui.com/docs/primitives/radix/toggle",
+      "category": "Primitives / Radix UI",
+      "description": "A two-state button that can be either on or off."
+    },
+    {
+      "name": "Toggle Group",
+      "slug": "primitives-radix-toggle-group",
+      "url": "https://animate-ui.com/docs/primitives/radix/toggle-group",
+      "category": "Primitives / Radix UI",
+      "description": "A set of two-state buttons that can be toggled on or off."
+    },
+    {
+      "name": "Tooltip",
+      "slug": "primitives-radix-tooltip",
+      "url": "https://animate-ui.com/docs/primitives/radix/tooltip",
+      "category": "Primitives / Radix UI",
+      "description": "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it."
+    },
+    {
+      "name": "Accordion",
+      "slug": "primitives-base-accordion",
+      "url": "https://animate-ui.com/docs/primitives/base/accordion",
+      "category": "Primitives / Base UI",
+      "description": "A set of collapsible panels with headings."
+    },
+    {
+      "name": "Alert Dialog",
+      "slug": "primitives-base-alert-dialog",
+      "url": "https://animate-ui.com/docs/primitives/base/alert-dialog",
+      "category": "Primitives / Base UI",
+      "description": "A dialog that requires user response to proceed."
+    },
+    {
+      "name": "Checkbox",
+      "slug": "primitives-base-checkbox",
+      "url": "https://animate-ui.com/docs/primitives/base/checkbox",
+      "category": "Primitives / Base UI",
+      "description": "An easily stylable checkbox component."
+    },
+    {
+      "name": "Collapsible",
+      "slug": "primitives-base-collapsible",
+      "url": "https://animate-ui.com/docs/primitives/base/collapsible",
+      "category": "Primitives / Base UI",
+      "description": "A collapsible panel controlled by a button."
+    },
+    {
+      "name": "Dialog",
+      "slug": "primitives-base-dialog",
+      "url": "https://animate-ui.com/docs/primitives/base/dialog",
+      "category": "Primitives / Base UI",
+      "description": "A popup that opens on top of the entire page."
+    },
+    {
+      "name": "Files",
+      "slug": "primitives-base-files",
+      "url": "https://animate-ui.com/docs/primitives/base/files",
+      "category": "Primitives / Base UI",
+      "description": "A component that allows you to display a list of files and folders."
+    },
+    {
+      "name": "Menu",
+      "slug": "primitives-base-menu",
+      "url": "https://animate-ui.com/docs/primitives/base/menu",
+      "category": "Primitives / Base UI",
+      "description": "A list of actions in a dropdown, enhanced with keyboard navigation."
+    },
+    {
+      "name": "Popover",
+      "slug": "primitives-base-popover",
+      "url": "https://animate-ui.com/docs/primitives/base/popover",
+      "category": "Primitives / Base UI",
+      "description": "An accessible popup anchored to a button."
+    },
+    {
+      "name": "Preview Card",
+      "slug": "primitives-base-preview-card",
+      "url": "https://animate-ui.com/docs/primitives/base/preview-card",
+      "category": "Primitives / Base UI",
+      "description": "A popup that appears when a link is hovered, showing a preview for sighted users."
+    },
+    {
+      "name": "Preview Link Card",
+      "slug": "primitives-base-preview-link-card",
+      "url": "https://animate-ui.com/docs/primitives/base/preview-link-card",
+      "category": "Primitives / Base UI",
+      "description": "Displays a preview image of a link when hovered."
+    },
+    {
+      "name": "Progress",
+      "slug": "primitives-base-progress",
+      "url": "https://animate-ui.com/docs/primitives/base/progress",
+      "category": "Primitives / Base UI",
+      "description": "Displays the status of a task that takes a long time."
+    },
+    {
+      "name": "Radio",
+      "slug": "primitives-base-radio",
+      "url": "https://animate-ui.com/docs/primitives/base/radio",
+      "category": "Primitives / Base UI",
+      "description": "An easily stylable radio button component."
+    },
+    {
+      "name": "Switch",
+      "slug": "primitives-base-switch",
+      "url": "https://animate-ui.com/docs/primitives/base/switch",
+      "category": "Primitives / Base UI",
+      "description": "A control that indicates whether a setting is on or off."
+    },
+    {
+      "name": "Tabs",
+      "slug": "primitives-base-tabs",
+      "url": "https://animate-ui.com/docs/primitives/base/tabs",
+      "category": "Primitives / Base UI",
+      "description": "A set of layered sections of content—known as tab panels—that are displayed one at a time."
+    },
+    {
+      "name": "Toggle",
+      "slug": "primitives-base-toggle",
+      "url": "https://animate-ui.com/docs/primitives/base/toggle",
+      "category": "Primitives / Base UI",
+      "description": "A two-state button that can be on or off."
+    },
+    {
+      "name": "Toggle Group",
+      "slug": "primitives-base-toggle-group",
+      "url": "https://animate-ui.com/docs/primitives/base/toggle-group",
+      "category": "Primitives / Base UI",
+      "description": "Provides a shared state to a series of toggle buttons."
+    },
+    {
+      "name": "Tooltip",
+      "slug": "primitives-base-tooltip",
+      "url": "https://animate-ui.com/docs/primitives/base/tooltip",
+      "category": "Primitives / Base UI",
+      "description": "A popup that appears when an element is hovered or focused, showing a hint for sighted users."
+    },
+    {
+      "name": "Checkbox",
+      "slug": "primitives-headless-checkbox",
+      "url": "https://animate-ui.com/docs/primitives/headless/checkbox",
+      "category": "Primitives / Headless UI",
+      "description": "Checkboxes provide the same functionality as native HTML checkboxes, without any of the styling, giving you a clean slate to design them however you'd like."
+    },
+    {
+      "name": "Dialog",
+      "slug": "primitives-headless-dialog",
+      "url": "https://animate-ui.com/docs/primitives/headless/dialog",
+      "category": "Primitives / Headless UI",
+      "description": "A fully-managed, renderless dialog component jam-packed with accessibility and keyboard features, perfect for building completely custom dialogs and alerts."
+    },
+    {
+      "name": "Disclosure",
+      "slug": "primitives-headless-disclosure",
+      "url": "https://animate-ui.com/docs/primitives/headless/disclosure",
+      "category": "Primitives / Headless UI",
+      "description": "A simple, accessible foundation for building custom UIs that show and hide content, like togglable accordion panels."
+    },
+    {
+      "name": "Popover",
+      "slug": "primitives-headless-popover",
+      "url": "https://animate-ui.com/docs/primitives/headless/popover",
+      "category": "Primitives / Headless UI",
+      "description": "Popovers are perfect for floating panels with arbitrary content like navigation menus, mobile menus and flyout menus."
+    },
+    {
+      "name": "Switch",
+      "slug": "primitives-headless-switch",
+      "url": "https://animate-ui.com/docs/primitives/headless/switch",
+      "category": "Primitives / Headless UI",
+      "description": "Switches are a pleasant interface for toggling a value between two states, and offer the same semantics and keyboard navigation as native checkbox elements."
+    },
+    {
+      "name": "Tabs",
+      "slug": "primitives-headless-tabs",
+      "url": "https://animate-ui.com/docs/primitives/headless/tabs",
+      "category": "Primitives / Headless UI",
+      "description": "Easily create accessible, fully customizable tab interfaces, with robust focus management and keyboard navigation support."
+    },
+    {
+      "name": "Button",
+      "slug": "primitives-buttons-button",
+      "url": "https://animate-ui.com/docs/primitives/buttons/button",
+      "category": "Primitives / Buttons",
+      "description": "A simple button that animates on hover and tap."
+    },
+    {
+      "name": "Flip",
+      "slug": "primitives-buttons-flip",
+      "url": "https://animate-ui.com/docs/primitives/buttons/flip",
+      "category": "Primitives / Buttons",
+      "description": "A button that flips between two states on hover."
+    },
+    {
+      "name": "Liquid",
+      "slug": "primitives-buttons-liquid",
+      "url": "https://animate-ui.com/docs/primitives/buttons/liquid",
+      "category": "Primitives / Buttons",
+      "description": "A button that fills on hover."
+    },
+    {
+      "name": "Ripple",
+      "slug": "primitives-buttons-ripple",
+      "url": "https://animate-ui.com/docs/primitives/buttons/ripple",
+      "category": "Primitives / Buttons",
+      "description": "A button that creates a ripple effect on tap."
+    },
+    {
+      "name": "Counting Number",
+      "slug": "primitives-texts-counting-number",
+      "url": "https://animate-ui.com/docs/primitives/texts/counting-number",
+      "category": "Primitives / Texts",
+      "description": "A counting number animation."
+    },
+    {
+      "name": "Gradient Text",
+      "slug": "primitives-texts-gradient",
+      "url": "https://animate-ui.com/docs/primitives/texts/gradient",
+      "category": "Primitives / Texts",
+      "description": "A gradient text animation."
+    },
+    {
+      "name": "Highlight Text",
+      "slug": "primitives-texts-highlight",
+      "url": "https://animate-ui.com/docs/primitives/texts/highlight",
+      "category": "Primitives / Texts",
+      "description": "A highlight text animation."
+    },
+    {
+      "name": "Morphing Text",
+      "slug": "primitives-texts-morphing",
+      "url": "https://animate-ui.com/docs/primitives/texts/morphing",
+      "category": "Primitives / Texts",
+      "description": "A text component that smoothly morphs characters to transition between strings."
+    },
+    {
+      "name": "Rolling Text",
+      "slug": "primitives-texts-rolling",
+      "url": "https://animate-ui.com/docs/primitives/texts/rolling",
+      "category": "Primitives / Texts",
+      "description": "A rolling text animation."
+    },
+    {
+      "name": "Rotating Text",
+      "slug": "primitives-texts-rotating",
+      "url": "https://animate-ui.com/docs/primitives/texts/rotating",
+      "category": "Primitives / Texts",
+      "description": "A rotating text animation."
+    },
+    {
+      "name": "Scrolling Number",
+      "slug": "primitives-texts-scrolling-number",
+      "url": "https://animate-ui.com/docs/primitives/texts/scrolling-number",
+      "category": "Primitives / Texts",
+      "description": "A scrolling number animation."
+    },
+    {
+      "name": "Shimmering Text",
+      "slug": "primitives-texts-shimmering",
+      "url": "https://animate-ui.com/docs/primitives/texts/shimmering",
+      "category": "Primitives / Texts",
+      "description": "A shimmering text animation."
+    },
+    {
+      "name": "Sliding Number",
+      "slug": "primitives-texts-sliding-number",
+      "url": "https://animate-ui.com/docs/primitives/texts/sliding-number",
+      "category": "Primitives / Texts",
+      "description": "A sliding number animation."
+    },
+    {
+      "name": "Splitting Text",
+      "slug": "primitives-texts-splitting",
+      "url": "https://animate-ui.com/docs/primitives/texts/splitting",
+      "category": "Primitives / Texts",
+      "description": "A splitting text animation."
+    },
+    {
+      "name": "Typing Text",
+      "slug": "primitives-texts-typing",
+      "url": "https://animate-ui.com/docs/primitives/texts/typing",
+      "category": "Primitives / Texts",
+      "description": "A typing text animation."
+    },
+    {
+      "name": "Auto Height",
+      "slug": "primitives-effects-auto-height",
+      "url": "https://animate-ui.com/docs/primitives/effects/auto-height",
+      "category": "Primitives / Effects",
+      "description": "An effect that automatically adjusts the height of an element based on its content."
+    },
+    {
+      "name": "Blur",
+      "slug": "primitives-effects-blur",
+      "url": "https://animate-ui.com/docs/primitives/effects/blur",
+      "category": "Primitives / Effects",
+      "description": "An effect that allows you to animate elements with a blur effect on first view or load."
+    },
+    {
+      "name": "Click",
+      "slug": "primitives-effects-click",
+      "url": "https://animate-ui.com/docs/primitives/effects/click",
+      "category": "Primitives / Effects",
+      "description": "An effect that creates animated effects at the click position, adding interactive feedback to user actions."
+    },
+    {
+      "name": "Effect",
+      "slug": "primitives-effects-effect",
+      "url": "https://animate-ui.com/docs/primitives/effects/effect",
+      "category": "Primitives / Effects",
+      "description": "An effect that allows you to animate elements on first view or load."
+    },
+    {
+      "name": "Fade",
+      "slug": "primitives-effects-fade",
+      "url": "https://animate-ui.com/docs/primitives/effects/fade",
+      "category": "Primitives / Effects",
+      "description": "An effect that allows you to animate elements with a fade effect on first view or load."
+    },
+    {
+      "name": "Highlight",
+      "slug": "primitives-effects-highlight",
+      "url": "https://animate-ui.com/docs/primitives/effects/highlight",
+      "category": "Primitives / Effects",
+      "description": "A highlight effect that allows you to highlight elements on hover, click or with a controlled value."
+    },
+    {
+      "name": "Image Zoom",
+      "slug": "primitives-effects-image-zoom",
+      "url": "https://animate-ui.com/docs/primitives/effects/image-zoom",
+      "category": "Primitives / Effects",
+      "description": "An effect that allows you to zoom in on an image on hover."
+    },
+    {
+      "name": "Magnetic",
+      "slug": "primitives-effects-magnetic",
+      "url": "https://animate-ui.com/docs/primitives/effects/magnetic",
+      "category": "Primitives / Effects",
+      "description": "A magnetic effect that clings to the cursor, creating a magnetic attraction effect."
+    },
+    {
+      "name": "Particles",
+      "slug": "primitives-effects-particles",
+      "url": "https://animate-ui.com/docs/primitives/effects/particles",
+      "category": "Primitives / Effects",
+      "description": "A particles effect that creates a particle system."
+    },
+    {
+      "name": "Shine",
+      "slug": "primitives-effects-shine",
+      "url": "https://animate-ui.com/docs/primitives/effects/shine",
+      "category": "Primitives / Effects",
+      "description": "An animated light sweep effect with configurable timing, colors, and triggers (hover, tap, or continuous)."
+    },
+    {
+      "name": "Slide",
+      "slug": "primitives-effects-slide",
+      "url": "https://animate-ui.com/docs/primitives/effects/slide",
+      "category": "Primitives / Effects",
+      "description": "An effect that allows you to animate elements with a slide effect on first view or load."
+    },
+    {
+      "name": "Theme Toggler",
+      "slug": "primitives-effects-theme-toggler",
+      "url": "https://animate-ui.com/docs/primitives/effects/theme-toggler",
+      "category": "Primitives / Effects",
+      "description": "An effect that allows you to toggle the theme gradually."
+    },
+    {
+      "name": "Tilt",
+      "slug": "primitives-effects-tilt",
+      "url": "https://animate-ui.com/docs/primitives/effects/tilt",
+      "category": "Primitives / Effects",
+      "description": "An effect that allows you to animate elements with a tilt effect on mouse hover."
+    },
+    {
+      "name": "Zoom",
+      "slug": "primitives-effects-zoom",
+      "url": "https://animate-ui.com/docs/primitives/effects/zoom",
+      "category": "Primitives / Effects",
+      "description": "An effect that allows you to animate elements with a zoom effect on first view or load."
+    }
+  ]
+}

@@ -4,7 +4,13 @@ export type SourceId =
   | "fancy"
   | "numberflow"
   | "watermelon"
-  | "aceternity";
+  | "aceternity"
+  | "shadcn"
+  | "magicui"
+  | "animata"
+  | "animateui"
+  | "launchui"
+  | "originui";
 
 export type License = "mit" | "free" | "freemium" | "paid";
 export type PreviewMode = "live" | "linkout";

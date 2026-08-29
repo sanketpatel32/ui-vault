@@ -1,0 +1,546 @@
+{
+  "status": "ok",
+  "id": "magicui",
+  "name": "Magic UI",
+  "url": "https://magicui.design",
+  "repo": "magicuidesign/magicui",
+  "license": "MIT",
+  "install": "npx shadcn@latest add @magicui/<component>",
+  "stack": ["react", "typescript", "tailwind", "motion"],
+  "notes": "MIT-licensed (LICENSE file + GitHub metadata), actively maintained (~22k stars, last push 2026-08-11). Not an npm runtime package: components are copied into your project via the shadcn CLI registry (npx shadcn@latest add @magicui/<slug>), the same distribution model as shadcn/ui. Built for React 19 + Tailwind CSS v4 + Motion (Framer Motion successor) with shadcn/ui conventions (cn utility, components/ui directory); some components pull extra peer deps automatically via registryDependencies (e.g. cobe for Globe, canvas-confetti for Confetti, react-tweet for Tweet Card). Their paid products are templates (pro.magicui.design), not components - all 76 components are free. Categories are the library's own docs-sidebar groupings (Components, Special Effects, Animations, Text Animations, Device Mocks, Buttons, Backgrounds, Community). List verified complete against apps/www/content/docs/components/ on repo main branch as of 2026-08-29: 76 mdx files match 76 sidebar entries with no orphans. Note: slug 'highlighter' is titled 'Text Highlighter' and slug 'animated-theme-toggler' is titled 'Theme Toggler'.",
+  "count": 76,
+  "components": [
+    {
+      "name": "Marquee",
+      "slug": "marquee",
+      "url": "https://magicui.design/docs/components/marquee",
+      "category": "Components",
+      "description": "Infinite scrolling carousel for text, images or videos."
+    },
+    {
+      "name": "Terminal",
+      "slug": "terminal",
+      "url": "https://magicui.design/docs/components/terminal",
+      "category": "Components",
+      "description": "macOS terminal mockup for showcasing CLI output."
+    },
+    {
+      "name": "Hero Video Dialog",
+      "slug": "hero-video-dialog",
+      "url": "https://magicui.design/docs/components/hero-video-dialog",
+      "category": "Components",
+      "description": "Hero video that expands from an inline thumbnail into a dialog player."
+    },
+    {
+      "name": "Bento Grid",
+      "slug": "bento-grid",
+      "url": "https://magicui.design/docs/components/bento-grid",
+      "category": "Components",
+      "description": "Bento-style grid layout for elegantly showcasing product features."
+    },
+    {
+      "name": "Animated List",
+      "slug": "animated-list",
+      "url": "https://magicui.design/docs/components/animated-list",
+      "category": "Components",
+      "description": "List whose items animate in one by one with a delay; suited to notification or event feeds on landing pages."
+    },
+    {
+      "name": "Dock",
+      "slug": "dock",
+      "url": "https://magicui.design/docs/components/dock",
+      "category": "Components",
+      "description": "macOS-style magnifying dock navigation built with Tailwind and Motion."
+    },
+    {
+      "name": "Globe",
+      "slug": "globe",
+      "url": "https://magicui.design/docs/components/globe",
+      "category": "Components",
+      "description": "Auto-rotating, interactive WebGL globe built on cobe."
+    },
+    {
+      "name": "Tweet Card",
+      "slug": "tweet-card",
+      "url": "https://magicui.design/docs/components/tweet-card",
+      "category": "Components",
+      "description": "Embeds a tweet with author name, handle and profile picture."
+    },
+    {
+      "name": "Orbiting Circles",
+      "slug": "orbiting-circles",
+      "url": "https://magicui.design/docs/components/orbiting-circles",
+      "category": "Components",
+      "description": "Icons or circles orbiting along a circular path."
+    },
+    {
+      "name": "Avatar Circles",
+      "slug": "avatar-circles",
+      "url": "https://magicui.design/docs/components/avatar-circles",
+      "category": "Components",
+      "description": "Overlapping row of avatar images, e.g. for social proof or user groups."
+    },
+    {
+      "name": "Icon Cloud",
+      "slug": "icon-cloud",
+      "url": "https://magicui.design/docs/components/icon-cloud",
+      "category": "Components",
+      "description": "Interactive 3D tag/icon cloud."
+    },
+    {
+      "name": "Lens",
+      "slug": "lens",
+      "url": "https://magicui.design/docs/components/lens",
+      "category": "Components",
+      "description": "Magnifier lens that zooms into images, videos and other elements."
+    },
+    {
+      "name": "Pointer",
+      "slug": "pointer",
+      "url": "https://magicui.design/docs/components/pointer",
+      "category": "Components",
+      "description": "Shows a custom pointer graphic when hovering over an element."
+    },
+    {
+      "name": "Smooth Cursor",
+      "slug": "smooth-cursor",
+      "url": "https://magicui.design/docs/components/smooth-cursor",
+      "category": "Components",
+      "description": "Physics-based smooth trailing cursor animation."
+    },
+    {
+      "name": "Progressive Blur",
+      "slug": "progressive-blur",
+      "url": "https://magicui.design/docs/components/progressive-blur",
+      "category": "Components",
+      "description": "Progressively blurs content as it scrolls under an edge, similar to iOS bars."
+    },
+    {
+      "name": "Dotted Map",
+      "slug": "dotted-map",
+      "url": "https://magicui.design/docs/components/dotted-map",
+      "category": "Components",
+      "description": "SVG dotted world map for visualizing geographic data."
+    },
+    {
+      "name": "Animated Beam",
+      "slug": "animated-beam",
+      "url": "https://magicui.design/docs/components/animated-beam",
+      "category": "Special Effects",
+      "description": "Animated beam of light travelling along an SVG path; ideal for visualizing integrations or data flow between UI elements."
+    },
+    {
+      "name": "Border Beam",
+      "slug": "border-beam",
+      "url": "https://magicui.design/docs/components/border-beam",
+      "category": "Special Effects",
+      "description": "Beam of light that travels along the border of its container."
+    },
+    {
+      "name": "Shine Border",
+      "slug": "shine-border",
+      "url": "https://magicui.design/docs/components/shine-border",
+      "category": "Special Effects",
+      "description": "Animated colored border glow effect for containers."
+    },
+    {
+      "name": "Magic Card",
+      "slug": "magic-card",
+      "url": "https://magicui.design/docs/components/magic-card",
+      "category": "Special Effects",
+      "description": "Card with a mouse-following spotlight and border highlight on hover."
+    },
+    {
+      "name": "Glare Hover",
+      "slug": "glare-hover",
+      "url": "https://magicui.design/docs/components/glare-hover",
+      "category": "Special Effects",
+      "description": "Diagonal light glare that tracks the cursor on hover, implemented purely with CSS gradients."
+    },
+    {
+      "name": "Meteors",
+      "slug": "meteors",
+      "url": "https://magicui.design/docs/components/meteors",
+      "category": "Special Effects",
+      "description": "Meteor shower background effect."
+    },
+    {
+      "name": "Confetti",
+      "slug": "confetti",
+      "url": "https://magicui.design/docs/components/confetti",
+      "category": "Special Effects",
+      "description": "Confetti burst animation to delight users on special actions; wraps canvas-confetti."
+    },
+    {
+      "name": "Particles",
+      "slug": "particles",
+      "url": "https://magicui.design/docs/components/particles",
+      "category": "Special Effects",
+      "description": "Floating particle effect that adds depth to hero sections."
+    },
+    {
+      "name": "Theme Toggler",
+      "slug": "animated-theme-toggler",
+      "url": "https://magicui.design/docs/components/animated-theme-toggler",
+      "category": "Special Effects",
+      "description": "Dark/light theme toggle animated with the View Transitions API and configurable clip-path shapes."
+    },
+    {
+      "name": "Blur Fade",
+      "slug": "blur-fade",
+      "url": "https://magicui.design/docs/components/blur-fade",
+      "category": "Animations",
+      "description": "Blur fade-in/out animation for smoothly revealing content on mount or scroll."
+    },
+    {
+      "name": "Text Animate",
+      "slug": "text-animate",
+      "url": "https://magicui.design/docs/components/text-animate",
+      "category": "Text Animations",
+      "description": "Multi-purpose text animation component supporting many animation styles."
+    },
+    {
+      "name": "Typing Animation",
+      "slug": "typing-animation",
+      "url": "https://magicui.design/docs/components/typing-animation",
+      "category": "Text Animations",
+      "description": "Types text out character by character."
+    },
+    {
+      "name": "Line Shadow Text",
+      "slug": "line-shadow-text",
+      "url": "https://magicui.design/docs/components/line-shadow-text",
+      "category": "Text Animations",
+      "description": "Text with a moving line shadow creating a 3D depth effect."
+    },
+    {
+      "name": "Aurora Text",
+      "slug": "aurora-text",
+      "url": "https://magicui.design/docs/components/aurora-text",
+      "category": "Text Animations",
+      "description": "Text rendered with an aurora-style gradient color effect."
+    },
+    {
+      "name": "Video Text",
+      "slug": "video-text",
+      "url": "https://magicui.design/docs/components/video-text",
+      "category": "Text Animations",
+      "description": "Text with a video playing as its background."
+    },
+    {
+      "name": "Number Ticker",
+      "slug": "number-ticker",
+      "url": "https://magicui.design/docs/components/number-ticker",
+      "category": "Text Animations",
+      "description": "Animates a number counting up or down to a target value."
+    },
+    {
+      "name": "Animated Shiny Text",
+      "slug": "animated-shiny-text",
+      "url": "https://magicui.design/docs/components/animated-shiny-text",
+      "category": "Text Animations",
+      "description": "Light glare effect that pans across text making it shimmer."
+    },
+    {
+      "name": "Animated Gradient Text",
+      "slug": "animated-gradient-text",
+      "url": "https://magicui.design/docs/components/animated-gradient-text",
+      "category": "Text Animations",
+      "description": "Text backed by a gradient that smoothly transitions between colors."
+    },
+    {
+      "name": "Text Reveal",
+      "slug": "text-reveal",
+      "url": "https://magicui.design/docs/components/text-reveal",
+      "category": "Text Animations",
+      "description": "Fades text in word by word as the user scrolls down the page."
+    },
+    {
+      "name": "Dia Text Reveal",
+      "slug": "dia-text-reveal",
+      "url": "https://magicui.design/docs/components/dia-text-reveal",
+      "category": "Text Animations",
+      "description": "Text reveal where a horizontal color band with gradient shine sweeps across before settling on the theme color."
+    },
+    {
+      "name": "Hyper Text",
+      "slug": "hyper-text",
+      "url": "https://magicui.design/docs/components/hyper-text",
+      "category": "Text Animations",
+      "description": "Scrambles letters before settling on the final text."
+    },
+    {
+      "name": "Word Rotate",
+      "slug": "word-rotate",
+      "url": "https://magicui.design/docs/components/word-rotate",
+      "category": "Text Animations",
+      "description": "Vertically rotates through a list of words."
+    },
+    {
+      "name": "Scroll Based Velocity",
+      "slug": "scroll-based-velocity",
+      "url": "https://magicui.design/docs/components/scroll-based-velocity",
+      "category": "Text Animations",
+      "description": "Marquee-style text whose speed changes with scroll velocity."
+    },
+    {
+      "name": "Sparkles Text",
+      "slug": "sparkles-text",
+      "url": "https://magicui.design/docs/components/sparkles-text",
+      "category": "Text Animations",
+      "description": "Text that continuously generates sparkles around itself."
+    },
+    {
+      "name": "Morphing Text",
+      "slug": "morphing-text",
+      "url": "https://magicui.design/docs/components/morphing-text",
+      "category": "Text Animations",
+      "description": "Text that morphs between different words."
+    },
+    {
+      "name": "Spinning Text",
+      "slug": "spinning-text",
+      "url": "https://magicui.design/docs/components/spinning-text",
+      "category": "Text Animations",
+      "description": "Text animated in a circular motion with configurable speed, direction and color."
+    },
+    {
+      "name": "Text Highlighter",
+      "slug": "highlighter",
+      "url": "https://magicui.design/docs/components/highlighter",
+      "category": "Text Animations",
+      "description": "Marker-stroke highlight over text that mimics a hand-drawn stroke."
+    },
+    {
+      "name": "Text 3D Flip",
+      "slug": "text-3d-flip",
+      "url": "https://magicui.design/docs/components/text-3d-flip",
+      "category": "Text Animations",
+      "description": "Flips each letter in 3D with a staggered animation on hover."
+    },
+    {
+      "name": "Safari",
+      "slug": "safari",
+      "url": "https://magicui.design/docs/components/safari",
+      "category": "Device Mocks",
+      "description": "Safari browser window mockup for showcasing a website screenshot."
+    },
+    {
+      "name": "iPhone",
+      "slug": "iphone",
+      "url": "https://magicui.design/docs/components/iphone",
+      "category": "Device Mocks",
+      "description": "iPhone mockup frame for showcasing app screens."
+    },
+    {
+      "name": "Android",
+      "slug": "android",
+      "url": "https://magicui.design/docs/components/android",
+      "category": "Device Mocks",
+      "description": "Android phone mockup frame for showcasing mobile app screens or screenshots."
+    },
+    {
+      "name": "Rainbow Button",
+      "slug": "rainbow-button",
+      "url": "https://magicui.design/docs/components/rainbow-button",
+      "category": "Buttons",
+      "description": "Button with an animated rainbow gradient border/background."
+    },
+    {
+      "name": "Shimmer Button",
+      "slug": "shimmer-button",
+      "url": "https://magicui.design/docs/components/shimmer-button",
+      "category": "Buttons",
+      "description": "Button with a shimmer of light travelling around its perimeter."
+    },
+    {
+      "name": "Ripple Button",
+      "slug": "ripple-button",
+      "url": "https://magicui.design/docs/components/ripple-button",
+      "category": "Buttons",
+      "description": "Button with a ripple effect on click for engagement."
+    },
+    {
+      "name": "Flickering Grid",
+      "slug": "flickering-grid",
+      "url": "https://magicui.design/docs/components/flickering-grid",
+      "category": "Backgrounds",
+      "description": "Flickering SVG grid background effect."
+    },
+    {
+      "name": "Animated Grid Pattern",
+      "slug": "animated-grid-pattern",
+      "url": "https://magicui.design/docs/components/animated-grid-pattern",
+      "category": "Backgrounds",
+      "description": "Animated SVG grid pattern background, customizable via Tailwind CSS."
+    },
+    {
+      "name": "Retro Grid",
+      "slug": "retro-grid",
+      "url": "https://magicui.design/docs/components/retro-grid",
+      "category": "Backgrounds",
+      "description": "Animated scrolling retro perspective grid background."
+    },
+    {
+      "name": "Ripple",
+      "slug": "ripple",
+      "url": "https://magicui.design/docs/components/ripple",
+      "category": "Backgrounds",
+      "description": "Pulsing ripple effect placed behind elements to emphasize them."
+    },
+    {
+      "name": "Dot Pattern",
+      "slug": "dot-pattern",
+      "url": "https://magicui.design/docs/components/dot-pattern",
+      "category": "Backgrounds",
+      "description": "SVG dot pattern background, customizable via Tailwind CSS."
+    },
+    {
+      "name": "Grid Pattern",
+      "slug": "grid-pattern",
+      "url": "https://magicui.design/docs/components/grid-pattern",
+      "category": "Backgrounds",
+      "description": "SVG grid pattern background, customizable via Tailwind CSS."
+    },
+    {
+      "name": "Hexagon Pattern",
+      "slug": "hexagon-pattern",
+      "url": "https://magicui.design/docs/components/hexagon-pattern",
+      "category": "Backgrounds",
+      "description": "SVG hexagon pattern background, customizable via Tailwind CSS."
+    },
+    {
+      "name": "Striped Pattern",
+      "slug": "striped-pattern",
+      "url": "https://magicui.design/docs/components/striped-pattern",
+      "category": "Backgrounds",
+      "description": "SVG striped pattern background, customizable via Tailwind CSS."
+    },
+    {
+      "name": "Interactive Grid Pattern",
+      "slug": "interactive-grid-pattern",
+      "url": "https://magicui.design/docs/components/interactive-grid-pattern",
+      "category": "Backgrounds",
+      "description": "Grid pattern background that reacts to pointer movement."
+    },
+    {
+      "name": "Light Rays",
+      "slug": "light-rays",
+      "url": "https://magicui.design/docs/components/light-rays",
+      "category": "Backgrounds",
+      "description": "Animated rays of light shining down from above."
+    },
+    {
+      "name": "Noise Texture",
+      "slug": "noise-texture",
+      "url": "https://magicui.design/docs/components/noise-texture",
+      "category": "Backgrounds",
+      "description": "SVG fractal noise (feTurbulence) overlay for subtle texture backgrounds."
+    },
+    {
+      "name": "Shiny Button",
+      "slug": "shiny-button",
+      "url": "https://magicui.design/docs/components/shiny-button",
+      "category": "Community",
+      "description": "Shiny button with dynamic styling for light and dark mode."
+    },
+    {
+      "name": "File Tree",
+      "slug": "file-tree",
+      "url": "https://magicui.design/docs/components/file-tree",
+      "category": "Community",
+      "description": "Collapsible tree view for presenting folder and file structures."
+    },
+    {
+      "name": "Code Comparison",
+      "slug": "code-comparison",
+      "url": "https://magicui.design/docs/components/code-comparison",
+      "category": "Community",
+      "description": "Side-by-side component for comparing two code snippets."
+    },
+    {
+      "name": "Scroll Progress",
+      "slug": "scroll-progress",
+      "url": "https://magicui.design/docs/components/scroll-progress",
+      "category": "Community",
+      "description": "Animated page scroll progress indicator."
+    },
+    {
+      "name": "Neon Gradient Card",
+      "slug": "neon-gradient-card",
+      "url": "https://magicui.design/docs/components/neon-gradient-card",
+      "category": "Community",
+      "description": "Card wrapped in a neon gradient glow effect."
+    },
+    {
+      "name": "Comic Text",
+      "slug": "comic-text",
+      "url": "https://magicui.design/docs/components/comic-text",
+      "category": "Community",
+      "description": "Playful comic-book-style text animation."
+    },
+    {
+      "name": "Kinetic Text",
+      "slug": "kinetic-text",
+      "url": "https://magicui.design/docs/components/kinetic-text",
+      "category": "Community",
+      "description": "Animates the font weight of characters on hover for a kinetic typography feel."
+    },
+    {
+      "name": "Cool Mode",
+      "slug": "cool-mode",
+      "url": "https://magicui.design/docs/components/cool-mode",
+      "category": "Community",
+      "description": "Adds a particle burst effect to buttons, links and other DOM elements."
+    },
+    {
+      "name": "Pixel Image",
+      "slug": "pixel-image",
+      "url": "https://magicui.design/docs/components/pixel-image",
+      "category": "Community",
+      "description": "Displays an image with a pixelated reveal effect."
+    },
+    {
+      "name": "Pulsating Button",
+      "slug": "pulsating-button",
+      "url": "https://magicui.design/docs/components/pulsating-button",
+      "category": "Community",
+      "description": "Pulsating button for drawing attention to primary actions."
+    },
+    {
+      "name": "Warp Background",
+      "slug": "warp-background",
+      "url": "https://magicui.design/docs/components/warp-background",
+      "category": "Community",
+      "description": "Card with an animated time-warping background effect."
+    },
+    {
+      "name": "Interactive Hover Button",
+      "slug": "interactive-hover-button",
+      "url": "https://magicui.design/docs/components/interactive-hover-button",
+      "category": "Community",
+      "description": "Button with dynamic, smooth hover transitions between states."
+    },
+    {
+      "name": "Animated Circular Progress Bar",
+      "slug": "animated-circular-progress-bar",
+      "url": "https://magicui.design/docs/components/animated-circular-progress-bar",
+      "category": "Community",
+      "description": "Circular gauge that animates to a percentage value; good for stats and KPIs."
+    },
+    {
+      "name": "Backlight",
+      "slug": "backlight",
+      "url": "https://magicui.design/docs/components/backlight",
+      "category": "Community",
+      "description": "Glowing backlight effect placed behind videos, images and SVGs."
+    },
+    {
+      "name": "Glyph Matrix",
+      "slug": "glyph-matrix",
+      "url": "https://magicui.design/docs/components/glyph-matrix",
+      "category": "Community",
+      "description": "Canvas grid of subtly shifting glyphs with theme-aware colors."
+    }
+  ]
+}

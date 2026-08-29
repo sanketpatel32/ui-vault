@@ -1,0 +1,468 @@
+{
+  "status": "ok",
+  "id": "shadcn",
+  "name": "shadcn/ui",
+  "url": "https://ui.shadcn.com",
+  "repo": "shadcn-ui/ui",
+  "license": "MIT",
+  "install": "npx shadcn@latest add <component>",
+  "stack": ["react", "typescript", "tailwind", "radix"],
+  "notes": "Not a traditional npm dependency: the CLI copies component source code into your project (init then add). v4 docs (repo main, apps/v4) organize components under three primitive variants: radix (default, 65 mdx), base (Base UI, 64; no sonner) and aria (ARIA-only, 63; no menubar/navigation-menu); this list is the union = the radix/default set (65). Legacy Form component is superseded by Field; Toast now coexists with Sonner. Chart uses Recharts, Data Table uses TanStack Table, Carousel uses Embla, Drawer uses Vaul. Descriptions taken verbatim from the frontmatter of each component mdx on repo main; the deployed site may differ slightly (e.g. /docs/components/typography is branded 'Typeset' live but titled 'Typography' in the repo).",
+  "components": [
+    {
+      "name": "Accordion",
+      "slug": "accordion",
+      "url": "https://ui.shadcn.com/docs/components/accordion",
+      "category": "data-display",
+      "description": "A vertically stacked set of interactive headings that each reveal a section of content."
+    },
+    {
+      "name": "Alert",
+      "slug": "alert",
+      "url": "https://ui.shadcn.com/docs/components/alert",
+      "category": "feedback",
+      "description": "Displays a callout for user attention."
+    },
+    {
+      "name": "Alert Dialog",
+      "slug": "alert-dialog",
+      "url": "https://ui.shadcn.com/docs/components/alert-dialog",
+      "category": "overlay",
+      "description": "A modal dialog that interrupts the user with important content and expects a response."
+    },
+    {
+      "name": "Aspect Ratio",
+      "slug": "aspect-ratio",
+      "url": "https://ui.shadcn.com/docs/components/aspect-ratio",
+      "category": "misc",
+      "description": "Displays content within a desired ratio."
+    },
+    {
+      "name": "Attachment",
+      "slug": "attachment",
+      "url": "https://ui.shadcn.com/docs/components/attachment",
+      "category": "data-display",
+      "description": "Displays a file or image attachment with media, metadata, upload state, and actions."
+    },
+    {
+      "name": "Avatar",
+      "slug": "avatar",
+      "url": "https://ui.shadcn.com/docs/components/avatar",
+      "category": "data-display",
+      "description": "An image element with a fallback for representing the user."
+    },
+    {
+      "name": "Badge",
+      "slug": "badge",
+      "url": "https://ui.shadcn.com/docs/components/badge",
+      "category": "data-display",
+      "description": "Displays a badge or a component that looks like a badge."
+    },
+    {
+      "name": "Breadcrumb",
+      "slug": "breadcrumb",
+      "url": "https://ui.shadcn.com/docs/components/breadcrumb",
+      "category": "navigation",
+      "description": "Displays the path to the current resource using a hierarchy of links."
+    },
+    {
+      "name": "Bubble",
+      "slug": "bubble",
+      "url": "https://ui.shadcn.com/docs/components/bubble",
+      "category": "data-display",
+      "description": "Displays conversational content in a message bubble. Supports variants, alignment, grouping, reactions, and collapsible content."
+    },
+    {
+      "name": "Button",
+      "slug": "button",
+      "url": "https://ui.shadcn.com/docs/components/button",
+      "category": "form-control",
+      "description": "Displays a button or a component that looks like a button."
+    },
+    {
+      "name": "Button Group",
+      "slug": "button-group",
+      "url": "https://ui.shadcn.com/docs/components/button-group",
+      "category": "form-control",
+      "description": "A container that groups related buttons together with consistent styling."
+    },
+    {
+      "name": "Calendar",
+      "slug": "calendar",
+      "url": "https://ui.shadcn.com/docs/components/calendar",
+      "category": "form-control",
+      "description": "A calendar component that allows users to select a date or a range of dates."
+    },
+    {
+      "name": "Card",
+      "slug": "card",
+      "url": "https://ui.shadcn.com/docs/components/card",
+      "category": "data-display",
+      "description": "Displays a card with header, content, and footer."
+    },
+    {
+      "name": "Carousel",
+      "slug": "carousel",
+      "url": "https://ui.shadcn.com/docs/components/carousel",
+      "category": "navigation",
+      "description": "A carousel with motion and swipe built using Embla."
+    },
+    {
+      "name": "Chart",
+      "slug": "chart",
+      "url": "https://ui.shadcn.com/docs/components/chart",
+      "category": "data-display",
+      "description": "Beautiful charts. Built using Recharts. Copy and paste into your apps."
+    },
+    {
+      "name": "Checkbox",
+      "slug": "checkbox",
+      "url": "https://ui.shadcn.com/docs/components/checkbox",
+      "category": "form-control",
+      "description": "A control that allows the user to toggle between checked and not checked."
+    },
+    {
+      "name": "Collapsible",
+      "slug": "collapsible",
+      "url": "https://ui.shadcn.com/docs/components/collapsible",
+      "category": "data-display",
+      "description": "An interactive component which expands/collapses a panel."
+    },
+    {
+      "name": "Combobox",
+      "slug": "combobox",
+      "url": "https://ui.shadcn.com/docs/components/combobox",
+      "category": "form-control",
+      "description": "Autocomplete input with a list of suggestions."
+    },
+    {
+      "name": "Command",
+      "slug": "command",
+      "url": "https://ui.shadcn.com/docs/components/command",
+      "category": "overlay",
+      "description": "Command menu for search and quick actions."
+    },
+    {
+      "name": "Context Menu",
+      "slug": "context-menu",
+      "url": "https://ui.shadcn.com/docs/components/context-menu",
+      "category": "overlay",
+      "description": "Displays a menu of actions triggered by a right click."
+    },
+    {
+      "name": "Data Table",
+      "slug": "data-table",
+      "url": "https://ui.shadcn.com/docs/components/data-table",
+      "category": "data-display",
+      "description": "Powerful table and datagrids built using TanStack Table."
+    },
+    {
+      "name": "Date Picker",
+      "slug": "date-picker",
+      "url": "https://ui.shadcn.com/docs/components/date-picker",
+      "category": "form-control",
+      "description": "A date picker component with range and presets."
+    },
+    {
+      "name": "Dialog",
+      "slug": "dialog",
+      "url": "https://ui.shadcn.com/docs/components/dialog",
+      "category": "overlay",
+      "description": "A window overlaid on either the primary window or another dialog window, rendering the content underneath inert."
+    },
+    {
+      "name": "Direction",
+      "slug": "direction",
+      "url": "https://ui.shadcn.com/docs/components/direction",
+      "category": "misc",
+      "description": "A provider component that sets the text direction for your application."
+    },
+    {
+      "name": "Drawer",
+      "slug": "drawer",
+      "url": "https://ui.shadcn.com/docs/components/drawer",
+      "category": "overlay",
+      "description": "A drawer component for React."
+    },
+    {
+      "name": "Dropdown Menu",
+      "slug": "dropdown-menu",
+      "url": "https://ui.shadcn.com/docs/components/dropdown-menu",
+      "category": "overlay",
+      "description": "Displays a menu to the user — such as a set of actions or functions — triggered by a button."
+    },
+    {
+      "name": "Empty",
+      "slug": "empty",
+      "url": "https://ui.shadcn.com/docs/components/empty",
+      "category": "feedback",
+      "description": "Use the Empty component to display an empty state."
+    },
+    {
+      "name": "Field",
+      "slug": "field",
+      "url": "https://ui.shadcn.com/docs/components/field",
+      "category": "form-control",
+      "description": "Combine labels, controls, and help text to compose accessible form fields and grouped inputs."
+    },
+    {
+      "name": "Hover Card",
+      "slug": "hover-card",
+      "url": "https://ui.shadcn.com/docs/components/hover-card",
+      "category": "overlay",
+      "description": "For sighted users to preview content available behind a link."
+    },
+    {
+      "name": "Input",
+      "slug": "input",
+      "url": "https://ui.shadcn.com/docs/components/input",
+      "category": "form-control",
+      "description": "A text input component for forms and user data entry with built-in styling and accessibility features."
+    },
+    {
+      "name": "Input Group",
+      "slug": "input-group",
+      "url": "https://ui.shadcn.com/docs/components/input-group",
+      "category": "form-control",
+      "description": "Add addons, buttons, and helper content to inputs."
+    },
+    {
+      "name": "Input OTP",
+      "slug": "input-otp",
+      "url": "https://ui.shadcn.com/docs/components/input-otp",
+      "category": "form-control",
+      "description": "Accessible one-time password component with copy-paste functionality."
+    },
+    {
+      "name": "Item",
+      "slug": "item",
+      "url": "https://ui.shadcn.com/docs/components/item",
+      "category": "data-display",
+      "description": "A versatile component for displaying content with media, title, description, and actions."
+    },
+    {
+      "name": "Kbd",
+      "slug": "kbd",
+      "url": "https://ui.shadcn.com/docs/components/kbd",
+      "category": "typography",
+      "description": "Used to display textual user input from keyboard."
+    },
+    {
+      "name": "Label",
+      "slug": "label",
+      "url": "https://ui.shadcn.com/docs/components/label",
+      "category": "form-control",
+      "description": "Renders an accessible label associated with controls."
+    },
+    {
+      "name": "Marker",
+      "slug": "marker",
+      "url": "https://ui.shadcn.com/docs/components/marker",
+      "category": "data-display",
+      "description": "Displays an inline status, system note, bordered row, or labeled separator in a conversation."
+    },
+    {
+      "name": "Menubar",
+      "slug": "menubar",
+      "url": "https://ui.shadcn.com/docs/components/menubar",
+      "category": "navigation",
+      "description": "A visually persistent menu common in desktop applications that provides quick access to a consistent set of commands."
+    },
+    {
+      "name": "Message",
+      "slug": "message",
+      "url": "https://ui.shadcn.com/docs/components/message",
+      "category": "data-display",
+      "description": "Displays a message in a conversation, with optional avatar, header, footer, and alignment."
+    },
+    {
+      "name": "Message Scroller",
+      "slug": "message-scroller",
+      "url": "https://ui.shadcn.com/docs/components/message-scroller",
+      "category": "data-display",
+      "description": "A chat scroll container that anchors turns, opens saved transcripts, follows streamed responses, loads history without jumping, and jumps to any message."
+    },
+    {
+      "name": "Native Select",
+      "slug": "native-select",
+      "url": "https://ui.shadcn.com/docs/components/native-select",
+      "category": "form-control",
+      "description": "A styled native HTML select element with consistent design system integration."
+    },
+    {
+      "name": "Navigation Menu",
+      "slug": "navigation-menu",
+      "url": "https://ui.shadcn.com/docs/components/navigation-menu",
+      "category": "navigation",
+      "description": "A collection of links for navigating websites."
+    },
+    {
+      "name": "Pagination",
+      "slug": "pagination",
+      "url": "https://ui.shadcn.com/docs/components/pagination",
+      "category": "navigation",
+      "description": "Pagination with page navigation, next and previous links."
+    },
+    {
+      "name": "Popover",
+      "slug": "popover",
+      "url": "https://ui.shadcn.com/docs/components/popover",
+      "category": "overlay",
+      "description": "Displays rich content in a portal, triggered by a button."
+    },
+    {
+      "name": "Progress",
+      "slug": "progress",
+      "url": "https://ui.shadcn.com/docs/components/progress",
+      "category": "feedback",
+      "description": "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar."
+    },
+    {
+      "name": "Questionnaire",
+      "slug": "questionnaire",
+      "url": "https://ui.shadcn.com/docs/components/questionnaire",
+      "category": "form-control",
+      "description": "A multi-step questionnaire with single-choice, multiple-choice, freeform, and skippable questions."
+    },
+    {
+      "name": "Radio Group",
+      "slug": "radio-group",
+      "url": "https://ui.shadcn.com/docs/components/radio-group",
+      "category": "form-control",
+      "description": "A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time."
+    },
+    {
+      "name": "Resizable",
+      "slug": "resizable",
+      "url": "https://ui.shadcn.com/docs/components/resizable",
+      "category": "misc",
+      "description": "Accessible resizable panel groups and layouts with keyboard support."
+    },
+    {
+      "name": "Scroll Area",
+      "slug": "scroll-area",
+      "url": "https://ui.shadcn.com/docs/components/scroll-area",
+      "category": "misc",
+      "description": "Augments native scroll functionality for custom, cross-browser styling."
+    },
+    {
+      "name": "Select",
+      "slug": "select",
+      "url": "https://ui.shadcn.com/docs/components/select",
+      "category": "form-control",
+      "description": "Displays a list of options for the user to pick from—triggered by a button."
+    },
+    {
+      "name": "Separator",
+      "slug": "separator",
+      "url": "https://ui.shadcn.com/docs/components/separator",
+      "category": "misc",
+      "description": "Visually or semantically separates content."
+    },
+    {
+      "name": "Sheet",
+      "slug": "sheet",
+      "url": "https://ui.shadcn.com/docs/components/sheet",
+      "category": "overlay",
+      "description": "Extends the Dialog component to display content that complements the main content of the screen."
+    },
+    {
+      "name": "Sidebar",
+      "slug": "sidebar",
+      "url": "https://ui.shadcn.com/docs/components/sidebar",
+      "category": "navigation",
+      "description": "A composable, themeable and customizable sidebar component."
+    },
+    {
+      "name": "Skeleton",
+      "slug": "skeleton",
+      "url": "https://ui.shadcn.com/docs/components/skeleton",
+      "category": "feedback",
+      "description": "Use to show a placeholder while content is loading."
+    },
+    {
+      "name": "Slider",
+      "slug": "slider",
+      "url": "https://ui.shadcn.com/docs/components/slider",
+      "category": "form-control",
+      "description": "An input where the user selects a value from within a given range."
+    },
+    {
+      "name": "Sonner",
+      "slug": "sonner",
+      "url": "https://ui.shadcn.com/docs/components/sonner",
+      "category": "feedback",
+      "description": "An opinionated toast component for React."
+    },
+    {
+      "name": "Spinner",
+      "slug": "spinner",
+      "url": "https://ui.shadcn.com/docs/components/spinner",
+      "category": "feedback",
+      "description": "An indicator that can be used to show a loading state."
+    },
+    {
+      "name": "Switch",
+      "slug": "switch",
+      "url": "https://ui.shadcn.com/docs/components/switch",
+      "category": "form-control",
+      "description": "A control that allows the user to toggle between checked and not checked."
+    },
+    {
+      "name": "Table",
+      "slug": "table",
+      "url": "https://ui.shadcn.com/docs/components/table",
+      "category": "data-display",
+      "description": "A responsive table component."
+    },
+    {
+      "name": "Tabs",
+      "slug": "tabs",
+      "url": "https://ui.shadcn.com/docs/components/tabs",
+      "category": "navigation",
+      "description": "A set of layered sections of content—known as tab panels—that are displayed one at a time."
+    },
+    {
+      "name": "Textarea",
+      "slug": "textarea",
+      "url": "https://ui.shadcn.com/docs/components/textarea",
+      "category": "form-control",
+      "description": "Displays a form textarea or a component that looks like a textarea."
+    },
+    {
+      "name": "Toast",
+      "slug": "toast",
+      "url": "https://ui.shadcn.com/docs/components/toast",
+      "category": "feedback",
+      "description": "A succinct message that is displayed temporarily."
+    },
+    {
+      "name": "Toggle",
+      "slug": "toggle",
+      "url": "https://ui.shadcn.com/docs/components/toggle",
+      "category": "form-control",
+      "description": "A two-state button that can be either on or off."
+    },
+    {
+      "name": "Toggle Group",
+      "slug": "toggle-group",
+      "url": "https://ui.shadcn.com/docs/components/toggle-group",
+      "category": "form-control",
+      "description": "A set of two-state buttons that can be toggled on or off."
+    },
+    {
+      "name": "Tooltip",
+      "slug": "tooltip",
+      "url": "https://ui.shadcn.com/docs/components/tooltip",
+      "category": "overlay",
+      "description": "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it."
+    },
+    {
+      "name": "Typography",
+      "slug": "typography",
+      "url": "https://ui.shadcn.com/docs/components/typography",
+      "category": "typography",
+      "description": "Styles for headings, paragraphs, lists, etc."
+    }
+  ]
+}

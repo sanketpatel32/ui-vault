@@ -11,3 +11,8 @@
 - **NumberFlow** https://number-flow.barvian.me/ — The animated number component — digits spin, slide and cross-fade on value change, reduced-motion aware. [MIT, live-previewable, category: numbers]
 - **NumberFlowGroup** https://number-flow.barvian.me/#grouping — Synchronizes multiple animated numbers — price and percentage tick together as one unit. [MIT, live-previewable, category: numbers]
 - **Countdown & Activity Bars** https://number-flow.barvian.me/examples/#activity — Recipes: countdown timers and compact activity counters (likes/reposts/views) using NumberFlow. [MIT, live-previewable, category: numbers]
+- **GitHub Stars Wheel (Animate UI)** https://animate-ui.com/docs/components/animate/github-stars-wheel — A scrolling wheel that displays GitHub stars count. [MIT, live-previewable, category: numbers]
+- **GitHub Stars (Animate UI)** https://animate-ui.com/docs/primitives/animate/github-stars — A component that animates a number of stars, smoothly animating number transitions using the SlidingNumber component. [MIT, live-previewable, category: numbers]
+- **Counting Number** https://animate-ui.com/docs/primitives/texts/counting-number — A counting number animation. [MIT, live-previewable, category: numbers]
+- **Scrolling Number** https://animate-ui.com/docs/primitives/texts/scrolling-number — A scrolling number animation. [MIT, live-previewable, category: numbers]
+- **Sliding Number** https://animate-ui.com/docs/primitives/texts/sliding-number — A sliding number animation. [MIT, live-previewable, category: numbers]

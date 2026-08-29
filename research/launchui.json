@@ -1,0 +1,189 @@
+{
+  "status": "ok",
+  "id": "launchui",
+  "name": "Launch UI",
+  "url": "https://launchuicomponents.com",
+  "repo": "https://github.com/launch-ui/launch-ui",
+  "license": "MIT",
+  "install": "npx shadcn@latest add @launchui/launchui",
+  "stack": [
+    "React 19",
+    "Next.js 16",
+    "TypeScript",
+    "Tailwind CSS 4",
+    "shadcn/ui",
+    "Radix UI",
+    "Lucide icons"
+  ],
+  "notes": "Freemium. The open-source MIT core (GitHub repo launch-ui/launch-ui + public shadcn registry at https://www.launchuicomponents.com/r/registry.json) covers 16 of the 24 documented items: 9 section blocks (navbar, hero, items, logos, faq, cta, stats, pricing, footer), 5 components (button, badge, screenshot, mockup, glow) and the base package (launchui: globals.css, utils incl. fade/glass, Section wrapper). 8 documented items are Launch UI Pro (one-time $99 personal / $499 team): sections bento-grid, feature, social-proof, testimonials, tabs, carousel, gallery and the Card component - their registry entries expose 0 files and source is not public; Pro installs require a purchased license. Docs also document 74 Pro block variants vs 9 free blocks (one 'default' variant each). Install pattern: 'npx shadcn@latest add @launchui/<block>' after the base; full template via 'npx shadcn@latest init --base radix --template next --no-monorepo --preset nova --name my-app' or the GitHub template (branch tailwind-3 for Tailwind v3). Repo active (last push 2026-06, 842 stars). Docs taxonomy: Sections / Components / Utilities.",
+  "components": [
+    {
+      "name": "Bento Grid",
+      "slug": "bento-grid",
+      "url": "https://www.launchuicomponents.com/docs/sections/bento-grid",
+      "category": "Sections",
+      "description": "A customizable shadcn-style grid system for creating modern, responsive masonry layouts. Pro-only (paid; source not in the open-source repo)."
+    },
+    {
+      "name": "Carousel",
+      "slug": "carousel",
+      "url": "https://www.launchuicomponents.com/docs/sections/carousel",
+      "category": "Sections",
+      "description": "A versatile carousel component built with shadcn/ui. Pro-only (paid; source not in the open-source repo)."
+    },
+    {
+      "name": "CTA",
+      "slug": "cta",
+      "url": "https://www.launchuicomponents.com/docs/sections/cta",
+      "category": "Sections",
+      "description": "A powerful Call-to-Action component built with shadcn's design system."
+    },
+    {
+      "name": "FAQ",
+      "slug": "faq",
+      "url": "https://www.launchuicomponents.com/docs/sections/faq",
+      "category": "Sections",
+      "description": "A comprehensive FAQ component built in the style of shadcn/ui."
+    },
+    {
+      "name": "Feature",
+      "slug": "feature",
+      "url": "https://www.launchuicomponents.com/docs/sections/feature",
+      "category": "Sections",
+      "description": "A versatile feature showcase component designed with shadcn/ui principles. Pro-only (paid; source not in the open-source repo)."
+    },
+    {
+      "name": "Footer",
+      "slug": "footer",
+      "url": "https://www.launchuicomponents.com/docs/sections/footer",
+      "category": "Sections",
+      "description": "A modern footer component built with shadcn/ui."
+    },
+    {
+      "name": "Gallery",
+      "slug": "gallery",
+      "url": "https://www.launchuicomponents.com/docs/sections/gallery",
+      "category": "Sections",
+      "description": "A gallery component with multiple layout options. Pro-only (paid; source not in the open-source repo)."
+    },
+    {
+      "name": "Hero",
+      "slug": "hero",
+      "url": "https://www.launchuicomponents.com/docs/sections/hero",
+      "category": "Sections",
+      "description": "A powerful hero section component built with shadcn/ui."
+    },
+    {
+      "name": "Items",
+      "slug": "items",
+      "url": "https://www.launchuicomponents.com/docs/sections/items",
+      "category": "Sections",
+      "description": "A flexible grid component for displaying items in shadcn's style."
+    },
+    {
+      "name": "Logos",
+      "slug": "logos",
+      "url": "https://www.launchuicomponents.com/docs/sections/logos",
+      "category": "Sections",
+      "description": "A versatile logo showcase component following shadcn's design principles."
+    },
+    {
+      "name": "Navbar",
+      "slug": "navbar",
+      "url": "https://www.launchuicomponents.com/docs/sections/navbar",
+      "category": "Sections",
+      "description": "A modern navigation bar component built with shadcn/ui and Tailwind CSS."
+    },
+    {
+      "name": "Pricing",
+      "slug": "pricing",
+      "url": "https://www.launchuicomponents.com/docs/sections/pricing",
+      "category": "Sections",
+      "description": "A flexible pricing table component with multiple variants and subscription options built with shadcn/ui."
+    },
+    {
+      "name": "Social Proof",
+      "slug": "social-proof",
+      "url": "https://www.launchuicomponents.com/docs/sections/social-proof",
+      "category": "Sections",
+      "description": "An advanced social proof component designed to match shadcn/ui system. Pro-only (paid; source not in the open-source repo)."
+    },
+    {
+      "name": "Stats",
+      "slug": "stats",
+      "url": "https://www.launchuicomponents.com/docs/sections/stats",
+      "category": "Sections",
+      "description": "A versatile stats section component built with shadcn/ui."
+    },
+    {
+      "name": "Tabs",
+      "slug": "tabs",
+      "url": "https://www.launchuicomponents.com/docs/sections/tabs",
+      "category": "Sections",
+      "description": "A fully customizable shadcn tabs component with multiple layout options. Pro-only (paid; source not in the open-source repo)."
+    },
+    {
+      "name": "Testimonials",
+      "slug": "testimonials",
+      "url": "https://www.launchuicomponents.com/docs/sections/testimonials",
+      "category": "Sections",
+      "description": "A comprehensive testimonials component built with shadcn's design system. Pro-only (paid; source not in the open-source repo)."
+    },
+    {
+      "name": "Badge",
+      "slug": "badge",
+      "url": "https://www.launchuicomponents.com/docs/components/badge",
+      "category": "Components",
+      "description": "A versatile badge component with multiple variants and sizes built with shadcn/ui and Tailwind CSS."
+    },
+    {
+      "name": "Button",
+      "slug": "button",
+      "url": "https://www.launchuicomponents.com/docs/components/button",
+      "category": "Components",
+      "description": "A versatile button component with multiple variants and sizes built with shadcn/ui and Tailwind CSS."
+    },
+    {
+      "name": "Card",
+      "slug": "card",
+      "url": "https://www.launchuicomponents.com/docs/components/card",
+      "category": "Components",
+      "description": "A versatile card component that support text and images, customizable gradient backgrounds, hover effects, animations, and flexible elements, built with shadcn/ui and Tailwind CSS. Pro-only (paid; source not in the open-source repo)."
+    },
+    {
+      "name": "Glow",
+      "slug": "glow",
+      "url": "https://www.launchuicomponents.com/docs/components/glow",
+      "category": "Components",
+      "description": "A visual effect component for creating beautiful blurred gradient glowing elements in your designs."
+    },
+    {
+      "name": "Mockup",
+      "slug": "mockup",
+      "url": "https://www.launchuicomponents.com/docs/components/mockup",
+      "category": "Components",
+      "description": "A flexible mockup component that displays screenshots in beautiful frames, perfect for responsive layouts and mobile device mockups."
+    },
+    {
+      "name": "Screenshot",
+      "slug": "screenshot",
+      "url": "https://www.launchuicomponents.com/docs/components/screenshot",
+      "category": "Components",
+      "description": "An optimized screenshot component that handles theme-aware images, resolution optimization, and graceful loading states."
+    },
+    {
+      "name": "Fade",
+      "slug": "fade",
+      "url": "https://www.launchuicomponents.com/docs/utilities/fade",
+      "category": "Utilities",
+      "description": "CSS mask utilities for creating smooth fade effects and gradient edges on elements."
+    },
+    {
+      "name": "Glass",
+      "slug": "glass",
+      "url": "https://www.launchuicomponents.com/docs/utilities/glass",
+      "category": "Utilities",
+      "description": "Glassmorphism utility classes for creating frosted glass effects with backdrop blur and gradients."
+    }
+  ]
+}

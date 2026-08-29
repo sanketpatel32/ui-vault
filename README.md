@@ -1,18 +1,19 @@
 # UI Vault
 
-A personal, frontend-only catalog of UI components from 6 free, vendorable sources — one
-place to browse, categorize, favorite and pick up components for real projects.
+A personal, frontend-only catalog of UI components from 12 free, vendorable open-source
+libraries — one place to browse, categorize, favorite and pick up components for real projects.
 
-**90 entries · 20 categories · 6 sources · 10 live previews**
+**586 entries · 23 categories · 12 sources · 10 live previews**
 
 **Live: <https://sanketpatel32.github.io/ui-vault/>** — deployed from `main` by GitHub Actions.
 
 ## What it does
 
-- **One registry** — every component from the 6 vendorable sources, categorized into a
-  unified taxonomy (text effects, backgrounds, buttons, cards, heroes, dashboards, …), each
-  with description, tags, license, deep link and install command. Every entry ships free
-  code — paid/gated/gallery sources are not carried as entries (v0.3.0 policy).
+- **One registry** — every component from the 12 vendorable sources, categorized into a
+  unified taxonomy (text effects, backgrounds, buttons, cards, forms, overlays, data display,
+  chat, heroes, dashboards, …), each with description, tags, license, deep link and install
+  command. Every entry ships free code — paid/gated/gallery sources are not carried as
+  entries (v0.3.0 policy).
 - **Live previews** — components are vendored into `src/showcase/` and render live on
   their detail page (lazy-loaded, reduced-motion aware); the rest show their install
   command and source link.
@@ -24,13 +25,17 @@ place to browse, categorize, favorite and pick up components for real projects.
 
 ## Sources
 
-In the registry (free code, vendorable): [React Bits](https://reactbits.dev) ·
+All vendorable (free code + install command): [React Bits](https://reactbits.dev) ·
 [Motion Primitives](https://motion-primitives.com) ·
 [FancyComponents](https://fancycomponents.dev) · [NumberFlow](https://number-flow.barvian.me) ·
-[Watermelon UI](https://watermelon.sh) · [Aceternity UI](https://ui.aceternity.com) (free tier)
+[Watermelon UI](https://watermelon.sh) · [Aceternity UI](https://ui.aceternity.com) (free tier) ·
+[shadcn/ui](https://ui.shadcn.com) · [Magic UI](https://magicui.design) ·
+[Animata](https://animata.design) · [Animate UI](https://animate-ui.com) (MIT + Commons Clause) ·
+[Launch UI](https://www.launchuicomponents.com) (free sections) ·
+[Origin UI](https://coss.com/origin) (MIT legacy snapshot, 599 variants)
 
 Not carried as entries (paid/gated/gallery — see `AGENTS.md`): 21st.dev, shadcnStudio,
-UI Layouts Pro, Cue, CollectUI, The Component Gallery.
+UI Layouts Pro, Cue, CollectUI, The Component Gallery; Launch UI Pro sections.
 
 ## Tech
 

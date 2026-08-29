@@ -1,0 +1,260 @@
+{
+  "status": "ok",
+  "id": "originui",
+  "name": "Origin UI",
+  "url": "https://coss.com/origin",
+  "repo": "cosscom/coss",
+  "license": "MIT",
+  "install": "npx shadcn@latest add https://coss.com/origin/r/<name>.json",
+  "stack": ["react", "typescript", "tailwind", "radix-ui", "shadcn-cli"],
+  "notes": "REBRANDED: Origin UI was acquired by COSS (Cal.com). originui.com and the repo origin-space/originui now redirect: the site to https://coss.com/ui and the repo to cosscom/coss (10.5k stars). The original Origin UI is preserved as a MIT-licensed 'legacy snapshot' inside the monorepo at apps/origin, live at https://coss.com/origin (verified 200). LICENSE: the cosscom/coss repo default license is AGPL-3.0, but LICENSING.md and apps/origin/LICENSE.md explicitly keep apps/origin (and apps/ui) under the original MIT license, so the copyable components are MIT. Legacy status: 'support and maintenance are limited' per its README; active development moved to the successor COSS UI (coss.com/ui, Base UI-based, 55 components / 508 particles) - catalog that separately if needed. CATALOG: 30 category pages documenting 599 unique component variants (604 page references; 5 variants appear on two pages, e.g. upload buttons under both Button and File upload). Individual registry items are named comp-01..comp-599 (the old button-01 style names are gone); docs pages are per category, so each entry here is a variant family. The registry (https://coss.com/origin/r/registry.json, 646 items) also ships 41 shadcn-style base UI primitives (accordion, button, calendar, select, ...), 5 hooks (use-file-upload, use-toast, use-character-limit, use-pagination, use-slider-with-input) and utils, which the variants depend on; they have no standalone docs pages. Install variants: pnpm dlx / yarn dlx / bunx --bun shadcn@latest add https://coss.com/origin/r/<name>.json (site default tab is pnpm; <name> can be a category primitive like button.json or a variant like comp-01.json). Old originui.com/r/*.json URLs are NOT preserved (redirect to coss.com/ui homepage).",
+  "components": [
+    {
+      "name": "Accordion (20 variants)",
+      "slug": "accordion",
+      "url": "https://coss.com/origin/accordion",
+      "category": "Accordion",
+      "description": "Vertically collapsible content panels for grouping and revealing related information.",
+      "variants": 20
+    },
+    {
+      "name": "Alert (12 variants)",
+      "slug": "alert",
+      "url": "https://coss.com/origin/alert",
+      "category": "Alert",
+      "description": "Attention-grabbing callout banners for inline status messages, warnings, and confirmations.",
+      "variants": 12
+    },
+    {
+      "name": "Avatar (23 variants)",
+      "slug": "avatar",
+      "url": "https://coss.com/origin/avatar",
+      "category": "Avatar",
+      "description": "User identity images with fallbacks and status indicators for profiles, lists, and comments.",
+      "variants": 23
+    },
+    {
+      "name": "Badge (13 variants)",
+      "slug": "badge",
+      "url": "https://coss.com/origin/badge",
+      "category": "Badge",
+      "description": "Small status labels and counters for tagging, categorizing, and highlighting states.",
+      "variants": 13
+    },
+    {
+      "name": "Banner (12 variants)",
+      "slug": "banner",
+      "url": "https://coss.com/origin/banner",
+      "category": "Banner",
+      "description": "Top-of-page strips for site-wide announcements, consent notices, and persistent alerts.",
+      "variants": 12
+    },
+    {
+      "name": "Breadcrumb (8 variants)",
+      "slug": "breadcrumb",
+      "url": "https://coss.com/origin/breadcrumb",
+      "category": "Breadcrumb",
+      "description": "Hierarchical navigation trail showing the user's location within nested routes.",
+      "variants": 8
+    },
+    {
+      "name": "Button (54 variants)",
+      "slug": "button",
+      "url": "https://coss.com/origin/button",
+      "category": "Button",
+      "description": "Largest family: primary, secondary, ghost, and icon buttons in every style, size, and state.",
+      "variants": 54
+    },
+    {
+      "name": "Calendar & Date picker (28 variants)",
+      "slug": "calendar-date-picker",
+      "url": "https://coss.com/origin/calendar-date-picker",
+      "category": "Calendar & Date picker",
+      "description": "Date selection UIs from inline month calendars to popover and range pickers.",
+      "variants": 28
+    },
+    {
+      "name": "Checkbox (20 variants)",
+      "slug": "checkbox",
+      "url": "https://coss.com/origin/checkbox",
+      "category": "Checkbox",
+      "description": "Binary and multi-select checkboxes including group, indeterminate, and card styles.",
+      "variants": 20
+    },
+    {
+      "name": "Image Cropper (11 variants)",
+      "slug": "image-cropper",
+      "url": "https://coss.com/origin/image-cropper",
+      "category": "Image Cropper",
+      "description": "In-app image cropping with zoom, rotation, and aspect-ratio controls.",
+      "variants": 11
+    },
+    {
+      "name": "Dialog (21 variants)",
+      "slug": "dialog",
+      "url": "https://coss.com/origin/dialog",
+      "category": "Dialog",
+      "description": "Modal overlays for focused tasks, confirmations, and forms requiring user attention.",
+      "variants": 21
+    },
+    {
+      "name": "Dropdown (15 variants)",
+      "slug": "dropdown",
+      "url": "https://coss.com/origin/dropdown",
+      "category": "Dropdown",
+      "description": "Menu panels triggered by controls, for actions, navigation, and option lists.",
+      "variants": 15
+    },
+    {
+      "name": "File upload (14 variants)",
+      "slug": "file-upload",
+      "url": "https://coss.com/origin/file-upload",
+      "category": "File upload",
+      "description": "Drag-and-drop zones and file lists for uploading single or multiple files.",
+      "variants": 14
+    },
+    {
+      "name": "Event calendar (1 variant)",
+      "slug": "event-calendar",
+      "url": "https://coss.com/origin/event-calendar",
+      "category": "Event calendar",
+      "description": "Full month/week/day event calendar with drag-and-drop scheduling (dnd-kit based).",
+      "variants": 1
+    },
+    {
+      "name": "Input (59 variants)",
+      "slug": "input",
+      "url": "https://coss.com/origin/input",
+      "category": "Input",
+      "description": "Text, password, OTP, number, and search fields with labels, icons, and validation states.",
+      "variants": 59
+    },
+    {
+      "name": "Navbar (20 variants)",
+      "slug": "navbar",
+      "url": "https://coss.com/origin/navbar",
+      "category": "Navbar",
+      "description": "App navigation shells with logos, menus, team switchers, and user areas.",
+      "variants": 20
+    },
+    {
+      "name": "Notification (22 variants)",
+      "slug": "notification",
+      "url": "https://coss.com/origin/notification",
+      "category": "Notification",
+      "description": "Toast-style transient messages and notification lists/feeds for user feedback.",
+      "variants": 22
+    },
+    {
+      "name": "Pagination (12 variants)",
+      "slug": "pagination",
+      "url": "https://coss.com/origin/pagination",
+      "category": "Pagination",
+      "description": "Page navigation controls for tables, lists, and other paginated content.",
+      "variants": 12
+    },
+    {
+      "name": "Popover (9 variants)",
+      "slug": "popover",
+      "url": "https://coss.com/origin/popover",
+      "category": "Popover",
+      "description": "Floating anchored panels for rich content, filters, and contextual information.",
+      "variants": 9
+    },
+    {
+      "name": "Radio (20 variants)",
+      "slug": "radio",
+      "url": "https://coss.com/origin/radio",
+      "category": "Radio",
+      "description": "Single-choice radio buttons and radio cards for mutually exclusive options.",
+      "variants": 20
+    },
+    {
+      "name": "Select (51 variants)",
+      "slug": "select",
+      "url": "https://coss.com/origin/select",
+      "category": "Select",
+      "description": "Custom dropdown selects, multi-selects, comboboxes, and native select styles.",
+      "variants": 51
+    },
+    {
+      "name": "Slider (27 variants)",
+      "slug": "slider",
+      "url": "https://coss.com/origin/slider",
+      "category": "Slider",
+      "description": "Range and value sliders, including dual-thumb and slider-with-input combinations.",
+      "variants": 27
+    },
+    {
+      "name": "Stepper (17 variants)",
+      "slug": "stepper",
+      "url": "https://coss.com/origin/stepper",
+      "category": "Stepper",
+      "description": "Progress indicators for multi-step flows such as checkout and onboarding.",
+      "variants": 17
+    },
+    {
+      "name": "Switch (17 variants)",
+      "slug": "switch",
+      "url": "https://coss.com/origin/switch",
+      "category": "Switch",
+      "description": "Toggle switches for instant on/off settings and preference changes.",
+      "variants": 17
+    },
+    {
+      "name": "Table (20 variants)",
+      "slug": "table",
+      "url": "https://coss.com/origin/table",
+      "category": "Table",
+      "description": "Data tables for structured information with sortable, empty, and loading states.",
+      "variants": 20
+    },
+    {
+      "name": "Tabs (20 variants)",
+      "slug": "tabs",
+      "url": "https://coss.com/origin/tabs",
+      "category": "Tabs",
+      "description": "Tabbed content switching for views, panels, and in-page navigation.",
+      "variants": 20
+    },
+    {
+      "name": "Textarea (19 variants)",
+      "slug": "textarea",
+      "url": "https://coss.com/origin/textarea",
+      "category": "Textarea",
+      "description": "Multi-line text inputs with character counters, resize, and limit hints.",
+      "variants": 19
+    },
+    {
+      "name": "Timeline (12 variants)",
+      "slug": "timeline",
+      "url": "https://coss.com/origin/timeline",
+      "category": "Timeline",
+      "description": "Chronological activity displays for histories, changelogs, and feeds.",
+      "variants": 12
+    },
+    {
+      "name": "Tooltip (12 variants)",
+      "slug": "tooltip",
+      "url": "https://coss.com/origin/tooltip",
+      "category": "Tooltip",
+      "description": "Hover/focus hint bubbles that explain controls without cluttering the UI.",
+      "variants": 12
+    },
+    {
+      "name": "Tree (15 variants)",
+      "slug": "tree",
+      "url": "https://coss.com/origin/tree",
+      "category": "Tree",
+      "description": "Hierarchical tree views with expand/collapse for files, folders, and nested data.",
+      "variants": 15
+    },
+    {
+      "name": "Easings (80+ presets)",
+      "slug": "easings",
+      "url": "https://coss.com/origin/easings",
+      "category": "Easings",
+      "description": "Copy-ready CSS easing curves and spring presets for consistent motion design."
+    }
+  ]
+}
