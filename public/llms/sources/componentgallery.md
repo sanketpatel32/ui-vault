@@ -1,16 +1,12 @@
 # The Component Gallery
-
 > Component patterns from 95 design systems — 2,671 examples.
-
 - URL: https://component.gallery
 - License: Free — link-out only
 - Stack: reference only
 - Install: n/a (link-out)
 - Notes: Pattern reference — link-out only.
 - Cataloged in UI Vault: 15 entries
-
 ## Entries
-
 - **Button Patterns** https://component.gallery/components/button/ — 118 real button examples across design systems — variants, sizes, states, icon combos. [Free, link-out only, category: buttons]
 - **Badge Patterns** https://component.gallery/components/badge/ — 123 badge examples — status dots, counts, labels from 95 design systems. [Free, link-out only, category: data-display]
 - **Alert Patterns** https://component.gallery/components/alert/ — 108 alert examples — severity levels, dismissability, inline vs banner. [Free, link-out only, category: feedback]

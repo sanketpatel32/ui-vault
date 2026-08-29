@@ -214,7 +214,7 @@ export const motionprimitives: UIEntry[] = [
   {
     id: "motionprimitives-infinite-slider",
     name: "Infinite Slider",
-    description: "Seamless infinite marquee slider — logos, testimonials, anything on a loop.",
+    description: "Infinite marquee slider — logos, testimonials, anything on a loop.",
     source: "motionprimitives",
     sourceUrl: "https://motion-primitives.com/docs/infinite-slider",
     sourceCategory: "Interaction",

@@ -1,5 +1,5 @@
 import { NavLink, Link } from "react-router-dom";
-import { ChevronRight, Heart, LayoutGrid, House, Sparkles, X } from "lucide-react";
+import { ChevronRight, Heart, LayoutGrid, House, Vault, X } from "lucide-react";
 import { groupedCategories, sourcesWithCounts } from "@/lib/registry";
 import { cn } from "@/lib/utils";
 
@@ -66,7 +66,7 @@ export function Sidebar({ mobileOpen, onClose }: { mobileOpen: boolean; onClose:
         <div className="flex h-14 items-center justify-between border-b border-border px-4">
           <Link to="/" className="flex items-center gap-2.5" onClick={onClose}>
             <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-accent text-accent-fg">
-              <Sparkles size={15} />
+              <Vault size={15} />
             </span>
             <span className="text-[15px] font-semibold tracking-tight">UI Vault</span>
           </Link>
@@ -145,7 +145,7 @@ export function Sidebar({ mobileOpen, onClose }: { mobileOpen: boolean; onClose:
             llms.txt
           </a>
           <span className="mx-1.5">·</span>
-          <span>no backend, just vibes</span>
+          <span>Favorites stay in this browser</span>
         </div>
       </aside>
     </>

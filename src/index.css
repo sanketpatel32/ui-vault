@@ -109,3 +109,14 @@ body {
 .typewriter-caret {
   animation: ui-vault-caret 1s steps(1) infinite;
 }
+
+/* home hero — quiet dot grid, fading toward the fold */
+.vault-grid {
+  background-image: radial-gradient(
+    circle,
+    color-mix(in oklab, var(--border) 80%, transparent) 1px,
+    transparent 1px
+  );
+  background-size: 22px 22px;
+  mask-image: linear-gradient(to bottom, black 20%, transparent 78%);
+}

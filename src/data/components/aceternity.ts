@@ -124,7 +124,7 @@ export const aceternity: UIEntry[] = [
   {
     id: "aceternity-infinite-moving-cards",
     name: "Infinite Moving Cards",
-    description: "Testimonial cards marquee seamlessly in both directions, pausable on hover.",
+    description: "Testimonial cards marquee in both directions, pausable on hover.",
     source: "aceternity",
     sourceUrl: "https://ui.aceternity.com/components/infinite-moving-cards",
     sourceCategory: "Components",

@@ -4,7 +4,7 @@
 > (animated React libraries, shadcn block registries, layout marketplaces and design galleries)
 > into one categorized, searchable library. Every entry records its source, license, install
 > command and — for open-source sources — a live React preview. No backend: the catalog itself
-> lives in TypeScript files under src/data (175 entries, 12 sources, 26 categories).
+> lives in TypeScript files under src/data (179 entries, 12 sources, 26 categories).
 
 ## Sources
 
@@ -14,11 +14,11 @@
 - [NumberFlow](https://number-flow.barvian.me) — Animated number component, for React, Vue, Svelte & vanilla. (MIT, live-previewable, 4 cataloged)
 - [Watermelon UI](https://watermelon.sh) — 600+ free open-source components, 100+ animations, 230+ blocks. (Free, live-previewable, 12 cataloged)
 - [Aceternity UI](https://ui.aceternity.com) — The React component library for beautiful landing pages. (Freemium, live-previewable, 15 cataloged)
-- [21st.dev](https://21st.dev) — The living library of interfaces — 12,000+ community components. (Freemium, link-out only, 20 cataloged)
+- [21st.dev](https://21st.dev) — The living library of interfaces — 12,000+ community components. (Freemium, link-out only, 22 cataloged)
 - [shadcnStudio](https://shadcnstudio.com) — 800+ shadcn blocks, 1000+ component variants. (Freemium, link-out only, 14 cataloged)
 - [UI Layouts Pro](https://pro.ui-layouts.com) — 150+ premium full-page layout blocks and templates. (Paid, link-out only, 11 cataloged)
 - [Cue](https://cuedesign.space) — Awwwards-tier component references, delivered as AI prompts. (Freemium, link-out only, 10 cataloged)
-- [CollectUI](https://collectui.com) — Hand-curated daily gallery of the best UI on the web — 147 categories. (Free, link-out only, 15 cataloged)
+- [CollectUI](https://collectui.com) — Hand-curated daily gallery of the best UI on the web — 147 categories. (Free, link-out only, 17 cataloged)
 - [The Component Gallery](https://component.gallery) — Component patterns from 95 design systems — 2,671 examples. (Free, link-out only, 15 cataloged)
 
 ## Categories
@@ -45,7 +45,7 @@
 - `cta` CTA Sections (2) — Big closing calls-to-action and conversion moments.
 - `faq` FAQ (2) — Frequently-asked-question sections and accordion groups.
 - `footers` Footers (1) — Multi-column footers, sitemaps and newsletter captures.
-- `navbars` Navbars (0) — Full page-header blocks with menus and actions.
+- `navbars` Navbars (2) — Full page-header blocks with menus and actions.
 - `sections-misc` Other Sections (11) — Team, blog, contact, stats, onboarding and everything else.
 
 ### Templates
@@ -55,7 +55,7 @@
 - `full-templates` Full Site Templates (1) — Multi-page, production-shaped site starters.
 
 ### Inspiration
-- `galleries` Galleries & Reference (0) — Curated screenshots and design-system patterns — reference, not code.
+- `galleries` Galleries & Reference (2) — Curated screenshots and design-system patterns — reference, not code.
 
 ## Links
 

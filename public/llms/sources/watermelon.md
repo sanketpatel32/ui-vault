@@ -1,16 +1,12 @@
 # Watermelon UI
-
 > 600+ free open-source components, 100+ animations, 230+ blocks.
-
 - URL: https://watermelon.sh
 - License: Free — live-previewable
 - Stack: react, typescript, tailwind, shadcn, motion, vite
 - Install: `npx shadcn@latest add https://registry.watermelon.sh/r/<name>.json`
 - Notes: Open source (github.com/WatermelonCorp/watermelon-platform) — vendor freely.
 - Cataloged in UI Vault: 12 entries
-
 ## Entries
-
 - **Card Split Accordion** https://ui.watermelon.sh/components/accordion — Expandable card that splits open with animation — accordion meets spotlight card. [Free, live-previewable, category: cards]
 - **Micro-interactions Pack** https://ui.watermelon.sh/animated — 43 animated micro-interactions — buttons, toggles, disclosures, tabs and widgets with Motion. [Free, live-previewable, category: micro-interactions]
 - **Hero Section Blocks** https://ui.watermelon.sh/blocks/hero — 43 hero section variants — from minimal SaaS to bold agency styles. [Free, live-previewable, category: hero]

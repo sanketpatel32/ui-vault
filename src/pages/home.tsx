@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Clock, Sparkles } from "lucide-react";
-import { entries, type UIEntry } from "@/data";
+import { ArrowRight, Clock } from "lucide-react";
+import { type UIEntry } from "@/data";
 import {
   featuredEntries,
   groupedCategories,
@@ -35,15 +35,9 @@ export function Home() {
     <div className="space-y-14">
       {/* hero */}
       <section className="relative overflow-hidden rounded-2xl border border-border bg-panel px-6 py-14 text-center sm:px-12 sm:py-20">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 bg-[radial-gradient(50%_60%_at_50%_0%,color-mix(in_oklab,var(--accent)_22%,transparent),transparent)]"
-        />
+        <div aria-hidden className="vault-grid pointer-events-none absolute inset-0" />
         <div className="relative">
-          <span className="inline-flex items-center gap-1.5 rounded-full border border-accent/30 bg-accent-soft px-3 py-1 text-xs font-medium text-accent">
-            <Sparkles size={12} /> {s.entries} components · {s.sources} sources
-          </span>
-          <h1 className="mx-auto mt-5 max-w-2xl text-4xl font-semibold tracking-tight text-fg sm:text-5xl">
+          <h1 className="mx-auto max-w-2xl text-4xl font-semibold tracking-tight text-fg sm:text-5xl">
             Every UI component you love, in one vault.
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-[15px] leading-relaxed text-muted-fg">
@@ -128,7 +122,7 @@ export function Home() {
                 <p className="mt-0.5 truncate text-xs text-muted-fg/80">{src.tagline}</p>
               </div>
               <span className="ml-3 shrink-0 text-xs tabular-nums text-muted-fg/70">
-                {src.count}/{entries.filter((e) => e.source === src.id).length ? src.count : 0}
+                {src.count}
               </span>
             </Link>
           ))}

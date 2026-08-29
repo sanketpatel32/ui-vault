@@ -8,7 +8,7 @@ export const numberflow: UIEntry[] = [
     description:
       "The animated number component — digits spin, slide and cross-fade on value change, reduced-motion aware.",
     source: "numberflow",
-    sourceUrl: "https://number-flow.barvian.me/docs",
+    sourceUrl: "https://number-flow.barvian.me/",
     sourceCategory: "Docs",
     category: "numbers",
     tags: ["number", "odometer", "digits", "format"],
@@ -24,7 +24,7 @@ export const numberflow: UIEntry[] = [
     description:
       "Synchronizes multiple animated numbers — price and percentage tick together as one unit.",
     source: "numberflow",
-    sourceUrl: "https://number-flow.barvian.me/docs/grouping",
+    sourceUrl: "https://number-flow.barvian.me/#grouping",
     sourceCategory: "Docs",
     category: "numbers",
     tags: ["number", "group", "sync", "trend"],
@@ -38,7 +38,7 @@ export const numberflow: UIEntry[] = [
     name: "NumberFlow Input",
     description: "Number stepper input with live digit-spin transitions between values.",
     source: "numberflow",
-    sourceUrl: "https://number-flow.barvian.me/examples/input",
+    sourceUrl: "https://number-flow.barvian.me/examples/#input",
     sourceCategory: "Examples",
     category: "forms",
     tags: ["input", "stepper", "form", "number"],
@@ -52,7 +52,7 @@ export const numberflow: UIEntry[] = [
     description:
       "Recipes: countdown timers and compact activity counters (likes/reposts/views) using NumberFlow.",
     source: "numberflow",
-    sourceUrl: "https://number-flow.barvian.me/examples/activity",
+    sourceUrl: "https://number-flow.barvian.me/examples/#activity",
     sourceCategory: "Examples",
     category: "numbers",
     tags: ["countdown", "activity", "stats", "timer"],

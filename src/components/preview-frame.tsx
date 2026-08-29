@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import { ExternalLink, Sparkles } from "lucide-react";
+import { ExternalLink, Loader2 } from "lucide-react";
 import type { UIEntry } from "@/data";
 import { showcaseLoaders } from "@/showcase";
 import { sourceById } from "@/lib/registry";
@@ -41,7 +41,7 @@ export function PreviewFrame({ entry }: { entry: UIEntry }) {
           <Suspense
             fallback={
               <div className="flex items-center gap-2 text-sm text-muted-fg">
-                <Sparkles size={14} className="animate-pulse" /> Loading preview…
+                <Loader2 size={14} className="animate-spin" /> Loading preview…
               </div>
             }
           >
@@ -54,13 +54,18 @@ export function PreviewFrame({ entry }: { entry: UIEntry }) {
             </span>
             <div>
               <p className="text-sm font-medium text-fg">
-                {entry.previewMode === "live" ? "Not vendored yet" : "Link-out component"}
+                {entry.previewMode === "live" ? "No local preview yet" : `Lives at ${source?.name}`}
               </p>
               <p className="mt-1 text-xs leading-relaxed text-muted-fg">
                 {entry.previewMode === "live"
-                  ? "This source is free to vendor — the preview just hasn’t been copied into UI Vault yet."
-                  : "This source is paid, gated or reference-only, so it lives at the source."}
+                  ? "This source is free to vendor — the code just isn't copied into UI Vault yet. Take the install command or grab it at the source."
+                  : `${source?.name} is paid, gated or reference-only, so there is no local preview — open it at the source.`}
               </p>
+              {entry.previewMode === "live" && entry.install && (
+                <code className="mt-3 inline-block rounded-md border border-border bg-muted px-2 py-1 font-mono text-[11px] text-muted-fg">
+                  {entry.install}
+                </code>
+              )}
             </div>
             <Button
               variant="outline"

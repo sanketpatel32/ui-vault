@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Search, Sparkles } from "lucide-react";
+import { Search, Flame } from "lucide-react";
 import { searchEntries } from "@/lib/search";
 import { featuredEntries } from "@/lib/registry";
 import { SourceBadge } from "@/components/source-badge";
@@ -71,7 +71,7 @@ export function CommandPalette({ open, onClose }: { open: boolean; onClose: () =
         <div className="max-h-[46vh] overflow-y-auto p-2">
           {!query.trim() && (
             <p className="flex items-center gap-1.5 px-2 pb-1.5 text-[11px] font-medium text-muted-fg/70">
-              <Sparkles size={11} /> Featured
+              <Flame size={11} /> Featured
             </p>
           )}
           {results.length === 0 && (

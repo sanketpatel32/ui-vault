@@ -96,7 +96,7 @@ export const cue: UIEntry[] = [
   {
     id: "cue-walkie-talkie-device",
     name: "Skeuomorphic Walkie-Talkie",
-    description: "A fully skeuomorphic walkie-talkie device — tactile UI as pure delight.",
+    description: "A fully skeuomorphic walkie-talkie device — tactile, physical UI.",
     source: "cue",
     sourceUrl: "https://cuedesign.space",
     sourceCategory: "Gimmicks",
