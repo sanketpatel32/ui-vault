@@ -7,7 +7,9 @@ export default function Preview() {
       <p className="text-xs text-muted-fg leading-relaxed">
         Origin UI curated high-density component variant collection.
       </p>
-      <Button size="sm" variant="outline">Inspect Variants</Button>
+      <Button size="sm" variant="outline">
+        Inspect Variants
+      </Button>
     </div>
   );
 }

@@ -1,8 +1,16 @@
 import { Marquee } from "./marquee";
 
 const reviews = [
-  { name: "Jack", username: "@jack", body: "I've never seen anything like this before. It's amazing." },
-  { name: "Jill", username: "@jill", body: "I don't know what to say. I'm speechless. This is amazing." },
+  {
+    name: "Jack",
+    username: "@jack",
+    body: "I've never seen anything like this before. It's amazing.",
+  },
+  {
+    name: "Jill",
+    username: "@jill",
+    body: "I don't know what to say. I'm speechless. This is amazing.",
+  },
   { name: "John", username: "@john", body: "I'm at a loss for words. This is amazing. I love it." },
 ];
 
@@ -21,7 +29,9 @@ export default function Preview() {
                 <p className="text-[10px] text-muted-fg">{review.username}</p>
               </div>
             </div>
-            <blockquote className="mt-2 text-[11px] text-muted-fg leading-relaxed">{review.body}</blockquote>
+            <blockquote className="mt-2 text-[11px] text-muted-fg leading-relaxed">
+              {review.body}
+            </blockquote>
           </figure>
         ))}
       </Marquee>

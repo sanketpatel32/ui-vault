@@ -19,7 +19,9 @@ export default function Preview() {
         </p>
         <div className="pt-2 flex justify-center gap-2">
           <Button size="sm">Explore Template</Button>
-          <Button variant="outline" size="sm">Live Demo</Button>
+          <Button variant="outline" size="sm">
+            Live Demo
+          </Button>
         </div>
       </motion.div>
     </div>

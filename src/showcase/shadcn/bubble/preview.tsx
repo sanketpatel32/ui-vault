@@ -6,7 +6,9 @@ export default function Preview() {
       <div className="rounded-xl border border-border bg-panel p-4 shadow-xs text-center space-y-2">
         <h4 className="text-sm font-semibold text-fg capitalize">bubble</h4>
         <p className="text-xs text-muted-fg">shadcn/ui canonical component implementation.</p>
-        <Button size="sm" variant="outline">Interact</Button>
+        <Button size="sm" variant="outline">
+          Interact
+        </Button>
       </div>
     </div>
   );

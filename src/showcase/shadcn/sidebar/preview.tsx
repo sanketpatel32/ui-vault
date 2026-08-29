@@ -4,7 +4,7 @@ import { LayoutDashboard, Settings, Users, FolderGit2 } from "lucide-react";
 export default function Preview() {
   return (
     <aside className="w-64 rounded-xl border border-border bg-panel p-4 shadow-xs">
-      <div className="mb-4 px-2 text-xs font-semibold uppercase tracking-wider text-muted-fg">
+      <div className="mb-4 px-2 text-xs font-semibold uppercase tracking-wide text-muted-fg">
         Workspace
       </div>
       <nav className="space-y-1">

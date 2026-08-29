@@ -12,7 +12,10 @@ export function MotionComponent({ className }: MPProps) {
       animate={{ opacity: 1, scale: 1 }}
       whileHover={{ scale: 1.02 }}
       transition={{ duration: 0.3 }}
-      className={cn("rounded-2xl border border-border bg-panel p-6 shadow-xs text-center max-w-sm", className)}
+      className={cn(
+        "rounded-2xl border border-border bg-panel p-6 shadow-xs text-center max-w-sm",
+        className,
+      )}
     >
       <div className="inline-flex items-center gap-1.5 rounded-full bg-blue-500/10 px-3 py-1 text-xs font-semibold text-blue-500 mb-2">
         🌊 Motion Primitive

@@ -13,13 +13,17 @@ export default function Preview() {
         <div className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-500">
           🍉 Watermelon UI
         </div>
-        <h3 className="text-xl font-bold tracking-tight text-fg capitalize">dashboard jobtracker</h3>
+        <h3 className="text-xl font-bold tracking-tight text-fg capitalize">
+          dashboard jobtracker
+        </h3>
         <p className="text-xs text-muted-fg leading-relaxed">
           Modern marketing block crafted with Tailwind CSS and responsive design primitives.
         </p>
         <div className="pt-2 flex justify-center gap-2">
           <Button size="sm">Explore Template</Button>
-          <Button variant="outline" size="sm">Live Demo</Button>
+          <Button variant="outline" size="sm">
+            Live Demo
+          </Button>
         </div>
       </motion.div>
     </div>

@@ -16,7 +16,7 @@ export function AnimataCard({ children, className }: CardProps) {
       transition={{ duration: 0.3 }}
       className={cn(
         "relative w-72 rounded-2xl border border-border bg-panel p-6 shadow-sm overflow-hidden text-center",
-        className
+        className,
       )}
     >
       <div className="inline-flex items-center gap-1.5 rounded-full bg-pink-500/10 px-3 py-1 text-xs font-semibold text-pink-500 mb-2">

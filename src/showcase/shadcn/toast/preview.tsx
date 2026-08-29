@@ -7,9 +7,11 @@ export default function Preview() {
       <Toaster />
       <Button
         variant="outline"
-        onClick={() => toast("Scheduled: Catch up with team", {
-          description: "Friday, Feb 10 at 5:57 PM",
-        })}
+        onClick={() =>
+          toast("Scheduled: Catch up with team", {
+            description: "Friday, Feb 10 at 5:57 PM",
+          })
+        }
       >
         Trigger Toast
       </Button>

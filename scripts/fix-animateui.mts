@@ -61,7 +61,13 @@ export default AnimateButton;
 `;
   }
 
-  if (slug.includes("text") || slug.includes("typing") || slug.includes("sliding") || slug.includes("morphing") || slug.includes("gradient")) {
+  if (
+    slug.includes("text") ||
+    slug.includes("typing") ||
+    slug.includes("sliding") ||
+    slug.includes("morphing") ||
+    slug.includes("gradient")
+  ) {
     return `import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 
@@ -87,7 +93,15 @@ export default AnimateText;
 `;
   }
 
-  if (slug.includes("effect") || slug.includes("tilt") || slug.includes("magnetic") || slug.includes("particles") || slug.includes("blur") || slug.includes("fade") || slug.includes("zoom")) {
+  if (
+    slug.includes("effect") ||
+    slug.includes("tilt") ||
+    slug.includes("magnetic") ||
+    slug.includes("particles") ||
+    slug.includes("blur") ||
+    slug.includes("fade") ||
+    slug.includes("zoom")
+  ) {
     return `import { motion } from "motion/react";
 import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";

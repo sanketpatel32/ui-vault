@@ -1,8 +1,6 @@
 import * as React from "react";
 
-export function getStrictContext<T>(
-  name?: string
-): [React.Provider<T | null>, () => T] {
+export function getStrictContext<T>(name?: string): [React.Provider<T | null>, () => T] {
   const Context = React.createContext<T | null>(null);
   Context.displayName = name;
 
@@ -17,8 +15,6 @@ export function getStrictContext<T>(
   return [Context.Provider, useContext];
 }
 
-export function createStrictContext<T>(
-  name?: string
-): [React.Provider<T | null>, () => T] {
+export function createStrictContext<T>(name?: string): [React.Provider<T | null>, () => T] {
   return getStrictContext<T>(name);
 }

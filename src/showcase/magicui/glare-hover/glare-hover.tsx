@@ -1,7 +1,7 @@
-import type { ComponentProps, CSSProperties } from "react"
-import { useMemo } from "react"
+import type { ComponentProps, CSSProperties } from "react";
+import { useMemo } from "react";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 export interface GlareHoverProps extends ComponentProps<"div"> {
   /**
@@ -11,7 +11,7 @@ export interface GlareHoverProps extends ComponentProps<"div"> {
    * <GlareHover width="100%">...</GlareHover>
    * ```
    */
-  width?: string
+  width?: string;
   /**
    * Optional CSS height on the root element (e.g. `"auto"`, `"200px"`).
    * @example
@@ -19,7 +19,7 @@ export interface GlareHoverProps extends ComponentProps<"div"> {
    * <GlareHover height="200px">...</GlareHover>
    * ```
    */
-  height?: string
+  height?: string;
   /**
    * Background color of the wrapper (CSS color string).
    * @example
@@ -27,7 +27,7 @@ export interface GlareHoverProps extends ComponentProps<"div"> {
    * <GlareHover background="#0a0a0a">...</GlareHover>
    * ```
    */
-  background?: string
+  background?: string;
   /**
    * Glare highlight as `#rrggbb` or `#rgb`; parsed to `rgba` for the gradient.
    * @example
@@ -35,7 +35,7 @@ export interface GlareHoverProps extends ComponentProps<"div"> {
    * <GlareHover color="#a78bfa">...</GlareHover>
    * ```
    */
-  color?: Color
+  color?: Color;
   /**
    * Opacity applied to the glare color when converting hex to `rgba` (0–1).
    * @example
@@ -43,7 +43,7 @@ export interface GlareHoverProps extends ComponentProps<"div"> {
    * <GlareHover color="#ffffff" opacity={0.35}>...</GlareHover>
    * ```
    */
-  opacity?: number
+  opacity?: number;
   /**
    * Gradient angle in degrees (`--gh-angle`).
    * @example
@@ -51,7 +51,7 @@ export interface GlareHoverProps extends ComponentProps<"div"> {
    * <GlareHover angle={-30}>...</GlareHover>
    * ```
    */
-  angle?: number
+  angle?: number;
   /**
    * Glare tile size as a percentage of the element (`--gh-size`, `background-size`).
    * @example
@@ -59,7 +59,7 @@ export interface GlareHoverProps extends ComponentProps<"div"> {
    * <GlareHover size={280}>...</GlareHover>
    * ```
    */
-  size?: number
+  size?: number;
   /**
    * Transition duration for the glare sweep in milliseconds (`--gh-duration`).
    * @example
@@ -67,7 +67,7 @@ export interface GlareHoverProps extends ComponentProps<"div"> {
    * <GlareHover duration={500}>...</GlareHover>
    * ```
    */
-  duration?: number
+  duration?: number;
   /**
    * When `true`, the glare transition only runs on hover (no animation until pointer enters).
    * @example
@@ -75,23 +75,23 @@ export interface GlareHoverProps extends ComponentProps<"div"> {
    * <GlareHover playOnce>...</GlareHover>
    * ```
    */
-  playOnce?: boolean
+  playOnce?: boolean;
 }
 
-type Color = `#${string}`
-type RGBA = `rgba(${number},${number},${number},${number})`
+type Color = `#${string}`;
+type RGBA = `rgba(${number},${number},${number},${number})`;
 
 function parseHEX(color: Color, opacity: number): RGBA | Color {
-  const hex = color.replace("#", "")
-  const parse = (h: string) => Number.parseInt(h, 16)
+  const hex = color.replace("#", "");
+  const parse = (h: string) => Number.parseInt(h, 16);
   if (/^[0-9A-Fa-f]{6}$/.test(hex)) {
-    return `rgba(${parse(hex.slice(0, 2))},${parse(hex.slice(2, 4))},${parse(hex.slice(4, 6))},${opacity})`
+    return `rgba(${parse(hex.slice(0, 2))},${parse(hex.slice(2, 4))},${parse(hex.slice(4, 6))},${opacity})`;
   }
   if (/^[0-9A-Fa-f]{3}$/.test(hex)) {
-    return `rgba(${parse(hex[0] + hex[0])},${parse(hex[1] + hex[1])},${parse(hex[2] + hex[2])},${opacity})`
+    return `rgba(${parse(hex[0] + hex[0])},${parse(hex[1] + hex[1])},${parse(hex[2] + hex[2])},${opacity})`;
   }
 
-  return color
+  return color;
 }
 
 function GlareHover({
@@ -109,7 +109,7 @@ function GlareHover({
   height,
   ...props
 }: GlareHoverProps) {
-  const rgba = useMemo(() => parseHEX(color, opacity), [color, opacity])
+  const rgba = useMemo(() => parseHEX(color, opacity), [color, opacity]);
 
   const cssVars = {
     "--gh-angle": `${angle}deg`,
@@ -120,7 +120,7 @@ function GlareHover({
     ...style,
     ...(width !== undefined ? { width } : {}),
     ...(height !== undefined ? { height } : {}),
-  } as CSSProperties
+  } as CSSProperties;
 
   return (
     <div
@@ -141,13 +141,13 @@ function GlareHover({
           "before:transition-none hover:before:transition-[background-position] hover:before:duration-[var(--gh-duration)]",
         // HOVER EFFECT
         "hover:before:[background-position:100%_100%,0_0]",
-        className
+        className,
       )}
       style={cssVars}
     >
       {children}
     </div>
-  )
+  );
 }
 
-export { GlareHover }
+export { GlareHover };

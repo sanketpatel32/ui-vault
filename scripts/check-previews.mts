@@ -38,7 +38,10 @@ export function checkAllPreviews(): { total: number; passed: number; failed: str
   };
 }
 
-if (process.argv[1]?.endsWith("check-previews.mts") || process.argv[1]?.endsWith("check-previews.ts")) {
+if (
+  process.argv[1]?.endsWith("check-previews.mts") ||
+  process.argv[1]?.endsWith("check-previews.ts")
+) {
   const res = checkAllPreviews();
   console.log(`Previews check: ${res.passed}/${res.total} valid real previews`);
   if (res.failed.length > 0) {

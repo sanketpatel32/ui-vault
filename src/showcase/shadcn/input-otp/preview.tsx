@@ -1,8 +1,4 @@
-import {
-  InputOTP,
-  InputOTPGroup,
-  InputOTPSlot,
-} from "./input-otp";
+import { InputOTP, InputOTPGroup, InputOTPSlot } from "./input-otp";
 
 export default function Preview() {
   return (

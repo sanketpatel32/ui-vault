@@ -16,10 +16,7 @@ function ItemTitle({ className, ...props }: React.ComponentProps<"h3">) {
   return (
     <h3
       data-slot="item-title"
-      className={cn(
-        "text-sm leading-none font-semibold tracking-tight sm:text-base",
-        className,
-      )}
+      className={cn("text-sm leading-none font-semibold tracking-tight sm:text-base", className)}
       {...props}
     />
   );

@@ -12,10 +12,16 @@ export default function Preview() {
       ref={containerRef}
       className="relative flex h-36 w-72 items-center justify-between overflow-hidden rounded-xl border border-border bg-panel p-6"
     >
-      <div ref={fromRef} className="z-10 flex h-10 w-10 items-center justify-center rounded-full border border-border bg-muted">
+      <div
+        ref={fromRef}
+        className="z-10 flex h-10 w-10 items-center justify-center rounded-full border border-border bg-muted"
+      >
         <User size={16} />
       </div>
-      <div ref={toRef} className="z-10 flex h-10 w-10 items-center justify-center rounded-full border border-border bg-muted">
+      <div
+        ref={toRef}
+        className="z-10 flex h-10 w-10 items-center justify-center rounded-full border border-border bg-muted"
+      >
         <Server size={16} />
       </div>
       <AnimatedBeam containerRef={containerRef} fromRef={fromRef} toRef={toRef} />

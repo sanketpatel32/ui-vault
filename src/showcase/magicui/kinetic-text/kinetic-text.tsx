@@ -1,13 +1,13 @@
-import React from "react"
+import React from "react";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
-type As = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "span"
+type As = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "span";
 
 type KineticTextProps = React.HTMLAttributes<HTMLElement> & {
-  text: string
-  as?: As
-}
+  text: string;
+  as?: As;
+};
 
 export function KineticText({
   text,
@@ -20,14 +20,10 @@ export function KineticText({
     "--hover-padding": "calc(1em / 12)",
     "--text-stroke-width": "calc(1em * 125 / 6000)",
     ...(style as React.CSSProperties | undefined),
-  } as React.CSSProperties
+  } as React.CSSProperties;
 
   return (
-    <Tag
-      {...rest}
-      className={cn("flex flex-wrap font-[300]", className)}
-      style={mergedStyle}
-    >
+    <Tag {...rest} className={cn("flex flex-wrap font-[300]", className)} style={mergedStyle}>
       {text.split("").map((letter, i) => (
         <span
           key={i}
@@ -39,5 +35,5 @@ export function KineticText({
       ))}
       <span className="sr-only">{text}</span>
     </Tag>
-  )
+  );
 }

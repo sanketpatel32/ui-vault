@@ -9,10 +9,11 @@ export interface UseIsInViewOptions {
 
 export function useIsInView(
   userRef?: any,
-  options?: UseIsInViewOptions
+  options?: UseIsInViewOptions,
 ): { ref: React.RefObject<any>; isInView: boolean } {
   const internalRef = React.useRef<any>(null);
-  const targetRef = userRef && typeof userRef === "object" && "current" in userRef ? userRef : internalRef;
+  const targetRef =
+    userRef && typeof userRef === "object" && "current" in userRef ? userRef : internalRef;
   const inView = useInView(targetRef, {
     margin: options?.inViewMargin,
     once: options?.inViewOnce,

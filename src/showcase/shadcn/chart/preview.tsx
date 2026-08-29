@@ -19,8 +19,19 @@ export default function Preview() {
         <div className="h-40 w-full">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={data}>
-              <XAxis dataKey="name" stroke="#888888" fontSize={11} tickLine={false} axisLine={false} />
-              <Bar dataKey="total" fill="currentColor" className="fill-accent" radius={[4, 4, 0, 0]} />
+              <XAxis
+                dataKey="name"
+                stroke="#888888"
+                fontSize={11}
+                tickLine={false}
+                axisLine={false}
+              />
+              <Bar
+                dataKey="total"
+                fill="currentColor"
+                className="fill-accent"
+                radius={[4, 4, 0, 0]}
+              />
             </BarChart>
           </ResponsiveContainer>
         </div>

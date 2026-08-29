@@ -18,7 +18,7 @@ export function AnimateButton({ children = "buttons button", className, onClick 
       transition={{ type: "spring", stiffness: 400, damping: 17 }}
       className={cn(
         "inline-flex items-center justify-center rounded-lg bg-accent px-4 py-2 text-xs font-medium text-accent-fg shadow-sm hover:bg-accent/90 cursor-pointer capitalize",
-        className
+        className,
       )}
     >
       {children}

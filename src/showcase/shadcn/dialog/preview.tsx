@@ -21,9 +21,7 @@ export default function Preview() {
             Make changes to your profile here. Click save when you're done.
           </DialogDescription>
         </DialogHeader>
-        <div className="py-2 text-xs text-muted-fg">
-          Profile form controls render here.
-        </div>
+        <div className="py-2 text-xs text-muted-fg">Profile form controls render here.</div>
       </DialogContent>
     </Dialog>
   );

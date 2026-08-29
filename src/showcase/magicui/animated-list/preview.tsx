@@ -1,9 +1,27 @@
 import { AnimatedList } from "./animated-list";
 
 const notifications = [
-  { name: "Payment received", description: "$125.00 from Jane", time: "15m ago", icon: "💸", color: "#00C9A7" },
-  { name: "User signed up", description: "Alex joined UI Vault", time: "10m ago", icon: "👤", color: "#FFB800" },
-  { name: "New message", description: "Hey, check out this component", time: "5m ago", icon: "💬", color: "#FF3D71" },
+  {
+    name: "Payment received",
+    description: "$125.00 from Jane",
+    time: "15m ago",
+    icon: "💸",
+    color: "#00C9A7",
+  },
+  {
+    name: "User signed up",
+    description: "Alex joined UI Vault",
+    time: "10m ago",
+    icon: "👤",
+    color: "#FFB800",
+  },
+  {
+    name: "New message",
+    description: "Hey, check out this component",
+    time: "5m ago",
+    icon: "💬",
+    color: "#FF3D71",
+  },
 ];
 
 export default function Preview() {

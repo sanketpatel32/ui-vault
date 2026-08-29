@@ -1,8 +1,4 @@
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "./hover-card";
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "./hover-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 
@@ -10,7 +6,9 @@ export default function Preview() {
   return (
     <HoverCard>
       <HoverCardTrigger asChild>
-        <Button variant="ghost" className="font-semibold text-accent">@nextjs</Button>
+        <Button variant="ghost" className="font-semibold text-accent">
+          @nextjs
+        </Button>
       </HoverCardTrigger>
       <HoverCardContent className="w-72">
         <div className="flex space-x-3">

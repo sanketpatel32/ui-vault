@@ -6,9 +6,7 @@ export default function Preview() {
     <Alert className="w-full max-w-sm">
       <Terminal size={16} />
       <AlertTitle>Heads up!</AlertTitle>
-      <AlertDescription>
-        You can add components to your app using the CLI.
-      </AlertDescription>
+      <AlertDescription>You can add components to your app using the CLI.</AlertDescription>
     </Alert>
   );
 }

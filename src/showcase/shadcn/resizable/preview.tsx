@@ -1,8 +1,4 @@
-import {
-  ResizableHandle,
-  ResizablePanel,
-  ResizablePanelGroup,
-} from "./resizable";
+import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from "./resizable";
 
 export default function Preview() {
   return (

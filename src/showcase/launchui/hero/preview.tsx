@@ -14,7 +14,9 @@ export default function Preview() {
         Pre-built, responsive React and Tailwind components to ship modern websites fast.
       </p>
       <div className="mt-6 flex gap-3">
-        <Button>Get Started <ArrowRight size={14} /></Button>
+        <Button>
+          Get Started <ArrowRight size={14} />
+        </Button>
         <Button variant="outline">Learn More</Button>
       </div>
     </div>

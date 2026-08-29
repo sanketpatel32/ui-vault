@@ -7,7 +7,7 @@ export function AceternityCard() {
       whileHover={{ y: -5, scale: 1.02 }}
       transition={{ duration: 0.3 }}
       className={cn(
-        "relative flex h-44 w-72 flex-col justify-between overflow-hidden rounded-2xl border border-border bg-panel p-5 shadow-xl"
+        "relative flex h-44 w-72 flex-col justify-between overflow-hidden rounded-2xl border border-border bg-panel p-5 shadow-xl",
       )}
     >
       <div className="space-y-1">

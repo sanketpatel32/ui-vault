@@ -1,7 +1,4 @@
-import {
-  ToggleGroup,
-  ToggleGroupItem,
-} from "./toggle-group";
+import { ToggleGroup, ToggleGroupItem } from "./toggle-group";
 import { AlignCenter, AlignLeft, AlignRight } from "lucide-react";
 
 export default function Preview() {

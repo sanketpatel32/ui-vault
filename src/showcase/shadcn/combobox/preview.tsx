@@ -1,11 +1,7 @@
 import { useState } from "react";
 import { Check, ChevronsUpDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 
 const frameworks = [
   { value: "next.js", label: "Next.js" },
@@ -22,7 +18,12 @@ export default function Preview() {
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
-        <Button variant="outline" role="combobox" aria-expanded={open} className="w-52 justify-between">
+        <Button
+          variant="outline"
+          role="combobox"
+          aria-expanded={open}
+          className="w-52 justify-between"
+        >
           {value ? frameworks.find((f) => f.value === value)?.label : "Select framework..."}
           <ChevronsUpDown size={14} className="opacity-50" />
         </Button>

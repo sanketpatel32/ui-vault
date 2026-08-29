@@ -1,6 +1,7 @@
+import { cn } from "@/lib/utils";
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center gap-4 text-center">
+    <div className={cn("flex flex-col items-center gap-4 text-center")}>
       <div className="relative font-mono text-4xl font-extrabold tracking-widest text-fg">
         <span className="relative z-10">CYBERPUNK</span>
         <span

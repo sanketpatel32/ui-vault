@@ -1,9 +1,4 @@
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "./tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "./tabs";
 
 export default function Preview() {
   return (

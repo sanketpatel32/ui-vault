@@ -16,7 +16,9 @@ export default function Preview() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="2">
-          <AccordionTrigger className="text-xs">Is it compatible with Tailwind v4?</AccordionTrigger>
+          <AccordionTrigger className="text-xs">
+            Is it compatible with Tailwind v4?
+          </AccordionTrigger>
           <AccordionContent className="text-xs text-muted-fg">
             Yes, fully tested and compatible with modern React and Tailwind CSS v4.
           </AccordionContent>

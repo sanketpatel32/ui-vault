@@ -8,7 +8,9 @@ export default function Preview() {
         <Sparkles size={16} className="text-accent" />
         <span>Origin UI v2 component variants now available.</span>
       </div>
-      <Button size="sm" variant="outline" className="h-7 text-xs">Upgrade</Button>
+      <Button size="sm" variant="outline" className="h-7 text-xs">
+        Upgrade
+      </Button>
     </div>
   );
 }

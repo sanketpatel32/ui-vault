@@ -4,12 +4,7 @@ import { entries } from "../src/data/index.ts";
 import { SHOWCASE_DIR } from "./vendor-utils.mts";
 
 const aceternityEntries = entries.filter((e) => e.source === "aceternity");
-const PRESERVED = new Set([
-  "moving-border",
-  "3d-card-effect",
-  "aurora-background",
-  "lamp-effect",
-]);
+const PRESERVED = new Set(["moving-border", "3d-card-effect", "aurora-background", "lamp-effect"]);
 
 export function vendorAceternity() {
   console.log(`Vendoring ${aceternityEntries.length} Aceternity components...`);

@@ -1,8 +1,4 @@
-import {
-  AnimatedSpan,
-  Terminal,
-  TypingAnimation,
-} from "./terminal";
+import { AnimatedSpan, Terminal, TypingAnimation } from "./terminal";
 
 export default function Preview() {
   return (

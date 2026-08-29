@@ -109,7 +109,12 @@ export default AnimataCard;
 `;
   }
 
-  if (slug.includes("text") || slug.includes("typing") || slug.includes("reveal") || slug.includes("counter")) {
+  if (
+    slug.includes("text") ||
+    slug.includes("typing") ||
+    slug.includes("reveal") ||
+    slug.includes("counter")
+  ) {
     return `import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 

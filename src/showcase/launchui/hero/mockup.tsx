@@ -19,18 +19,10 @@ const mockupVariants = cva(
 );
 
 export interface MockupProps
-  extends
-    React.HTMLAttributes<HTMLDivElement>,
-    VariantProps<typeof mockupVariants> {}
+  extends React.HTMLAttributes<HTMLDivElement>, VariantProps<typeof mockupVariants> {}
 
 function Mockup({ className, type, ...props }: MockupProps) {
-  return (
-    <div
-      data-slot="mockup"
-      className={cn(mockupVariants({ type, className }))}
-      {...props}
-    />
-  );
+  return <div data-slot="mockup" className={cn(mockupVariants({ type, className }))} {...props} />;
 }
 
 const frameVariants = cva(
@@ -49,17 +41,11 @@ const frameVariants = cva(
 );
 
 export interface MockupFrameProps
-  extends
-    React.HTMLAttributes<HTMLDivElement>,
-    VariantProps<typeof frameVariants> {}
+  extends React.HTMLAttributes<HTMLDivElement>, VariantProps<typeof frameVariants> {}
 
 function MockupFrame({ className, size, ...props }: MockupFrameProps) {
   return (
-    <div
-      data-slot="mockup-frame"
-      className={cn(frameVariants({ size, className }))}
-      {...props}
-    />
+    <div data-slot="mockup-frame" className={cn(frameVariants({ size, className }))} {...props} />
   );
 }
 

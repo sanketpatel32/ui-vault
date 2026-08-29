@@ -24,7 +24,9 @@ export default function Preview() {
             <Label htmlFor="q3">Average</Label>
           </div>
         </RadioGroup>
-        <Button size="sm" className="w-full">Submit Feedback</Button>
+        <Button size="sm" className="w-full">
+          Submit Feedback
+        </Button>
       </CardContent>
     </Card>
   );

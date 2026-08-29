@@ -13,7 +13,10 @@ export function AnimataText({ text = "mask reveal up", className }: TextProps) {
       animate={{ opacity: 1, scale: 1 }}
       whileHover={{ scale: 1.04 }}
       transition={{ duration: 0.3 }}
-      className={cn("text-2xl font-bold tracking-tight text-fg capitalize cursor-pointer", className)}
+      className={cn(
+        "text-2xl font-bold tracking-tight text-fg capitalize cursor-pointer",
+        className,
+      )}
     >
       {text}
     </motion.div>

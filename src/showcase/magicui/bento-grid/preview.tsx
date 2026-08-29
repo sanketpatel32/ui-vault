@@ -18,7 +18,9 @@ const features = [
     href: "#",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
-    background: <div className="absolute inset-0 bg-linear-to-tr from-pink-500/20 to-transparent" />,
+    background: (
+      <div className="absolute inset-0 bg-linear-to-tr from-pink-500/20 to-transparent" />
+    ),
   },
 ];
 

@@ -12,7 +12,10 @@ export function ReactBitsComponent({ className }: ReactBitsProps) {
       animate={{ opacity: 1, y: 0 }}
       whileHover={{ y: -3 }}
       transition={{ duration: 0.3 }}
-      className={cn("rounded-2xl border border-border bg-panel p-6 shadow-xs text-center max-w-sm", className)}
+      className={cn(
+        "rounded-2xl border border-border bg-panel p-6 shadow-xs text-center max-w-sm",
+        className,
+      )}
     >
       <div className="inline-flex items-center gap-1.5 rounded-full bg-cyan-500/10 px-3 py-1 text-xs font-semibold text-cyan-500 mb-2">
         ⚡ ReactBits Animation

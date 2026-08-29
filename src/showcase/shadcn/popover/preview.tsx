@@ -1,8 +1,4 @@
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "./popover";
+import { Popover, PopoverContent, PopoverTrigger } from "./popover";
 import { Button } from "@/components/ui/button";
 
 export default function Preview() {

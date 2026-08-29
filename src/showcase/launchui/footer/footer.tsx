@@ -27,11 +27,7 @@ function FooterContent({ className, ...props }: React.ComponentProps<"div">) {
 
 function FooterColumn({ className, ...props }: React.ComponentProps<"div">) {
   return (
-    <div
-      data-slot="footer-column"
-      className={cn("flex flex-col gap-4", className)}
-      {...props}
-    />
+    <div data-slot="footer-column" className={cn("flex flex-col gap-4", className)} {...props} />
   );
 }
 

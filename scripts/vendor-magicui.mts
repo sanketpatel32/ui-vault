@@ -11,7 +11,10 @@ function cleanImports(code: string): string {
     .replace(/@\/components\/magicui\//g, "./")
     .replace(/@\/components\/ui\//g, "@/components/ui/")
     .replace(/NodeJS\.Timeout/g, "ReturnType<typeof setTimeout>")
-    .replace(/import { ChevronLeft, ChevronRight } from "lucide-react";/g, 'import { ChevronLeft, ChevronRight } from "lucide-react";');
+    .replace(
+      /import { ChevronLeft, ChevronRight } from "lucide-react";/g,
+      'import { ChevronLeft, ChevronRight } from "lucide-react";',
+    );
 }
 
 export async function vendorMagicUI() {

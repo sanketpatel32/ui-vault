@@ -12,7 +12,10 @@ export function FancyComponent({ className }: FancyProps) {
       animate={{ opacity: 1, y: 0 }}
       whileHover={{ y: -4 }}
       transition={{ duration: 0.3 }}
-      className={cn("rounded-2xl border border-border bg-panel p-6 shadow-xs text-center max-w-sm", className)}
+      className={cn(
+        "rounded-2xl border border-border bg-panel p-6 shadow-xs text-center max-w-sm",
+        className,
+      )}
     >
       <div className="inline-flex items-center gap-1.5 rounded-full bg-violet-500/10 px-3 py-1 text-xs font-semibold text-violet-500 mb-2">
         ✨ Fancy Micro-Interaction

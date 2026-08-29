@@ -13,7 +13,10 @@ export function FancyText({ text = "number ticker", className }: FancyTextProps)
       animate={{ opacity: 1, scale: 1 }}
       whileHover={{ scale: 1.05 }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
-      className={cn("text-2xl font-bold tracking-tight text-fg font-mono capitalize cursor-pointer", className)}
+      className={cn(
+        "text-2xl font-bold tracking-tight text-fg font-mono capitalize cursor-pointer",
+        className,
+      )}
     >
       {text}
     </motion.span>

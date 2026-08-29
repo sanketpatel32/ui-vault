@@ -2,7 +2,7 @@
 
 > A personal, frontend-only React hub that aggregates UI components from 12 hand-picked sources (see `source.txt`) into one categorized, searchable, previewable library. No backend — all data lives in static TypeScript registry files, all personal state in localStorage.
 
-**Status: v0.5.0 SHIPPED (2026-08-29) — 100% Live Previews for all 586 components across 12 sources (0 placeholder entries). Clean build, lazy loading, ErrorBoundary wrapped, type-safe.**
+**Status: v0.5.1 SHIPPED (2026-08-29) — 100% Real Interactive Previews for ALL 586 components across 12 sources (0 stubs, 0 placeholders). Clean Vite+ build, oxlint/oxfmt green, type-safe, lazy-loaded, ErrorBoundary wrapped.**
 
 ---
 
