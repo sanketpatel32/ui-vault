@@ -1,19 +1,24 @@
+import { AnimatedBeam } from "./animated-beam";
+import { useRef } from "react";
+import { User, Server } from "lucide-react";
+
 export default function Preview() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const fromRef = useRef<HTMLDivElement>(null);
+  const toRef = useRef<HTMLDivElement>(null);
+
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            magicui
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
-        </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Animated Beam</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">
-          Animated beam of light travelling along an SVG path; ideal for visualizing integrations or
-          data flow between UI elements.
-        </p>
+    <div
+      ref={containerRef}
+      className="relative flex h-36 w-72 items-center justify-between overflow-hidden rounded-xl border border-border bg-panel p-6"
+    >
+      <div ref={fromRef} className="z-10 flex h-10 w-10 items-center justify-center rounded-full border border-border bg-muted">
+        <User size={16} />
       </div>
+      <div ref={toRef} className="z-10 flex h-10 w-10 items-center justify-center rounded-full border border-border bg-muted">
+        <Server size={16} />
+      </div>
+      <AnimatedBeam containerRef={containerRef} fromRef={fromRef} toRef={toRef} />
     </div>
   );
 }

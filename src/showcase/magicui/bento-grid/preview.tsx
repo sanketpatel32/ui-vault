@@ -1,18 +1,33 @@
+import { BentoCard, BentoGrid } from "./bento-grid";
+import { Bell, FileText } from "lucide-react";
+
+const features = [
+  {
+    Icon: FileText,
+    name: "Save your files",
+    description: "We automatically save your files as you type.",
+    href: "#",
+    cta: "Learn more",
+    className: "col-span-3 lg:col-span-1",
+    background: <div className="absolute inset-0 bg-linear-to-tr from-accent/20 to-transparent" />,
+  },
+  {
+    Icon: Bell,
+    name: "Notifications",
+    description: "Get notified when something happens.",
+    href: "#",
+    cta: "Learn more",
+    className: "col-span-3 lg:col-span-2",
+    background: <div className="absolute inset-0 bg-linear-to-tr from-pink-500/20 to-transparent" />,
+  },
+];
+
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            magicui
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
-        </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Bento Grid</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">
-          Bento-style grid layout for elegantly showcasing product features.
-        </p>
-      </div>
-    </div>
+    <BentoGrid className="max-w-md">
+      {features.map((feature, idx) => (
+        <BentoCard key={idx} {...feature} />
+      ))}
+    </BentoGrid>
   );
 }

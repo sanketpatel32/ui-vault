@@ -1,18 +1,10 @@
+import { MagicCard } from "./magic-card";
+
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            magicui
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
-        </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Magic Card</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">
-          Card with a mouse-following spotlight and border highlight on hover.
-        </p>
-      </div>
-    </div>
+    <MagicCard className="cursor-pointer flex-col items-center justify-center p-8 text-center shadow-2xl w-72">
+      <p className="text-base font-semibold text-fg">Magic Card</p>
+      <p className="text-xs text-muted-fg mt-1">Interactive spotlight reflection border</p>
+    </MagicCard>
   );
 }

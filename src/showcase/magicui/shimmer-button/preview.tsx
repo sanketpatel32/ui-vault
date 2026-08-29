@@ -1,18 +1,11 @@
+import { ShimmerButton } from "./shimmer-button";
+
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            magicui
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
-        </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Shimmer Button</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">
-          Button with a shimmer of light travelling around its perimeter.
-        </p>
-      </div>
-    </div>
+    <ShimmerButton className="shadow-2xl">
+      <span className="text-center text-xs font-semibold leading-none tracking-tight text-white">
+        Shimmer Button
+      </span>
+    </ShimmerButton>
   );
 }

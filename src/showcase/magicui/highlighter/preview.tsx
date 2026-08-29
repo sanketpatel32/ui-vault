@@ -1,18 +1,13 @@
+import { Highlighter } from "./highlighter";
+
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            magicui
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
-        </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Text Highlighter</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">
-          Marker-stroke highlight over text that mimics a hand-drawn stroke.
-        </p>
-      </div>
-    </div>
+    <p className="text-sm text-fg">
+      Highlight important text with{" "}
+      <Highlighter action="highlight" color="#8b5cf6">
+        rough notation
+      </Highlighter>{" "}
+      effects.
+    </p>
   );
 }

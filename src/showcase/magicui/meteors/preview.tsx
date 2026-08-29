@@ -1,15 +1,12 @@
+import { Meteors } from "./meteors";
+
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            magicui
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
-        </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Meteors</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">Meteor shower background effect.</p>
+    <div className="relative flex h-48 w-full max-w-sm items-center justify-center overflow-hidden rounded-2xl border border-border bg-zinc-950 p-6 shadow-xl">
+      <Meteors number={20} />
+      <div className="relative z-10 text-center">
+        <h4 className="text-xl font-bold tracking-tight text-white">Meteor Shower</h4>
+        <p className="mt-1 text-xs text-zinc-400">Atmospheric falling star streaks</p>
       </div>
     </div>
   );

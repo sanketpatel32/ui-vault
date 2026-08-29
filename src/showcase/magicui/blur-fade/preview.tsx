@@ -1,18 +1,14 @@
+import { BlurFade } from "./blur-fade";
+
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            magicui
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
-        </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Blur Fade</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">
-          Blur fade-in/out animation for smoothly revealing content on mount or scroll.
-        </p>
-      </div>
+    <div className="flex flex-col items-center gap-3 text-center">
+      <BlurFade delay={0.25} inView>
+        <h3 className="text-2xl font-bold tracking-tight text-fg">Hello BlurFade</h3>
+      </BlurFade>
+      <BlurFade delay={0.5} inView>
+        <p className="text-xs text-muted-fg">Smooth progressive blur-in animation sequence.</p>
+      </BlurFade>
     </div>
   );
 }
