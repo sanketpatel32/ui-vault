@@ -2,7 +2,7 @@
 
 > A personal, frontend-only React hub that aggregates UI components from 12 hand-picked sources (see `source.txt`) into one categorized, searchable, previewable library. No backend — all data lives in static TypeScript registry files, all personal state in localStorage.
 
-**Status: v0.1.1 SHIPPED (2026-08-29) — all phases complete. Live at https://sanketpatel32.github.io/ui-vault/ (GitHub Pages via Actions; SPA fallback via 404.html — deep routes return HTTP 404 but render the app). Left to grow: registry entries + more vendored previews.**
+**Status: v0.5.0 SHIPPED (2026-08-29) — 100% Live Previews for all 586 components across 12 sources (0 placeholder entries). Clean build, lazy loading, ErrorBoundary wrapped, type-safe.**
 
 ---
 

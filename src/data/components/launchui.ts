@@ -5,6 +5,7 @@ import type { UIEntry } from "../types";
 // gallery, card) are paid and excluded per the vendorable-only registry policy.
 export const launchui: UIEntry[] = [
   {
+    previewKey: "launchui-cta",
     id: "launchui-cta",
     name: "CTA",
     description: "A powerful Call-to-Action component built with shadcn's design system.",
@@ -18,6 +19,7 @@ export const launchui: UIEntry[] = [
     install: "npx shadcn@latest add @launchui/cta",
   },
   {
+    previewKey: "launchui-faq",
     id: "launchui-faq",
     name: "FAQ",
     description: "A comprehensive FAQ component built in the style of shadcn/ui.",
@@ -31,6 +33,7 @@ export const launchui: UIEntry[] = [
     install: "npx shadcn@latest add @launchui/faq",
   },
   {
+    previewKey: "launchui-footer",
     id: "launchui-footer",
     name: "Footer",
     description: "A modern footer component built with shadcn/ui.",
@@ -44,6 +47,7 @@ export const launchui: UIEntry[] = [
     install: "npx shadcn@latest add @launchui/footer",
   },
   {
+    previewKey: "launchui-hero",
     id: "launchui-hero",
     name: "Hero",
     description: "A powerful hero section component built with shadcn/ui.",
@@ -58,6 +62,7 @@ export const launchui: UIEntry[] = [
     featured: true,
   },
   {
+    previewKey: "launchui-items",
     id: "launchui-items",
     name: "Items",
     description: "A flexible grid component for displaying items in shadcn's style.",
@@ -71,6 +76,7 @@ export const launchui: UIEntry[] = [
     install: "npx shadcn@latest add @launchui/items",
   },
   {
+    previewKey: "launchui-logos",
     id: "launchui-logos",
     name: "Logos",
     description: "A versatile logo showcase component following shadcn's design principles.",
@@ -84,6 +90,7 @@ export const launchui: UIEntry[] = [
     install: "npx shadcn@latest add @launchui/logos",
   },
   {
+    previewKey: "launchui-navbar",
     id: "launchui-navbar",
     name: "Navbar",
     description: "A modern navigation bar component built with shadcn/ui and Tailwind CSS.",
@@ -97,6 +104,7 @@ export const launchui: UIEntry[] = [
     install: "npx shadcn@latest add @launchui/navbar",
   },
   {
+    previewKey: "launchui-pricing",
     id: "launchui-pricing",
     name: "Pricing",
     description:
@@ -111,6 +119,7 @@ export const launchui: UIEntry[] = [
     install: "npx shadcn@latest add @launchui/pricing",
   },
   {
+    previewKey: "launchui-stats",
     id: "launchui-stats",
     name: "Stats",
     description: "A versatile stats section component built with shadcn/ui.",
@@ -124,6 +133,7 @@ export const launchui: UIEntry[] = [
     install: "npx shadcn@latest add @launchui/stats",
   },
   {
+    previewKey: "launchui-badge",
     id: "launchui-badge",
     name: "Badge",
     description:
@@ -138,6 +148,7 @@ export const launchui: UIEntry[] = [
     install: "npx shadcn@latest add @launchui/badge",
   },
   {
+    previewKey: "launchui-button",
     id: "launchui-button",
     name: "Button",
     description:
@@ -152,6 +163,7 @@ export const launchui: UIEntry[] = [
     install: "npx shadcn@latest add @launchui/button",
   },
   {
+    previewKey: "launchui-glow",
     id: "launchui-glow",
     name: "Glow",
     description:
@@ -166,6 +178,7 @@ export const launchui: UIEntry[] = [
     install: "npx shadcn@latest add @launchui/glow",
   },
   {
+    previewKey: "launchui-mockup",
     id: "launchui-mockup",
     name: "Mockup",
     description:
@@ -180,6 +193,7 @@ export const launchui: UIEntry[] = [
     install: "npx shadcn@latest add @launchui/mockup",
   },
   {
+    previewKey: "launchui-screenshot",
     id: "launchui-screenshot",
     name: "Screenshot",
     description:
@@ -194,6 +208,7 @@ export const launchui: UIEntry[] = [
     install: "npx shadcn@latest add @launchui/screenshot",
   },
   {
+    previewKey: "launchui-fade",
     id: "launchui-fade",
     name: "Fade",
     description:
@@ -208,6 +223,7 @@ export const launchui: UIEntry[] = [
     install: "npx shadcn@latest add @launchui/fade",
   },
   {
+    previewKey: "launchui-glass",
     id: "launchui-glass",
     name: "Glass",
     description:

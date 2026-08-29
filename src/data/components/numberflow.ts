@@ -34,6 +34,7 @@ export const numberflow: UIEntry[] = [
     previewKey: "numberflow-group",
   },
   {
+    previewKey: "numberflow-input",
     id: "numberflow-input",
     name: "NumberFlow Input",
     description: "Number stepper input with live digit-spin transitions between values.",
@@ -47,6 +48,7 @@ export const numberflow: UIEntry[] = [
     install: "npm i @number-flow/react",
   },
   {
+    previewKey: "numberflow-countdown",
     id: "numberflow-countdown",
     name: "Countdown & Activity Bars",
     description:

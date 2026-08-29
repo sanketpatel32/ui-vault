@@ -5,6 +5,7 @@ import type { UIEntry } from "../types";
 // families covering 599 component variants.
 export const originui: UIEntry[] = [
   {
+    previewKey: "originui-accordion",
     id: "originui-accordion",
     name: "Accordion",
     description:
@@ -19,6 +20,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/accordion.json",
   },
   {
+    previewKey: "originui-alert",
     id: "originui-alert",
     name: "Alert",
     description:
@@ -33,6 +35,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/alert.json",
   },
   {
+    previewKey: "originui-avatar",
     id: "originui-avatar",
     name: "Avatar",
     description:
@@ -47,6 +50,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/avatar.json",
   },
   {
+    previewKey: "originui-badge",
     id: "originui-badge",
     name: "Badge",
     description:
@@ -61,6 +65,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/badge.json",
   },
   {
+    previewKey: "originui-banner",
     id: "originui-banner",
     name: "Banner",
     description:
@@ -75,6 +80,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/banner.json",
   },
   {
+    previewKey: "originui-breadcrumb",
     id: "originui-breadcrumb",
     name: "Breadcrumb",
     description:
@@ -89,6 +95,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/breadcrumb.json",
   },
   {
+    previewKey: "originui-button",
     id: "originui-button",
     name: "Button",
     description:
@@ -104,6 +111,7 @@ export const originui: UIEntry[] = [
     featured: true,
   },
   {
+    previewKey: "originui-calendar-date-picker",
     id: "originui-calendar-date-picker",
     name: "Calendar & Date picker",
     description:
@@ -118,6 +126,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/calendar-date-picker.json",
   },
   {
+    previewKey: "originui-checkbox",
     id: "originui-checkbox",
     name: "Checkbox",
     description:
@@ -132,6 +141,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/checkbox.json",
   },
   {
+    previewKey: "originui-image-cropper",
     id: "originui-image-cropper",
     name: "Image Cropper",
     description:
@@ -146,6 +156,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/image-cropper.json",
   },
   {
+    previewKey: "originui-dialog",
     id: "originui-dialog",
     name: "Dialog",
     description:
@@ -160,6 +171,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/dialog.json",
   },
   {
+    previewKey: "originui-dropdown",
     id: "originui-dropdown",
     name: "Dropdown",
     description:
@@ -174,6 +186,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/dropdown.json",
   },
   {
+    previewKey: "originui-file-upload",
     id: "originui-file-upload",
     name: "File upload",
     description:
@@ -188,6 +201,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/file-upload.json",
   },
   {
+    previewKey: "originui-event-calendar",
     id: "originui-event-calendar",
     name: "Event calendar",
     description:
@@ -202,6 +216,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/event-calendar.json",
   },
   {
+    previewKey: "originui-input",
     id: "originui-input",
     name: "Input",
     description:
@@ -217,6 +232,7 @@ export const originui: UIEntry[] = [
     featured: true,
   },
   {
+    previewKey: "originui-navbar",
     id: "originui-navbar",
     name: "Navbar",
     description:
@@ -231,6 +247,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/navbar.json",
   },
   {
+    previewKey: "originui-notification",
     id: "originui-notification",
     name: "Notification",
     description:
@@ -245,6 +262,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/notification.json",
   },
   {
+    previewKey: "originui-pagination",
     id: "originui-pagination",
     name: "Pagination",
     description:
@@ -259,6 +277,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/pagination.json",
   },
   {
+    previewKey: "originui-popover",
     id: "originui-popover",
     name: "Popover",
     description:
@@ -273,6 +292,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/popover.json",
   },
   {
+    previewKey: "originui-radio",
     id: "originui-radio",
     name: "Radio",
     description:
@@ -287,6 +307,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/radio.json",
   },
   {
+    previewKey: "originui-select",
     id: "originui-select",
     name: "Select",
     description:
@@ -301,6 +322,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/select.json",
   },
   {
+    previewKey: "originui-slider",
     id: "originui-slider",
     name: "Slider",
     description:
@@ -315,6 +337,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/slider.json",
   },
   {
+    previewKey: "originui-stepper",
     id: "originui-stepper",
     name: "Stepper",
     description:
@@ -329,6 +352,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/stepper.json",
   },
   {
+    previewKey: "originui-switch",
     id: "originui-switch",
     name: "Switch",
     description: "Toggle switches for instant on/off settings and preference changes. 17 variants.",
@@ -342,6 +366,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/switch.json",
   },
   {
+    previewKey: "originui-table",
     id: "originui-table",
     name: "Table",
     description:
@@ -356,6 +381,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/table.json",
   },
   {
+    previewKey: "originui-tabs",
     id: "originui-tabs",
     name: "Tabs",
     description: "Tabbed content switching for views, panels, and in-page navigation. 20 variants.",
@@ -369,6 +395,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/tabs.json",
   },
   {
+    previewKey: "originui-textarea",
     id: "originui-textarea",
     name: "Textarea",
     description:
@@ -383,6 +410,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/textarea.json",
   },
   {
+    previewKey: "originui-timeline",
     id: "originui-timeline",
     name: "Timeline",
     description:
@@ -397,6 +425,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/timeline.json",
   },
   {
+    previewKey: "originui-tooltip",
     id: "originui-tooltip",
     name: "Tooltip",
     description:
@@ -411,6 +440,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/tooltip.json",
   },
   {
+    previewKey: "originui-tree",
     id: "originui-tree",
     name: "Tree",
     description:
@@ -425,6 +455,7 @@ export const originui: UIEntry[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/tree.json",
   },
   {
+    previewKey: "originui-easings",
     id: "originui-easings",
     name: "Easings",
     description: "Copy-ready CSS easing curves and spring presets for consistent motion design.",

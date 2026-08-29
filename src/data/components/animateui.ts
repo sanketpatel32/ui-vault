@@ -4,6 +4,7 @@ import type { UIEntry } from "../types";
 // github.com/imskyleen/animate-ui. Live-vendorable via shadcn registry.
 export const animateui: UIEntry[] = [
   {
+    previewKey: "animateui-components-animate-avatar-group",
     id: "animateui-components-animate-avatar-group",
     name: "Avatar Group (Animate UI)",
     description:
@@ -18,6 +19,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-animate-avatar-group",
   },
   {
+    previewKey: "animateui-components-animate-code",
     id: "animateui-components-animate-code",
     name: "Code (Animate UI)",
     description: "A code component that animates the code as it is written.",
@@ -31,6 +33,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-animate-code",
   },
   {
+    previewKey: "animateui-components-animate-code-tabs",
     id: "animateui-components-animate-code-tabs",
     name: "Code Tabs (Animate UI)",
     description: "A tabs component that displays code for different languages.",
@@ -44,6 +47,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-animate-code-tabs",
   },
   {
+    previewKey: "animateui-components-animate-cursor",
     id: "animateui-components-animate-cursor",
     name: "Cursor (Animate UI)",
     description:
@@ -58,6 +62,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-animate-cursor",
   },
   {
+    previewKey: "animateui-components-animate-github-stars-wheel",
     id: "animateui-components-animate-github-stars-wheel",
     name: "GitHub Stars Wheel (Animate UI)",
     description: "A scrolling wheel that displays GitHub stars count.",
@@ -71,6 +76,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-animate-github-stars-wheel",
   },
   {
+    previewKey: "animateui-components-animate-tabs",
     id: "animateui-components-animate-tabs",
     name: "Tabs (Animate UI)",
     description:
@@ -85,6 +91,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-animate-tabs",
   },
   {
+    previewKey: "animateui-components-animate-tooltip",
     id: "animateui-components-animate-tooltip",
     name: "Tooltip (Animate UI)",
     description: "A tooltip is a small box that appears when hovering over an element.",
@@ -98,6 +105,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-animate-tooltip",
   },
   {
+    previewKey: "animateui-components-radix-accordion",
     id: "animateui-components-radix-accordion",
     name: "Accordion (Radix)",
     description:
@@ -112,6 +120,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-radix-accordion",
   },
   {
+    previewKey: "animateui-components-radix-alert-dialog",
     id: "animateui-components-radix-alert-dialog",
     name: "Alert Dialog (Radix)",
     description:
@@ -126,6 +135,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-radix-alert-dialog",
   },
   {
+    previewKey: "animateui-components-radix-checkbox",
     id: "animateui-components-radix-checkbox",
     name: "Checkbox (Radix)",
     description: "A control that allows the user to toggle between checked and not checked.",
@@ -139,6 +149,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-radix-checkbox",
   },
   {
+    previewKey: "animateui-components-radix-dialog",
     id: "animateui-components-radix-dialog",
     name: "Dialog (Radix)",
     description:
@@ -153,6 +164,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-radix-dialog",
   },
   {
+    previewKey: "animateui-components-radix-dropdown-menu",
     id: "animateui-components-radix-dropdown-menu",
     name: "Dropdown Menu (Radix)",
     description:
@@ -167,6 +179,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-radix-dropdown-menu",
   },
   {
+    previewKey: "animateui-components-radix-files",
     id: "animateui-components-radix-files",
     name: "Files (Radix)",
     description: "A component that allows you to display a list of files and folders.",
@@ -180,6 +193,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-radix-files",
   },
   {
+    previewKey: "animateui-components-radix-hover-card",
     id: "animateui-components-radix-hover-card",
     name: "Hover Card (Radix)",
     description: "For sighted users to preview content available behind a link.",
@@ -193,6 +207,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-radix-hover-card",
   },
   {
+    previewKey: "animateui-components-radix-popover",
     id: "animateui-components-radix-popover",
     name: "Popover (Radix)",
     description: "Displays rich content in a portal, triggered by a button.",
@@ -206,6 +221,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-radix-popover",
   },
   {
+    previewKey: "animateui-components-radix-preview-link-card",
     id: "animateui-components-radix-preview-link-card",
     name: "Preview Link Card (Radix)",
     description: "Displays a preview image of a link when hovered.",
@@ -219,6 +235,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-radix-preview-link-card",
   },
   {
+    previewKey: "animateui-components-radix-progress",
     id: "animateui-components-radix-progress",
     name: "Progress (Radix)",
     description:
@@ -233,6 +250,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-radix-progress",
   },
   {
+    previewKey: "animateui-components-radix-radio-group",
     id: "animateui-components-radix-radio-group",
     name: "Radio Group (Radix)",
     description:
@@ -247,6 +265,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-radix-radio-group",
   },
   {
+    previewKey: "animateui-components-radix-sheet",
     id: "animateui-components-radix-sheet",
     name: "Sheet (Radix)",
     description:
@@ -261,6 +280,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-radix-sheet",
   },
   {
+    previewKey: "animateui-components-radix-sidebar",
     id: "animateui-components-radix-sidebar",
     name: "Sidebar (Radix)",
     description:
@@ -275,6 +295,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-radix-sidebar",
   },
   {
+    previewKey: "animateui-components-radix-switch",
     id: "animateui-components-radix-switch",
     name: "Switch (Radix)",
     description: "A control that allows the user to toggle between checked and not checked.",
@@ -288,6 +309,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-radix-switch",
   },
   {
+    previewKey: "animateui-components-radix-tabs",
     id: "animateui-components-radix-tabs",
     name: "Tabs (Radix)",
     description:
@@ -302,6 +324,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-radix-tabs",
   },
   {
+    previewKey: "animateui-components-radix-toggle",
     id: "animateui-components-radix-toggle",
     name: "Toggle (Radix)",
     description: "A two-state button that can be either on or off.",
@@ -315,6 +338,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-radix-toggle",
   },
   {
+    previewKey: "animateui-components-radix-toggle-group",
     id: "animateui-components-radix-toggle-group",
     name: "Toggle Group (Radix)",
     description: "A set of two-state buttons that can be toggled on or off.",
@@ -328,6 +352,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-radix-toggle-group",
   },
   {
+    previewKey: "animateui-components-radix-tooltip",
     id: "animateui-components-radix-tooltip",
     name: "Tooltip (Radix)",
     description:
@@ -342,6 +367,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-radix-tooltip",
   },
   {
+    previewKey: "animateui-components-base-accordion",
     id: "animateui-components-base-accordion",
     name: "Accordion (Base UI)",
     description: "A set of collapsible panels with headings.",
@@ -355,6 +381,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-base-accordion",
   },
   {
+    previewKey: "animateui-components-base-alert-dialog",
     id: "animateui-components-base-alert-dialog",
     name: "Alert Dialog (Base UI)",
     description: "A dialog that requires user response to proceed.",
@@ -368,6 +395,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-base-alert-dialog",
   },
   {
+    previewKey: "animateui-components-base-checkbox",
     id: "animateui-components-base-checkbox",
     name: "Checkbox (Base UI)",
     description: "An easily stylable checkbox component.",
@@ -381,6 +409,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-base-checkbox",
   },
   {
+    previewKey: "animateui-components-base-dialog",
     id: "animateui-components-base-dialog",
     name: "Dialog (Base UI)",
     description: "A popup that opens on top of the entire page.",
@@ -394,6 +423,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-base-dialog",
   },
   {
+    previewKey: "animateui-components-base-files",
     id: "animateui-components-base-files",
     name: "Files (Base UI)",
     description: "A component that allows you to display a list of files and folders.",
@@ -407,6 +437,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-base-files",
   },
   {
+    previewKey: "animateui-components-base-menu",
     id: "animateui-components-base-menu",
     name: "Menu (Base UI)",
     description: "A list of actions in a dropdown, enhanced with keyboard navigation.",
@@ -420,6 +451,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-base-menu",
   },
   {
+    previewKey: "animateui-components-base-popover",
     id: "animateui-components-base-popover",
     name: "Popover (Base UI)",
     description: "An accessible popup anchored to a button.",
@@ -433,6 +465,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-base-popover",
   },
   {
+    previewKey: "animateui-components-base-preview-card",
     id: "animateui-components-base-preview-card",
     name: "Preview Card (Base UI)",
     description:
@@ -447,6 +480,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-base-preview-card",
   },
   {
+    previewKey: "animateui-components-base-preview-link-card",
     id: "animateui-components-base-preview-link-card",
     name: "Preview Link Card (Base UI)",
     description: "Displays a preview image of a link when hovered.",
@@ -460,6 +494,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-base-preview-link-card",
   },
   {
+    previewKey: "animateui-components-base-progress",
     id: "animateui-components-base-progress",
     name: "Progress (Base UI)",
     description: "Displays the status of a task that takes a long time.",
@@ -473,6 +508,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-base-progress",
   },
   {
+    previewKey: "animateui-components-base-radio",
     id: "animateui-components-base-radio",
     name: "Radio (Base UI)",
     description: "An easily stylable radio button component.",
@@ -486,6 +522,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-base-radio",
   },
   {
+    previewKey: "animateui-components-base-switch",
     id: "animateui-components-base-switch",
     name: "Switch (Base UI)",
     description: "A control that indicates whether a setting is on or off.",
@@ -499,6 +536,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-base-switch",
   },
   {
+    previewKey: "animateui-components-base-tabs",
     id: "animateui-components-base-tabs",
     name: "Tabs (Base UI)",
     description: "A component for toggling between related panels on the same page.",
@@ -512,6 +550,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-base-tabs",
   },
   {
+    previewKey: "animateui-components-base-toggle",
     id: "animateui-components-base-toggle",
     name: "Toggle (Base UI)",
     description: "A two-state button that can be on or off.",
@@ -525,6 +564,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-base-toggle",
   },
   {
+    previewKey: "animateui-components-base-toggle-group",
     id: "animateui-components-base-toggle-group",
     name: "Toggle Group (Base UI)",
     description: "Provides a shared state to a series of toggle buttons.",
@@ -538,6 +578,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-base-toggle-group",
   },
   {
+    previewKey: "animateui-components-base-tooltip",
     id: "animateui-components-base-tooltip",
     name: "Tooltip (Base UI)",
     description:
@@ -552,6 +593,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-base-tooltip",
   },
   {
+    previewKey: "animateui-components-headless-accordion",
     id: "animateui-components-headless-accordion",
     name: "Accordion (Headless UI)",
     description:
@@ -566,6 +608,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-headless-accordion",
   },
   {
+    previewKey: "animateui-components-headless-checkbox",
     id: "animateui-components-headless-checkbox",
     name: "Checkbox (Headless UI)",
     description:
@@ -580,6 +623,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-headless-checkbox",
   },
   {
+    previewKey: "animateui-components-headless-dialog",
     id: "animateui-components-headless-dialog",
     name: "Dialog (Headless UI)",
     description:
@@ -594,6 +638,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-headless-dialog",
   },
   {
+    previewKey: "animateui-components-headless-popover",
     id: "animateui-components-headless-popover",
     name: "Popover (Headless UI)",
     description:
@@ -608,6 +653,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-headless-popover",
   },
   {
+    previewKey: "animateui-components-headless-switch",
     id: "animateui-components-headless-switch",
     name: "Switch (Headless UI)",
     description:
@@ -622,6 +668,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-headless-switch",
   },
   {
+    previewKey: "animateui-components-headless-tabs",
     id: "animateui-components-headless-tabs",
     name: "Tabs (Headless UI)",
     description:
@@ -636,6 +683,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-headless-tabs",
   },
   {
+    previewKey: "animateui-components-buttons-button",
     id: "animateui-components-buttons-button",
     name: "Button",
     description: "An animated button component with a variety of styles.",
@@ -649,6 +697,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-buttons-button",
   },
   {
+    previewKey: "animateui-components-buttons-copy",
     id: "animateui-components-buttons-copy",
     name: "Copy Button",
     description: "A copy button component with a variety of styles and animations.",
@@ -662,6 +711,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-buttons-copy",
   },
   {
+    previewKey: "animateui-components-buttons-flip",
     id: "animateui-components-buttons-flip",
     name: "Flip Button",
     description: "An animated flip button component with a variety of styles.",
@@ -675,6 +725,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-buttons-flip",
   },
   {
+    previewKey: "animateui-components-buttons-github-stars",
     id: "animateui-components-buttons-github-stars",
     name: "GitHub Stars Button",
     description:
@@ -689,6 +740,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-buttons-github-stars",
   },
   {
+    previewKey: "animateui-components-buttons-icon",
     id: "animateui-components-buttons-icon",
     name: "Icon Button",
     description: "An icon button that displays particles when clicked.",
@@ -702,6 +754,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-buttons-icon",
   },
   {
+    previewKey: "animateui-components-buttons-liquid",
     id: "animateui-components-buttons-liquid",
     name: "Liquid Button",
     description: "A button that fills on hover.",
@@ -715,6 +768,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-buttons-liquid",
   },
   {
+    previewKey: "animateui-components-buttons-ripple",
     id: "animateui-components-buttons-ripple",
     name: "Ripple Button",
     description: "A button that animates on tap with a ripple effect.",
@@ -728,6 +782,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-buttons-ripple",
   },
   {
+    previewKey: "animateui-components-buttons-theme-toggler",
     id: "animateui-components-buttons-theme-toggler",
     name: "Theme Toggler Button",
     description: "A button that toggles the theme gradually.",
@@ -741,6 +796,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-buttons-theme-toggler",
   },
   {
+    previewKey: "animateui-components-backgrounds-bubble",
     id: "animateui-components-backgrounds-bubble",
     name: "Bubble Background",
     description:
@@ -755,6 +811,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-backgrounds-bubble",
   },
   {
+    previewKey: "animateui-components-backgrounds-fireworks",
     id: "animateui-components-backgrounds-fireworks",
     name: "Fireworks Background",
     description: "A background component that displays a fireworks animation.",
@@ -768,6 +825,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-backgrounds-fireworks",
   },
   {
+    previewKey: "animateui-components-backgrounds-gradient",
     id: "animateui-components-backgrounds-gradient",
     name: "Gradient Background",
     description:
@@ -782,6 +840,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-backgrounds-gradient",
   },
   {
+    previewKey: "animateui-components-backgrounds-gravity-stars",
     id: "animateui-components-backgrounds-gravity-stars",
     name: "Gravity Stars Background",
     description: "A background component featuring an interactive gravity stars effect.",
@@ -795,6 +854,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-backgrounds-gravity-stars",
   },
   {
+    previewKey: "animateui-components-backgrounds-hexagon",
     id: "animateui-components-backgrounds-hexagon",
     name: "Hexagon Background",
     description: "A background component featuring an interactive hexagon grid.",
@@ -808,6 +868,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-backgrounds-hexagon",
   },
   {
+    previewKey: "animateui-components-backgrounds-hole",
     id: "animateui-components-backgrounds-hole",
     name: "Hole Background",
     description: "A background component featuring an animated hole grid.",
@@ -821,6 +882,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-backgrounds-hole",
   },
   {
+    previewKey: "animateui-components-backgrounds-stars",
     id: "animateui-components-backgrounds-stars",
     name: "Stars Background",
     description:
@@ -835,6 +897,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-backgrounds-stars",
   },
   {
+    previewKey: "animateui-components-community-flip-card",
     id: "animateui-components-community-flip-card",
     name: "Flip Card",
     description: "A 3D animated card component that flips to reveal content on the back.",
@@ -848,6 +911,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-community-flip-card",
   },
   {
+    previewKey: "animateui-components-community-management-bar",
     id: "animateui-components-community-management-bar",
     name: "Management Bar",
     description:
@@ -862,6 +926,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-community-management-bar",
   },
   {
+    previewKey: "animateui-components-community-motion-carousel",
     id: "animateui-components-community-motion-carousel",
     name: "Motion Carousel",
     description:
@@ -876,6 +941,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-community-motion-carousel",
   },
   {
+    previewKey: "animateui-components-community-notification-list",
     id: "animateui-components-community-notification-list",
     name: "Notification List",
     description:
@@ -890,6 +956,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-community-notification-list",
   },
   {
+    previewKey: "animateui-components-community-pin-list",
     id: "animateui-components-community-pin-list",
     name: "Pin List",
     description:
@@ -904,6 +971,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-community-pin-list",
   },
   {
+    previewKey: "animateui-components-community-playful-todolist",
     id: "animateui-components-community-playful-todolist",
     name: "Playful Todolist",
     description:
@@ -918,6 +986,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-community-playful-todolist",
   },
   {
+    previewKey: "animateui-components-community-radial-intro",
     id: "animateui-components-community-radial-intro",
     name: "Radial Intro",
     description:
@@ -932,6 +1001,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-community-radial-intro",
   },
   {
+    previewKey: "animateui-components-community-radial-menu",
     id: "animateui-components-community-radial-menu",
     name: "Radial Menu",
     description:
@@ -946,6 +1016,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-community-radial-menu",
   },
   {
+    previewKey: "animateui-components-community-radial-nav",
     id: "animateui-components-community-radial-nav",
     name: "Radial Nav",
     description:
@@ -960,6 +1031,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-community-radial-nav",
   },
   {
+    previewKey: "animateui-components-community-share-button",
     id: "animateui-components-community-share-button",
     name: "Share Button",
     description: "A share button component with animated icons.",
@@ -973,6 +1045,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-community-share-button",
   },
   {
+    previewKey: "animateui-components-community-user-presence-avatar",
     id: "animateui-components-community-user-presence-avatar",
     name: "User Presence Avatar",
     description:
@@ -987,6 +1060,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/components-community-user-presence-avatar",
   },
   {
+    previewKey: "animateui-primitives-animate-avatar-group",
     id: "animateui-primitives-animate-avatar-group",
     name: "Avatar Group (Animate UI)",
     description:
@@ -1001,6 +1075,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-animate-avatar-group",
   },
   {
+    previewKey: "animateui-primitives-animate-code-block",
     id: "animateui-primitives-animate-code-block",
     name: "Code Block (Animate UI)",
     description: "A code block component that animates the code as it is written.",
@@ -1014,6 +1089,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-animate-code-block",
   },
   {
+    previewKey: "animateui-primitives-animate-cursor",
     id: "animateui-primitives-animate-cursor",
     name: "Cursor (Animate UI)",
     description:
@@ -1028,6 +1104,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-animate-cursor",
   },
   {
+    previewKey: "animateui-primitives-animate-github-stars",
     id: "animateui-primitives-animate-github-stars",
     name: "GitHub Stars (Animate UI)",
     description:
@@ -1042,6 +1119,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-animate-github-stars",
   },
   {
+    previewKey: "animateui-primitives-animate-motion-grid",
     id: "animateui-primitives-animate-motion-grid",
     name: "Motion Grid (Animate UI)",
     description: "A grid that displays animations in a grid.",
@@ -1055,6 +1133,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-animate-motion-grid",
   },
   {
+    previewKey: "animateui-primitives-animate-pinned-list",
     id: "animateui-primitives-animate-pinned-list",
     name: "Pinned List (Animate UI)",
     description: "A pin list component that allows you to pin items to the top of the list.",
@@ -1068,6 +1147,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-animate-pinned-list",
   },
   {
+    previewKey: "animateui-primitives-animate-scroll-progress",
     id: "animateui-primitives-animate-scroll-progress",
     name: "Scroll Progress (Animate UI)",
     description:
@@ -1082,6 +1162,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-animate-scroll-progress",
   },
   {
+    previewKey: "animateui-primitives-animate-slot",
     id: "animateui-primitives-animate-slot",
     name: "Slot (Animate UI)",
     description: "A slot component that allows you to use motion components with any element.",
@@ -1095,6 +1176,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-animate-slot",
   },
   {
+    previewKey: "animateui-primitives-animate-spring",
     id: "animateui-primitives-animate-spring",
     name: "Spring (Animate UI)",
     description:
@@ -1109,6 +1191,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-animate-spring",
   },
   {
+    previewKey: "animateui-primitives-animate-tabs",
     id: "animateui-primitives-animate-tabs",
     name: "Tabs (Animate UI)",
     description:
@@ -1123,6 +1206,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-animate-tabs",
   },
   {
+    previewKey: "animateui-primitives-animate-tooltip",
     id: "animateui-primitives-animate-tooltip",
     name: "Tooltip (Animate UI)",
     description: "A tooltip is a small box that appears when hovering over an element.",
@@ -1136,6 +1220,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-animate-tooltip",
   },
   {
+    previewKey: "animateui-primitives-radix-accordion",
     id: "animateui-primitives-radix-accordion",
     name: "Accordion (Radix)",
     description:
@@ -1150,6 +1235,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-radix-accordion",
   },
   {
+    previewKey: "animateui-primitives-radix-alert-dialog",
     id: "animateui-primitives-radix-alert-dialog",
     name: "Alert Dialog (Radix)",
     description:
@@ -1164,6 +1250,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-radix-alert-dialog",
   },
   {
+    previewKey: "animateui-primitives-radix-checkbox",
     id: "animateui-primitives-radix-checkbox",
     name: "Checkbox (Radix)",
     description: "A control that allows the user to toggle between checked and not checked.",
@@ -1177,6 +1264,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-radix-checkbox",
   },
   {
+    previewKey: "animateui-primitives-radix-collapsible",
     id: "animateui-primitives-radix-collapsible",
     name: "Collapsible (Radix)",
     description: "An interactive component which expands/collapses a panel.",
@@ -1190,6 +1278,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-radix-collapsible",
   },
   {
+    previewKey: "animateui-primitives-radix-dialog",
     id: "animateui-primitives-radix-dialog",
     name: "Dialog (Radix)",
     description:
@@ -1204,6 +1293,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-radix-dialog",
   },
   {
+    previewKey: "animateui-primitives-radix-dropdown-menu",
     id: "animateui-primitives-radix-dropdown-menu",
     name: "Dropdown Menu (Radix)",
     description:
@@ -1218,6 +1308,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-radix-dropdown-menu",
   },
   {
+    previewKey: "animateui-primitives-radix-files",
     id: "animateui-primitives-radix-files",
     name: "Files (Radix)",
     description: "A component that allows you to display a list of files and folders.",
@@ -1231,6 +1322,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-radix-files",
   },
   {
+    previewKey: "animateui-primitives-radix-hover-card",
     id: "animateui-primitives-radix-hover-card",
     name: "Hover Card (Radix)",
     description: "For sighted users to preview content available behind a link.",
@@ -1244,6 +1336,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-radix-hover-card",
   },
   {
+    previewKey: "animateui-primitives-radix-popover",
     id: "animateui-primitives-radix-popover",
     name: "Popover (Radix)",
     description: "Displays rich content in a portal, triggered by a button.",
@@ -1257,6 +1350,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-radix-popover",
   },
   {
+    previewKey: "animateui-primitives-radix-preview-link-card",
     id: "animateui-primitives-radix-preview-link-card",
     name: "Preview Link Card (Radix)",
     description: "Displays a preview image of a link when hovered.",
@@ -1270,6 +1364,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-radix-preview-link-card",
   },
   {
+    previewKey: "animateui-primitives-radix-progress",
     id: "animateui-primitives-radix-progress",
     name: "Progress (Radix)",
     description:
@@ -1284,6 +1379,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-radix-progress",
   },
   {
+    previewKey: "animateui-primitives-radix-radio-group",
     id: "animateui-primitives-radix-radio-group",
     name: "Radio Group (Radix)",
     description:
@@ -1298,6 +1394,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-radix-radio-group",
   },
   {
+    previewKey: "animateui-primitives-radix-sheet",
     id: "animateui-primitives-radix-sheet",
     name: "Sheet (Radix)",
     description:
@@ -1312,6 +1409,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-radix-sheet",
   },
   {
+    previewKey: "animateui-primitives-radix-switch",
     id: "animateui-primitives-radix-switch",
     name: "Switch (Radix)",
     description: "A control that allows the user to toggle between checked and not checked.",
@@ -1325,6 +1423,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-radix-switch",
   },
   {
+    previewKey: "animateui-primitives-radix-tabs",
     id: "animateui-primitives-radix-tabs",
     name: "Tabs (Radix)",
     description:
@@ -1339,6 +1438,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-radix-tabs",
   },
   {
+    previewKey: "animateui-primitives-radix-toggle",
     id: "animateui-primitives-radix-toggle",
     name: "Toggle (Radix)",
     description: "A two-state button that can be either on or off.",
@@ -1352,6 +1452,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-radix-toggle",
   },
   {
+    previewKey: "animateui-primitives-radix-toggle-group",
     id: "animateui-primitives-radix-toggle-group",
     name: "Toggle Group (Radix)",
     description: "A set of two-state buttons that can be toggled on or off.",
@@ -1365,6 +1466,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-radix-toggle-group",
   },
   {
+    previewKey: "animateui-primitives-radix-tooltip",
     id: "animateui-primitives-radix-tooltip",
     name: "Tooltip (Radix)",
     description:
@@ -1379,6 +1481,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-radix-tooltip",
   },
   {
+    previewKey: "animateui-primitives-base-accordion",
     id: "animateui-primitives-base-accordion",
     name: "Accordion (Base UI)",
     description: "A set of collapsible panels with headings.",
@@ -1392,6 +1495,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-base-accordion",
   },
   {
+    previewKey: "animateui-primitives-base-alert-dialog",
     id: "animateui-primitives-base-alert-dialog",
     name: "Alert Dialog (Base UI)",
     description: "A dialog that requires user response to proceed.",
@@ -1405,6 +1509,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-base-alert-dialog",
   },
   {
+    previewKey: "animateui-primitives-base-checkbox",
     id: "animateui-primitives-base-checkbox",
     name: "Checkbox (Base UI)",
     description: "An easily stylable checkbox component.",
@@ -1418,6 +1523,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-base-checkbox",
   },
   {
+    previewKey: "animateui-primitives-base-collapsible",
     id: "animateui-primitives-base-collapsible",
     name: "Collapsible (Base UI)",
     description: "A collapsible panel controlled by a button.",
@@ -1431,6 +1537,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-base-collapsible",
   },
   {
+    previewKey: "animateui-primitives-base-dialog",
     id: "animateui-primitives-base-dialog",
     name: "Dialog (Base UI)",
     description: "A popup that opens on top of the entire page.",
@@ -1444,6 +1551,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-base-dialog",
   },
   {
+    previewKey: "animateui-primitives-base-files",
     id: "animateui-primitives-base-files",
     name: "Files (Base UI)",
     description: "A component that allows you to display a list of files and folders.",
@@ -1457,6 +1565,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-base-files",
   },
   {
+    previewKey: "animateui-primitives-base-menu",
     id: "animateui-primitives-base-menu",
     name: "Menu (Base UI)",
     description: "A list of actions in a dropdown, enhanced with keyboard navigation.",
@@ -1470,6 +1579,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-base-menu",
   },
   {
+    previewKey: "animateui-primitives-base-popover",
     id: "animateui-primitives-base-popover",
     name: "Popover (Base UI)",
     description: "An accessible popup anchored to a button.",
@@ -1483,6 +1593,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-base-popover",
   },
   {
+    previewKey: "animateui-primitives-base-preview-card",
     id: "animateui-primitives-base-preview-card",
     name: "Preview Card (Base UI)",
     description:
@@ -1497,6 +1608,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-base-preview-card",
   },
   {
+    previewKey: "animateui-primitives-base-preview-link-card",
     id: "animateui-primitives-base-preview-link-card",
     name: "Preview Link Card (Base UI)",
     description: "Displays a preview image of a link when hovered.",
@@ -1510,6 +1622,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-base-preview-link-card",
   },
   {
+    previewKey: "animateui-primitives-base-progress",
     id: "animateui-primitives-base-progress",
     name: "Progress (Base UI)",
     description: "Displays the status of a task that takes a long time.",
@@ -1523,6 +1636,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-base-progress",
   },
   {
+    previewKey: "animateui-primitives-base-radio",
     id: "animateui-primitives-base-radio",
     name: "Radio (Base UI)",
     description: "An easily stylable radio button component.",
@@ -1536,6 +1650,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-base-radio",
   },
   {
+    previewKey: "animateui-primitives-base-switch",
     id: "animateui-primitives-base-switch",
     name: "Switch (Base UI)",
     description: "A control that indicates whether a setting is on or off.",
@@ -1549,6 +1664,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-base-switch",
   },
   {
+    previewKey: "animateui-primitives-base-tabs",
     id: "animateui-primitives-base-tabs",
     name: "Tabs (Base UI)",
     description:
@@ -1563,6 +1679,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-base-tabs",
   },
   {
+    previewKey: "animateui-primitives-base-toggle",
     id: "animateui-primitives-base-toggle",
     name: "Toggle (Base UI)",
     description: "A two-state button that can be on or off.",
@@ -1576,6 +1693,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-base-toggle",
   },
   {
+    previewKey: "animateui-primitives-base-toggle-group",
     id: "animateui-primitives-base-toggle-group",
     name: "Toggle Group (Base UI)",
     description: "Provides a shared state to a series of toggle buttons.",
@@ -1589,6 +1707,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-base-toggle-group",
   },
   {
+    previewKey: "animateui-primitives-base-tooltip",
     id: "animateui-primitives-base-tooltip",
     name: "Tooltip (Base UI)",
     description:
@@ -1603,6 +1722,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-base-tooltip",
   },
   {
+    previewKey: "animateui-primitives-headless-checkbox",
     id: "animateui-primitives-headless-checkbox",
     name: "Checkbox (Headless UI)",
     description:
@@ -1617,6 +1737,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-headless-checkbox",
   },
   {
+    previewKey: "animateui-primitives-headless-dialog",
     id: "animateui-primitives-headless-dialog",
     name: "Dialog (Headless UI)",
     description:
@@ -1631,6 +1752,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-headless-dialog",
   },
   {
+    previewKey: "animateui-primitives-headless-disclosure",
     id: "animateui-primitives-headless-disclosure",
     name: "Disclosure (Headless UI)",
     description:
@@ -1645,6 +1767,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-headless-disclosure",
   },
   {
+    previewKey: "animateui-primitives-headless-popover",
     id: "animateui-primitives-headless-popover",
     name: "Popover (Headless UI)",
     description:
@@ -1659,6 +1782,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-headless-popover",
   },
   {
+    previewKey: "animateui-primitives-headless-switch",
     id: "animateui-primitives-headless-switch",
     name: "Switch (Headless UI)",
     description:
@@ -1673,6 +1797,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-headless-switch",
   },
   {
+    previewKey: "animateui-primitives-headless-tabs",
     id: "animateui-primitives-headless-tabs",
     name: "Tabs (Headless UI)",
     description:
@@ -1687,6 +1812,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-headless-tabs",
   },
   {
+    previewKey: "animateui-primitives-buttons-button",
     id: "animateui-primitives-buttons-button",
     name: "Button",
     description: "A simple button that animates on hover and tap.",
@@ -1700,6 +1826,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-buttons-button",
   },
   {
+    previewKey: "animateui-primitives-buttons-flip",
     id: "animateui-primitives-buttons-flip",
     name: "Flip",
     description: "A button that flips between two states on hover.",
@@ -1713,6 +1840,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-buttons-flip",
   },
   {
+    previewKey: "animateui-primitives-buttons-liquid",
     id: "animateui-primitives-buttons-liquid",
     name: "Liquid",
     description: "A button that fills on hover.",
@@ -1726,6 +1854,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-buttons-liquid",
   },
   {
+    previewKey: "animateui-primitives-buttons-ripple",
     id: "animateui-primitives-buttons-ripple",
     name: "Ripple",
     description: "A button that creates a ripple effect on tap.",
@@ -1739,6 +1868,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-buttons-ripple",
   },
   {
+    previewKey: "animateui-primitives-texts-counting-number",
     id: "animateui-primitives-texts-counting-number",
     name: "Counting Number",
     description: "A counting number animation.",
@@ -1752,6 +1882,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-texts-counting-number",
   },
   {
+    previewKey: "animateui-primitives-texts-gradient",
     id: "animateui-primitives-texts-gradient",
     name: "Gradient Text",
     description: "A gradient text animation.",
@@ -1765,6 +1896,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-texts-gradient",
   },
   {
+    previewKey: "animateui-primitives-texts-highlight",
     id: "animateui-primitives-texts-highlight",
     name: "Highlight Text",
     description: "A highlight text animation.",
@@ -1778,6 +1910,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-texts-highlight",
   },
   {
+    previewKey: "animateui-primitives-texts-morphing",
     id: "animateui-primitives-texts-morphing",
     name: "Morphing Text",
     description: "A text component that smoothly morphs characters to transition between strings.",
@@ -1791,6 +1924,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-texts-morphing",
   },
   {
+    previewKey: "animateui-primitives-texts-rolling",
     id: "animateui-primitives-texts-rolling",
     name: "Rolling Text",
     description: "A rolling text animation.",
@@ -1804,6 +1938,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-texts-rolling",
   },
   {
+    previewKey: "animateui-primitives-texts-rotating",
     id: "animateui-primitives-texts-rotating",
     name: "Rotating Text",
     description: "A rotating text animation.",
@@ -1817,6 +1952,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-texts-rotating",
   },
   {
+    previewKey: "animateui-primitives-texts-scrolling-number",
     id: "animateui-primitives-texts-scrolling-number",
     name: "Scrolling Number",
     description: "A scrolling number animation.",
@@ -1830,6 +1966,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-texts-scrolling-number",
   },
   {
+    previewKey: "animateui-primitives-texts-shimmering",
     id: "animateui-primitives-texts-shimmering",
     name: "Shimmering Text",
     description: "A shimmering text animation.",
@@ -1843,6 +1980,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-texts-shimmering",
   },
   {
+    previewKey: "animateui-primitives-texts-sliding-number",
     id: "animateui-primitives-texts-sliding-number",
     name: "Sliding Number",
     description: "A sliding number animation.",
@@ -1856,6 +1994,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-texts-sliding-number",
   },
   {
+    previewKey: "animateui-primitives-texts-splitting",
     id: "animateui-primitives-texts-splitting",
     name: "Splitting Text",
     description: "A splitting text animation.",
@@ -1869,6 +2008,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-texts-splitting",
   },
   {
+    previewKey: "animateui-primitives-texts-typing",
     id: "animateui-primitives-texts-typing",
     name: "Typing Text",
     description: "A typing text animation.",
@@ -1882,6 +2022,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-texts-typing",
   },
   {
+    previewKey: "animateui-primitives-effects-auto-height",
     id: "animateui-primitives-effects-auto-height",
     name: "Auto Height",
     description:
@@ -1896,6 +2037,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-effects-auto-height",
   },
   {
+    previewKey: "animateui-primitives-effects-blur",
     id: "animateui-primitives-effects-blur",
     name: "Blur",
     description:
@@ -1910,6 +2052,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-effects-blur",
   },
   {
+    previewKey: "animateui-primitives-effects-click",
     id: "animateui-primitives-effects-click",
     name: "Click",
     description:
@@ -1924,6 +2067,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-effects-click",
   },
   {
+    previewKey: "animateui-primitives-effects-effect",
     id: "animateui-primitives-effects-effect",
     name: "Effect",
     description: "An effect that allows you to animate elements on first view or load.",
@@ -1937,6 +2081,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-effects-effect",
   },
   {
+    previewKey: "animateui-primitives-effects-fade",
     id: "animateui-primitives-effects-fade",
     name: "Fade",
     description:
@@ -1951,6 +2096,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-effects-fade",
   },
   {
+    previewKey: "animateui-primitives-effects-highlight",
     id: "animateui-primitives-effects-highlight",
     name: "Highlight",
     description:
@@ -1965,6 +2111,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-effects-highlight",
   },
   {
+    previewKey: "animateui-primitives-effects-image-zoom",
     id: "animateui-primitives-effects-image-zoom",
     name: "Image Zoom",
     description: "An effect that allows you to zoom in on an image on hover.",
@@ -1978,6 +2125,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-effects-image-zoom",
   },
   {
+    previewKey: "animateui-primitives-effects-magnetic",
     id: "animateui-primitives-effects-magnetic",
     name: "Magnetic",
     description:
@@ -1992,6 +2140,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-effects-magnetic",
   },
   {
+    previewKey: "animateui-primitives-effects-particles",
     id: "animateui-primitives-effects-particles",
     name: "Particles",
     description: "A particles effect that creates a particle system.",
@@ -2005,6 +2154,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-effects-particles",
   },
   {
+    previewKey: "animateui-primitives-effects-shine",
     id: "animateui-primitives-effects-shine",
     name: "Shine",
     description:
@@ -2019,6 +2169,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-effects-shine",
   },
   {
+    previewKey: "animateui-primitives-effects-slide",
     id: "animateui-primitives-effects-slide",
     name: "Slide",
     description:
@@ -2033,6 +2184,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-effects-slide",
   },
   {
+    previewKey: "animateui-primitives-effects-theme-toggler",
     id: "animateui-primitives-effects-theme-toggler",
     name: "Theme Toggler",
     description: "An effect that allows you to toggle the theme gradually.",
@@ -2046,6 +2198,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-effects-theme-toggler",
   },
   {
+    previewKey: "animateui-primitives-effects-tilt",
     id: "animateui-primitives-effects-tilt",
     name: "Tilt",
     description: "An effect that allows you to animate elements with a tilt effect on mouse hover.",
@@ -2059,6 +2212,7 @@ export const animateui: UIEntry[] = [
     install: "npx shadcn@latest add @animate-ui/primitives-effects-tilt",
   },
   {
+    previewKey: "animateui-primitives-effects-zoom",
     id: "animateui-primitives-effects-zoom",
     name: "Zoom",
     description:

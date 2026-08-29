@@ -4,6 +4,7 @@ import type { UIEntry } from "../types";
 // Upstream groups: Text Animations / Animations / Components / Backgrounds.
 export const reactbits: UIEntry[] = [
   {
+    previewKey: "reactbits-split-text",
     id: "reactbits-split-text",
     name: "SplitText",
     description:
@@ -34,6 +35,7 @@ export const reactbits: UIEntry[] = [
     featured: true,
   },
   {
+    previewKey: "reactbits-glitch-text",
     id: "reactbits-glitch-text",
     name: "GlitchText",
     description: "RGB-split glitch effect for text — cyberpunk energy without the noise.",
@@ -47,6 +49,7 @@ export const reactbits: UIEntry[] = [
     install: "npx jsrepo add react-bits/GlitchText",
   },
   {
+    previewKey: "reactbits-decrypted-text",
     id: "reactbits-decrypted-text",
     name: "DecryptedText",
     description:
@@ -61,6 +64,7 @@ export const reactbits: UIEntry[] = [
     install: "npx jsrepo add react-bits/DecryptedText",
   },
   {
+    previewKey: "reactbits-gradient-text",
     id: "reactbits-gradient-text",
     name: "GradientText",
     description: "Text filled with an animated gradient. Cheap trick, expensive look.",
@@ -74,6 +78,7 @@ export const reactbits: UIEntry[] = [
     install: "npx jsrepo add react-bits/GradientText",
   },
   {
+    previewKey: "reactbits-circular-text",
     id: "reactbits-circular-text",
     name: "CircularText",
     description:
@@ -117,6 +122,7 @@ export const reactbits: UIEntry[] = [
     previewKey: "reactbits-count-up",
   },
   {
+    previewKey: "reactbits-scroll-reveal",
     id: "reactbits-scroll-reveal",
     name: "ScrollReveal",
     description:
@@ -131,6 +137,7 @@ export const reactbits: UIEntry[] = [
     install: "npx jsrepo add react-bits/ScrollReveal",
   },
   {
+    previewKey: "reactbits-fade-content",
     id: "reactbits-fade-content",
     name: "FadeContent",
     description: "Fade any content in/out on visibility change — the utility transition wrapper.",
@@ -144,6 +151,7 @@ export const reactbits: UIEntry[] = [
     install: "npx jsrepo add react-bits/FadeContent",
   },
   {
+    previewKey: "reactbits-click-spark",
     id: "reactbits-click-spark",
     name: "ClickSpark",
     description:
@@ -158,6 +166,7 @@ export const reactbits: UIEntry[] = [
     install: "npx jsrepo add react-bits/ClickSpark",
   },
   {
+    previewKey: "reactbits-splash-cursor",
     id: "reactbits-splash-cursor",
     name: "SplashCursor",
     description: "Fluid simulation that splashes and follows the cursor — WebGL ink in a backdrop.",
@@ -171,6 +180,7 @@ export const reactbits: UIEntry[] = [
     install: "npx jsrepo add react-bits/SplashCursor",
   },
   {
+    previewKey: "reactbits-meta-balls",
     id: "reactbits-meta-balls",
     name: "Meta Balls",
     description:
@@ -186,6 +196,7 @@ export const reactbits: UIEntry[] = [
     featured: true,
   },
   {
+    previewKey: "reactbits-silk",
     id: "reactbits-silk",
     name: "Silk",
     description: "Smooth, flowing silk-like gradient waves in WebGL. Calm and mesmerizing.",
@@ -199,6 +210,7 @@ export const reactbits: UIEntry[] = [
     install: "npx jsrepo add react-bits/Silk",
   },
   {
+    previewKey: "reactbits-liquid-chrome",
     id: "reactbits-liquid-chrome",
     name: "Liquid Chrome",
     description: "Molten, reflective chrome surface that ripples — cyberpunk hero background.",
@@ -212,6 +224,7 @@ export const reactbits: UIEntry[] = [
     install: "npx jsrepo add react-bits/LiquidChrome",
   },
   {
+    previewKey: "reactbits-hyperspeed",
     id: "reactbits-hyperspeed",
     name: "Hyperspeed",
     description:
@@ -226,6 +239,7 @@ export const reactbits: UIEntry[] = [
     install: "npx jsrepo add react-bits/Hyperspeed",
   },
   {
+    previewKey: "reactbits-iridescence",
     id: "reactbits-iridescence",
     name: "Iridescence",
     description:
@@ -240,6 +254,7 @@ export const reactbits: UIEntry[] = [
     install: "npx jsrepo add react-bits/Iridescence",
   },
   {
+    previewKey: "reactbits-ballpit",
     id: "reactbits-ballpit",
     name: "Ballpit",
     description: "A pit of physics balls that react to pointer movement — playful and interactive.",
@@ -253,6 +268,7 @@ export const reactbits: UIEntry[] = [
     install: "npx jsrepo add react-bits/Ballpit",
   },
   {
+    previewKey: "reactbits-dither",
     id: "reactbits-dither",
     name: "Dither",
     description: "Retro dithering shader over imagery or gradients — 1-bit nostalgia, modern GPU.",
@@ -266,6 +282,7 @@ export const reactbits: UIEntry[] = [
     install: "npx jsrepo add react-bits/Dither",
   },
   {
+    previewKey: "reactbits-ribbons",
     id: "reactbits-ribbons",
     name: "Ribbons",
     description: "Flowing 3D ribbons drifting through space — elegant WebGL motion backdrop.",
@@ -279,6 +296,7 @@ export const reactbits: UIEntry[] = [
     install: "npx jsrepo add react-bits/Ribbons",
   },
   {
+    previewKey: "reactbits-particles",
     id: "reactbits-particles",
     name: "Particles",
     description: "Classic lightweight canvas particle field — the dependable ambient background.",
@@ -292,6 +310,7 @@ export const reactbits: UIEntry[] = [
     install: "npx jsrepo add react-bits/Particles",
   },
   {
+    previewKey: "reactbits-elastic-mesh",
     id: "reactbits-elastic-mesh",
     name: "Elastic Mesh",
     description:
@@ -306,6 +325,7 @@ export const reactbits: UIEntry[] = [
     install: "npx jsrepo add react-bits/ElasticMesh",
   },
   {
+    previewKey: "reactbits-lanyard",
     id: "reactbits-lanyard",
     name: "Lanyard",
     description:
@@ -320,6 +340,7 @@ export const reactbits: UIEntry[] = [
     install: "npx jsrepo add react-bits/Lanyard",
   },
   {
+    previewKey: "reactbits-magnet",
     id: "reactbits-magnet",
     name: "Magnet",
     description: "Wrapper that pulls its content toward the cursor and springs back on release.",
@@ -333,6 +354,7 @@ export const reactbits: UIEntry[] = [
     install: "npx jsrepo add react-bits/Magnet",
   },
   {
+    previewKey: "reactbits-star-border",
     id: "reactbits-star-border",
     name: "StarBorder",
     description: "Button/box border with a traveling light streak — animated gradient outline.",

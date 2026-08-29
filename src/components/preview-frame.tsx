@@ -1,29 +1,63 @@
-import { lazy, Suspense } from "react";
-import { ExternalLink, Loader2 } from "lucide-react";
+import { Component, lazy, Suspense, type ErrorInfo, type ReactNode } from "react";
+import { AlertCircle, ExternalLink, Loader2 } from "lucide-react";
 import type { UIEntry } from "@/data";
 import { showcaseLoaders } from "@/showcase";
 import { sourceById } from "@/lib/registry";
 import { Button } from "@/components/ui/button";
 
-const cache = new Map<string, React.ComponentType>();
+interface ErrorBoundaryProps {
+  fallback: ReactNode;
+  children: ReactNode;
+}
 
-function resolvePreview(key: string): React.ComponentType | null {
-  if (cache.has(key)) return cache.get(key)!;
-  const loader = showcaseLoaders[key];
-  if (!loader) return null;
-  const Component = lazy(loader);
-  cache.set(key, Component);
-  return Component;
+interface ErrorBoundaryState {
+  hasError: boolean;
+}
+
+class PreviewErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
+  constructor(props: ErrorBoundaryProps) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  static getDerivedStateFromError(_error: Error): ErrorBoundaryState {
+    return { hasError: true };
+  }
+
+  override componentDidCatch(error: Error, errorInfo: ErrorInfo) {
+    console.warn("Preview render error:", error, errorInfo);
+  }
+
+  override render() {
+    if (this.state.hasError) {
+      return this.props.fallback;
+    }
+    return this.props.children;
+  }
+}
+
+const lazyMap: Record<string, React.LazyExoticComponent<React.ComponentType>> = {};
+
+for (const key of Object.keys(showcaseLoaders)) {
+  lazyMap[key] = lazy(showcaseLoaders[key]);
+}
+
+function PreviewRenderer({ previewKey }: { previewKey: string }) {
+  const Component = lazyMap[previewKey];
+  if (!Component) return null;
+  return <Component />;
 }
 
 export function PreviewFrame({ entry }: { entry: UIEntry }) {
   const source = sourceById.get(entry.source);
-  const Preview = entry.previewKey ? resolvePreview(entry.previewKey) : null;
+  const hasPreview = Boolean(entry.previewKey && lazyMap[entry.previewKey]);
 
   return (
     <section className="overflow-hidden rounded-xl border border-border bg-panel">
       <div className="flex h-10 items-center justify-between border-b border-border px-4">
-        <p className="text-xs font-medium text-muted-fg">{Preview ? "Live preview" : "Install"}</p>
+        <p className="text-xs font-medium text-muted-fg">
+          {hasPreview ? "Live preview" : "Install"}
+        </p>
         <a
           href={entry.sourceUrl}
           target="_blank"
@@ -35,16 +69,46 @@ export function PreviewFrame({ entry }: { entry: UIEntry }) {
       </div>
 
       <div className="relative flex min-h-[320px] items-center justify-center overflow-hidden p-8">
-        {Preview ? (
-          <Suspense
+        {hasPreview && entry.previewKey ? (
+          <PreviewErrorBoundary
+            key={entry.id}
             fallback={
-              <div className="flex items-center gap-2 text-sm text-muted-fg">
-                <Loader2 size={14} className="animate-spin" /> Loading preview…
+              <div className="flex max-w-sm flex-col items-center gap-4 text-center">
+                <span className="flex h-12 w-12 items-center justify-center rounded-xl border border-dashed border-red-500/40 bg-red-500/10 text-red-400">
+                  <AlertCircle size={20} />
+                </span>
+                <div>
+                  <p className="text-sm font-medium text-fg">Preview failed to render</p>
+                  <p className="mt-1 text-xs leading-relaxed text-muted-fg">
+                    This component requires specific runtime context or props. Grab the install
+                    command to use it in your app.
+                  </p>
+                  {entry.install && (
+                    <code className="mt-3 inline-block rounded-md border border-border bg-muted px-2 py-1 font-mono text-[11px] text-muted-fg">
+                      {entry.install}
+                    </code>
+                  )}
+                </div>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => window.open(entry.sourceUrl, "_blank")}
+                >
+                  View at {source?.name} <ExternalLink size={12} />
+                </Button>
               </div>
             }
           >
-            <Preview />
-          </Suspense>
+            <Suspense
+              fallback={
+                <div className="flex items-center gap-2 text-sm text-muted-fg">
+                  <Loader2 size={14} className="animate-spin" /> Loading preview…
+                </div>
+              }
+            >
+              <PreviewRenderer previewKey={entry.previewKey} />
+            </Suspense>
+          </PreviewErrorBoundary>
         ) : (
           <div className="flex max-w-sm flex-col items-center gap-4 text-center">
             <span className="flex h-12 w-12 items-center justify-center rounded-xl border border-dashed border-border text-muted-fg">

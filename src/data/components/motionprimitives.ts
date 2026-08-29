@@ -20,6 +20,7 @@ export const motionprimitives: UIEntry[] = [
     featured: true,
   },
   {
+    previewKey: "motionprimitives-text-scramble",
     id: "motionprimitives-text-scramble",
     name: "Text Scramble",
     description: "Characters shuffle through random glyphs before locking into place.",
@@ -33,6 +34,7 @@ export const motionprimitives: UIEntry[] = [
     install: "npx motion-primitives@latest add text-scramble",
   },
   {
+    previewKey: "motionprimitives-text-morph",
     id: "motionprimitives-text-morph",
     name: "Text Morph",
     description: "Morphs one word into another, interpolating letters smoothly.",
@@ -46,6 +48,7 @@ export const motionprimitives: UIEntry[] = [
     install: "npx motion-primitives@latest add text-morph",
   },
   {
+    previewKey: "motionprimitives-text-roll",
     id: "motionprimitives-text-roll",
     name: "Text Roll",
     description: "Rolling column of words that cycles with a vertical roll transition.",
@@ -59,6 +62,7 @@ export const motionprimitives: UIEntry[] = [
     install: "npx motion-primitives@latest add text-roll",
   },
   {
+    previewKey: "motionprimitives-shimmer-wave",
     id: "motionprimitives-shimmer-wave",
     name: "Shimmer Wave",
     description:
@@ -73,6 +77,7 @@ export const motionprimitives: UIEntry[] = [
     install: "npx motion-primitives@latest add shimmer-wave",
   },
   {
+    previewKey: "motionprimitives-animated-number",
     id: "motionprimitives-animated-number",
     name: "Animated Number",
     description:
@@ -87,6 +92,7 @@ export const motionprimitives: UIEntry[] = [
     install: "npx motion-primitives@latest add animated-number",
   },
   {
+    previewKey: "motionprimitives-sliding-number",
     id: "motionprimitives-sliding-number",
     name: "Sliding Number",
     description: "Digits slide vertically on value change — the split-flap board feel.",
@@ -100,6 +106,7 @@ export const motionprimitives: UIEntry[] = [
     install: "npx motion-primitives@latest add sliding-number",
   },
   {
+    previewKey: "motionprimitives-border-trail",
     id: "motionprimitives-border-trail",
     name: "Border Trail",
     description:
@@ -114,6 +121,7 @@ export const motionprimitives: UIEntry[] = [
     install: "npx motion-primitives@latest add border-trail",
   },
   {
+    previewKey: "motionprimitives-spotlight",
     id: "motionprimitives-spotlight",
     name: "Spotlight",
     description:
@@ -143,6 +151,7 @@ export const motionprimitives: UIEntry[] = [
     previewKey: "motionprimitives-glow-effect",
   },
   {
+    previewKey: "motionprimitives-tilt",
     id: "motionprimitives-tilt",
     name: "Tilt",
     description: "Pointer-tracked 3D tilt with spring return — physical depth for cards.",
@@ -156,6 +165,7 @@ export const motionprimitives: UIEntry[] = [
     install: "npx motion-primitives@latest add tilt",
   },
   {
+    previewKey: "motionprimitives-magnetic",
     id: "motionprimitives-magnetic",
     name: "Magnetic",
     description:
@@ -170,6 +180,7 @@ export const motionprimitives: UIEntry[] = [
     install: "npx motion-primitives@latest add magnetic",
   },
   {
+    previewKey: "motionprimitives-dock",
     id: "motionprimitives-dock",
     name: "Dock",
     description: "macOS-style magnifying dock with spring scaling on hover.",
@@ -183,6 +194,7 @@ export const motionprimitives: UIEntry[] = [
     install: "npx motion-primitives@latest add dock",
   },
   {
+    previewKey: "motionprimitives-morphing-dialog",
     id: "motionprimitives-morphing-dialog",
     name: "Morphing Dialog",
     description:
@@ -198,6 +210,7 @@ export const motionprimitives: UIEntry[] = [
     featured: true,
   },
   {
+    previewKey: "motionprimitives-morphing-popover",
     id: "motionprimitives-morphing-popover",
     name: "Morphing Popover",
     description:
@@ -212,6 +225,7 @@ export const motionprimitives: UIEntry[] = [
     install: "npx motion-primitives@latest add morphing-popover",
   },
   {
+    previewKey: "motionprimitives-infinite-slider",
     id: "motionprimitives-infinite-slider",
     name: "Infinite Slider",
     description: "Infinite marquee slider — logos, testimonials, anything on a loop.",
@@ -225,6 +239,7 @@ export const motionprimitives: UIEntry[] = [
     install: "npx motion-primitives@latest add infinite-slider",
   },
   {
+    previewKey: "motionprimitives-scroll-progress",
     id: "motionprimitives-scroll-progress",
     name: "Scroll Progress",
     description: "Slim progress bar tracking page or container scroll position.",
@@ -238,6 +253,7 @@ export const motionprimitives: UIEntry[] = [
     install: "npx motion-primitives@latest add scroll-progress",
   },
   {
+    previewKey: "motionprimitives-cursor",
     id: "motionprimitives-cursor",
     name: "Cursor",
     description:

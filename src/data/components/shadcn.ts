@@ -4,6 +4,7 @@ import type { UIEntry } from "../types";
 // Complete v4 docs set (65 components); descriptions verbatim from the docs.
 export const shadcn: UIEntry[] = [
   {
+    previewKey: "shadcn-accordion",
     id: "shadcn-accordion",
     name: "Accordion",
     description:
@@ -18,6 +19,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add accordion",
   },
   {
+    previewKey: "shadcn-alert",
     id: "shadcn-alert",
     name: "Alert",
     description: "Displays a callout for user attention.",
@@ -31,6 +33,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add alert",
   },
   {
+    previewKey: "shadcn-alert-dialog",
     id: "shadcn-alert-dialog",
     name: "Alert Dialog",
     description:
@@ -45,6 +48,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add alert-dialog",
   },
   {
+    previewKey: "shadcn-aspect-ratio",
     id: "shadcn-aspect-ratio",
     name: "Aspect Ratio",
     description: "Displays content within a desired ratio.",
@@ -58,6 +62,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add aspect-ratio",
   },
   {
+    previewKey: "shadcn-attachment",
     id: "shadcn-attachment",
     name: "Attachment",
     description:
@@ -72,6 +77,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add attachment",
   },
   {
+    previewKey: "shadcn-avatar",
     id: "shadcn-avatar",
     name: "Avatar",
     description: "An image element with a fallback for representing the user.",
@@ -85,6 +91,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add avatar",
   },
   {
+    previewKey: "shadcn-badge",
     id: "shadcn-badge",
     name: "Badge",
     description: "Displays a badge or a component that looks like a badge.",
@@ -98,6 +105,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add badge",
   },
   {
+    previewKey: "shadcn-breadcrumb",
     id: "shadcn-breadcrumb",
     name: "Breadcrumb",
     description: "Displays the path to the current resource using a hierarchy of links.",
@@ -111,6 +119,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add breadcrumb",
   },
   {
+    previewKey: "shadcn-bubble",
     id: "shadcn-bubble",
     name: "Bubble",
     description:
@@ -125,6 +134,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add bubble",
   },
   {
+    previewKey: "shadcn-button",
     id: "shadcn-button",
     name: "Button",
     description: "Displays a button or a component that looks like a button.",
@@ -139,6 +149,7 @@ export const shadcn: UIEntry[] = [
     featured: true,
   },
   {
+    previewKey: "shadcn-button-group",
     id: "shadcn-button-group",
     name: "Button Group",
     description: "A container that groups related buttons together with consistent styling.",
@@ -152,6 +163,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add button-group",
   },
   {
+    previewKey: "shadcn-calendar",
     id: "shadcn-calendar",
     name: "Calendar",
     description: "A calendar component that allows users to select a date or a range of dates.",
@@ -165,6 +177,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add calendar",
   },
   {
+    previewKey: "shadcn-card",
     id: "shadcn-card",
     name: "Card",
     description: "Displays a card with header, content, and footer.",
@@ -178,6 +191,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add card",
   },
   {
+    previewKey: "shadcn-carousel",
     id: "shadcn-carousel",
     name: "Carousel",
     description: "A carousel with motion and swipe built using Embla.",
@@ -191,6 +205,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add carousel",
   },
   {
+    previewKey: "shadcn-chart",
     id: "shadcn-chart",
     name: "Chart",
     description: "Beautiful charts. Built using Recharts. Copy and paste into your apps.",
@@ -205,6 +220,7 @@ export const shadcn: UIEntry[] = [
     featured: true,
   },
   {
+    previewKey: "shadcn-checkbox",
     id: "shadcn-checkbox",
     name: "Checkbox",
     description: "A control that allows the user to toggle between checked and not checked.",
@@ -218,6 +234,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add checkbox",
   },
   {
+    previewKey: "shadcn-collapsible",
     id: "shadcn-collapsible",
     name: "Collapsible",
     description: "An interactive component which expands/collapses a panel.",
@@ -231,6 +248,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add collapsible",
   },
   {
+    previewKey: "shadcn-combobox",
     id: "shadcn-combobox",
     name: "Combobox",
     description: "Autocomplete input with a list of suggestions.",
@@ -244,6 +262,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add combobox",
   },
   {
+    previewKey: "shadcn-command",
     id: "shadcn-command",
     name: "Command",
     description: "Command menu for search and quick actions.",
@@ -258,6 +277,7 @@ export const shadcn: UIEntry[] = [
     featured: true,
   },
   {
+    previewKey: "shadcn-context-menu",
     id: "shadcn-context-menu",
     name: "Context Menu",
     description: "Displays a menu of actions triggered by a right click.",
@@ -271,6 +291,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add context-menu",
   },
   {
+    previewKey: "shadcn-data-table",
     id: "shadcn-data-table",
     name: "Data Table",
     description: "Powerful table and datagrids built using TanStack Table.",
@@ -284,6 +305,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add data-table",
   },
   {
+    previewKey: "shadcn-date-picker",
     id: "shadcn-date-picker",
     name: "Date Picker",
     description: "A date picker component with range and presets.",
@@ -297,6 +319,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add date-picker",
   },
   {
+    previewKey: "shadcn-dialog",
     id: "shadcn-dialog",
     name: "Dialog",
     description:
@@ -311,6 +334,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add dialog",
   },
   {
+    previewKey: "shadcn-direction",
     id: "shadcn-direction",
     name: "Direction",
     description: "A provider component that sets the text direction for your application.",
@@ -324,6 +348,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add direction",
   },
   {
+    previewKey: "shadcn-drawer",
     id: "shadcn-drawer",
     name: "Drawer",
     description: "A drawer component for React.",
@@ -337,6 +362,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add drawer",
   },
   {
+    previewKey: "shadcn-dropdown-menu",
     id: "shadcn-dropdown-menu",
     name: "Dropdown Menu",
     description:
@@ -351,6 +377,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add dropdown-menu",
   },
   {
+    previewKey: "shadcn-empty",
     id: "shadcn-empty",
     name: "Empty",
     description: "Use the Empty component to display an empty state.",
@@ -364,6 +391,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add empty",
   },
   {
+    previewKey: "shadcn-field",
     id: "shadcn-field",
     name: "Field",
     description:
@@ -378,6 +406,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add field",
   },
   {
+    previewKey: "shadcn-hover-card",
     id: "shadcn-hover-card",
     name: "Hover Card",
     description: "For sighted users to preview content available behind a link.",
@@ -391,6 +420,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add hover-card",
   },
   {
+    previewKey: "shadcn-input",
     id: "shadcn-input",
     name: "Input",
     description:
@@ -405,6 +435,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add input",
   },
   {
+    previewKey: "shadcn-input-group",
     id: "shadcn-input-group",
     name: "Input Group",
     description: "Add addons, buttons, and helper content to inputs.",
@@ -418,6 +449,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add input-group",
   },
   {
+    previewKey: "shadcn-input-otp",
     id: "shadcn-input-otp",
     name: "Input OTP",
     description: "Accessible one-time password component with copy-paste functionality.",
@@ -431,6 +463,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add input-otp",
   },
   {
+    previewKey: "shadcn-item",
     id: "shadcn-item",
     name: "Item",
     description:
@@ -445,6 +478,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add item",
   },
   {
+    previewKey: "shadcn-kbd",
     id: "shadcn-kbd",
     name: "Kbd",
     description: "Used to display textual user input from keyboard.",
@@ -458,6 +492,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add kbd",
   },
   {
+    previewKey: "shadcn-label",
     id: "shadcn-label",
     name: "Label",
     description: "Renders an accessible label associated with controls.",
@@ -471,6 +506,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add label",
   },
   {
+    previewKey: "shadcn-marker",
     id: "shadcn-marker",
     name: "Marker",
     description:
@@ -485,6 +521,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add marker",
   },
   {
+    previewKey: "shadcn-menubar",
     id: "shadcn-menubar",
     name: "Menubar",
     description:
@@ -499,6 +536,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add menubar",
   },
   {
+    previewKey: "shadcn-message",
     id: "shadcn-message",
     name: "Message",
     description:
@@ -513,6 +551,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add message",
   },
   {
+    previewKey: "shadcn-message-scroller",
     id: "shadcn-message-scroller",
     name: "Message Scroller",
     description:
@@ -527,6 +566,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add message-scroller",
   },
   {
+    previewKey: "shadcn-native-select",
     id: "shadcn-native-select",
     name: "Native Select",
     description: "A styled native HTML select element with consistent design system integration.",
@@ -540,6 +580,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add native-select",
   },
   {
+    previewKey: "shadcn-navigation-menu",
     id: "shadcn-navigation-menu",
     name: "Navigation Menu",
     description: "A collection of links for navigating websites.",
@@ -553,6 +594,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add navigation-menu",
   },
   {
+    previewKey: "shadcn-pagination",
     id: "shadcn-pagination",
     name: "Pagination",
     description: "Pagination with page navigation, next and previous links.",
@@ -566,6 +608,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add pagination",
   },
   {
+    previewKey: "shadcn-popover",
     id: "shadcn-popover",
     name: "Popover",
     description: "Displays rich content in a portal, triggered by a button.",
@@ -579,6 +622,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add popover",
   },
   {
+    previewKey: "shadcn-progress",
     id: "shadcn-progress",
     name: "Progress",
     description:
@@ -593,6 +637,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add progress",
   },
   {
+    previewKey: "shadcn-questionnaire",
     id: "shadcn-questionnaire",
     name: "Questionnaire",
     description:
@@ -607,6 +652,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add questionnaire",
   },
   {
+    previewKey: "shadcn-radio-group",
     id: "shadcn-radio-group",
     name: "Radio Group",
     description:
@@ -621,6 +667,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add radio-group",
   },
   {
+    previewKey: "shadcn-resizable",
     id: "shadcn-resizable",
     name: "Resizable",
     description: "Accessible resizable panel groups and layouts with keyboard support.",
@@ -634,6 +681,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add resizable",
   },
   {
+    previewKey: "shadcn-scroll-area",
     id: "shadcn-scroll-area",
     name: "Scroll Area",
     description: "Augments native scroll functionality for custom, cross-browser styling.",
@@ -647,6 +695,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add scroll-area",
   },
   {
+    previewKey: "shadcn-select",
     id: "shadcn-select",
     name: "Select",
     description: "Displays a list of options for the user to pick from—triggered by a button.",
@@ -660,6 +709,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add select",
   },
   {
+    previewKey: "shadcn-separator",
     id: "shadcn-separator",
     name: "Separator",
     description: "Visually or semantically separates content.",
@@ -673,6 +723,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add separator",
   },
   {
+    previewKey: "shadcn-sheet",
     id: "shadcn-sheet",
     name: "Sheet",
     description:
@@ -687,6 +738,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add sheet",
   },
   {
+    previewKey: "shadcn-sidebar",
     id: "shadcn-sidebar",
     name: "Sidebar",
     description: "A composable, themeable and customizable sidebar component.",
@@ -701,6 +753,7 @@ export const shadcn: UIEntry[] = [
     featured: true,
   },
   {
+    previewKey: "shadcn-skeleton",
     id: "shadcn-skeleton",
     name: "Skeleton",
     description: "Use to show a placeholder while content is loading.",
@@ -714,6 +767,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add skeleton",
   },
   {
+    previewKey: "shadcn-slider",
     id: "shadcn-slider",
     name: "Slider",
     description: "An input where the user selects a value from within a given range.",
@@ -727,6 +781,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add slider",
   },
   {
+    previewKey: "shadcn-sonner",
     id: "shadcn-sonner",
     name: "Sonner",
     description: "An opinionated toast component for React.",
@@ -740,6 +795,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add sonner",
   },
   {
+    previewKey: "shadcn-spinner",
     id: "shadcn-spinner",
     name: "Spinner",
     description: "An indicator that can be used to show a loading state.",
@@ -753,6 +809,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add spinner",
   },
   {
+    previewKey: "shadcn-switch",
     id: "shadcn-switch",
     name: "Switch",
     description: "A control that allows the user to toggle between checked and not checked.",
@@ -766,6 +823,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add switch",
   },
   {
+    previewKey: "shadcn-table",
     id: "shadcn-table",
     name: "Table",
     description: "A responsive table component.",
@@ -779,6 +837,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add table",
   },
   {
+    previewKey: "shadcn-tabs",
     id: "shadcn-tabs",
     name: "Tabs",
     description:
@@ -793,6 +852,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add tabs",
   },
   {
+    previewKey: "shadcn-textarea",
     id: "shadcn-textarea",
     name: "Textarea",
     description: "Displays a form textarea or a component that looks like a textarea.",
@@ -806,6 +866,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add textarea",
   },
   {
+    previewKey: "shadcn-toast",
     id: "shadcn-toast",
     name: "Toast",
     description: "A succinct message that is displayed temporarily.",
@@ -819,6 +880,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add toast",
   },
   {
+    previewKey: "shadcn-toggle",
     id: "shadcn-toggle",
     name: "Toggle",
     description: "A two-state button that can be either on or off.",
@@ -832,6 +894,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add toggle",
   },
   {
+    previewKey: "shadcn-toggle-group",
     id: "shadcn-toggle-group",
     name: "Toggle Group",
     description: "A set of two-state buttons that can be toggled on or off.",
@@ -845,6 +908,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add toggle-group",
   },
   {
+    previewKey: "shadcn-tooltip",
     id: "shadcn-tooltip",
     name: "Tooltip",
     description:
@@ -859,6 +923,7 @@ export const shadcn: UIEntry[] = [
     install: "npx shadcn@latest add tooltip",
   },
   {
+    previewKey: "shadcn-typography",
     id: "shadcn-typography",
     name: "Typography",
     description: "Styles for headings, paragraphs, lists, etc.",

@@ -19,7 +19,10 @@
 
     /* Path alias */
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "next/image": ["./src/lib/shims/next-image.tsx"],
+      "next/link": ["./src/lib/shims/next-link.tsx"],
+      "next-themes": ["./src/lib/shims/next-themes.tsx"]
     },
 
     /* Linting */

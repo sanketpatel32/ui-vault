@@ -3,6 +3,7 @@ import type { UIEntry } from "../types";
 // https://magicui.design — MIT, animated components on shadcn conventions. Live-vendorable.
 export const magicui: UIEntry[] = [
   {
+    previewKey: "magicui-marquee",
     id: "magicui-marquee",
     name: "Marquee",
     description: "Infinite scrolling carousel for text, images or videos.",
@@ -16,6 +17,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/marquee",
   },
   {
+    previewKey: "magicui-terminal",
     id: "magicui-terminal",
     name: "Terminal",
     description: "macOS terminal mockup for showcasing CLI output.",
@@ -29,6 +31,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/terminal",
   },
   {
+    previewKey: "magicui-hero-video-dialog",
     id: "magicui-hero-video-dialog",
     name: "Hero Video Dialog",
     description: "Hero video that expands from an inline thumbnail into a dialog player.",
@@ -42,6 +45,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/hero-video-dialog",
   },
   {
+    previewKey: "magicui-bento-grid",
     id: "magicui-bento-grid",
     name: "Bento Grid",
     description: "Bento-style grid layout for elegantly showcasing product features.",
@@ -56,6 +60,7 @@ export const magicui: UIEntry[] = [
     featured: true,
   },
   {
+    previewKey: "magicui-animated-list",
     id: "magicui-animated-list",
     name: "Animated List",
     description:
@@ -70,6 +75,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/animated-list",
   },
   {
+    previewKey: "magicui-dock",
     id: "magicui-dock",
     name: "Dock",
     description: "macOS-style magnifying dock navigation built with Tailwind and Motion.",
@@ -84,6 +90,7 @@ export const magicui: UIEntry[] = [
     featured: true,
   },
   {
+    previewKey: "magicui-globe",
     id: "magicui-globe",
     name: "Globe",
     description: "Auto-rotating, interactive WebGL globe built on cobe.",
@@ -98,6 +105,7 @@ export const magicui: UIEntry[] = [
     featured: true,
   },
   {
+    previewKey: "magicui-tweet-card",
     id: "magicui-tweet-card",
     name: "Tweet Card",
     description: "Embeds a tweet with author name, handle and profile picture.",
@@ -111,6 +119,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/tweet-card",
   },
   {
+    previewKey: "magicui-orbiting-circles",
     id: "magicui-orbiting-circles",
     name: "Orbiting Circles",
     description: "Icons or circles orbiting along a circular path.",
@@ -124,6 +133,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/orbiting-circles",
   },
   {
+    previewKey: "magicui-avatar-circles",
     id: "magicui-avatar-circles",
     name: "Avatar Circles",
     description: "Overlapping row of avatar images, e.g. for social proof or user groups.",
@@ -137,6 +147,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/avatar-circles",
   },
   {
+    previewKey: "magicui-icon-cloud",
     id: "magicui-icon-cloud",
     name: "Icon Cloud",
     description: "Interactive 3D tag/icon cloud.",
@@ -150,6 +161,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/icon-cloud",
   },
   {
+    previewKey: "magicui-lens",
     id: "magicui-lens",
     name: "Lens",
     description: "Magnifier lens that zooms into images, videos and other elements.",
@@ -163,6 +175,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/lens",
   },
   {
+    previewKey: "magicui-pointer",
     id: "magicui-pointer",
     name: "Pointer",
     description: "Shows a custom pointer graphic when hovering over an element.",
@@ -176,6 +189,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/pointer",
   },
   {
+    previewKey: "magicui-smooth-cursor",
     id: "magicui-smooth-cursor",
     name: "Smooth Cursor",
     description: "Physics-based smooth trailing cursor animation.",
@@ -189,6 +203,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/smooth-cursor",
   },
   {
+    previewKey: "magicui-progressive-blur",
     id: "magicui-progressive-blur",
     name: "Progressive Blur",
     description: "Progressively blurs content as it scrolls under an edge, similar to iOS bars.",
@@ -202,6 +217,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/progressive-blur",
   },
   {
+    previewKey: "magicui-dotted-map",
     id: "magicui-dotted-map",
     name: "Dotted Map",
     description: "SVG dotted world map for visualizing geographic data.",
@@ -215,6 +231,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/dotted-map",
   },
   {
+    previewKey: "magicui-animated-beam",
     id: "magicui-animated-beam",
     name: "Animated Beam",
     description:
@@ -229,6 +246,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/animated-beam",
   },
   {
+    previewKey: "magicui-border-beam",
     id: "magicui-border-beam",
     name: "Border Beam",
     description: "Beam of light that travels along the border of its container.",
@@ -242,6 +260,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/border-beam",
   },
   {
+    previewKey: "magicui-shine-border",
     id: "magicui-shine-border",
     name: "Shine Border",
     description: "Animated colored border glow effect for containers.",
@@ -255,6 +274,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/shine-border",
   },
   {
+    previewKey: "magicui-magic-card",
     id: "magicui-magic-card",
     name: "Magic Card",
     description: "Card with a mouse-following spotlight and border highlight on hover.",
@@ -269,6 +289,7 @@ export const magicui: UIEntry[] = [
     featured: true,
   },
   {
+    previewKey: "magicui-glare-hover",
     id: "magicui-glare-hover",
     name: "Glare Hover",
     description:
@@ -283,6 +304,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/glare-hover",
   },
   {
+    previewKey: "magicui-meteors",
     id: "magicui-meteors",
     name: "Meteors",
     description: "Meteor shower background effect.",
@@ -296,6 +318,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/meteors",
   },
   {
+    previewKey: "magicui-confetti",
     id: "magicui-confetti",
     name: "Confetti",
     description:
@@ -310,6 +333,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/confetti",
   },
   {
+    previewKey: "magicui-particles",
     id: "magicui-particles",
     name: "Particles",
     description: "Floating particle effect that adds depth to hero sections.",
@@ -323,6 +347,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/particles",
   },
   {
+    previewKey: "magicui-animated-theme-toggler",
     id: "magicui-animated-theme-toggler",
     name: "Theme Toggler",
     description:
@@ -337,6 +362,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/animated-theme-toggler",
   },
   {
+    previewKey: "magicui-blur-fade",
     id: "magicui-blur-fade",
     name: "Blur Fade",
     description: "Blur fade-in/out animation for smoothly revealing content on mount or scroll.",
@@ -350,6 +376,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/blur-fade",
   },
   {
+    previewKey: "magicui-text-animate",
     id: "magicui-text-animate",
     name: "Text Animate",
     description: "Multi-purpose text animation component supporting many animation styles.",
@@ -363,6 +390,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/text-animate",
   },
   {
+    previewKey: "magicui-typing-animation",
     id: "magicui-typing-animation",
     name: "Typing Animation",
     description: "Types text out character by character.",
@@ -376,6 +404,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/typing-animation",
   },
   {
+    previewKey: "magicui-line-shadow-text",
     id: "magicui-line-shadow-text",
     name: "Line Shadow Text",
     description: "Text with a moving line shadow creating a 3D depth effect.",
@@ -389,6 +418,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/line-shadow-text",
   },
   {
+    previewKey: "magicui-aurora-text",
     id: "magicui-aurora-text",
     name: "Aurora Text",
     description: "Text rendered with an aurora-style gradient color effect.",
@@ -402,6 +432,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/aurora-text",
   },
   {
+    previewKey: "magicui-video-text",
     id: "magicui-video-text",
     name: "Video Text",
     description: "Text with a video playing as its background.",
@@ -415,6 +446,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/video-text",
   },
   {
+    previewKey: "magicui-number-ticker",
     id: "magicui-number-ticker",
     name: "Number Ticker",
     description: "Animates a number counting up or down to a target value.",
@@ -428,6 +460,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/number-ticker",
   },
   {
+    previewKey: "magicui-animated-shiny-text",
     id: "magicui-animated-shiny-text",
     name: "Animated Shiny Text",
     description: "Light glare effect that pans across text making it shimmer.",
@@ -441,6 +474,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/animated-shiny-text",
   },
   {
+    previewKey: "magicui-animated-gradient-text",
     id: "magicui-animated-gradient-text",
     name: "Animated Gradient Text",
     description: "Text backed by a gradient that smoothly transitions between colors.",
@@ -454,6 +488,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/animated-gradient-text",
   },
   {
+    previewKey: "magicui-text-reveal",
     id: "magicui-text-reveal",
     name: "Text Reveal",
     description: "Fades text in word by word as the user scrolls down the page.",
@@ -467,6 +502,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/text-reveal",
   },
   {
+    previewKey: "magicui-dia-text-reveal",
     id: "magicui-dia-text-reveal",
     name: "Dia Text Reveal",
     description:
@@ -481,6 +517,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/dia-text-reveal",
   },
   {
+    previewKey: "magicui-hyper-text",
     id: "magicui-hyper-text",
     name: "Hyper Text",
     description: "Scrambles letters before settling on the final text.",
@@ -494,6 +531,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/hyper-text",
   },
   {
+    previewKey: "magicui-word-rotate",
     id: "magicui-word-rotate",
     name: "Word Rotate",
     description: "Vertically rotates through a list of words.",
@@ -507,6 +545,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/word-rotate",
   },
   {
+    previewKey: "magicui-scroll-based-velocity",
     id: "magicui-scroll-based-velocity",
     name: "Scroll Based Velocity",
     description: "Marquee-style text whose speed changes with scroll velocity.",
@@ -520,6 +559,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/scroll-based-velocity",
   },
   {
+    previewKey: "magicui-sparkles-text",
     id: "magicui-sparkles-text",
     name: "Sparkles Text",
     description: "Text that continuously generates sparkles around itself.",
@@ -533,6 +573,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/sparkles-text",
   },
   {
+    previewKey: "magicui-morphing-text",
     id: "magicui-morphing-text",
     name: "Morphing Text",
     description: "Text that morphs between different words.",
@@ -546,6 +587,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/morphing-text",
   },
   {
+    previewKey: "magicui-spinning-text",
     id: "magicui-spinning-text",
     name: "Spinning Text",
     description: "Text animated in a circular motion with configurable speed, direction and color.",
@@ -559,6 +601,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/spinning-text",
   },
   {
+    previewKey: "magicui-highlighter",
     id: "magicui-highlighter",
     name: "Text Highlighter",
     description: "Marker-stroke highlight over text that mimics a hand-drawn stroke.",
@@ -572,6 +615,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/highlighter",
   },
   {
+    previewKey: "magicui-text-3d-flip",
     id: "magicui-text-3d-flip",
     name: "Text 3D Flip",
     description: "Flips each letter in 3D with a staggered animation on hover.",
@@ -585,6 +629,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/text-3d-flip",
   },
   {
+    previewKey: "magicui-safari",
     id: "magicui-safari",
     name: "Safari",
     description: "Safari browser window mockup for showcasing a website screenshot.",
@@ -598,6 +643,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/safari",
   },
   {
+    previewKey: "magicui-iphone",
     id: "magicui-iphone",
     name: "iPhone",
     description: "iPhone mockup frame for showcasing app screens.",
@@ -611,6 +657,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/iphone",
   },
   {
+    previewKey: "magicui-android",
     id: "magicui-android",
     name: "Android",
     description: "Android phone mockup frame for showcasing mobile app screens or screenshots.",
@@ -624,6 +671,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/android",
   },
   {
+    previewKey: "magicui-rainbow-button",
     id: "magicui-rainbow-button",
     name: "Rainbow Button",
     description: "Button with an animated rainbow gradient border/background.",
@@ -637,6 +685,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/rainbow-button",
   },
   {
+    previewKey: "magicui-shimmer-button",
     id: "magicui-shimmer-button",
     name: "Shimmer Button",
     description: "Button with a shimmer of light travelling around its perimeter.",
@@ -650,6 +699,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/shimmer-button",
   },
   {
+    previewKey: "magicui-ripple-button",
     id: "magicui-ripple-button",
     name: "Ripple Button",
     description: "Button with a ripple effect on click for engagement.",
@@ -663,6 +713,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/ripple-button",
   },
   {
+    previewKey: "magicui-flickering-grid",
     id: "magicui-flickering-grid",
     name: "Flickering Grid",
     description: "Flickering SVG grid background effect.",
@@ -676,6 +727,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/flickering-grid",
   },
   {
+    previewKey: "magicui-animated-grid-pattern",
     id: "magicui-animated-grid-pattern",
     name: "Animated Grid Pattern",
     description: "Animated SVG grid pattern background, customizable via Tailwind CSS.",
@@ -689,6 +741,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/animated-grid-pattern",
   },
   {
+    previewKey: "magicui-retro-grid",
     id: "magicui-retro-grid",
     name: "Retro Grid",
     description: "Animated scrolling retro perspective grid background.",
@@ -702,6 +755,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/retro-grid",
   },
   {
+    previewKey: "magicui-ripple",
     id: "magicui-ripple",
     name: "Ripple",
     description: "Pulsing ripple effect placed behind elements to emphasize them.",
@@ -715,6 +769,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/ripple",
   },
   {
+    previewKey: "magicui-dot-pattern",
     id: "magicui-dot-pattern",
     name: "Dot Pattern",
     description: "SVG dot pattern background, customizable via Tailwind CSS.",
@@ -728,6 +783,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/dot-pattern",
   },
   {
+    previewKey: "magicui-grid-pattern",
     id: "magicui-grid-pattern",
     name: "Grid Pattern",
     description: "SVG grid pattern background, customizable via Tailwind CSS.",
@@ -741,6 +797,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/grid-pattern",
   },
   {
+    previewKey: "magicui-hexagon-pattern",
     id: "magicui-hexagon-pattern",
     name: "Hexagon Pattern",
     description: "SVG hexagon pattern background, customizable via Tailwind CSS.",
@@ -754,6 +811,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/hexagon-pattern",
   },
   {
+    previewKey: "magicui-striped-pattern",
     id: "magicui-striped-pattern",
     name: "Striped Pattern",
     description: "SVG striped pattern background, customizable via Tailwind CSS.",
@@ -767,6 +825,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/striped-pattern",
   },
   {
+    previewKey: "magicui-interactive-grid-pattern",
     id: "magicui-interactive-grid-pattern",
     name: "Interactive Grid Pattern",
     description: "Grid pattern background that reacts to pointer movement.",
@@ -780,6 +839,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/interactive-grid-pattern",
   },
   {
+    previewKey: "magicui-light-rays",
     id: "magicui-light-rays",
     name: "Light Rays",
     description: "Animated rays of light shining down from above.",
@@ -793,6 +853,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/light-rays",
   },
   {
+    previewKey: "magicui-noise-texture",
     id: "magicui-noise-texture",
     name: "Noise Texture",
     description: "SVG fractal noise (feTurbulence) overlay for subtle texture backgrounds.",
@@ -806,6 +867,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/noise-texture",
   },
   {
+    previewKey: "magicui-shiny-button",
     id: "magicui-shiny-button",
     name: "Shiny Button",
     description: "Shiny button with dynamic styling for light and dark mode.",
@@ -819,6 +881,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/shiny-button",
   },
   {
+    previewKey: "magicui-file-tree",
     id: "magicui-file-tree",
     name: "File Tree",
     description: "Collapsible tree view for presenting folder and file structures.",
@@ -832,6 +895,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/file-tree",
   },
   {
+    previewKey: "magicui-code-comparison",
     id: "magicui-code-comparison",
     name: "Code Comparison",
     description: "Side-by-side component for comparing two code snippets.",
@@ -845,6 +909,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/code-comparison",
   },
   {
+    previewKey: "magicui-scroll-progress",
     id: "magicui-scroll-progress",
     name: "Scroll Progress",
     description: "Animated page scroll progress indicator.",
@@ -858,6 +923,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/scroll-progress",
   },
   {
+    previewKey: "magicui-neon-gradient-card",
     id: "magicui-neon-gradient-card",
     name: "Neon Gradient Card",
     description: "Card wrapped in a neon gradient glow effect.",
@@ -871,6 +937,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/neon-gradient-card",
   },
   {
+    previewKey: "magicui-comic-text",
     id: "magicui-comic-text",
     name: "Comic Text",
     description: "Playful comic-book-style text animation.",
@@ -884,6 +951,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/comic-text",
   },
   {
+    previewKey: "magicui-kinetic-text",
     id: "magicui-kinetic-text",
     name: "Kinetic Text",
     description: "Animates the font weight of characters on hover for a kinetic typography feel.",
@@ -897,6 +965,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/kinetic-text",
   },
   {
+    previewKey: "magicui-cool-mode",
     id: "magicui-cool-mode",
     name: "Cool Mode",
     description: "Adds a particle burst effect to buttons, links and other DOM elements.",
@@ -910,6 +979,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/cool-mode",
   },
   {
+    previewKey: "magicui-pixel-image",
     id: "magicui-pixel-image",
     name: "Pixel Image",
     description: "Displays an image with a pixelated reveal effect.",
@@ -923,6 +993,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/pixel-image",
   },
   {
+    previewKey: "magicui-pulsating-button",
     id: "magicui-pulsating-button",
     name: "Pulsating Button",
     description: "Pulsating button for drawing attention to primary actions.",
@@ -936,6 +1007,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/pulsating-button",
   },
   {
+    previewKey: "magicui-warp-background",
     id: "magicui-warp-background",
     name: "Warp Background",
     description: "Card with an animated time-warping background effect.",
@@ -949,6 +1021,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/warp-background",
   },
   {
+    previewKey: "magicui-interactive-hover-button",
     id: "magicui-interactive-hover-button",
     name: "Interactive Hover Button",
     description: "Button with dynamic, smooth hover transitions between states.",
@@ -962,6 +1035,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/interactive-hover-button",
   },
   {
+    previewKey: "magicui-animated-circular-progress-bar",
     id: "magicui-animated-circular-progress-bar",
     name: "Animated Circular Progress Bar",
     description: "Circular gauge that animates to a percentage value; good for stats and KPIs.",
@@ -975,6 +1049,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/animated-circular-progress-bar",
   },
   {
+    previewKey: "magicui-backlight",
     id: "magicui-backlight",
     name: "Backlight",
     description: "Glowing backlight effect placed behind videos, images and SVGs.",
@@ -988,6 +1063,7 @@ export const magicui: UIEntry[] = [
     install: "npx shadcn@latest add @magicui/backlight",
   },
   {
+    previewKey: "magicui-glyph-matrix",
     id: "magicui-glyph-matrix",
     name: "Glyph Matrix",
     description: "Canvas grid of subtly shifting glyphs with theme-aware colors.",

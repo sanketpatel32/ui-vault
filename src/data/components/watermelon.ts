@@ -4,6 +4,7 @@ import type { UIEntry } from "../types";
 // Catalog: components / animated / blocks / dashboards.
 export const watermelon: UIEntry[] = [
   {
+    previewKey: "watermelon-card-split-accordion",
     id: "watermelon-card-split-accordion",
     name: "Card Split Accordion",
     description:
@@ -18,6 +19,7 @@ export const watermelon: UIEntry[] = [
     install: "npx shadcn@latest add https://registry.watermelon.sh/r/card-split-accordion.json",
   },
   {
+    previewKey: "watermelon-micro-interactions",
     id: "watermelon-micro-interactions",
     name: "Micro-interactions Pack",
     description:
@@ -31,6 +33,7 @@ export const watermelon: UIEntry[] = [
     previewMode: "live",
   },
   {
+    previewKey: "watermelon-hero-blocks",
     id: "watermelon-hero-blocks",
     name: "Hero Section Blocks",
     description: "43 hero section variants — from minimal SaaS to bold agency styles.",
@@ -44,6 +47,7 @@ export const watermelon: UIEntry[] = [
     featured: true,
   },
   {
+    previewKey: "watermelon-footer-blocks",
     id: "watermelon-footer-blocks",
     name: "Footer Blocks",
     description: "31 footer variants — sitemaps, newsletters, big-brand statements.",
@@ -56,6 +60,7 @@ export const watermelon: UIEntry[] = [
     previewMode: "live",
   },
   {
+    previewKey: "watermelon-auth-blocks",
     id: "watermelon-auth-blocks",
     name: "Auth Blocks",
     description: "13 login/signup/auth layouts — split screens, centered cards, social-first.",
@@ -68,6 +73,7 @@ export const watermelon: UIEntry[] = [
     previewMode: "live",
   },
   {
+    previewKey: "watermelon-pricing-blocks",
     id: "watermelon-pricing-blocks",
     name: "Pricing Blocks",
     description: "5 polished pricing section blocks with toggle and comparison patterns.",
@@ -80,6 +86,7 @@ export const watermelon: UIEntry[] = [
     previewMode: "live",
   },
   {
+    previewKey: "watermelon-faq-blocks",
     id: "watermelon-faq-blocks",
     name: "FAQ Blocks",
     description: "6 FAQ section blocks with animated accordions.",
@@ -92,6 +99,7 @@ export const watermelon: UIEntry[] = [
     previewMode: "live",
   },
   {
+    previewKey: "watermelon-testimonial-blocks",
     id: "watermelon-testimonial-blocks",
     name: "Testimonial Blocks",
     description: "4 testimonial section blocks — quotes, marquees and grids.",
@@ -104,6 +112,7 @@ export const watermelon: UIEntry[] = [
     previewMode: "live",
   },
   {
+    previewKey: "watermelon-cta-blocks",
     id: "watermelon-cta-blocks",
     name: "CTA Blocks",
     description: "5 call-to-action section blocks with gradient and glow treatments.",
@@ -116,6 +125,7 @@ export const watermelon: UIEntry[] = [
     previewMode: "live",
   },
   {
+    previewKey: "watermelon-dashboard-agndex",
     id: "watermelon-dashboard-agndex",
     name: "Agndex Dashboard",
     description: "Complete scheduling/agenda dashboard layout from the 11-dashboard collection.",
@@ -128,6 +138,7 @@ export const watermelon: UIEntry[] = [
     previewMode: "live",
   },
   {
+    previewKey: "watermelon-dashboard-astrix",
     id: "watermelon-dashboard-astrix",
     name: "Astrix Dashboard",
     description: "Analytics dashboard layout with sidebar and data cards.",
@@ -140,6 +151,7 @@ export const watermelon: UIEntry[] = [
     previewMode: "live",
   },
   {
+    previewKey: "watermelon-dashboard-jobtracker",
     id: "watermelon-dashboard-jobtracker",
     name: "Jobtracker Dashboard",
     description: "Job-application tracker dashboard — kanban lists, stats and status flows.",

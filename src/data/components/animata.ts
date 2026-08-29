@@ -4,6 +4,7 @@ import type { UIEntry } from "../types";
 // Published set only: repo has 198 docs, 44 are unpublished (404) until the site deploys them.
 export const animata: UIEntry[] = [
   {
+    previewKey: "animata-animated-beam",
     id: "animata-animated-beam",
     name: "Animated Beam",
     description:
@@ -18,6 +19,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/animated-beam.json",
   },
   {
+    previewKey: "animata-blurry-blob",
     id: "animata-blurry-blob",
     name: "Blurry blob",
     description: "Animated blurry blob background",
@@ -31,6 +33,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/blurry-blob.json",
   },
   {
+    previewKey: "animata-boids-ecosystem",
     id: "animata-boids-ecosystem",
     name: "Boids Ecosystem",
     description:
@@ -45,6 +48,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/boids-ecosystem.json",
   },
   {
+    previewKey: "animata-diagonal-lines",
     id: "animata-diagonal-lines",
     name: "Diagonal Lines",
     description: "A diagonal line background component",
@@ -58,6 +62,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/diagonal-lines.json",
   },
   {
+    previewKey: "animata-dot",
     id: "animata-dot",
     name: "Dot",
     description: "A dot background component",
@@ -71,6 +76,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/dot.json",
   },
   {
+    previewKey: "animata-grid",
     id: "animata-grid",
     name: "Grid",
     description: "A grid background component",
@@ -84,6 +90,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/grid.json",
   },
   {
+    previewKey: "animata-interactive-grid",
     id: "animata-interactive-grid",
     name: "Interactive Grid",
     description: "An interactive grid background component.",
@@ -97,6 +104,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/interactive-grid.json",
   },
   {
+    previewKey: "animata-moving-gradient",
     id: "animata-moving-gradient",
     name: "Moving Gradient",
     description: "Animated moving gradient background",
@@ -110,6 +118,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/moving-gradient.json",
   },
   {
+    previewKey: "animata-shooting-stars",
     id: "animata-shooting-stars",
     name: "Shooting Stars",
     description:
@@ -124,6 +133,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/shooting-stars.json",
   },
   {
+    previewKey: "animata-zigzag",
     id: "animata-zigzag",
     name: "Zigzag",
     description: "A zigzag background component",
@@ -137,6 +147,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/zigzag.json",
   },
   {
+    previewKey: "animata-eight",
     id: "animata-eight",
     name: "Eight",
     description: "Bento grid with eight items",
@@ -150,6 +161,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/eight.json",
   },
   {
+    previewKey: "animata-gradient",
     id: "animata-gradient",
     name: "Gradient",
     description: "Bento grid with gradient background cards",
@@ -163,6 +175,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/gradient.json",
   },
   {
+    previewKey: "animata-three",
     id: "animata-three",
     name: "Three",
     description: "Bento grid with 3 items",
@@ -176,6 +189,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/three.json",
   },
   {
+    previewKey: "animata-ai-button",
     id: "animata-ai-button",
     name: "AI Button",
     description: "Animated AI button with shimmer effect for loading and idle states.",
@@ -189,6 +203,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/ai-button.json",
   },
   {
+    previewKey: "animata-algolia-blue-button",
     id: "animata-algolia-blue-button",
     name: "Algolia Blue Button",
     description: "Algolia-inspired blue primary button with brand styling and hover state.",
@@ -202,6 +217,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/algolia-blue-button.json",
   },
   {
+    previewKey: "animata-algolia-white-button",
     id: "animata-algolia-white-button",
     name: "Algolia White Button",
     description: "Algolia-inspired white search CTA with icon and hover lift.",
@@ -215,6 +231,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/algolia-white-button.json",
   },
   {
+    previewKey: "animata-animated-follow-button",
     id: "animata-animated-follow-button",
     name: "Animated Follow Button",
     description: "Follow/subscribe button with entrance animation and dynamic label swap on click.",
@@ -228,6 +245,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/animated-follow-button.json",
   },
   {
+    previewKey: "animata-duolingo",
     id: "animata-duolingo",
     name: "Duolingo",
     description: "Duolingo-style 3D press button with depth and bounce on click.",
@@ -241,6 +259,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/duolingo.json",
   },
   {
+    previewKey: "animata-get-started-button",
     id: "animata-get-started-button",
     name: "Get started button",
     description: "Gradient CTA button with smooth color shift on hover.",
@@ -254,6 +273,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/get-started-button.json",
   },
   {
+    previewKey: "animata-ripple-button",
     id: "animata-ripple-button",
     name: "Ripple Button",
     description: "Button with a ripple effect that originates from the cursor position on click.",
@@ -267,6 +287,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/ripple-button.json",
   },
   {
+    previewKey: "animata-shining-button",
     id: "animata-shining-button",
     name: "Shining Button",
     description: "CTA button with a sweeping shine highlight on hover.",
@@ -280,6 +301,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/shining-button.json",
   },
   {
+    previewKey: "animata-slide-arrow-button",
     id: "animata-slide-arrow-button",
     name: "Slide Arrow Button",
     description: "Arrow CTA with sliding chevron and label shift on hover.",
@@ -293,6 +315,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/slide-arrow-button.json",
   },
   {
+    previewKey: "animata-status-button",
     id: "animata-status-button",
     name: "Status Button",
     description: "Button that animates between idle, loading, and success states on click.",
@@ -306,6 +329,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/status-button.json",
   },
   {
+    previewKey: "animata-swipe-button",
     id: "animata-swipe-button",
     name: "Swipe Button",
     description: "Swipe-to-confirm button with sliding fill and label transition.",
@@ -319,6 +343,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/swipe-button.json",
   },
   {
+    previewKey: "animata-toggle-switch",
     id: "animata-toggle-switch",
     name: "Toggle Switch",
     description: "Animated toggle switch for on/off settings with smooth thumb transition.",
@@ -332,6 +357,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/toggle-switch.json",
   },
   {
+    previewKey: "animata-work-button",
     id: "animata-work-button",
     name: "Work Button",
     description: "Minimal button with underline and arrow slide on hover.",
@@ -345,6 +371,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/work-button.json",
   },
   {
+    previewKey: "animata-card-comment",
     id: "animata-card-comment",
     name: "Card Comment",
     description: "A Skeleton of Comment Card",
@@ -358,6 +385,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/card-comment.json",
   },
   {
+    previewKey: "animata-card-spread",
     id: "animata-card-spread",
     name: "Card Spread",
     description:
@@ -372,6 +400,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/card-spread.json",
   },
   {
+    previewKey: "animata-card-stack",
     id: "animata-card-stack",
     name: "Card Stack",
     description: "Click-through card stack. The deck loops; cards shuffle in one motion.",
@@ -385,6 +414,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/card-stack.json",
   },
   {
+    previewKey: "animata-case-study-card",
     id: "animata-case-study-card",
     name: "Case Study Card",
     description:
@@ -399,6 +429,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/case-study-card.json",
   },
   {
+    previewKey: "animata-collab-card",
     id: "animata-collab-card",
     name: "Collab Card",
     description:
@@ -413,6 +444,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/collab-card.json",
   },
   {
+    previewKey: "animata-flip-card",
     id: "animata-flip-card",
     name: "Flip Card",
     description:
@@ -427,6 +459,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/flip-card.json",
   },
   {
+    previewKey: "animata-github-card-shiny",
     id: "animata-github-card-shiny",
     name: "GitHub Card - Shiny",
     description:
@@ -441,6 +474,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/github-card-shiny.json",
   },
   {
+    previewKey: "animata-github-card-skew",
     id: "animata-github-card-skew",
     name: "GitHub Card - Skew",
     description: "A card component which skews  when hovered, as seen in GitHub's homepage",
@@ -454,6 +488,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/github-card-skew.json",
   },
   {
+    previewKey: "animata-glowing-card",
     id: "animata-glowing-card",
     name: "Glowing Card",
     description: "The card glows in gradient colours when hovered",
@@ -467,6 +502,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/glowing-card.json",
   },
   {
+    previewKey: "animata-led-board",
     id: "animata-led-board",
     name: "Led Board",
     description:
@@ -481,6 +517,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/led-board.json",
   },
   {
+    previewKey: "animata-swap-text-card",
     id: "animata-swap-text-card",
     name: "Swap Text Card",
     description: "Text inside the card swaps",
@@ -494,6 +531,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/swap-text-card.json",
   },
   {
+    previewKey: "animata-animated-border-trail",
     id: "animata-animated-border-trail",
     name: "Animated Border Trail",
     description:
@@ -508,6 +546,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/animated-border-trail.json",
   },
   {
+    previewKey: "animata-announcement-ribbon",
     id: "animata-announcement-ribbon",
     name: "Announcement Ribbon",
     description: "A sticky scrolling banner for top-of-page announcements.",
@@ -521,6 +560,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/announcement-ribbon.json",
   },
   {
+    previewKey: "animata-cursor-tracker",
     id: "animata-cursor-tracker",
     name: "Cursor Tracker",
     description: "A wrapper component that tracks the cursor moving within it",
@@ -534,6 +574,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/cursor-tracker.json",
   },
   {
+    previewKey: "animata-marquee",
     id: "animata-marquee",
     name: "Marquee",
     description: "A marquee component",
@@ -547,6 +588,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/marquee.json",
   },
   {
+    previewKey: "animata-sibling-focus-nav",
     id: "animata-sibling-focus-nav",
     name: "Sibling Focus Nav",
     description:
@@ -561,6 +603,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/sibling-focus-nav.json",
   },
   {
+    previewKey: "animata-flower-menu",
     id: "animata-flower-menu",
     name: "Flower Menu",
     description:
@@ -575,6 +618,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/flower-menu.json",
   },
   {
+    previewKey: "animata-speed-dial",
     id: "animata-speed-dial",
     name: "Speed Dial",
     description: "FAB that expands into a row of actions on click. CSS stagger, no hover gate.",
@@ -588,6 +632,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/speed-dial.json",
   },
   {
+    previewKey: "animata-bar-chart",
     id: "animata-bar-chart",
     name: "Bar Chart",
     description: "A sample bar chart for widgets/presentation",
@@ -601,6 +646,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/bar-chart.json",
   },
   {
+    previewKey: "animata-donut-chart",
     id: "animata-donut-chart",
     name: "Donut Chart",
     description: "A simple donut chart for showing progress. Useful for widget and bento grids.",
@@ -614,6 +660,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/donut-chart.json",
   },
   {
+    previewKey: "animata-gauge-chart",
     id: "animata-gauge-chart",
     name: "Gauge Chart",
     description: "This graph shows the progress in a donut chart with a gap at bottom.",
@@ -627,6 +674,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/gauge-chart.json",
   },
   {
+    previewKey: "animata-progress",
     id: "animata-progress",
     name: "Progress",
     description:
@@ -641,6 +689,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/progress.json",
   },
   {
+    previewKey: "animata-ring-chart",
     id: "animata-ring-chart",
     name: "Ring Chart",
     description: "A simple ring-chart chart as seen in iOS apps",
@@ -654,6 +703,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/ring-chart.json",
   },
   {
+    previewKey: "animata-hero-section-text-hover",
     id: "animata-hero-section-text-hover",
     name: "Hero Section Text Hover",
     description: 'Hover on "Uncharted Adventures" and "Feel Alive" text to reveal the images.',
@@ -667,6 +717,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/hero-section-text-hover.json",
   },
   {
+    previewKey: "animata-product-features",
     id: "animata-product-features",
     name: "Product Features",
     description: "A hero section showcasing product features",
@@ -680,6 +731,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/product-features.json",
   },
   {
+    previewKey: "animata-shape-shifter",
     id: "animata-shape-shifter",
     name: "Shape Shifter",
     description: "A hero section with a shape-shifting component in the center",
@@ -693,6 +745,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/shape-shifter.json",
   },
   {
+    previewKey: "animata-slack-intro",
     id: "animata-slack-intro",
     name: "Slack's intro screen",
     description: "An intro hero inspired by Slack's intro screen.",
@@ -706,6 +759,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/slack-intro.json",
   },
   {
+    previewKey: "animata-hover-interaction",
     id: "animata-hover-interaction",
     name: "Hover Interaction",
     description:
@@ -720,6 +774,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/hover-interaction.json",
   },
   {
+    previewKey: "animata-icon-ripple",
     id: "animata-icon-ripple",
     name: "Icon Ripple",
     description: "Create a ripple animation on an icon",
@@ -733,6 +788,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/icon-ripple.json",
   },
   {
+    previewKey: "animata-disclose-image",
     id: "animata-disclose-image",
     name: "Disclose Image",
     description: "Reveal the image using a sliding door-like effect",
@@ -746,6 +802,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/disclose-image.json",
   },
   {
+    previewKey: "animata-images-reveal",
     id: "animata-images-reveal",
     name: "Images Reveal",
     description: "An image reveal animation",
@@ -759,6 +816,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/images-reveal.json",
   },
   {
+    previewKey: "animata-skew-image",
     id: "animata-skew-image",
     name: "Skew Image",
     description: "A component that skews an image on hover.",
@@ -772,6 +830,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/skew-image.json",
   },
   {
+    previewKey: "animata-tilted-cover",
     id: "animata-tilted-cover",
     name: "Tilted Cover",
     description: "A titled image component with a background element",
@@ -785,6 +844,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/tilted-cover.json",
   },
   {
+    previewKey: "animata-trailing-image",
     id: "animata-trailing-image",
     name: "Trailing Image",
     description: "A trailing effect where the images move with the mouse.",
@@ -798,6 +858,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/trailing-image.json",
   },
   {
+    previewKey: "animata-avatar-list",
     id: "animata-avatar-list",
     name: "Avatar List",
     description: "A component that displays list of user's avatar",
@@ -811,6 +872,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/avatar-list.json",
   },
   {
+    previewKey: "animata-flipping-cards",
     id: "animata-flipping-cards",
     name: "Flipping cards",
     description:
@@ -825,6 +887,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/flipping-cards.json",
   },
   {
+    previewKey: "animata-menu-animation",
     id: "animata-menu-animation",
     name: "Menu list",
     description: "Animation for menu list",
@@ -838,6 +901,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/menu-animation.json",
   },
   {
+    previewKey: "animata-orbiting-items",
     id: "animata-orbiting-items",
     name: "Orbiting Items",
     description:
@@ -852,6 +916,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/orbiting-items.json",
   },
   {
+    previewKey: "animata-orbiting-items-3-d",
     id: "animata-orbiting-items-3-d",
     name: "Orbiting Items 3D",
     description:
@@ -866,6 +931,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/orbiting-items-3-d.json",
   },
   {
+    previewKey: "animata-reveal-image",
     id: "animata-reveal-image",
     name: "Reveal images",
     description: "Reveals the images on hover.",
@@ -879,6 +945,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/reveal-image.json",
   },
   {
+    previewKey: "animata-transaction-list",
     id: "animata-transaction-list",
     name: "Transaction List",
     description: "A simple component to list all the recent transaction.",
@@ -892,6 +959,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/transaction-list.json",
   },
   {
+    previewKey: "animata-modal",
     id: "animata-modal",
     name: "Modal",
     description:
@@ -906,6 +974,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/modal.json",
   },
   {
+    previewKey: "animata-split-reveal",
     id: "animata-split-reveal",
     name: "Split Reveal",
     description:
@@ -920,6 +989,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/split-reveal.json",
   },
   {
+    previewKey: "animata-vertical-tiles",
     id: "animata-vertical-tiles",
     name: "Vertical Tiles",
     description: "A preloader component that makes transition to any section look vivid",
@@ -933,6 +1003,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/vertical-tiles.json",
   },
   {
+    previewKey: "animata-animatedtimeline",
     id: "animata-animatedtimeline",
     name: "Animated Timeline",
     description:
@@ -947,6 +1018,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/animatedtimeline.json",
   },
   {
+    previewKey: "animata-spinner",
     id: "animata-spinner",
     name: "Spinner",
     description: "Just a spinner to check the loading state",
@@ -960,6 +1032,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/spinner.json",
   },
   {
+    previewKey: "animata-stacked-sections",
     id: "animata-stacked-sections",
     name: "Stacked Sections",
     description:
@@ -974,6 +1047,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/stacked-sections.json",
   },
   {
+    previewKey: "animata-code",
     id: "animata-code",
     name: "Code",
     description: "Code-block skeleton with a Lucide icon and stacked text bars.",
@@ -987,6 +1061,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/code.json",
   },
   {
+    previewKey: "animata-cookie-banner",
     id: "animata-cookie-banner",
     name: "Cookie Banner",
     description: "Consent-style skeleton with body copy lines and a full-width action bar.",
@@ -1000,6 +1075,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/cookie-banner.json",
   },
   {
+    previewKey: "animata-list",
     id: "animata-list",
     name: "List",
     description: "List-row skeleton with avatar dots, text bars, and dual action buttons.",
@@ -1013,6 +1089,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/list.json",
   },
   {
+    previewKey: "animata-receipt",
     id: "animata-receipt",
     name: "Receipt",
     description: "Receipt-style loading placeholder with header icons and staggered line items.",
@@ -1026,6 +1103,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/receipt.json",
   },
   {
+    previewKey: "animata-report",
     id: "animata-report",
     name: "Report",
     description: "Export-card skeleton with a CSV badge and uniform data rows.",
@@ -1039,6 +1117,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/report.json",
   },
   {
+    previewKey: "animata-wide-card",
     id: "animata-wide-card",
     name: "Wide Card",
     description: "Horizontal card skeleton with thumbnail, text lines, and a compact CTA block.",
@@ -1052,6 +1131,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/wide-card.json",
   },
   {
+    previewKey: "animata-fluid-tabs",
     id: "animata-fluid-tabs",
     name: "Fluid Tabs",
     description: "Composable tabs with a sliding pill indicator and manual keyboard selection.",
@@ -1065,6 +1145,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/fluid-tabs.json",
   },
   {
+    previewKey: "animata-gooey-tabs",
     id: "animata-gooey-tabs",
     name: "Gooey Tabs",
     description:
@@ -1079,6 +1160,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/gooey-tabs.json",
   },
   {
+    previewKey: "animata-shift-tabs",
     id: "animata-shift-tabs",
     name: "Shift Tabs",
     description: "Composable shift-style tabs with hover tilt and manual keyboard selection.",
@@ -1092,6 +1174,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/shift-tabs.json",
   },
   {
+    previewKey: "animata-animated-gradient-text",
     id: "animata-animated-gradient-text",
     name: "Animated Gradient Text",
     description: "A component to animate the text using gradient",
@@ -1105,6 +1188,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/animated-gradient-text.json",
   },
   {
+    previewKey: "animata-blur-out-up",
     id: "animata-blur-out-up",
     name: "Blur Out Up",
     description: "Words arrive clean and depart upward with increasing blur for airy exits.",
@@ -1118,6 +1202,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/blur-out-up.json",
   },
   {
+    previewKey: "animata-bold-copy",
     id: "animata-bold-copy",
     name: "Bold Copy",
     description: "A text effect with bold text as background",
@@ -1131,6 +1216,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/bold-copy.json",
   },
   {
+    previewKey: "animata-bottom-up-letters",
     id: "animata-bottom-up-letters",
     name: "Bottom-Up Letters",
     description:
@@ -1145,6 +1231,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/bottom-up-letters.json",
   },
   {
+    previewKey: "animata-circular-text",
     id: "animata-circular-text",
     name: "Circular Text",
     description: "Displays text arranged in a rotating circular path with customizable speed.",
@@ -1158,6 +1245,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/circular-text.json",
   },
   {
+    previewKey: "animata-counter",
     id: "animata-counter",
     name: "Counter",
     description:
@@ -1172,6 +1260,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/counter.json",
   },
   {
+    previewKey: "animata-cycle-text",
     id: "animata-cycle-text",
     name: "Cycle Text",
     description: "A component that cycles text over certain interval.",
@@ -1185,6 +1274,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/cycle-text.json",
   },
   {
+    previewKey: "animata-double-underline",
     id: "animata-double-underline",
     name: "Double Underline",
     description: "Show double underline for the text on hover or click",
@@ -1198,6 +1288,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/double-underline.json",
   },
   {
+    previewKey: "animata-fade-through",
     id: "animata-fade-through",
     name: "Fade Through",
     description:
@@ -1212,6 +1303,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/fade-through.json",
   },
   {
+    previewKey: "animata-focus-blur-resolve",
     id: "animata-focus-blur-resolve",
     name: "Focus Blur Resolve",
     description: "A premium focus pull from heavy blur to crisp text, then a soft blur-out exit.",
@@ -1225,6 +1317,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/focus-blur-resolve.json",
   },
   {
+    previewKey: "animata-gibberish-text",
     id: "animata-gibberish-text",
     name: "Gibberish Text",
     description:
@@ -1239,6 +1332,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/gibberish-text.json",
   },
   {
+    previewKey: "animata-glitch-text",
     id: "animata-glitch-text",
     name: "Glitch text",
     description:
@@ -1253,6 +1347,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/glitch-text.json",
   },
   {
+    previewKey: "animata-jitter-text",
     id: "animata-jitter-text",
     name: "Jitter Text",
     description: "Animated Text component that applies a jittery effect",
@@ -1266,6 +1361,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/jitter-text.json",
   },
   {
+    previewKey: "animata-jumping-text-instagram",
     id: "animata-jumping-text-instagram",
     name: "Jumping Text (Instagram)",
     description: "Jumping text effect similar to the one seen in Instagram's text effects",
@@ -1279,6 +1375,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/jumping-text-instagram.json",
   },
   {
+    previewKey: "animata-kinetic-center-build",
     id: "animata-kinetic-center-build",
     name: "Kinetic Center Build",
     description:
@@ -1293,6 +1390,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/kinetic-center-build.json",
   },
   {
+    previewKey: "animata-line-by-line-slide",
     id: "animata-line-by-line-slide",
     name: "Line-by-Line Slide",
     description:
@@ -1307,6 +1405,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/line-by-line-slide.json",
   },
   {
+    previewKey: "animata-mask-reveal-up",
     id: "animata-mask-reveal-up",
     name: "Mask Reveal Up",
     description: "Lines reveal upward with a soft masked feel and compact stagger.",
@@ -1320,6 +1419,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/mask-reveal-up.json",
   },
   {
+    previewKey: "animata-metis-text",
     id: "animata-metis-text",
     name: "Metis text",
     description:
@@ -1334,6 +1434,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/metis-text.json",
   },
   {
+    previewKey: "animata-micro-scale-fade",
     id: "animata-micro-scale-fade",
     name: "Micro Scale Fade",
     description: "A calm, tiny scale pop used as subtle premium polish for labels and headings.",
@@ -1347,6 +1448,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/micro-scale-fade.json",
   },
   {
+    previewKey: "animata-mirror-text",
     id: "animata-mirror-text",
     name: "Mirror Text",
     description: "An effect where given text has the mirror/clone text and follows it.",
@@ -1360,6 +1462,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/mirror-text.json",
   },
   {
+    previewKey: "animata-per-character-rise",
     id: "animata-per-character-rise",
     name: "Per-Character Rise",
     description:
@@ -1374,6 +1477,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/per-character-rise.json",
   },
   {
+    previewKey: "animata-per-word-crossfade",
     id: "animata-per-word-crossfade",
     name: "Per-Word Crossfade",
     description:
@@ -1388,6 +1492,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/per-word-crossfade.json",
   },
   {
+    previewKey: "animata-roll-text",
     id: "animata-roll-text",
     name: "Roll text",
     description:
@@ -1402,6 +1507,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/roll-text.json",
   },
   {
+    previewKey: "animata-scale-down-fade",
     id: "animata-scale-down-fade",
     name: "Scale Down Fade",
     description: "Subtle premium settle-in with a restrained scale-down fade on exit.",
@@ -1415,6 +1521,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/scale-down-fade.json",
   },
   {
+    previewKey: "animata-scroll-reveal",
     id: "animata-scroll-reveal",
     name: "Scroll Reveal",
     description:
@@ -1429,6 +1536,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/scroll-reveal.json",
   },
   {
+    previewKey: "animata-shared-axis-y",
     id: "animata-shared-axis-y",
     name: "Shared Axis Y",
     description: "Per-word hard-cut transition with staircase timing for sharp editorial swaps.",
@@ -1442,6 +1550,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/shared-axis-y.json",
   },
   {
+    previewKey: "animata-shared-axis-z",
     id: "animata-shared-axis-z",
     name: "Shared Axis Z",
     description: "Scale-based shared-axis transition for focus shifts and context depth.",
@@ -1455,6 +1564,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/shared-axis-z.json",
   },
   {
+    previewKey: "animata-shimmer-sweep",
     id: "animata-shimmer-sweep",
     name: "Shimmer Sweep",
     description:
@@ -1469,6 +1579,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/shimmer-sweep.json",
   },
   {
+    previewKey: "animata-short-slide-down",
     id: "animata-short-slide-down",
     name: "Short Slide Down",
     description:
@@ -1483,6 +1594,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/short-slide-down.json",
   },
   {
+    previewKey: "animata-short-slide-right",
     id: "animata-short-slide-right",
     name: "Short Slide Right",
     description:
@@ -1497,6 +1609,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/short-slide-right.json",
   },
   {
+    previewKey: "animata-soft-blur-in",
     id: "animata-soft-blur-in",
     name: "Soft Blur In",
     description:
@@ -1511,6 +1624,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/soft-blur-in.json",
   },
   {
+    previewKey: "animata-split-text",
     id: "animata-split-text",
     name: "Split Text",
     description: "A text effect where the text splits into two when hovered",
@@ -1524,6 +1638,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/split-text.json",
   },
   {
+    previewKey: "animata-spring-scale-in",
     id: "animata-spring-scale-in",
     name: "Spring Scale In",
     description:
@@ -1538,6 +1653,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/spring-scale-in.json",
   },
   {
+    previewKey: "animata-swap-text",
     id: "animata-swap-text",
     name: "Swap Text",
     description: "A component that swaps text on click or hover.",
@@ -1551,6 +1667,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/swap-text.json",
   },
   {
+    previewKey: "animata-text-border-animation",
     id: "animata-text-border-animation",
     name: "Text Border Animation",
     description: "Border animation below text",
@@ -1564,6 +1681,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/text-border-animation.json",
   },
   {
+    previewKey: "animata-text-explode-imessage",
     id: "animata-text-explode-imessage",
     name: "Text Explode (iMessage)",
     description: "Text explode effect as seen in iMessage",
@@ -1577,6 +1695,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/text-explode-imessage.json",
   },
   {
+    previewKey: "animata-text-flip",
     id: "animata-text-flip",
     name: "Text Flip",
     description: "Text with flipping effect",
@@ -1590,6 +1709,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/text-flip.json",
   },
   {
+    previewKey: "animata-ticker",
     id: "animata-ticker",
     name: "Ticker",
     description: "A ticker component that animates number on change",
@@ -1603,6 +1723,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/ticker.json",
   },
   {
+    previewKey: "animata-top-down-letters",
     id: "animata-top-down-letters",
     name: "Top-Down Letters",
     description:
@@ -1617,6 +1738,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/top-down-letters.json",
   },
   {
+    previewKey: "animata-typing-text",
     id: "animata-typing-text",
     name: "Typing Text",
     description: "Creates a typing effect for given text",
@@ -1630,6 +1752,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/typing-text.json",
   },
   {
+    previewKey: "animata-underline-hover-text",
     id: "animata-underline-hover-text",
     name: "Underline hover text",
     description: "A customizable text component with an underline hover effect.",
@@ -1643,6 +1766,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/underline-hover-text.json",
   },
   {
+    previewKey: "animata-wave-reveal",
     id: "animata-wave-reveal",
     name: "Wave Reveal",
     description: "Reveal letter or word one by one with a wave effect & optional blur effect.",
@@ -1656,6 +1780,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/wave-reveal.json",
   },
   {
+    previewKey: "animata-alarm-clock",
     id: "animata-alarm-clock",
     name: "Alarm Clock",
     description: "Toggle one or two alarms on a compact card — built for a morning routine glance.",
@@ -1669,6 +1794,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/alarm-clock.json",
   },
   {
+    previewKey: "animata-battery",
     id: "animata-battery",
     name: "Battery",
     description: "This is a basic widget that shows battery percentage.",
@@ -1682,6 +1808,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/battery.json",
   },
   {
+    previewKey: "animata-battery-level",
     id: "animata-battery-level",
     name: "Battery Level",
     description: "A widget that shows battery level of different devices",
@@ -1695,6 +1822,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/battery-level.json",
   },
   {
+    previewKey: "animata-calendar-event",
     id: "animata-calendar-event",
     name: "Calendar event",
     description:
@@ -1709,6 +1837,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/calendar-event.json",
   },
   {
+    previewKey: "animata-calorie-counter",
     id: "animata-calorie-counter",
     name: "Calorie Counter",
     description: "A calorie counter for your app",
@@ -1722,6 +1851,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/calorie-counter.json",
   },
   {
+    previewKey: "animata-clock-with-photo",
     id: "animata-clock-with-photo",
     name: "Clock With Photo",
     description: "A widget to display clock with photo",
@@ -1735,6 +1865,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/clock-with-photo.json",
   },
   {
+    previewKey: "animata-cycling",
     id: "animata-cycling",
     name: "Cycling",
     description: "A widget that shows the distance covered and heart-rate of cyclist",
@@ -1748,6 +1879,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/cycling.json",
   },
   {
+    previewKey: "animata-delivery-card",
     id: "animata-delivery-card",
     name: "Delivery Card",
     description: "Show delivery ETA, status, and route progress on a single home-screen tile.",
@@ -1761,6 +1893,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/delivery-card.json",
   },
   {
+    previewKey: "animata-direction-card",
     id: "animata-direction-card",
     name: "Direction Card",
     description: "A direction card which adapts itself on directions and distance",
@@ -1774,6 +1907,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/direction-card.json",
   },
   {
+    previewKey: "animata-expense-tracker",
     id: "animata-expense-tracker",
     name: "Expense Tracker",
     description: "Tracks your weekly spending or expenses",
@@ -1787,6 +1921,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/expense-tracker.json",
   },
   {
+    previewKey: "animata-flight-widget",
     id: "animata-flight-widget",
     name: "Flight widget",
     description: "A widget that shows flight detail",
@@ -1800,6 +1935,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/flight-widget.json",
   },
   {
+    previewKey: "animata-fund-widget",
     id: "animata-fund-widget",
     name: "Fund Widget",
     description:
@@ -1814,6 +1950,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/fund-widget.json",
   },
   {
+    previewKey: "animata-live-score",
     id: "animata-live-score",
     name: "Live score",
     description: "Live score widget that displays the score of a match.",
@@ -1827,6 +1964,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/live-score.json",
   },
   {
+    previewKey: "animata-mobile-detail",
     id: "animata-mobile-detail",
     name: "Mobile Detail",
     description: "Mobile widget",
@@ -1840,6 +1978,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/mobile-detail.json",
   },
   {
+    previewKey: "animata-music-widget",
     id: "animata-music-widget",
     name: "Music Widget",
     description: "Widget to display music playing/paused.",
@@ -1853,6 +1992,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/music-widget.json",
   },
   {
+    previewKey: "animata-notes",
     id: "animata-notes",
     name: "Notes",
     description: "A notes widget",
@@ -1866,6 +2006,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/notes.json",
   },
   {
+    previewKey: "animata-profile",
     id: "animata-profile",
     name: "Profile",
     description: "A widget that shows user profile",
@@ -1879,6 +2020,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/profile.json",
   },
   {
+    previewKey: "animata-reminder",
     id: "animata-reminder",
     name: "Reminder",
     description: "Glance at open tasks by list and see what is coming up next.",
@@ -1892,6 +2034,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/reminder.json",
   },
   {
+    previewKey: "animata-reminder-widget",
     id: "animata-reminder-widget",
     name: "Reminder Widget",
     description: "Reminder widget",
@@ -1905,6 +2048,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/reminder-widget.json",
   },
   {
+    previewKey: "animata-score-board",
     id: "animata-score-board",
     name: "Score Board",
     description: "A widget that shows progress and score",
@@ -1918,6 +2062,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/score-board.json",
   },
   {
+    previewKey: "animata-security-alert",
     id: "animata-security-alert",
     name: "Security Alert",
     description: "This widget notifies the user about a security alert in the system.",
@@ -1931,6 +2076,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/security-alert.json",
   },
   {
+    previewKey: "animata-shopping-list",
     id: "animata-shopping-list",
     name: "Shopping List",
     description: "A shopping list widget",
@@ -1944,6 +2090,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/shopping-list.json",
   },
   {
+    previewKey: "animata-sleep-tracker",
     id: "animata-sleep-tracker",
     name: "Sleep Tracker",
     description: "An elegant sleep tracker for your use",
@@ -1957,6 +2104,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/sleep-tracker.json",
   },
   {
+    previewKey: "animata-storage-status",
     id: "animata-storage-status",
     name: "Storage Status",
     description: "This widget shows storage occupied by different file.",
@@ -1970,6 +2118,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/storage-status.json",
   },
   {
+    previewKey: "animata-storage-widget",
     id: "animata-storage-widget",
     name: "Storage Widget",
     description: "A widget to display storage",
@@ -1983,6 +2132,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/storage-widget.json",
   },
   {
+    previewKey: "animata-study-timer",
     id: "animata-study-timer",
     name: "Study Timer",
     description: "Displays a study timer with segmented time tracking.",
@@ -1996,6 +2146,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/study-timer.json",
   },
   {
+    previewKey: "animata-vpn-widget",
     id: "animata-vpn-widget",
     name: "VPN Connection",
     description:
@@ -2010,6 +2161,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/vpn-widget.json",
   },
   {
+    previewKey: "animata-water-tracker",
     id: "animata-water-tracker",
     name: "Water Tracker",
     description: "Track daily water intake with a glanceable fill bar and one-tap top-ups.",
@@ -2023,6 +2175,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/water-tracker.json",
   },
   {
+    previewKey: "animata-weather-card",
     id: "animata-weather-card",
     name: "Weather Card",
     description: "Current temperature, feels-like, and today’s high/low for any city.",
@@ -2036,6 +2189,7 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/weather-card.json",
   },
   {
+    previewKey: "animata-weekly-progress",
     id: "animata-weekly-progress",
     name: "Weekly progress",
     description: "A widget that shows weekly progress",

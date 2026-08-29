@@ -3,7 +3,7 @@
 A personal, frontend-only catalog of UI components from 12 free, vendorable open-source
 libraries — one place to browse, categorize, favorite and pick up components for real projects.
 
-**586 entries · 23 categories · 12 sources · 10 live previews**
+**586 entries · 23 categories · 12 sources · 586 live previews (100% coverage)**
 
 **Live: <https://sanketpatel32.github.io/ui-vault/>** — deployed from `main` by GitHub Actions.
 
