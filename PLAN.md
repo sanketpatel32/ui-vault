@@ -2,7 +2,7 @@
 
 > A personal, frontend-only React hub that aggregates UI components from 12 hand-picked sources (see `source.txt`) into one categorized, searchable, previewable library. No backend — all data lives in static TypeScript registry files, all personal state in localStorage.
 
-**Status: v0.1.0 BUILT (2026-08-29) — Phases 0–6 complete. 175 entries, 26 categories, 12 sources, 10 live previews, llms.txt generated. Remaining: deploy (Phase 7) and growing the registry.**
+**Status: v0.1.1 SHIPPED (2026-08-29) — all phases complete. Live at https://sanketpatel32.github.io/ui-vault/ (GitHub Pages via Actions; SPA fallback via 404.html — deep routes return HTTP 404 but render the app). Left to grow: registry entries + more vendored previews.**
 
 ---
 
@@ -275,9 +275,9 @@ Machine-readable docs for the whole site, **generated — never hand-edited** �
 ### Phase 7 — Ship
 
 - [x] `npm run build` clean; bundle-size budget (< 300KB initial JS gz — actual: 119 KB)
-- [ ] Deploy to static host (Vercel or GitHub Pages); it's a SPA → configure fallback to index.html
-- [ ] Verify llms.txt artifacts resolve in production
-- [ ] Final commit: mark Phase 0–7 done in this file
+- [x] Deploy to GitHub Pages via Actions (.github/workflows/deploy.yml); SPA fallback = dist/404.html
+- [x] Verified in production: /, /llms.txt, /llms/sources/*.md all 200 (2026-08-29)
+- [x] Final commit: mark Phase 0–7 done in this file
 
 ---
 
