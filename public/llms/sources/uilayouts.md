@@ -1,12 +1,16 @@
 # UI Layouts Pro
+
 > 150+ premium full-page layout blocks and templates.
+
 - URL: https://pro.ui-layouts.com
 - License: Paid — link-out only
 - Stack: react, nextjs, tailwind, shadcn, motion
 - Install: n/a (link-out)
 - Notes: Paid product ($139 Creator / $198 Forever Builder) — link-out only. Free sibling: ui-layouts.com.
 - Cataloged in UI Vault: 11 entries
+
 ## Entries
+
 - **Hero Section Collection (26+)** https://pro.ui-layouts.com/hero-sections — The flagship collection: 26+ full-page hero layouts, each viewable as shadcn, Tailwind or Motion variants. [Paid, link-out only, category: hero]
 - **Agency Hero** https://pro.ui-layouts.com/hero-sections — Bold agency hero — oversized type, image collage, strong CTA pairing. [Paid, link-out only, category: hero]
 - **FlowSync Hero** https://pro.ui-layouts.com/hero-sections — SaaS workflow hero — product screenshot with flow accents. [Paid, link-out only, category: hero]

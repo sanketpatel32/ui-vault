@@ -14,14 +14,14 @@ Personal, frontend-only React hub that aggregates UI components from 12 sources 
 
 ## Commands
 
-| Command                  | Purpose                                                       |
-| ------------------------ | ------------------------------------------------------------- |
-| `npm run dev`            | Dev server via `vp dev` (runs `llms` first via predev hook)   |
-| `npm run build`          | `tsc -b && vp build` (runs `llms` first)                      |
+| Command                      | Purpose                                                      |
+| ---------------------------- | ------------------------------------------------------------ |
+| `npm run dev`                | Dev server via `vp dev` (runs `llms` first via predev hook)  |
+| `npm run build`              | `tsc -b && vp build` (runs `llms` first)                     |
 | `npm run check` / `vp check` | Format + lint + type checks together (oxfmt/oxlint/tsgolint) |
 | `npm run format` / `vp fmt`  | Format everything (oxfmt — double quotes)                    |
-| `npm run llms`           | Regenerate all llms.txt artifacts from `src/data/`            |
-| `npm run registry:check` | Validate registry ids/slugs/sources/licensing/loaders         |
+| `npm run llms`               | Regenerate all llms.txt artifacts from `src/data/`           |
+| `npm run registry:check`     | Validate registry ids/slugs/sources/licensing/loaders        |
 
 The `vp` CLI is installed at `~/AppData/Local/vite-plus/bin/vp` (v0.3.0). In Git Bash it may not be on PATH — `export PATH="$HOME/AppData/Local/vite-plus/bin:$PATH"` — or just use the `npm run` wrappers. `vp env` is set to system-first, so system Node/npm are used.
 

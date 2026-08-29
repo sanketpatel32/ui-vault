@@ -4,7 +4,9 @@ import tailwindcss from "@tailwindcss/vite";
 import { defineConfig, lazyPlugins } from "vite-plus";
 
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ command }) => ({
+  // GitHub Pages serves this project at /ui-vault/ — only builds need the subpath base
+  base: command === "build" ? "/ui-vault/" : "/",
   fmt: {},
   lint: {
     plugins: ["react", "typescript", "oxc"],
@@ -30,4 +32,4 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
-});
+}));

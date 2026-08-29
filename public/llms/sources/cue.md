@@ -1,12 +1,16 @@
 # Cue
+
 > Awwwards-tier component references, delivered as AI prompts.
+
 - URL: https://cuedesign.space
 - License: Freemium — link-out only
 - Stack: prompt-based, react (rolling out)
 - Install: n/a (link-out)
 - Notes: Prompt/reference layer — link-out only.
 - Cataloged in UI Vault: 10 entries
+
 ## Entries
+
 - **Dynamic Island Nav Menu** https://cuedesign.space — Notch-style nav that expands like an iPhone Dynamic Island. Ships as an AI prompt to paste into v0/Cursor/Claude. [Freemium, link-out only, category: navigation]
 - **Mercury Liquid Segmented Toggle** https://cuedesign.space — Segmented control whose indicator flows like liquid mercury between options. [Freemium, link-out only, category: forms]
 - **3D Book Carousel Bookshelf** https://cuedesign.space — A carousel that looks like a physical bookshelf — covers in 3D you can flip through. [Freemium, link-out only, category: 3d-webgl]

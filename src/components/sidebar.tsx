@@ -137,7 +137,7 @@ export function Sidebar({ mobileOpen, onClose }: { mobileOpen: boolean; onClose:
 
         <div className="border-t border-border px-4 py-3 text-[11px] text-muted-fg/70">
           <a
-            href="/llms.txt"
+            href={`${import.meta.env.BASE_URL}llms.txt`}
             className="transition-colors hover:text-accent"
             target="_blank"
             rel="noreferrer"

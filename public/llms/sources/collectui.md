@@ -1,12 +1,16 @@
 # CollectUI
+
 > Hand-curated daily gallery of the best UI on the web — 147 categories.
+
 - URL: https://collectui.com
 - License: Free — link-out only
 - Stack: reference only
 - Install: n/a (link-out)
 - Notes: Screenshots + link-outs, no code — inspiration only.
 - Cataloged in UI Vault: 15 entries
+
 ## Entries
+
 - **Dashboard Inspirations** https://collectui.com/categories/dashboard — Hand-curated dashboard screenshots from the 147-category CollectUI gallery — pattern fuel for admin panels. [Free, link-out only, category: dashboards]
 - **Sign Up Inspirations** https://collectui.com/categories/sign-up — Curated signup and onboarding screens — the best auth flows on Dribbble-style work. [Free, link-out only, category: auth]
 - **Pricing Inspirations** https://collectui.com/categories/pricing — Curated pricing page designs — tables, toggles, plan comparisons. [Free, link-out only, category: pricing]

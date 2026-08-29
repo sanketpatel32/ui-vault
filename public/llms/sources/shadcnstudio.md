@@ -1,12 +1,16 @@
 # shadcnStudio
+
 > 800+ shadcn blocks, 1000+ component variants.
+
 - URL: https://shadcnstudio.com
 - License: Freemium — link-out only
 - Stack: react, tailwind, shadcn, radix, base-ui, motion
 - Install: n/a (link-out)
 - Notes: Free tier browseable; Pro is paid — link-out only.
 - Cataloged in UI Vault: 14 entries
+
 ## Entries
+
 - **Hero Section Blocks** https://shadcnstudio.com/blocks/marketing-ui/hero-section — Marketing hero blocks in multiple variants — split, centered, image-led, animated. [Freemium, link-out only, category: hero]
 - **Feature Section Blocks** https://shadcnstudio.com/blocks/marketing-ui/features-section — Feature grid and story blocks for marketing pages. [Freemium, link-out only, category: features]
 - **Bento Grid Blocks** https://shadcnstudio.com/blocks/bento-grid — 25 bento grid blocks — the densest collection of Apple-style bentos anywhere. [Freemium, link-out only, category: features]

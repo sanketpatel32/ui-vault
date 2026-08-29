@@ -37,17 +37,17 @@ Full research is summarized in `AGENTS.md` → "Sources & licensing". The decisi
 
 ## 2. Tech stack (decided)
 
-| Concern        | Choice                                    | Why                                                                                   |
-| -------------- | ----------------------------------------- | ------------------------------------------------------------------------------------- |
+| Concern        | Choice                                                     | Why                                                                                                                                                                              |
+| -------------- | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Framework      | **Vite+ (`vp` unified toolchain) + React 19 + TypeScript** | Frontend-only personal tool; VoidZero's Vite+ gives dev/build/lint/format/typecheck in one CLI (rolldown + oxc underneath). Switched from plain Vite mid-build at owner request. |
-| Styling        | **Tailwind CSS v4**                       | What 11/12 sources assume; vendored code works as-is.                                 |
-| Component base | **shadcn-style hand-rolled kit** (`src/components/ui`) | Same conventions (cn(), design tokens, copy-paste) without the CLI dependency; shadcn CLI can be added later if Radix primitives are needed. |
-| Animation      | **Motion** (`motion` package)             | What React Bits / Motion Primitives / FancyComponents are built on.                   |
-| Icons          | **lucide-react**                          | Used by every source; avoids icon duplication.                                        |
-| Routing        | **React Router v7** (library mode)        | SPA with deep links to components/categories/sources.                                 |
-| Search         | **fuse.js** (client-side)                 | Fuzzy search over the registry, no backend.                                           |
-| State          | localStorage (favorites, recents)         | Zero backend requirement.                                                             |
-| Deploy         | Static host (Vercel/Netlify/GitHub Pages) | It's a pure SPA.                                                                      |
+| Styling        | **Tailwind CSS v4**                                        | What 11/12 sources assume; vendored code works as-is.                                                                                                                            |
+| Component base | **shadcn-style hand-rolled kit** (`src/components/ui`)     | Same conventions (cn(), design tokens, copy-paste) without the CLI dependency; shadcn CLI can be added later if Radix primitives are needed.                                     |
+| Animation      | **Motion** (`motion` package)                              | What React Bits / Motion Primitives / FancyComponents are built on.                                                                                                              |
+| Icons          | **lucide-react**                                           | Used by every source; avoids icon duplication.                                                                                                                                   |
+| Routing        | **React Router v7** (library mode)                         | SPA with deep links to components/categories/sources.                                                                                                                            |
+| Search         | **fuse.js** (client-side)                                  | Fuzzy search over the registry, no backend.                                                                                                                                      |
+| State          | localStorage (favorites, recents)                          | Zero backend requirement.                                                                                                                                                        |
+| Deploy         | Static host (Vercel/Netlify/GitHub Pages)                  | It's a pure SPA.                                                                                                                                                                 |
 
 App name (changeable): **UI Vault**.
 

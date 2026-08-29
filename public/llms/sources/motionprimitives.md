@@ -1,12 +1,16 @@
 # Motion Primitives
+
 > UI kit to make beautiful, animated interfaces, faster.
+
 - URL: https://motion-primitives.com
 - License: MIT — live-previewable
 - Stack: react, typescript, tailwind, motion
 - Install: `npx motion-primitives@latest add <name>`
 - Notes: Free core is MIT. Pro ($149 one-time) is link-out only.
 - Cataloged in UI Vault: 18 entries
+
 ## Entries
+
 - **TextEffect** https://motion-primitives.com/docs/text-effect — Per-character text animation with blur, slide and fade presets — the workhorse reveal primitive. [MIT, live-previewable, category: text-animation]
 - **Text Scramble** https://motion-primitives.com/docs/text-scramble — Characters shuffle through random glyphs before locking into place. [MIT, live-previewable, category: text-animation]
 - **Text Morph** https://motion-primitives.com/docs/text-morph — Morphs one word into another, interpolating letters smoothly. [MIT, live-previewable, category: text-animation]
