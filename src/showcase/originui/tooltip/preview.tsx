@@ -1,9 +1,19 @@
-import Component from "./index";
+import { Button } from "@/showcase/_shared/originui/button";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./tooltip";
 
 export default function Preview() {
   return (
-    <div className="flex items-center justify-center p-4">
-      <Component />
+    <div className="w-full">
+      <div className="flex items-center justify-center p-8">
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline">Hover me</Button>
+            </TooltipTrigger>
+            <TooltipContent>Vendored from Origin UI.</TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+      </div>
     </div>
   );
 }

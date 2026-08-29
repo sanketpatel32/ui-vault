@@ -8,3 +8,4 @@ dist-ssr
 .vendored-cache/
 .p.json
 
+.vcache/

@@ -1,9 +1,12 @@
-import Component from "./index";
+import { Input } from "./input";
 
 export default function Preview() {
   return (
-    <div className="flex items-center justify-center p-4">
-      <Component />
+    <div className="w-full">
+      <div className="flex max-w-sm flex-col gap-3 p-6">
+        <Input placeholder="Email address" type="email" />
+        <Input placeholder="Password" type="password" />
+      </div>
     </div>
   );
 }

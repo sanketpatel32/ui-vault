@@ -1,8 +1,8 @@
-import Component from "./index";
+import Component from "./comp-554";
 
 export default function Preview() {
   return (
-    <div className="flex items-center justify-center p-4">
+    <div className="flex w-full items-center justify-center p-6">
       <Component />
     </div>
   );

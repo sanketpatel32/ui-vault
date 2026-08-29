@@ -1,9 +1,11 @@
-import Component from "./index";
+import { Textarea } from "./textarea";
 
 export default function Preview() {
   return (
-    <div className="flex items-center justify-center p-4">
-      <Component />
+    <div className="w-full">
+      <div className="p-6">
+        <Textarea placeholder="Leave a comment" className="min-h-28 w-full max-w-md" />
+      </div>
     </div>
   );
 }

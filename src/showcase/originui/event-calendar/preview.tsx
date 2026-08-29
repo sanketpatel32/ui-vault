@@ -1,9 +1,11 @@
-import Component from "./index";
+import { EventCalendar } from "./event-calendar";
 
 export default function Preview() {
   return (
-    <div className="flex items-center justify-center p-4">
-      <Component />
+    <div className="w-full">
+      <div className="p-4">
+        <EventCalendar />
+      </div>
     </div>
   );
 }

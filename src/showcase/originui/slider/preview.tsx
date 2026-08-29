@@ -1,9 +1,11 @@
-import Component from "./index";
+import { Slider } from "./slider";
 
 export default function Preview() {
   return (
-    <div className="flex items-center justify-center p-4">
-      <Component />
+    <div className="w-full">
+      <div className="p-8">
+        <Slider defaultValue={[50]} max={100} step={1} />
+      </div>
     </div>
   );
 }
