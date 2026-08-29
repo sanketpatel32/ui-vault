@@ -1,12 +1,9 @@
-import { cn } from "@/lib/utils";
+import { Typography } from "./typography";
 
 export default function Preview() {
   return (
-    <div className={cn("max-w-sm space-y-2 text-left")}>
-      <h3 className="text-lg font-bold tracking-tight text-fg">Taxonomy & Typography</h3>
-      <p className="text-xs text-muted-fg leading-relaxed">
-        The king, seeing how much happier his subjects were, realized the importance of typography.
-      </p>
+    <div className="flex justify-center p-2">
+      <Typography />
     </div>
   );
 }

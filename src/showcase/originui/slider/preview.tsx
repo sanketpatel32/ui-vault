@@ -1,9 +1,9 @@
-import { Slider } from "@/components/ui/slider";
+import Component from "./index";
 
 export default function Preview() {
   return (
-    <div className="w-64 space-y-2">
-      <Slider defaultValue={[45]} max={100} step={1} />
+    <div className="flex items-center justify-center p-4">
+      <Component />
     </div>
   );
 }

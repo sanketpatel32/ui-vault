@@ -1,4 +1,4 @@
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "./badge";
 
 export default function Preview() {
   return (

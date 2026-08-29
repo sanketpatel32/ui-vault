@@ -4,6 +4,27 @@ import { entries } from "../src/data/index.ts";
 
 const SHOWCASE_DIR = path.resolve("src/showcase");
 
+const REGISTRY_SOURCES = new Set([
+  "shadcn",
+  "originui",
+  "watermelon",
+  "launchui",
+  "animateui",
+  "animata",
+  "magicui",
+  "fancy",
+]);
+
+const EXCEPTIONS = new Set([
+  "launchui-fade",
+  "launchui-glass",
+  "launchui-glow",
+  "fancy-letter-swap",
+  "fancy-typewriter",
+  "shadcn-chart",
+  "shadcn-spinner",
+]);
+
 export function checkAllPreviews(): { total: number; passed: number; failed: string[] } {
   const failed: string[] = [];
 
@@ -28,6 +49,14 @@ export function checkAllPreviews(): { total: number; passed: number; failed: str
     if (!/import\s+/.test(content)) {
       failed.push(`${entry.id} (no import statement)`);
       continue;
+    }
+
+    // Check for local component import from own folder for registry sources
+    if (REGISTRY_SOURCES.has(entry.source) && !EXCEPTIONS.has(entry.id)) {
+      if (!/from\s+["']\.\//.test(content) && !/import\s+["']\.\//.test(content)) {
+        failed.push(`${entry.id} (must import from local folder "./<component>")`);
+        continue;
+      }
     }
   }
 

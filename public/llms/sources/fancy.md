@@ -1,16 +1,12 @@
 # FancyComponents
-
 > Make the web fun again.
-
 - URL: https://fancycomponents.dev
 - License: MIT — live-previewable
 - Stack: react, typescript, tailwind, motion
 - Install: `pnpm dlx shadcn add @fancy/<component>`
 - Notes: Registry: add {"registries": {"@fancy": "https://fancycomponents.dev/r/{name}.json"}} to components.json. MIT — vendor freely.
 - Cataloged in UI Vault: 16 entries
-
 ## Entries
-
 - **Letter Swap** https://www.fancycomponents.dev/docs/components/text/letter-swap — On hover, letters scramble through glyphs and settle one by one — playful link/button treatment. [MIT, live-previewable, category: text-animation]
 - **Scramble Hover** https://www.fancycomponents.dev/docs/components/text/scramble-hover — Whole word scrambles and re-decodes when hovered — the decrypt effect on demand. [MIT, live-previewable, category: text-animation]
 - **Text Highlighter** https://www.fancycomponents.dev/docs/components/text/text-highlighter — Marker-pen highlight sweeps across text as you scroll — hand-drawn emphasis. [MIT, live-previewable, category: text-animation]

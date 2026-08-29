@@ -1,15 +1,20 @@
+import { Empty, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "./empty";
+import { Inbox } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center gap-3 p-4">
-      <div className="rounded-xl border border-border bg-panel p-4 shadow-xs text-center space-y-2">
-        <h4 className="text-sm font-semibold text-fg capitalize">empty</h4>
-        <p className="text-xs text-muted-fg">shadcn/ui canonical component implementation.</p>
-        <Button size="sm" variant="outline">
-          Interact
-        </Button>
-      </div>
-    </div>
+    <Empty className="max-w-sm rounded-xl border border-dashed border-border p-6 text-center">
+      <EmptyHeader>
+        <EmptyMedia variant="icon">
+          <Inbox size={20} className="text-muted-fg mx-auto" />
+        </EmptyMedia>
+        <EmptyTitle>No messages yet</EmptyTitle>
+        <EmptyDescription>When you receive new messages, they will show up here.</EmptyDescription>
+      </EmptyHeader>
+      <Button size="sm" variant="outline" className="mt-3">
+        Refresh Inbox
+      </Button>
+    </Empty>
   );
 }

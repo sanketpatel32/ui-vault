@@ -1,16 +1,12 @@
 # Aceternity UI
-
 > The React component library for beautiful landing pages.
-
 - URL: https://ui.aceternity.com
 - License: Freemium — live-previewable
 - Stack: react, nextjs, typescript, tailwind, motion, three
 - Install: `npx aceternity-ui@latest add <name>`
 - Notes: Free components only may be vendored. Premium blocks/templates are paid — link-out.
 - Cataloged in UI Vault: 15 entries
-
 ## Entries
-
 - **Moving Border** https://ui.aceternity.com/components/moving-border — A rotating conic-gradient light travels around a button or card border. [MIT, live-previewable, category: buttons]
 - **3D Pin** https://ui.aceternity.com/components/3d-pin — Card that tilts in 3D around a fixed pin point on hover — dimensional depth cue. [MIT, live-previewable, category: cards]
 - **3D Card Effect** https://ui.aceternity.com/components/3d-card-effect — Pointer-tracked 3D rotation with moving glare highlight — Aceternity’s signature card. [MIT, live-previewable, category: cards]

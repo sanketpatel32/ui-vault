@@ -1,15 +1,14 @@
-import { Button } from "@/components/ui/button";
+import { Field, FieldDescription, FieldGroup, FieldLabel } from "./field";
+import { Input } from "@/components/ui/input";
 
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center gap-3 p-4">
-      <div className="rounded-xl border border-border bg-panel p-4 shadow-xs text-center space-y-2">
-        <h4 className="text-sm font-semibold text-fg capitalize">field</h4>
-        <p className="text-xs text-muted-fg">shadcn/ui canonical component implementation.</p>
-        <Button size="sm" variant="outline">
-          Interact
-        </Button>
-      </div>
-    </div>
+    <FieldGroup className="w-72">
+      <Field>
+        <FieldLabel htmlFor="email-input">Email Address</FieldLabel>
+        <Input id="email-input" placeholder="m@example.com" />
+        <FieldDescription>We will never share your email.</FieldDescription>
+      </Field>
+    </FieldGroup>
   );
 }

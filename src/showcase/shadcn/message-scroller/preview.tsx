@@ -1,15 +1,13 @@
-import { Button } from "@/components/ui/button";
+import { MessageScroller } from "./message-scroller";
 
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center gap-3 p-4">
-      <div className="rounded-xl border border-border bg-panel p-4 shadow-xs text-center space-y-2">
-        <h4 className="text-sm font-semibold text-fg capitalize">message scroller</h4>
-        <p className="text-xs text-muted-fg">shadcn/ui canonical component implementation.</p>
-        <Button size="sm" variant="outline">
-          Interact
-        </Button>
+    <MessageScroller>
+      <div className="text-xs p-2 rounded bg-muted/50">User: How do I get started?</div>
+      <div className="text-xs p-2 rounded bg-accent-soft text-accent">
+        Assistant: Run npm install and check the docs!
       </div>
-    </div>
+      <div className="text-xs p-2 rounded bg-muted/50">User: Got it, thank you!</div>
+    </MessageScroller>
   );
 }

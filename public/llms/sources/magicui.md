@@ -1,16 +1,12 @@
 # Magic UI
-
 > UI library for design engineers.
-
 - URL: https://magicui.design
 - License: MIT — live-previewable
 - Stack: react, typescript, tailwind, motion
 - Install: `npx shadcn@latest add @magicui/<component>`
 - Notes: MIT (github.com/magicuidesign/magicui). Some components pull peer deps automatically (cobe for Globe, canvas-confetti, react-tweet).
 - Cataloged in UI Vault: 76 entries
-
 ## Entries
-
 - **Marquee** https://magicui.design/docs/components/marquee — Infinite scrolling carousel for text, images or videos. [MIT, live-previewable, category: sections-misc]
 - **Terminal** https://magicui.design/docs/components/terminal — macOS terminal mockup for showcasing CLI output. [MIT, live-previewable, category: sections-misc]
 - **Hero Video Dialog** https://magicui.design/docs/components/hero-video-dialog — Hero video that expands from an inline thumbnail into a dialog player. [MIT, live-previewable, category: hero]

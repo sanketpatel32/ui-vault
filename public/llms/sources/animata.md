@@ -1,16 +1,12 @@
 # Animata
-
 > Move, scale, rotate and animate with real components.
-
 - URL: https://animata.design
 - License: MIT — live-previewable
 - Stack: react, typescript, tailwind, motion
 - Install: `npx shadcn@latest add https://animata.design/r/<name>.json`
 - Notes: MIT (github.com/codse/animata). Catalog carries the published set only — every source link resolves on the live site.
 - Cataloged in UI Vault: 154 entries
-
 ## Entries
-
 - **Animated Beam** https://animata.design/docs/background/animated-beam — A dark section background where light beams streak diagonally down a grid of faint lines, each at its own length and speed. [MIT, live-previewable, category: backgrounds]
 - **Blurry blob** https://animata.design/docs/background/blurry-blob — Animated blurry blob background [MIT, live-previewable, category: backgrounds]
 - **Boids Ecosystem** https://animata.design/docs/background/boids-ecosystem — A canvas flocking simulation — separation, alignment, cohesion — that parts around your cursor like a school of fish. [MIT, live-previewable, category: backgrounds]
@@ -44,7 +40,7 @@
 - **Collab Card** https://animata.design/docs/card/collab-card — Bento tile for realtime collaboration—not a generic card. Live presence, selection frame, teammate cursors. [MIT, live-previewable, category: cards]
 - **Flip Card** https://animata.design/docs/card/flip-card — A dynamic flip card featuring smooth 180-degree flip animations along both the X and Y axes. [MIT, live-previewable, category: cards]
 - **GitHub Card - Shiny** https://animata.design/docs/card/github-card-shiny — A card component where a shiny background follows the mouse when hovered, as seen in GitHub's homepage [MIT, live-previewable, category: cards]
-- **GitHub Card - Skew** https://animata.design/docs/card/github-card-skew — A card component which skews when hovered, as seen in GitHub's homepage [MIT, live-previewable, category: cards]
+- **GitHub Card - Skew** https://animata.design/docs/card/github-card-skew — A card component which skews  when hovered, as seen in GitHub's homepage [MIT, live-previewable, category: cards]
 - **Glowing Card** https://animata.design/docs/card/glowing-card — The card glows in gradient colours when hovered [MIT, live-previewable, category: cards]
 - **Led Board** https://animata.design/docs/card/led-board — A component that mimicks LED board and can display words; as seen in NextJS's homepage. Hover over the component to see the animation. [MIT, live-previewable, category: cards]
 - **Swap Text Card** https://animata.design/docs/card/swap-text-card — Text inside the card swaps [MIT, live-previewable, category: cards]

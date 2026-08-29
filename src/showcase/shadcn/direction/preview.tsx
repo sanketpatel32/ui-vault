@@ -1,15 +1,19 @@
+import { DirectionProvider } from "./direction";
 import { Button } from "@/components/ui/button";
 
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center gap-3 p-4">
-      <div className="rounded-xl border border-border bg-panel p-4 shadow-xs text-center space-y-2">
-        <h4 className="text-sm font-semibold text-fg capitalize">direction</h4>
-        <p className="text-xs text-muted-fg">shadcn/ui canonical component implementation.</p>
-        <Button size="sm" variant="outline">
-          Interact
+    <div className="flex gap-4">
+      <DirectionProvider dir="ltr">
+        <Button variant="outline" size="sm">
+          LTR
         </Button>
-      </div>
+      </DirectionProvider>
+      <DirectionProvider dir="rtl">
+        <Button variant="outline" size="sm">
+          RTL
+        </Button>
+      </DirectionProvider>
     </div>
   );
 }

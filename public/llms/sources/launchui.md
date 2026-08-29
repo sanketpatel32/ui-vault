@@ -1,16 +1,12 @@
 # Launch UI
-
 > Open-source components for your next launch.
-
 - URL: https://www.launchuicomponents.com
 - License: MIT — live-previewable
 - Stack: react, nextjs, typescript, tailwind, radix
 - Install: `npx shadcn@latest add @launchui/<block>`
 - Notes: MIT (github.com/launch-ui/launch-ui). Pro sections ($99 — bento, feature, testimonials, tabs, carousel, gallery, card) are gated and excluded from the catalog.
 - Cataloged in UI Vault: 16 entries
-
 ## Entries
-
 - **CTA** https://www.launchuicomponents.com/docs/sections/cta — A powerful Call-to-Action component built with shadcn's design system. [MIT, live-previewable, category: cta]
 - **FAQ** https://www.launchuicomponents.com/docs/sections/faq — A comprehensive FAQ component built in the style of shadcn/ui. [MIT, live-previewable, category: faq]
 - **Footer** https://www.launchuicomponents.com/docs/sections/footer — A modern footer component built with shadcn/ui. [MIT, live-previewable, category: footers]

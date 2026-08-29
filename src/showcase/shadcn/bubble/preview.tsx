@@ -1,15 +1,14 @@
-import { Button } from "@/components/ui/button";
+import { Bubble, BubbleContent } from "./bubble";
 
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center gap-3 p-4">
-      <div className="rounded-xl border border-border bg-panel p-4 shadow-xs text-center space-y-2">
-        <h4 className="text-sm font-semibold text-fg capitalize">bubble</h4>
-        <p className="text-xs text-muted-fg">shadcn/ui canonical component implementation.</p>
-        <Button size="sm" variant="outline">
-          Interact
-        </Button>
-      </div>
+    <div className="w-full max-w-sm space-y-2">
+      <Bubble variant="default">
+        <BubbleContent>Hey! Have you seen the new shadcn components?</BubbleContent>
+      </Bubble>
+      <Bubble variant="outline" align="end">
+        <BubbleContent>Yes, they look fantastic! 🔥</BubbleContent>
+      </Bubble>
     </div>
   );
 }

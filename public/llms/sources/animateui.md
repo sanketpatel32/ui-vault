@@ -1,16 +1,12 @@
 # Animate UI
-
 > Animated components for your next project.
-
 - URL: https://animate-ui.com
 - License: Free — live-previewable
 - Stack: react, typescript, tailwind, motion, radix
 - Install: `npx shadcn@latest add @animate-ui/<slug>`
 - Notes: MIT + Commons Clause (github.com/imskyleen/animate-ui): free to use anywhere including commercially — you just can't resell the components themselves.
 - Cataloged in UI Vault: 154 entries
-
 ## Entries
-
 - **Avatar Group (Animate UI)** https://animate-ui.com/docs/components/animate/avatar-group — An animated avatar group that displays overlapping user images and smoothly shifts each avatar forward on hover to highlight it. [MIT, live-previewable, category: data-display]
 - **Code (Animate UI)** https://animate-ui.com/docs/components/animate/code — A code component that animates the code as it is written. [MIT, live-previewable, category: sections-misc]
 - **Code Tabs (Animate UI)** https://animate-ui.com/docs/components/animate/code-tabs — A tabs component that displays code for different languages. [MIT, live-previewable, category: sections-misc]

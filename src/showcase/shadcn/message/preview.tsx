@@ -1,15 +1,15 @@
-import { Button } from "@/components/ui/button";
+import { Message, MessageAvatar, MessageContent, MessageHeader } from "./message";
 
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center gap-3 p-4">
-      <div className="rounded-xl border border-border bg-panel p-4 shadow-xs text-center space-y-2">
-        <h4 className="text-sm font-semibold text-fg capitalize">message</h4>
-        <p className="text-xs text-muted-fg">shadcn/ui canonical component implementation.</p>
-        <Button size="sm" variant="outline">
-          Interact
-        </Button>
-      </div>
-    </div>
+    <Message className="flex gap-3 max-w-sm">
+      <MessageAvatar className="h-8 w-8 text-xs font-semibold">SC</MessageAvatar>
+      <MessageContent>
+        <MessageHeader>shadcn</MessageHeader>
+        <div className="text-xs text-muted-fg mt-0.5">
+          Clean, accessible UI primitives for modern React applications.
+        </div>
+      </MessageContent>
+    </Message>
   );
 }

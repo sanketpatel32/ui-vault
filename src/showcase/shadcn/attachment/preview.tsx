@@ -1,15 +1,10 @@
-import { Button } from "@/components/ui/button";
+import { Attachment } from "./attachment";
 
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center gap-3 p-4">
-      <div className="rounded-xl border border-border bg-panel p-4 shadow-xs text-center space-y-2">
-        <h4 className="text-sm font-semibold text-fg capitalize">attachment</h4>
-        <p className="text-xs text-muted-fg">shadcn/ui canonical component implementation.</p>
-        <Button size="sm" variant="outline">
-          Interact
-        </Button>
-      </div>
+    <div className="w-64 space-y-2">
+      <Attachment name="project-specification.pdf" size="1.2 MB" />
+      <Attachment name="design-mockups.fig" size="8.4 MB" />
     </div>
   );
 }

@@ -1,11 +1,11 @@
-import { Badge } from "@/components/ui/badge";
+import { OriginBadge } from "./index";
 
 export default function Preview() {
   return (
     <div className="flex flex-wrap gap-2">
-      <Badge>Active</Badge>
-      <Badge variant="secondary">Pending</Badge>
-      <Badge variant="outline">Archived</Badge>
+      <OriginBadge variant="default">Active</OriginBadge>
+      <OriginBadge variant="secondary">Pending</OriginBadge>
+      <OriginBadge variant="outline">Archived</OriginBadge>
     </div>
   );
 }

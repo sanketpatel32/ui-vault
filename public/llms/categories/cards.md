@@ -23,7 +23,7 @@
 - **Collab Card** https://animata.design/docs/card/collab-card — Bento tile for realtime collaboration—not a generic card. Live presence, selection frame, teammate cursors. [MIT, live-previewable, category: cards]
 - **Flip Card** https://animata.design/docs/card/flip-card — A dynamic flip card featuring smooth 180-degree flip animations along both the X and Y axes. [MIT, live-previewable, category: cards]
 - **GitHub Card - Shiny** https://animata.design/docs/card/github-card-shiny — A card component where a shiny background follows the mouse when hovered, as seen in GitHub's homepage [MIT, live-previewable, category: cards]
-- **GitHub Card - Skew** https://animata.design/docs/card/github-card-skew — A card component which skews when hovered, as seen in GitHub's homepage [MIT, live-previewable, category: cards]
+- **GitHub Card - Skew** https://animata.design/docs/card/github-card-skew — A card component which skews  when hovered, as seen in GitHub's homepage [MIT, live-previewable, category: cards]
 - **Glowing Card** https://animata.design/docs/card/glowing-card — The card glows in gradient colours when hovered [MIT, live-previewable, category: cards]
 - **Led Board** https://animata.design/docs/card/led-board — A component that mimicks LED board and can display words; as seen in NextJS's homepage. Hover over the component to see the animation. [MIT, live-previewable, category: cards]
 - **Swap Text Card** https://animata.design/docs/card/swap-text-card — Text inside the card swaps [MIT, live-previewable, category: cards]

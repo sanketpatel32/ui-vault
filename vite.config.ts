@@ -7,7 +7,9 @@ import { defineConfig, lazyPlugins } from "vite-plus";
 export default defineConfig(({ command }) => ({
   // GitHub Pages serves this project at /ui-vault/ — only builds need the subpath base
   base: command === "build" ? "/ui-vault/" : "/",
-  fmt: {},
+  fmt: {
+    ignorePatterns: ["public/**"],
+  },
   lint: {
     plugins: ["react", "typescript", "oxc"],
     rules: {

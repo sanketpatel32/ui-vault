@@ -1,16 +1,12 @@
 # shadcn/ui
-
 > The canonical copy-paste component collection you own outright.
-
 - URL: https://ui.shadcn.com
 - License: MIT — live-previewable
 - Stack: react, typescript, tailwind, radix
 - Install: `npx shadcn@latest add <component>`
 - Notes: MIT (github.com/shadcn-ui/ui). v4 docs ship radix/base/aria variants of every component; the catalog carries the radix set.
 - Cataloged in UI Vault: 65 entries
-
 ## Entries
-
 - **Accordion** https://ui.shadcn.com/docs/components/accordion — A vertically stacked set of interactive headings that each reveal a section of content. [MIT, live-previewable, category: faq]
 - **Alert** https://ui.shadcn.com/docs/components/alert — Displays a callout for user attention. [MIT, live-previewable, category: feedback]
 - **Alert Dialog** https://ui.shadcn.com/docs/components/alert-dialog — A modal dialog that interrupts the user with important content and expects a response. [MIT, live-previewable, category: overlays]

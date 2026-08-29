@@ -1,16 +1,12 @@
 # Origin UI
-
 > 600+ copy-paste components, 30 families — the deepest form catalog anywhere.
-
 - URL: https://coss.com/origin
 - License: MIT — live-previewable
 - Stack: react, typescript, tailwind, radix
 - Install: `npx shadcn@latest add https://coss.com/origin/r/<family>.json`
 - Notes: originui.com now redirects to COSS — this is the maintained MIT snapshot at coss.com/origin (apps/origin in github.com/cosscom/coss). Entries are family-granularity; registry files cover each variant.
 - Cataloged in UI Vault: 31 entries
-
 ## Entries
-
 - **Accordion** https://coss.com/origin/accordion — Vertically collapsible content panels for grouping and revealing related information. 20 variants. [MIT, live-previewable, category: faq]
 - **Alert** https://coss.com/origin/alert — Attention-grabbing callout banners for inline status messages, warnings, and confirmations. 12 variants. [MIT, live-previewable, category: feedback]
 - **Avatar** https://coss.com/origin/avatar — User identity images with fallbacks and status indicators for profiles, lists, and comments. 23 variants. [MIT, live-previewable, category: data-display]

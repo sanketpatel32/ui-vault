@@ -1,16 +1,12 @@
 # React Bits
-
 > Open-source animated, interactive & fully customizable React components.
-
 - URL: https://reactbits.dev
 - License: MIT — live-previewable
 - Stack: react, typescript, tailwind, motion, gsap, webgl
 - Install: `npx jsrepo add react-bits/<Component>`
 - Notes: Free tier is MIT (github.com/DavidHDev/react-bits). Pro is a separate paid tier — link-out only.
 - Cataloged in UI Vault: 25 entries
-
 ## Entries
-
 - **SplitText** https://reactbits.dev/text-animations/split-text — Splits text into words or lines and reveals them with a smooth staggered animation as they enter the viewport. [MIT, live-previewable, category: text-animation]
 - **BlurText** https://reactbits.dev/text-animations/blur-text — Words blur in one by one when they scroll into view. A subtle, premium reading reveal for headings. [MIT, live-previewable, category: text-animation]
 - **GlitchText** https://reactbits.dev/text-animations/glitch-text — RGB-split glitch effect for text — cyberpunk energy without the noise. [MIT, live-previewable, category: text-animation]

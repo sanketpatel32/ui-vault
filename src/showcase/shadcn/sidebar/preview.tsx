@@ -1,26 +1,45 @@
-import { Button } from "@/components/ui/button";
-import { LayoutDashboard, Settings, Users, FolderGit2 } from "lucide-react";
+import {
+  Sidebar,
+  SidebarContent,
+  SidebarGroup,
+  SidebarGroupContent,
+  SidebarGroupLabel,
+  SidebarMenu,
+  SidebarMenuButton,
+  SidebarMenuItem,
+  SidebarProvider,
+} from "./sidebar";
+import { LayoutDashboard, FolderGit2, Settings } from "lucide-react";
 
 export default function Preview() {
   return (
-    <aside className="w-64 rounded-xl border border-border bg-panel p-4 shadow-xs">
-      <div className="mb-4 px-2 text-xs font-semibold uppercase tracking-wide text-muted-fg">
-        Workspace
-      </div>
-      <nav className="space-y-1">
-        <Button variant="subtle" size="sm" className="w-full justify-start gap-2">
-          <LayoutDashboard size={15} /> Dashboard
-        </Button>
-        <Button variant="ghost" size="sm" className="w-full justify-start gap-2">
-          <FolderGit2 size={15} /> Projects
-        </Button>
-        <Button variant="ghost" size="sm" className="w-full justify-start gap-2">
-          <Users size={15} /> Team
-        </Button>
-        <Button variant="ghost" size="sm" className="w-full justify-start gap-2">
-          <Settings size={15} /> Settings
-        </Button>
-      </nav>
-    </aside>
+    <SidebarProvider className="min-h-[180px] w-64 rounded-xl border border-border bg-panel shadow-xs">
+      <Sidebar className="w-full">
+        <SidebarContent>
+          <SidebarGroup>
+            <SidebarGroupLabel>Application</SidebarGroupLabel>
+            <SidebarGroupContent>
+              <SidebarMenu>
+                <SidebarMenuItem>
+                  <SidebarMenuButton isActive>
+                    <LayoutDashboard size={15} /> <span>Dashboard</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton>
+                    <FolderGit2 size={15} /> <span>Projects</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton>
+                    <Settings size={15} /> <span>Settings</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+              </SidebarMenu>
+            </SidebarGroupContent>
+          </SidebarGroup>
+        </SidebarContent>
+      </Sidebar>
+    </SidebarProvider>
   );
 }
