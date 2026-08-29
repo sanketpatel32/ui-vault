@@ -1,0 +1,111 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --bg: #fafafa;
+  --panel: #ffffff;
+  --border: #e4e4e7;
+  --fg: #18181b;
+  --muted: #f4f4f5;
+  --muted-fg: #71717a;
+  --accent: #7c3aed;
+  --accent-fg: #ffffff;
+  --accent-soft: #f5f3ff;
+}
+
+.dark {
+  --bg: #09090b;
+  --panel: #101013;
+  --border: #26262b;
+  --fg: #fafafa;
+  --muted: #18181b;
+  --muted-fg: #a1a1aa;
+  --accent: #8b5cf6;
+  --accent-fg: #ffffff;
+  --accent-soft: #1a1523;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-panel: var(--panel);
+  --color-border: var(--border);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-muted-fg: var(--muted-fg);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  --color-accent-soft: var(--accent-soft);
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  @apply bg-bg font-sans text-fg antialiased;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--accent) 30%, transparent);
+}
+
+/* subtle scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+/* ---- showcase keyframes (shared by vendored previews) ---- */
+
+/* reactbits Shiny Text — light sweep across text */
+@keyframes ui-vault-shiny {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+.shiny-text {
+  background: linear-gradient(110deg, var(--fg) 40%, #ffffff 50%, var(--fg) 60%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: ui-vault-shiny 2.8s linear infinite;
+}
+
+/* aceternity Moving Border — rotating conic gradient */
+@property --ui-vault-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+@keyframes ui-vault-spin-angle {
+  to {
+    --ui-vault-angle: 360deg;
+  }
+}
+.moving-border-track {
+  background: conic-gradient(
+    from var(--ui-vault-angle),
+    transparent 0%,
+    transparent 70%,
+    #8b5cf6 85%,
+    #22d3ee 100%
+  );
+  animation: ui-vault-spin-angle 3s linear infinite;
+}
+
+/* fancycomponents Typewriter caret */
+@keyframes ui-vault-caret {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.typewriter-caret {
+  animation: ui-vault-caret 1s steps(1) infinite;
+}

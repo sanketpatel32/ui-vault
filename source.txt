@@ -1,0 +1,30 @@
+The best modern UI component libraries on the internet right now.
+
+Most have built-in micro-interactions. Copy, paste, ship. Save these 👇
+1. http://collectui.com — hand-curated gallery of the best UI details on the web. #1 for pattern recognition.
+
+2. http://cuedesign.space — best-in-class components on the internet. Either they already exist and Cue found them, or they don’t yet and Cue is shipping them. Picks up where CollectUI stops.
+
+3. http://ui.aceternity.com — components that look expensive
+
+4. http://watermelon.sh — modern, minimal, fast
+
+5. http://21st.dev — huge community library
+
+6. http://shadcnstudio.com — 800+ shadcn blocks
+
+7. http://reactbits.dev — clean animated React bits
+
+8. http://motion-primitives.com — motion done right
+
+9. http://fancycomponents.dev — the fun, weird ones
+
+10. http://pro.ui-layouts.com — full layouts, not just pieces
+
+11. http://number-flow.barvian.me — animated numbers
+
+12. http://component.gallery — patterns from 95 design systems
+
+Guys, let’s connect 🤝
+
+This is one component from http://cuedesign.space
