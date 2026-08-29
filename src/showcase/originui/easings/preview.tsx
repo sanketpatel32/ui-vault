@@ -1,18 +1,16 @@
+import { motion } from "motion/react";
+
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            originui
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
-        </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Easings</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">
-          Copy-ready CSS easing curves and spring presets for consistent motion design.
-        </p>
-      </div>
+    <div className="flex flex-col gap-3 w-64">
+      <motion.div
+        animate={{ x: [0, 100, 0] }}
+        transition={{ duration: 2, ease: [0.16, 1, 0.3, 1], repeat: Infinity }}
+        className="h-8 w-8 rounded-lg bg-accent flex items-center justify-center text-xs text-accent-fg font-bold"
+      >
+        O
+      </motion.div>
+      <span className="text-[11px] text-muted-fg font-mono">cubic-bezier(0.16, 1, 0.3, 1)</span>
     </div>
   );
 }
