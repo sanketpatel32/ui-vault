@@ -1,9 +1,9 @@
 # UI Vault
 
-> A personal, frontend-only catalog of UI components aggregated from 12 curated sources
-> (animated React libraries, shadcn block registries, layout marketplaces and design galleries)
-> into one categorized, searchable library. Every entry records its source, license, install
-> command and — for open-source sources — a live React preview. No backend: the catalog itself
+> A personal, frontend-only catalog of UI components from free, vendorable sources
+> (open-source animated React libraries and component registries), organized into one
+> categorized, searchable library. Every entry ships free code with its source, license,
+> install command and — where vendored — a live React preview. No backend: the catalog itself
 > lives in TypeScript files under src/data (90 entries, 6 sources, 20 categories).
 
 ## Sources
