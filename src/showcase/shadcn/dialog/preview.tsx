@@ -1,19 +1,30 @@
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "./dialog";
+import { Button } from "@/components/ui/button";
+
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            shadcn
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
+    <Dialog>
+      <DialogTrigger asChild>
+        <Button variant="outline">Open Dialog</Button>
+      </DialogTrigger>
+      <DialogContent className="sm:max-w-md">
+        <DialogHeader>
+          <DialogTitle>Edit Profile</DialogTitle>
+          <DialogDescription>
+            Make changes to your profile here. Click save when you're done.
+          </DialogDescription>
+        </DialogHeader>
+        <div className="py-2 text-xs text-muted-fg">
+          Profile form controls render here.
         </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Dialog</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">
-          A window overlaid on either the primary window or another dialog window, rendering the
-          content underneath inert.
-        </p>
-      </div>
-    </div>
+      </DialogContent>
+    </Dialog>
   );
 }

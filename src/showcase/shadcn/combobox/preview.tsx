@@ -1,18 +1,49 @@
+import { useState } from "react";
+import { Check, ChevronsUpDown } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+
+const frameworks = [
+  { value: "next.js", label: "Next.js" },
+  { value: "sveltekit", label: "SvelteKit" },
+  { value: "nuxt.js", label: "Nuxt.js" },
+  { value: "remix", label: "Remix" },
+  { value: "astro", label: "Astro" },
+];
+
 export default function Preview() {
+  const [open, setOpen] = useState(false);
+  const [value, setValue] = useState("next.js");
+
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            shadcn
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
+    <Popover open={open} onOpenChange={setOpen}>
+      <PopoverTrigger asChild>
+        <Button variant="outline" role="combobox" aria-expanded={open} className="w-52 justify-between">
+          {value ? frameworks.find((f) => f.value === value)?.label : "Select framework..."}
+          <ChevronsUpDown size={14} className="opacity-50" />
+        </Button>
+      </PopoverTrigger>
+      <PopoverContent className="w-52 p-1">
+        <div className="space-y-1">
+          {frameworks.map((f) => (
+            <div
+              key={f.value}
+              onClick={() => {
+                setValue(f.value);
+                setOpen(false);
+              }}
+              className="flex items-center justify-between px-2 py-1.5 text-xs rounded-md cursor-pointer hover:bg-muted"
+            >
+              <span>{f.label}</span>
+              {value === f.value && <Check size={14} />}
+            </div>
+          ))}
         </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Combobox</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">
-          Autocomplete input with a list of suggestions.
-        </p>
-      </div>
-    </div>
+      </PopoverContent>
+    </Popover>
   );
 }

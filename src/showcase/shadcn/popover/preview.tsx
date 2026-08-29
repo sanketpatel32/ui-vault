@@ -1,18 +1,20 @@
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "./popover";
+import { Button } from "@/components/ui/button";
+
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            shadcn
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
-        </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Popover</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">
-          Displays rich content in a portal, triggered by a button.
-        </p>
-      </div>
-    </div>
+    <Popover>
+      <PopoverTrigger asChild>
+        <Button variant="outline">Open Popover</Button>
+      </PopoverTrigger>
+      <PopoverContent className="w-64 space-y-2">
+        <h4 className="font-semibold text-xs text-fg">Dimensions</h4>
+        <p className="text-xs text-muted-fg">Set width and height properties for the layer.</p>
+      </PopoverContent>
+    </Popover>
   );
 }

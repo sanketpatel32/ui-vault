@@ -1,18 +1,26 @@
+import { Button } from "@/components/ui/button";
+import { LayoutDashboard, Settings, Users, FolderGit2 } from "lucide-react";
+
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            shadcn
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
-        </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Sidebar</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">
-          A composable, themeable and customizable sidebar component.
-        </p>
+    <aside className="w-64 rounded-xl border border-border bg-panel p-4 shadow-xs">
+      <div className="mb-4 px-2 text-xs font-semibold uppercase tracking-wider text-muted-fg">
+        Workspace
       </div>
-    </div>
+      <nav className="space-y-1">
+        <Button variant="subtle" size="sm" className="w-full justify-start gap-2">
+          <LayoutDashboard size={15} /> Dashboard
+        </Button>
+        <Button variant="ghost" size="sm" className="w-full justify-start gap-2">
+          <FolderGit2 size={15} /> Projects
+        </Button>
+        <Button variant="ghost" size="sm" className="w-full justify-start gap-2">
+          <Users size={15} /> Team
+        </Button>
+        <Button variant="ghost" size="sm" className="w-full justify-start gap-2">
+          <Settings size={15} /> Settings
+        </Button>
+      </nav>
+    </aside>
   );
 }

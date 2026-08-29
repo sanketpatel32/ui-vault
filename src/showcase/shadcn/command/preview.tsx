@@ -1,18 +1,33 @@
+import {
+  Command,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+  CommandSeparator,
+} from "./command";
+import { Calculator, Calendar, Smile } from "lucide-react";
+
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            shadcn
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
-        </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Command</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">
-          Command menu for search and quick actions.
-        </p>
-      </div>
-    </div>
+    <Command className="rounded-xl border border-border shadow-md max-w-xs">
+      <CommandInput placeholder="Type a command..." />
+      <CommandList>
+        <CommandEmpty>No results found.</CommandEmpty>
+        <CommandGroup heading="Suggestions">
+          <CommandItem className="flex items-center gap-2">
+            <Calendar size={14} /> <span>Calendar</span>
+          </CommandItem>
+          <CommandItem className="flex items-center gap-2">
+            <Smile size={14} /> <span>Search Emoji</span>
+          </CommandItem>
+          <CommandItem className="flex items-center gap-2">
+            <Calculator size={14} /> <span>Calculator</span>
+          </CommandItem>
+        </CommandGroup>
+        <CommandSeparator />
+      </CommandList>
+    </Command>
   );
 }

@@ -1,19 +1,31 @@
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { Label } from "@/components/ui/label";
+
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            shadcn
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
-        </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Questionnaire</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">
-          A multi-step questionnaire with single-choice, multiple-choice, freeform, and skippable
-          questions.
-        </p>
-      </div>
-    </div>
+    <Card className="w-80">
+      <CardHeader className="p-4 pb-2">
+        <CardTitle className="text-xs font-semibold">How would you rate your experience?</CardTitle>
+      </CardHeader>
+      <CardContent className="p-4 pt-2 space-y-3">
+        <RadioGroup defaultValue="4">
+          <div className="flex items-center space-x-2">
+            <RadioGroupItem value="5" id="q5" />
+            <Label htmlFor="q5">Excellent</Label>
+          </div>
+          <div className="flex items-center space-x-2">
+            <RadioGroupItem value="4" id="q4" />
+            <Label htmlFor="q4">Very Good</Label>
+          </div>
+          <div className="flex items-center space-x-2">
+            <RadioGroupItem value="3" id="q3" />
+            <Label htmlFor="q3">Average</Label>
+          </div>
+        </RadioGroup>
+        <Button size="sm" className="w-full">Submit Feedback</Button>
+      </CardContent>
+    </Card>
   );
 }

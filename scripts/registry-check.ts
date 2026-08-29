@@ -1,6 +1,7 @@
 // Validates the registry in src/data. Run: npm run registry:check
 import { categories, entries, sources } from "../src/data/index";
 import { showcaseLoaders } from "../src/showcase/index";
+import { checkAllPreviews } from "./check-previews.mts";
 
 const errors: string[] = [];
 const warnings: string[] = [];
@@ -59,6 +60,14 @@ console.table(bySource);
 console.log(
   `total: ${entries.length} entries · ${entries.filter((e) => e.previewKey).length} live previews · ${categories.length} categories`,
 );
+
+// preview stub and validity check
+const previewCheck = checkAllPreviews();
+if (previewCheck.failed.length > 0) {
+  for (const f of previewCheck.failed) {
+    errors.push(`preview check failed: ${f}`);
+  }
+}
 
 if (warnings.length) {
   console.warn(`\n${warnings.length} warning(s):`);

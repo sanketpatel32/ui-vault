@@ -1,17 +1,19 @@
+import { Separator } from "./separator";
+
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            shadcn
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
-        </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Separator</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">
-          Visually or semantically separates content.
-        </p>
+    <div className="space-y-3 text-xs w-72">
+      <div>
+        <h4 className="text-xs font-semibold text-fg">Radix Primitives</h4>
+        <p className="text-[11px] text-muted-fg">An open-source UI component library.</p>
+      </div>
+      <Separator />
+      <div className="flex h-5 items-center space-x-4 text-xs text-muted-fg">
+        <div>Blog</div>
+        <Separator orientation="vertical" />
+        <div>Docs</div>
+        <Separator orientation="vertical" />
+        <div>Source</div>
       </div>
     </div>
   );

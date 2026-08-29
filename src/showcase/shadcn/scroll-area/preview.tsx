@@ -1,18 +1,18 @@
+import { ScrollArea } from "./scroll-area";
+import { Separator } from "@/components/ui/separator";
+
+const tags = Array.from({ length: 25 }).map((_, i, a) => `v1.2.0-beta.${a.length - i}`);
+
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            shadcn
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
+    <ScrollArea className="h-48 w-48 rounded-xl border border-border p-4">
+      <h4 className="mb-3 text-xs font-semibold leading-none text-fg">Tags</h4>
+      {tags.map((tag) => (
+        <div key={tag}>
+          <div className="text-xs text-muted-fg py-1">{tag}</div>
+          <Separator className="my-1" />
         </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Scroll Area</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">
-          Augments native scroll functionality for custom, cross-browser styling.
-        </p>
-      </div>
-    </div>
+      ))}
+    </ScrollArea>
   );
 }

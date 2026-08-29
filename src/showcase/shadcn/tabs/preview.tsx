@@ -1,18 +1,27 @@
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "./tabs";
+
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            shadcn
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
-        </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Tabs</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">
-          A set of layered sections of content—known as tab panels—that are displayed one at a time.
+    <Tabs defaultValue="account" className="w-80">
+      <TabsList className="grid w-full grid-cols-2">
+        <TabsTrigger value="account">Account</TabsTrigger>
+        <TabsTrigger value="password">Password</TabsTrigger>
+      </TabsList>
+      <TabsContent value="account">
+        <p className="mt-2 text-xs text-muted-fg leading-relaxed">
+          Manage your account preferences, billing, and profile details.
         </p>
-      </div>
-    </div>
+      </TabsContent>
+      <TabsContent value="password">
+        <p className="mt-2 text-xs text-muted-fg leading-relaxed">
+          Change your security credentials and multi-factor authentication.
+        </p>
+      </TabsContent>
+    </Tabs>
   );
 }

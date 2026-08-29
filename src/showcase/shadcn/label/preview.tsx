@@ -1,18 +1,11 @@
+import { Label } from "./label";
+import { Input } from "@/components/ui/input";
+
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            shadcn
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
-        </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Label</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">
-          Renders an accessible label associated with controls.
-        </p>
-      </div>
+    <div className="grid w-72 items-center gap-1.5">
+      <Label htmlFor="email">Your email address</Label>
+      <Input type="email" id="email" placeholder="name@example.com" />
     </div>
   );
 }

@@ -1,18 +1,15 @@
+import { AspectRatio } from "./aspect-ratio";
+
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            shadcn
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
-        </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Aspect Ratio</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">
-          Displays content within a desired ratio.
-        </p>
-      </div>
+    <div className="w-72 overflow-hidden rounded-xl border border-border shadow-xs">
+      <AspectRatio ratio={16 / 9}>
+        <img
+          src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&auto=format&fit=crop&q=60"
+          alt="Photo by Drew Beamer"
+          className="h-full w-full object-cover"
+        />
+      </AspectRatio>
     </div>
   );
 }

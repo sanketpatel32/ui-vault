@@ -1,16 +1,38 @@
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "./drawer";
+import { Button } from "@/components/ui/button";
+
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            shadcn
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
+    <Drawer>
+      <DrawerTrigger asChild>
+        <Button variant="outline">Open Drawer</Button>
+      </DrawerTrigger>
+      <DrawerContent>
+        <div className="mx-auto w-full max-w-sm">
+          <DrawerHeader>
+            <DrawerTitle>Set Goal</DrawerTitle>
+            <DrawerDescription>Set your daily activity goal.</DrawerDescription>
+          </DrawerHeader>
+          <div className="p-4 text-center text-2xl font-bold font-mono">
+            350 cal/day
+          </div>
+          <DrawerFooter>
+            <Button size="sm">Submit</Button>
+            <DrawerClose asChild>
+              <Button variant="outline" size="sm">Cancel</Button>
+            </DrawerClose>
+          </DrawerFooter>
         </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Drawer</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">A drawer component for React.</p>
-      </div>
-    </div>
+      </DrawerContent>
+    </Drawer>
   );
 }

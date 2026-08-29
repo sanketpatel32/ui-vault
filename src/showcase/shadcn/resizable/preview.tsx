@@ -1,18 +1,26 @@
+import {
+  ResizableHandle,
+  ResizablePanel,
+  ResizablePanelGroup,
+} from "./resizable";
+
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            shadcn
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
+    <ResizablePanelGroup
+      orientation="horizontal"
+      className="max-w-md min-h-[140px] rounded-xl border border-border"
+    >
+      <ResizablePanel defaultSize={50}>
+        <div className="flex h-full items-center justify-center p-4 text-xs text-muted-fg font-medium">
+          Sidebar Panel
         </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Resizable</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">
-          Accessible resizable panel groups and layouts with keyboard support.
-        </p>
-      </div>
-    </div>
+      </ResizablePanel>
+      <ResizableHandle withHandle />
+      <ResizablePanel defaultSize={50}>
+        <div className="flex h-full items-center justify-center p-4 text-xs text-muted-fg font-medium">
+          Main Content Panel
+        </div>
+      </ResizablePanel>
+    </ResizablePanelGroup>
   );
 }

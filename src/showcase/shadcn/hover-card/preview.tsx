@@ -1,18 +1,31 @@
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "./hover-card";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
+
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            shadcn
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
+    <HoverCard>
+      <HoverCardTrigger asChild>
+        <Button variant="ghost" className="font-semibold text-accent">@nextjs</Button>
+      </HoverCardTrigger>
+      <HoverCardContent className="w-72">
+        <div className="flex space-x-3">
+          <Avatar>
+            <AvatarImage src="https://github.com/vercel.png" />
+            <AvatarFallback>VC</AvatarFallback>
+          </Avatar>
+          <div className="space-y-1">
+            <h4 className="text-xs font-semibold text-fg">@nextjs</h4>
+            <p className="text-xs text-muted-fg leading-relaxed">
+              The React Framework – created and maintained by @vercel.
+            </p>
+          </div>
         </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Hover Card</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">
-          For sighted users to preview content available behind a link.
-        </p>
-      </div>
-    </div>
+      </HoverCardContent>
+    </HoverCard>
   );
 }

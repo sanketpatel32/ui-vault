@@ -1,16 +1,39 @@
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "./table";
+
+const invoices = [
+  { id: "INV001", status: "Paid", amount: "$250.00" },
+  { id: "INV002", status: "Pending", amount: "$150.00" },
+  { id: "INV003", status: "Unpaid", amount: "$350.00" },
+];
+
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            shadcn
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
-        </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Table</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">A responsive table component.</p>
-      </div>
+    <div className="w-80 rounded-xl border border-border overflow-hidden">
+      <Table>
+        <TableHeader>
+          <TableRow>
+            <TableHead>Invoice</TableHead>
+            <TableHead>Status</TableHead>
+            <TableHead className="text-right">Amount</TableHead>
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          {invoices.map((inv) => (
+            <TableRow key={inv.id}>
+              <TableCell className="font-mono">{inv.id}</TableCell>
+              <TableCell>{inv.status}</TableCell>
+              <TableCell className="text-right font-mono">{inv.amount}</TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
     </div>
   );
 }

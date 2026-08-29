@@ -1,18 +1,30 @@
+import { Bar, BarChart, ResponsiveContainer, XAxis } from "recharts";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+
+const data = [
+  { name: "Jan", total: 120 },
+  { name: "Feb", total: 240 },
+  { name: "Mar", total: 180 },
+  { name: "Apr", total: 320 },
+  { name: "May", total: 290 },
+];
+
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            shadcn
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
+    <Card className="w-80">
+      <CardHeader className="p-4 pb-2">
+        <CardTitle className="text-sm font-semibold">Monthly Activity</CardTitle>
+      </CardHeader>
+      <CardContent className="p-4 pt-0">
+        <div className="h-40 w-full">
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart data={data}>
+              <XAxis dataKey="name" stroke="#888888" fontSize={11} tickLine={false} axisLine={false} />
+              <Bar dataKey="total" fill="currentColor" className="fill-accent" radius={[4, 4, 0, 0]} />
+            </BarChart>
+          </ResponsiveContainer>
         </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Chart</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">
-          Beautiful charts. Built using Recharts. Copy and paste into your apps.
-        </p>
-      </div>
-    </div>
+      </CardContent>
+    </Card>
   );
 }

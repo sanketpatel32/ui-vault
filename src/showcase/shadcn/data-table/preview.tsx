@@ -1,18 +1,39 @@
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+
+const tasks = [
+  { code: "TASK-8782", title: "You can't compress the program without...", status: "In Progress" },
+  { code: "TASK-7878", title: "Try to calculate the EXE feed, maybe it will...", status: "Done" },
+  { code: "TASK-7839", title: "We need to bypass the neural TCP card!", status: "Todo" },
+];
+
 export default function Preview() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-panel p-6 shadow-xs space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
-            shadcn
-          </span>
-          <div className="h-2 w-2 rounded-full bg-emerald-500" />
-        </div>
-        <h4 className="text-base font-semibold text-fg tracking-tight">Data Table</h4>
-        <p className="text-xs text-muted-fg leading-relaxed">
-          Powerful table and datagrids built using TanStack Table.
-        </p>
-      </div>
+    <div className="w-80 rounded-xl border border-border overflow-hidden">
+      <Table>
+        <TableHeader>
+          <TableRow>
+            <TableHead>Task</TableHead>
+            <TableHead>Title</TableHead>
+            <TableHead>Status</TableHead>
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          {tasks.map((t) => (
+            <TableRow key={t.code}>
+              <TableCell className="font-mono text-xs">{t.code}</TableCell>
+              <TableCell className="text-xs truncate max-w-[120px]">{t.title}</TableCell>
+              <TableCell className="text-xs">{t.status}</TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
     </div>
   );
 }
