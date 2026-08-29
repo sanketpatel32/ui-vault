@@ -5,4 +5,3 @@
 ## Entries
 
 - **FAQ Blocks** https://ui.watermelon.sh/blocks/faq — 6 FAQ section blocks with animated accordions. [Free, live-previewable, category: faq]
-- **FAQ Cards Grid** https://21st.dev/community/components/s/faq — Popular FAQ block — questions as expandable cards in a grid. [Freemium, link-out only, category: faq]

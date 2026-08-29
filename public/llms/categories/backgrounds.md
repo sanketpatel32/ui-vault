@@ -19,6 +19,3 @@
 - **Background Beams** https://ui.aceternity.com/components/background-beams — Sharp light beams streak across a dark background along SVG trajectories. [MIT, live-previewable, category: backgrounds]
 - **Aurora Background** https://ui.aceternity.com/components/aurora-background — Soft aurora borealis gradient washing behind a hero — calm and colorful. [MIT, live-previewable, category: backgrounds]
 - **Wavy Background** https://ui.aceternity.com/components/wavy-background — Undulating wave canvas background — flowing, generative calm. [MIT, live-previewable, category: backgrounds]
-- **Backgrounds — Community Gallery** https://21st.dev/community/components/s/background — Generative backgrounds — gradients, shaders (new category), meshes and grids. [Freemium, link-out only, category: backgrounds]
-- **Bloom Field Gradient** https://21st.dev/community/components/s/gradient — Popular organic gradient background — blooming color fields for heroes. [Freemium, link-out only, category: backgrounds]
-- **Liquid Glass Inspirations** https://collectui.com/designs/liquid-glass-ui-design-inspiration — Curated liquid glass (glassmorphism) treatments — translucency done right. [Free, link-out only, category: backgrounds]

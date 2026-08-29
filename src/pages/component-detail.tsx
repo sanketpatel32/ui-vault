@@ -4,7 +4,7 @@ import { ExternalLink, Tag } from "lucide-react";
 import { categoryBySlug, entryById, relatedEntries, sourceById } from "@/lib/registry";
 import { recents } from "@/lib/store";
 import { SourceBadge } from "@/components/source-badge";
-import { LicenseBadge, TypeBadge } from "@/components/license-badge";
+import { LicenseBadge, PreviewBadge } from "@/components/license-badge";
 import { StarButton } from "@/components/star-button";
 import { PreviewFrame } from "@/components/preview-frame";
 import { CodeBlock } from "@/components/code-block";
@@ -58,7 +58,7 @@ export function ComponentDetail() {
               <SourceBadge source={entry.source} className="text-xs hover:text-accent" />
             </Link>
             <LicenseBadge license={entry.license} />
-            <TypeBadge mode={entry.previewMode} />
+            <PreviewBadge entry={entry} />
             <span className="text-[11px] text-muted-fg/70">
               in “{entry.sourceCategory}” at source
             </span>

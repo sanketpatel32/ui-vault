@@ -1,6 +1,8 @@
 # AGENTS.md — UI Vault
 
-Personal, frontend-only React hub that aggregates UI components from 12 sources (listed in `source.txt`) into one categorized, searchable, previewable library. **The owner is the only user.** There is no backend and there never will be one.
+Personal, frontend-only React hub that aggregates UI components from the 6 free, vendorable sources into one categorized, searchable, previewable library. **The owner is the only user.** There is no backend and there never will be one.
+
+**Registry policy (v0.3.0, owner decision 2026-08-29): the registry carries ONLY vendorable sources.** Paid/gated/gallery sources (21st.dev, shadcnStudio, UI Layouts Pro, Cue, CollectUI, The Component Gallery) were removed from `src/data/` entirely — every entry must be something we can actually show (free code + install command). Do not re-add link-out entries or link-out-only sources; if the owner asks for a paid/gated source, surface the policy before doing it.
 
 **Read `PLAN.md` first** — it is the build checklist of record and contains the full architecture. This file is the operating guide for day-to-day work.
 
@@ -30,7 +32,7 @@ Fresh checkout: `npm install` (or `vp install`) first.
 ## Golden rules
 
 1. **Registry-first.** Every component the UI shows must exist in `src/data/components/<source>.ts`. The UI is a view over the registry — never hardcode a component into a page.
-2. **Never vendor paid or gated code.** Only sources marked ✅ in the table below may have code copied into `src/showcase/`. Everything else is metadata + link-out. When in doubt, link out. `npm run registry:check` enforces this.
+2. **Never vendor paid or gated code.** Only sources marked ✅ in the table below may have code copied into `src/showcase/`. Since v0.3.0 the registry only contains ✅ sources — link-out entries were removed at the owner's request. `npm run registry:check` enforces the licensing guard.
 3. **Any registry change → run `npm run llms`.** Generated files under `public/llms*` are never hand-edited. The predev/prebuild hooks are a safety net, not an excuse to skip it.
 4. **One primary category per entry**, and only slugs defined in `src/data/categories.ts` (see PLAN §4). To add a category, edit that file deliberately — never invent slugs inline.
 5. **Vendored components are frozen snapshots.** Each `src/showcase/<source>/<component>/` folder records its origin URL and copy date in `src/showcase/README.md`, and keeps the upstream attribution header in the file. We do not fork or "improve" vendored code; fix by re-copying upstream.
@@ -39,7 +41,7 @@ Fresh checkout: `npm install` (or `vp install`) first.
 
 ## Sources & licensing (researched 2026-08-29)
 
-| Source                 | SourceId           | License                         | May vendor code?           |
+| Source                 | SourceId           | License                         | In registry?               |
 | ---------------------- | ------------------ | ------------------------------- | -------------------------- |
 | reactbits.dev          | `reactbits`        | MIT (free tier)                 | ✅ yes                     |
 | motion-primitives.com  | `motionprimitives` | MIT (free tier)                 | ✅ yes                     |
@@ -47,12 +49,12 @@ Fresh checkout: `npm install` (or `vp install`) first.
 | number-flow.barvian.me | `numberflow`       | MIT (npm: `@number-flow/react`) | ✅ yes                     |
 | watermelon.sh          | `watermelon`       | Open source, free               | ✅ yes                     |
 | ui.aceternity.com      | `aceternity`       | Free tier + paid Pro            | ✅ free tier only          |
-| 21st.dev               | `21st`             | Freemium (2 copies/day)         | ❌ link-out                |
-| shadcnstudio.com       | `shadcnstudio`     | Free tier + $249 Pro            | ❌ link-out                |
-| pro.ui-layouts.com     | `uilayouts`        | Paid ($139+)                    | ❌ link-out                |
-| cuedesign.space        | `cue`              | Free tier + Cue+                | ❌ link-out (prompt-based) |
-| collectui.com          | `collectui`        | Free gallery                    | ❌ link-out (no code)      |
-| component.gallery      | `componentgallery` | Free reference                  | ❌ link-out (no code)      |
+| 21st.dev               | `21st`             | Freemium (2 copies/day)         | ❌ removed in v0.3.0       |
+| shadcnstudio.com       | `shadcnstudio`     | Free tier + $249 Pro            | ❌ removed in v0.3.0       |
+| pro.ui-layouts.com     | `uilayouts`        | Paid ($139+)                    | ❌ removed in v0.3.0       |
+| cuedesign.space        | `cue`              | Free tier + Cue+                | ❌ removed in v0.3.0       |
+| collectui.com          | `collectui`        | Free gallery                    | ❌ removed in v0.3.0       |
+| component.gallery      | `componentgallery` | Free reference                  | ❌ removed in v0.3.0       |
 
 Install commands for the vendorable sources: `npx jsrepo add react-bits/<Name>` · `npx motion-primitives@latest add <name>` · shadcn registry `@fancy` (fancycomponents.dev/r/{name}.json) · `npm i @number-flow/react` · watermelon: `npx shadcn@latest add https://registry.watermelon.sh/r/<name>.json` · aceternity: `npx aceternity-ui@latest add <name>`.
 
@@ -67,7 +69,7 @@ Install commands for the vendorable sources: `npx jsrepo add react-bits/<Name>` 
 ## File map
 
 ```
-src/data/        sources.ts, categories.ts, types.ts, components/*.ts (12)  ← the "backend"
+src/data/        sources.ts, categories.ts, types.ts, components/*.ts (6)   ← the "backend"
 src/lib/         utils (cn), registry selectors, search (fuse), store (localStorage), theme
 src/components/  hub's own UI: ui/ primitives, sidebar, topbar, command-palette,
                  entry-card, preview-frame, filter-bar, badges, code-block

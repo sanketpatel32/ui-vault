@@ -5,13 +5,9 @@ import { fancy } from "./components/fancy";
 import { aceternity } from "./components/aceternity";
 import { numberflow } from "./components/numberflow";
 import { watermelon } from "./components/watermelon";
-import { twentyfirst } from "./components/21st";
-import { shadcnstudio } from "./components/shadcnstudio";
-import { uilayouts } from "./components/uilayouts";
-import { cue } from "./components/cue";
-import { collectui } from "./components/collectui";
-import { componentgallery } from "./components/componentgallery";
 
+// Registry policy (v0.3.0): only vendorable sources — every entry ships free code
+// with an install command. Paid/gated/gallery sources are not carried as entries.
 export const entries: UIEntry[] = [
   ...reactbits,
   ...motionprimitives,
@@ -19,12 +15,6 @@ export const entries: UIEntry[] = [
   ...aceternity,
   ...numberflow,
   ...watermelon,
-  ...twentyfirst,
-  ...shadcnstudio,
-  ...uilayouts,
-  ...cue,
-  ...collectui,
-  ...componentgallery,
 ];
 
 export { sources } from "./sources";

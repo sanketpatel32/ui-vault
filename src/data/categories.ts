@@ -4,7 +4,6 @@ export const GROUP_LABELS: Record<CategoryGroup, string> = {
   components: "Components",
   blocks: "Blocks",
   templates: "Templates",
-  inspiration: "Inspiration",
 };
 
 export const categories: Category[] = [
@@ -56,18 +55,6 @@ export const categories: Category[] = [
     name: "Overlays",
     group: "components",
     description: "Dialogs, drawers, popovers, tooltips, toasts and command bars.",
-  },
-  {
-    slug: "feedback",
-    name: "Loading & Feedback",
-    group: "components",
-    description: "Spinners, progress, skeletons, empty states and notifications.",
-  },
-  {
-    slug: "data-display",
-    name: "Data Display",
-    group: "components",
-    description: "Tables, charts, stats, badges and avatars for showing data.",
   },
   {
     slug: "numbers",
@@ -126,12 +113,6 @@ export const categories: Category[] = [
     description: "Multi-column footers, sitemaps and newsletter captures.",
   },
   {
-    slug: "navbars",
-    name: "Navbars",
-    group: "blocks",
-    description: "Full page-header blocks with menus and actions.",
-  },
-  {
     slug: "sections-misc",
     name: "Other Sections",
     group: "blocks",
@@ -146,29 +127,9 @@ export const categories: Category[] = [
     description: "Complete admin and analytics app layouts.",
   },
   {
-    slug: "landing-pages",
-    name: "Landing Pages",
-    group: "templates",
-    description: "Full marketing page compositions.",
-  },
-  {
     slug: "auth",
     name: "Login & Signup",
     group: "templates",
     description: "Auth screens, OTP flows and onboarding.",
-  },
-  {
-    slug: "full-templates",
-    name: "Full Site Templates",
-    group: "templates",
-    description: "Multi-page, production-shaped site starters.",
-  },
-
-  // ---- Inspiration ----
-  {
-    slug: "galleries",
-    name: "Galleries & Reference",
-    group: "inspiration",
-    description: "Curated screenshots and design-system patterns — reference, not code.",
   },
 ];

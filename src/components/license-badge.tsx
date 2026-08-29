@@ -1,4 +1,4 @@
-import type { License, PreviewMode } from "@/data";
+import type { License, UIEntry } from "@/data";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 
@@ -25,18 +25,15 @@ export function LicenseBadge({ license, className }: { license: License; classNa
   );
 }
 
-export function TypeBadge({ mode, className }: { mode: PreviewMode; className?: string }) {
+/** Shown only when the component is actually vendored and renders live here. */
+export function PreviewBadge({ entry, className }: { entry: UIEntry; className?: string }) {
+  if (!entry.previewKey) return null;
   return (
     <Badge
-      className={cn(
-        mode === "live" ? "border-accent/30 bg-accent-soft text-accent" : undefined,
-        className,
-      )}
-      title={
-        mode === "live" ? "Free code — can be previewed live in UI Vault" : "Link-out to source"
-      }
+      className={cn("border-accent/30 bg-accent-soft text-accent", className)}
+      title="Vendored — renders live in UI Vault"
     >
-      {mode === "live" ? "Live preview" : "Link-out"}
+      Preview
     </Badge>
   );
 }

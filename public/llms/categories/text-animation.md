@@ -21,6 +21,3 @@
 - **Text Highlighter** https://www.fancycomponents.dev/docs/components/text/text-highlighter — Marker-pen highlight sweeps across text as you scroll — hand-drawn emphasis. [MIT, live-previewable, category: text-animation]
 - **Typewriter** https://www.fancycomponents.dev/docs/components/text/typewriter — Types and deletes text with a blinking caret and loop — the dependable typewriter. [MIT, live-previewable, category: text-animation]
 - **Text Generate Effect** https://ui.aceternity.com/components/text-generate-effect — Words materialize from blur one by one — the classic AI-reveal heading. [MIT, live-previewable, category: text-animation]
-- **Texts — Community Gallery** https://21st.dev/community/components/s/text — 663 text effect components — animations for every typographic mood. [Freemium, link-out only, category: text-animation]
-- **Mesh-Warped Typewriter Engine** https://cuedesign.space — Typewriter text that warps through a mesh as it types — typography as a material. [Freemium, link-out only, category: text-animation]
-- **Cryptic Decoder Reveal** https://cuedesign.space — Headline decodes from cryptic glyphs — spy-movie title sequence energy. [Freemium, link-out only, category: text-animation]

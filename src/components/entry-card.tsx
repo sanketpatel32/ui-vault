@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import type { UIEntry } from "@/data";
 import { categoryBySlug } from "@/lib/registry";
 import { SourceBadge } from "@/components/source-badge";
-import { LicenseBadge, TypeBadge } from "@/components/license-badge";
+import { LicenseBadge, PreviewBadge } from "@/components/license-badge";
 import { StarButton } from "@/components/star-button";
 
 export function EntryCard({ entry }: { entry: UIEntry }) {
@@ -16,7 +16,7 @@ export function EntryCard({ entry }: { entry: UIEntry }) {
         <div className="flex flex-wrap items-center gap-1.5">
           <SourceBadge source={entry.source} />
           <LicenseBadge license={entry.license} />
-          <TypeBadge mode={entry.previewMode} />
+          <PreviewBadge entry={entry} />
         </div>
         <StarButton id={entry.id} className="-mt-1 -mr-1" />
       </div>

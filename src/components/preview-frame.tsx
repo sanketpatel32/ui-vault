@@ -23,9 +23,7 @@ export function PreviewFrame({ entry }: { entry: UIEntry }) {
   return (
     <section className="overflow-hidden rounded-xl border border-border bg-panel">
       <div className="flex h-10 items-center justify-between border-b border-border px-4">
-        <p className="text-xs font-medium text-muted-fg">
-          {Preview ? "Live preview" : "Reference"}
-        </p>
+        <p className="text-xs font-medium text-muted-fg">{Preview ? "Live preview" : "Install"}</p>
         <a
           href={entry.sourceUrl}
           target="_blank"
@@ -53,15 +51,12 @@ export function PreviewFrame({ entry }: { entry: UIEntry }) {
               <ExternalLink size={20} />
             </span>
             <div>
-              <p className="text-sm font-medium text-fg">
-                {entry.previewMode === "live" ? "No local preview yet" : `Lives at ${source?.name}`}
-              </p>
+              <p className="text-sm font-medium text-fg">No local preview yet</p>
               <p className="mt-1 text-xs leading-relaxed text-muted-fg">
-                {entry.previewMode === "live"
-                  ? "This source is free to vendor — the code just isn't copied into UI Vault yet. Take the install command or grab it at the source."
-                  : `${source?.name} is paid, gated or reference-only, so there is no local preview — open it at the source.`}
+                This component is free to vendor — the code just isn't copied into UI Vault yet.
+                Take the install command or grab it at the source.
               </p>
-              {entry.previewMode === "live" && entry.install && (
+              {entry.install && (
                 <code className="mt-3 inline-block rounded-md border border-border bg-muted px-2 py-1 font-mono text-[11px] text-muted-fg">
                   {entry.install}
                 </code>

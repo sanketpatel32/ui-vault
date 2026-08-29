@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { ArrowLeft, ExternalLink, ShieldCheck } from "lucide-react";
 import type { SourceId } from "@/data";
 import { entriesBySource, sourceById } from "@/lib/registry";
-import { LicenseBadge, TypeBadge } from "@/components/license-badge";
+import { LicenseBadge } from "@/components/license-badge";
 import { EntryCard } from "@/components/entry-card";
 import { CodeBlock } from "@/components/code-block";
 import { EmptyState } from "@/components/empty-state";
@@ -42,7 +42,6 @@ export function SourcePage() {
               <p className="mt-0.5 text-sm text-muted-fg">{source.tagline}</p>
               <div className="mt-3 flex flex-wrap gap-1.5">
                 <LicenseBadge license={source.license} />
-                <TypeBadge mode={source.previewMode} />
                 {source.stack.map((tech) => (
                   <Badge key={tech}>{tech}</Badge>
                 ))}

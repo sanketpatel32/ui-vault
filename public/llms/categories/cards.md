@@ -11,7 +11,3 @@
 - **3D Pin** https://ui.aceternity.com/components/3d-pin — Card that tilts in 3D around a fixed pin point on hover — dimensional depth cue. [MIT, live-previewable, category: cards]
 - **3D Card Effect** https://ui.aceternity.com/components/3d-card-effect — Pointer-tracked 3D rotation with moving glare highlight — Aceternity’s signature card. [MIT, live-previewable, category: cards]
 - **Card Split Accordion** https://ui.watermelon.sh/components/accordion — Expandable card that splits open with animation — accordion meets spotlight card. [Free, live-previewable, category: cards]
-- **Product Quick View** https://shadcnstudio.com/blocks/ecommerce/product-quick-view — eCommerce quick-view modal — image gallery, variants, add-to-cart in one overlay. [Freemium, link-out only, category: cards]
-- **Bento Inspirations** https://collectui.com/designs/bento-ui-design-inspiration — Curated bento grid layouts — modular density as an art form. [Free, link-out only, category: cards]
-- **Avatar Patterns** https://component.gallery/components/avatar/ — 38 avatar examples — fallbacks, stacking, presence indicators. [Free, link-out only, category: cards]
-- **Card Patterns** https://component.gallery/components/card/ — 77 card examples — headers, media, actions, dividers. [Free, link-out only, category: cards]

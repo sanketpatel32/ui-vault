@@ -7,7 +7,6 @@ export interface Filters {
   q: string;
   src: string;
   lic: string;
-  type: string;
   tag: string;
 }
 
@@ -21,7 +20,7 @@ export function FilterBar({
   const sources = sourcesWithCounts();
   const tags = topTags(14);
   const set = (patch: Partial<Filters>) => onChange({ ...filters, ...patch });
-  const dirty = filters.q || filters.src || filters.lic || filters.type || filters.tag;
+  const dirty = filters.q || filters.src || filters.lic || filters.tag;
 
   return (
     <div className="space-y-3">
@@ -58,19 +57,10 @@ export function FilterBar({
           <option value="freemium">Freemium</option>
           <option value="paid">Paid</option>
         </Select>
-        <Select
-          value={filters.type}
-          onChange={(e) => set({ type: e.target.value })}
-          aria-label="Filter by type"
-        >
-          <option value="">Live + link-out</option>
-          <option value="live">Live preview</option>
-          <option value="linkout">Link-out</option>
-        </Select>
         {dirty && (
           <button
             type="button"
-            onClick={() => onChange({ q: "", src: "", lic: "", type: "", tag: "" })}
+            onClick={() => onChange({ q: "", src: "", lic: "", tag: "" })}
             className="inline-flex h-9 cursor-pointer items-center gap-1 rounded-lg px-2.5 text-xs text-muted-fg transition-colors hover:bg-muted hover:text-fg"
           >
             <X size={13} /> Clear

@@ -1,20 +1,22 @@
 # UI Vault
 
-A personal, frontend-only catalog of UI components from 12 curated sources — one place to
-browse, categorize, favorite and pick up components for real projects.
+A personal, frontend-only catalog of UI components from 6 free, vendorable sources — one
+place to browse, categorize, favorite and pick up components for real projects.
 
-**179 entries · 26 categories · 12 sources · 10 live previews**
+**90 entries · 20 categories · 6 sources · 10 live previews**
 
 **Live: <https://sanketpatel32.github.io/ui-vault/>** — deployed from `main` by GitHub Actions.
 
 ## What it does
 
-- **One registry** — every component from the 12 sources in `source.txt`, categorized into a
-  unified taxonomy (text effects, backgrounds, buttons, cards, heroes, dashboards, …), each with
-  description, tags, license, deep link and install command.
-- **Live previews** — MIT/free components are vendored into `src/showcase/` and render live on
-  their detail page (lazy-loaded, reduced-motion aware). Paid/gated sources are link-out cards.
-- **Search & filter** — fuzzy search (⌘K / Ctrl-K palette), filter by source, license, type and tag;
+- **One registry** — every component from the 6 vendorable sources, categorized into a
+  unified taxonomy (text effects, backgrounds, buttons, cards, heroes, dashboards, …), each
+  with description, tags, license, deep link and install command. Every entry ships free
+  code — paid/gated/gallery sources are not carried as entries (v0.3.0 policy).
+- **Live previews** — components are vendored into `src/showcase/` and render live on
+  their detail page (lazy-loaded, reduced-motion aware); the rest show their install
+  command and source link.
+- **Search & filter** — fuzzy search (⌘K / Ctrl-K palette), filter by source, license and tag;
   filter state lives in the URL so views are shareable.
 - **Favorites & recents** — star anything; stored in localStorage. There is no backend.
 - **llms.txt for everything** — `/llms.txt`, `/llms-full.txt`, `/llms/sources/*`, `/llms/categories/*`
@@ -22,13 +24,13 @@ browse, categorize, favorite and pick up components for real projects.
 
 ## Sources
 
-Vendorable (live previews): [React Bits](https://reactbits.dev) · [Motion Primitives](https://motion-primitives.com) ·
+In the registry (free code, vendorable): [React Bits](https://reactbits.dev) ·
+[Motion Primitives](https://motion-primitives.com) ·
 [FancyComponents](https://fancycomponents.dev) · [NumberFlow](https://number-flow.barvian.me) ·
 [Watermelon UI](https://watermelon.sh) · [Aceternity UI](https://ui.aceternity.com) (free tier)
 
-Link-out: [21st.dev](https://21st.dev) · [shadcnStudio](https://shadcnstudio.com) ·
-[UI Layouts Pro](https://pro.ui-layouts.com) · [Cue](https://cuedesign.space) ·
-[CollectUI](https://collectui.com) · [The Component Gallery](https://component.gallery)
+Not carried as entries (paid/gated/gallery — see `AGENTS.md`): 21st.dev, shadcnStudio,
+UI Layouts Pro, Cue, CollectUI, The Component Gallery.
 
 ## Tech
 

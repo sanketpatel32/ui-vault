@@ -4,17 +4,11 @@ export type SourceId =
   | "fancy"
   | "numberflow"
   | "watermelon"
-  | "aceternity"
-  | "21st"
-  | "shadcnstudio"
-  | "uilayouts"
-  | "cue"
-  | "collectui"
-  | "componentgallery";
+  | "aceternity";
 
 export type License = "mit" | "free" | "freemium" | "paid";
 export type PreviewMode = "live" | "linkout";
-export type CategoryGroup = "components" | "blocks" | "templates" | "inspiration";
+export type CategoryGroup = "components" | "blocks" | "templates";
 
 export interface Source {
   id: SourceId;

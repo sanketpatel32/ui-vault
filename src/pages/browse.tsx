@@ -14,7 +14,6 @@ export function Browse() {
     q: params.get("q") ?? "",
     src: params.get("src") ?? "",
     lic: params.get("lic") ?? "",
-    type: params.get("type") ?? "",
     tag: params.get("tag") ?? "",
   };
 
@@ -34,7 +33,6 @@ export function Browse() {
     if (cat) list = list.filter((e) => e.category === cat);
     if (filters.src) list = list.filter((e) => e.source === filters.src);
     if (filters.lic) list = list.filter((e) => e.license === filters.lic);
-    if (filters.type) list = list.filter((e) => e.previewMode === filters.type);
     if (filters.tag) list = list.filter((e) => e.tags.includes(filters.tag));
     if (filters.q.trim()) {
       const ids = new Set(searchEntries(filters.q, 200).map((e) => e.id));
@@ -69,7 +67,7 @@ export function Browse() {
             <Button
               variant="outline"
               size="sm"
-              onClick={() => onChange({ q: "", src: "", lic: "", type: "", tag: "" })}
+              onClick={() => onChange({ q: "", src: "", lic: "", tag: "" })}
             >
               Clear all filters
             </Button>

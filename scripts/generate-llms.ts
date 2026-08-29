@@ -53,7 +53,7 @@ const byCategory = new Map(
     );
   }
   lines.push("", "## Categories", "");
-  for (const group of ["components", "blocks", "templates", "inspiration"] as const) {
+  for (const group of ["components", "blocks", "templates"] as const) {
     lines.push(`### ${GROUP_LABELS[group]}`);
     for (const c of categories.filter((c) => c.group === group)) {
       lines.push(

@@ -19,8 +19,3 @@
 - **CSS Box** https://www.fancycomponents.dev/docs/components/blocks/css-box — A box that skeuomorphically wobbles, tilts and reacts — physics-y container demo. [MIT, live-previewable, category: micro-interactions]
 - **Screensaver** https://www.fancycomponents.dev/docs/components/blocks/screensaver — DVD-logo-style bouncing screensaver for any element — nostalgia as a service. [MIT, live-previewable, category: micro-interactions]
 - **Micro-interactions Pack** https://ui.watermelon.sh/animated — 43 animated micro-interactions — buttons, toggles, disclosures, tabs and widgets with Motion. [Free, live-previewable, category: micro-interactions]
-- **Custom Cursors** https://21st.dev/community/components/s/cursor — Cursor components — followers, spots, magnetic dots. [Freemium, link-out only, category: micro-interactions]
-- **Glass Droplet Image Lens** https://cuedesign.space — A magnifying lens that behaves like a water droplet dragging across an image. [Freemium, link-out only, category: micro-interactions]
-- **Skeuomorphic Walkie-Talkie** https://cuedesign.space — A fully skeuomorphic walkie-talkie device — tactile, physical UI. [Freemium, link-out only, category: micro-interactions]
-- **Directional Shutter Wipe** https://cuedesign.space — Page transition that wipes like a camera shutter in the direction of travel. [Freemium, link-out only, category: micro-interactions]
-- **Music Player Inspirations** https://collectui.com/designs/music-player-ui-design-inspiration — Curated music player UIs — waveforms, dials, album art treatments. [Free, link-out only, category: micro-interactions]
