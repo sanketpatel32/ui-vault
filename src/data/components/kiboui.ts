@@ -75,6 +75,7 @@ export const kiboui: UIEntry[] = [
     license: "mit",
     previewMode: "live",
     install: "npx kibo-ui add kanban",
+    previewKey: "kiboui-kanban",
     featured: true,
   },
   {
@@ -90,6 +91,7 @@ export const kiboui: UIEntry[] = [
     license: "mit",
     previewMode: "live",
     install: "npx kibo-ui add list",
+    previewKey: "kiboui-list",
   },
   {
     id: "kiboui-table",
@@ -104,6 +106,7 @@ export const kiboui: UIEntry[] = [
     license: "mit",
     previewMode: "live",
     install: "npx kibo-ui add table",
+    previewKey: "kiboui-table",
   },
   {
     id: "kiboui-code-block",
@@ -149,6 +152,7 @@ export const kiboui: UIEntry[] = [
     license: "mit",
     previewMode: "live",
     install: "npx kibo-ui add sandbox",
+    previewKey: "kiboui-sandbox",
   },
   {
     id: "kiboui-snippet",
@@ -163,6 +167,7 @@ export const kiboui: UIEntry[] = [
     license: "mit",
     previewMode: "live",
     install: "npx kibo-ui add snippet",
+    previewKey: "kiboui-snippet",
   },
   {
     id: "kiboui-choicebox",
@@ -218,6 +223,7 @@ export const kiboui: UIEntry[] = [
     license: "mit",
     previewMode: "live",
     install: "npx kibo-ui add mini-calendar",
+    previewKey: "kiboui-mini-calendar",
   },
   {
     id: "kiboui-tags",
@@ -231,6 +237,7 @@ export const kiboui: UIEntry[] = [
     license: "mit",
     previewMode: "live",
     install: "npx kibo-ui add tags",
+    previewKey: "kiboui-tags",
   },
   {
     id: "kiboui-image-crop",
@@ -245,6 +252,7 @@ export const kiboui: UIEntry[] = [
     license: "mit",
     previewMode: "live",
     install: "npx kibo-ui add image-crop",
+    previewKey: "kiboui-image-crop",
   },
   {
     id: "kiboui-image-zoom",
@@ -258,6 +266,7 @@ export const kiboui: UIEntry[] = [
     license: "mit",
     previewMode: "live",
     install: "npx kibo-ui add image-zoom",
+    previewKey: "kiboui-image-zoom",
   },
   {
     id: "kiboui-credit-card",
@@ -285,6 +294,7 @@ export const kiboui: UIEntry[] = [
     license: "mit",
     previewMode: "live",
     install: "npx kibo-ui add ticker",
+    previewKey: "kiboui-ticker",
   },
   {
     id: "kiboui-stories",
@@ -298,6 +308,7 @@ export const kiboui: UIEntry[] = [
     license: "mit",
     previewMode: "live",
     install: "npx kibo-ui add stories",
+    previewKey: "kiboui-stories",
     featured: true,
   },
   {
@@ -313,6 +324,7 @@ export const kiboui: UIEntry[] = [
     license: "mit",
     previewMode: "live",
     install: "npx kibo-ui add reel",
+    previewKey: "kiboui-reel",
   },
   {
     id: "kiboui-video-player",
@@ -327,6 +339,7 @@ export const kiboui: UIEntry[] = [
     license: "mit",
     previewMode: "live",
     install: "npx kibo-ui add video-player",
+    previewKey: "kiboui-video-player",
   },
   {
     id: "kiboui-announcement",
@@ -457,6 +470,7 @@ export const kiboui: UIEntry[] = [
     license: "mit",
     previewMode: "live",
     install: "npx kibo-ui add marquee",
+    previewKey: "kiboui-marquee",
   },
   {
     id: "kiboui-pill",
@@ -470,6 +484,7 @@ export const kiboui: UIEntry[] = [
     license: "mit",
     previewMode: "live",
     install: "npx kibo-ui add pill",
+    previewKey: "kiboui-pill",
   },
   {
     id: "kiboui-qr-code",
@@ -483,6 +498,7 @@ export const kiboui: UIEntry[] = [
     license: "mit",
     previewMode: "live",
     install: "npx kibo-ui add qr-code",
+    previewKey: "kiboui-qr-code",
   },
   {
     id: "kiboui-rating",
@@ -496,6 +512,7 @@ export const kiboui: UIEntry[] = [
     license: "mit",
     previewMode: "live",
     install: "npx kibo-ui add rating",
+    previewKey: "kiboui-rating",
   },
   {
     id: "kiboui-relative-time",
@@ -509,6 +526,7 @@ export const kiboui: UIEntry[] = [
     license: "mit",
     previewMode: "live",
     install: "npx kibo-ui add relative-time",
+    previewKey: "kiboui-relative-time",
   },
   {
     id: "kiboui-spinner",
@@ -523,6 +541,7 @@ export const kiboui: UIEntry[] = [
     license: "mit",
     previewMode: "live",
     install: "npx kibo-ui add spinner",
+    previewKey: "kiboui-spinner",
   },
   {
     id: "kiboui-status",
@@ -536,6 +555,7 @@ export const kiboui: UIEntry[] = [
     license: "mit",
     previewMode: "live",
     install: "npx kibo-ui add status",
+    previewKey: "kiboui-status",
   },
   {
     id: "kiboui-theme-switcher",
@@ -549,6 +569,7 @@ export const kiboui: UIEntry[] = [
     license: "mit",
     previewMode: "live",
     install: "npx kibo-ui add theme-switcher",
+    previewKey: "kiboui-theme-switcher",
   },
   {
     id: "kiboui-tree",
@@ -563,5 +584,6 @@ export const kiboui: UIEntry[] = [
     license: "mit",
     previewMode: "live",
     install: "npx kibo-ui add tree",
+    previewKey: "kiboui-tree",
   },
 ];

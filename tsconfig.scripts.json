@@ -20,5 +20,6 @@
       "next-themes": ["./src/lib/shims/next-themes.tsx"]
     }
   },
-  "include": ["scripts"]
+  "include": ["scripts"],
+  "files": ["src/lib/shims/vendor-modules.d.ts"]
 }

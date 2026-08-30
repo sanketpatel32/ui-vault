@@ -17,6 +17,22 @@
   --ring: #7c3aed;
   --destructive: #dc2626;
   --destructive-fg: #ffffff;
+  --info: #0284c7;
+  --info-fg: #ffffff;
+  --success: #16a34a;
+  --success-fg: #ffffff;
+  --warning: #d97706;
+  --warning-fg: #ffffff;
+  --chart-1: #7c3aed;
+  --chart-2: #0891b2;
+  --chart-3: #f59e0b;
+  --chart-4: #ef4444;
+  --chart-5: #10b981;
+  --border-100: #ececf1;
+  --border-700: #3f3f46;
+  --brand-300: #c4b5fd;
+  --brand-400: #a78bfa;
+  --backdrop: #0a0a0c;
   --grad-from: #7c3aed;
   --grad-to: #0891b2;
   --glow-1: color-mix(in oklab, var(--accent) 9%, transparent);
@@ -38,6 +54,22 @@
   --ring: #7c3aed;
   --destructive: #dc2626;
   --destructive-fg: #ffffff;
+  --info: #0284c7;
+  --info-fg: #ffffff;
+  --success: #16a34a;
+  --success-fg: #ffffff;
+  --warning: #d97706;
+  --warning-fg: #ffffff;
+  --chart-1: #7c3aed;
+  --chart-2: #0891b2;
+  --chart-3: #f59e0b;
+  --chart-4: #ef4444;
+  --chart-5: #10b981;
+  --border-100: #ececf1;
+  --border-700: #3f3f46;
+  --brand-300: #c4b5fd;
+  --brand-400: #a78bfa;
+  --backdrop: #0a0a0c;
   --grad-from: #7c3aed;
   --grad-to: #0891b2;
   --glow-1: color-mix(in oklab, var(--accent) 9%, transparent);
@@ -58,6 +90,22 @@
   --ring: #8b5cf6;
   --destructive: #ef4444;
   --destructive-fg: #ffffff;
+  --info: #38bdf8;
+  --info-fg: #0c4a6e;
+  --success: #22c55e;
+  --success-fg: #052e16;
+  --warning: #f59e0b;
+  --warning-fg: #451a03;
+  --chart-1: #8b5cf6;
+  --chart-2: #22d3ee;
+  --chart-3: #fbbf24;
+  --chart-4: #f87171;
+  --chart-5: #34d399;
+  --border-100: #1c1c21;
+  --border-700: #52525b;
+  --brand-300: #d8b4fe;
+  --brand-400: #c4b5fd;
+  --backdrop: #000000;
   --grad-from: #8b5cf6;
   --grad-to: #22d3ee;
   --glow-1: color-mix(in oklab, var(--accent) 20%, transparent);
@@ -93,6 +141,34 @@
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-fg);
   --color-input: var(--border);
+  --color-muted-foreground: var(--muted-fg);
+
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-fg);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-fg);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-fg);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-border-100: var(--border-100);
+  --color-border-700: var(--border-700);
+  --color-backdrop: var(--backdrop);
+
+  --color-brand: var(--accent);
+  --color-brand-foreground: var(--accent-fg);
+  --color-brand-300: var(--brand-300);
+  --color-brand-400: var(--brand-400);
+
+  --color-input-addon-foreground: var(--muted-fg);
+  --color-text-muted: var(--muted-fg);
+  --color-mauve-dark-2: #26232e;
+  --color-blue-light: #7dd3fc;
+  --color-base-900: #101828;
+  --color-netural-100: #f3f4f6;
 
   --color-sidebar: var(--panel);
   --color-sidebar-foreground: var(--fg);
@@ -104,6 +180,10 @@
   --color-sidebar-ring: var(--ring);
 
   --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+
+  --text-md: 1rem;
+  --text-md--line-height: 1.5rem;
 
   /* named animations referenced by vendored code */
   --animate-accordion-down: vault-accordion-down 0.2s ease-out;
@@ -134,6 +214,8 @@
   --animate-toast-error-odd: vault-toast-left 0.4s ease-out;
   --animate-toast-error-even: vault-toast-right 0.4s ease-out;
   --animate-ui-vault-spin-angle: ui-vault-spin-angle 3s linear infinite;
+  --animate-pulse-ripple: vault-pulse-ripple 1.8s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+  --animate-spin-around: vault-spin-around 0.8s linear infinite;
 }
 
 /* Base UI / shadcn data-attribute variants used by vendored components */
@@ -178,47 +260,115 @@
       scale3d(var(--exit-scale, 1), var(--exit-scale, 1), 1);
   }
 }
-.animate-in {
+/* registered as @utility so variant-prefixed uses (data-[state=open]:animate-in,
+   data-[side=top]:slide-in-from-top-2, …) compile — plain classes can't take variants */
+@utility animate-in {
   animation: vault-enter 0.15s ease-out both;
 }
-.animate-out {
+@utility animate-out {
   animation: vault-exit 0.15s ease-in both;
 }
-.fade-in-0 {
+@utility fade-in {
   --enter-opacity: 0;
 }
-.fade-out-0 {
+@utility fade-in-0 {
+  --enter-opacity: 0;
+}
+@utility fade-out {
   --exit-opacity: 0;
 }
-.fade-out-80 {
+@utility fade-out-0 {
+  --exit-opacity: 0;
+}
+@utility fade-out-80 {
   --exit-opacity: 0.8;
 }
-.zoom-in-95 {
-  --enter-scale: 0.95;
+@utility zoom-in {
+  --enter-scale: 0;
 }
-.zoom-in-90 {
+@utility zoom-in-90 {
   --enter-scale: 0.9;
 }
-.zoom-out-95 {
+@utility zoom-in-95 {
+  --enter-scale: 0.95;
+}
+@utility zoom-out {
+  --exit-scale: 0;
+}
+@utility zoom-out-95 {
   --exit-scale: 0.95;
 }
-.slide-in-from-top-2 {
+@utility slide-in-from-top-2 {
   --enter-translate-y: -0.5rem;
 }
-.slide-in-from-bottom-2 {
+@utility slide-in-from-bottom-2 {
   --enter-translate-y: 0.5rem;
 }
-.slide-in-from-left-2 {
+@utility slide-in-from-left-2 {
   --enter-translate-x: -0.5rem;
 }
-.slide-in-from-right-2 {
+@utility slide-in-from-right-2 {
   --enter-translate-x: 0.5rem;
 }
-.slide-in-from-left-52 {
+@utility slide-in-from-top-52 {
+  --enter-translate-y: -13rem;
+}
+@utility slide-in-from-bottom-52 {
+  --enter-translate-y: 13rem;
+}
+@utility slide-in-from-left-52 {
   --enter-translate-x: -13rem;
 }
-.slide-in-from-right-52 {
+@utility slide-in-from-right-52 {
   --enter-translate-x: 13rem;
+}
+@utility slide-in-from-top-full {
+  --enter-translate-y: -100%;
+}
+@utility slide-in-from-bottom-full {
+  --enter-translate-y: 100%;
+}
+@utility slide-in-from-left-full {
+  --enter-translate-x: -100%;
+}
+@utility slide-in-from-right-full {
+  --enter-translate-x: 100%;
+}
+@utility slide-out-to-top-2 {
+  --exit-translate-y: -0.5rem;
+}
+@utility slide-out-to-bottom-2 {
+  --exit-translate-y: 0.5rem;
+}
+@utility slide-out-to-left-2 {
+  --exit-translate-x: -0.5rem;
+}
+@utility slide-out-to-right-2 {
+  --exit-translate-x: 0.5rem;
+}
+@utility slide-out-to-top-52 {
+  --exit-translate-y: -13rem;
+}
+@utility slide-out-to-bottom-52 {
+  --exit-translate-y: 13rem;
+}
+@utility slide-out-to-left-52 {
+  --exit-translate-x: -13rem;
+}
+@utility slide-out-to-right-52 {
+  --exit-translate-x: 13rem;
+}
+@utility slide-out-to-top-full {
+  --exit-translate-y: -100%;
+}
+@utility slide-out-to-bottom-full {
+  --exit-translate-y: 100%;
+}
+@utility slide-out-to-left-full {
+  --exit-translate-x: -100%;
+}
+@utility slide-out-to-right-full {
+  --exit-translate-x: 100%;
 }
 
 /* keyframes for the named animations above */
@@ -334,6 +484,60 @@
     opacity: 0;
     transform: translateX(1.5rem);
   }
+}
+@keyframes vault-pulse-ripple {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+@keyframes vault-spin-around {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* launchui pointer-capability variant */
+@custom-variant fine-hover {
+  @media (hover: hover) and (pointer: fine) {
+    @slot;
+  }
+}
+
+/* one-off utilities from vendored sources (cultui, launchui, magicui) */
+@utility shadow-focus-ring-button {
+  box-shadow: 0 0 0 2px color-mix(in oklab, var(--ring) 55%, transparent);
+}
+@utility shadow-inner-shadow {
+  box-shadow: inset 0 2px 4px rgb(0 0 0 / 0.08);
+}
+@utility glass-4 {
+  background: color-mix(in oklab, var(--panel) 55%, transparent);
+  backdrop-filter: blur(10px);
+}
+@utility glass-5 {
+  background: color-mix(in oklab, var(--panel) 70%, transparent);
+  backdrop-filter: blur(16px);
+}
+@utility glass-effect {
+  background: color-mix(in oklab, var(--panel) 55%, transparent);
+  backdrop-filter: blur(12px);
+}
+@utility transition-filter {
+  transition-property: filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+@utility text-3d-flip-char {
+  display: inline-block;
+  transform-style: preserve-3d;
+}
+@utility bg-size-* {
+  background-size: --value(--value(arbitrary));
 }
 
 /* shadcn-style base reset: bare `border` utilities default to the theme border
