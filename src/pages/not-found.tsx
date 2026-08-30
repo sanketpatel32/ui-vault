@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 
 export function NotFound() {
   return (
-    <div className="flex flex-col items-center justify-center gap-4 py-24 text-center">
-      <p className="font-mono text-6xl font-semibold text-accent">404</p>
-      <p className="text-sm text-muted-fg">
+    <div className="flex flex-col items-center justify-center gap-4 py-28 text-center">
+      <p className="text-gradient font-mono text-7xl font-semibold tracking-tight">404</p>
+      <p className="max-w-sm text-sm leading-relaxed text-muted-fg">
         This page fell into a WebGL background and never came back.
       </p>
       <Link to="/">

@@ -18,7 +18,11 @@ const LICENSE_COLOR: Record<License, string> = {
 
 export function LicenseBadge({ license, className }: { license: License; className?: string }) {
   return (
-    <Badge className={className} title={`License: ${LICENSE_LABEL[license]}`}>
+    <Badge
+      variant="outline"
+      className={cn("bg-transparent font-medium text-muted-fg", className)}
+      title={`License: ${LICENSE_LABEL[license]}`}
+    >
       <span className={cn("h-1.5 w-1.5 rounded-full", LICENSE_COLOR[license])} />
       {LICENSE_LABEL[license]}
     </Badge>

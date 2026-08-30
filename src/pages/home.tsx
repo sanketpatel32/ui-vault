@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Clock } from "lucide-react";
+import { ArrowRight, Clock, Sparkles } from "lucide-react";
 import { type UIEntry } from "@/data";
 import {
   featuredEntries,
@@ -9,6 +9,7 @@ import {
   entryById,
 } from "@/lib/registry";
 import { recents, useStore } from "@/lib/store";
+import { useCountUp } from "@/lib/use-count-up";
 import { EntryCard } from "@/components/entry-card";
 import { Button } from "@/components/ui/button";
 import { SourceBadge } from "@/components/source-badge";
@@ -19,6 +20,18 @@ function Grid({ items }: { items: UIEntry[] }) {
       {items.map((e) => (
         <EntryCard key={e.id} entry={e} />
       ))}
+    </div>
+  );
+}
+
+function Stat({ value, label }: { value: number; label: string }) {
+  const n = useCountUp(value);
+  return (
+    <div className="flex flex-col items-center gap-0.5 px-4 py-3.5">
+      <span className="text-2xl font-semibold tracking-tight text-fg tabular-nums">{n}</span>
+      <span className="text-[11px] font-medium tracking-wide text-muted-fg/80 uppercase">
+        {label}
+      </span>
     </div>
   );
 }
@@ -34,11 +47,16 @@ export function Home() {
   return (
     <div className="space-y-14">
       {/* hero */}
-      <section className="relative overflow-hidden rounded-2xl border border-border bg-panel px-6 py-14 text-center sm:px-12 sm:py-20">
+      <section className="relative overflow-hidden rounded-2xl border border-border bg-panel px-6 py-16 text-center sm:px-12 sm:py-24">
         <div aria-hidden className="vault-grid pointer-events-none absolute inset-0" />
+        <div aria-hidden className="vault-glow pointer-events-none absolute inset-0" />
         <div className="relative">
-          <h1 className="mx-auto max-w-2xl text-4xl font-semibold tracking-tight text-fg sm:text-5xl">
-            Every UI component you love, in one vault.
+          <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-bg/70 px-3 py-1 text-xs text-muted-fg backdrop-blur-sm">
+            <Sparkles size={12} className="text-accent" />
+            {s.entries} components · {s.sources} sources · {s.categories} categories
+          </span>
+          <h1 className="mx-auto mt-5 max-w-2xl text-4xl font-semibold tracking-tight text-fg sm:text-[3.25rem] sm:leading-[1.08]">
+            Every UI component you love, <span className="text-gradient">in one vault.</span>
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-[15px] leading-relaxed text-muted-fg">
             A personal catalog of {s.entries} components from {s.sources} curated sources —
@@ -56,6 +74,11 @@ export function Home() {
             <Link to="/c/hero">
               <Button variant="outline">Hero sections</Button>
             </Link>
+          </div>
+          <div className="mx-auto mt-10 grid max-w-md grid-cols-3 divide-x divide-border rounded-xl border border-border bg-bg/70 backdrop-blur-sm">
+            <Stat value={s.entries} label="Components" />
+            <Stat value={s.livePreviews} label="Live previews" />
+            <Stat value={s.sources} label="Sources" />
           </div>
         </div>
       </section>
@@ -95,10 +118,12 @@ export function Home() {
                   <Link
                     key={cat.slug}
                     to={`/c/${cat.slug}`}
-                    className="rounded-lg border border-border bg-panel px-3 py-1.5 text-[13px] text-fg transition-all hover:-translate-y-px hover:border-accent/40 hover:text-accent"
+                    className="group flex items-center gap-2 rounded-lg border border-border bg-panel px-3 py-1.5 text-[13px] text-fg transition-all hover:-translate-y-px hover:border-accent/40 hover:text-accent hover:shadow-sm hover:shadow-accent/10"
                   >
                     {cat.name}
-                    <span className="ml-1.5 text-[11px] text-muted-fg/70">{cat.count}</span>
+                    <span className="rounded bg-muted px-1 py-0.5 text-[10.5px] tabular-nums text-muted-fg/80 transition-colors group-hover:bg-accent-soft group-hover:text-accent">
+                      {cat.count}
+                    </span>
                   </Link>
                 ))}
               </div>
@@ -115,13 +140,13 @@ export function Home() {
             <Link
               key={src.id}
               to={`/source/${src.id}`}
-              className="group flex items-center justify-between rounded-lg border border-border bg-panel px-3.5 py-3 transition-all hover:-translate-y-px hover:border-accent/40"
+              className="group flex items-center justify-between rounded-lg border border-border bg-panel px-3.5 py-3 transition-all hover:-translate-y-px hover:border-accent/40 hover:shadow-sm hover:shadow-accent/10"
             >
               <div className="min-w-0">
                 <SourceBadge source={src.id} className="text-xs" />
                 <p className="mt-0.5 truncate text-xs text-muted-fg/80">{src.tagline}</p>
               </div>
-              <span className="ml-3 shrink-0 text-xs tabular-nums text-muted-fg/70">
+              <span className="ml-3 shrink-0 text-xs tabular-nums text-muted-fg/70 transition-colors group-hover:text-accent">
                 {src.count}
               </span>
             </Link>

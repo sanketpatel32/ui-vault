@@ -54,7 +54,7 @@ export function CommandPalette({ open, onClose }: { open: boolean; onClose: () =
       onClick={onClose}
     >
       <div
-        className="w-full max-w-lg overflow-hidden rounded-xl border border-border bg-panel shadow-2xl"
+        className="animate-rise w-full max-w-lg overflow-hidden rounded-2xl border border-border bg-panel shadow-2xl shadow-black/30"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center gap-2.5 border-b border-border px-4">

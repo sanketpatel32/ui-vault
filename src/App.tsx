@@ -41,7 +41,7 @@ export default function App() {
           onOpenMenu={() => setMobileNavOpen(true)}
           onOpenPalette={() => setPaletteOpen(true)}
         />
-        <main className="mx-auto max-w-6xl px-4 py-8 lg:px-8">
+        <main key={location.pathname} className="animate-rise mx-auto max-w-6xl px-4 py-8 lg:px-8">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/browse" element={<Browse />} />

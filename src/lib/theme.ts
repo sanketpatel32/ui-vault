@@ -19,7 +19,10 @@ function notify() {
 
 export function toggleTheme() {
   current = current === "dark" ? "light" : "dark";
-  document.documentElement.classList.toggle("dark", current === "dark");
+  const root = document.documentElement;
+  root.classList.add("theme-anim");
+  root.classList.toggle("dark", current === "dark");
+  window.setTimeout(() => root.classList.remove("theme-anim"), 400);
   try {
     localStorage.setItem("ui-vault:theme", current);
   } catch {

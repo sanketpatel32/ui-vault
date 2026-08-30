@@ -1,6 +1,6 @@
 import { NavLink, Link } from "react-router-dom";
 import { ChevronRight, Heart, LayoutGrid, House, Vault, X } from "lucide-react";
-import { groupedCategories, sourcesWithCounts } from "@/lib/registry";
+import { groupedCategories, sourcesWithCounts, stats } from "@/lib/registry";
 import { cn } from "@/lib/utils";
 
 function SideLink({
@@ -44,6 +44,7 @@ function SideLink({
 export function Sidebar({ mobileOpen, onClose }: { mobileOpen: boolean; onClose: () => void }) {
   const groups = groupedCategories();
   const sources = sourcesWithCounts();
+  const s = stats();
 
   return (
     <>
@@ -65,7 +66,7 @@ export function Sidebar({ mobileOpen, onClose }: { mobileOpen: boolean; onClose:
       >
         <div className="flex h-14 items-center justify-between border-b border-border px-4">
           <Link to="/" className="flex items-center gap-2.5" onClick={onClose}>
-            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-accent text-accent-fg">
+            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-br from-violet-500 to-cyan-400 text-white shadow-sm shadow-accent/30">
               <Vault size={15} />
             </span>
             <span className="text-[15px] font-semibold tracking-tight">UI Vault</span>
@@ -145,7 +146,7 @@ export function Sidebar({ mobileOpen, onClose }: { mobileOpen: boolean; onClose:
             llms.txt
           </a>
           <span className="mx-1.5">·</span>
-          <span>Favorites stay in this browser</span>
+          <span>{s.entries} components · favorites stay in this browser</span>
         </div>
       </aside>
     </>
