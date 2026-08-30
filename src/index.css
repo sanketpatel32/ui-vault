@@ -15,6 +15,8 @@
   --accent-fg: #ffffff;
   --accent-soft: #f1ecfd;
   --ring: #7c3aed;
+  --destructive: #dc2626;
+  --destructive-fg: #ffffff;
   --grad-from: #7c3aed;
   --grad-to: #0891b2;
   --glow-1: color-mix(in oklab, var(--accent) 9%, transparent);
@@ -34,6 +36,8 @@
   --accent-fg: #ffffff;
   --accent-soft: #f1ecfd;
   --ring: #7c3aed;
+  --destructive: #dc2626;
+  --destructive-fg: #ffffff;
   --grad-from: #7c3aed;
   --grad-to: #0891b2;
   --glow-1: color-mix(in oklab, var(--accent) 9%, transparent);
@@ -52,12 +56,17 @@
   --accent-fg: #ffffff;
   --accent-soft: #1a1523;
   --ring: #8b5cf6;
+  --destructive: #ef4444;
+  --destructive-fg: #ffffff;
   --grad-from: #8b5cf6;
   --grad-to: #22d3ee;
   --glow-1: color-mix(in oklab, var(--accent) 20%, transparent);
   --glow-2: color-mix(in oklab, #22d3ee 13%, transparent);
 }
 
+/* Aliases for the shadcn/Base UI token names used inside vendored showcase
+   code (kiboui, cossui, shadcn, magicui, …). Vendored files are frozen
+   snapshots, so their conventional class names are mapped here instead. */
 @theme inline {
   --color-bg: var(--bg);
   --color-panel: var(--panel);
@@ -69,7 +78,273 @@
   --color-accent-fg: var(--accent-fg);
   --color-accent-soft: var(--accent-soft);
   --color-ring: var(--ring);
+
+  --color-background: var(--bg);
+  --color-foreground: var(--fg);
+  --color-primary: var(--accent);
+  --color-primary-foreground: var(--accent-fg);
+  --color-secondary: var(--muted);
+  --color-secondary-foreground: var(--fg);
+  --color-card: var(--panel);
+  --color-card-foreground: var(--fg);
+  --color-popover: var(--panel);
+  --color-popover-foreground: var(--fg);
+  --color-accent-foreground: var(--accent-fg);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-fg);
+  --color-input: var(--border);
+
+  --color-sidebar: var(--panel);
+  --color-sidebar-foreground: var(--fg);
+  --color-sidebar-primary: var(--accent);
+  --color-sidebar-primary-foreground: var(--accent-fg);
+  --color-sidebar-accent: var(--muted);
+  --color-sidebar-accent-foreground: var(--fg);
+  --color-sidebar-border: var(--border);
+  --color-sidebar-ring: var(--ring);
+
   --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+
+  /* named animations referenced by vendored code */
+  --animate-accordion-down: vault-accordion-down 0.2s ease-out;
+  --animate-accordion-up: vault-accordion-up 0.2s ease-out;
+  --animate-caret-blink: vault-caret-blink 0.85s steps(1) infinite;
+  --animate-blink-cursor: vault-caret-blink 0.85s steps(1) infinite;
+  --animate-rainbow: vault-rainbow 3s linear infinite;
+  --animate-skeleton: vault-shimmer-slide 1.5s ease-in-out infinite;
+  --animate-shimmer-slide: vault-shimmer-slide 1.5s ease-in-out infinite;
+  --animate-shine: vault-shine 3s linear infinite;
+  --animate-shiny-text: vault-shine 2.8s linear infinite;
+  --animate-button: vault-shine 3s linear infinite;
+  --animate-gradient: vault-gradient 6s linear infinite;
+  --animate-background-position-spin: vault-gradient 6s linear infinite;
+  --animate-line-shadow: vault-gradient 6s linear infinite;
+  --animate-ripple: vault-ripple 2.5s ease-out infinite;
+  --animate-rippling: vault-ripple 2.5s ease-out infinite;
+  --animate-orbit: vault-orbit 20s linear infinite;
+  --animate-meteor: vault-meteor 5s linear infinite;
+  --animate-marquee: vault-marquee 40s linear infinite;
+  --animate-marquee-vertical: vault-marquee-vertical 24s linear infinite;
+  --animate-aurora: vault-aurora 12s ease-in-out infinite alternate;
+  --animate-gold-spin: vault-orbit 8s linear infinite;
+  --animate-cosmic-spin: vault-orbit 12s linear infinite;
+  --animate-cosmic-spin-slow: vault-orbit 28s linear infinite;
+  --animate-toast-success-odd: vault-toast-left 0.4s ease-out;
+  --animate-toast-success-even: vault-toast-right 0.4s ease-out;
+  --animate-toast-error-odd: vault-toast-left 0.4s ease-out;
+  --animate-toast-error-even: vault-toast-right 0.4s ease-out;
+  --animate-ui-vault-spin-angle: ui-vault-spin-angle 3s linear infinite;
+}
+
+/* Base UI / shadcn data-attribute variants used by vendored components */
+@custom-variant checked (&:where([data-checked], [data-checked] *));
+@custom-variant unchecked (&:where([data-unchecked], [data-unchecked] *));
+@custom-variant open (&:where([data-open], [data-open] *));
+@custom-variant closed (&:where([data-closed], [data-closed] *));
+@custom-variant expanded (&:where([data-expanded], [data-expanded] *));
+@custom-variant highlighted (&:where([data-highlighted], [data-highlighted] *));
+@custom-variant pressed (&:where([data-pressed], [data-pressed] *));
+@custom-variant selected (&:where([data-selected], [data-selected] *));
+@custom-variant previous (&:where([data-previous], [data-previous] *));
+@custom-variant inset (&:where([data-inset], [data-inset] *));
+@custom-variant current (&:where([data-current], [data-current] *));
+@custom-variant active (&:where([data-active], [data-active] *));
+@custom-variant instant (&:where([data-instant], [data-instant] *));
+@custom-variant popup-open (&:where([data-popup-open], [data-popup-open] *));
+@custom-variant outside (&:where([data-outside], [data-outside] *));
+@custom-variant scrolling (&:where([data-scrolling], [data-scrolling] *));
+@custom-variant has-overflow-y (&:where([data-has-overflow-y], [data-has-overflow-y] *));
+@custom-variant nested-drawer-open (&:where([data-nested-drawer-open], [data-nested-drawer-open] *));
+@custom-variant disabled (&:where([data-disabled], [data-disabled] *, &:disabled));
+@custom-variant starting-style (
+  &:where([data-starting-style]:not([data-starting-style="none"]), [data-starting-style]:not([data-starting-style="none"]) *)
+);
+@custom-variant ending-style (
+  &:where([data-ending-style]:not([data-ending-style="none"]), [data-ending-style]:not([data-ending-style="none"]) *)
+);
+
+/* tw-animate-style enter/exit utilities used by vendored popovers/dialogs */
+@keyframes vault-enter {
+  from {
+    opacity: var(--enter-opacity, 1);
+    transform: translate3d(var(--enter-translate-x, 0), var(--enter-translate-y, 0), 0)
+      scale3d(var(--enter-scale, 1), var(--enter-scale, 1), 1);
+  }
+}
+@keyframes vault-exit {
+  to {
+    opacity: var(--exit-opacity, 1);
+    transform: translate3d(var(--exit-translate-x, 0), var(--exit-translate-y, 0), 0)
+      scale3d(var(--exit-scale, 1), var(--exit-scale, 1), 1);
+  }
+}
+.animate-in {
+  animation: vault-enter 0.15s ease-out both;
+}
+.animate-out {
+  animation: vault-exit 0.15s ease-in both;
+}
+.fade-in-0 {
+  --enter-opacity: 0;
+}
+.fade-out-0 {
+  --exit-opacity: 0;
+}
+.fade-out-80 {
+  --exit-opacity: 0.8;
+}
+.zoom-in-95 {
+  --enter-scale: 0.95;
+}
+.zoom-in-90 {
+  --enter-scale: 0.9;
+}
+.zoom-out-95 {
+  --exit-scale: 0.95;
+}
+.slide-in-from-top-2 {
+  --enter-translate-y: -0.5rem;
+}
+.slide-in-from-bottom-2 {
+  --enter-translate-y: 0.5rem;
+}
+.slide-in-from-left-2 {
+  --enter-translate-x: -0.5rem;
+}
+.slide-in-from-right-2 {
+  --enter-translate-x: 0.5rem;
+}
+.slide-in-from-left-52 {
+  --enter-translate-x: -13rem;
+}
+.slide-in-from-right-52 {
+  --enter-translate-x: 13rem;
+}
+
+/* keyframes for the named animations above */
+@keyframes vault-accordion-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height, 100%);
+  }
+}
+@keyframes vault-accordion-up {
+  from {
+    height: var(--radix-accordion-content-height, 100%);
+  }
+  to {
+    height: 0;
+  }
+}
+@keyframes vault-caret-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes vault-rainbow {
+  to {
+    background-position-x: 200%;
+  }
+}
+@keyframes vault-shimmer-slide {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+@keyframes vault-shine {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+@keyframes vault-gradient {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+@keyframes vault-ripple {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.45;
+  }
+  100% {
+    transform: scale(1.75);
+    opacity: 0;
+  }
+}
+@keyframes vault-orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes vault-meteor {
+  0% {
+    transform: rotate(215deg) translateX(0);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(215deg) translateX(-500px);
+    opacity: 0;
+  }
+}
+@keyframes vault-marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes vault-marquee-vertical {
+  to {
+    transform: translateY(-50%);
+  }
+}
+@keyframes vault-aurora {
+  from {
+    transform: rotate(-6deg);
+  }
+  to {
+    transform: rotate(6deg);
+  }
+}
+@keyframes vault-toast-left {
+  from {
+    opacity: 0;
+    transform: translateX(-1.5rem);
+  }
+}
+@keyframes vault-toast-right {
+  from {
+    opacity: 0;
+    transform: translateX(1.5rem);
+  }
+}
+
+/* shadcn-style base reset: bare `border` utilities default to the theme border
+   color instead of currentColor (upstream projects ship this in their base layer;
+   without it every vendored `border`-only class renders a near-white hairline) */
+@layer base {
+  *,
+  ::before,
+  ::after {
+    border-color: var(--border);
+  }
 }
 
 body {
@@ -117,7 +392,9 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .animate-rise {
+  .animate-rise,
+  .animate-in,
+  .animate-out {
     animation: none;
   }
   .theme-anim,

@@ -1311,11 +1311,7 @@
     "preview": "/src/showcase/cultui/bg-animate-button/preview.tsx"
   },
   {
-    "preview": "/src/showcase/cultui/bg-animated-fractal-grid/preview.tsx",
-    "broken": true,
-    "url": "/src/showcase/cultui/bg-animated-fractal-grid/demo.tsx",
-    "status": 500,
-    "error": "Failed to resolve import \\\"../bg-animated-fractal-dot-grid\\\""
+    "preview": "/src/showcase/cultui/bg-animated-fractal-grid/preview.tsx"
   },
   {
     "preview": "/src/showcase/cultui/bg-image-texture/preview.tsx"
@@ -1327,11 +1323,7 @@
     "preview": "/src/showcase/cultui/border-beam-button/preview.tsx"
   },
   {
-    "preview": "/src/showcase/cultui/canvas-fractal-grid/preview.tsx",
-    "broken": true,
-    "url": "/src/showcase/cultui/canvas-fractal-grid/demo.tsx",
-    "status": 500,
-    "error": "Failed to resolve import \\\"@/showcase/_shared/cultui/ui/use-toast\\\""
+    "preview": "/src/showcase/cultui/canvas-fractal-grid/preview.tsx"
   },
   {
     "preview": "/src/showcase/cultui/choice-poll/preview.tsx"
@@ -1340,11 +1332,7 @@
     "preview": "/src/showcase/cultui/code-block/preview.tsx"
   },
   {
-    "preview": "/src/showcase/cultui/color-picker/preview.tsx",
-    "broken": true,
-    "url": "/src/showcase/cultui/color-picker/demo.tsx",
-    "status": 500,
-    "error": "Failed to resolve import \\\"poline\\\""
+    "preview": "/src/showcase/cultui/color-picker/preview.tsx"
   },
   {
     "preview": "/src/showcase/cultui/cosmic-button/preview.tsx"
@@ -1476,11 +1464,7 @@
     "preview": "/src/showcase/cultui/popover/preview.tsx"
   },
   {
-    "preview": "/src/showcase/cultui/prompt-library/preview.tsx",
-    "broken": true,
-    "url": "/src/showcase/cultui/prompt-library/prompt-library.tsx",
-    "status": 500,
-    "error": "Failed to resolve import \\\"@/components/ai-elements/prompt-input\\\""
+    "preview": "/src/showcase/cultui/prompt-library/preview.tsx"
   },
   {
     "preview": "/src/showcase/cultui/shader-lens-blur/preview.tsx"
@@ -1489,11 +1473,7 @@
     "preview": "/src/showcase/cultui/shift-card/preview.tsx"
   },
   {
-    "preview": "/src/showcase/cultui/side-panel/preview.tsx",
-    "broken": true,
-    "url": "/src/showcase/cultui/side-panel/demo.tsx",
-    "status": 500,
-    "error": "Failed to resolve import \\\"react-player/lazy\\\""
+    "preview": "/src/showcase/cultui/side-panel/preview.tsx"
   },
   {
     "preview": "/src/showcase/cultui/sortable-list/preview.tsx"
@@ -1517,11 +1497,7 @@
     "preview": "/src/showcase/cultui/terminal-animation/preview.tsx"
   },
   {
-    "preview": "/src/showcase/cultui/text-animate/preview.tsx",
-    "broken": true,
-    "url": "/src/showcase/cultui/text-animate/demo.tsx",
-    "status": 500,
-    "error": "Failed to resolve import \\\"@/components/fade-in\\\""
+    "preview": "/src/showcase/cultui/text-animate/preview.tsx"
   },
   {
     "preview": "/src/showcase/cultui/text-gif/preview.tsx"
@@ -1617,11 +1593,7 @@
     "preview": "/src/showcase/kiboui/calendar/preview.tsx"
   },
   {
-    "preview": "/src/showcase/kiboui/choicebox/preview.tsx",
-    "broken": true,
-    "url": "/src/showcase/kiboui/choicebox/index.tsx",
-    "status": 500,
-    "error": "Failed to resolve import \\\"@repo/shadcn-ui/components/ui/radio-group\\\""
+    "preview": "/src/showcase/kiboui/choicebox/preview.tsx"
   },
   {
     "preview": "/src/showcase/kiboui/code-block/preview.tsx"
@@ -1639,11 +1611,7 @@
     "preview": "/src/showcase/kiboui/contribution-graph/preview.tsx"
   },
   {
-    "preview": "/src/showcase/kiboui/credit-card/preview.tsx",
-    "broken": true,
-    "url": "/src/showcase/kiboui/credit-card/index.tsx",
-    "status": 500,
-    "error": "Failed to resolve import \\\"react-svg-credit-card-payment-icons\\\""
+    "preview": "/src/showcase/kiboui/credit-card/preview.tsx"
   },
   {
     "preview": "/src/showcase/kiboui/cursor/preview.tsx"
@@ -1664,85 +1632,7 @@
     "preview": "/src/showcase/kiboui/gantt/preview.tsx"
   },
   {
-    "preview": "/src/showcase/kiboui/glimpse/preview.tsx",
-    "broken": true,
-    "url": "/src/showcase/kiboui/glimpse/index.tsx",
-    "status": 500,
-    "error": "Failed to resolve import \\\"@repo/shadcn-ui/lib/utils\\\""
-  },
-  {
-    "preview": "/src/showcase/kiboui/image-crop/preview.tsx",
-    "broken": true,
-    "url": "/src/showcase/kiboui/image-crop/index.tsx",
-    "status": 500,
-    "error": "Failed to resolve import \\\"@repo/shadcn-ui/components/ui/button\\\""
-  },
-  {
-    "preview": "/src/showcase/kiboui/image-zoom/preview.tsx"
-  },
-  {
-    "preview": "/src/showcase/kiboui/kanban/preview.tsx"
-  },
-  {
-    "preview": "/src/showcase/kiboui/list/preview.tsx"
-  },
-  {
-    "preview": "/src/showcase/kiboui/marquee/preview.tsx"
-  },
-  {
-    "preview": "/src/showcase/kiboui/mini-calendar/preview.tsx"
-  },
-  {
-    "preview": "/src/showcase/kiboui/pill/preview.tsx"
-  },
-  {
-    "preview": "/src/showcase/kiboui/qr-code/preview.tsx"
-  },
-  {
-    "preview": "/src/showcase/kiboui/rating/preview.tsx"
-  },
-  {
-    "preview": "/src/showcase/kiboui/reel/preview.tsx"
-  },
-  {
-    "preview": "/src/showcase/kiboui/relative-time/preview.tsx"
-  },
-  {
-    "preview": "/src/showcase/kiboui/sandbox/preview.tsx"
-  },
-  {
-    "preview": "/src/showcase/kiboui/snippet/preview.tsx"
-  },
-  {
-    "preview": "/src/showcase/kiboui/spinner/preview.tsx",
-    "broken": true,
-    "url": "/src/showcase/kiboui/spinner/index.tsx",
-    "status": 500,
-    "error": "Failed to resolve import \\\"@repo/shadcn-ui/components/ui/spinner\\\""
-  },
-  {
-    "preview": "/src/showcase/kiboui/status/preview.tsx"
-  },
-  {
-    "preview": "/src/showcase/kiboui/stories/preview.tsx"
-  },
-  {
-    "preview": "/src/showcase/kiboui/table/preview.tsx"
-  },
-  {
-    "preview": "/src/showcase/kiboui/tags/preview.tsx"
-  },
-  {
-    "preview": "/src/showcase/kiboui/theme-switcher/preview.tsx"
-  },
-  {
-    "preview": "/src/showcase/kiboui/ticker/preview.tsx"
-  },
-  {
-    "preview": "/src/showcase/kiboui/tree/preview.tsx"
-  },
-  {
-    "preview": "/src/showcase/kiboui/video-player/preview.tsx"
+    "preview": "/src/showcase/kiboui/glimpse/preview.tsx"
   },
   {
     "preview": "/src/showcase/launchui/badge/preview.tsx"
