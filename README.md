@@ -1,11 +1,16 @@
+<div align="center">
+
 # UI Vault
 
-A personal, frontend-only catalog of UI components from 12 free, vendorable open-source
-libraries — one place to browse, categorize, favorite and pick up components for real projects.
+**Browse, compare, and reuse free React components from one searchable catalog.**
 
-**586 entries · 23 categories · 12 sources · 586 live previews (100% coverage)**
+[Live catalog](https://sanketpatel32.github.io/ui-vault/) · [Browse source](src/data/) · [Operating guide](AGENTS.md)
 
-**Live: <https://sanketpatel32.github.io/ui-vault/>** — deployed from `main` by GitHub Actions.
+**586 entries · 23 categories · 12 sources · 100% live-preview coverage**
+
+</div>
+
+UI Vault brings vendorable components from twelve open-source libraries into a consistent taxonomy. It is frontend-only, keeps favorites locally, and publishes machine-readable indexes for developers and AI agents.
 
 ## What it does
 
