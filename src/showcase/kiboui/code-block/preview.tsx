@@ -81,7 +81,9 @@ export default function Preview() {
             <CodeBlockBody>
               {(item) => (
                 <CodeBlockItem key={item.language} value={item.language}>
-                  <CodeBlockContent language={item.language}>{item.code}</CodeBlockContent>
+                  <CodeBlockContent language={item.language as BundledLanguage}>
+                    {item.code}
+                  </CodeBlockContent>
                 </CodeBlockItem>
               )}
             </CodeBlockBody>

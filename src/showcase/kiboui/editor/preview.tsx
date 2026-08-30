@@ -8,6 +8,7 @@ import {
   EditorNodeHeading1,
   EditorNodeHeading2,
   EditorNodeQuote,
+  EditorNodeText,
   EditorProvider,
 } from "./index";
 

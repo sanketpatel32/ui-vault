@@ -1,4 +1,5 @@
 import { useState } from "react";
+import type { ComponentProps, ComponentType, ReactNode } from "react";
 import { ArrowRight, FilePlus2, Settings, Moon, Search, UserPlus } from "lucide-react";
 import {
   Command,
@@ -14,6 +15,11 @@ import {
   CommandShortcut,
 } from "./command";
 
+// Base UI's Autocomplete root type doesn't admit children/className; the demo composes it cmdk-style
+const CommandRoot = Command as unknown as ComponentType<
+  ComponentProps<typeof Command> & { className?: string; children?: ReactNode }
+>;
+
 const itemClass = "gap-2";
 const iconClass = "size-4 shrink-0 opacity-80";
 
@@ -24,7 +30,7 @@ export default function Preview() {
     <div className="w-full">
       <div className="flex min-h-48 items-center justify-center p-6">
         <div className="flex w-full max-w-md flex-col gap-3">
-          <Command className="overflow-hidden rounded-xl border border-border bg-panel">
+          <CommandRoot className="overflow-hidden rounded-xl border border-border bg-panel">
             <CommandInput placeholder="Type a command or search…" />
             <CommandPanel>
               <CommandList>
@@ -98,7 +104,7 @@ export default function Preview() {
               </span>
               <span>↑↓ navigate · ↵ select</span>
             </CommandFooter>
-          </Command>
+          </CommandRoot>
           <p className="text-center text-xs text-muted-fg">
             Filter the list by typing — try “theme”.
           </p>

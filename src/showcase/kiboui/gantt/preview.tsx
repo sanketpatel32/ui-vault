@@ -64,7 +64,9 @@ export default function Preview() {
 
   const handleMove = (id: string, startAt: Date, endAt: Date | null) => {
     setFeatures((prev) =>
-      prev.map((feature) => (feature.id === id ? { ...feature, startAt, endAt } : feature)),
+      prev.map((feature) =>
+        feature.id === id ? { ...feature, startAt, endAt: endAt ?? startAt } : feature,
+      ),
     );
   };
 

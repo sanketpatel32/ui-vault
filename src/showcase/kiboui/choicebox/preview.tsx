@@ -1,12 +1,12 @@
 import { useState } from "react";
 import {
   Choicebox,
-  ChoiceboxDescription,
-  ChoiceboxHeader,
   ChoiceboxIndicator,
   ChoiceboxItem,
-  ChoiceboxSubtitle,
-  ChoiceboxTitle,
+  ChoiceboxItemDescription,
+  ChoiceboxItemHeader,
+  ChoiceboxItemSubtitle,
+  ChoiceboxItemTitle,
 } from "./index";
 
 const plans = [
@@ -40,14 +40,14 @@ export default function Preview() {
           <Choicebox onValueChange={setValue} value={value}>
             {plans.map((plan) => (
               <ChoiceboxItem id={plan.id} key={plan.id} value={plan.id}>
-                <ChoiceboxHeader>
+                <ChoiceboxItemHeader>
                   <ChoiceboxIndicator id={plan.id} />
                   <div className="flex flex-col gap-0.5">
-                    <ChoiceboxTitle>{plan.title}</ChoiceboxTitle>
-                    <ChoiceboxSubtitle>{plan.subtitle}</ChoiceboxSubtitle>
+                    <ChoiceboxItemTitle>{plan.title}</ChoiceboxItemTitle>
+                    <ChoiceboxItemSubtitle>{plan.subtitle}</ChoiceboxItemSubtitle>
                   </div>
-                </ChoiceboxHeader>
-                <ChoiceboxDescription>{plan.description}</ChoiceboxDescription>
+                </ChoiceboxItemHeader>
+                <ChoiceboxItemDescription>{plan.description}</ChoiceboxItemDescription>
               </ChoiceboxItem>
             ))}
           </Choicebox>

@@ -12,8 +12,8 @@ const Spinner = ({
   ...props
 }: SpinnerProps) => {
   const effectiveStrokeWidth = absoluteStrokeWidth
-    ? (strokeWidth ?? 2) * (24 / Number(size))
-    : (strokeWidth ?? 2);
+    ? Number(strokeWidth ?? 2) * (24 / Number(size))
+    : Number(strokeWidth ?? 2);
 
   return (
     <svg

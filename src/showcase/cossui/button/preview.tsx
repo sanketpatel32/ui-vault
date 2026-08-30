@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Loader2, Plus, Send } from "lucide-react";
 import { Button, type ButtonProps } from "./button";
 
-const variants: ButtonProps["variant"][] = [
+const variants: NonNullable<ButtonProps["variant"]>[] = [
   "default",
   "secondary",
   "outline",
