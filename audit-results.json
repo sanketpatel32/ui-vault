@@ -1,0 +1,2488 @@
+[
+  {
+    "preview": "/src/showcase/aceternity/3d-card-effect/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/aceternity/3d-pin/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/aceternity/aurora-background/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/aceternity/background-beams/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/aceternity/bento-grid/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/aceternity/floating-dock/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/aceternity/github-globe/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/aceternity/hero-parallax/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/aceternity/infinite-moving-cards/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/aceternity/lamp-effect/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/aceternity/macbook-scroll/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/aceternity/moving-border/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/aceternity/text-generate-effect/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/aceternity/tracing-beam/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/aceternity/wavy-background/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/ai-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/alarm-clock/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/algolia-blue-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/algolia-white-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/animated-beam/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/animated-border-trail/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/animated-follow-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/animated-gradient-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/animatedtimeline/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/announcement-ribbon/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/avatar-list/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/bar-chart/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/battery-level/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/battery/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/blur-out-up/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/blurry-blob/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/boids-ecosystem/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/bold-copy/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/bottom-up-letters/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/calendar-event/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/calorie-counter/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/card-comment/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/card-spread/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/card-stack/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/case-study-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/circular-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/clock-with-photo/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/code/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/collab-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/cookie-banner/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/counter/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/cursor-tracker/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/cycle-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/cycling/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/delivery-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/diagonal-lines/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/direction-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/disclose-image/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/donut-chart/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/dot/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/double-underline/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/duolingo/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/eight/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/expense-tracker/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/fade-through/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/flight-widget/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/flip-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/flipping-cards/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/flower-menu/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/fluid-tabs/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/focus-blur-resolve/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/fund-widget/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/gauge-chart/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/get-started-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/gibberish-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/github-card-shiny/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/github-card-skew/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/glitch-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/glowing-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/gooey-tabs/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/gradient/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/grid/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/hero-section-text-hover/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/hover-interaction/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/icon-ripple/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/images-reveal/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/interactive-grid/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/jitter-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/jumping-text-instagram/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/kinetic-center-build/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/led-board/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/line-by-line-slide/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/list/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/live-score/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/marquee/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/mask-reveal-up/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/menu-animation/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/metis-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/micro-scale-fade/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/mirror-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/mobile-detail/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/modal/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/moving-gradient/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/music-widget/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/notes/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/orbiting-items-3-d/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/orbiting-items/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/per-character-rise/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/per-word-crossfade/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/product-features/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/profile/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/progress/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/receipt/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/reminder-widget/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/reminder/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/report/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/reveal-image/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/ring-chart/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/ripple-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/roll-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/scale-down-fade/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/score-board/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/scroll-reveal/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/security-alert/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/shape-shifter/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/shared-axis-y/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/shared-axis-z/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/shift-tabs/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/shimmer-sweep/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/shining-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/shooting-stars/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/shopping-list/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/short-slide-down/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/short-slide-right/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/sibling-focus-nav/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/skew-image/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/slack-intro/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/sleep-tracker/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/slide-arrow-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/soft-blur-in/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/speed-dial/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/spinner/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/split-reveal/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/split-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/spring-scale-in/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/stacked-sections/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/status-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/storage-status/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/storage-widget/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/study-timer/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/swap-text-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/swap-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/swipe-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/text-border-animation/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/text-explode-imessage/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/text-flip/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/three/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/ticker/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/tilted-cover/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/toggle-switch/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/top-down-letters/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/trailing-image/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/transaction-list/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/typing-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/underline-hover-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/vertical-tiles/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/vpn-widget/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/water-tracker/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/wave-reveal/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/weather-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/weekly-progress/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/wide-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/work-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animata/zigzag/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-animate-avatar-group/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-animate-code-tabs/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-animate-code/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-animate-cursor/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-animate-github-stars-wheel/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-animate-tabs/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-animate-tooltip/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-backgrounds-bubble/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-backgrounds-fireworks/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-backgrounds-gradient/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-backgrounds-gravity-stars/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-backgrounds-hexagon/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-backgrounds-hole/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-backgrounds-stars/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-base-accordion/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-base-alert-dialog/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-base-checkbox/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-base-dialog/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-base-files/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-base-menu/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-base-popover/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-base-preview-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-base-preview-link-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-base-progress/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-base-radio/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-base-switch/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-base-tabs/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-base-toggle-group/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-base-toggle/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-base-tooltip/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-buttons-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-buttons-copy/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-buttons-flip/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-buttons-github-stars/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-buttons-icon/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-buttons-liquid/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-buttons-ripple/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-buttons-theme-toggler/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-community-flip-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-community-management-bar/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-community-motion-carousel/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-community-notification-list/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-community-pin-list/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-community-playful-todolist/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-community-radial-intro/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-community-radial-menu/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-community-radial-nav/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-community-share-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-community-user-presence-avatar/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-headless-accordion/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-headless-checkbox/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-headless-dialog/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-headless-popover/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-headless-switch/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-headless-tabs/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-radix-accordion/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-radix-alert-dialog/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-radix-checkbox/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-radix-dialog/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-radix-dropdown-menu/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-radix-files/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-radix-hover-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-radix-popover/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-radix-preview-link-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-radix-progress/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-radix-radio-group/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-radix-sheet/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-radix-sidebar/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-radix-switch/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-radix-tabs/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-radix-toggle-group/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-radix-toggle/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/components-radix-tooltip/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-animate-avatar-group/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-animate-code-block/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-animate-cursor/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-animate-github-stars/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-animate-motion-grid/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-animate-pinned-list/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-animate-scroll-progress/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-animate-slot/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-animate-spring/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-animate-tabs/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-animate-tooltip/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-base-accordion/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-base-alert-dialog/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-base-checkbox/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-base-collapsible/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-base-dialog/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-base-files/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-base-menu/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-base-popover/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-base-preview-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-base-preview-link-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-base-progress/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-base-radio/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-base-switch/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-base-tabs/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-base-toggle-group/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-base-toggle/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-base-tooltip/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-buttons-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-buttons-flip/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-buttons-liquid/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-buttons-ripple/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-effects-auto-height/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-effects-blur/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-effects-click/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-effects-effect/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-effects-fade/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-effects-highlight/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-effects-image-zoom/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-effects-magnetic/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-effects-particles/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-effects-shine/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-effects-slide/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-effects-theme-toggler/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-effects-tilt/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-effects-zoom/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-headless-checkbox/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-headless-dialog/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-headless-disclosure/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-headless-popover/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-headless-switch/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-headless-tabs/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-radix-accordion/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-radix-alert-dialog/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-radix-checkbox/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-radix-collapsible/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-radix-dialog/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-radix-dropdown-menu/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-radix-files/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-radix-hover-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-radix-popover/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-radix-preview-link-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-radix-progress/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-radix-radio-group/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-radix-sheet/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-radix-switch/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-radix-tabs/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-radix-toggle-group/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-radix-toggle/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-radix-tooltip/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-texts-counting-number/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-texts-gradient/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-texts-highlight/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-texts-morphing/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-texts-rolling/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-texts-rotating/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-texts-scrolling-number/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-texts-shimmering/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-texts-sliding-number/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-texts-splitting/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/animateui/primitives-texts-typing/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/accordion/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/alert-dialog/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/alert/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/autocomplete/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/avatar/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/badge/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/breadcrumb/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/calendar/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/checkbox-group/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/checkbox/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/collapsible/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/combobox/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/command/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/context-menu/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/date-picker/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/dialog/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/drawer/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/empty/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/field/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/fieldset/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/form/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/frame/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/group/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/input-group/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/input/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/kbd/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/label/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/menu/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/meter/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/number-field/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/otp-field/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/pagination/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-accordion/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-alert-dialog/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-alert/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-autocomplete/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-avatar/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-badge/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-breadcrumb/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-calendar/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-checkbox-group/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-checkbox/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-collapsible/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-combobox/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-command/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-context-menu/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-date-picker/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-dialog/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-drawer/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-empty/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-field/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-fieldset/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-form/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-frame/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-group/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-input-group/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-input/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-kbd/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-menu/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-meter/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-navigation/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-number-field/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-otp-field/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-pagination/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-popover/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-preview-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-progress/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-radio-group/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-scroll-area/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-select/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-separator/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-sheet/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-skeleton/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-slider/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-spinner/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-switch/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-table/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-tabs/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-textarea/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-toast/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-toggle-group/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-toggle/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-toolbar/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/particles-tooltip/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/popover/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/preview-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/progress/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/radio-group/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/scroll-area/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/segmented-control/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/select/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/separator/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/sheet/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/skeleton/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/slider/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/spinner/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/switch/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/table/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/tabs/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/textarea/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/toast/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/toggle-group/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/toggle/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/toolbar/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/tooltip/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/use-copy-to-clipboard/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cossui/use-media-query/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/ai-instructions/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/animated-number/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/bg-animate-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/bg-animated-fractal-grid/preview.tsx",
+    "broken": true,
+    "url": "/src/showcase/cultui/bg-animated-fractal-grid/demo.tsx",
+    "status": 500,
+    "error": "Failed to resolve import \\\"../bg-animated-fractal-dot-grid\\\""
+  },
+  {
+    "preview": "/src/showcase/cultui/bg-image-texture/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/bg-media/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/border-beam-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/canvas-fractal-grid/preview.tsx",
+    "broken": true,
+    "url": "/src/showcase/cultui/canvas-fractal-grid/demo.tsx",
+    "status": 500,
+    "error": "Failed to resolve import \\\"@/showcase/_shared/cultui/ui/use-toast\\\""
+  },
+  {
+    "preview": "/src/showcase/cultui/choice-poll/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/code-block/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/color-picker/preview.tsx",
+    "broken": true,
+    "url": "/src/showcase/cultui/color-picker/demo.tsx",
+    "status": 500,
+    "error": "Failed to resolve import \\\"poline\\\""
+  },
+  {
+    "preview": "/src/showcase/cultui/cosmic-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/cutout-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/direction-aware-tabs/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/distorted-glass/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/dither-image/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/dock/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/dynamic-island/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/edge-blur/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/expandable-screen/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/expandable/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/family-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/family-drawer/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/feature-carousel/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/feature-poll/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/feature-voting/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/floating-panel/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/gradient-button-group/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/gradient-heading/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/grid-beam/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/hero-color-panels/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/hero-dithering/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/hero-heatmap/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/hero-liquid-metal/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/hero-static-radial-gradient/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/hover-video-player/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/intro-disclosure/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/lightboard/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/loading-carousel/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/logo-carousel/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/metal-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/minimal-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/mock-browser-window/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/morph-surface/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/neumorph-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/neumorph-eyebrow/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/onboarding/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/pixel-heading-character/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/pixel-heading-word/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/pixel-paragraph-words-inverse/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/pixel-paragraph-words/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/poll-widget/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/popover-form/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/popover/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/prompt-library/preview.tsx",
+    "broken": true,
+    "url": "/src/showcase/cultui/prompt-library/prompt-library.tsx",
+    "status": 500,
+    "error": "Failed to resolve import \\\"@/components/ai-elements/prompt-input\\\""
+  },
+  {
+    "preview": "/src/showcase/cultui/shader-lens-blur/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/shift-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/side-panel/preview.tsx",
+    "broken": true,
+    "url": "/src/showcase/cultui/side-panel/demo.tsx",
+    "status": 500,
+    "error": "Failed to resolve import \\\"react-player/lazy\\\""
+  },
+  {
+    "preview": "/src/showcase/cultui/sortable-list/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/squiggle-arrow/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/stripe-bg-guides/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/svg-bands/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/svg-shapes-animated/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/svg-shapes/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/terminal-animation/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/text-animate/preview.tsx",
+    "broken": true,
+    "url": "/src/showcase/cultui/text-animate/demo.tsx",
+    "status": 500,
+    "error": "Failed to resolve import \\\"@/components/fade-in\\\""
+  },
+  {
+    "preview": "/src/showcase/cultui/text-gif/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/texture-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/texture-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/texture-overlay/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/three-d-carousel/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/timer/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/toolbar-expandable/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/tweet-grid/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/typewriter/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/vote-tally/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/cultui/youtube-video-player/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/fancy/css-box/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/fancy/elastic-line/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/fancy/gooey-svg-filter/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/fancy/gravity/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/fancy/image-trail/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/fancy/letter-swap/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/fancy/marquee-along-svg-path/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/fancy/media-between-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/fancy/number-ticker/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/fancy/pixel-trail/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/fancy/pixelate-svg-filter/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/fancy/scramble-hover/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/fancy/screensaver/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/fancy/stacking-cards/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/fancy/text-highlighter/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/fancy/typewriter/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/announcement/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/avatar-stack/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/banner/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/calendar/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/choicebox/preview.tsx",
+    "broken": true,
+    "url": "/src/showcase/kiboui/choicebox/index.tsx",
+    "status": 500,
+    "error": "Failed to resolve import \\\"@repo/shadcn-ui/components/ui/radio-group\\\""
+  },
+  {
+    "preview": "/src/showcase/kiboui/code-block/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/color-picker/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/combobox/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/comparison/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/contribution-graph/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/credit-card/preview.tsx",
+    "broken": true,
+    "url": "/src/showcase/kiboui/credit-card/index.tsx",
+    "status": 500,
+    "error": "Failed to resolve import \\\"react-svg-credit-card-payment-icons\\\""
+  },
+  {
+    "preview": "/src/showcase/kiboui/cursor/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/deck/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/dialog-stack/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/dropzone/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/editor/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/gantt/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/glimpse/preview.tsx",
+    "broken": true,
+    "url": "/src/showcase/kiboui/glimpse/index.tsx",
+    "status": 500,
+    "error": "Failed to resolve import \\\"@repo/shadcn-ui/lib/utils\\\""
+  },
+  {
+    "preview": "/src/showcase/kiboui/image-crop/preview.tsx",
+    "broken": true,
+    "url": "/src/showcase/kiboui/image-crop/index.tsx",
+    "status": 500,
+    "error": "Failed to resolve import \\\"@repo/shadcn-ui/components/ui/button\\\""
+  },
+  {
+    "preview": "/src/showcase/kiboui/image-zoom/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/kanban/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/list/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/marquee/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/mini-calendar/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/pill/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/qr-code/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/rating/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/reel/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/relative-time/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/sandbox/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/snippet/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/spinner/preview.tsx",
+    "broken": true,
+    "url": "/src/showcase/kiboui/spinner/index.tsx",
+    "status": 500,
+    "error": "Failed to resolve import \\\"@repo/shadcn-ui/components/ui/spinner\\\""
+  },
+  {
+    "preview": "/src/showcase/kiboui/status/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/stories/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/table/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/tags/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/theme-switcher/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/ticker/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/tree/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/kiboui/video-player/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/launchui/badge/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/launchui/button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/launchui/cta/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/launchui/fade/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/launchui/faq/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/launchui/footer/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/launchui/glass/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/launchui/glow/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/launchui/hero/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/launchui/items/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/launchui/logos/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/launchui/mockup/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/launchui/navbar/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/launchui/pricing/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/launchui/screenshot/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/launchui/stats/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/android/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/animated-beam/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/animated-circular-progress-bar/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/animated-gradient-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/animated-grid-pattern/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/animated-list/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/animated-shiny-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/animated-theme-toggler/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/aurora-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/avatar-circles/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/backlight/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/bento-grid/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/blur-fade/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/border-beam/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/code-comparison/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/comic-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/confetti/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/cool-mode/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/dia-text-reveal/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/dock/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/dot-pattern/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/dotted-map/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/file-tree/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/flickering-grid/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/glare-hover/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/globe/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/glyph-matrix/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/grid-pattern/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/hero-video-dialog/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/hexagon-pattern/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/highlighter/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/hyper-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/icon-cloud/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/interactive-grid-pattern/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/interactive-hover-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/iphone/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/kinetic-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/lens/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/light-rays/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/line-shadow-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/magic-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/marquee/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/meteors/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/morphing-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/neon-gradient-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/noise-texture/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/number-ticker/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/orbiting-circles/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/particles/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/pixel-image/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/pointer/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/progressive-blur/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/pulsating-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/rainbow-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/retro-grid/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/ripple-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/ripple/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/safari/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/scroll-based-velocity/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/scroll-progress/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/shimmer-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/shine-border/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/shiny-button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/smooth-cursor/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/sparkles-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/spinning-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/striped-pattern/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/terminal/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/text-3d-flip/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/text-animate/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/text-reveal/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/tweet-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/typing-animation/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/video-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/warp-background/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/magicui/word-rotate/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/motionprimitives/animated-number/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/motionprimitives/border-trail/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/motionprimitives/cursor/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/motionprimitives/dock/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/motionprimitives/glow-effect/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/motionprimitives/infinite-slider/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/motionprimitives/magnetic/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/motionprimitives/morphing-dialog/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/motionprimitives/morphing-popover/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/motionprimitives/scroll-progress/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/motionprimitives/shimmer-wave/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/motionprimitives/sliding-number/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/motionprimitives/spotlight/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/motionprimitives/text-effect/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/motionprimitives/text-morph/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/motionprimitives/text-roll/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/motionprimitives/text-scramble/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/motionprimitives/tilt/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/numberflow/countdown/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/numberflow/group/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/numberflow/input/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/numberflow/numberflow/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/accordion/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/alert/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/avatar/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/badge/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/banner/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/breadcrumb/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/calendar-date-picker/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/checkbox/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/dialog/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/dropdown/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/easings/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/event-calendar/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/file-upload/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/image-cropper/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/input/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/navbar/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/notification/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/pagination/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/popover/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/radio/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/select/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/slider/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/stepper/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/switch/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/table/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/tabs/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/textarea/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/timeline/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/tooltip/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/originui/tree/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/reactbits/ballpit/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/reactbits/blur-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/reactbits/circular-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/reactbits/click-spark/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/reactbits/count-up/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/reactbits/decrypted-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/reactbits/dither/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/reactbits/elastic-mesh/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/reactbits/fade-content/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/reactbits/glitch-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/reactbits/gradient-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/reactbits/hyperspeed/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/reactbits/iridescence/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/reactbits/lanyard/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/reactbits/liquid-chrome/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/reactbits/magnet/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/reactbits/meta-balls/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/reactbits/particles/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/reactbits/ribbons/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/reactbits/scroll-reveal/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/reactbits/shiny-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/reactbits/silk/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/reactbits/splash-cursor/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/reactbits/split-text/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/reactbits/star-border/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/accordion/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/alert-dialog/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/alert/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/aspect-ratio/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/attachment/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/avatar/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/badge/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/breadcrumb/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/bubble/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/button-group/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/button/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/calendar/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/carousel/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/chart/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/checkbox/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/collapsible/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/combobox/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/command/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/context-menu/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/data-table/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/date-picker/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/dialog/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/direction/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/drawer/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/dropdown-menu/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/empty/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/field/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/hover-card/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/input-group/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/input-otp/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/input/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/item/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/kbd/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/label/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/marker/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/menubar/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/message-scroller/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/message/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/native-select/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/navigation-menu/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/pagination/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/popover/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/progress/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/questionnaire/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/radio-group/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/resizable/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/scroll-area/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/select/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/separator/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/sheet/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/sidebar/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/skeleton/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/slider/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/sonner/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/spinner/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/switch/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/table/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/tabs/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/textarea/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/toast/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/toggle-group/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/toggle/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/tooltip/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/shadcn/typography/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/watermelon/auth-blocks/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/watermelon/card-split-accordion/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/watermelon/cta-blocks/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/watermelon/dashboard-agndex/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/watermelon/dashboard-astrix/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/watermelon/dashboard-jobtracker/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/watermelon/faq-blocks/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/watermelon/footer-blocks/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/watermelon/hero-blocks/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/watermelon/micro-interactions/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/watermelon/pricing-blocks/preview.tsx"
+  },
+  {
+    "preview": "/src/showcase/watermelon/testimonial-blocks/preview.tsx"
+  }
+]

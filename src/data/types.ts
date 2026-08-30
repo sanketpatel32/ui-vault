@@ -10,7 +10,10 @@ export type SourceId =
   | "animata"
   | "animateui"
   | "launchui"
-  | "originui";
+  | "originui"
+  | "cossui"
+  | "cultui"
+  | "kiboui";
 
 export type License = "mit" | "free" | "freemium" | "paid";
 export type PreviewMode = "live" | "linkout";

@@ -1,0 +1,3984 @@
+{
+  "status": "ok",
+  "id": "cossui",
+  "name": "coss ui",
+  "url": "https://coss.com/ui",
+  "repo": "https://github.com/cosscom/coss",
+  "license": "MIT",
+  "install": "npx shadcn@latest add @coss/<name>",
+  "stack": [
+    "React",
+    "TypeScript",
+    "Tailwind CSS v4",
+    "Base UI (@base-ui/react)",
+    "shadcn CLI (registry namespace @coss)",
+    "class-variance-authority",
+    "tailwind-merge",
+    "lucide-react"
+  ],
+  "notes": [
+    "License: MIT for the apps/ui directory (the coss.com/ui library), declared in the monorepo root LICENSING.md: 'The following directory and their subdirectories are licensed under their original' MIT — apps/origin/ and apps/ui/. The monorepo default is AGPL-3.0 (root LICENSE); there is no separate LICENSE file inside apps/ui itself, the root LICENSING.md is the authority. Components are free to vendor.",
+    "coss.com/ui is the successor to Origin UI (originui.com redirects to coss.com; origin-space/originui redirects to cosscom/coss); the legacy Origin UI snapshot lives at apps/origin in the same monorepo. This catalog covers the NEW library at apps/ui.",
+    "Registry pattern verified: https://coss.com/ui/r/<name>.json returns shadcn registry-item JSON (HTTP 200, application/json) with files[].content — verified with accordion, p-accordion-1, use-media-query. The @coss/<name> namespace is an officially indexed shadcn registry (ui.shadcn.com/r/registries.json lists @coss -> https://coss.com/ui/r/{name}.json).",
+    "Documented set = every page under coss.com/ui sitemap (66 URLs): 55 component pages (docs/components/*), 2 hook pages (docs/hooks/use-media-query, use-copy-to-clipboard), the /particles gallery, and 8 guides/landing pages. Categories 'Components', 'Hooks', 'Particles' are the library's own docs sections (content/docs/*/meta.json titles).",
+    "Particles (508, registry items named p-*) are individually documented on https://coss.com/ui/particles — each card shows its description and install command (npx shadcn@latest add @coss/p-<family>-<n>). They share that single gallery URL; names/descriptions are taken verbatim from the registry JSON.",
+    "Gaps/nuances: (1) 'date-picker' has a docs page but no standalone registry item — its docs install via `npx shadcn@latest add @coss/calendar @coss/popover @coss/button`. (2) 'sidebar' exists as a registry item (@coss/sidebar, part of the @coss/ui and @coss/style bundles) but has no dedicated docs page, so it is not in this list. (3) Registry-only infrastructure items not documented as components: style, colors-neutral, fonts, font-sans, font-heading, font-mono, utils, merge-props, csp-provider, direction-provider, use-render. (4) Whole-library installs: `npx shadcn@latest add @coss/ui` (all 54 primitives) and `npx shadcn@latest init @coss/style` (full theme: colors, sidebar variables, fonts)."
+  ],
+  "components": [
+    {
+      "name": "Accordion",
+      "slug": "accordion",
+      "url": "https://coss.com/ui/docs/components/accordion",
+      "category": "Components",
+      "description": "A set of collapsible panels with headings and content."
+    },
+    {
+      "name": "Alert",
+      "slug": "alert",
+      "url": "https://coss.com/ui/docs/components/alert",
+      "category": "Components",
+      "description": "A callout for displaying important information."
+    },
+    {
+      "name": "Alert Dialog",
+      "slug": "alert-dialog",
+      "url": "https://coss.com/ui/docs/components/alert-dialog",
+      "category": "Components",
+      "description": "A dialog that requires user response to proceed."
+    },
+    {
+      "name": "Autocomplete",
+      "slug": "autocomplete",
+      "url": "https://coss.com/ui/docs/components/autocomplete",
+      "category": "Components",
+      "description": "An input that suggests options as you type."
+    },
+    {
+      "name": "Avatar",
+      "slug": "avatar",
+      "url": "https://coss.com/ui/docs/components/avatar",
+      "category": "Components",
+      "description": "An image element with a fallback for representing the user."
+    },
+    {
+      "name": "Badge",
+      "slug": "badge",
+      "url": "https://coss.com/ui/docs/components/badge",
+      "category": "Components",
+      "description": "A badge or a component that looks like a badge."
+    },
+    {
+      "name": "Breadcrumb",
+      "slug": "breadcrumb",
+      "url": "https://coss.com/ui/docs/components/breadcrumb",
+      "category": "Components",
+      "description": "Displays the path to the current resource using a hierarchy of links."
+    },
+    {
+      "name": "Button",
+      "slug": "button",
+      "url": "https://coss.com/ui/docs/components/button",
+      "category": "Components",
+      "description": "A button or a component that looks like a button."
+    },
+    {
+      "name": "Calendar",
+      "slug": "calendar",
+      "url": "https://coss.com/ui/docs/components/calendar",
+      "category": "Components",
+      "description": "A date picker component with range and multi-select support."
+    },
+    {
+      "name": "Card",
+      "slug": "card",
+      "url": "https://coss.com/ui/docs/components/card",
+      "category": "Components",
+      "description": "A content container for grouping related information."
+    },
+    {
+      "name": "Checkbox",
+      "slug": "checkbox",
+      "url": "https://coss.com/ui/docs/components/checkbox",
+      "category": "Components",
+      "description": "A control allowing the user to toggle between checked and not checked."
+    },
+    {
+      "name": "Checkbox Group",
+      "slug": "checkbox-group",
+      "url": "https://coss.com/ui/docs/components/checkbox-group",
+      "category": "Components",
+      "description": "Provides shared state to a series of checkboxes."
+    },
+    {
+      "name": "Collapsible",
+      "slug": "collapsible",
+      "url": "https://coss.com/ui/docs/components/collapsible",
+      "category": "Components",
+      "description": "A collapsible panel controlled by a button trigger."
+    },
+    {
+      "name": "Combobox",
+      "slug": "combobox",
+      "url": "https://coss.com/ui/docs/components/combobox",
+      "category": "Components",
+      "description": "An input combined with a list of predefined items to select."
+    },
+    {
+      "name": "Command",
+      "slug": "command",
+      "url": "https://coss.com/ui/docs/components/command",
+      "category": "Components",
+      "description": "A command palette component built with Dialog and Autocomplete for searching and executing commands."
+    },
+    {
+      "name": "Context Menu",
+      "slug": "context-menu",
+      "url": "https://coss.com/ui/docs/components/context-menu",
+      "category": "Components",
+      "description": "A menu that appears at the pointer on right click or long press."
+    },
+    {
+      "name": "Date Picker",
+      "slug": "date-picker",
+      "url": "https://coss.com/ui/docs/components/date-picker",
+      "category": "Components",
+      "description": "A date picker component built with Calendar and Popover."
+    },
+    {
+      "name": "Dialog",
+      "slug": "dialog",
+      "url": "https://coss.com/ui/docs/components/dialog",
+      "category": "Components",
+      "description": "A popup that opens on top of the entire page."
+    },
+    {
+      "name": "Drawer",
+      "slug": "drawer",
+      "url": "https://coss.com/ui/docs/components/drawer",
+      "category": "Components",
+      "description": "A panel that slides in from the edge of the screen with swipe gestures, snap points, and nested drawer support."
+    },
+    {
+      "name": "Empty",
+      "slug": "empty",
+      "url": "https://coss.com/ui/docs/components/empty",
+      "category": "Components",
+      "description": "A container for displaying empty state information."
+    },
+    {
+      "name": "Field",
+      "slug": "field",
+      "url": "https://coss.com/ui/docs/components/field",
+      "category": "Components",
+      "description": "A component that provides labelling and validation for form controls."
+    },
+    {
+      "name": "Fieldset",
+      "slug": "fieldset",
+      "url": "https://coss.com/ui/docs/components/fieldset",
+      "category": "Components",
+      "description": "A native fieldset element with a legend."
+    },
+    {
+      "name": "Form",
+      "slug": "form",
+      "url": "https://coss.com/ui/docs/components/form",
+      "category": "Components",
+      "description": "A form wrapper component that simplifies validation and submission."
+    },
+    {
+      "name": "Frame",
+      "slug": "frame",
+      "url": "https://coss.com/ui/docs/components/frame",
+      "category": "Components",
+      "description": "A framed container for grouping related information."
+    },
+    {
+      "name": "Group",
+      "slug": "group",
+      "url": "https://coss.com/ui/docs/components/group",
+      "category": "Components",
+      "description": "A component for visually grouping a series of controls."
+    },
+    {
+      "name": "Input",
+      "slug": "input",
+      "url": "https://coss.com/ui/docs/components/input",
+      "category": "Components",
+      "description": "A native input element."
+    },
+    {
+      "name": "Input Group",
+      "slug": "input-group",
+      "url": "https://coss.com/ui/docs/components/input-group",
+      "category": "Components",
+      "description": "A flexible component for grouping inputs with addons, buttons, and other elements."
+    },
+    {
+      "name": "Kbd",
+      "slug": "kbd",
+      "url": "https://coss.com/ui/docs/components/kbd",
+      "category": "Components",
+      "description": "A component for displaying keyboard keys and shortcuts."
+    },
+    {
+      "name": "Label",
+      "slug": "label",
+      "url": "https://coss.com/ui/docs/components/label",
+      "category": "Components",
+      "description": "Renders an accessible label associated with controls."
+    },
+    {
+      "name": "Menu",
+      "slug": "menu",
+      "url": "https://coss.com/ui/docs/components/menu",
+      "category": "Components",
+      "description": "A list of actions in a dropdown, enhanced with keyboard navigation."
+    },
+    {
+      "name": "Meter",
+      "slug": "meter",
+      "url": "https://coss.com/ui/docs/components/meter",
+      "category": "Components",
+      "description": "A graphical display of a numeric value within a range."
+    },
+    {
+      "name": "Number Field",
+      "slug": "number-field",
+      "url": "https://coss.com/ui/docs/components/number-field",
+      "category": "Components",
+      "description": "A numeric input element with increment and decrement buttons, and a scrub area."
+    },
+    {
+      "name": "OTP Field",
+      "slug": "otp-field",
+      "url": "https://coss.com/ui/docs/components/otp-field",
+      "category": "Components",
+      "description": "A segmented input for one-time passwords and verification codes."
+    },
+    {
+      "name": "Pagination",
+      "slug": "pagination",
+      "url": "https://coss.com/ui/docs/components/pagination",
+      "category": "Components",
+      "description": "A pagination with page navigation, next and previous links."
+    },
+    {
+      "name": "Popover",
+      "slug": "popover",
+      "url": "https://coss.com/ui/docs/components/popover",
+      "category": "Components",
+      "description": "An accessible popup anchored to a button."
+    },
+    {
+      "name": "Preview Card",
+      "slug": "preview-card",
+      "url": "https://coss.com/ui/docs/components/preview-card",
+      "category": "Components",
+      "description": "A popup that appears when a link is hovered, showing a preview for sighted users."
+    },
+    {
+      "name": "Progress",
+      "slug": "progress",
+      "url": "https://coss.com/ui/docs/components/progress",
+      "category": "Components",
+      "description": "Displays the status of a task that takes a long time."
+    },
+    {
+      "name": "Radio Group",
+      "slug": "radio-group",
+      "url": "https://coss.com/ui/docs/components/radio-group",
+      "category": "Components",
+      "description": "A set of checkable buttons where no more than one of the buttons can be checked at a time."
+    },
+    {
+      "name": "Scroll Area",
+      "slug": "scroll-area",
+      "url": "https://coss.com/ui/docs/components/scroll-area",
+      "category": "Components",
+      "description": "A native scroll container with custom scrollbars."
+    },
+    {
+      "name": "Select",
+      "slug": "select",
+      "url": "https://coss.com/ui/docs/components/select",
+      "category": "Components",
+      "description": "A common form component for choosing a predefined value in a dropdown menu."
+    },
+    {
+      "name": "Segmented Control",
+      "slug": "segmented-control",
+      "url": "https://coss.com/ui/docs/components/segmented-control",
+      "category": "Components",
+      "description": "A visual pattern for presenting related choices, navigation destinations, filters, or content views."
+    },
+    {
+      "name": "Separator",
+      "slug": "separator",
+      "url": "https://coss.com/ui/docs/components/separator",
+      "category": "Components",
+      "description": "A separator element accessible to screen readers."
+    },
+    {
+      "name": "Sheet",
+      "slug": "sheet",
+      "url": "https://coss.com/ui/docs/components/sheet",
+      "category": "Components",
+      "description": "A flyout that opens from the side of the screen, based on the dialog component."
+    },
+    {
+      "name": "Skeleton",
+      "slug": "skeleton",
+      "url": "https://coss.com/ui/docs/components/skeleton",
+      "category": "Components",
+      "description": "A loading state skeleton for your components."
+    },
+    {
+      "name": "Slider",
+      "slug": "slider",
+      "url": "https://coss.com/ui/docs/components/slider",
+      "category": "Components",
+      "description": "An input where the user selects a value from within a given range."
+    },
+    {
+      "name": "Spinner",
+      "slug": "spinner",
+      "url": "https://coss.com/ui/docs/components/spinner",
+      "category": "Components",
+      "description": "An indicator that can be used to show a loading state."
+    },
+    {
+      "name": "Switch",
+      "slug": "switch",
+      "url": "https://coss.com/ui/docs/components/switch",
+      "category": "Components",
+      "description": "A control that indicates whether a setting is on or off."
+    },
+    {
+      "name": "Table",
+      "slug": "table",
+      "url": "https://coss.com/ui/docs/components/table",
+      "category": "Components",
+      "description": "A simple table component for displaying tabular data."
+    },
+    {
+      "name": "Tabs",
+      "slug": "tabs",
+      "url": "https://coss.com/ui/docs/components/tabs",
+      "category": "Components",
+      "description": "A component for toggling between related panels on the same page."
+    },
+    {
+      "name": "Textarea",
+      "slug": "textarea",
+      "url": "https://coss.com/ui/docs/components/textarea",
+      "category": "Components",
+      "description": "A native textarea element."
+    },
+    {
+      "name": "Toast",
+      "slug": "toast",
+      "url": "https://coss.com/ui/docs/components/toast",
+      "category": "Components",
+      "description": "A temporary notification that appears on screen to inform users."
+    },
+    {
+      "name": "Toggle",
+      "slug": "toggle",
+      "url": "https://coss.com/ui/docs/components/toggle",
+      "category": "Components",
+      "description": "A two-state button that can be toggled on or off."
+    },
+    {
+      "name": "Toggle Group",
+      "slug": "toggle-group",
+      "url": "https://coss.com/ui/docs/components/toggle-group",
+      "category": "Components",
+      "description": "Provides a shared state to a series of toggle buttons."
+    },
+    {
+      "name": "Toolbar",
+      "slug": "toolbar",
+      "url": "https://coss.com/ui/docs/components/toolbar",
+      "category": "Components",
+      "description": "A container for grouping a set of buttons and controls."
+    },
+    {
+      "name": "Tooltip",
+      "slug": "tooltip",
+      "url": "https://coss.com/ui/docs/components/tooltip",
+      "category": "Components",
+      "description": "A popup that appears when an element is hovered or focused, showing a hint for sighted users."
+    },
+    {
+      "name": "useMediaQuery",
+      "slug": "use-media-query",
+      "url": "https://coss.com/ui/docs/hooks/use-media-query",
+      "category": "Hooks",
+      "description": "Reactive media query hook with Tailwind-like syntax."
+    },
+    {
+      "name": "useCopyToClipboard",
+      "slug": "use-copy-to-clipboard",
+      "url": "https://coss.com/ui/docs/hooks/use-copy-to-clipboard",
+      "category": "Hooks",
+      "description": "Copy text to clipboard with a temporary \"copied\" state."
+    },
+    {
+      "name": "p-accordion-1",
+      "slug": "p-accordion-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic accordion"
+    },
+    {
+      "name": "p-accordion-2",
+      "slug": "p-accordion-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Accordion with one panel open"
+    },
+    {
+      "name": "p-accordion-3",
+      "slug": "p-accordion-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Accordion allowing multiple panels open"
+    },
+    {
+      "name": "p-accordion-4",
+      "slug": "p-accordion-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Controlled accordion"
+    },
+    {
+      "name": "p-alert-1",
+      "slug": "p-alert-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic alert"
+    },
+    {
+      "name": "p-alert-2",
+      "slug": "p-alert-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Alert with icon"
+    },
+    {
+      "name": "p-alert-3",
+      "slug": "p-alert-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Alert with icon and action buttons"
+    },
+    {
+      "name": "p-alert-4",
+      "slug": "p-alert-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Info alert"
+    },
+    {
+      "name": "p-alert-5",
+      "slug": "p-alert-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Success alert"
+    },
+    {
+      "name": "p-alert-6",
+      "slug": "p-alert-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Warning alert"
+    },
+    {
+      "name": "p-alert-7",
+      "slug": "p-alert-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Error alert"
+    },
+    {
+      "name": "p-alert-dialog-1",
+      "slug": "p-alert-dialog-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Alert dialog"
+    },
+    {
+      "name": "p-alert-dialog-2",
+      "slug": "p-alert-dialog-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Alert dialog with bare footer"
+    },
+    {
+      "name": "p-autocomplete-1",
+      "slug": "p-autocomplete-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic autocomplete"
+    },
+    {
+      "name": "p-autocomplete-2",
+      "slug": "p-autocomplete-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Disabled autocomplete"
+    },
+    {
+      "name": "p-autocomplete-3",
+      "slug": "p-autocomplete-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Small autocomplete"
+    },
+    {
+      "name": "p-autocomplete-4",
+      "slug": "p-autocomplete-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Large autocomplete"
+    },
+    {
+      "name": "p-autocomplete-5",
+      "slug": "p-autocomplete-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Autocomplete with label"
+    },
+    {
+      "name": "p-autocomplete-6",
+      "slug": "p-autocomplete-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Autocomplete autofilling the input with the highlighted item"
+    },
+    {
+      "name": "p-autocomplete-7",
+      "slug": "p-autocomplete-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Autocomplete auto highlighting the first option"
+    },
+    {
+      "name": "p-autocomplete-8",
+      "slug": "p-autocomplete-8",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Autocomplete with clear button"
+    },
+    {
+      "name": "p-autocomplete-9",
+      "slug": "p-autocomplete-9",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Autocomplete with trigger and clear buttons"
+    },
+    {
+      "name": "p-autocomplete-10",
+      "slug": "p-autocomplete-10",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Autocomplete with grouped items"
+    },
+    {
+      "name": "p-autocomplete-11",
+      "slug": "p-autocomplete-11",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Autocomplete with limited number of results"
+    },
+    {
+      "name": "p-autocomplete-12",
+      "slug": "p-autocomplete-12",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Autocomplete with async items loading"
+    },
+    {
+      "name": "p-autocomplete-13",
+      "slug": "p-autocomplete-13",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Autocomplete form"
+    },
+    {
+      "name": "p-autocomplete-14",
+      "slug": "p-autocomplete-14",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Autocomplete form"
+    },
+    {
+      "name": "p-autocomplete-15",
+      "slug": "p-autocomplete-15",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Pill-shaped autocomplete"
+    },
+    {
+      "name": "p-autocomplete-16",
+      "slug": "p-autocomplete-16",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Address autocomplete with Google Maps Places API"
+    },
+    {
+      "name": "p-avatar-1",
+      "slug": "p-avatar-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Avatar with image and fallback"
+    },
+    {
+      "name": "p-avatar-2",
+      "slug": "p-avatar-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Fallback-only avatar"
+    },
+    {
+      "name": "p-avatar-3",
+      "slug": "p-avatar-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Avatars with different sizes"
+    },
+    {
+      "name": "p-avatar-4",
+      "slug": "p-avatar-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Avatars with different radii"
+    },
+    {
+      "name": "p-avatar-5",
+      "slug": "p-avatar-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Overlapping avatar group"
+    },
+    {
+      "name": "p-avatar-6",
+      "slug": "p-avatar-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Avatar with user icon fallback"
+    },
+    {
+      "name": "p-avatar-7",
+      "slug": "p-avatar-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Avatar with emerald status dot"
+    },
+    {
+      "name": "p-avatar-8",
+      "slug": "p-avatar-8",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Avatar with muted status dot"
+    },
+    {
+      "name": "p-avatar-9",
+      "slug": "p-avatar-9",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Rounded avatar with top-right emerald status"
+    },
+    {
+      "name": "p-avatar-10",
+      "slug": "p-avatar-10",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Avatar with notification badge"
+    },
+    {
+      "name": "p-avatar-11",
+      "slug": "p-avatar-11",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Rounded avatar with notification badge"
+    },
+    {
+      "name": "p-avatar-12",
+      "slug": "p-avatar-12",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Avatar with verified badge"
+    },
+    {
+      "name": "p-avatar-13",
+      "slug": "p-avatar-13",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Small overlapping avatar group"
+    },
+    {
+      "name": "p-avatar-14",
+      "slug": "p-avatar-14",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Large overlapping avatar group"
+    },
+    {
+      "name": "p-badge-1",
+      "slug": "p-badge-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic badge"
+    },
+    {
+      "name": "p-badge-2",
+      "slug": "p-badge-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Outline badge"
+    },
+    {
+      "name": "p-badge-3",
+      "slug": "p-badge-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Secondary badge"
+    },
+    {
+      "name": "p-badge-4",
+      "slug": "p-badge-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Destructive badge"
+    },
+    {
+      "name": "p-badge-5",
+      "slug": "p-badge-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Info badge"
+    },
+    {
+      "name": "p-badge-6",
+      "slug": "p-badge-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Success badge"
+    },
+    {
+      "name": "p-badge-7",
+      "slug": "p-badge-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Warning badge"
+    },
+    {
+      "name": "p-badge-8",
+      "slug": "p-badge-8",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Error badge"
+    },
+    {
+      "name": "p-badge-9",
+      "slug": "p-badge-9",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Small badge"
+    },
+    {
+      "name": "p-badge-10",
+      "slug": "p-badge-10",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Large badge"
+    },
+    {
+      "name": "p-badge-11",
+      "slug": "p-badge-11",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Badge with icon"
+    },
+    {
+      "name": "p-badge-12",
+      "slug": "p-badge-12",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Badge with link"
+    },
+    {
+      "name": "p-badge-13",
+      "slug": "p-badge-13",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Badge with count"
+    },
+    {
+      "name": "p-badge-14",
+      "slug": "p-badge-14",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Full rounded badge (pill)"
+    },
+    {
+      "name": "p-badge-15",
+      "slug": "p-badge-15",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Badge with number after text"
+    },
+    {
+      "name": "p-badge-16",
+      "slug": "p-badge-16",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Status badge - Paid"
+    },
+    {
+      "name": "p-badge-17",
+      "slug": "p-badge-17",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Status badge - Pending"
+    },
+    {
+      "name": "p-badge-18",
+      "slug": "p-badge-18",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Status badge - Failed"
+    },
+    {
+      "name": "p-badge-19",
+      "slug": "p-badge-19",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Selectable badge with checkbox"
+    },
+    {
+      "name": "p-badge-20",
+      "slug": "p-badge-20",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Removable badge"
+    },
+    {
+      "name": "p-breadcrumb-1",
+      "slug": "p-breadcrumb-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Breadcrumb with menu example"
+    },
+    {
+      "name": "p-breadcrumb-2",
+      "slug": "p-breadcrumb-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Breadcrumb with custom separator"
+    },
+    {
+      "name": "p-breadcrumb-3",
+      "slug": "p-breadcrumb-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Breadcrumb with home icon for home link only"
+    },
+    {
+      "name": "p-breadcrumb-4",
+      "slug": "p-breadcrumb-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Breadcrumb with folders icon menu"
+    },
+    {
+      "name": "p-breadcrumb-5",
+      "slug": "p-breadcrumb-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Breadcrumb with icons before text"
+    },
+    {
+      "name": "p-breadcrumb-6",
+      "slug": "p-breadcrumb-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Breadcrumb with dot separators"
+    },
+    {
+      "name": "p-breadcrumb-7",
+      "slug": "p-breadcrumb-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Breadcrumb with select dropdown"
+    },
+    {
+      "name": "p-button-1",
+      "slug": "p-button-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Default button"
+    },
+    {
+      "name": "p-button-2",
+      "slug": "p-button-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Outline button"
+    },
+    {
+      "name": "p-button-3",
+      "slug": "p-button-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Secondary button"
+    },
+    {
+      "name": "p-button-4",
+      "slug": "p-button-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Destructive button"
+    },
+    {
+      "name": "p-button-5",
+      "slug": "p-button-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Destructive outline button"
+    },
+    {
+      "name": "p-button-6",
+      "slug": "p-button-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Ghost button"
+    },
+    {
+      "name": "p-button-7",
+      "slug": "p-button-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Link button"
+    },
+    {
+      "name": "p-button-8",
+      "slug": "p-button-8",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Extra-small button"
+    },
+    {
+      "name": "p-button-9",
+      "slug": "p-button-9",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Small button"
+    },
+    {
+      "name": "p-button-10",
+      "slug": "p-button-10",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Large button"
+    },
+    {
+      "name": "p-button-11",
+      "slug": "p-button-11",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Extra-large button"
+    },
+    {
+      "name": "p-button-12",
+      "slug": "p-button-12",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Disabled button"
+    },
+    {
+      "name": "p-button-13",
+      "slug": "p-button-13",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Icon button"
+    },
+    {
+      "name": "p-button-14",
+      "slug": "p-button-14",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Small icon button"
+    },
+    {
+      "name": "p-button-15",
+      "slug": "p-button-15",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Large icon button"
+    },
+    {
+      "name": "p-button-16",
+      "slug": "p-button-16",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Button with icon"
+    },
+    {
+      "name": "p-button-17",
+      "slug": "p-button-17",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Link rendered as button"
+    },
+    {
+      "name": "p-button-41",
+      "slug": "p-button-41",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Button using the built-in loading prop"
+    },
+    {
+      "name": "p-button-18",
+      "slug": "p-button-18",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Custom loading button with manual Spinner"
+    },
+    {
+      "name": "p-button-19",
+      "slug": "p-button-19",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Expandable show more/less toggle button"
+    },
+    {
+      "name": "p-button-20",
+      "slug": "p-button-20",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Back link button with chevron"
+    },
+    {
+      "name": "p-button-21",
+      "slug": "p-button-21",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Card-style button with heading and description"
+    },
+    {
+      "name": "p-button-22",
+      "slug": "p-button-22",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Directional pad control buttons"
+    },
+    {
+      "name": "p-button-23",
+      "slug": "p-button-23",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Outline like button with count"
+    },
+    {
+      "name": "p-button-24",
+      "slug": "p-button-24",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Social login icon buttons"
+    },
+    {
+      "name": "p-button-26",
+      "slug": "p-button-26",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Star button with count badge"
+    },
+    {
+      "name": "p-button-27",
+      "slug": "p-button-27",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Button group with QR code icon and sign in"
+    },
+    {
+      "name": "p-button-28",
+      "slug": "p-button-28",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Button with avatar"
+    },
+    {
+      "name": "p-button-29",
+      "slug": "p-button-29",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Pill-shaped button with rounded-full styling"
+    },
+    {
+      "name": "p-button-30",
+      "slug": "p-button-30",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Button with animated arrow on hover"
+    },
+    {
+      "name": "p-button-31",
+      "slug": "p-button-31",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Button with keyboard shortcut indicator"
+    },
+    {
+      "name": "p-button-32",
+      "slug": "p-button-32",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Button with notification badge"
+    },
+    {
+      "name": "p-button-33",
+      "slug": "p-button-33",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Paired buttons (Cancel/Save)"
+    },
+    {
+      "name": "p-button-34",
+      "slug": "p-button-34",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Button with animated status dot"
+    },
+    {
+      "name": "p-button-35",
+      "slug": "p-button-35",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Icon-only copy button with feedback"
+    },
+    {
+      "name": "p-button-36",
+      "slug": "p-button-36",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Copy button with feedback"
+    },
+    {
+      "name": "p-button-37",
+      "slug": "p-button-37",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Rotating icon button (FAB-style toggle)"
+    },
+    {
+      "name": "p-button-39",
+      "slug": "p-button-39",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Hamburger menu button with animated icon"
+    },
+    {
+      "name": "p-button-40",
+      "slug": "p-button-40",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Download button with progress and cancel action"
+    },
+    {
+      "name": "p-button-38",
+      "slug": "p-button-38",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Social login buttons (Google, X, GitHub)"
+    },
+    {
+      "name": "p-calendar-1",
+      "slug": "p-calendar-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic calendar"
+    },
+    {
+      "name": "p-calendar-3",
+      "slug": "p-calendar-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Calendar with date range selection"
+    },
+    {
+      "name": "p-calendar-4",
+      "slug": "p-calendar-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Calendar with month/year dropdown navigation"
+    },
+    {
+      "name": "p-calendar-5",
+      "slug": "p-calendar-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Calendar with custom Select dropdown for month/year"
+    },
+    {
+      "name": "p-calendar-6",
+      "slug": "p-calendar-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Calendar with Combobox dropdown for month/year"
+    },
+    {
+      "name": "p-calendar-7",
+      "slug": "p-calendar-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Calendar with disabled dates"
+    },
+    {
+      "name": "p-calendar-8",
+      "slug": "p-calendar-8",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Calendar with multiple date selection"
+    },
+    {
+      "name": "p-calendar-2",
+      "slug": "p-calendar-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Calendar with custom cell size"
+    },
+    {
+      "name": "p-calendar-9",
+      "slug": "p-calendar-9",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Calendar with rounded day buttons"
+    },
+    {
+      "name": "p-calendar-10",
+      "slug": "p-calendar-10",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Calendar with rounded range selection style"
+    },
+    {
+      "name": "p-calendar-11",
+      "slug": "p-calendar-11",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Calendar with right-aligned navigation"
+    },
+    {
+      "name": "p-calendar-12",
+      "slug": "p-calendar-12",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Calendar with week numbers"
+    },
+    {
+      "name": "p-calendar-13",
+      "slug": "p-calendar-13",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Calendar with year-only combobox dropdown"
+    },
+    {
+      "name": "p-calendar-14",
+      "slug": "p-calendar-14",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Calendar without arrow navigation (dropdown only)"
+    },
+    {
+      "name": "p-calendar-15",
+      "slug": "p-calendar-15",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Calendar with current month button"
+    },
+    {
+      "name": "p-calendar-16",
+      "slug": "p-calendar-16",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Calendar with today button"
+    },
+    {
+      "name": "p-calendar-17",
+      "slug": "p-calendar-17",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Calendar with date input"
+    },
+    {
+      "name": "p-calendar-18",
+      "slug": "p-calendar-18",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Calendar with time input"
+    },
+    {
+      "name": "p-calendar-19",
+      "slug": "p-calendar-19",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Calendar with time slots (appointment picker)"
+    },
+    {
+      "name": "p-calendar-20",
+      "slug": "p-calendar-20",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Calendar with date presets"
+    },
+    {
+      "name": "p-calendar-21",
+      "slug": "p-calendar-21",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Range calendar with date presets"
+    },
+    {
+      "name": "p-calendar-22",
+      "slug": "p-calendar-22",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Two months calendar"
+    },
+    {
+      "name": "p-calendar-23",
+      "slug": "p-calendar-23",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Three months calendar"
+    },
+    {
+      "name": "p-calendar-24",
+      "slug": "p-calendar-24",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Pricing calendar with custom day buttons"
+    },
+    {
+      "name": "p-calendar-25",
+      "slug": "p-calendar-25",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Calendar with 24-hour autocomplete time input"
+    },
+    {
+      "name": "p-date-picker-1",
+      "slug": "p-date-picker-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic date picker"
+    },
+    {
+      "name": "p-date-picker-2",
+      "slug": "p-date-picker-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Date range picker"
+    },
+    {
+      "name": "p-date-picker-9",
+      "slug": "p-date-picker-9",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Two months calendar with range date"
+    },
+    {
+      "name": "p-date-picker-3",
+      "slug": "p-date-picker-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Date picker with field and dropdown navigation"
+    },
+    {
+      "name": "p-date-picker-4",
+      "slug": "p-date-picker-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Date picker with presets"
+    },
+    {
+      "name": "p-date-picker-5",
+      "slug": "p-date-picker-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Date picker with input"
+    },
+    {
+      "name": "p-date-picker-6",
+      "slug": "p-date-picker-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Date picker that closes on select"
+    },
+    {
+      "name": "p-date-picker-7",
+      "slug": "p-date-picker-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Multiple dates picker"
+    },
+    {
+      "name": "p-date-picker-8",
+      "slug": "p-date-picker-8",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Date picker with select-like trigger"
+    },
+    {
+      "name": "p-card-1",
+      "slug": "p-card-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "A basic card with header and footer"
+    },
+    {
+      "name": "p-card-2",
+      "slug": "p-card-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Authentication card with actions"
+    },
+    {
+      "name": "p-card-3",
+      "slug": "p-card-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Authentication card with separators"
+    },
+    {
+      "name": "p-card-4",
+      "slug": "p-card-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Framed card with footer"
+    },
+    {
+      "name": "p-card-5",
+      "slug": "p-card-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Framed card with header"
+    },
+    {
+      "name": "p-card-6",
+      "slug": "p-card-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Framed card with header and footer"
+    },
+    {
+      "name": "p-card-7",
+      "slug": "p-card-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Framed card with no rounded bottom"
+    },
+    {
+      "name": "p-card-8",
+      "slug": "p-card-8",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Card within a frame and footer"
+    },
+    {
+      "name": "p-card-9",
+      "slug": "p-card-9",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Card within a frame and footer"
+    },
+    {
+      "name": "p-card-10",
+      "slug": "p-card-10",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Card within a frame with header and footer"
+    },
+    {
+      "name": "p-card-11",
+      "slug": "p-card-11",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "CardFrame with header action"
+    },
+    {
+      "name": "p-checkbox-1",
+      "slug": "p-checkbox-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic checkbox"
+    },
+    {
+      "name": "p-checkbox-2",
+      "slug": "p-checkbox-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Disabled checkbox"
+    },
+    {
+      "name": "p-checkbox-3",
+      "slug": "p-checkbox-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Checkbox with description"
+    },
+    {
+      "name": "p-checkbox-4",
+      "slug": "p-checkbox-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Card-style checkbox"
+    },
+    {
+      "name": "p-checkbox-5",
+      "slug": "p-checkbox-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Checkbox form"
+    },
+    {
+      "name": "p-checkbox-group-1",
+      "slug": "p-checkbox-group-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic checkbox group"
+    },
+    {
+      "name": "p-checkbox-group-2",
+      "slug": "p-checkbox-group-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Checkbox group with disabled items"
+    },
+    {
+      "name": "p-checkbox-group-3",
+      "slug": "p-checkbox-group-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Checkbox group with parent checkbox"
+    },
+    {
+      "name": "p-checkbox-group-4",
+      "slug": "p-checkbox-group-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Nested checkbox group with parent"
+    },
+    {
+      "name": "p-checkbox-group-5",
+      "slug": "p-checkbox-group-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Checkbox group form"
+    },
+    {
+      "name": "p-collapsible-1",
+      "slug": "p-collapsible-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic collapsible"
+    },
+    {
+      "name": "p-combobox-1",
+      "slug": "p-combobox-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic combobox"
+    },
+    {
+      "name": "p-combobox-2",
+      "slug": "p-combobox-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Disabled combobox"
+    },
+    {
+      "name": "p-combobox-3",
+      "slug": "p-combobox-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Small combobox"
+    },
+    {
+      "name": "p-combobox-4",
+      "slug": "p-combobox-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Large combobox"
+    },
+    {
+      "name": "p-combobox-5",
+      "slug": "p-combobox-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Combobox with label"
+    },
+    {
+      "name": "p-combobox-6",
+      "slug": "p-combobox-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Combobox auto highlighting the first option"
+    },
+    {
+      "name": "p-combobox-7",
+      "slug": "p-combobox-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Combobox with clear button"
+    },
+    {
+      "name": "p-combobox-8",
+      "slug": "p-combobox-8",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Combobox with grouped items"
+    },
+    {
+      "name": "p-combobox-9",
+      "slug": "p-combobox-9",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Combobox with multiple selection"
+    },
+    {
+      "name": "p-combobox-10",
+      "slug": "p-combobox-10",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Combobox with input inside popup"
+    },
+    {
+      "name": "p-combobox-11",
+      "slug": "p-combobox-11",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Combobox form"
+    },
+    {
+      "name": "p-combobox-12",
+      "slug": "p-combobox-12",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Combobox multiple form"
+    },
+    {
+      "name": "p-combobox-13",
+      "slug": "p-combobox-13",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Combobox with start addon"
+    },
+    {
+      "name": "p-combobox-14",
+      "slug": "p-combobox-14",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Combobox multiple with start addon"
+    },
+    {
+      "name": "p-combobox-15",
+      "slug": "p-combobox-15",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Pill-shaped combobox"
+    },
+    {
+      "name": "p-combobox-16",
+      "slug": "p-combobox-16",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Timezone combobox"
+    },
+    {
+      "name": "p-combobox-17",
+      "slug": "p-combobox-17",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Timezone combobox with search input"
+    },
+    {
+      "name": "p-combobox-18",
+      "slug": "p-combobox-18",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Combobox with select trigger"
+    },
+    {
+      "name": "p-combobox-19",
+      "slug": "p-combobox-19",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Combobox multiple with stacked chips"
+    },
+    {
+      "name": "p-combobox-20",
+      "slug": "p-combobox-20",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Combobox multiple with stacked divided chips"
+    },
+    {
+      "name": "p-command-1",
+      "slug": "p-command-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Command palette with dialog"
+    },
+    {
+      "name": "p-command-2",
+      "slug": "p-command-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Command palette with AI assistant"
+    },
+    {
+      "name": "p-dialog-1",
+      "slug": "p-dialog-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Dialog with form"
+    },
+    {
+      "name": "p-dialog-6",
+      "slug": "p-dialog-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Dialog with bare footer"
+    },
+    {
+      "name": "p-dialog-2",
+      "slug": "p-dialog-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Dialog opened from menu"
+    },
+    {
+      "name": "p-dialog-3",
+      "slug": "p-dialog-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Nested dialogs"
+    },
+    {
+      "name": "p-dialog-4",
+      "slug": "p-dialog-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Dialog with close confirmation"
+    },
+    {
+      "name": "p-dialog-5",
+      "slug": "p-dialog-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Dialog with long content"
+    },
+    {
+      "name": "p-drawer-1",
+      "slug": "p-drawer-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Simple bottom drawer with close button"
+    },
+    {
+      "name": "p-drawer-2",
+      "slug": "p-drawer-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Bottom drawer without drag bar"
+    },
+    {
+      "name": "p-drawer-3",
+      "slug": "p-drawer-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Drawer with close button"
+    },
+    {
+      "name": "p-drawer-4",
+      "slug": "p-drawer-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Inset variant drawers for all four positions"
+    },
+    {
+      "name": "p-drawer-5",
+      "slug": "p-drawer-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Straight variant drawers for all four positions"
+    },
+    {
+      "name": "p-drawer-6",
+      "slug": "p-drawer-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Scrollable content with terms and conditions"
+    },
+    {
+      "name": "p-drawer-7",
+      "slug": "p-drawer-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Nested bottom drawers with centered content"
+    },
+    {
+      "name": "p-drawer-8",
+      "slug": "p-drawer-8",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Nested right drawers with inset variant"
+    },
+    {
+      "name": "p-drawer-9",
+      "slug": "p-drawer-9",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Bottom drawer with snap points"
+    },
+    {
+      "name": "p-drawer-10",
+      "slug": "p-drawer-10",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Edit profile form with default and bare footer variants"
+    },
+    {
+      "name": "p-drawer-11",
+      "slug": "p-drawer-11",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Mobile menu drawer from the left"
+    },
+    {
+      "name": "p-drawer-12",
+      "slug": "p-drawer-12",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Responsive edit profile: dialog on desktop, drawer on mobile"
+    },
+    {
+      "name": "p-drawer-13",
+      "slug": "p-drawer-13",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Responsive actions menu: menu on desktop, drawer on mobile"
+    },
+    {
+      "name": "p-drawer-14",
+      "slug": "p-drawer-14",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Left drawer with swipe area"
+    },
+    {
+      "name": "p-empty-1",
+      "slug": "p-empty-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Empty state with icon and actions"
+    },
+    {
+      "name": "p-field-1",
+      "slug": "p-field-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Field with description"
+    },
+    {
+      "name": "p-field-2",
+      "slug": "p-field-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Field with required indicator"
+    },
+    {
+      "name": "p-field-3",
+      "slug": "p-field-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Field in disabled state"
+    },
+    {
+      "name": "p-field-4",
+      "slug": "p-field-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Field showing validation error"
+    },
+    {
+      "name": "p-field-5",
+      "slug": "p-field-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Show field validity state"
+    },
+    {
+      "name": "p-field-6",
+      "slug": "p-field-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input group with field"
+    },
+    {
+      "name": "p-field-7",
+      "slug": "p-field-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Field with autocomplete"
+    },
+    {
+      "name": "p-field-8",
+      "slug": "p-field-8",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Field with combobox"
+    },
+    {
+      "name": "p-field-9",
+      "slug": "p-field-9",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Field with multiple selection combobox"
+    },
+    {
+      "name": "p-field-10",
+      "slug": "p-field-10",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Field with textarea"
+    },
+    {
+      "name": "p-field-11",
+      "slug": "p-field-11",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Field with select"
+    },
+    {
+      "name": "p-field-12",
+      "slug": "p-field-12",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Field with checkbox"
+    },
+    {
+      "name": "p-field-13",
+      "slug": "p-field-13",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Field with checkbox group"
+    },
+    {
+      "name": "p-field-14",
+      "slug": "p-field-14",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Field with radio group"
+    },
+    {
+      "name": "p-field-15",
+      "slug": "p-field-15",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Field with toggle switch"
+    },
+    {
+      "name": "p-field-16",
+      "slug": "p-field-16",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Field with slider"
+    },
+    {
+      "name": "p-field-17",
+      "slug": "p-field-17",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Field with number field"
+    },
+    {
+      "name": "p-field-18",
+      "slug": "p-field-18",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Complete form built with field"
+    },
+    {
+      "name": "p-fieldset-1",
+      "slug": "p-fieldset-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Fieldset with multiple fields"
+    },
+    {
+      "name": "p-form-1",
+      "slug": "p-form-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input in a form"
+    },
+    {
+      "name": "p-form-2",
+      "slug": "p-form-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Form with zod validation"
+    },
+    {
+      "name": "p-frame-1",
+      "slug": "p-frame-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic frame"
+    },
+    {
+      "name": "p-frame-3",
+      "slug": "p-frame-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Frame with multiple separated panels"
+    },
+    {
+      "name": "p-frame-4",
+      "slug": "p-frame-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Frame with multiple stacked panels"
+    },
+    {
+      "name": "p-frame-2",
+      "slug": "p-frame-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Frame with collapsible content and delete button"
+    },
+    {
+      "name": "p-kbd-1",
+      "slug": "p-kbd-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Keyboard shortcuts display"
+    },
+    {
+      "name": "p-group-1",
+      "slug": "p-group-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic group"
+    },
+    {
+      "name": "p-group-2",
+      "slug": "p-group-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Group with input"
+    },
+    {
+      "name": "p-group-3",
+      "slug": "p-group-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Small group"
+    },
+    {
+      "name": "p-group-4",
+      "slug": "p-group-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Large group"
+    },
+    {
+      "name": "p-group-5",
+      "slug": "p-group-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Group with disabled button"
+    },
+    {
+      "name": "p-group-6",
+      "slug": "p-group-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Group with default button"
+    },
+    {
+      "name": "p-group-7",
+      "slug": "p-group-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Group with start text"
+    },
+    {
+      "name": "p-group-8",
+      "slug": "p-group-8",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Group with end text"
+    },
+    {
+      "name": "p-group-9",
+      "slug": "p-group-9",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Vertical group"
+    },
+    {
+      "name": "p-group-10",
+      "slug": "p-group-10",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Nested groups"
+    },
+    {
+      "name": "p-group-11",
+      "slug": "p-group-11",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Group with popup"
+    },
+    {
+      "name": "p-group-12",
+      "slug": "p-group-12",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Group with input group"
+    },
+    {
+      "name": "p-group-13",
+      "slug": "p-group-13",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Group with menu"
+    },
+    {
+      "name": "p-group-14",
+      "slug": "p-group-14",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Group with select"
+    },
+    {
+      "name": "p-group-15",
+      "slug": "p-group-15",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Group with search"
+    },
+    {
+      "name": "p-group-16",
+      "slug": "p-group-16",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Group with add button and input"
+    },
+    {
+      "name": "p-group-17",
+      "slug": "p-group-17",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Group with input and currency text"
+    },
+    {
+      "name": "p-group-18",
+      "slug": "p-group-18",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Group with select and input"
+    },
+    {
+      "name": "p-group-19",
+      "slug": "p-group-19",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Group with input and select"
+    },
+    {
+      "name": "p-group-20",
+      "slug": "p-group-20",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Group with input and text button"
+    },
+    {
+      "name": "p-group-22",
+      "slug": "p-group-22",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Group with two number inputs for range"
+    },
+    {
+      "name": "p-group-23",
+      "slug": "p-group-23",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Group with filter label, combobox multi-select, and remove button"
+    },
+    {
+      "name": "p-input-1",
+      "slug": "p-input-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic input"
+    },
+    {
+      "name": "p-input-2",
+      "slug": "p-input-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Small input"
+    },
+    {
+      "name": "p-input-3",
+      "slug": "p-input-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Large input"
+    },
+    {
+      "name": "p-input-4",
+      "slug": "p-input-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Disabled input"
+    },
+    {
+      "name": "p-input-5",
+      "slug": "p-input-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "File input"
+    },
+    {
+      "name": "p-input-6",
+      "slug": "p-input-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input with label"
+    },
+    {
+      "name": "p-input-7",
+      "slug": "p-input-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input with button using Group"
+    },
+    {
+      "name": "p-input-8",
+      "slug": "p-input-8",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input with start text and end tooltip"
+    },
+    {
+      "name": "p-input-9",
+      "slug": "p-input-9",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Password input with toggle visibility"
+    },
+    {
+      "name": "p-input-10",
+      "slug": "p-input-10",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input group mimicking a URL bar"
+    },
+    {
+      "name": "p-input-11",
+      "slug": "p-input-11",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input group with keyboard shortcut"
+    },
+    {
+      "name": "p-input-12",
+      "slug": "p-input-12",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input group with start loading spinner"
+    },
+    {
+      "name": "p-input-13",
+      "slug": "p-input-13",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input with label and required indicator"
+    },
+    {
+      "name": "p-input-14",
+      "slug": "p-input-14",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input with optional label"
+    },
+    {
+      "name": "p-input-15",
+      "slug": "p-input-15",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input with custom border and background"
+    },
+    {
+      "name": "p-input-16",
+      "slug": "p-input-16",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input group with end loading spinner"
+    },
+    {
+      "name": "p-input-17",
+      "slug": "p-input-17",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Read-only input"
+    },
+    {
+      "name": "p-otp-field-1",
+      "slug": "p-otp-field-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic OTP field"
+    },
+    {
+      "name": "p-otp-field-2",
+      "slug": "p-otp-field-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Large OTP field"
+    },
+    {
+      "name": "p-otp-field-3",
+      "slug": "p-otp-field-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "OTP field with separator"
+    },
+    {
+      "name": "p-otp-field-4",
+      "slug": "p-otp-field-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "OTP field with label"
+    },
+    {
+      "name": "p-otp-field-6",
+      "slug": "p-otp-field-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "OTP field with custom sanitization"
+    },
+    {
+      "name": "p-otp-field-7",
+      "slug": "p-otp-field-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "OTP field with auto validation"
+    },
+    {
+      "name": "p-otp-field-8",
+      "slug": "p-otp-field-8",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Alphanumeric OTP field"
+    },
+    {
+      "name": "p-otp-field-9",
+      "slug": "p-otp-field-9",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "OTP field with placeholder hints"
+    },
+    {
+      "name": "p-otp-field-10",
+      "slug": "p-otp-field-10",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Masked OTP field"
+    },
+    {
+      "name": "p-input-group-1",
+      "slug": "p-input-group-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic input group"
+    },
+    {
+      "name": "p-input-group-2",
+      "slug": "p-input-group-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input group with end icon"
+    },
+    {
+      "name": "p-input-group-3",
+      "slug": "p-input-group-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input group with start text"
+    },
+    {
+      "name": "p-input-group-4",
+      "slug": "p-input-group-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input group with end text"
+    },
+    {
+      "name": "p-input-group-5",
+      "slug": "p-input-group-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input group with start and end text"
+    },
+    {
+      "name": "p-input-group-6",
+      "slug": "p-input-group-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input group with number field"
+    },
+    {
+      "name": "p-input-group-7",
+      "slug": "p-input-group-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input group with end tooltip"
+    },
+    {
+      "name": "p-input-group-8",
+      "slug": "p-input-group-8",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input group with icon button"
+    },
+    {
+      "name": "p-input-group-9",
+      "slug": "p-input-group-9",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input group with button"
+    },
+    {
+      "name": "p-input-group-10",
+      "slug": "p-input-group-10",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input group with badge"
+    },
+    {
+      "name": "p-input-group-11",
+      "slug": "p-input-group-11",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input group with keyboard shortcut"
+    },
+    {
+      "name": "p-input-group-12",
+      "slug": "p-input-group-12",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input group with inner label"
+    },
+    {
+      "name": "p-input-group-13",
+      "slug": "p-input-group-13",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Small input group"
+    },
+    {
+      "name": "p-input-group-14",
+      "slug": "p-input-group-14",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Large input group"
+    },
+    {
+      "name": "p-input-group-15",
+      "slug": "p-input-group-15",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Disabled input group"
+    },
+    {
+      "name": "p-input-group-16",
+      "slug": "p-input-group-16",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input group with loading spinner"
+    },
+    {
+      "name": "p-input-group-17",
+      "slug": "p-input-group-17",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input group with textarea"
+    },
+    {
+      "name": "p-input-group-18",
+      "slug": "p-input-group-18",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input group with badge and menu"
+    },
+    {
+      "name": "p-input-group-19",
+      "slug": "p-input-group-19",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Mini editor built with input group and toggle"
+    },
+    {
+      "name": "p-input-group-20",
+      "slug": "p-input-group-20",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input group with search icon"
+    },
+    {
+      "name": "p-input-group-21",
+      "slug": "p-input-group-21",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input group with start tooltip"
+    },
+    {
+      "name": "p-input-group-22",
+      "slug": "p-input-group-22",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input group with clear button"
+    },
+    {
+      "name": "p-input-group-23",
+      "slug": "p-input-group-23",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Search input group with loader and voice button"
+    },
+    {
+      "name": "p-input-group-24",
+      "slug": "p-input-group-24",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input group with character counter"
+    },
+    {
+      "name": "p-input-18",
+      "slug": "p-input-18",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Input with characters remaining counter"
+    },
+    {
+      "name": "p-input-19",
+      "slug": "p-input-19",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Pill-shaped input"
+    },
+    {
+      "name": "p-input-group-26",
+      "slug": "p-input-group-26",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Password input with strength indicator"
+    },
+    {
+      "name": "p-input-group-27",
+      "slug": "p-input-group-27",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Code snippet input with language selector"
+    },
+    {
+      "name": "p-input-group-28",
+      "slug": "p-input-group-28",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Message composer with attachment buttons"
+    },
+    {
+      "name": "p-input-group-29",
+      "slug": "p-input-group-29",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Chat input with voice and send buttons"
+    },
+    {
+      "name": "p-meter-1",
+      "slug": "p-meter-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic meter"
+    },
+    {
+      "name": "p-meter-2",
+      "slug": "p-meter-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Simple meter"
+    },
+    {
+      "name": "p-meter-3",
+      "slug": "p-meter-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Meter with formatted value"
+    },
+    {
+      "name": "p-meter-4",
+      "slug": "p-meter-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Meter with range"
+    },
+    {
+      "name": "p-menu-1",
+      "slug": "p-menu-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic menu"
+    },
+    {
+      "name": "p-menu-2",
+      "slug": "p-menu-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Menu with hover"
+    },
+    {
+      "name": "p-menu-3",
+      "slug": "p-menu-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Menu with checkbox"
+    },
+    {
+      "name": "p-menu-9",
+      "slug": "p-menu-9",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Menu with checkbox items as switches"
+    },
+    {
+      "name": "p-menu-4",
+      "slug": "p-menu-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Menu with radio group"
+    },
+    {
+      "name": "p-menu-5",
+      "slug": "p-menu-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Menu with link"
+    },
+    {
+      "name": "p-menu-6",
+      "slug": "p-menu-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Menu with group labels"
+    },
+    {
+      "name": "p-menu-7",
+      "slug": "p-menu-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Nested menu"
+    },
+    {
+      "name": "p-menu-8",
+      "slug": "p-menu-8",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Menu close on click"
+    },
+    {
+      "name": "p-context-menu-1",
+      "slug": "p-context-menu-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic context menu"
+    },
+    {
+      "name": "p-context-menu-2",
+      "slug": "p-context-menu-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Context menu with link items"
+    },
+    {
+      "name": "p-context-menu-3",
+      "slug": "p-context-menu-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Nested context menu"
+    },
+    {
+      "name": "p-context-menu-4",
+      "slug": "p-context-menu-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Context menu with checkbox items"
+    },
+    {
+      "name": "p-context-menu-5",
+      "slug": "p-context-menu-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Context menu with group labels"
+    },
+    {
+      "name": "p-context-menu-6",
+      "slug": "p-context-menu-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Context menu with icons"
+    },
+    {
+      "name": "p-context-menu-7",
+      "slug": "p-context-menu-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Context menu with radio group"
+    },
+    {
+      "name": "p-context-menu-8",
+      "slug": "p-context-menu-8",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Context menu with switch checkbox items"
+    },
+    {
+      "name": "p-number-field-1",
+      "slug": "p-number-field-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic number field"
+    },
+    {
+      "name": "p-number-field-2",
+      "slug": "p-number-field-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Small number field"
+    },
+    {
+      "name": "p-number-field-3",
+      "slug": "p-number-field-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Large number field"
+    },
+    {
+      "name": "p-number-field-4",
+      "slug": "p-number-field-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Disabled number field"
+    },
+    {
+      "name": "p-number-field-5",
+      "slug": "p-number-field-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Number field with label"
+    },
+    {
+      "name": "p-number-field-6",
+      "slug": "p-number-field-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Number field with scrub"
+    },
+    {
+      "name": "p-number-field-7",
+      "slug": "p-number-field-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Number field with range"
+    },
+    {
+      "name": "p-number-field-8",
+      "slug": "p-number-field-8",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Number field with formatted value"
+    },
+    {
+      "name": "p-number-field-9",
+      "slug": "p-number-field-9",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Number field with step"
+    },
+    {
+      "name": "p-number-field-10",
+      "slug": "p-number-field-10",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Number field in form"
+    },
+    {
+      "name": "p-number-field-11",
+      "slug": "p-number-field-11",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Pill-shaped number field"
+    },
+    {
+      "name": "p-navigation-1",
+      "slug": "p-navigation-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Segmented navigation built with links"
+    },
+    {
+      "name": "p-navigation-2",
+      "slug": "p-navigation-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Small segmented navigation built with links"
+    },
+    {
+      "name": "p-navigation-3",
+      "slug": "p-navigation-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Large segmented navigation built with links"
+    },
+    {
+      "name": "p-pagination-1",
+      "slug": "p-pagination-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Pagination example"
+    },
+    {
+      "name": "p-pagination-2",
+      "slug": "p-pagination-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Pagination with previous and next buttons only"
+    },
+    {
+      "name": "p-pagination-3",
+      "slug": "p-pagination-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Pagination with select, and previous and next buttons"
+    },
+    {
+      "name": "p-popover-1",
+      "slug": "p-popover-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Popover with a form"
+    },
+    {
+      "name": "p-popover-2",
+      "slug": "p-popover-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Popover with close button"
+    },
+    {
+      "name": "p-popover-3",
+      "slug": "p-popover-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Animated popovers"
+    },
+    {
+      "name": "p-popover-4",
+      "slug": "p-popover-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Split button with popover to confirm multiple occurrences"
+    },
+    {
+      "name": "p-preview-card-1",
+      "slug": "p-preview-card-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Preview card with popup"
+    },
+    {
+      "name": "p-progress-1",
+      "slug": "p-progress-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic progress bar"
+    },
+    {
+      "name": "p-progress-2",
+      "slug": "p-progress-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Progress with label and value"
+    },
+    {
+      "name": "p-progress-3",
+      "slug": "p-progress-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Progress with formatted value"
+    },
+    {
+      "name": "p-radio-group-1",
+      "slug": "p-radio-group-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic radio group"
+    },
+    {
+      "name": "p-radio-group-2",
+      "slug": "p-radio-group-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Disabled radio group"
+    },
+    {
+      "name": "p-radio-group-3",
+      "slug": "p-radio-group-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Radio group with description"
+    },
+    {
+      "name": "p-radio-group-4",
+      "slug": "p-radio-group-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Radio group card"
+    },
+    {
+      "name": "p-radio-group-5",
+      "slug": "p-radio-group-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Radio group in form"
+    },
+    {
+      "name": "p-radio-group-6",
+      "slug": "p-radio-group-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Theme selector with image cards"
+    },
+    {
+      "name": "p-radio-group-7",
+      "slug": "p-radio-group-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Small segmented control built with a radio group"
+    },
+    {
+      "name": "p-radio-group-8",
+      "slug": "p-radio-group-8",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Segmented control built with a radio group"
+    },
+    {
+      "name": "p-radio-group-9",
+      "slug": "p-radio-group-9",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Large segmented control built with a radio group"
+    },
+    {
+      "name": "p-scroll-area-1",
+      "slug": "p-scroll-area-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic scroll area"
+    },
+    {
+      "name": "p-scroll-area-2",
+      "slug": "p-scroll-area-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Horizontal scroll area"
+    },
+    {
+      "name": "p-scroll-area-3",
+      "slug": "p-scroll-area-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Scroll area with both directions"
+    },
+    {
+      "name": "p-scroll-area-4",
+      "slug": "p-scroll-area-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Scroll area with fading edges"
+    },
+    {
+      "name": "p-scroll-area-5",
+      "slug": "p-scroll-area-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Horizontal scroll area with scrollbar gutter"
+    },
+    {
+      "name": "p-select-1",
+      "slug": "p-select-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic select"
+    },
+    {
+      "name": "p-select-2",
+      "slug": "p-select-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Small select"
+    },
+    {
+      "name": "p-select-3",
+      "slug": "p-select-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Large select"
+    },
+    {
+      "name": "p-select-4",
+      "slug": "p-select-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Disabled select"
+    },
+    {
+      "name": "p-select-5",
+      "slug": "p-select-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Select without item alignment"
+    },
+    {
+      "name": "p-select-6",
+      "slug": "p-select-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Select with groups"
+    },
+    {
+      "name": "p-select-7",
+      "slug": "p-select-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Multiple select"
+    },
+    {
+      "name": "p-select-8",
+      "slug": "p-select-8",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Select with icon"
+    },
+    {
+      "name": "p-select-9",
+      "slug": "p-select-9",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Select options with icon"
+    },
+    {
+      "name": "p-select-10",
+      "slug": "p-select-10",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Select with object values"
+    },
+    {
+      "name": "p-select-12",
+      "slug": "p-select-12",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Select with disabled items"
+    },
+    {
+      "name": "p-select-13",
+      "slug": "p-select-13",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Timezone select"
+    },
+    {
+      "name": "p-select-14",
+      "slug": "p-select-14",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Status select with colored dot"
+    },
+    {
+      "name": "p-select-15",
+      "slug": "p-select-15",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Pill-shaped select trigger"
+    },
+    {
+      "name": "p-select-16",
+      "slug": "p-select-16",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Select with left text label"
+    },
+    {
+      "name": "p-select-17",
+      "slug": "p-select-17",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Select with country flags"
+    },
+    {
+      "name": "p-select-18",
+      "slug": "p-select-18",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Select with description in options only"
+    },
+    {
+      "name": "p-select-19",
+      "slug": "p-select-19",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Select with avatars"
+    },
+    {
+      "name": "p-select-20",
+      "slug": "p-select-20",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Rich select with avatars and usernames"
+    },
+    {
+      "name": "p-select-21",
+      "slug": "p-select-21",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Auto width select"
+    },
+    {
+      "name": "p-select-22",
+      "slug": "p-select-22",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Select with custom border and background"
+    },
+    {
+      "name": "p-select-23",
+      "slug": "p-select-23",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Select with label"
+    },
+    {
+      "name": "p-select-11",
+      "slug": "p-select-11",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Select in form"
+    },
+    {
+      "name": "p-separator-1",
+      "slug": "p-separator-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Separator with horizontal and vertical orientations"
+    },
+    {
+      "name": "p-sheet-1",
+      "slug": "p-sheet-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic sheet"
+    },
+    {
+      "name": "p-sheet-2",
+      "slug": "p-sheet-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Sheet inset"
+    },
+    {
+      "name": "p-sheet-3",
+      "slug": "p-sheet-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Sheet position"
+    },
+    {
+      "name": "p-skeleton-1",
+      "slug": "p-skeleton-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic skeleton"
+    },
+    {
+      "name": "p-skeleton-2",
+      "slug": "p-skeleton-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Skeleton only"
+    },
+    {
+      "name": "p-slider-1",
+      "slug": "p-slider-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic slider"
+    },
+    {
+      "name": "p-slider-2",
+      "slug": "p-slider-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Slider with label and value"
+    },
+    {
+      "name": "p-slider-3",
+      "slug": "p-slider-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Disabled slider"
+    },
+    {
+      "name": "p-slider-4",
+      "slug": "p-slider-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Slider with reference labels"
+    },
+    {
+      "name": "p-slider-5",
+      "slug": "p-slider-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Slider with ticks"
+    },
+    {
+      "name": "p-slider-6",
+      "slug": "p-slider-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Slider with labels above"
+    },
+    {
+      "name": "p-slider-7",
+      "slug": "p-slider-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Range slider"
+    },
+    {
+      "name": "p-slider-8",
+      "slug": "p-slider-8",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Slider with 3 thumbs"
+    },
+    {
+      "name": "p-slider-9",
+      "slug": "p-slider-9",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Range slider with collision behavior none"
+    },
+    {
+      "name": "p-slider-10",
+      "slug": "p-slider-10",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Range slider with collision behavior swap"
+    },
+    {
+      "name": "p-slider-11",
+      "slug": "p-slider-11",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Slider with icons"
+    },
+    {
+      "name": "p-slider-12",
+      "slug": "p-slider-12",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Slider with input"
+    },
+    {
+      "name": "p-slider-13",
+      "slug": "p-slider-13",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Range slider with inputs"
+    },
+    {
+      "name": "p-slider-14",
+      "slug": "p-slider-14",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Slider with increment and decrement buttons"
+    },
+    {
+      "name": "p-slider-15",
+      "slug": "p-slider-15",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Price range slider"
+    },
+    {
+      "name": "p-slider-16",
+      "slug": "p-slider-16",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Emoji rating slider"
+    },
+    {
+      "name": "p-slider-17",
+      "slug": "p-slider-17",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Vertical slider"
+    },
+    {
+      "name": "p-slider-18",
+      "slug": "p-slider-18",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Vertical range slider"
+    },
+    {
+      "name": "p-slider-19",
+      "slug": "p-slider-19",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Vertical slider with input"
+    },
+    {
+      "name": "p-slider-20",
+      "slug": "p-slider-20",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Equalizer with vertical sliders"
+    },
+    {
+      "name": "p-slider-21",
+      "slug": "p-slider-21",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Object position sliders with reset"
+    },
+    {
+      "name": "p-slider-22",
+      "slug": "p-slider-22",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Price slider with histogram"
+    },
+    {
+      "name": "p-slider-23",
+      "slug": "p-slider-23",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Slider in form"
+    },
+    {
+      "name": "p-spinner-1",
+      "slug": "p-spinner-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic spinner"
+    },
+    {
+      "name": "p-switch-1",
+      "slug": "p-switch-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic switch"
+    },
+    {
+      "name": "p-switch-2",
+      "slug": "p-switch-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Disabled switch"
+    },
+    {
+      "name": "p-switch-3",
+      "slug": "p-switch-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Switch with description"
+    },
+    {
+      "name": "p-switch-4",
+      "slug": "p-switch-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Switch card"
+    },
+    {
+      "name": "p-switch-5",
+      "slug": "p-switch-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Switch in form"
+    },
+    {
+      "name": "p-switch-6",
+      "slug": "p-switch-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Custom size switch"
+    },
+    {
+      "name": "p-switch-7",
+      "slug": "p-switch-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Weekly availability editor with time range combobox pickers"
+    },
+    {
+      "name": "p-switch-8",
+      "slug": "p-switch-8",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Weekly availability editor with grouped time range controls"
+    },
+    {
+      "name": "p-switch-9",
+      "slug": "p-switch-9",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Weekly availability editor with From/To labeled time groups"
+    },
+    {
+      "name": "p-table-1",
+      "slug": "p-table-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic table"
+    },
+    {
+      "name": "p-table-2",
+      "slug": "p-table-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Frame with card-style table"
+    },
+    {
+      "name": "p-table-3",
+      "slug": "p-table-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Table with TanStack Table and checkboxes"
+    },
+    {
+      "name": "p-table-4",
+      "slug": "p-table-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Table with TanStack Table, sorting, and pagination"
+    },
+    {
+      "name": "p-table-5",
+      "slug": "p-table-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Card-style table variant"
+    },
+    {
+      "name": "p-table-7",
+      "slug": "p-table-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "CardFrame with card-style table"
+    },
+    {
+      "name": "p-table-6",
+      "slug": "p-table-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "CardFrame with TanStack Table and checkboxes"
+    },
+    {
+      "name": "p-table-8",
+      "slug": "p-table-8",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "CardFrame with TanStack Table, sorting, and pagination"
+    },
+    {
+      "name": "p-tabs-1",
+      "slug": "p-tabs-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Segmented control built with tabs"
+    },
+    {
+      "name": "p-tabs-2",
+      "slug": "p-tabs-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Tabs with underline"
+    },
+    {
+      "name": "p-tabs-3",
+      "slug": "p-tabs-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Vertical tabs"
+    },
+    {
+      "name": "p-tabs-4",
+      "slug": "p-tabs-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Vertical tabs with underline"
+    },
+    {
+      "name": "p-tabs-5",
+      "slug": "p-tabs-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Tabs with full rounded triggers"
+    },
+    {
+      "name": "p-tabs-6",
+      "slug": "p-tabs-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Tabs with icon before name"
+    },
+    {
+      "name": "p-tabs-7",
+      "slug": "p-tabs-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Tabs with icon before name and underline"
+    },
+    {
+      "name": "p-tabs-8",
+      "slug": "p-tabs-8",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Tabs with icon only"
+    },
+    {
+      "name": "p-tabs-9",
+      "slug": "p-tabs-9",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Tabs with underline and icon on top"
+    },
+    {
+      "name": "p-tabs-10",
+      "slug": "p-tabs-10",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Tabs with count badge"
+    },
+    {
+      "name": "p-tabs-11",
+      "slug": "p-tabs-11",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Vertical tabs with underline and icon before name"
+    },
+    {
+      "name": "p-tabs-12",
+      "slug": "p-tabs-12",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Tabs with icon only and count badge"
+    },
+    {
+      "name": "p-tabs-13",
+      "slug": "p-tabs-13",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Tabs with icon only and grouped tooltips"
+    },
+    {
+      "name": "p-tabs-14",
+      "slug": "p-tabs-14",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Small segmented control built with tabs"
+    },
+    {
+      "name": "p-tabs-15",
+      "slug": "p-tabs-15",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Large segmented control built with tabs"
+    },
+    {
+      "name": "p-textarea-1",
+      "slug": "p-textarea-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic textarea"
+    },
+    {
+      "name": "p-textarea-2",
+      "slug": "p-textarea-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Small textarea"
+    },
+    {
+      "name": "p-textarea-3",
+      "slug": "p-textarea-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Large textarea"
+    },
+    {
+      "name": "p-textarea-4",
+      "slug": "p-textarea-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Disabled textarea"
+    },
+    {
+      "name": "p-textarea-5",
+      "slug": "p-textarea-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Textarea with label"
+    },
+    {
+      "name": "p-textarea-6",
+      "slug": "p-textarea-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Textarea in form"
+    },
+    {
+      "name": "p-textarea-7",
+      "slug": "p-textarea-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Textarea with label and required indicator"
+    },
+    {
+      "name": "p-textarea-8",
+      "slug": "p-textarea-8",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Textarea with optional label"
+    },
+    {
+      "name": "p-textarea-9",
+      "slug": "p-textarea-9",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Textarea with custom border and background"
+    },
+    {
+      "name": "p-textarea-10",
+      "slug": "p-textarea-10",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Read-only textarea"
+    },
+    {
+      "name": "p-textarea-11",
+      "slug": "p-textarea-11",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Textarea with characters remaining counter"
+    },
+    {
+      "name": "p-textarea-12",
+      "slug": "p-textarea-12",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Textarea field with required indicator"
+    },
+    {
+      "name": "p-textarea-13",
+      "slug": "p-textarea-13",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Shorter textarea with fixed height"
+    },
+    {
+      "name": "p-textarea-14",
+      "slug": "p-textarea-14",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Textarea with button aligned right"
+    },
+    {
+      "name": "p-textarea-15",
+      "slug": "p-textarea-15",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Textarea with button aligned left"
+    },
+    {
+      "name": "p-toast-1",
+      "slug": "p-toast-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Default stacked toast with title and description"
+    },
+    {
+      "name": "p-toast-2",
+      "slug": "p-toast-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Stacked toasts by semantic type (success, error, info, warning)"
+    },
+    {
+      "name": "p-toast-3",
+      "slug": "p-toast-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Loading-state stacked toast"
+    },
+    {
+      "name": "p-toast-4",
+      "slug": "p-toast-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Stacked toast with primary action (undo)"
+    },
+    {
+      "name": "p-toast-5",
+      "slug": "p-toast-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Promise-based stacked toast"
+    },
+    {
+      "name": "p-toast-6",
+      "slug": "p-toast-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Stacked toasts with varying content height"
+    },
+    {
+      "name": "p-toast-7",
+      "slug": "p-toast-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Anchored tooltip-style toast after copy"
+    },
+    {
+      "name": "p-toast-8",
+      "slug": "p-toast-8",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Anchored error toast after async failure"
+    },
+    {
+      "name": "p-toast-9",
+      "slug": "p-toast-9",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Long-running promise toast with cancel"
+    },
+    {
+      "name": "p-toast-10",
+      "slug": "p-toast-10",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Deduplicated success toast"
+    },
+    {
+      "name": "p-toast-11",
+      "slug": "p-toast-11",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Deduplicated error toast"
+    },
+    {
+      "name": "p-toast-12",
+      "slug": "p-toast-12",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Anchored deduplicated success toast"
+    },
+    {
+      "name": "p-toast-13",
+      "slug": "p-toast-13",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Anchored deduplicated error toast"
+    },
+    {
+      "name": "p-toggle-group-1",
+      "slug": "p-toggle-group-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic toggle group"
+    },
+    {
+      "name": "p-toggle-group-2",
+      "slug": "p-toggle-group-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Small toggle group"
+    },
+    {
+      "name": "p-toggle-group-3",
+      "slug": "p-toggle-group-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Large toggle group"
+    },
+    {
+      "name": "p-toggle-group-4",
+      "slug": "p-toggle-group-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Toggle group with outline"
+    },
+    {
+      "name": "p-toggle-group-5",
+      "slug": "p-toggle-group-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Vertical toggle group with outline"
+    },
+    {
+      "name": "p-toggle-group-6",
+      "slug": "p-toggle-group-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Disabled toggle group"
+    },
+    {
+      "name": "p-toggle-group-7",
+      "slug": "p-toggle-group-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Toggle group with disabled item"
+    },
+    {
+      "name": "p-toggle-group-8",
+      "slug": "p-toggle-group-8",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Multiple selection toggle group"
+    },
+    {
+      "name": "p-toggle-group-9",
+      "slug": "p-toggle-group-9",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Toggle group with tooltips"
+    },
+    {
+      "name": "p-toggle-1",
+      "slug": "p-toggle-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic toggle"
+    },
+    {
+      "name": "p-toggle-2",
+      "slug": "p-toggle-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Toggle with outline"
+    },
+    {
+      "name": "p-toggle-3",
+      "slug": "p-toggle-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Toggle with icon"
+    },
+    {
+      "name": "p-toggle-4",
+      "slug": "p-toggle-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Small toggle"
+    },
+    {
+      "name": "p-toggle-5",
+      "slug": "p-toggle-5",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Large toggle"
+    },
+    {
+      "name": "p-toggle-6",
+      "slug": "p-toggle-6",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Disabled toggle"
+    },
+    {
+      "name": "p-toggle-7",
+      "slug": "p-toggle-7",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Toggle icon group"
+    },
+    {
+      "name": "p-toggle-8",
+      "slug": "p-toggle-8",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Bookmark toggle with tooltip and success toast"
+    },
+    {
+      "name": "p-toolbar-1",
+      "slug": "p-toolbar-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Toolbar with toggles, buttons, and select"
+    },
+    {
+      "name": "p-tooltip-1",
+      "slug": "p-tooltip-1",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Basic tooltip"
+    },
+    {
+      "name": "p-tooltip-2",
+      "slug": "p-tooltip-2",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Grouped tooltips"
+    },
+    {
+      "name": "p-tooltip-3",
+      "slug": "p-tooltip-3",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Toggle group animated tooltip"
+    },
+    {
+      "name": "p-tooltip-4",
+      "slug": "p-tooltip-4",
+      "url": "https://coss.com/ui/particles",
+      "category": "Particles",
+      "description": "Vertical group with animated tooltip"
+    }
+  ]
+}

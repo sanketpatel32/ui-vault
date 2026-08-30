@@ -11,3 +11,4 @@
 - **Gradient** https://animata.design/docs/bento-grid/gradient — Bento grid with gradient background cards [MIT, live-previewable, category: features]
 - **Three** https://animata.design/docs/bento-grid/three — Bento grid with 3 items [MIT, live-previewable, category: features]
 - **Items** https://www.launchuicomponents.com/docs/sections/items — A flexible grid component for displaying items in shadcn's style. [MIT, live-previewable, category: features]
+- **Feature Carousel** https://cult-ui.com/docs/components/feature-carousel — An animated carousel component for showcasing features with smooth transitions and interactive elements. [MIT, live-previewable, category: features]

@@ -1,0 +1,328 @@
+{
+  "status": "ok",
+  "id": "kiboui",
+  "name": "Kibo UI",
+  "url": "https://www.kibo-ui.com/",
+  "repo": "https://github.com/shadcnblocks/kibo",
+  "license": "MIT",
+  "install": {
+    "cli": "npx kibo-ui add <slug>",
+    "shadcn": "npx shadcn@latest add https://www.kibo-ui.com/r/<slug>.json",
+    "shadcnNamespace": "npx shadcn add @kibo-ui/<slug>",
+    "registryIndex": "https://www.kibo-ui.com/r/registry.json",
+    "registryItem": "https://www.kibo-ui.com/r/<slug>.json",
+    "verified": "npx kibo-ui add gantt (live docs); https://www.kibo-ui.com/r/gantt.json and /r/announcement.json verified to return shadcn-registry-item JSON with files[].content"
+  },
+  "stack": [
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "shadcn/ui",
+    "Radix UI",
+    "lucide-react",
+    "Motion",
+    "Next.js (docs site)",
+    "fumadocs (docs site)"
+  ],
+  "notes": [
+    "Free and open source, forever (repo description); MIT license, copyright shadcnblocks. No paid or gated components; the only \"pricing\" on the site is a free demo block.",
+    "Repo renamed/moved: haydenbleasel/kibo now redirects to github.com/shadcnblocks/kibo (GitHub API resolves both to shadcnblocks/kibo).",
+    "Registry index at https://www.kibo-ui.com/r/registry.json contains 41 items (40 registry:ui + 1 registry:style for typography). Per-item endpoint /r/<slug>.json serves shadcn registry-item schema JSON with files[].content.",
+    "Docs URL pattern is https://www.kibo-ui.com/components/<slug> (NOT /docs/components/<slug>). Categories are the library's own docs-nav headings (fumadocs meta.json), captured verbatim.",
+    "Primary documented install is the dedicated CLI \"npx kibo-ui add <slug>\" (npm package kibo-ui, v1.1.5). The shadcn-CLI URL form works via the verified /r/<slug>.json endpoint. Main-branch docs also show \"npx shadcn add @kibo-ui/<slug>\" via a registry namespace, but that variant was not yet rendered on the live site.",
+    "Requires shadcn/ui initialized in the project (CSS-variables theming mode only); components are copied into the codebase (default @/components/kibo-ui/), not installed from npm.",
+    "Separate \"Blocks\" docs section (https://www.kibo-ui.com/blocks) documents 28 page-level blocks: Applications (codebase, collaborative-canvas, roadmap) and Websites (about, awards, blog, blogpost, careers, case-studies, case-study, changelog, code-example, community, compare, compliance, contact, cta, download, experience, faq, feature, footer, form, hero, pricing, stats, team, testimonial). Blocks install ONLY via \"npx kibo-ui add <block>\" (e.g. hero); they are absent from registry.json and have no /r/<slug>.json endpoint.",
+    "Docs nav also lists two third-party \"Recommended\" libraries (AI Elements, React Wheel Picker) - external links, not part of this registry.",
+    "No external-service accounts required by any component: sandbox bundles code in-browser via CodeSandbox Sandpack (@codesandbox/sandpack-react, no account); glimpse fetches target URLs server-side and parses meta tags itself; cursor is realtime-ready but ships no transport (bring your own). No Supabase/Liveblocks dependencies anywhere in the registry.",
+    "typography registry item is type registry:style and ships CSS (no files[].content in index; installed via its registry entry)."
+  ],
+  "components": [
+    {
+      "name": "Avatar Stack",
+      "slug": "avatar-stack",
+      "url": "https://www.kibo-ui.com/components/avatar-stack",
+      "category": "Collaboration",
+      "description": "Avatar Stack is a component that allows you to stack and overlap avatars."
+    },
+    {
+      "name": "Cursor",
+      "slug": "cursor",
+      "url": "https://www.kibo-ui.com/components/cursor",
+      "category": "Collaboration",
+      "description": "A cursor component, great for realtime interactive applications."
+    },
+    {
+      "name": "Calendar",
+      "slug": "calendar",
+      "url": "https://www.kibo-ui.com/components/calendar",
+      "category": "Project Management",
+      "description": "The calendar view displays features on a grid calendar. Specifically it shows the end date of each feature, and groups features by day."
+    },
+    {
+      "name": "Gantt",
+      "slug": "gantt",
+      "url": "https://www.kibo-ui.com/components/gantt",
+      "category": "Project Management",
+      "description": "The Gantt chart is a powerful tool for visualizing project schedules and tracking the progress of tasks. It provides a clear, hierarchical view of tasks, allowing you to easily identify manage project timelines."
+    },
+    {
+      "name": "Kanban",
+      "slug": "kanban",
+      "url": "https://www.kibo-ui.com/components/kanban",
+      "category": "Project Management",
+      "description": "A kanban board is a visual tool that helps you manage and visualize your work. It is a board with columns, and each column represents a status, e.g. \"Backlog\", \"In Progress\", \"Done\"."
+    },
+    {
+      "name": "List",
+      "slug": "list",
+      "url": "https://www.kibo-ui.com/components/list",
+      "category": "Project Management",
+      "description": "List views are a great way to show a list of tasks grouped by status and ranked by priority."
+    },
+    {
+      "name": "Table",
+      "slug": "table",
+      "url": "https://www.kibo-ui.com/components/table",
+      "category": "Project Management",
+      "description": "Table views are used to display data in a tabular format. They are useful for displaying large amounts of data in a structured way."
+    },
+    {
+      "name": "Code Block",
+      "slug": "code-block",
+      "url": "https://www.kibo-ui.com/components/code-block",
+      "category": "Code",
+      "description": "Provides syntax highlighting, line numbers, and copy to clipboard functionality for code blocks."
+    },
+    {
+      "name": "Contribution Graph",
+      "slug": "contribution-graph",
+      "url": "https://www.kibo-ui.com/components/contribution-graph",
+      "category": "Code",
+      "description": "A GitHub-style contribution graph component that displays activity levels over time."
+    },
+    {
+      "name": "Sandbox",
+      "slug": "sandbox",
+      "url": "https://www.kibo-ui.com/components/sandbox",
+      "category": "Code",
+      "description": "The sandbox component allows you to preview and test components in a sandboxed environment."
+    },
+    {
+      "name": "Snippet",
+      "slug": "snippet",
+      "url": "https://www.kibo-ui.com/components/snippet",
+      "category": "Code",
+      "description": "Snippet is a component that allows you to display and copy code in a tabbed interface."
+    },
+    {
+      "name": "Choicebox",
+      "slug": "choicebox",
+      "url": "https://www.kibo-ui.com/components/choicebox",
+      "category": "Forms",
+      "description": "Choiceboxes are a great way to show radio or checkbox options with a card style."
+    },
+    {
+      "name": "Combobox",
+      "slug": "combobox",
+      "url": "https://www.kibo-ui.com/components/combobox",
+      "category": "Forms",
+      "description": "Autocomplete input and command palette with a list of suggestions."
+    },
+    {
+      "name": "Dropzone",
+      "slug": "dropzone",
+      "url": "https://www.kibo-ui.com/components/dropzone",
+      "category": "Forms",
+      "description": "Allows users to drag-and-drop files into a container to upload or process them."
+    },
+    {
+      "name": "Mini Calendar",
+      "slug": "mini-calendar",
+      "url": "https://www.kibo-ui.com/components/mini-calendar",
+      "category": "Forms",
+      "description": "A composable mini calendar component for picking dates close to today."
+    },
+    {
+      "name": "Tags",
+      "slug": "tags",
+      "url": "https://www.kibo-ui.com/components/tags",
+      "category": "Forms",
+      "description": "Tags are a way to apply multiple labels to an item."
+    },
+    {
+      "name": "Image Crop",
+      "slug": "image-crop",
+      "url": "https://www.kibo-ui.com/components/image-crop",
+      "category": "Images",
+      "description": "A component that allows users to crop images with customizable aspect ratios and circular cropping options."
+    },
+    {
+      "name": "Image Zoom",
+      "slug": "image-zoom",
+      "url": "https://www.kibo-ui.com/components/image-zoom",
+      "category": "Images",
+      "description": "Image zoom is a component that allows you to zoom in on an image."
+    },
+    {
+      "name": "Credit Card",
+      "slug": "credit-card",
+      "url": "https://www.kibo-ui.com/components/credit-card",
+      "category": "Finance",
+      "description": "Credit card components for displaying and validating credit card information."
+    },
+    {
+      "name": "Ticker",
+      "slug": "ticker",
+      "url": "https://www.kibo-ui.com/components/ticker",
+      "category": "Finance",
+      "description": "A composable finance ticker for displaying symbols, prices and changes."
+    },
+    {
+      "name": "Stories",
+      "slug": "stories",
+      "url": "https://www.kibo-ui.com/components/stories",
+      "category": "Social",
+      "description": "A carousel of friends' stories, in video, image or avatar format."
+    },
+    {
+      "name": "Reel",
+      "slug": "reel",
+      "url": "https://www.kibo-ui.com/components/reel",
+      "category": "Social",
+      "description": "A composable, Instagram-style Reel component with progress indicators and navigation controls."
+    },
+    {
+      "name": "Video Player",
+      "slug": "video-player",
+      "url": "https://www.kibo-ui.com/components/video-player",
+      "category": "Social",
+      "description": "A composable, shadcn/ui styled video player component that uses the media-chrome library."
+    },
+    {
+      "name": "Announcement",
+      "slug": "announcement",
+      "url": "https://www.kibo-ui.com/components/announcement",
+      "category": "Callouts",
+      "description": "A compound badge designed to display an announcement."
+    },
+    {
+      "name": "Banner",
+      "slug": "banner",
+      "url": "https://www.kibo-ui.com/components/banner",
+      "category": "Callouts",
+      "description": "A banner is a full-width component that can be used to show a message and action to the user."
+    },
+    {
+      "name": "Typography",
+      "slug": "typography",
+      "url": "https://www.kibo-ui.com/components/typography",
+      "category": "Styling",
+      "description": "A component for applying consistent typography styles across your application."
+    },
+    {
+      "name": "Color Picker",
+      "slug": "color-picker",
+      "url": "https://www.kibo-ui.com/components/color-picker",
+      "category": "Other",
+      "description": "Allows users to select a color. Modeled after the color picker in Figma."
+    },
+    {
+      "name": "Comparison",
+      "slug": "comparison",
+      "url": "https://www.kibo-ui.com/components/comparison",
+      "category": "Other",
+      "description": "A slider-based component for comparing two items in an overlay."
+    },
+    {
+      "name": "Deck",
+      "slug": "deck",
+      "url": "https://www.kibo-ui.com/components/deck",
+      "category": "Other",
+      "description": "A Tinder-like swipeable card stack component with smooth animations."
+    },
+    {
+      "name": "Dialog Stack",
+      "slug": "dialog-stack",
+      "url": "https://www.kibo-ui.com/components/dialog-stack",
+      "category": "Other",
+      "description": "Composable stacked dialogs, useful for creating a wizard, nested form or multi-step process. It provides a consistent layout and styling for each dialog, and includes navigation components to move between them."
+    },
+    {
+      "name": "Editor",
+      "slug": "editor",
+      "url": "https://www.kibo-ui.com/components/editor",
+      "category": "Other",
+      "description": "The Editor component is a powerful and flexible text editor that allows you to create and edit rich text content."
+    },
+    {
+      "name": "Glimpse",
+      "slug": "glimpse",
+      "url": "https://www.kibo-ui.com/components/glimpse",
+      "category": "Other",
+      "description": "A component that shows a preview of a URL when hovering over a link."
+    },
+    {
+      "name": "Marquee",
+      "slug": "marquee",
+      "url": "https://www.kibo-ui.com/components/marquee",
+      "category": "Other",
+      "description": "Marquees are a great way to show a list of items in a horizontal scrolling motion."
+    },
+    {
+      "name": "Pill",
+      "slug": "pill",
+      "url": "https://www.kibo-ui.com/components/pill",
+      "category": "Other",
+      "description": "A flexible badge component designed for a variety of use cases."
+    },
+    {
+      "name": "QR Code",
+      "slug": "qr-code",
+      "url": "https://www.kibo-ui.com/components/qr-code",
+      "category": "Other",
+      "description": "QR Code is a component that generates a QR code from a string."
+    },
+    {
+      "name": "Rating",
+      "slug": "rating",
+      "url": "https://www.kibo-ui.com/components/rating",
+      "category": "Other",
+      "description": "A star rating component with keyboard navigation and hover effects."
+    },
+    {
+      "name": "Relative Time",
+      "slug": "relative-time",
+      "url": "https://www.kibo-ui.com/components/relative-time",
+      "category": "Other",
+      "description": "A component that displays time in various timezones."
+    },
+    {
+      "name": "Spinner",
+      "slug": "spinner",
+      "url": "https://www.kibo-ui.com/components/spinner",
+      "category": "Other",
+      "description": "The Spinner component expands the shadcn spinner component with additional variants."
+    },
+    {
+      "name": "Status",
+      "slug": "status",
+      "url": "https://www.kibo-ui.com/components/status",
+      "category": "Other",
+      "description": "Status components are used to display the uptime of a service."
+    },
+    {
+      "name": "Theme Switcher",
+      "slug": "theme-switcher",
+      "url": "https://www.kibo-ui.com/components/theme-switcher",
+      "category": "Other",
+      "description": "A component to switch between light, dark and system theme."
+    },
+    {
+      "name": "Tree",
+      "slug": "tree",
+      "url": "https://www.kibo-ui.com/components/tree",
+      "category": "Other",
+      "description": "A composable tree component with animated expand/collapse and customizable nodes for displaying hierarchical data structures."
+    }
+  ]
+}

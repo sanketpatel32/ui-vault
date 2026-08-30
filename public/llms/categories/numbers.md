@@ -16,3 +16,5 @@
 - **Counting Number** https://animate-ui.com/docs/primitives/texts/counting-number — A counting number animation. [MIT, live-previewable, category: numbers]
 - **Scrolling Number** https://animate-ui.com/docs/primitives/texts/scrolling-number — A scrolling number animation. [MIT, live-previewable, category: numbers]
 - **Sliding Number** https://animate-ui.com/docs/primitives/texts/sliding-number — A sliding number animation. [MIT, live-previewable, category: numbers]
+- **Animated Number** https://cult-ui.com/docs/components/animated-number — A simple animated number animation [MIT, live-previewable, category: numbers]
+- **Ticker** https://www.kibo-ui.com/components/ticker — A composable finance ticker for displaying symbols, prices and changes. [MIT, live-previewable, category: numbers]

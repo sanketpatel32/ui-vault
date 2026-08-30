@@ -29,6 +29,9 @@ export function checkAllPreviews(): { total: number; passed: number; failed: str
   const failed: string[] = [];
 
   for (const entry of entries) {
+    // only entries that promise a live preview (previewKey) must ship a real preview.tsx;
+    // entries without one render the supported "No local preview yet" fallback
+    if (!entry.previewKey) continue;
     const slug = entry.id.replace(new RegExp(`^${entry.source}-`), "");
     const previewFile = path.join(SHOWCASE_DIR, entry.source, slug, "preview.tsx");
 

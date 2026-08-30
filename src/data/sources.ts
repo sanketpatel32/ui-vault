@@ -189,4 +189,52 @@ export const sources: Source[] = [
       "originui.com now redirects to COSS — this is the maintained MIT snapshot at coss.com/origin (apps/origin in github.com/cosscom/coss). Entries are family-granularity; registry files cover each variant.",
     color: "#94a3b8",
   },
+  {
+    id: "cossui",
+    name: "COSS UI",
+    url: "https://coss.com/ui",
+    tagline: "Origin UI's actively developed successor — Base UI primitives plus 500+ particles.",
+    description:
+      "55 Base-UI-powered components, 2 hooks and 508 registry particles grouped into 54 families — the current-generation component collection from the COSS team, installed through the official @coss shadcn namespace.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "tailwind", "base-ui"],
+    install: "npx shadcn@latest add @coss/<component>",
+    installLabel: "shadcn registry (@coss)",
+    notes:
+      "MIT — apps/ui is carved out of the AGPL cosscom/coss monorepo by the root LICENSING.md. Particles are cataloged per family (p-<component>-N); every variant installs individually. date-picker ships as calendar+popover+button per its docs.",
+    color: "#60a5fa",
+  },
+  {
+    id: "cultui",
+    name: "Cult UI",
+    url: "https://cult-ui.com",
+    tagline: "Animated, modern components designed for effortless integration.",
+    description:
+      "77 MIT components — dithered and liquid-metal heroes, neumorphic and beam buttons, dynamic islands, macOS docks, 3D carousels, WebGL shaders and pixel typography. Cult Pro is a separate paid product; only the MIT repo set is cataloged.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "tailwind", "motion"],
+    install: "npx shadcn@latest add https://cult-ui.com/r/<name>.json",
+    installLabel: "shadcn registry",
+    notes:
+      "MIT (github.com/nolly-studio/cult-ui). The site fronts a bot challenge, so previews vendor the identical registry JSON committed at apps/www/public/r in the repo. Two docs/registry name mismatches were corrected during cataloging (fractal-grid, color-panels).",
+    color: "#f472b6",
+  },
+  {
+    id: "kiboui",
+    name: "Kibo UI",
+    url: "https://www.kibo-ui.com",
+    tagline: "The shadcn registry for everything that doesn't exist yet.",
+    description:
+      "40 niche components no other library ships — Gantt charts, kanban boards, contribution graphs, credit cards, story reels, glimpse link previews, relative-time and Tinder-style decks. Fully client-side, no external services.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "tailwind", "shadcn", "radix", "motion"],
+    install: "npx kibo-ui add <component>",
+    installLabel: "kibo-ui CLI",
+    notes:
+      "MIT (github.com/shadcnblocks/kibo). Registry at kibo-ui.com/r/<name>.json; the 28 site blocks are CLI-only (no registry endpoint) and not cataloged. Sandboxed previews run in-browser; glimpse fetches meta tags only in their hosted demo.",
+    color: "#fb923c",
+  },
 ];

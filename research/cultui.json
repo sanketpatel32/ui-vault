@@ -1,0 +1,563 @@
+{
+  "status": "ok",
+  "id": "cultui",
+  "name": "Cult UI",
+  "url": "https://cult-ui.com",
+  "repo": "https://github.com/nolly-studio/cult-ui",
+  "license": "MIT",
+  "install": "npx shadcn@latest add https://cult-ui.com/r/<slug>.json",
+  "stack": ["React", "TypeScript", "Tailwind CSS", "shadcn/ui", "Next.js", "Motion"],
+  "notes": [
+    "License verified via GitHub API (/repos/nolly-studio/cult-ui/license): SPDX 'MIT', file LICENSE.md (also stated in repo description). Repo: nolly-studio/cult-ui (~6.1k stars, active).",
+    "Docs URL pattern verified: https://cult-ui.com/docs/components/<slug> (Fumadocs MDX under apps/www/content/docs/components/, exactly 77 component pages, 1:1 with the 77 sidebar entries in apps/www/config/docs.ts). 'name' uses the sidebar display title; mdx frontmatter titles are usually React export identifiers (e.g. BgMedia for 'Bg Media Hero').",
+    "Categories are verbatim from the library's own sidebar config (12 groups): Marketing & Heroes, Buttons, Expandable Widgets, Cards & Surfaces, Frames & Mockups, Textures & Overlays, Visual Systems, Navigation & Floating UI, Inputs & Decision UI, AI & Productivity Widgets, Media, Typography & Text Effects.",
+    "Registry index https://cult-ui.com/r/registry.json (repo: apps/www/public/r/registry.json) has 157 items: 78 registry:ui components + 79 '-demo' preview items. The 78th ui item ('bg-animated-gradient') has no docs page and is excluded; the other 77 map 1:1 to docs pages.",
+    "Per-item registry pattern: https://cult-ui.com/r/<name>.json serves a static shadcn registry-item JSON (verified byte-level from apps/www/public/r/dither-image.json): $schema https://ui.shadcn.com/schema/registry-item.json, type registry:ui, description, dependencies, and files[] where each file has path + full source in content.",
+    "Install command format shown in every docs page (CLI tab): `npx shadcn@latest add https://cult-ui.com/r/<name>.json` (example: npx shadcn@latest add https://cult-ui.com/r/dither-image.json).",
+    "Live-site caveat: cult-ui.com currently returns HTTP 429 'Vercel Security Checkpoint' (X-Vercel-Mitigated: challenge) to curl/WebFetch from this environment, so live bytes could not be fetched directly; verification used the identical static files committed in the repo (public/ is deployed as-is) plus the /registry/[name] route handler which parses items with shadcnRegistryItemSchema and injects file content.",
+    "Slug/registry-name mismatches: docs page 'hero-color-panels' installs via /r/hero-color-panel.json (registry file exists). Docs page 'bg-animated-fractal-grid' (Fractal Grid) shows `npx shadcn@latest add https://cult-ui.com/r/bg-animated-fractal-grid.json`, but that file is MISSING from public/r (registry name is bg-animated-fractal-dot-grid) - the CLI command on that one page appears broken; use /r/bg-animated-fractal-dot-grid.json instead.",
+    "Paid tier: 'Cult Pro' is a separate product at https://pro.cult-ui.com (one-time ~$129 lifetime; 37 pro components + 129 sections per repo marketing lists at apps/www/lib/cult-pro-*-landing.json; own docs at pro.cult-ui.com/docs/components). None of the 77 components cataloged here are Pro-gated - all 77 are in the MIT repo with working /r/ endpoints, so no '(Pro-only)' markers were needed.",
+    "The repo also vendors base shadcn/ui primitives (accordion, dialog, form, etc. under apps/www/public/registry/styles/) purely as dependencies for the docs app; they are not part of Cult UI's documented component set and are excluded from this catalog."
+  ],
+  "components": [
+    {
+      "name": "Hero Dithering",
+      "slug": "hero-dithering",
+      "url": "https://cult-ui.com/docs/components/hero-dithering",
+      "category": "Marketing & Heroes",
+      "description": "Split-layout hero section with responsive dithering shader visuals, CTA content, and tech stack badges."
+    },
+    {
+      "name": "Hero Color Panels",
+      "slug": "hero-color-panels",
+      "url": "https://cult-ui.com/docs/components/hero-color-panels",
+      "category": "Marketing & Heroes",
+      "description": "Split-layout hero section with responsive ColorPanels shader visuals, CTA content, and tech stack badges."
+    },
+    {
+      "name": "Hero Heatmap",
+      "slug": "hero-heatmap",
+      "url": "https://cult-ui.com/docs/components/hero-heatmap",
+      "category": "Marketing & Heroes",
+      "description": "Split-layout hero section with responsive Heatmap shader visuals (glowing gradient through an input shape), CTA content, and tech stack badges."
+    },
+    {
+      "name": "Hero Liquid Metal",
+      "slug": "hero-liquid-metal",
+      "url": "https://cult-ui.com/docs/components/hero-liquid-metal",
+      "category": "Marketing & Heroes",
+      "description": "Split-layout hero section with responsive LiquidMetal shader visuals, CTA content, and tech stack badges."
+    },
+    {
+      "name": "Hero Static Radial Gradient",
+      "slug": "hero-static-radial-gradient",
+      "url": "https://cult-ui.com/docs/components/hero-static-radial-gradient",
+      "category": "Marketing & Heroes",
+      "description": "Split-layout hero section with responsive StaticRadialGradient shader visuals, CTA content, and tech stack badges."
+    },
+    {
+      "name": "Bg Media Hero",
+      "slug": "bg-media",
+      "url": "https://cult-ui.com/docs/components/bg-media",
+      "category": "Marketing & Heroes",
+      "description": "A full screen background media component for videos or images"
+    },
+    {
+      "name": "Logo Carousel",
+      "slug": "logo-carousel",
+      "url": "https://cult-ui.com/docs/components/logo-carousel",
+      "category": "Marketing & Heroes",
+      "description": "An animated carousel component for displaying brand logos with smooth transitions."
+    },
+    {
+      "name": "Tweet Grid",
+      "slug": "tweet-grid",
+      "url": "https://cult-ui.com/docs/components/tweet-grid",
+      "category": "Marketing & Heroes",
+      "description": "A masonry grid full of tweets"
+    },
+    {
+      "name": "Gradient Heading",
+      "slug": "gradient-heading",
+      "url": "https://cult-ui.com/docs/components/gradient-heading",
+      "category": "Marketing & Heroes",
+      "description": "A cool gradient heading component"
+    },
+    {
+      "name": "Neumorph Button",
+      "slug": "neumorph-button",
+      "url": "https://cult-ui.com/docs/components/neumorph-button",
+      "category": "Buttons",
+      "description": "A neumorphic button component with customizable hover and press effects."
+    },
+    {
+      "name": "Texture Button",
+      "slug": "texture-button",
+      "url": "https://cult-ui.com/docs/components/texture-button",
+      "category": "Buttons",
+      "description": "A button with numorphic undertones"
+    },
+    {
+      "name": "Bg Animate Button",
+      "slug": "bg-animate-button",
+      "url": "https://cult-ui.com/docs/components/bg-animate-button",
+      "category": "Buttons",
+      "description": "A button with gradient and animation defaults"
+    },
+    {
+      "name": "Border Beam Button",
+      "slug": "border-beam-button",
+      "url": "https://cult-ui.com/docs/components/border-beam-button",
+      "category": "Buttons",
+      "description": "Animated border beam around the shadcn Button — text and icon variants powered by the Border Beam package."
+    },
+    {
+      "name": "Metal Button",
+      "slug": "metal-button",
+      "url": "https://cult-ui.com/docs/components/metal-button",
+      "category": "Buttons",
+      "description": "Animated liquid metal ring around the shadcn Button — text and icon variants powered by MetalFx."
+    },
+    {
+      "name": "Cosmic Button",
+      "slug": "cosmic-button",
+      "url": "https://cult-ui.com/docs/components/cosmic-button",
+      "category": "Buttons",
+      "description": "An animated button/link with a cosmic gradient border effect"
+    },
+    {
+      "name": "Gradient Button Group",
+      "slug": "gradient-button-group",
+      "url": "https://cult-ui.com/docs/components/gradient-button-group",
+      "category": "Buttons",
+      "description": "Premium, layered button group navigation with animated active states and a theme-toggle underlay."
+    },
+    {
+      "name": "Dynamic Island",
+      "slug": "dynamic-island",
+      "url": "https://cult-ui.com/docs/components/dynamic-island",
+      "category": "Expandable Widgets",
+      "description": "Composable, animated Dynamic Island primitives for building adaptive notification, status, and action surfaces."
+    },
+    {
+      "name": "Onboarding",
+      "slug": "onboarding",
+      "url": "https://cult-ui.com/docs/components/onboarding",
+      "category": "Expandable Widgets",
+      "description": "Composable multi-step onboarding primitives with feature carousel, choice group radio selector, tips list, and step indicator."
+    },
+    {
+      "name": "Family Button",
+      "slug": "family-button",
+      "url": "https://cult-ui.com/docs/components/family-button",
+      "category": "Expandable Widgets",
+      "description": "Animated expansion inspired by Family"
+    },
+    {
+      "name": "Toolbar Expandable",
+      "slug": "toolbar-expandable",
+      "url": "https://cult-ui.com/docs/components/toolbar-expandable",
+      "category": "Expandable Widgets",
+      "description": "Expandable toolbar component with step-based navigation, smooth animations, and enhanced scrolling"
+    },
+    {
+      "name": "Expandable Screen",
+      "slug": "expandable-screen",
+      "url": "https://cult-ui.com/docs/components/expandable-screen",
+      "category": "Expandable Widgets",
+      "description": "A full-screen expandable component with morphing animations using shared layout IDs for smooth transitions"
+    },
+    {
+      "name": "Expandable Card",
+      "slug": "expandable",
+      "url": "https://cult-ui.com/docs/components/expandable",
+      "category": "Expandable Widgets",
+      "description": "Expandable Card primitive to easily condense and expand details"
+    },
+    {
+      "name": "Morph Surface",
+      "slug": "morph-surface",
+      "url": "https://cult-ui.com/docs/components/morph-surface",
+      "category": "Expandable Widgets",
+      "description": "A morphing surface component with smooth animations, customizable dimensions, and configurable content"
+    },
+    {
+      "name": "Side Panel",
+      "slug": "side-panel",
+      "url": "https://cult-ui.com/docs/components/side-panel",
+      "category": "Expandable Widgets",
+      "description": "A side panel that triggers an expansion animation. Useful for video components or learn more etc."
+    },
+    {
+      "name": "Family Drawer",
+      "slug": "family-drawer",
+      "url": "https://cult-ui.com/docs/components/family-drawer",
+      "category": "Expandable Widgets",
+      "description": "A multi-view drawer component with smooth animations, view navigation, and customizable content views"
+    },
+    {
+      "name": "Intro Disclosure",
+      "slug": "intro-disclosure",
+      "url": "https://cult-ui.com/docs/components/intro-disclosure",
+      "category": "Expandable Widgets",
+      "description": "A multi-step onboarding and feature introduction component with responsive design."
+    },
+    {
+      "name": "Minimal Card",
+      "slug": "minimal-card",
+      "url": "https://cult-ui.com/docs/components/minimal-card",
+      "category": "Cards & Surfaces",
+      "description": "A minimal image card"
+    },
+    {
+      "name": "Cutout Card",
+      "slug": "cutout-card",
+      "url": "https://cult-ui.com/docs/components/cutout-card",
+      "category": "Cards & Surfaces",
+      "description": "Image card with cutout corner accents, hover motion, inset labels, pins, and reveal-on-hover actions."
+    },
+    {
+      "name": "Neumorph Eyebrow",
+      "slug": "neumorph-eyebrow",
+      "url": "https://cult-ui.com/docs/components/neumorph-eyebrow",
+      "category": "Cards & Surfaces",
+      "description": "A neumorphic eyebrow text component with subtle animation effects."
+    },
+    {
+      "name": "Texture Card",
+      "slug": "texture-card",
+      "url": "https://cult-ui.com/docs/components/texture-card",
+      "category": "Cards & Surfaces",
+      "description": "A well designed card with numorphic undertones"
+    },
+    {
+      "name": "Shift Card",
+      "slug": "shift-card",
+      "url": "https://cult-ui.com/docs/components/shift-card",
+      "category": "Cards & Surfaces",
+      "description": "A card that shows more detail on hover"
+    },
+    {
+      "name": "Browser Window",
+      "slug": "mock-browser-window",
+      "url": "https://cult-ui.com/docs/components/mock-browser-window",
+      "category": "Frames & Mockups",
+      "description": "A customizable browser window mockup component with support for Chrome, Safari, and generic styles, customizable sidebars, and themes"
+    },
+    {
+      "name": "Code Block",
+      "slug": "code-block",
+      "url": "https://cult-ui.com/docs/components/code-block",
+      "category": "Frames & Mockups",
+      "description": "A beautiful code block component with tabs, copy functionality, and smooth animations"
+    },
+    {
+      "name": "Terminal Animation",
+      "slug": "terminal-animation",
+      "url": "https://cult-ui.com/docs/components/terminal-animation",
+      "category": "Frames & Mockups",
+      "description": "Composable terminal UI primitives with typed command playback, tabbed scenarios, and customizable output rendering."
+    },
+    {
+      "name": "Texture Overlay",
+      "slug": "texture-overlay",
+      "url": "https://cult-ui.com/docs/components/texture-overlay",
+      "category": "Textures & Overlays",
+      "description": "A component that provides various texture overlay patterns using CSS gradients for adding visual texture to backgrounds and surfaces."
+    },
+    {
+      "name": "Distorted Glass",
+      "slug": "distorted-glass",
+      "url": "https://cult-ui.com/docs/components/distorted-glass",
+      "category": "Textures & Overlays",
+      "description": "A glass morphism effect component using SVG filters with fractal noise to create visual transitions between sections"
+    },
+    {
+      "name": "Background Texture",
+      "slug": "bg-image-texture",
+      "url": "https://cult-ui.com/docs/components/bg-image-texture",
+      "category": "Textures & Overlays",
+      "description": "A background texture component with multiple texture variants and customizable opacity"
+    },
+    {
+      "name": "Edge Blur",
+      "slug": "edge-blur",
+      "url": "https://cult-ui.com/docs/components/edge-blur",
+      "category": "Textures & Overlays",
+      "description": "Stacked backdrop-blur layers with a linear gradient mask for a soft fade at the top or bottom of the viewport (or a transformed container)."
+    },
+    {
+      "name": "Dither Image",
+      "slug": "dither-image",
+      "url": "https://cult-ui.com/docs/components/dither-image",
+      "category": "Textures & Overlays",
+      "description": "A compound figure built on next/image that applies a CSS-only Bayer dither through dither-plugin—full-frame dither, partial masked reveals, and typed props for every plugin CSS variable."
+    },
+    {
+      "name": "Grid Beam",
+      "slug": "grid-beam",
+      "url": "https://cult-ui.com/docs/components/grid-beam",
+      "category": "Visual Systems",
+      "description": "Animated canvas beams on a grid with palette presets, optional SVG dividers, and a headless useGridBeam hook for custom layouts."
+    },
+    {
+      "name": "Fractal Grid",
+      "slug": "bg-animated-fractal-grid",
+      "url": "https://cult-ui.com/docs/components/bg-animated-fractal-grid",
+      "category": "Visual Systems",
+      "description": "An interactive canvas fractal dot grid component to add dynamic visual interest to your UI."
+    },
+    {
+      "name": "Canvas Fractal Grid",
+      "slug": "canvas-fractal-grid",
+      "url": "https://cult-ui.com/docs/components/canvas-fractal-grid",
+      "category": "Visual Systems",
+      "description": "An interactive canvas fractal grid component to spice up your Hero."
+    },
+    {
+      "name": "Stripe Bg Guides",
+      "slug": "stripe-bg-guides",
+      "url": "https://cult-ui.com/docs/components/stripe-bg-guides",
+      "category": "Visual Systems",
+      "description": "A full screen background grid of lines that animate"
+    },
+    {
+      "name": "LightBoard",
+      "slug": "lightboard",
+      "url": "https://cult-ui.com/docs/components/lightboard",
+      "category": "Visual Systems",
+      "description": "A fun lightboard component used to display moving text and draw in a visually appealing way."
+    },
+    {
+      "name": "Shader Lens Blur",
+      "slug": "shader-lens-blur",
+      "url": "https://cult-ui.com/docs/components/shader-lens-blur",
+      "category": "Visual Systems",
+      "description": "Interactive WebGL lens blur shader with pointer-reactive distortion, color gradients, and shape variations."
+    },
+    {
+      "name": "SVG Shapes",
+      "slug": "svg-shapes",
+      "url": "https://cult-ui.com/docs/components/svg-shapes",
+      "category": "Visual Systems",
+      "description": "Wide viewBox SVG panels — polygons, architectural forms, sacred geometry, and Platonic wire projections — styled with currentColor for heroes and backgrounds."
+    },
+    {
+      "name": "SVG Shapes Animated",
+      "slug": "svg-shapes-animated",
+      "url": "https://cult-ui.com/docs/components/svg-shapes-animated",
+      "category": "Visual Systems",
+      "description": "Wide viewBox SVG shapes with scroll-triggered stroke drawing via Motion, plus extra primitives and panels beyond the static svg-shapes set."
+    },
+    {
+      "name": "SVG Bands",
+      "slug": "svg-bands",
+      "url": "https://cult-ui.com/docs/components/svg-bands",
+      "category": "Visual Systems",
+      "description": "Wide 2400-grid SVG section trims — battlements, zigzags, steep hero bands, wavy footers, and dual-notch frames for landing pages."
+    },
+    {
+      "name": "Direction Aware Tabs",
+      "slug": "direction-aware-tabs",
+      "url": "https://cult-ui.com/docs/components/direction-aware-tabs",
+      "category": "Navigation & Floating UI",
+      "description": "Tabs that animate direction correctly"
+    },
+    {
+      "name": "Floating Panel",
+      "slug": "floating-panel",
+      "url": "https://cult-ui.com/docs/components/floating-panel",
+      "category": "Navigation & Floating UI",
+      "description": "A headless, composable floating panel component"
+    },
+    {
+      "name": "Popover",
+      "slug": "popover",
+      "url": "https://cult-ui.com/docs/components/popover",
+      "category": "Navigation & Floating UI",
+      "description": "A headless popover animation component with customizable options."
+    },
+    {
+      "name": "Popover Form",
+      "slug": "popover-form",
+      "url": "https://cult-ui.com/docs/components/popover-form",
+      "category": "Navigation & Floating UI",
+      "description": "A headless popover form animation component with customizable options."
+    },
+    {
+      "name": "MacOS Dock",
+      "slug": "dock",
+      "url": "https://cult-ui.com/docs/components/dock",
+      "category": "Navigation & Floating UI",
+      "description": "An interactive dock component inspired by macOS dock with animation capabilities."
+    },
+    {
+      "name": "Color Picker",
+      "slug": "color-picker",
+      "url": "https://cult-ui.com/docs/components/color-picker",
+      "category": "Inputs & Decision UI",
+      "description": "A color picker component that allows users to select and customize colors with various formats and options."
+    },
+    {
+      "name": "Choice Poll",
+      "slug": "choice-poll",
+      "url": "https://cult-ui.com/docs/components/choice-poll",
+      "category": "Inputs & Decision UI",
+      "description": "A poll component with single or multiple selection, optional results, and keyboard navigation."
+    },
+    {
+      "name": "Feature Poll",
+      "slug": "feature-poll",
+      "url": "https://cult-ui.com/docs/components/feature-poll",
+      "category": "Inputs & Decision UI",
+      "description": "A poll / feature-vote component with single or multiple selection, optional results, and keyboard navigation."
+    },
+    {
+      "name": "Feature Voting",
+      "slug": "feature-voting",
+      "url": "https://cult-ui.com/docs/components/feature-voting",
+      "category": "Inputs & Decision UI",
+      "description": "List of features with up-vote support, optional sorting by vote count, and controlled or uncontrolled state."
+    },
+    {
+      "name": "Vote Tally",
+      "slug": "vote-tally",
+      "url": "https://cult-ui.com/docs/components/vote-tally",
+      "category": "Inputs & Decision UI",
+      "description": "List of items with up-vote support, optional sorting by vote count, and controlled or uncontrolled state."
+    },
+    {
+      "name": "Poll Widget",
+      "slug": "poll-widget",
+      "url": "https://cult-ui.com/docs/components/poll-widget",
+      "category": "Inputs & Decision UI",
+      "description": "Poll widget with inline, popover, and dialog modes, optional results, and animations."
+    },
+    {
+      "name": "Prompt Library",
+      "slug": "prompt-library",
+      "url": "https://cult-ui.com/docs/components/prompt-library",
+      "category": "AI & Productivity Widgets",
+      "description": "Browse, insert, and manage prompt templates with categories and custom prompts."
+    },
+    {
+      "name": "AI Instructions",
+      "slug": "ai-instructions",
+      "url": "https://cult-ui.com/docs/components/ai-instructions",
+      "category": "AI & Productivity Widgets",
+      "description": "Manage and toggle AI instructions with a popover, search, and create-dialog."
+    },
+    {
+      "name": "Timer",
+      "slug": "timer",
+      "url": "https://cult-ui.com/docs/components/timer",
+      "category": "AI & Productivity Widgets",
+      "description": "A flexible timer component system with compound components for displaying elapsed time. Features multiple variants, sizes, formats, and a custom hook for advanced timer functionality."
+    },
+    {
+      "name": "Sortable List",
+      "slug": "sortable-list",
+      "url": "https://cult-ui.com/docs/components/sortable-list",
+      "category": "AI & Productivity Widgets",
+      "description": "An animated sortable list"
+    },
+    {
+      "name": "3D Carousel",
+      "slug": "three-d-carousel",
+      "url": "https://cult-ui.com/docs/components/three-d-carousel",
+      "category": "Media",
+      "description": "A 3D image carousel"
+    },
+    {
+      "name": "Hover Video Player",
+      "slug": "hover-video-player",
+      "url": "https://cult-ui.com/docs/components/hover-video-player",
+      "category": "Media",
+      "description": "A video player component that plays on hover with advanced features like mobile support, picture-in-picture, and custom overlays."
+    },
+    {
+      "name": "YouTube Video Player",
+      "slug": "youtube-video-player",
+      "url": "https://cult-ui.com/docs/components/youtube-video-player",
+      "category": "Media",
+      "description": "A modern YouTube video player component with expandable modal view, custom thumbnails, and smooth animations."
+    },
+    {
+      "name": "Feature Carousel",
+      "slug": "feature-carousel",
+      "url": "https://cult-ui.com/docs/components/feature-carousel",
+      "category": "Media",
+      "description": "An animated carousel component for showcasing features with smooth transitions and interactive elements."
+    },
+    {
+      "name": "Loading Carousel",
+      "slug": "loading-carousel",
+      "url": "https://cult-ui.com/docs/components/loading-carousel",
+      "category": "Media",
+      "description": "An animated carousel component with loading indicators and customizable display options."
+    },
+    {
+      "name": "Text Animate",
+      "slug": "text-animate",
+      "url": "https://cult-ui.com/docs/components/text-animate",
+      "category": "Typography & Text Effects",
+      "description": "A framer motion text animation component"
+    },
+    {
+      "name": "Typewriter",
+      "slug": "typewriter",
+      "url": "https://cult-ui.com/docs/components/typewriter",
+      "category": "Typography & Text Effects",
+      "description": "A repeating typewriter effect"
+    },
+    {
+      "name": "Animated Number",
+      "slug": "animated-number",
+      "url": "https://cult-ui.com/docs/components/animated-number",
+      "category": "Typography & Text Effects",
+      "description": "A simple animated number animation"
+    },
+    {
+      "name": "Pixel Heading (Char)",
+      "slug": "pixel-heading-character",
+      "url": "https://cult-ui.com/docs/components/pixel-heading-character",
+      "category": "Typography & Text Effects",
+      "description": "Per-character pixel-font heading with four animation modes using Geist pixel fonts. Hover or autoplay to see fonts cycle across each character independently."
+    },
+    {
+      "name": "Pixel Heading (Word)",
+      "slug": "pixel-heading-word",
+      "url": "https://cult-ui.com/docs/components/pixel-heading-word",
+      "category": "Typography & Text Effects",
+      "description": "Whole-word pixel-font heading that swaps between two fonts or cycles through all five on hover. Uses Geist pixel fonts with zero animation dependencies."
+    },
+    {
+      "name": "Pixel Paragraph",
+      "slug": "pixel-paragraph-words",
+      "url": "https://cult-ui.com/docs/components/pixel-paragraph-words",
+      "category": "Typography & Text Effects",
+      "description": "Paragraph where specific words render in a pixel font while the rest of the text stays in the normal typeface."
+    },
+    {
+      "name": "Pixel Paragraph Inv",
+      "slug": "pixel-paragraph-words-inverse",
+      "url": "https://cult-ui.com/docs/components/pixel-paragraph-words-inverse",
+      "category": "Typography & Text Effects",
+      "description": "Paragraph rendered in a pixel font where specific words escape into a sans or mono font."
+    },
+    {
+      "name": "Text Gif",
+      "slug": "text-gif",
+      "url": "https://cult-ui.com/docs/components/text-gif",
+      "category": "Typography & Text Effects",
+      "description": "A customizable text component that loads a gif as the background and clips the text with it."
+    },
+    {
+      "name": "Squiggle Arrow",
+      "slug": "squiggle-arrow",
+      "url": "https://cult-ui.com/docs/components/squiggle-arrow",
+      "category": "Typography & Text Effects",
+      "description": "A playful, hand-drawn squiggly arrow component with customizable variants, directions, and sizes"
+    }
+  ]
+}

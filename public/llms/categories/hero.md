@@ -12,3 +12,8 @@
 - **Shape Shifter** https://animata.design/docs/hero/shape-shifter — A hero section with a shape-shifting component in the center [MIT, live-previewable, category: hero]
 - **Slack's intro screen** https://animata.design/docs/hero/slack-intro — An intro hero inspired by Slack's intro screen. [MIT, live-previewable, category: hero]
 - **Hero** https://www.launchuicomponents.com/docs/sections/hero — A powerful hero section component built with shadcn/ui. [MIT, live-previewable, category: hero]
+- **Hero Dithering** https://cult-ui.com/docs/components/hero-dithering — Split-layout hero section with responsive dithering shader visuals, CTA content, and tech stack badges. [MIT, live-previewable, category: hero]
+- **Hero Color Panels** https://cult-ui.com/docs/components/hero-color-panels — Split-layout hero section with responsive ColorPanels shader visuals, CTA content, and tech stack badges. [MIT, live-previewable, category: hero]
+- **Hero Heatmap** https://cult-ui.com/docs/components/hero-heatmap — Split-layout hero section with responsive Heatmap shader visuals (glowing gradient through an input shape), CTA content, and tech stack badges. [MIT, live-previewable, category: hero]
+- **Hero Liquid Metal** https://cult-ui.com/docs/components/hero-liquid-metal — Split-layout hero section with responsive LiquidMetal shader visuals, CTA content, and tech stack badges. [MIT, live-previewable, category: hero]
+- **Hero Static Radial Gradient** https://cult-ui.com/docs/components/hero-static-radial-gradient — Split-layout hero section with responsive StaticRadialGradient shader visuals, CTA content, and tech stack badges. [MIT, live-previewable, category: hero]

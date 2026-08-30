@@ -1,0 +1,447 @@
+{
+  "status": "accepted",
+  "id": "parkui",
+  "name": "Park UI",
+  "url": "https://park-ui.com/",
+  "repo": "https://github.com/chakra-ui/park-ui",
+  "license": "MIT",
+  "install": "npx @park-ui/cli add button (requires Panda CSS project; start with npx @park-ui/cli init; supports --all)",
+  "stack": ["react", "solid", "typescript", "panda-css", "ark-ui"],
+  "notes": "shadcn-style copy-paste registry: CLI fetches per-item JSON from https://park-ui.com/registry/{framework}/{name}.json and writes source into your project. VERIFIED example: https://park-ui.com/registry/react/button.json returns files[0].content with 2423 chars of real button.tsx source (deps @ark-ui/react + react; registryDependencies button-recipe, group, loader). Index at https://park-ui.com/registry/react/index.json = 149 items: 62 registry:ui components, 56 registry:recipe (Panda CSS style recipes auto-installed as dependencies of their component), 31 registry:color (palette tokens, free). All 62 UI components are free; the only paid product is the Figma Pro Kit (a design file, not code). License: MIT at repo root (Copyright 2025 cschroeter); repo lives in the chakra-ui org since Nov 2025; CLI npm package @park-ui/cli (v1.0.1, MIT) is also MIT. IMPORTANT gotcha: the npm package named \"park-ui\" (v2.3.2) is an UNRELATED Vue 3 library from 2023 - \"npx park-ui@latest add ...\" does NOT work; use npx @park-ui/cli. Frameworks: React and Solid registries are live (62 and 63 UI items); Vue/Svelte components exist in the repo but their registry endpoints 404. Docs sidebar groups components into 9 categories used here verbatim: buttons(3), data-display(6+image), disclosure(3), feedback(5+loader), forms(23), layout(4), navigation(4), overlays(6), typography(5+span). Three items (image, loader, span) are registry-only internal helpers with no docs page - their url points at the registry JSON. Docs URLs are framework-agnostic (https://park-ui.com/docs/components/<slug>) with a client-side React/Solid code toggle.",
+  "components": [
+    {
+      "name": "Absolute Center",
+      "slug": "absolute-center",
+      "url": "https://park-ui.com/docs/components/absolute-center",
+      "category": "layout",
+      "description": "A utility component for centering content within its parent container."
+    },
+    {
+      "name": "Accordion",
+      "slug": "accordion",
+      "url": "https://park-ui.com/docs/components/accordion",
+      "category": "disclosure",
+      "description": "A disclosure component with collapsible sections for organizing content."
+    },
+    {
+      "name": "Alert",
+      "slug": "alert",
+      "url": "https://park-ui.com/docs/components/alert",
+      "category": "feedback",
+      "description": "A component for displaying important notifications and feedback messages."
+    },
+    {
+      "name": "Avatar",
+      "slug": "avatar",
+      "url": "https://park-ui.com/docs/components/avatar",
+      "category": "data-display",
+      "description": "A component for displaying user profile images with fallback support."
+    },
+    {
+      "name": "Badge",
+      "slug": "badge",
+      "url": "https://park-ui.com/docs/components/badge",
+      "category": "data-display",
+      "description": "A component for displaying small labels and status indicators."
+    },
+    {
+      "name": "Breadcrumb",
+      "slug": "breadcrumb",
+      "url": "https://park-ui.com/docs/components/breadcrumb",
+      "category": "navigation",
+      "description": "A navigation component showing the user's location within a site hierarchy."
+    },
+    {
+      "name": "Button",
+      "slug": "button",
+      "url": "https://park-ui.com/docs/components/button",
+      "category": "buttons",
+      "description": "A clickable component for triggering actions and user interactions."
+    },
+    {
+      "name": "Card",
+      "slug": "card",
+      "url": "https://park-ui.com/docs/components/card",
+      "category": "data-display",
+      "description": "A container component for grouping related content and actions."
+    },
+    {
+      "name": "Carousel",
+      "slug": "carousel",
+      "url": "https://park-ui.com/docs/components/carousel",
+      "category": "disclosure",
+      "description": "A component for displaying multiple items in a rotating slideshow format."
+    },
+    {
+      "name": "Checkbox",
+      "slug": "checkbox",
+      "url": "https://park-ui.com/docs/components/checkbox",
+      "category": "forms",
+      "description": "A form input component for toggling between checked and unchecked states."
+    },
+    {
+      "name": "Clipboard",
+      "slug": "clipboard",
+      "url": "https://park-ui.com/docs/components/clipboard",
+      "category": "data-display",
+      "description": "A component for copying text content to the system clipboard."
+    },
+    {
+      "name": "Close Button",
+      "slug": "close-button",
+      "url": "https://park-ui.com/docs/components/close-button",
+      "category": "buttons",
+      "description": "A button component specifically designed for closing modals and overlays."
+    },
+    {
+      "name": "Code",
+      "slug": "code",
+      "url": "https://park-ui.com/docs/components/code",
+      "category": "typography",
+      "description": "A typography component for displaying inline code snippets."
+    },
+    {
+      "name": "Collapsible",
+      "slug": "collapsible",
+      "url": "https://park-ui.com/docs/components/collapsible",
+      "category": "disclosure",
+      "description": "A component for showing and hiding content with smooth transitions."
+    },
+    {
+      "name": "Color Picker (WIP)",
+      "slug": "color-picker",
+      "url": "https://park-ui.com/docs/components/color-picker",
+      "category": "forms",
+      "description": "An input component for selecting and manipulating color values."
+    },
+    {
+      "name": "Combobox",
+      "slug": "combobox",
+      "url": "https://park-ui.com/docs/components/combobox",
+      "category": "forms",
+      "description": "A searchable dropdown component combining input and selection features."
+    },
+    {
+      "name": "Date Picker (WIP)",
+      "slug": "date-picker",
+      "url": "https://park-ui.com/docs/components/date-picker",
+      "category": "forms",
+      "description": "An input component for selecting dates with a calendar interface."
+    },
+    {
+      "name": "Dialog",
+      "slug": "dialog",
+      "url": "https://park-ui.com/docs/components/dialog",
+      "category": "overlays",
+      "description": "A modal component for displaying important content requiring user response."
+    },
+    {
+      "name": "Display Value",
+      "slug": "display-value",
+      "url": "https://park-ui.com/docs/components/display-value",
+      "category": "typography",
+      "description": "Display values with consistent fallback for empty values."
+    },
+    {
+      "name": "Drawer",
+      "slug": "drawer",
+      "url": "https://park-ui.com/docs/components/drawer",
+      "category": "overlays",
+      "description": "A slide-out panel component for navigation or additional content."
+    },
+    {
+      "name": "Editable",
+      "slug": "editable",
+      "url": "https://park-ui.com/docs/components/editable",
+      "category": "forms",
+      "description": "A component for inline text editing with confirmation controls."
+    },
+    {
+      "name": "Field",
+      "slug": "field",
+      "url": "https://park-ui.com/docs/components/field",
+      "category": "forms",
+      "description": "A wrapper component for form inputs with labels and error messages."
+    },
+    {
+      "name": "Fieldset",
+      "slug": "fieldset",
+      "url": "https://park-ui.com/docs/components/fieldset",
+      "category": "forms",
+      "description": "A grouping component for organizing related form fields."
+    },
+    {
+      "name": "File Upload",
+      "slug": "file-upload",
+      "url": "https://park-ui.com/docs/components/file-upload",
+      "category": "forms",
+      "description": "A component for selecting and uploading files from the user's device."
+    },
+    {
+      "name": "Group",
+      "slug": "group",
+      "url": "https://park-ui.com/docs/components/group",
+      "category": "layout",
+      "description": "A layout component for grouping related elements visually."
+    },
+    {
+      "name": "Heading",
+      "slug": "heading",
+      "url": "https://park-ui.com/docs/components/heading",
+      "category": "typography",
+      "description": "A typography component for displaying page and section headings."
+    },
+    {
+      "name": "Hover Card",
+      "slug": "hover-card",
+      "url": "https://park-ui.com/docs/components/hover-card",
+      "category": "overlays",
+      "description": "A popover component that displays content when hovering over an element."
+    },
+    {
+      "name": "Icon",
+      "slug": "icon",
+      "url": "https://park-ui.com/docs/components/icon",
+      "category": "data-display",
+      "description": "A component for displaying scalable vector icons."
+    },
+    {
+      "name": "Icon Button",
+      "slug": "icon-button",
+      "url": "https://park-ui.com/docs/components/icon-button",
+      "category": "buttons",
+      "description": "A button component designed specifically for displaying icons."
+    },
+    {
+      "name": "Image",
+      "slug": "image",
+      "url": "https://park-ui.com/registry/react/image.json",
+      "category": "data-display",
+      "description": "A styled img element with object-fit and object-position props for displaying images; internal helper without its own docs page."
+    },
+    {
+      "name": "Input",
+      "slug": "input",
+      "url": "https://park-ui.com/docs/components/input",
+      "category": "forms",
+      "description": "A form input component for collecting text input from users."
+    },
+    {
+      "name": "Input Addon",
+      "slug": "input-addon",
+      "url": "https://park-ui.com/docs/components/input-addon",
+      "category": "forms",
+      "description": "A component for adding prefix or suffix content to input fields."
+    },
+    {
+      "name": "Input Group",
+      "slug": "input-group",
+      "url": "https://park-ui.com/docs/components/input-group",
+      "category": "forms",
+      "description": "A component for combining input fields with additional elements."
+    },
+    {
+      "name": "Kbd",
+      "slug": "kbd",
+      "url": "https://park-ui.com/docs/components/kbd",
+      "category": "typography",
+      "description": "A typography component for displaying keyboard input and shortcuts."
+    },
+    {
+      "name": "Link",
+      "slug": "link",
+      "url": "https://park-ui.com/docs/components/link",
+      "category": "navigation",
+      "description": "A navigation component for creating accessible hyperlinks."
+    },
+    {
+      "name": "Loader",
+      "slug": "loader",
+      "url": "https://park-ui.com/registry/react/loader.json",
+      "category": "feedback",
+      "description": "An absolutely-centered overlay that shows a spinner over content while loading; used inside Button and other components, no docs page."
+    },
+    {
+      "name": "Menu",
+      "slug": "menu",
+      "url": "https://park-ui.com/docs/components/menu",
+      "category": "overlays",
+      "description": "A dropdown component for displaying a list of actions or options."
+    },
+    {
+      "name": "Number Input",
+      "slug": "number-input",
+      "url": "https://park-ui.com/docs/components/number-input",
+      "category": "forms",
+      "description": "A form input component for entering and adjusting numeric values."
+    },
+    {
+      "name": "Pagination",
+      "slug": "pagination",
+      "url": "https://park-ui.com/docs/components/pagination",
+      "category": "navigation",
+      "description": "A navigation component for browsing through pages of content."
+    },
+    {
+      "name": "Pin Input",
+      "slug": "pin-input",
+      "url": "https://park-ui.com/docs/components/pin-input",
+      "category": "forms",
+      "description": "A form input component for entering PIN codes and verification codes."
+    },
+    {
+      "name": "Popover",
+      "slug": "popover",
+      "url": "https://park-ui.com/docs/components/popover",
+      "category": "overlays",
+      "description": "A floating overlay component for displaying contextual information."
+    },
+    {
+      "name": "Progress",
+      "slug": "progress",
+      "url": "https://park-ui.com/docs/components/progress",
+      "category": "feedback",
+      "description": "A display component for showing task completion and loading states."
+    },
+    {
+      "name": "Radio Card Group",
+      "slug": "radio-card-group",
+      "url": "https://park-ui.com/docs/components/radio-card-group",
+      "category": "forms",
+      "description": "A form input component for selecting one option from a set of cards."
+    },
+    {
+      "name": "Radio Group",
+      "slug": "radio-group",
+      "url": "https://park-ui.com/docs/components/radio-group",
+      "category": "forms",
+      "description": "A form input component for selecting one option from a set of choices."
+    },
+    {
+      "name": "Rating Group",
+      "slug": "rating-group",
+      "url": "https://park-ui.com/docs/components/rating-group",
+      "category": "forms",
+      "description": "A form input component for capturing user ratings and reviews."
+    },
+    {
+      "name": "Scroll Area",
+      "slug": "scroll-area",
+      "url": "https://park-ui.com/docs/components/scroll-area",
+      "category": "layout",
+      "description": "A container component with customizable scrollbars for overflowing content."
+    },
+    {
+      "name": "Segment Group",
+      "slug": "segment-group",
+      "url": "https://park-ui.com/docs/components/segment-group",
+      "category": "forms",
+      "description": "A form input component for selecting one option from a segmented control."
+    },
+    {
+      "name": "Select",
+      "slug": "select",
+      "url": "https://park-ui.com/docs/components/select",
+      "category": "forms",
+      "description": "A form input component for choosing one option from a dropdown list."
+    },
+    {
+      "name": "Skeleton",
+      "slug": "skeleton",
+      "url": "https://park-ui.com/docs/components/skeleton",
+      "category": "feedback",
+      "description": "A placeholder component for showing loading states of content."
+    },
+    {
+      "name": "Slider",
+      "slug": "slider",
+      "url": "https://park-ui.com/docs/components/slider",
+      "category": "forms",
+      "description": "A form input component for selecting values from a continuous range."
+    },
+    {
+      "name": "Span",
+      "slug": "span",
+      "url": "https://park-ui.com/registry/react/span.json",
+      "category": "typography",
+      "description": "A styled span element that serves as the inline building block for other Park UI components; no docs page."
+    },
+    {
+      "name": "Spinner",
+      "slug": "spinner",
+      "url": "https://park-ui.com/docs/components/spinner",
+      "category": "feedback",
+      "description": "A feedback component for indicating loading or processing states."
+    },
+    {
+      "name": "Splitter",
+      "slug": "splitter",
+      "url": "https://park-ui.com/docs/components/splitter",
+      "category": "layout",
+      "description": "A layout component for creating resizable split panes and panels."
+    },
+    {
+      "name": "Switch",
+      "slug": "switch",
+      "url": "https://park-ui.com/docs/components/switch",
+      "category": "forms",
+      "description": "A form input component for toggling between on and off states."
+    },
+    {
+      "name": "Table",
+      "slug": "table",
+      "url": "https://park-ui.com/docs/components/table",
+      "category": "data-display",
+      "description": "A component for displaying data in rows and columns."
+    },
+    {
+      "name": "Tabs",
+      "slug": "tabs",
+      "url": "https://park-ui.com/docs/components/tabs",
+      "category": "navigation",
+      "description": "A component for organizing content into switchable panels."
+    },
+    {
+      "name": "Tags Input",
+      "slug": "tags-input",
+      "url": "https://park-ui.com/docs/components/tags-input",
+      "category": "forms",
+      "description": "A form control for adding and removing multiple tags or labels."
+    },
+    {
+      "name": "Text",
+      "slug": "text",
+      "url": "https://park-ui.com/docs/components/text",
+      "category": "typography",
+      "description": "A typography component for displaying body text and paragraphs."
+    },
+    {
+      "name": "Textarea",
+      "slug": "textarea",
+      "url": "https://park-ui.com/docs/components/textarea",
+      "category": "forms",
+      "description": "A form input component for entering multi-line text."
+    },
+    {
+      "name": "Toast",
+      "slug": "toast",
+      "url": "https://park-ui.com/docs/components/toast",
+      "category": "feedback",
+      "description": "A feedback component for displaying temporary notification messages."
+    },
+    {
+      "name": "Toggle Group",
+      "slug": "toggle-group",
+      "url": "https://park-ui.com/docs/components/toggle-group",
+      "category": "forms",
+      "description": "A form input component for selecting multiple options from a set."
+    },
+    {
+      "name": "Tooltip",
+      "slug": "tooltip",
+      "url": "https://park-ui.com/docs/components/tooltip",
+      "category": "overlays",
+      "description": "A component for displaying contextual information on hover or focus."
+    }
+  ]
+}

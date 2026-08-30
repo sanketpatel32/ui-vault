@@ -1,0 +1,49 @@
+# Kibo UI
+> The shadcn registry for everything that doesn't exist yet.
+- URL: https://www.kibo-ui.com
+- License: MIT — live-previewable
+- Stack: react, typescript, tailwind, shadcn, radix, motion
+- Install: `npx kibo-ui add <component>`
+- Notes: MIT (github.com/shadcnblocks/kibo). Registry at kibo-ui.com/r/<name>.json; the 28 site blocks are CLI-only (no registry endpoint) and not cataloged. Sandboxed previews run in-browser; glimpse fetches meta tags only in their hosted demo.
+- Cataloged in UI Vault: 40 entries
+## Entries
+- **Avatar Stack** https://www.kibo-ui.com/components/avatar-stack — Avatar Stack is a component that allows you to stack and overlap avatars. [MIT, live-previewable, category: data-display]
+- **Cursor** https://www.kibo-ui.com/components/cursor — A cursor component, great for realtime interactive applications. [MIT, live-previewable, category: micro-interactions]
+- **Calendar** https://www.kibo-ui.com/components/calendar — The calendar view displays features on a grid calendar. Specifically it shows the end date of each feature, and groups features by day. [MIT, live-previewable, category: data-display]
+- **Gantt** https://www.kibo-ui.com/components/gantt — The Gantt chart is a powerful tool for visualizing project schedules and tracking the progress of tasks. It provides a clear, hierarchical view of tasks, allowing you to easily identify manage project timelines. [MIT, live-previewable, category: data-display]
+- **Kanban** https://www.kibo-ui.com/components/kanban — A kanban board is a visual tool that helps you manage and visualize your work. It is a board with columns, and each column represents a status, e.g. "Backlog", "In Progress", "Done". [MIT, live-previewable, category: data-display]
+- **List** https://www.kibo-ui.com/components/list — List views are a great way to show a list of tasks grouped by status and ranked by priority. [MIT, live-previewable, category: data-display]
+- **Table** https://www.kibo-ui.com/components/table — Table views are used to display data in a tabular format. They are useful for displaying large amounts of data in a structured way. [MIT, live-previewable, category: data-display]
+- **Code Block** https://www.kibo-ui.com/components/code-block — Provides syntax highlighting, line numbers, and copy to clipboard functionality for code blocks. [MIT, live-previewable, category: data-display]
+- **Contribution Graph** https://www.kibo-ui.com/components/contribution-graph — A GitHub-style contribution graph component that displays activity levels over time. [MIT, live-previewable, category: data-display]
+- **Sandbox** https://www.kibo-ui.com/components/sandbox — The sandbox component allows you to preview and test components in a sandboxed environment. [MIT, live-previewable, category: data-display]
+- **Snippet** https://www.kibo-ui.com/components/snippet — Snippet is a component that allows you to display and copy code in a tabbed interface. [MIT, live-previewable, category: data-display]
+- **Choicebox** https://www.kibo-ui.com/components/choicebox — Choiceboxes are a great way to show radio or checkbox options with a card style. [MIT, live-previewable, category: forms]
+- **Combobox** https://www.kibo-ui.com/components/combobox — Autocomplete input and command palette with a list of suggestions. [MIT, live-previewable, category: forms]
+- **Dropzone** https://www.kibo-ui.com/components/dropzone — Allows users to drag-and-drop files into a container to upload or process them. [MIT, live-previewable, category: forms]
+- **Mini Calendar** https://www.kibo-ui.com/components/mini-calendar — A composable mini calendar component for picking dates close to today. [MIT, live-previewable, category: forms]
+- **Tags** https://www.kibo-ui.com/components/tags — Tags are a way to apply multiple labels to an item. [MIT, live-previewable, category: forms]
+- **Image Crop** https://www.kibo-ui.com/components/image-crop — A component that allows users to crop images with customizable aspect ratios and circular cropping options. [MIT, live-previewable, category: forms]
+- **Image Zoom** https://www.kibo-ui.com/components/image-zoom — Image zoom is a component that allows you to zoom in on an image. [MIT, live-previewable, category: overlays]
+- **Credit Card** https://www.kibo-ui.com/components/credit-card — Credit card components for displaying and validating credit card information. [MIT, live-previewable, category: forms]
+- **Ticker** https://www.kibo-ui.com/components/ticker — A composable finance ticker for displaying symbols, prices and changes. [MIT, live-previewable, category: numbers]
+- **Stories** https://www.kibo-ui.com/components/stories — A carousel of friends' stories, in video, image or avatar format. [MIT, live-previewable, category: micro-interactions]
+- **Reel** https://www.kibo-ui.com/components/reel — A composable, Instagram-style Reel component with progress indicators and navigation controls. [MIT, live-previewable, category: micro-interactions]
+- **Video Player** https://www.kibo-ui.com/components/video-player — A composable, shadcn/ui styled video player component that uses the media-chrome library. [MIT, live-previewable, category: overlays]
+- **Announcement** https://www.kibo-ui.com/components/announcement — A compound badge designed to display an announcement. [MIT, live-previewable, category: feedback]
+- **Banner** https://www.kibo-ui.com/components/banner — A banner is a full-width component that can be used to show a message and action to the user. [MIT, live-previewable, category: feedback]
+- **Color Picker** https://www.kibo-ui.com/components/color-picker — Allows users to select a color. Modeled after the color picker in Figma. [MIT, live-previewable, category: forms]
+- **Comparison** https://www.kibo-ui.com/components/comparison — A slider-based component for comparing two items in an overlay. [MIT, live-previewable, category: micro-interactions]
+- **Deck** https://www.kibo-ui.com/components/deck — A Tinder-like swipeable card stack component with smooth animations. [MIT, live-previewable, category: micro-interactions]
+- **Dialog Stack** https://www.kibo-ui.com/components/dialog-stack — Composable stacked dialogs, useful for creating a wizard, nested form or multi-step process. It provides a consistent layout and styling for each dialog, and includes navigation components to move between them. [MIT, live-previewable, category: overlays]
+- **Editor** https://www.kibo-ui.com/components/editor — The Editor component is a powerful and flexible text editor that allows you to create and edit rich text content. [MIT, live-previewable, category: forms]
+- **Glimpse** https://www.kibo-ui.com/components/glimpse — A component that shows a preview of a URL when hovering over a link. [MIT, live-previewable, category: micro-interactions]
+- **Marquee** https://www.kibo-ui.com/components/marquee — Marquees are a great way to show a list of items in a horizontal scrolling motion. [MIT, live-previewable, category: micro-interactions]
+- **Pill** https://www.kibo-ui.com/components/pill — A flexible badge component designed for a variety of use cases. [MIT, live-previewable, category: data-display]
+- **QR Code** https://www.kibo-ui.com/components/qr-code — QR Code is a component that generates a QR code from a string. [MIT, live-previewable, category: data-display]
+- **Rating** https://www.kibo-ui.com/components/rating — A star rating component with keyboard navigation and hover effects. [MIT, live-previewable, category: forms]
+- **Relative Time** https://www.kibo-ui.com/components/relative-time — A component that displays time in various timezones. [MIT, live-previewable, category: data-display]
+- **Spinner** https://www.kibo-ui.com/components/spinner — The Spinner component expands the shadcn spinner component with additional variants. [MIT, live-previewable, category: feedback]
+- **Status** https://www.kibo-ui.com/components/status — Status components are used to display the uptime of a service. [MIT, live-previewable, category: data-display]
+- **Theme Switcher** https://www.kibo-ui.com/components/theme-switcher — A component to switch between light, dark and system theme. [MIT, live-previewable, category: buttons]
+- **Tree** https://www.kibo-ui.com/components/tree — A composable tree component with animated expand/collapse and customizable nodes for displaying hierarchical data structures. [MIT, live-previewable, category: data-display]

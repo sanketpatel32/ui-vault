@@ -1,0 +1,12 @@
+{
+  "status": "rejected",
+  "id": "snakeui",
+  "name": "Snake UI",
+  "url": "https://snakeui.dev",
+  "repo": null,
+  "license": null,
+  "install": null,
+  "stack": [],
+  "notes": "Library does not exist; rejected because it cannot be verified as free/open-source or as a real project at all. Evidence (checked 2026-08-29): (1) https://snakeui.dev and https://www.snakeui.dev return authoritative NXDOMAIN from the .dev TLD nameservers (ns-tld1.charlestonroadregistry.com, Google Registry SOA) - the domain is unregistered, not merely down. Verified independently via Google DoH (dns.google/resolve) and Cloudflare DoH; control fetch of example.com over the same DoH path returned 200, ruling out local DNS/network blocking. (2) Wayback Machine (web.archive.org CDX) has zero snapshots of any snakeui.dev URL, including /r/registry.json - the site has never been archived, so it almost certainly never hosted content. (3) https://snakeui.dev/r/registry.json, /r/index.json and /r/<name>.json are unreachable for the same reason (no DNS). (4) Alternative domains all NXDOMAIN: snakeui.com, snakeui.io, snake-ui.dev, snake-ui.com, getsnakeui.dev, snakeui.sh. snakeui.vercel.app does resolve but is a peer-to-peer snake GAME (peerjs, canvas), not a component library. (5) npm registry search for 'snakeui' returns 0 packages. (6) GitHub search: no org/repo for a Snake UI React component library. The only GitHub user named SnakeUI (github.com/SnakeUI) is a personal account with PHP/typecho blog repos; closest name matches are vue-snake-ui (Vue 2, not React, not shadcn) and asynchronous-x/snake-eater-ui (small cyberpunk React+Storybook lib, not 'Snake UI', no shadcn registry, no site). (7) Multiple web searches ('snake ui' react shadcn registry, 'snakeui' tailwind, site:snakeui.dev, 'snakeui.dev') surface no such library and no mentions of a 60+ component registry by this name. Conclusion: 'Snake UI (snakeui.dev)' appears to be a fabricated/hallucinated entry - no repo, no license, no registry to verify, no component set to extract. If a real library was intended, likely candidates with similar names/profile: none match on all criteria; do not catalog without a corrected URL. Note: sandbox default DNS blocked all curl resolution in this environment; fetches were done with curl --doh-url https://dns.google/dns-query.",
+  "components": []
+}
