@@ -1,11 +1,13 @@
-import * as ComponentModule from "./text-animate";
+import { TextAnimate } from "./text-animate";
 
+// Demo from the official magicui docs example
+// (https://magicui.design/docs/components/text-animate).
 export default function Preview() {
-  const Component = (ComponentModule as any).default || (Object.values(ComponentModule)[0] as any);
-  if (!Component) return <div className="text-xs text-muted-fg">Component loaded</div>;
   return (
     <div className="flex items-center justify-center p-4">
-      <Component />
+      <TextAnimate animation="blurInUp" by="character" once className="text-2xl font-semibold">
+        Blur in by character
+      </TextAnimate>
     </div>
   );
 }
