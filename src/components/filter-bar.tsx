@@ -79,6 +79,8 @@ export function FilterBar({
           <button
             key={tag}
             type="button"
+            aria-pressed={filters.tag === tag}
+            aria-label={`Filter by tag ${tag} (${count})`}
             onClick={() => set({ tag: filters.tag === tag ? "" : tag })}
             className={cn(
               "cursor-pointer rounded-full border px-2.5 py-1 text-[11px] transition-colors",
