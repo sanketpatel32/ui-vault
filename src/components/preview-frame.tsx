@@ -1,15 +1,7 @@
-import {
-  Component,
-  lazy,
-  Suspense,
-  useEffect,
-  useState,
-  type ErrorInfo,
-  type ReactNode,
-} from "react";
+import { Component, Suspense, useEffect, useState, type ErrorInfo, type ReactNode } from "react";
 import { AlertCircle, ExternalLink, Loader2, Monitor, Smartphone, Sun, Moon } from "lucide-react";
 import type { UIEntry } from "@/data";
-import { showcaseLoaders } from "@/showcase";
+import { lazyPreviews, hasLazyPreview } from "@/lib/lazy-previews";
 import { sourceById } from "@/lib/registry";
 import { useTheme } from "@/lib/theme";
 import { cn } from "@/lib/utils";
@@ -46,20 +38,8 @@ class PreviewErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
   }
 }
 
-const lazyMap: Record<string, React.LazyExoticComponent<React.ComponentType>> = {};
-
-for (const key of Object.keys(showcaseLoaders)) {
-  lazyMap[key] = lazy(async () => {
-    const [mod, { withReducedMotion }] = await Promise.all([
-      showcaseLoaders[key](),
-      import("@/showcase/reduced-motion"),
-    ]);
-    return { default: withReducedMotion(mod.default, key) };
-  });
-}
-
 function PreviewRenderer({ previewKey }: { previewKey: string }) {
-  const Component = lazyMap[previewKey];
+  const Component = lazyPreviews[previewKey];
   if (!Component) return null;
   return <Component />;
 }
@@ -95,7 +75,7 @@ function ToolbarButton({
 export function PreviewFrame({ entry }: { entry: UIEntry }) {
   const source = sourceById.get(entry.source);
   const appTheme = useTheme();
-  const hasPreview = Boolean(entry.previewKey && lazyMap[entry.previewKey]);
+  const hasPreview = hasLazyPreview(entry.previewKey);
 
   const [narrow, setNarrow] = useState(false);
   // null = follow the app theme; otherwise force that theme on the canvas only

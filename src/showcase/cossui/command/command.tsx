@@ -105,7 +105,7 @@ export function Command({
 
 export function CommandInput({
   className,
-  placeholder = undefined,
+  placeholder,
   ...props
 }: React.ComponentProps<typeof AutocompleteInput>): React.ReactElement {
   return (

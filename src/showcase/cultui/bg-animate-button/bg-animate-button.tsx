@@ -115,7 +115,7 @@ export interface UnifiedButtonProps extends React.ButtonHTMLAttributes<HTMLButto
   rounded?: "full" | "xl" | "2xl" | "3xl" | "sm" | "xs" | "base";
   asChild?: boolean;
   showBackground?: boolean;
-  animation?: "spin" | "pulse" | "spin-slow" | "spin-fast" | "spin";
+  animation?: "spin" | "pulse" | "spin-slow" | "spin-fast";
   gradient?: "sunrise" | "ocean" | "candy" | "default" | "forest" | "sunset" | "nebula";
 }
 

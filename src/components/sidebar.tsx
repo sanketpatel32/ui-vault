@@ -1,4 +1,4 @@
-import { useEffect, useRef, useSyncExternalStore } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { ChevronRight, Heart, LayoutGrid, House, Vault, X } from "lucide-react";
 import { groupedCategories, sourcesWithCounts, stats } from "@/lib/registry";
@@ -58,8 +58,11 @@ const FOCUSABLE = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1
 
 export function Sidebar({ mobileOpen, onClose }: { mobileOpen: boolean; onClose: () => void }) {
   const groups = groupedCategories();
-  const sources = sourcesWithCounts();
+  const allSources = sourcesWithCounts();
   const s = stats();
+  const [sourcesExpanded, setSourcesExpanded] = useState(false);
+  const TOP_SOURCES = 8;
+  const sources = sourcesExpanded ? allSources : allSources.slice(0, TOP_SOURCES);
   const isDesktop = useIsDesktop();
   const drawerOpen = mobileOpen && !isDesktop;
   const asideRef = useRef<HTMLElement>(null);
@@ -181,7 +184,7 @@ export function Sidebar({ mobileOpen, onClose }: { mobileOpen: boolean; onClose:
 
           <div>
             <p className="mb-1 flex items-center gap-1 px-2.5 text-[10px] font-semibold tracking-[0.14em] text-faint-fg uppercase">
-              Sources <ChevronRight size={10} />
+              Sources
             </p>
             <div className="space-y-0.5">
               {sources.map((s) => (
@@ -195,6 +198,20 @@ export function Sidebar({ mobileOpen, onClose }: { mobileOpen: boolean; onClose:
                 />
               ))}
             </div>
+            {allSources.length > TOP_SOURCES && (
+              <button
+                type="button"
+                aria-expanded={sourcesExpanded}
+                onClick={() => setSourcesExpanded((v) => !v)}
+                className="mt-1 flex w-full cursor-pointer items-center gap-1.5 rounded-lg px-2.5 py-1.5 text-[12px] text-faint-fg transition-colors hover:bg-muted hover:text-fg"
+              >
+                <ChevronRight
+                  size={12}
+                  className={cn("transition-transform", sourcesExpanded && "rotate-90")}
+                />
+                {sourcesExpanded ? "Show fewer sources" : `Show all ${allSources.length} sources`}
+              </button>
+            )}
           </div>
         </nav>
 

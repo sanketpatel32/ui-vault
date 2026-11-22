@@ -5,6 +5,7 @@ import { categoryBySlug } from "@/lib/registry";
 import { SourceBadge } from "@/components/source-badge";
 import { LicenseBadge, PreviewBadge } from "@/components/license-badge";
 import { StarButton } from "@/components/star-button";
+import { CardPreview } from "@/components/card-preview";
 
 export function EntryCard({ entry }: { entry: UIEntry }) {
   const category = categoryBySlug.get(entry.category);
@@ -12,8 +13,9 @@ export function EntryCard({ entry }: { entry: UIEntry }) {
     <div className="relative transition-transform duration-200 hover:-translate-y-0.5">
       <Link
         to={`/component/${entry.id}`}
-        className="group relative flex h-full flex-col gap-3 rounded-xl border border-border bg-panel p-4 transition-all duration-200 hover:border-accent/50 hover:shadow-lg hover:shadow-accent/10 focus-visible:ring-2 focus-visible:ring-ring/70 focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none"
+        className="group relative flex h-full flex-col gap-3 overflow-hidden rounded-xl border border-border bg-panel p-4 transition-all duration-200 hover:border-accent/50 hover:shadow-lg hover:shadow-accent/10 focus-visible:ring-2 focus-visible:ring-ring/70 focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none"
       >
+        <CardPreview previewKey={entry.previewKey} />
         <div className="flex items-start justify-between gap-2">
           <div className="flex flex-wrap items-center gap-1.5">
             <SourceBadge source={entry.source} />

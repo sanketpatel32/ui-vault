@@ -54,6 +54,10 @@ export function Browse() {
       list = [...list].sort(
         (a, b) => a.source.localeCompare(b.source) || a.name.localeCompare(b.name),
       );
+    if (sort === "preview")
+      list = [...list].sort(
+        (a, b) => Number(Boolean(b.previewKey)) - Number(Boolean(a.previewKey)),
+      );
     return list;
   }, [cat, filters, sort]);
 
@@ -87,7 +91,8 @@ export function Browse() {
           aria-label="Sort results"
           className="w-40"
         >
-          <option value="default">Curated order</option>
+          <option value="default">Default order</option>
+          <option value="preview">Live previews first</option>
           <option value="name">Name A–Z</option>
           <option value="source">By source</option>
         </Select>

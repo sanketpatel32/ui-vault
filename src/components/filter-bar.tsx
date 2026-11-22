@@ -1,8 +1,7 @@
 import { Search, X } from "lucide-react";
-import { licensesWithCounts, sourcesWithCounts, topTags } from "@/lib/registry";
+import { licensesWithCounts, sourcesWithCounts } from "@/lib/registry";
 import { LICENSE_LABEL } from "@/lib/license";
 import { Input, Select } from "@/components/ui/input";
-import { cn } from "@/lib/utils";
 
 export interface Filters {
   q: string;
@@ -20,7 +19,6 @@ export function FilterBar({
 }) {
   const sources = sourcesWithCounts();
   const licenses = licensesWithCounts();
-  const tags = topTags(14);
   const set = (patch: Partial<Filters>) => onChange({ ...filters, ...patch });
   const dirty = filters.q || filters.src || filters.lic || filters.tag;
 
@@ -75,26 +73,6 @@ export function FilterBar({
             <X size={13} /> Clear
           </button>
         )}
-      </div>
-
-      <div className="flex flex-wrap gap-1.5">
-        {tags.map(({ tag, count }) => (
-          <button
-            key={tag}
-            type="button"
-            aria-pressed={filters.tag === tag}
-            aria-label={`Filter by tag ${tag} (${count})`}
-            onClick={() => set({ tag: filters.tag === tag ? "" : tag })}
-            className={cn(
-              "cursor-pointer rounded-full border px-2.5 py-1 text-[11px] transition-colors",
-              filters.tag === tag
-                ? "border-accent bg-accent-solid text-accent-fg"
-                : "border-border text-muted-fg hover:border-accent/40 hover:text-fg",
-            )}
-          >
-            {tag} <span className="opacity-60">{count}</span>
-          </button>
-        ))}
       </div>
     </div>
   );

@@ -65,10 +65,27 @@ export function ComponentDetail() {
         <StarButton id={entry.id} className="h-10 w-10 rounded-lg hover:bg-muted" />
       </header>
 
-      <div className="grid gap-6 lg:grid-cols-[1fr_320px]">
+      <div className="grid gap-6 lg:grid-cols-[1fr_340px]">
         <PreviewFrame entry={entry} />
 
         <aside className="space-y-4">
+          {entry.install && (
+            <div className="rounded-xl border border-accent/25 bg-panel p-4">
+              <p className="mb-2 text-[11px] font-semibold tracking-[0.14em] text-faint-fg uppercase">
+                Install
+              </p>
+              <CodeBlock code={entry.install} />
+            </div>
+          )}
+
+          <Button
+            variant="outline"
+            className="w-full"
+            onClick={() => window.open(entry.sourceUrl, "_blank")}
+          >
+            View at {source?.name} <ExternalLink size={13} />
+          </Button>
+
           <div className="rounded-xl border border-border bg-panel p-4">
             <p className="mb-2 text-[11px] font-semibold tracking-[0.14em] text-faint-fg uppercase">
               About
@@ -87,23 +104,6 @@ export function ComponentDetail() {
               ))}
             </div>
           </div>
-
-          {entry.install && (
-            <div className="rounded-xl border border-border bg-panel p-4">
-              <p className="mb-2 text-[11px] font-semibold tracking-[0.14em] text-faint-fg uppercase">
-                Install
-              </p>
-              <CodeBlock code={entry.install} />
-            </div>
-          )}
-
-          <Button
-            variant="outline"
-            className="w-full"
-            onClick={() => window.open(entry.sourceUrl, "_blank")}
-          >
-            View at {source?.name} <ExternalLink size={13} />
-          </Button>
         </aside>
       </div>
 
