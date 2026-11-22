@@ -46,7 +46,7 @@
 - **Button** https://www.launchuicomponents.com/docs/components/button — A versatile button component with multiple variants and sizes built with shadcn/ui and Tailwind CSS. [MIT, live-previewable, category: buttons]
 - **Button** https://coss.com/origin/button — Largest family: primary, secondary, ghost, and icon buttons in every style, size, and state. 54 variants. [MIT, live-previewable, category: buttons]
 - **Button** https://coss.com/ui/docs/components/button — A button or a component that looks like a button. [MIT, live-previewable, category: buttons]
-- **Button Particles** https://coss.com/ui/particles — 40 pre-styled button particles from the COSS registry — e.g. "Outline button". Every variant installs individually; the preview shows button-2. [MIT, live-previewable, category: buttons]
+- **Button Particles** https://coss.com/ui/docs/components/button — 40 pre-styled button particles from the COSS registry — e.g. "Outline button". Every variant installs individually; the preview shows button-2. [MIT, live-previewable, category: buttons]
 - **Neumorph Button** https://cult-ui.com/docs/components/neumorph-button — A neumorphic button component with customizable hover and press effects. [MIT, live-previewable, category: buttons]
 - **Texture Button** https://cult-ui.com/docs/components/texture-button — A button with numorphic undertones [MIT, live-previewable, category: buttons]
 - **Bg Animate Button** https://cult-ui.com/docs/components/bg-animate-button — A button with gradient and animation defaults [MIT, live-previewable, category: buttons]
