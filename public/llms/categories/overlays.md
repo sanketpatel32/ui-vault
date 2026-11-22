@@ -89,3 +89,6 @@
 - **Image Zoom** https://www.kibo-ui.com/components/image-zoom — Image zoom is a component that allows you to zoom in on an image. [MIT, live-previewable, category: overlays]
 - **Video Player** https://www.kibo-ui.com/components/video-player — A composable, shadcn/ui styled video player component that uses the media-chrome library. [MIT, live-previewable, category: overlays]
 - **Dialog Stack** https://www.kibo-ui.com/components/dialog-stack — Composable stacked dialogs, useful for creating a wizard, nested form or multi-step process. It provides a consistent layout and styling for each dialog, and includes navigation components to move between them. [MIT, live-previewable, category: overlays]
+- **Command Palette** https://kokonutui.com/docs/navigation/action-search-bar — ⌘K command palette with nested pages, fuzzy matching and in-row progress for running actions. [MIT, live-previewable, category: overlays]
+- **Smooth Drawer** https://kokonutui.com/docs/navigation/smooth-drawer — Checkout bottom sheet on Vaul snap points, peeking at the total and dragging up for details. [MIT, live-previewable, category: overlays]
+- **Morph Popover** https://kokonutui.com/docs/buttons/morph-popover — A button that grows into the form it opens, with its label sliding up to become the title, then shrinks into a confirmation. [MIT, live-previewable, category: overlays]

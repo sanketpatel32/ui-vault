@@ -17,3 +17,4 @@
 - **Hero Heatmap** https://cult-ui.com/docs/components/hero-heatmap — Split-layout hero section with responsive Heatmap shader visuals (glowing gradient through an input shape), CTA content, and tech stack badges. [MIT, live-previewable, category: hero]
 - **Hero Liquid Metal** https://cult-ui.com/docs/components/hero-liquid-metal — Split-layout hero section with responsive LiquidMetal shader visuals, CTA content, and tech stack badges. [MIT, live-previewable, category: hero]
 - **Hero Static Radial Gradient** https://cult-ui.com/docs/components/hero-static-radial-gradient — Split-layout hero section with responsive StaticRadialGradient shader visuals, CTA content, and tech stack badges. [MIT, live-previewable, category: hero]
+- **Shape Hero** https://kokonutui.com/docs/backgrounds/shape-hero — A landing hero where shapes drop in, pile up under the headline and can be grabbed and thrown. [MIT, live-previewable, category: hero]

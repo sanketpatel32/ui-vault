@@ -6,15 +6,15 @@
 
 [Live catalog](https://sanketpatel32.github.io/ui-vault/) · [Browse source](src/data/) · [Operating guide](AGENTS.md)
 
-**586 entries · 23 categories · 12 sources · 100% live-preview coverage**
+**930 entries · 23 categories · 16 sources · 814 live previews**
 
 </div>
 
-UI Vault brings vendorable components from twelve open-source libraries into a consistent taxonomy. It is frontend-only, keeps favorites locally, and publishes machine-readable indexes for developers and AI agents.
+UI Vault brings vendorable components from 16 open-source libraries into a consistent taxonomy. It is frontend-only, keeps favorites locally, and publishes machine-readable indexes for developers and AI agents.
 
 ## What it does
 
-- **One registry** — every component from the 12 vendorable sources, categorized into a
+- **One registry** — every component from the 16 vendorable sources, categorized into a
   unified taxonomy (text effects, backgrounds, buttons, cards, forms, overlays, data display,
   chat, heroes, dashboards, …), each with description, tags, license, deep link and install
   command. Every entry ships free code — paid/gated/gallery sources are not carried as
@@ -37,7 +37,9 @@ All vendorable (free code + install command): [React Bits](https://reactbits.dev
 [shadcn/ui](https://ui.shadcn.com) · [Magic UI](https://magicui.design) ·
 [Animata](https://animata.design) · [Animate UI](https://animate-ui.com) (MIT + Commons Clause) ·
 [Launch UI](https://www.launchuicomponents.com) (free sections) ·
-[Origin UI](https://coss.com/origin) (MIT legacy snapshot, 599 variants)
+[Origin UI](https://coss.com/origin) (MIT legacy snapshot, 599 variants) ·
+[COSS UI](https://coss.com/ui) · [Cult UI](https://cult-ui.com) · [Kibo UI](https://www.kibo-ui.com) ·
+[Kokonut UI](https://kokonutui.com) (free set, AI chat)
 
 Not carried as entries (paid/gated/gallery — see `AGENTS.md`): 21st.dev, shadcnStudio,
 UI Layouts Pro, Cue, CollectUI, The Component Gallery; Launch UI Pro sections.

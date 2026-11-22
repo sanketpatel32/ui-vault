@@ -13,7 +13,8 @@ export type SourceId =
   | "originui"
   | "cossui"
   | "cultui"
-  | "kiboui";
+  | "kiboui"
+  | "kokonutui";
 
 export type License = "mit" | "free" | "freemium" | "paid";
 export type PreviewMode = "live" | "linkout";

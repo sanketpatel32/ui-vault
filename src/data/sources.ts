@@ -237,4 +237,20 @@ export const sources: Source[] = [
       "MIT (github.com/shadcnblocks/kibo). Registry at kibo-ui.com/r/<name>.json; the 28 site blocks are CLI-only (no registry endpoint) and not cataloged. Sandboxed previews run in-browser; glimpse fetches meta tags only in their hosted demo.",
     color: "#fb923c",
   },
+  {
+    id: "kokonutui",
+    name: "Kokonut UI",
+    url: "https://kokonutui.com",
+    tagline: "Free open-source React components for AI chat and agents.",
+    description:
+      "116 free MIT components — 27 AI chat/agent pieces (tool approvals, tool calls, diff review, inline citations, voice, checkout) plus inputs, cards, buttons, backgrounds, navigation and text effects. Kokonut UI Pro (heroes, sections, templates) is paid and excluded.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "nextjs", "typescript", "tailwind", "motion"],
+    install: "npx shadcn@latest add @kokonutui/<name>",
+    installLabel: "shadcn registry (@kokonutui)",
+    notes:
+      'MIT (github.com/kokonut-labs/kokonutui). Free set only — the 10 items marked "Part of Kokonut UI Pro" and the Pro templates are paid and excluded. Registry is per-item (kokonutui.com/r/<name>.json; /r/index.json 404s) — the list comes from kokonutui.com/llms.txt. Catalog-only: no vendored previews yet.',
+    color: "#f59e0b",
+  },
 ];
