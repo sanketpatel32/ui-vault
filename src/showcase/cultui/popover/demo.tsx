@@ -16,9 +16,7 @@ import {
 } from "./popover";
 
 function PopoverInput() {
-  const handleSubmit = (note: string) => {
-    console.log("Submitted note:", note);
-  };
+  const handleSubmit = (_note: string) => {};
 
   return (
     <PopoverRoot>
@@ -52,7 +50,7 @@ const ColorPickerPopover = () => {
                 key={color}
                 className="w-8 h-8 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2"
                 style={{ backgroundColor: color }}
-                onClick={() => console.log(`Selected color: ${color}`)}
+                onClick={() => {}}
               />
             ))}
           </div>
@@ -70,17 +68,17 @@ const QuickActionsPopover = () => {
     {
       icon: <Plus className="w-4 h-4" />,
       label: "New File",
-      action: () => console.log("New File"),
+      action: () => {},
     },
     {
       icon: <ImageIcon className="w-4 h-4" />,
       label: "Upload Image",
-      action: () => console.log("Upload Image"),
+      action: () => {},
     },
     {
       icon: <Paintbrush className="w-4 h-4" />,
       label: "Edit Colors",
-      action: () => console.log("Edit Colors"),
+      action: () => {},
     },
   ];
 

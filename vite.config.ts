@@ -37,14 +37,34 @@ export default defineConfig(({ command }) => ({
   },
   plugins: lazyPlugins(() => [react(), tailwindcss()]),
   resolve: {
-    alias: {
-      "@": fileURLToPath(new URL("./src", import.meta.url)),
-      "next/image": fileURLToPath(new URL("./src/lib/shims/next-image.tsx", import.meta.url)),
-      "next/link": fileURLToPath(new URL("./src/lib/shims/next-link.tsx", import.meta.url)),
-      "next/navigation": fileURLToPath(
-        new URL("./src/lib/shims/next-navigation.tsx", import.meta.url),
-      ),
-      "next-themes": fileURLToPath(new URL("./src/lib/shims/next-themes.tsx", import.meta.url)),
-    },
+    alias: [
+      { find: "@", replacement: fileURLToPath(new URL("./src", import.meta.url)) },
+      {
+        find: "next/image",
+        replacement: fileURLToPath(new URL("./src/lib/shims/next-image.tsx", import.meta.url)),
+      },
+      {
+        find: "next/link",
+        replacement: fileURLToPath(new URL("./src/lib/shims/next-link.tsx", import.meta.url)),
+      },
+      {
+        find: "next/font/google",
+        replacement: fileURLToPath(new URL("./src/lib/shims/next-font-google.ts", import.meta.url)),
+      },
+      {
+        find: "next/navigation",
+        replacement: fileURLToPath(new URL("./src/lib/shims/next-navigation.tsx", import.meta.url)),
+      },
+      {
+        find: "next-themes",
+        replacement: fileURLToPath(new URL("./src/lib/shims/next-themes.tsx", import.meta.url)),
+      },
+      {
+        find: /^react-fast-marquee$/,
+        replacement: fileURLToPath(
+          new URL("./src/lib/shims/react-fast-marquee.ts", import.meta.url),
+        ),
+      },
+    ],
   },
 }));

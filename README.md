@@ -38,13 +38,13 @@ All vendorable (free code + install command): [React Bits](https://reactbits.dev
 [Animata](https://animata.design) · [Animate UI](https://animate-ui.com) (MIT + Commons Clause) ·
 [Launch UI](https://www.launchuicomponents.com) (free sections) ·
 [Origin UI](https://coss.com/origin) (MIT legacy snapshot, 599 variants) ·
-[COSS UI](https://coss.com/ui) · [Cult UI](https://cult-ui.com) · [Kibo UI](https://www.kibo-ui.com) ·
+[COSS UI](https://coss.com/ui) · [Cult UI](https://cult-ui.com) (MIT set; Cult Pro excluded) · [Kibo UI](https://www.kibo-ui.com) ·
 [Streamdown](https://streamdown.ai) (Apache-2.0) · [Generative Loaders](https://generativeloaders.com) ·
 [UI SDK](https://ui-sdk.dev) (Apache-2.0, beta) · [wterm](https://wterm.dev) (Apache-2.0) ·
 [Skullet](https://skullet.lochie.me)
 
 Not carried as entries (paid/gated/gallery — see `AGENTS.md`): 21st.dev, shadcnStudio,
-UI Layouts Pro, Cue, CollectUI, The Component Gallery; Launch UI Pro sections.
+UI Layouts Pro, Cue, CollectUI, The Component Gallery; Launch UI Pro sections; Cult Pro.
 
 ## Tech
 

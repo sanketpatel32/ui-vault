@@ -1,9 +1,6 @@
-import Component from "./index";
+import meta, { Primary } from "./three.stories";
+import { AnimataStory } from "@/showcase/_shared/animata/story";
 
 export default function Preview() {
-  return (
-    <div className="flex items-center justify-center p-4">
-      <Component />
-    </div>
-  );
+  return <AnimataStory meta={meta} story={Primary} />;
 }

@@ -1,3 +1,4 @@
+import { useSafeTimeout } from "@/showcase/_shared/use-safe-timeout";
 import { useEffect, useState } from "react";
 import { Mail, Monitor, Moon, Sun } from "lucide-react";
 
@@ -17,13 +18,15 @@ export function NewsletterSignupExample() {
   const [open, setOpen] = useState(false);
   const [email, setEmail] = useState("");
 
+  const safeTimeout = useSafeTimeout();
+
   function submit() {
     setFormState("loading");
-    setTimeout(() => {
+    safeTimeout(() => {
       setFormState("success");
     }, 1500);
 
-    setTimeout(() => {
+    safeTimeout(() => {
       setOpen(false);
       setFormState("idle");
       setEmail("");
@@ -179,13 +182,15 @@ export function FeedbackFormExample() {
   const [open, setOpen] = useState(false);
   const [feedback, setFeedback] = useState("");
 
+  const safeTimeout = useSafeTimeout();
+
   function submit() {
     setFormState("loading");
-    setTimeout(() => {
+    safeTimeout(() => {
       setFormState("success");
     }, 1500);
 
-    setTimeout(() => {
+    safeTimeout(() => {
       setOpen(false);
       setFormState("idle");
       setFeedback("");
@@ -271,13 +276,15 @@ export function ContactFormExample() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  const safeTimeout = useSafeTimeout();
+
   function submit() {
     setFormState("loading");
-    setTimeout(() => {
+    safeTimeout(() => {
       setFormState("success");
     }, 1500);
 
-    setTimeout(() => {
+    safeTimeout(() => {
       setOpen(false);
       setFormState("idle");
       setName("");

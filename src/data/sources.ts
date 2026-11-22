@@ -11,8 +11,8 @@ export const sources: Source[] = [
     license: "mit",
     previewMode: "live",
     stack: ["react", "typescript", "tailwind", "motion", "gsap", "webgl"],
-    install: "npx jsrepo add react-bits/<Component>",
-    installLabel: "jsrepo CLI",
+    install: "npx shadcn@latest add @react-bits/<Component>-TS-TW",
+    installLabel: "shadcn registry (@react-bits; suffix picks JS|TS + CSS|TW)",
     notes:
       "Free tier is MIT (github.com/DavidHDev/react-bits). Pro is a separate paid tier — link-out only.",
     color: "#38bdf8",
@@ -88,8 +88,8 @@ export const sources: Source[] = [
     license: "freemium",
     previewMode: "live",
     stack: ["react", "nextjs", "typescript", "tailwind", "motion", "three"],
-    install: "npx aceternity-ui@latest add <name>",
-    installLabel: "aceternity CLI",
+    install: "npx shadcn@latest add @aceternity/<name>",
+    installLabel: "shadcn registry (@aceternity)",
     notes: "Free components only may be vendored. Premium blocks/templates are paid — link-out.",
     color: "#e879f9",
   },
@@ -135,7 +135,7 @@ export const sources: Source[] = [
     license: "mit",
     previewMode: "live",
     stack: ["react", "typescript", "tailwind", "motion"],
-    install: "npx shadcn@latest add https://animata.design/r/<name>.json",
+    install: "npx shadcn@latest add https://animata.design/r/<section>/<name>.json",
     installLabel: "shadcn registry",
     notes:
       "MIT (github.com/codse/animata). Catalog carries the published set only — every source link resolves on the live site.",
@@ -148,7 +148,7 @@ export const sources: Source[] = [
     tagline: "Animated components for your next project.",
     description:
       "154 animated components in your choice of headless flavor — Radix UI, Base UI, Headless UI or native — plus 11 text animations and 14 effect primitives. All Motion-powered, installed via shadcn registry.",
-    license: "free",
+    license: "mit-commons-clause",
     previewMode: "live",
     stack: ["react", "typescript", "tailwind", "motion", "radix"],
     install: "npx shadcn@latest add @animate-ui/<slug>",
@@ -186,7 +186,7 @@ export const sources: Source[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/<family>.json",
     installLabel: "shadcn registry",
     notes:
-      "originui.com now redirects to COSS — this is the maintained MIT snapshot at coss.com/origin (apps/origin in github.com/cosscom/coss). Entries are family-granularity; registry files cover each variant.",
+      "originui.com now redirects to COSS — this is the maintained MIT snapshot at coss.com/origin (apps/origin in github.com/cosscom/ui). Entries are family-granularity; registry files cover each variant.",
     color: "#94a3b8",
   },
   {
@@ -202,7 +202,7 @@ export const sources: Source[] = [
     install: "npx shadcn@latest add @coss/<component>",
     installLabel: "shadcn registry (@coss)",
     notes:
-      "MIT — apps/ui is carved out of the AGPL cosscom/coss monorepo by the root LICENSING.md. Particles are cataloged per family (p-<component>-N); every variant installs individually. date-picker ships as calendar+popover+button per its docs.",
+      "MIT (apps/ui in github.com/cosscom/ui, MIT-licensed at the repo root). Particles are cataloged per family (p-<component>-N); every variant installs individually. date-picker ships as calendar+popover+button per its docs.",
     color: "#60a5fa",
   },
   {

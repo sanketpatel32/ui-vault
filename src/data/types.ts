@@ -20,7 +20,7 @@ export type SourceId =
   | "wterm"
   | "skullet";
 
-export type License = "mit" | "free" | "freemium" | "paid";
+export type License = "mit" | "mit-commons-clause" | "free" | "freemium" | "paid";
 export type PreviewMode = "live" | "linkout";
 export type CategoryGroup = "components" | "blocks" | "templates";
 

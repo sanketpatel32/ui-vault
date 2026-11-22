@@ -17,7 +17,7 @@
 - [shadcn/ui](https://ui.shadcn.com) — The canonical copy-paste component collection you own outright. (MIT, live-previewable, 65 cataloged)
 - [Magic UI](https://magicui.design) — UI library for design engineers. (MIT, live-previewable, 76 cataloged)
 - [Animata](https://animata.design) — Move, scale, rotate and animate with real components. (MIT, live-previewable, 154 cataloged)
-- [Animate UI](https://animate-ui.com) — Animated components for your next project. (Free, live-previewable, 154 cataloged)
+- [Animate UI](https://animate-ui.com) — Animated components for your next project. (MIT + Commons Clause, live-previewable, 154 cataloged)
 - [Launch UI](https://www.launchuicomponents.com) — Open-source components for your next launch. (MIT, live-previewable, 16 cataloged)
 - [Origin UI](https://coss.com/origin) — 600+ copy-paste components, 30 families — the deepest form catalog anywhere. (MIT, live-previewable, 31 cataloged)
 - [COSS UI](https://coss.com/ui) — Origin UI's actively developed successor — Base UI primitives plus 500+ particles. (MIT, live-previewable, 111 cataloged)

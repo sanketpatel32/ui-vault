@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const PHRASE = "MOTION PRIMITIVES";
 const GLYPHS = "01010101#@$%&*";
@@ -6,7 +6,10 @@ const GLYPHS = "01010101#@$%&*";
 export default function Preview() {
   const [display, setDisplay] = useState(PHRASE);
 
+  const timerRef = useRef<ReturnType<typeof setInterval> | undefined>(undefined);
+
   const run = () => {
+    clearInterval(timerRef.current);
     let count = 0;
     const timer = setInterval(() => {
       setDisplay(
@@ -19,10 +22,12 @@ export default function Preview() {
       if (count >= PHRASE.length) clearInterval(timer);
       count += 1;
     }, 40);
+    timerRef.current = timer;
   };
 
   useEffect(() => {
     run();
+    return () => clearInterval(timerRef.current);
   }, []);
 
   return (

@@ -1,11 +1,11 @@
-import * as ComponentModule from "./kinetic-text";
+import { KineticText } from "./kinetic-text";
 
+// Demo from the official magicui docs example
+// (https://magicui.design/docs/components/kinetic-text).
 export default function Preview() {
-  const Component = (ComponentModule as any).default || (Object.values(ComponentModule)[0] as any);
-  if (!Component) return <div className="text-xs text-muted-fg">Component loaded</div>;
   return (
     <div className="flex items-center justify-center p-4">
-      <Component />
+      <KineticText text="Hover over me" className="text-5xl tracking-tight" />
     </div>
   );
 }
