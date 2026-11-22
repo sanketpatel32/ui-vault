@@ -253,4 +253,20 @@ export const sources: Source[] = [
       "MIT (github.com/Surajmaurya1/easyui). Registry index at raw.githubusercontent.com/Surajmaurya1/easyui/main/registry.json; items depend on framer-motion + lucide-react. Not to be confused with easeui.dev or jQuery EasyUI (jeasyui).",
     color: "#34d399",
   },
+  {
+    id: "editorcn",
+    name: "editorcn",
+    url: "https://www.rtecn.space",
+    tagline: "Rich text editors for React, built on Tiptap with shadcn/ui tokens.",
+    description:
+      "Tiptap-based rich text editing as shadcn registry items: a toolbar Rich Text Editor, a Notion-style Block Editor, a static renderer, 8 drop-in extensions (tables, mentions, callouts, code blocks, markdown, paste cleanup\u2026) and 5 templates (comment box, email composer, document editor, full editors).",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "tailwind", "shadcn", "tiptap", "base-ui"],
+    install: "npx shadcn@latest add https://www.rtecn.space/r/<name>.json",
+    installLabel: "shadcn registry",
+    notes:
+      "MIT (github.com/shadcn-labs/editorcn). Prerequisite: Tiptap (@tiptap/* >=2.11.5 <4, pulled in as item dependencies). The @editorcn namespace (npx shadcn@latest add @editorcn/<name>) needs a components.json registries entry; the URL form works without config. The 8 icon-pack variants (Phosphor, Tabler, HugeIcons, Remix Icon for editor and block-editor) only overwrite icons.tsx and are not cataloged separately.",
+    color: "#c084fc",
+  },
 ];
