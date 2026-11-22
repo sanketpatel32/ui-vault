@@ -17,7 +17,8 @@ export type SourceId =
   | "easyui"
   | "editorcn"
   | "loadingdev"
-  | "itshover";
+  | "itshover"
+  | "amicro";
 
 export type License = "mit" | "free" | "freemium" | "paid";
 export type PreviewMode = "live" | "linkout";

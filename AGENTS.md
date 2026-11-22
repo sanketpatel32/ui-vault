@@ -1,6 +1,6 @@
 # AGENTS.md — UI Vault
 
-Personal, frontend-only React hub that aggregates UI components from the 6 free, vendorable sources into one categorized, searchable, previewable library. **The owner is the only user.** There is no backend and there never will be one.
+Personal, frontend-only React hub that aggregates UI components from 20 free, vendorable sources into one categorized, searchable, previewable library. **The owner is the only user.** There is no backend and there never will be one.
 
 **Registry policy (v0.3.0, owner decision 2026-08-29): the registry carries ONLY vendorable sources.** Paid/gated/gallery sources (21st.dev, shadcnStudio, UI Layouts Pro, Cue, CollectUI, The Component Gallery) were removed from `src/data/` entirely — every entry must be something we can actually show (free code + install command). Do not re-add link-out entries or link-out-only sources; if the owner asks for a paid/gated source, surface the policy before doing it.
 
@@ -55,10 +55,14 @@ Fresh checkout: `npm install` (or `vp install`) first.
 | animate-ui.com         | `animateui`        | MIT + Commons Clause            | ✅ yes (154, v0.4.0)  |
 | launchuicomponents.com | `launchui`         | MIT (+ $99 Pro sections)        | ✅ free set only (16) |
 | coss.com/origin        | `originui`         | MIT (legacy snapshot in coss)   | ✅ yes (31 families)  |
+| coss.com/ui            | `cossui`           | MIT (apps/ui carve-out)         | ✅ yes (111)          |
+| cult-ui.com            | `cultui`           | MIT (Cult Pro excluded)         | ✅ free set only (77) |
+| kibo-ui.com            | `kiboui`           | MIT                             | ✅ yes (40)           |
 | easyui.site            | `easyui`           | MIT (Surajmaurya1/easyui)       | ✅ yes (137)          |
 | rtecn.space            | `editorcn`         | MIT (shadcn-labs/editorcn)      | ✅ yes (16)           |
 | loading.dev            | `loadingdev`       | MIT (npm: `loading-dev`)        | ✅ yes (36)           |
 | itshover.com           | `itshover`         | Apache-2.0                      | ✅ yes (263)          |
+| amicro.vercel.app      | `amicro`           | MIT (Subhan-code/Amicro)        | ✅ yes (174)          |
 | 21st.dev               | `21st`             | Freemium (2 copies/day)         | ❌ removed in v0.3.0  |
 | shadcnstudio.com       | `shadcnstudio`     | Free tier + $249 Pro            | ❌ removed in v0.3.0  |
 | pro.ui-layouts.com     | `uilayouts`        | Paid ($139+)                    | ❌ removed in v0.3.0  |
@@ -66,7 +70,7 @@ Fresh checkout: `npm install` (or `vp install`) first.
 | collectui.com          | `collectui`        | Free gallery                    | ❌ removed in v0.3.0  |
 | component.gallery      | `componentgallery` | Free reference                  | ❌ removed in v0.3.0  |
 
-Install commands for the vendorable sources: `npx jsrepo add react-bits/<Name>` · `npx motion-primitives@latest add <name>` · shadcn registry `@fancy` (fancycomponents.dev/r/{name}.json) · `npm i @number-flow/react` · watermelon: `npx shadcn@latest add https://registry.watermelon.sh/r/<name>.json` · aceternity: `npx aceternity-ui@latest add <name>` · shadcn: `npx shadcn@latest add <component>` · magicui: `npx shadcn@latest add @magicui/<component>` · animata: `npx shadcn@latest add https://animata.design/r/<name>.json` · animateui: `npx shadcn@latest add @animate-ui/<slug>` · launchui: `npx shadcn@latest add @launchui/<block>` · originui: `npx shadcn@latest add https://coss.com/origin/r/<family>.json` · easyui: `npx shadcn@latest add Surajmaurya1/easyui/<name>` · editorcn: `npx shadcn@latest add https://www.rtecn.space/r/<name>.json` (Tiptap) · loadingdev: `npm install loading-dev` (React 19) · itshover: `npx shadcn@latest add https://itshover.com/r/<icon-name>.json`.
+Install commands for the vendorable sources: `npx jsrepo add react-bits/<Name>` · `npx motion-primitives@latest add <name>` · shadcn registry `@fancy` (fancycomponents.dev/r/{name}.json) · `npm i @number-flow/react` · watermelon: `npx shadcn@latest add https://registry.watermelon.sh/r/<name>.json` · aceternity: `npx aceternity-ui@latest add <name>` · shadcn: `npx shadcn@latest add <component>` · magicui: `npx shadcn@latest add @magicui/<component>` · animata: `npx shadcn@latest add https://animata.design/r/<name>.json` · animateui: `npx shadcn@latest add @animate-ui/<slug>` · launchui: `npx shadcn@latest add @launchui/<block>` · originui: `npx shadcn@latest add https://coss.com/origin/r/<family>.json` · easyui: `npx shadcn@latest add Surajmaurya1/easyui/<name>` · editorcn: `npx shadcn@latest add https://www.rtecn.space/r/<name>.json` (Tiptap) · loadingdev: `npm install loading-dev` (React 19) · itshover: `npx shadcn@latest add https://itshover.com/r/<icon-name>.json` · amicro: `npx shadcn@latest add https://raw.githubusercontent.com/Subhan-code/Amicro--Micro-transitions-/main/registry/ui/<name>.json`.
 
 v0.4.0 research notes (research/*.json has the full extracted sets): Animata carries its 154 _published_ components only — the repo documents 198 but 44 have no live docs page yet. Animate UI names Radix/Base UI/Headless UI variants with a suffix ("Accordion (Radix)") — ids carry the section prefix. Origin UI is family-granularity (31 families ≈ 599 variants; per-variant registry files exist at coss.com/origin/r/).
 

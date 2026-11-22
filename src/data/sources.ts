@@ -301,4 +301,21 @@ export const sources: Source[] = [
       "Apache-2.0 (github.com/itshover/itshover, default branch master) \u2014 vendor freely, keep the license notice. Icons animate on pointer hover only; they stay static on touch devices.",
     color: "#f59e0b",
   },
+  {
+    id: "amicro",
+    name: "Amicro",
+    url: "https://amicro.vercel.app",
+    tagline: "Open-source React micro-interactions and transitions powered by Motion.",
+    description:
+      "174 micro-interaction registry items \u2014 135 loaders, entrance/scroll/hover/cursor transitions, text reveals, magnetic and glow buttons, 3D card carousels, dither charts, AI prompt surfaces and 5 motion hooks.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "tailwind", "shadcn", "motion"],
+    install:
+      "npx shadcn@latest add https://raw.githubusercontent.com/Subhan-code/Amicro--Micro-transitions-/main/registry/ui/<name>.json",
+    installLabel: "shadcn registry (GitHub raw)",
+    notes:
+      "MIT (github.com/Subhan-code/Amicro--Micro-transitions-). Own CLI: npx @subhanhq/amicro@latest add <name>. The hosted @amicro registry at amicro.vercel.app rate-limits (429), so entries install from GitHub-raw URLs (hooks live under registry/hooks/). The 2 registry:lib utilities (presets, utils) are not cataloged.",
+    color: "#2dd4bf",
+  },
 ];
