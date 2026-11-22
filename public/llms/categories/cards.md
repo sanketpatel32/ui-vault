@@ -33,7 +33,7 @@
 - **Preview Card** https://coss.com/ui/docs/components/preview-card — A popup that appears when a link is hovered, showing a preview for sighted users. [MIT, live-previewable, category: cards]
 - **Card Particles** https://coss.com/ui/docs/components/card — 11 pre-styled card particles from the COSS registry — e.g. "Authentication card with actions". Every variant installs individually; the preview shows card-2. [MIT, live-previewable, category: cards]
 - **Preview Card Particles** https://coss.com/ui/docs/components/preview-card — 1 pre-styled preview card particles from the COSS registry — e.g. "Preview card with popup". Every variant installs individually; the preview shows preview-card-1. [MIT, live-previewable, category: cards]
-- **Minimal Card** https://cult-ui.com/docs/components/minimal-card — A minimal image card [MIT, live-previewable, category: cards]
+- **Minimal Card** https://cult-ui.com/docs/components/minimal-card — A minimal image card with a clean caption area — a quiet content tile. [MIT, live-previewable, category: cards]
 - **Cutout Card** https://cult-ui.com/docs/components/cutout-card — Image card with cutout corner accents, hover motion, inset labels, pins, and reveal-on-hover actions. [MIT, live-previewable, category: cards]
 - **Neumorph Eyebrow** https://cult-ui.com/docs/components/neumorph-eyebrow — A neumorphic eyebrow text component with subtle animation effects. [MIT, live-previewable, category: cards]
 - **Texture Card** https://cult-ui.com/docs/components/texture-card — A well designed card with numorphic undertones [MIT, live-previewable, category: cards]

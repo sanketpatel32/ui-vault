@@ -1,6 +1,6 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
-import { entries } from "../src/data/index.ts";
+import { fullEntries as entries } from "../src/data/all.ts";
 import { fetchCachedJson, SHOWCASE_DIR } from "./vendor-utils.mts";
 
 const fancyEntries = entries.filter((e) => e.source === "fancy");

@@ -83,3 +83,10 @@ export interface UIEntry {
   previewKey?: string;
   featured?: boolean;
 }
+
+/**
+ * The bundled projection of a registry entry: everything except the two fields
+ * only detail pages need (`install`, `sourceUrl`). The full record ships as
+ * public/registry/<source>.json and is fetched on demand.
+ */
+export type EntrySummary = Omit<UIEntry, "install" | "sourceUrl">;

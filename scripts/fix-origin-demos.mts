@@ -434,7 +434,7 @@ P["event-calendar"] = wrap(
 );
 
 // folder -> component file name for the non-obvious ones
-const FILE: Record<string, string> = { radio: "radio-group", dropdown: "dropdown-menu" };
+const _FILE: Record<string, string> = { radio: "radio-group", dropdown: "dropdown-menu" };
 
 for (const [fam, content] of Object.entries(P)) {
   const outDir = `src/showcase/originui/${fam}`;

@@ -27,6 +27,7 @@ Personal, frontend-only React hub that aggregates UI components from 33 free, ve
 | `npm test`                   | Unit tests via `vp test run` (Vitest, `src/**/*.test.ts`)    |
 | `npm run llms`               | Regenerate all llms.txt artifacts from `src/data/`           |
 | `npm run registry:check`     | Validate registry ids/slugs/sources/licensing/loaders        |
+| `npm run registry:gen`       | Regenerate entries.generated.ts + public/registry/*.json     |
 
 The `vp` CLI is installed at `~/AppData/Local/vite-plus/bin/vp` (v0.3.0). In Git Bash it may not be on PATH — `export PATH="$HOME/AppData/Local/vite-plus/bin:$PATH"` — or just use the `npm run` wrappers. `vp env` is set to system-first, so system Node/npm are used.
 
@@ -36,7 +37,7 @@ Fresh checkout: `npm install` (or `vp install`) first.
 
 1. **Registry-first.** Every component the UI shows must exist in `src/data/components/<source>.ts`. The UI is a view over the registry — never hardcode a component into a page.
 2. **Never vendor paid or gated code.** Only sources marked ✅ in the table below may have code copied into `src/showcase/`. Since v0.3.0 the registry only contains ✅ sources — link-out entries were removed at the owner's request. `npm run registry:check` enforces the licensing guard.
-3. **Any registry change → run `npm run llms`.** Generated files under `public/llms*` are never hand-edited. The predev/prebuild hooks are a safety net, not an excuse to skip it.
+3. **Any registry change → run `npm run llms`.** Generated files (`public/llms*`, `public/registry/*.json`, `src/data/entries.generated.ts`) are never hand-edited. The predev/prebuild hooks are a safety net, not an excuse to skip it.
 4. **One primary category per entry**, and only slugs defined in `src/data/categories.ts` (see PLAN §4). To add a category, edit that file deliberately — never invent slugs inline.
 5. **Vendored components are frozen snapshots.** Each `src/showcase/<source>/<component>/` folder records its origin URL and copy date in `src/showcase/README.md`, and keeps the upstream attribution header in the file. We do not fork or "improve" vendored code; fix by re-copying upstream.
 6. **No backend.** No API routes, no server functions, no DB, no auth. Personal state (favorites, recents) lives in localStorage via `src/lib/store.ts`.
@@ -90,7 +91,7 @@ Install commands for the vendorable sources: `npx shadcn@latest add @react-bits/
 
 v0.4.0 research notes (research/*.json has the full extracted sets): Animata carries its 154 _published_ components only — the repo documents 198 but 44 have no live docs page yet. Animate UI names Radix/Base UI/Headless UI variants with a suffix ("Accordion (Radix)") — ids carry the section prefix. Origin UI is family-granularity (31 families ≈ 599 variants; per-variant registry files exist at coss.com/origin/r/).
 
-v0.6.0/v0.7.0 notes: COSS UI (Origin UI's successor) carries 55 components + 2 hooks + 54 particle families (508 particles, cataloged per family) — MIT because `apps/ui` is carved out of the AGPL cosscom/coss monorepo by its root LICENSING.md. Cult UI carries the 77 MIT repo components only (Cult Pro is a separate paid product); its site sits behind a bot challenge, so code is vendored from the identical registry JSON in github.com/nolly-studio/cult-ui (`apps/www/public/r`). Kibo UI carries its 40 registry components; the 28 site blocks are CLI-only (no registry endpoint) and not cataloged. v0.7.0 brought live-preview coverage to 814/814.
+v0.6.0/v0.7.0 notes: COSS UI (Origin UI's successor) carries 55 components + 2 hooks + 54 particle families (508 particles, cataloged per family) — MIT because `apps/ui` is carved out of the AGPL cosscom/coss monorepo by its root LICENSING.md. Cult UI carries the 77 MIT repo components only (Cult Pro is a separate paid product); its site sits behind a bot challenge, so code is vendored from the identical registry JSON in github.com/nolly-studio/cult-ui (`apps/www/public/r`). Kibo UI carries its 40 registry components; the 28 site blocks are CLI-only (no registry endpoint) and not cataloged. v0.7.0 brought live-preview coverage to 814/814 of then-cataloged entries; v0.8.0 added registry-only sources, so the live count is now 766 of 3,157.
 
 v0.8.0 notes (2026-11-22, issues #68–#72): Streamdown, Generative Loaders, UI SDK, wterm and Skullet are registry-only — no vendored previews yet (entries render the "No local preview yet" fallback). Apache-2.0 sources use `license: "free"` with the exact license in the source notes. UI SDK is beta (0.1.0-beta.14) and Skullet/Generative Loaders are pre-1.0 — re-verify names on upgrade. Prerequisites (Tailwind `@source` lines, own CSS imports, React 19 for UI SDK) live in the source notes, not as dependencies.
 
@@ -105,7 +106,8 @@ v0.8.0 notes (2026-11-22, issues #68–#72): Streamdown, Generative Loaders, UI 
 ## File map
 
 ```
-src/data/        sources.ts, categories.ts, types.ts, index.ts (merger),
+src/data/        sources.ts, categories.ts, types.ts, index.ts (app barrel),
+                 all.ts (full merger — scripts only), entries.generated.ts (GENERATED),
                  components/*.ts (15)                                     ← the "backend"
 src/lib/         utils (cn), registry selectors, search (fuse), store (localStorage), theme
 src/components/  hub's own UI: ui/ primitives, sidebar, topbar, command-palette,

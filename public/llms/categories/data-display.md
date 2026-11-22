@@ -21,7 +21,7 @@
 - **Ring Chart** https://animata.design/docs/graphs/ring-chart — A simple ring-chart chart as seen in iOS apps [MIT, live-previewable, category: data-display]
 - **Avatar List** https://animata.design/docs/list/avatar-list — A component that displays list of user's avatar [MIT, live-previewable, category: data-display]
 - **Flipping cards** https://animata.design/docs/list/flipping-cards — A list of flip cards arranged, each card representing an item or concept. Hovering on a card flips it to reveal additional details. [MIT, live-previewable, category: data-display]
-- **Menu list** https://animata.design/docs/list/menu-animation — Animation for menu list [MIT, live-previewable, category: data-display]
+- **Menu list** https://animata.design/docs/list/menu-animation — An animated menu list whose items stagger and slide in — for nav drawers and menus. [MIT, live-previewable, category: data-display]
 - **Orbiting Items** https://animata.design/docs/list/orbiting-items — List component with orbiting items. The items orbit around the center of the list. [MIT, live-previewable, category: data-display]
 - **Orbiting Items 3D** https://animata.design/docs/list/orbiting-items-3-d — List component with orbiting items. The items orbit around the center of an element in 3D Ellipse. [MIT, live-previewable, category: data-display]
 - **Reveal images** https://animata.design/docs/list/reveal-image — Reveals the images on hover. [MIT, live-previewable, category: data-display]

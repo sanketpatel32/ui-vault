@@ -9,5 +9,5 @@
 - **Globe** https://magicui.design/docs/components/globe — Auto-rotating, interactive WebGL globe built on cobe. [MIT, live-previewable, category: 3d-webgl]
 - **Icon Cloud** https://magicui.design/docs/components/icon-cloud — Interactive 3D tag/icon cloud. [MIT, live-previewable, category: 3d-webgl]
 - **Shader Lens Blur** https://cult-ui.com/docs/components/shader-lens-blur — Interactive WebGL lens blur shader with pointer-reactive distortion, color gradients, and shape variations. [MIT, live-previewable, category: 3d-webgl]
-- **3D Carousel** https://cult-ui.com/docs/components/three-d-carousel — A 3D image carousel [MIT, live-previewable, category: 3d-webgl]
+- **3D Carousel** https://cult-ui.com/docs/components/three-d-carousel — A 3D image carousel that rotates cards through perspective — a hero showcase piece. [MIT, live-previewable, category: 3d-webgl]
 - **Depth Corridor** https://easyui.site/components/depth-corridor — A 3D spatial layer stack with receding perspective depth, progressive focal blurs, and pointer parallax motion. [MIT, live-previewable, category: 3d-webgl]

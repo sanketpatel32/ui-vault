@@ -185,7 +185,7 @@
 - **Fluid Diamond** https://github.com/Subhan-code/Amicro--Micro-transitions-/blob/main/registry/ui/loading/fluid-diamond.tsx — Fluid Diamond loading animation. [MIT, live-previewable, category: feedback]
 - **Fluid Dot Orbit** https://github.com/Subhan-code/Amicro--Micro-transitions-/blob/main/registry/ui/loading/fluid-dot-orbit.tsx — Fluid Dot Orbit loading animation. [MIT, live-previewable, category: feedback]
 - **Fluid Skeleton** https://github.com/Subhan-code/Amicro--Micro-transitions-/blob/main/registry/ui/loading/fluid-skeleton.tsx — Fluid Skeleton loading animation. [MIT, live-previewable, category: feedback]
-- **Gears** https://github.com/Subhan-code/Amicro--Micro-transitions-/blob/main/registry/ui/loading/gears.tsx — Gears loading animation. [MIT, live-previewable, category: feedback]
+- **Gears** https://github.com/Subhan-code/Amicro--Micro-transitions-/blob/main/registry/ui/loading/gears.tsx — A gears loading animation — a mechanical spinner for busy states. [MIT, live-previewable, category: feedback]
 - **Glassmorphic Card** https://github.com/Subhan-code/Amicro--Micro-transitions-/blob/main/registry/ui/loading/glassmorphic-card.tsx — Glassmorphic Card loading animation. [MIT, live-previewable, category: feedback]
 - **Gradient Arc** https://github.com/Subhan-code/Amicro--Micro-transitions-/blob/main/registry/ui/loading/gradient-arc.tsx — Gradient Arc loading animation. [MIT, live-previewable, category: feedback]
 - **Grid Dots** https://github.com/Subhan-code/Amicro--Micro-transitions-/blob/main/registry/ui/loading/grid-dots.tsx — Grid Dots loading animation. [MIT, live-previewable, category: feedback]

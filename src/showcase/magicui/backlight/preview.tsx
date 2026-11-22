@@ -1,11 +1,13 @@
-import * as ComponentModule from "./backlight";
+import { Backlight } from "./backlight";
 
 export default function Preview() {
-  const Component = (ComponentModule as any).default || (Object.values(ComponentModule)[0] as any);
-  if (!Component) return <div className="text-xs text-muted-fg">Component loaded</div>;
   return (
     <div className="flex items-center justify-center p-4">
-      <Component />
+      <Backlight>
+        <span className="rounded-lg bg-panel px-6 py-3 text-lg font-semibold text-fg">
+          Backlight glow
+        </span>
+      </Backlight>
     </div>
   );
 }

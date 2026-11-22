@@ -6,7 +6,7 @@
 
 [Live catalog](https://sanketpatel32.github.io/ui-vault/) · [Browse source](src/data/) · [Operating guide](AGENTS.md)
 
-**3157 entries · 25 categories · 33 sources · 814 live previews**
+**3157 entries · 25 categories · 33 sources · 766 live previews**
 
 </div>
 

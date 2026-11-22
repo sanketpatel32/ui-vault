@@ -72,7 +72,7 @@
 - **Field** https://coss.com/ui/docs/components/field — A component that provides labelling and validation for form controls. [MIT, live-previewable, category: forms]
 - **Fieldset** https://coss.com/ui/docs/components/fieldset — A native fieldset element with a legend. [MIT, live-previewable, category: forms]
 - **Form** https://coss.com/ui/docs/components/form — A form wrapper component that simplifies validation and submission. [MIT, live-previewable, category: forms]
-- **Input** https://coss.com/ui/docs/components/input — A native input element. [MIT, live-previewable, category: forms]
+- **Input** https://coss.com/ui/docs/components/input — A styled native text input — the base field the other COSS form controls build on. [MIT, live-previewable, category: forms]
 - **Input Group** https://coss.com/ui/docs/components/input-group — A flexible component for grouping inputs with addons, buttons, and other elements. [MIT, live-previewable, category: forms]
 - **Label** https://coss.com/ui/docs/components/label — Renders an accessible label associated with controls. [MIT, live-previewable, category: forms]
 - **Number Field** https://coss.com/ui/docs/components/number-field — A numeric input element with increment and decrement buttons, and a scrub area. [MIT, live-previewable, category: forms]

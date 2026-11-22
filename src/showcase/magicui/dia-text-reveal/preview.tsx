@@ -1,11 +1,9 @@
-import * as ComponentModule from "./dia-text-reveal";
+import { DiaTextReveal } from "./dia-text-reveal";
 
 export default function Preview() {
-  const Component = (ComponentModule as any).default || (Object.values(ComponentModule)[0] as any);
-  if (!Component) return <div className="text-xs text-muted-fg">Component loaded</div>;
   return (
     <div className="flex items-center justify-center p-4">
-      <Component />
+      <DiaTextReveal text="Colored text reveal" className="text-3xl font-bold" />
     </div>
   );
 }

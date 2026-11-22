@@ -1,11 +1,14 @@
-import * as ComponentModule from "./warp-background";
+import { WarpBackground } from "./warp-background";
 
 export default function Preview() {
-  const Component = (ComponentModule as any).default || (Object.values(ComponentModule)[0] as any);
-  if (!Component) return <div className="text-xs text-muted-fg">Component loaded</div>;
   return (
-    <div className="flex items-center justify-center p-4">
-      <Component />
+    <div className="flex w-full items-center justify-center p-4">
+      <WarpBackground className="w-full max-w-md rounded-xl">
+        <div className="p-8 text-center">
+          <p className="text-lg font-semibold text-fg">Warp speed</p>
+          <p className="mt-1 text-sm text-muted-fg">Beams travel the card&rsquo;s border grid.</p>
+        </div>
+      </WarpBackground>
     </div>
   );
 }

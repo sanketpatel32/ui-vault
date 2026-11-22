@@ -20,18 +20,28 @@ export function CommandPalette({ open, onClose }: { open: boolean; onClose: () =
     return featuredEntries().slice(0, 8);
   }, [query]);
 
+  // Reset transient state during render when the palette opens or the query changes.
+  const [wasOpen, setWasOpen] = useState(open);
+  const [prevQuery, setPrevQuery] = useState(query);
+  if (open !== wasOpen) {
+    setWasOpen(open);
+    if (open) {
+      setQuery("");
+      setActive(0);
+    }
+  } else if (query !== prevQuery) {
+    setPrevQuery(query);
+    setActive(0);
+  }
+
   useEffect(() => {
     if (!open) return;
     const returnFocusTo = document.activeElement as HTMLElement | null;
-    setQuery("");
-    setActive(0);
     requestAnimationFrame(() => inputRef.current?.focus());
     return () => {
       if (returnFocusTo?.isConnected) returnFocusTo.focus();
     };
   }, [open]);
-
-  useEffect(() => setActive(0), [query]);
 
   useEffect(() => {
     listRef.current
@@ -137,7 +147,7 @@ export function CommandPalette({ open, onClose }: { open: boolean; onClose: () =
                   </p>
                   <p className="truncate text-xs text-muted-fg">{entry.description}</p>
                 </div>
-                <SourceBadge source={entry.source} showName={false} />
+                <SourceBadge source={entry.source} className="shrink-0" />
               </div>
             ))}
           </div>

@@ -1,11 +1,12 @@
-import * as ComponentModule from "./number-ticker";
+import { NumberTicker } from "./number-ticker";
 
 export default function Preview() {
-  const Component = (ComponentModule as any).default || (Object.values(ComponentModule)[0] as any);
-  if (!Component) return <div className="text-xs text-muted-fg">Component loaded</div>;
   return (
     <div className="flex items-center justify-center p-4">
-      <Component />
+      <NumberTicker
+        value={3157}
+        className="text-5xl font-bold tracking-tight tabular-nums text-fg"
+      />
     </div>
   );
 }

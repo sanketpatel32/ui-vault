@@ -1,11 +1,11 @@
-import * as ComponentModule from "./aurora-text";
+import { AuroraText } from "./aurora-text";
 
 export default function Preview() {
-  const Component = (ComponentModule as any).default || (Object.values(ComponentModule)[0] as any);
-  if (!Component) return <div className="text-xs text-muted-fg">Component loaded</div>;
   return (
     <div className="flex items-center justify-center p-4">
-      <Component />
+      <h1 className="text-4xl font-bold tracking-tight text-fg">
+        Ship <AuroraText>faster</AuroraText> today
+      </h1>
     </div>
   );
 }

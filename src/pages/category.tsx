@@ -1,20 +1,21 @@
+import { useMemo } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { categoryBySlug, entriesByCategory } from "@/lib/registry";
-import { EntryCard } from "@/components/entry-card";
+import { EntryGrid } from "@/components/entry-grid";
 import { EmptyState } from "@/components/empty-state";
 
 export function CategoryPage() {
   const { slug = "" } = useParams();
   const category = categoryBySlug.get(slug);
+  // Stable identity across unrelated re-renders so EntryGrid keeps its page window.
+  const items = useMemo(() => (category ? entriesByCategory(slug) : []), [category, slug]);
 
   if (!category) {
     return (
       <EmptyState title="Unknown category" description={`No category named “${slug}” exists.`} />
     );
   }
-
-  const items = entriesByCategory(slug);
 
   return (
     <div className="space-y-5">
@@ -34,11 +35,7 @@ export function CategoryPage() {
       </div>
 
       {items.length > 0 ? (
-        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-          {items.map((entry) => (
-            <EntryCard key={entry.id} entry={entry} />
-          ))}
-        </div>
+        <EntryGrid items={items} />
       ) : (
         <EmptyState
           title="Nothing here yet"

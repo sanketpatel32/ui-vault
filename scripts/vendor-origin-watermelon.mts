@@ -5,7 +5,7 @@
 import { existsSync, readFileSync, rmSync, writeFileSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
 
-async function fetchJSON(url: string, name: string): Promise<any | null> {
+async function fetchJSON(url: string, name: string): Promise<any> {
   const cf = `.vcache/${name}.json`;
   if (existsSync(cf)) return JSON.parse(readFileSync(cf, "utf8"));
   for (let attempt = 0; attempt < 3; attempt++) {

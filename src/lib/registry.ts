@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import {
   categories,
   entries,
@@ -5,6 +6,7 @@ import {
   sources,
   type Category,
   type CategoryGroup,
+  type EntrySummary,
   type License,
   type Source,
   type UIEntry,
@@ -12,14 +14,87 @@ import {
 
 export const sourceById = new Map<string, Source>(sources.map((s) => [s.id, s]));
 export const categoryBySlug = new Map<string, Category>(categories.map((c) => [c.slug, c]));
-export const entryById = new Map<string, UIEntry>(entries.map((e) => [e.id, e]));
+export const entryById = new Map<string, EntrySummary>(entries.map((e) => [e.id, e]));
 
-export function entriesByCategory(slug: string): UIEntry[] {
+export function entriesByCategory(slug: string): EntrySummary[] {
   return entries.filter((e) => e.category === slug);
 }
 
-export function entriesBySource(id: string): UIEntry[] {
+export function entriesBySource(id: string): EntrySummary[] {
   return entries.filter((e) => e.source === id);
+}
+
+// Full per-source records (install commands + source links) live in
+// public/registry/<source>.json — fetched once per source, then cached.
+const fullBySource = new Map<string, Promise<UIEntry[]>>();
+
+export function loadSourceEntries(source: string): Promise<UIEntry[]> {
+  let p = fullBySource.get(source);
+  if (!p) {
+    const fetchJson = () =>
+      fetch(`${import.meta.env.BASE_URL}registry/${source}.json`).then(async (r) => {
+        const json = (r.headers.get("content-type") ?? "").includes("json");
+        if (!r.ok || !json) {
+          // Dev server mounts public/ at root, not under the deploy base.
+          const fallback = await fetch(`/registry/${source}.json`);
+          if (!fallback.ok) {
+            throw new Error(`registry fetch failed for ${source}: ${fallback.status}`);
+          }
+          return fallback.json() as Promise<UIEntry[]>;
+        }
+        return r.json() as Promise<UIEntry[]>;
+      });
+
+    p = fetchJson()
+      // One retry for transient failures before surfacing the error.
+      .catch(
+        () =>
+          new Promise<UIEntry[]>((resolve, reject) =>
+            setTimeout(() => fetchJson().then(resolve, reject), 1200),
+          ),
+      )
+      .catch((err) => {
+        // Don't cache failures — a retry should refetch.
+        fullBySource.delete(source);
+        throw err;
+      });
+    fullBySource.set(source, p);
+  }
+  return p;
+}
+
+interface FullEntryResult {
+  entry?: UIEntry;
+  /** True once the fetch failed (after retry) — the caller should show the miss. */
+  failed: boolean;
+}
+
+/** Resolves a summary to its full registry record (with install + sourceUrl). */
+export function useFullEntry(summary: EntrySummary | undefined): FullEntryResult {
+  const [state, setState] = useState<{
+    id: string;
+    entry?: UIEntry;
+    failed?: boolean;
+  } | null>(null);
+  useEffect(() => {
+    if (!summary) return;
+    let alive = true;
+    loadSourceEntries(summary.source)
+      .then((list) => {
+        if (!alive) return;
+        const entry = list.find((e) => e.id === summary.id);
+        setState(entry ? { id: summary.id, entry } : { id: summary.id, failed: true });
+      })
+      .catch(() => {
+        if (alive) setState({ id: summary.id, failed: true });
+      });
+    return () => {
+      alive = false;
+    };
+  }, [summary]);
+  return state && state.id === summary?.id
+    ? { entry: state.entry, failed: state.failed === true }
+    : { failed: false };
 }
 
 export function categoryCount(slug: string): number {
@@ -61,11 +136,11 @@ export function licensesWithCounts(): { license: License; count: number }[] {
   return [...counts.entries()].map(([license, count]) => ({ license, count }));
 }
 
-export function featuredEntries(): UIEntry[] {
+export function featuredEntries(): EntrySummary[] {
   return entries.filter((e) => e.featured);
 }
 
-export function relatedEntries(entry: UIEntry, limit = 6): UIEntry[] {
+export function relatedEntries(entry: EntrySummary, limit = 6): EntrySummary[] {
   const scored = entries
     .filter((e) => e.id !== entry.id)
     .map((e) => {

@@ -32,7 +32,7 @@
 - **Form** https://coss.com/ui/docs/components/form — A form wrapper component that simplifies validation and submission. [MIT, live-previewable, category: forms]
 - **Frame** https://coss.com/ui/docs/components/frame — A framed container for grouping related information. [MIT, live-previewable, category: sections-misc]
 - **Group** https://coss.com/ui/docs/components/group — A component for visually grouping a series of controls. [MIT, live-previewable, category: sections-misc]
-- **Input** https://coss.com/ui/docs/components/input — A native input element. [MIT, live-previewable, category: forms]
+- **Input** https://coss.com/ui/docs/components/input — A styled native text input — the base field the other COSS form controls build on. [MIT, live-previewable, category: forms]
 - **Input Group** https://coss.com/ui/docs/components/input-group — A flexible component for grouping inputs with addons, buttons, and other elements. [MIT, live-previewable, category: forms]
 - **Kbd** https://coss.com/ui/docs/components/kbd — A component for displaying keyboard keys and shortcuts. [MIT, live-previewable, category: data-display]
 - **Label** https://coss.com/ui/docs/components/label — Renders an accessible label associated with controls. [MIT, live-previewable, category: forms]
