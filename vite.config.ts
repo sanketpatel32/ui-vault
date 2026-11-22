@@ -17,6 +17,13 @@ export default defineConfig(({ command }) => ({
       "react/only-export-components": ["warn", { allowConstantExport: true }],
       "vite-plus/prefer-vite-plus-imports": "error",
     },
+    overrides: [
+      {
+        // Vendored snapshot: its useSwipe is a plain helper (no React hooks inside).
+        files: ["src/showcase/cultui/intro-disclosure/intro-disclosure.tsx"],
+        rules: { "react/rules-of-hooks": "off" },
+      },
+    ],
     options: {
       typeAware: true,
       typeCheck: true,
