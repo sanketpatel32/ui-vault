@@ -16,7 +16,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "background", "animated"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/animated-beam.json",
+    install: "npx shadcn@latest add https://animata.design/r/background/animated-beam.json",
   },
   {
     previewKey: "animata-blurry-blob",
@@ -30,7 +30,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "background", "blurry"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/blurry-blob.json",
+    install: "npx shadcn@latest add https://animata.design/r/background/blurry-blob.json",
   },
   {
     previewKey: "animata-boids-ecosystem",
@@ -45,7 +45,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "background", "boids"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/boids-ecosystem.json",
+    install: "npx shadcn@latest add https://animata.design/r/background/boids-ecosystem.json",
   },
   {
     previewKey: "animata-diagonal-lines",
@@ -59,7 +59,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "background", "diagonal"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/diagonal-lines.json",
+    install: "npx shadcn@latest add https://animata.design/r/background/diagonal-lines.json",
   },
   {
     previewKey: "animata-dot",
@@ -73,7 +73,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "background", "dot"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/dot.json",
+    install: "npx shadcn@latest add https://animata.design/r/background/dot.json",
   },
   {
     previewKey: "animata-grid",
@@ -87,7 +87,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "background", "grid"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/grid.json",
+    install: "npx shadcn@latest add https://animata.design/r/background/grid.json",
   },
   {
     previewKey: "animata-interactive-grid",
@@ -101,7 +101,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "background", "interactive"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/interactive-grid.json",
+    install: "npx shadcn@latest add https://animata.design/r/background/interactive-grid.json",
   },
   {
     previewKey: "animata-moving-gradient",
@@ -115,7 +115,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "background", "moving"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/moving-gradient.json",
+    install: "npx shadcn@latest add https://animata.design/r/background/moving-gradient.json",
   },
   {
     previewKey: "animata-shooting-stars",
@@ -130,7 +130,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "background", "shooting"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/shooting-stars.json",
+    install: "npx shadcn@latest add https://animata.design/r/background/shooting-stars.json",
   },
   {
     previewKey: "animata-zigzag",
@@ -144,7 +144,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "background", "zigzag"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/zigzag.json",
+    install: "npx shadcn@latest add https://animata.design/r/background/zigzag.json",
   },
   {
     previewKey: "animata-eight",
@@ -158,7 +158,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "bento", "eight"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/eight.json",
+    install: "npx shadcn@latest add https://animata.design/r/bento-grid/eight.json",
   },
   {
     previewKey: "animata-gradient",
@@ -172,7 +172,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "bento", "gradient"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/gradient.json",
+    install: "npx shadcn@latest add https://animata.design/r/bento-grid/gradient.json",
   },
   {
     previewKey: "animata-three",
@@ -186,7 +186,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "bento", "three"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/three.json",
+    install: "npx shadcn@latest add https://animata.design/r/bento-grid/three.json",
   },
   {
     previewKey: "animata-ai-button",
@@ -200,7 +200,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "button", "ai"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/ai-button.json",
+    install: "npx shadcn@latest add https://animata.design/r/button/ai-button.json",
   },
   {
     previewKey: "animata-algolia-blue-button",
@@ -214,7 +214,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "button", "algolia"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/algolia-blue-button.json",
+    install: "npx shadcn@latest add https://animata.design/r/button/algolia-blue-button.json",
   },
   {
     previewKey: "animata-algolia-white-button",
@@ -228,7 +228,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "button", "algolia"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/algolia-white-button.json",
+    install: "npx shadcn@latest add https://animata.design/r/button/algolia-white-button.json",
   },
   {
     previewKey: "animata-animated-follow-button",
@@ -242,7 +242,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "button", "animated"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/animated-follow-button.json",
+    install: "npx shadcn@latest add https://animata.design/r/button/animated-follow-button.json",
   },
   {
     previewKey: "animata-duolingo",
@@ -256,7 +256,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "button", "duolingo"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/duolingo.json",
+    install: "npx shadcn@latest add https://animata.design/r/button/duolingo.json",
   },
   {
     previewKey: "animata-get-started-button",
@@ -270,7 +270,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "button", "get"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/get-started-button.json",
+    install: "npx shadcn@latest add https://animata.design/r/button/get-started-button.json",
   },
   {
     previewKey: "animata-ripple-button",
@@ -284,7 +284,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "button", "ripple"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/ripple-button.json",
+    install: "npx shadcn@latest add https://animata.design/r/button/ripple-button.json",
   },
   {
     previewKey: "animata-shining-button",
@@ -298,7 +298,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "button", "shining"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/shining-button.json",
+    install: "npx shadcn@latest add https://animata.design/r/button/shining-button.json",
   },
   {
     previewKey: "animata-slide-arrow-button",
@@ -312,7 +312,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "button", "slide"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/slide-arrow-button.json",
+    install: "npx shadcn@latest add https://animata.design/r/button/slide-arrow-button.json",
   },
   {
     previewKey: "animata-status-button",
@@ -326,7 +326,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "button", "status"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/status-button.json",
+    install: "npx shadcn@latest add https://animata.design/r/button/status-button.json",
   },
   {
     previewKey: "animata-swipe-button",
@@ -340,7 +340,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "button", "swipe"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/swipe-button.json",
+    install: "npx shadcn@latest add https://animata.design/r/button/swipe-button.json",
   },
   {
     previewKey: "animata-toggle-switch",
@@ -354,7 +354,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "button", "toggle"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/toggle-switch.json",
+    install: "npx shadcn@latest add https://animata.design/r/button/toggle-switch.json",
   },
   {
     previewKey: "animata-work-button",
@@ -368,7 +368,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "button", "work"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/work-button.json",
+    install: "npx shadcn@latest add https://animata.design/r/button/work-button.json",
   },
   {
     previewKey: "animata-card-comment",
@@ -382,7 +382,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "card"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/card-comment.json",
+    install: "npx shadcn@latest add https://animata.design/r/card/card-comment.json",
   },
   {
     previewKey: "animata-card-spread",
@@ -397,7 +397,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "card"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/card-spread.json",
+    install: "npx shadcn@latest add https://animata.design/r/card/card-spread.json",
   },
   {
     previewKey: "animata-card-stack",
@@ -411,7 +411,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "card"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/card-stack.json",
+    install: "npx shadcn@latest add https://animata.design/r/card/card-stack.json",
   },
   {
     previewKey: "animata-case-study-card",
@@ -426,7 +426,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "card", "case"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/case-study-card.json",
+    install: "npx shadcn@latest add https://animata.design/r/card/case-study-card.json",
   },
   {
     previewKey: "animata-collab-card",
@@ -441,7 +441,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "card", "collab"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/collab-card.json",
+    install: "npx shadcn@latest add https://animata.design/r/card/collab-card.json",
   },
   {
     previewKey: "animata-flip-card",
@@ -456,7 +456,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "card", "flip"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/flip-card.json",
+    install: "npx shadcn@latest add https://animata.design/r/card/flip-card.json",
   },
   {
     previewKey: "animata-github-card-shiny",
@@ -471,7 +471,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "card", "github"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/github-card-shiny.json",
+    install: "npx shadcn@latest add https://animata.design/r/card/github-card-shiny.json",
   },
   {
     previewKey: "animata-github-card-skew",
@@ -485,7 +485,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "card", "github"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/github-card-skew.json",
+    install: "npx shadcn@latest add https://animata.design/r/card/github-card-skew.json",
   },
   {
     previewKey: "animata-glowing-card",
@@ -499,7 +499,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "card", "glowing"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/glowing-card.json",
+    install: "npx shadcn@latest add https://animata.design/r/card/glowing-card.json",
   },
   {
     previewKey: "animata-led-board",
@@ -514,7 +514,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "card", "led"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/led-board.json",
+    install: "npx shadcn@latest add https://animata.design/r/card/led-board.json",
   },
   {
     previewKey: "animata-swap-text-card",
@@ -528,7 +528,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "card", "swap"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/swap-text-card.json",
+    install: "npx shadcn@latest add https://animata.design/r/card/swap-text-card.json",
   },
   {
     previewKey: "animata-animated-border-trail",
@@ -543,7 +543,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "layout", "animated"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/animated-border-trail.json",
+    install: "npx shadcn@latest add https://animata.design/r/container/animated-border-trail.json",
   },
   {
     previewKey: "animata-announcement-ribbon",
@@ -557,7 +557,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "layout", "announcement"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/announcement-ribbon.json",
+    install: "npx shadcn@latest add https://animata.design/r/container/announcement-ribbon.json",
   },
   {
     previewKey: "animata-cursor-tracker",
@@ -571,7 +571,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "layout", "cursor"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/cursor-tracker.json",
+    install: "npx shadcn@latest add https://animata.design/r/container/cursor-tracker.json",
   },
   {
     previewKey: "animata-marquee",
@@ -585,7 +585,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "layout", "marquee"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/marquee.json",
+    install: "npx shadcn@latest add https://animata.design/r/container/marquee.json",
   },
   {
     previewKey: "animata-sibling-focus-nav",
@@ -600,7 +600,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "layout", "sibling"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/sibling-focus-nav.json",
+    install: "npx shadcn@latest add https://animata.design/r/container/sibling-focus-nav.json",
   },
   {
     previewKey: "animata-flower-menu",
@@ -615,7 +615,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "button", "flower"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/flower-menu.json",
+    install: "npx shadcn@latest add https://animata.design/r/fabs/flower-menu.json",
   },
   {
     previewKey: "animata-speed-dial",
@@ -629,7 +629,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "button", "speed"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/speed-dial.json",
+    install: "npx shadcn@latest add https://animata.design/r/fabs/speed-dial.json",
   },
   {
     previewKey: "animata-bar-chart",
@@ -643,7 +643,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "data", "bar"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/bar-chart.json",
+    install: "npx shadcn@latest add https://animata.design/r/graphs/bar-chart.json",
   },
   {
     previewKey: "animata-donut-chart",
@@ -657,7 +657,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "data", "donut"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/donut-chart.json",
+    install: "npx shadcn@latest add https://animata.design/r/graphs/donut-chart.json",
   },
   {
     previewKey: "animata-gauge-chart",
@@ -671,7 +671,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "data", "gauge"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/gauge-chart.json",
+    install: "npx shadcn@latest add https://animata.design/r/graphs/gauge-chart.json",
   },
   {
     previewKey: "animata-progress",
@@ -686,7 +686,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "data", "progress"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/progress.json",
+    install: "npx shadcn@latest add https://animata.design/r/graphs/progress.json",
   },
   {
     previewKey: "animata-ring-chart",
@@ -700,7 +700,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "data", "ring"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/ring-chart.json",
+    install: "npx shadcn@latest add https://animata.design/r/graphs/ring-chart.json",
   },
   {
     previewKey: "animata-hero-section-text-hover",
@@ -714,7 +714,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "hero"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/hero-section-text-hover.json",
+    install: "npx shadcn@latest add https://animata.design/r/hero/hero-section-text-hover.json",
   },
   {
     previewKey: "animata-product-features",
@@ -728,7 +728,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "hero", "product"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/product-features.json",
+    install: "npx shadcn@latest add https://animata.design/r/hero/product-features.json",
   },
   {
     previewKey: "animata-shape-shifter",
@@ -742,7 +742,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "hero", "shape"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/shape-shifter.json",
+    install: "npx shadcn@latest add https://animata.design/r/hero/shape-shifter.json",
   },
   {
     previewKey: "animata-slack-intro",
@@ -756,7 +756,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "hero", "slack"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/slack-intro.json",
+    install: "npx shadcn@latest add https://animata.design/r/hero/slack-intro.json",
   },
   {
     previewKey: "animata-hover-interaction",
@@ -771,7 +771,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "hover"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/hover-interaction.json",
+    install: "npx shadcn@latest add https://animata.design/r/icon/hover-interaction.json",
   },
   {
     previewKey: "animata-icon-ripple",
@@ -785,7 +785,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "icon"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/icon-ripple.json",
+    install: "npx shadcn@latest add https://animata.design/r/icon/icon-ripple.json",
   },
   {
     previewKey: "animata-disclose-image",
@@ -799,7 +799,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "disclose"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/disclose-image.json",
+    install: "npx shadcn@latest add https://animata.design/r/image/disclose-image.json",
   },
   {
     previewKey: "animata-images-reveal",
@@ -813,7 +813,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "images"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/images-reveal.json",
+    install: "npx shadcn@latest add https://animata.design/r/image/images-reveal.json",
   },
   {
     previewKey: "animata-skew-image",
@@ -827,7 +827,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "skew"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/skew-image.json",
+    install: "npx shadcn@latest add https://animata.design/r/image/skew-image.json",
   },
   {
     previewKey: "animata-tilted-cover",
@@ -841,7 +841,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "tilted"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/tilted-cover.json",
+    install: "npx shadcn@latest add https://animata.design/r/image/tilted-cover.json",
   },
   {
     previewKey: "animata-trailing-image",
@@ -855,7 +855,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "trailing"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/trailing-image.json",
+    install: "npx shadcn@latest add https://animata.design/r/image/trailing-image.json",
   },
   {
     previewKey: "animata-avatar-list",
@@ -869,7 +869,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "data", "avatar"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/avatar-list.json",
+    install: "npx shadcn@latest add https://animata.design/r/list/avatar-list.json",
   },
   {
     previewKey: "animata-flipping-cards",
@@ -884,7 +884,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "data", "flipping"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/flipping-cards.json",
+    install: "npx shadcn@latest add https://animata.design/r/list/flipping-cards.json",
   },
   {
     previewKey: "animata-menu-animation",
@@ -898,7 +898,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "data", "menu"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/menu-animation.json",
+    install: "npx shadcn@latest add https://animata.design/r/list/menu-animation.json",
   },
   {
     previewKey: "animata-orbiting-items",
@@ -913,7 +913,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "data", "orbiting"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/orbiting-items.json",
+    install: "npx shadcn@latest add https://animata.design/r/list/orbiting-items.json",
   },
   {
     previewKey: "animata-orbiting-items-3-d",
@@ -928,7 +928,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "data", "orbiting"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/orbiting-items-3-d.json",
+    install: "npx shadcn@latest add https://animata.design/r/list/orbiting-items-3-d.json",
   },
   {
     previewKey: "animata-reveal-image",
@@ -942,7 +942,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "data", "reveal"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/reveal-image.json",
+    install: "npx shadcn@latest add https://animata.design/r/list/reveal-image.json",
   },
   {
     previewKey: "animata-transaction-list",
@@ -956,7 +956,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "data", "transaction"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/transaction-list.json",
+    install: "npx shadcn@latest add https://animata.design/r/list/transaction-list.json",
   },
   {
     previewKey: "animata-modal",
@@ -971,7 +971,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "overlay", "modal"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/modal.json",
+    install: "npx shadcn@latest add https://animata.design/r/overlay/modal.json",
   },
   {
     previewKey: "animata-split-reveal",
@@ -986,7 +986,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "progress", "split"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/split-reveal.json",
+    install: "npx shadcn@latest add https://animata.design/r/preloader/split-reveal.json",
   },
   {
     previewKey: "animata-vertical-tiles",
@@ -1000,7 +1000,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "progress", "vertical"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/vertical-tiles.json",
+    install: "npx shadcn@latest add https://animata.design/r/preloader/vertical-tiles.json",
   },
   {
     previewKey: "animata-animatedtimeline",
@@ -1015,7 +1015,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "progress", "animatedtimeline"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/animatedtimeline.json",
+    install: "npx shadcn@latest add https://animata.design/r/progress/animatedtimeline.json",
   },
   {
     previewKey: "animata-spinner",
@@ -1029,7 +1029,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "progress", "spinner"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/spinner.json",
+    install: "npx shadcn@latest add https://animata.design/r/progress/spinner.json",
   },
   {
     previewKey: "animata-stacked-sections",
@@ -1044,7 +1044,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "nav", "stacked"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/stacked-sections.json",
+    install: "npx shadcn@latest add https://animata.design/r/scroll/stacked-sections.json",
   },
   {
     previewKey: "animata-code",
@@ -1058,7 +1058,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "progress", "code"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/code.json",
+    install: "npx shadcn@latest add https://animata.design/r/skeleton/code.json",
   },
   {
     previewKey: "animata-cookie-banner",
@@ -1072,7 +1072,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "progress", "cookie"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/cookie-banner.json",
+    install: "npx shadcn@latest add https://animata.design/r/skeleton/cookie-banner.json",
   },
   {
     previewKey: "animata-list",
@@ -1086,7 +1086,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "progress", "list"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/list.json",
+    install: "npx shadcn@latest add https://animata.design/r/skeleton/list.json",
   },
   {
     previewKey: "animata-receipt",
@@ -1100,7 +1100,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "progress", "receipt"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/receipt.json",
+    install: "npx shadcn@latest add https://animata.design/r/skeleton/receipt.json",
   },
   {
     previewKey: "animata-report",
@@ -1114,7 +1114,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "progress", "report"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/report.json",
+    install: "npx shadcn@latest add https://animata.design/r/skeleton/report.json",
   },
   {
     previewKey: "animata-wide-card",
@@ -1128,7 +1128,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "progress", "wide"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/wide-card.json",
+    install: "npx shadcn@latest add https://animata.design/r/skeleton/wide-card.json",
   },
   {
     previewKey: "animata-fluid-tabs",
@@ -1142,7 +1142,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "nav", "fluid"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/fluid-tabs.json",
+    install: "npx shadcn@latest add https://animata.design/r/tabs/fluid-tabs.json",
   },
   {
     previewKey: "animata-gooey-tabs",
@@ -1157,7 +1157,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "nav", "gooey"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/gooey-tabs.json",
+    install: "npx shadcn@latest add https://animata.design/r/tabs/gooey-tabs.json",
   },
   {
     previewKey: "animata-shift-tabs",
@@ -1171,7 +1171,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "nav", "shift"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/shift-tabs.json",
+    install: "npx shadcn@latest add https://animata.design/r/tabs/shift-tabs.json",
   },
   {
     previewKey: "animata-animated-gradient-text",
@@ -1185,7 +1185,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "animated"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/animated-gradient-text.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/animated-gradient-text.json",
   },
   {
     previewKey: "animata-blur-out-up",
@@ -1199,7 +1199,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "blur"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/blur-out-up.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/blur-out-up.json",
   },
   {
     previewKey: "animata-bold-copy",
@@ -1213,7 +1213,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "bold"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/bold-copy.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/bold-copy.json",
   },
   {
     previewKey: "animata-bottom-up-letters",
@@ -1228,7 +1228,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "bottom"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/bottom-up-letters.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/bottom-up-letters.json",
   },
   {
     previewKey: "animata-circular-text",
@@ -1242,7 +1242,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "circular"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/circular-text.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/circular-text.json",
   },
   {
     previewKey: "animata-counter",
@@ -1257,7 +1257,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "counter"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/counter.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/counter.json",
   },
   {
     previewKey: "animata-cycle-text",
@@ -1271,7 +1271,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "cycle"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/cycle-text.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/cycle-text.json",
   },
   {
     previewKey: "animata-double-underline",
@@ -1285,7 +1285,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "double"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/double-underline.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/double-underline.json",
   },
   {
     previewKey: "animata-fade-through",
@@ -1300,7 +1300,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "fade"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/fade-through.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/fade-through.json",
   },
   {
     previewKey: "animata-focus-blur-resolve",
@@ -1314,7 +1314,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "focus"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/focus-blur-resolve.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/focus-blur-resolve.json",
   },
   {
     previewKey: "animata-gibberish-text",
@@ -1329,7 +1329,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "gibberish"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/gibberish-text.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/gibberish-text.json",
   },
   {
     previewKey: "animata-glitch-text",
@@ -1344,7 +1344,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "glitch"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/glitch-text.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/glitch-text.json",
   },
   {
     previewKey: "animata-jitter-text",
@@ -1358,7 +1358,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "jitter"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/jitter-text.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/jitter-text.json",
   },
   {
     previewKey: "animata-jumping-text-instagram",
@@ -1372,7 +1372,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "jumping"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/jumping-text-instagram.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/jumping-text-instagram.json",
   },
   {
     previewKey: "animata-kinetic-center-build",
@@ -1387,7 +1387,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "kinetic"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/kinetic-center-build.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/kinetic-center-build.json",
   },
   {
     previewKey: "animata-line-by-line-slide",
@@ -1402,7 +1402,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "line"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/line-by-line-slide.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/line-by-line-slide.json",
   },
   {
     previewKey: "animata-mask-reveal-up",
@@ -1416,7 +1416,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "mask"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/mask-reveal-up.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/mask-reveal-up.json",
   },
   {
     previewKey: "animata-metis-text",
@@ -1431,7 +1431,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "metis"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/metis-text.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/metis-text.json",
   },
   {
     previewKey: "animata-micro-scale-fade",
@@ -1445,7 +1445,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "micro"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/micro-scale-fade.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/micro-scale-fade.json",
   },
   {
     previewKey: "animata-mirror-text",
@@ -1459,7 +1459,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "mirror"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/mirror-text.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/mirror-text.json",
   },
   {
     previewKey: "animata-per-character-rise",
@@ -1474,7 +1474,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "per"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/per-character-rise.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/per-character-rise.json",
   },
   {
     previewKey: "animata-per-word-crossfade",
@@ -1489,7 +1489,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "per"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/per-word-crossfade.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/per-word-crossfade.json",
   },
   {
     previewKey: "animata-roll-text",
@@ -1504,7 +1504,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "roll"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/roll-text.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/roll-text.json",
   },
   {
     previewKey: "animata-scale-down-fade",
@@ -1518,7 +1518,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "scale"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/scale-down-fade.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/scale-down-fade.json",
   },
   {
     previewKey: "animata-scroll-reveal",
@@ -1533,7 +1533,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "scroll"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/scroll-reveal.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/scroll-reveal.json",
   },
   {
     previewKey: "animata-shared-axis-y",
@@ -1547,7 +1547,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "shared"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/shared-axis-y.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/shared-axis-y.json",
   },
   {
     previewKey: "animata-shared-axis-z",
@@ -1561,7 +1561,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "shared"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/shared-axis-z.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/shared-axis-z.json",
   },
   {
     previewKey: "animata-shimmer-sweep",
@@ -1576,7 +1576,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "shimmer"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/shimmer-sweep.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/shimmer-sweep.json",
   },
   {
     previewKey: "animata-short-slide-down",
@@ -1591,7 +1591,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "short"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/short-slide-down.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/short-slide-down.json",
   },
   {
     previewKey: "animata-short-slide-right",
@@ -1606,7 +1606,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "short"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/short-slide-right.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/short-slide-right.json",
   },
   {
     previewKey: "animata-soft-blur-in",
@@ -1621,7 +1621,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "soft"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/soft-blur-in.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/soft-blur-in.json",
   },
   {
     previewKey: "animata-split-text",
@@ -1635,7 +1635,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "split"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/split-text.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/split-text.json",
   },
   {
     previewKey: "animata-spring-scale-in",
@@ -1650,7 +1650,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "spring"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/spring-scale-in.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/spring-scale-in.json",
   },
   {
     previewKey: "animata-swap-text",
@@ -1664,7 +1664,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "swap"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/swap-text.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/swap-text.json",
   },
   {
     previewKey: "animata-text-border-animation",
@@ -1678,7 +1678,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/text-border-animation.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/text-border-animation.json",
   },
   {
     previewKey: "animata-text-explode-imessage",
@@ -1692,7 +1692,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/text-explode-imessage.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/text-explode-imessage.json",
   },
   {
     previewKey: "animata-text-flip",
@@ -1706,7 +1706,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/text-flip.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/text-flip.json",
   },
   {
     previewKey: "animata-ticker",
@@ -1720,7 +1720,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "ticker"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/ticker.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/ticker.json",
   },
   {
     previewKey: "animata-top-down-letters",
@@ -1735,7 +1735,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "top"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/top-down-letters.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/top-down-letters.json",
   },
   {
     previewKey: "animata-typing-text",
@@ -1749,7 +1749,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "typing"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/typing-text.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/typing-text.json",
   },
   {
     previewKey: "animata-underline-hover-text",
@@ -1763,7 +1763,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "underline"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/underline-hover-text.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/underline-hover-text.json",
   },
   {
     previewKey: "animata-wave-reveal",
@@ -1777,7 +1777,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "text", "wave"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/wave-reveal.json",
+    install: "npx shadcn@latest add https://animata.design/r/text/wave-reveal.json",
   },
   {
     previewKey: "animata-alarm-clock",
@@ -1791,7 +1791,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "alarm"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/alarm-clock.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/alarm-clock.json",
   },
   {
     previewKey: "animata-battery",
@@ -1805,7 +1805,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "battery"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/battery.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/battery.json",
   },
   {
     previewKey: "animata-battery-level",
@@ -1819,7 +1819,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "battery"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/battery-level.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/battery-level.json",
   },
   {
     previewKey: "animata-calendar-event",
@@ -1834,7 +1834,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "calendar"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/calendar-event.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/calendar-event.json",
   },
   {
     previewKey: "animata-calorie-counter",
@@ -1848,7 +1848,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "calorie"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/calorie-counter.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/calorie-counter.json",
   },
   {
     previewKey: "animata-clock-with-photo",
@@ -1862,7 +1862,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "clock"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/clock-with-photo.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/clock-with-photo.json",
   },
   {
     previewKey: "animata-cycling",
@@ -1876,7 +1876,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "cycling"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/cycling.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/cycling.json",
   },
   {
     previewKey: "animata-delivery-card",
@@ -1890,7 +1890,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "delivery"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/delivery-card.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/delivery-card.json",
   },
   {
     previewKey: "animata-direction-card",
@@ -1904,7 +1904,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "direction"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/direction-card.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/direction-card.json",
   },
   {
     previewKey: "animata-expense-tracker",
@@ -1918,7 +1918,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "expense"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/expense-tracker.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/expense-tracker.json",
   },
   {
     previewKey: "animata-flight-widget",
@@ -1932,7 +1932,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "flight"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/flight-widget.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/flight-widget.json",
   },
   {
     previewKey: "animata-fund-widget",
@@ -1947,7 +1947,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "fund"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/fund-widget.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/fund-widget.json",
   },
   {
     previewKey: "animata-live-score",
@@ -1961,7 +1961,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "live"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/live-score.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/live-score.json",
   },
   {
     previewKey: "animata-mobile-detail",
@@ -1975,7 +1975,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "mobile"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/mobile-detail.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/mobile-detail.json",
   },
   {
     previewKey: "animata-music-widget",
@@ -1989,7 +1989,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "music"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/music-widget.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/music-widget.json",
   },
   {
     previewKey: "animata-notes",
@@ -2003,7 +2003,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "notes"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/notes.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/notes.json",
   },
   {
     previewKey: "animata-profile",
@@ -2017,7 +2017,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "profile"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/profile.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/profile.json",
   },
   {
     previewKey: "animata-reminder",
@@ -2031,7 +2031,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "reminder"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/reminder.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/reminder.json",
   },
   {
     previewKey: "animata-reminder-widget",
@@ -2045,7 +2045,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "reminder"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/reminder-widget.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/reminder-widget.json",
   },
   {
     previewKey: "animata-score-board",
@@ -2059,7 +2059,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "score"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/score-board.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/score-board.json",
   },
   {
     previewKey: "animata-security-alert",
@@ -2073,7 +2073,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "security"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/security-alert.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/security-alert.json",
   },
   {
     previewKey: "animata-shopping-list",
@@ -2087,7 +2087,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "shopping"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/shopping-list.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/shopping-list.json",
   },
   {
     previewKey: "animata-sleep-tracker",
@@ -2101,7 +2101,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "sleep"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/sleep-tracker.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/sleep-tracker.json",
   },
   {
     previewKey: "animata-storage-status",
@@ -2115,7 +2115,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "storage"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/storage-status.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/storage-status.json",
   },
   {
     previewKey: "animata-storage-widget",
@@ -2129,7 +2129,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "storage"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/storage-widget.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/storage-widget.json",
   },
   {
     previewKey: "animata-study-timer",
@@ -2143,7 +2143,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "study"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/study-timer.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/study-timer.json",
   },
   {
     previewKey: "animata-vpn-widget",
@@ -2158,7 +2158,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "vpn"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/vpn-widget.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/vpn-widget.json",
   },
   {
     previewKey: "animata-water-tracker",
@@ -2172,7 +2172,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "water"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/water-tracker.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/water-tracker.json",
   },
   {
     previewKey: "animata-weather-card",
@@ -2186,7 +2186,7 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "weather"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/weather-card.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/weather-card.json",
   },
   {
     previewKey: "animata-weekly-progress",
@@ -2200,6 +2200,6 @@ export const animata: UIEntry[] = [
     tags: ["animata", "motion", "weekly"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add https://animata.design/r/weekly-progress.json",
+    install: "npx shadcn@latest add https://animata.design/r/widget/weekly-progress.json",
   },
 ];

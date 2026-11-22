@@ -13,7 +13,7 @@ export const aceternity: UIEntry[] = [
     tags: ["border", "conic", "glow", "cta"],
     license: "mit",
     previewMode: "live",
-    install: "npx aceternity-ui@latest add moving-border",
+    install: "npx shadcn@latest add @aceternity/moving-border",
     previewKey: "aceternity-moving-border",
   },
   {
@@ -28,7 +28,7 @@ export const aceternity: UIEntry[] = [
     tags: ["3d", "tilt", "pin", "card"],
     license: "mit",
     previewMode: "live",
-    install: "npx aceternity-ui@latest add 3d-pin",
+    install: "npx shadcn@latest add @aceternity/3d-pin",
   },
   {
     previewKey: "aceternity-3d-card-effect",
@@ -43,7 +43,7 @@ export const aceternity: UIEntry[] = [
     tags: ["3d", "glare", "tilt", "pointer"],
     license: "mit",
     previewMode: "live",
-    install: "npx aceternity-ui@latest add 3d-card-effect",
+    install: "npx shadcn@latest add @aceternity/3d-card",
   },
   {
     previewKey: "aceternity-hero-parallax",
@@ -57,7 +57,7 @@ export const aceternity: UIEntry[] = [
     tags: ["parallax", "hero", "3d", "scroll"],
     license: "mit",
     previewMode: "live",
-    install: "npx aceternity-ui@latest add hero-parallax",
+    install: "npx shadcn@latest add @aceternity/hero-parallax",
   },
   {
     previewKey: "aceternity-lamp-effect",
@@ -71,7 +71,7 @@ export const aceternity: UIEntry[] = [
     tags: ["lamp", "light", "cta", "dramatic"],
     license: "mit",
     previewMode: "live",
-    install: "npx aceternity-ui@latest add lamp-effect",
+    install: "npx shadcn@latest add @aceternity/lamp",
   },
   {
     previewKey: "aceternity-macbook-scroll",
@@ -85,7 +85,7 @@ export const aceternity: UIEntry[] = [
     tags: ["3d", "scroll", "product", "laptop"],
     license: "mit",
     previewMode: "live",
-    install: "npx aceternity-ui@latest add macbook-scroll",
+    install: "npx shadcn@latest add @aceternity/macbook-scroll",
   },
   {
     previewKey: "aceternity-background-beams",
@@ -99,7 +99,7 @@ export const aceternity: UIEntry[] = [
     tags: ["beams", "svg", "gradient", "dark"],
     license: "mit",
     previewMode: "live",
-    install: "npx aceternity-ui@latest add background-beams",
+    install: "npx shadcn@latest add @aceternity/background-beams",
   },
   {
     previewKey: "aceternity-aurora-background",
@@ -113,7 +113,7 @@ export const aceternity: UIEntry[] = [
     tags: ["aurora", "gradient", "soft"],
     license: "mit",
     previewMode: "live",
-    install: "npx aceternity-ui@latest add aurora-background",
+    install: "npx shadcn@latest add @aceternity/aurora-background",
   },
   {
     previewKey: "aceternity-wavy-background",
@@ -127,7 +127,7 @@ export const aceternity: UIEntry[] = [
     tags: ["waves", "canvas", "generative"],
     license: "mit",
     previewMode: "live",
-    install: "npx aceternity-ui@latest add wavy-background",
+    install: "npx shadcn@latest add @aceternity/wavy-background",
   },
   {
     previewKey: "aceternity-infinite-moving-cards",
@@ -141,7 +141,7 @@ export const aceternity: UIEntry[] = [
     tags: ["marquee", "testimonials", "infinite"],
     license: "mit",
     previewMode: "live",
-    install: "npx aceternity-ui@latest add infinite-moving-cards",
+    install: "npx shadcn@latest add @aceternity/infinite-moving-cards",
   },
   {
     previewKey: "aceternity-tracing-beam",
@@ -155,7 +155,7 @@ export const aceternity: UIEntry[] = [
     tags: ["scroll", "beam", "reading", "progress"],
     license: "mit",
     previewMode: "live",
-    install: "npx aceternity-ui@latest add tracing-beam",
+    install: "npx shadcn@latest add @aceternity/tracing-beam",
   },
   {
     previewKey: "aceternity-text-generate-effect",
@@ -169,7 +169,7 @@ export const aceternity: UIEntry[] = [
     tags: ["text", "blur", "generate", "reveal"],
     license: "mit",
     previewMode: "live",
-    install: "npx aceternity-ui@latest add text-generate-effect",
+    install: "npx shadcn@latest add @aceternity/text-generate-effect",
   },
   {
     previewKey: "aceternity-floating-dock",
@@ -183,7 +183,7 @@ export const aceternity: UIEntry[] = [
     tags: ["dock", "magnify", "macos", "navigation"],
     license: "mit",
     previewMode: "live",
-    install: "npx aceternity-ui@latest add floating-dock",
+    install: "npx shadcn@latest add @aceternity/floating-dock",
     featured: true,
   },
   {
@@ -198,7 +198,7 @@ export const aceternity: UIEntry[] = [
     tags: ["bento", "grid", "spotlight", "features"],
     license: "mit",
     previewMode: "live",
-    install: "npx aceternity-ui@latest add bento-grid",
+    install: "npx shadcn@latest add @aceternity/bento-grid",
     featured: true,
   },
   {
@@ -213,6 +213,6 @@ export const aceternity: UIEntry[] = [
     tags: ["globe", "three", "cobe", "3d"],
     license: "mit",
     previewMode: "live",
-    install: "npx aceternity-ui@latest add github-globe",
+    install: "npx shadcn@latest add @aceternity/globe",
   },
 ];

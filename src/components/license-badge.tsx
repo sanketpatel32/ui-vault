@@ -5,6 +5,7 @@ import { LICENSE_LABEL } from "@/lib/license";
 
 const LICENSE_COLOR: Record<License, string> = {
   mit: "bg-emerald-400",
+  "mit-commons-clause": "bg-teal-400",
   free: "bg-sky-400",
   freemium: "bg-amber-400",
   paid: "bg-rose-400",

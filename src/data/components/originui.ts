@@ -1,7 +1,7 @@
 import type { UIEntry } from "../types";
 
 // https://coss.com/origin — Origin UI (MIT, preserved as a legacy snapshot inside the
-// cosscom/coss monorepo after the COSS rebrand). Family-granularity: 31 documented
+// cosscom/ui monorepo after the COSS rebrand). Family-granularity: 31 documented
 // families covering 599 component variants.
 export const originui: UIEntry[] = [
   {

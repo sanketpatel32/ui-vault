@@ -818,7 +818,7 @@ export const cossui: UIEntry[] = [
     description:
       '4 pre-styled accordion particles from the COSS registry — e.g. "Accordion with one panel open". Every variant installs individually; the preview shows accordion-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/accordion",
     sourceCategory: "Particles",
     category: "faq",
     tags: ["coss", "particle", "variants"],
@@ -833,7 +833,7 @@ export const cossui: UIEntry[] = [
     description:
       '7 pre-styled alert particles from the COSS registry — e.g. "Alert with icon". Every variant installs individually; the preview shows alert-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/alert",
     sourceCategory: "Particles",
     category: "feedback",
     tags: ["coss", "particle", "variants"],
@@ -848,7 +848,7 @@ export const cossui: UIEntry[] = [
     description:
       '2 pre-styled alert dialog particles from the COSS registry — e.g. "Alert dialog with bare footer". Every variant installs individually; the preview shows alert-dialog-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/alert-dialog",
     sourceCategory: "Particles",
     category: "overlays",
     tags: ["coss", "particle", "variants"],
@@ -863,7 +863,7 @@ export const cossui: UIEntry[] = [
     description:
       '16 pre-styled autocomplete particles from the COSS registry — e.g. "Disabled autocomplete". Every variant installs individually; the preview shows autocomplete-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/autocomplete",
     sourceCategory: "Particles",
     category: "forms",
     tags: ["coss", "particle", "variants"],
@@ -878,7 +878,7 @@ export const cossui: UIEntry[] = [
     description:
       '14 pre-styled avatar particles from the COSS registry — e.g. "Fallback-only avatar". Every variant installs individually; the preview shows avatar-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/avatar",
     sourceCategory: "Particles",
     category: "data-display",
     tags: ["coss", "particle", "variants"],
@@ -893,7 +893,7 @@ export const cossui: UIEntry[] = [
     description:
       '20 pre-styled badge particles from the COSS registry — e.g. "Outline badge". Every variant installs individually; the preview shows badge-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/badge",
     sourceCategory: "Particles",
     category: "data-display",
     tags: ["coss", "particle", "variants"],
@@ -908,7 +908,7 @@ export const cossui: UIEntry[] = [
     description:
       '7 pre-styled breadcrumb particles from the COSS registry — e.g. "Breadcrumb with custom separator". Every variant installs individually; the preview shows breadcrumb-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/breadcrumb",
     sourceCategory: "Particles",
     category: "navigation",
     tags: ["coss", "particle", "variants"],
@@ -923,7 +923,7 @@ export const cossui: UIEntry[] = [
     description:
       '40 pre-styled button particles from the COSS registry — e.g. "Outline button". Every variant installs individually; the preview shows button-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/button",
     sourceCategory: "Particles",
     category: "buttons",
     tags: ["coss", "particle", "variants"],
@@ -938,7 +938,7 @@ export const cossui: UIEntry[] = [
     description:
       '25 pre-styled calendar particles from the COSS registry — e.g. "Calendar with custom cell size". Every variant installs individually; the preview shows calendar-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/calendar",
     sourceCategory: "Particles",
     category: "forms",
     tags: ["coss", "particle", "variants"],
@@ -953,7 +953,7 @@ export const cossui: UIEntry[] = [
     description:
       '11 pre-styled card particles from the COSS registry — e.g. "Authentication card with actions". Every variant installs individually; the preview shows card-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/card",
     sourceCategory: "Particles",
     category: "cards",
     tags: ["coss", "particle", "variants"],
@@ -968,7 +968,7 @@ export const cossui: UIEntry[] = [
     description:
       '5 pre-styled checkbox particles from the COSS registry — e.g. "Disabled checkbox". Every variant installs individually; the preview shows checkbox-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/checkbox",
     sourceCategory: "Particles",
     category: "forms",
     tags: ["coss", "particle", "variants"],
@@ -983,7 +983,7 @@ export const cossui: UIEntry[] = [
     description:
       '5 pre-styled checkbox group particles from the COSS registry — e.g. "Checkbox group with disabled items". Every variant installs individually; the preview shows checkbox-group-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/checkbox-group",
     sourceCategory: "Particles",
     category: "forms",
     tags: ["coss", "particle", "variants"],
@@ -998,7 +998,7 @@ export const cossui: UIEntry[] = [
     description:
       '1 pre-styled collapsible particles from the COSS registry — e.g. "Basic collapsible". Every variant installs individually; the preview shows collapsible-1.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/collapsible",
     sourceCategory: "Particles",
     category: "overlays",
     tags: ["coss", "particle", "variants"],
@@ -1013,7 +1013,7 @@ export const cossui: UIEntry[] = [
     description:
       '20 pre-styled combobox particles from the COSS registry — e.g. "Disabled combobox". Every variant installs individually; the preview shows combobox-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/combobox",
     sourceCategory: "Particles",
     category: "forms",
     tags: ["coss", "particle", "variants"],
@@ -1028,7 +1028,7 @@ export const cossui: UIEntry[] = [
     description:
       '2 pre-styled command particles from the COSS registry — e.g. "Command palette with AI assistant". Every variant installs individually; the preview shows command-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/command",
     sourceCategory: "Particles",
     category: "overlays",
     tags: ["coss", "particle", "variants"],
@@ -1043,7 +1043,7 @@ export const cossui: UIEntry[] = [
     description:
       '8 pre-styled context menu particles from the COSS registry — e.g. "Context menu with link items". Every variant installs individually; the preview shows context-menu-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/context-menu",
     sourceCategory: "Particles",
     category: "overlays",
     tags: ["coss", "particle", "variants"],
@@ -1058,7 +1058,7 @@ export const cossui: UIEntry[] = [
     description:
       '9 pre-styled date picker particles from the COSS registry — e.g. "Date range picker". Every variant installs individually; the preview shows date-picker-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/date-picker",
     sourceCategory: "Particles",
     category: "forms",
     tags: ["coss", "particle", "variants"],
@@ -1073,7 +1073,7 @@ export const cossui: UIEntry[] = [
     description:
       '6 pre-styled dialog particles from the COSS registry — e.g. "Dialog opened from menu". Every variant installs individually; the preview shows dialog-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/dialog",
     sourceCategory: "Particles",
     category: "overlays",
     tags: ["coss", "particle", "variants"],
@@ -1088,7 +1088,7 @@ export const cossui: UIEntry[] = [
     description:
       '14 pre-styled drawer particles from the COSS registry — e.g. "Bottom drawer without drag bar". Every variant installs individually; the preview shows drawer-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/drawer",
     sourceCategory: "Particles",
     category: "overlays",
     tags: ["coss", "particle", "variants"],
@@ -1103,7 +1103,7 @@ export const cossui: UIEntry[] = [
     description:
       '1 pre-styled empty particles from the COSS registry — e.g. "Empty state with icon and actions". Every variant installs individually; the preview shows empty-1.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/empty",
     sourceCategory: "Particles",
     category: "feedback",
     tags: ["coss", "particle", "variants"],
@@ -1118,7 +1118,7 @@ export const cossui: UIEntry[] = [
     description:
       '18 pre-styled field particles from the COSS registry — e.g. "Field with required indicator". Every variant installs individually; the preview shows field-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/field",
     sourceCategory: "Particles",
     category: "forms",
     tags: ["coss", "particle", "variants"],
@@ -1133,7 +1133,7 @@ export const cossui: UIEntry[] = [
     description:
       '1 pre-styled fieldset particles from the COSS registry — e.g. "Fieldset with multiple fields". Every variant installs individually; the preview shows fieldset-1.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/fieldset",
     sourceCategory: "Particles",
     category: "forms",
     tags: ["coss", "particle", "variants"],
@@ -1148,7 +1148,7 @@ export const cossui: UIEntry[] = [
     description:
       '2 pre-styled form particles from the COSS registry — e.g. "Form with zod validation". Every variant installs individually; the preview shows form-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/form",
     sourceCategory: "Particles",
     category: "forms",
     tags: ["coss", "particle", "variants"],
@@ -1163,7 +1163,7 @@ export const cossui: UIEntry[] = [
     description:
       '4 pre-styled frame particles from the COSS registry — e.g. "Frame with collapsible content and delete button". Every variant installs individually; the preview shows frame-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/frame",
     sourceCategory: "Particles",
     category: "sections-misc",
     tags: ["coss", "particle", "variants"],
@@ -1178,7 +1178,7 @@ export const cossui: UIEntry[] = [
     description:
       '22 pre-styled group particles from the COSS registry — e.g. "Group with input". Every variant installs individually; the preview shows group-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/group",
     sourceCategory: "Particles",
     category: "sections-misc",
     tags: ["coss", "particle", "variants"],
@@ -1193,7 +1193,7 @@ export const cossui: UIEntry[] = [
     description:
       '19 pre-styled input particles from the COSS registry — e.g. "Small input". Every variant installs individually; the preview shows input-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/input",
     sourceCategory: "Particles",
     category: "forms",
     tags: ["coss", "particle", "variants"],
@@ -1208,7 +1208,7 @@ export const cossui: UIEntry[] = [
     description:
       '28 pre-styled input group particles from the COSS registry — e.g. "Input group with end icon". Every variant installs individually; the preview shows input-group-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/input-group",
     sourceCategory: "Particles",
     category: "forms",
     tags: ["coss", "particle", "variants"],
@@ -1223,7 +1223,7 @@ export const cossui: UIEntry[] = [
     description:
       '1 pre-styled kbd particles from the COSS registry — e.g. "Keyboard shortcuts display". Every variant installs individually; the preview shows kbd-1.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/kbd",
     sourceCategory: "Particles",
     category: "data-display",
     tags: ["coss", "particle", "variants"],
@@ -1238,7 +1238,7 @@ export const cossui: UIEntry[] = [
     description:
       '9 pre-styled menu particles from the COSS registry — e.g. "Menu with hover". Every variant installs individually; the preview shows menu-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/menu",
     sourceCategory: "Particles",
     category: "overlays",
     tags: ["coss", "particle", "variants"],
@@ -1253,7 +1253,7 @@ export const cossui: UIEntry[] = [
     description:
       '4 pre-styled meter particles from the COSS registry — e.g. "Simple meter". Every variant installs individually; the preview shows meter-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/meter",
     sourceCategory: "Particles",
     category: "feedback",
     tags: ["coss", "particle", "variants"],
@@ -1283,7 +1283,7 @@ export const cossui: UIEntry[] = [
     description:
       '11 pre-styled number field particles from the COSS registry — e.g. "Small number field". Every variant installs individually; the preview shows number-field-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/number-field",
     sourceCategory: "Particles",
     category: "forms",
     tags: ["coss", "particle", "variants"],
@@ -1298,7 +1298,7 @@ export const cossui: UIEntry[] = [
     description:
       '9 pre-styled otp field particles from the COSS registry — e.g. "Large OTP field". Every variant installs individually; the preview shows otp-field-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/otp-field",
     sourceCategory: "Particles",
     category: "forms",
     tags: ["coss", "particle", "variants"],
@@ -1313,7 +1313,7 @@ export const cossui: UIEntry[] = [
     description:
       '3 pre-styled pagination particles from the COSS registry — e.g. "Pagination with previous and next buttons only". Every variant installs individually; the preview shows pagination-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/pagination",
     sourceCategory: "Particles",
     category: "navigation",
     tags: ["coss", "particle", "variants"],
@@ -1328,7 +1328,7 @@ export const cossui: UIEntry[] = [
     description:
       '4 pre-styled popover particles from the COSS registry — e.g. "Popover with close button". Every variant installs individually; the preview shows popover-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/popover",
     sourceCategory: "Particles",
     category: "overlays",
     tags: ["coss", "particle", "variants"],
@@ -1343,7 +1343,7 @@ export const cossui: UIEntry[] = [
     description:
       '1 pre-styled preview card particles from the COSS registry — e.g. "Preview card with popup". Every variant installs individually; the preview shows preview-card-1.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/preview-card",
     sourceCategory: "Particles",
     category: "cards",
     tags: ["coss", "particle", "variants"],
@@ -1358,7 +1358,7 @@ export const cossui: UIEntry[] = [
     description:
       '3 pre-styled progress particles from the COSS registry — e.g. "Progress with label and value". Every variant installs individually; the preview shows progress-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/progress",
     sourceCategory: "Particles",
     category: "feedback",
     tags: ["coss", "particle", "variants"],
@@ -1373,7 +1373,7 @@ export const cossui: UIEntry[] = [
     description:
       '9 pre-styled radio group particles from the COSS registry — e.g. "Disabled radio group". Every variant installs individually; the preview shows radio-group-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/radio-group",
     sourceCategory: "Particles",
     category: "forms",
     tags: ["coss", "particle", "variants"],
@@ -1388,7 +1388,7 @@ export const cossui: UIEntry[] = [
     description:
       '5 pre-styled scroll area particles from the COSS registry — e.g. "Horizontal scroll area". Every variant installs individually; the preview shows scroll-area-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/scroll-area",
     sourceCategory: "Particles",
     category: "sections-misc",
     tags: ["coss", "particle", "variants"],
@@ -1403,7 +1403,7 @@ export const cossui: UIEntry[] = [
     description:
       '23 pre-styled select particles from the COSS registry — e.g. "Small select". Every variant installs individually; the preview shows select-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/select",
     sourceCategory: "Particles",
     category: "forms",
     tags: ["coss", "particle", "variants"],
@@ -1418,7 +1418,7 @@ export const cossui: UIEntry[] = [
     description:
       '1 pre-styled separator particles from the COSS registry — e.g. "Separator with horizontal and vertical orientations". Every variant installs individually; the preview shows separator-1.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/separator",
     sourceCategory: "Particles",
     category: "sections-misc",
     tags: ["coss", "particle", "variants"],
@@ -1433,7 +1433,7 @@ export const cossui: UIEntry[] = [
     description:
       '3 pre-styled sheet particles from the COSS registry — e.g. "Sheet inset". Every variant installs individually; the preview shows sheet-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/sheet",
     sourceCategory: "Particles",
     category: "overlays",
     tags: ["coss", "particle", "variants"],
@@ -1448,7 +1448,7 @@ export const cossui: UIEntry[] = [
     description:
       '2 pre-styled skeleton particles from the COSS registry — e.g. "Skeleton only". Every variant installs individually; the preview shows skeleton-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/skeleton",
     sourceCategory: "Particles",
     category: "feedback",
     tags: ["coss", "particle", "variants"],
@@ -1463,7 +1463,7 @@ export const cossui: UIEntry[] = [
     description:
       '23 pre-styled slider particles from the COSS registry — e.g. "Slider with label and value". Every variant installs individually; the preview shows slider-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/slider",
     sourceCategory: "Particles",
     category: "forms",
     tags: ["coss", "particle", "variants"],
@@ -1478,7 +1478,7 @@ export const cossui: UIEntry[] = [
     description:
       '1 pre-styled spinner particles from the COSS registry — e.g. "Basic spinner". Every variant installs individually; the preview shows spinner-1.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/spinner",
     sourceCategory: "Particles",
     category: "feedback",
     tags: ["coss", "particle", "variants"],
@@ -1493,7 +1493,7 @@ export const cossui: UIEntry[] = [
     description:
       '9 pre-styled switch particles from the COSS registry — e.g. "Disabled switch". Every variant installs individually; the preview shows switch-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/switch",
     sourceCategory: "Particles",
     category: "forms",
     tags: ["coss", "particle", "variants"],
@@ -1508,7 +1508,7 @@ export const cossui: UIEntry[] = [
     description:
       '8 pre-styled table particles from the COSS registry — e.g. "Frame with card-style table". Every variant installs individually; the preview shows table-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/table",
     sourceCategory: "Particles",
     category: "data-display",
     tags: ["coss", "particle", "variants"],
@@ -1523,7 +1523,7 @@ export const cossui: UIEntry[] = [
     description:
       '15 pre-styled tabs particles from the COSS registry — e.g. "Tabs with underline". Every variant installs individually; the preview shows tabs-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/tabs",
     sourceCategory: "Particles",
     category: "navigation",
     tags: ["coss", "particle", "variants"],
@@ -1538,7 +1538,7 @@ export const cossui: UIEntry[] = [
     description:
       '15 pre-styled textarea particles from the COSS registry — e.g. "Small textarea". Every variant installs individually; the preview shows textarea-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/textarea",
     sourceCategory: "Particles",
     category: "forms",
     tags: ["coss", "particle", "variants"],
@@ -1553,7 +1553,7 @@ export const cossui: UIEntry[] = [
     description:
       '13 pre-styled toast particles from the COSS registry — e.g. "Stacked toasts by semantic type (success, error, info, warning)". Every variant installs individually; the preview shows toast-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/toast",
     sourceCategory: "Particles",
     category: "feedback",
     tags: ["coss", "particle", "variants"],
@@ -1568,7 +1568,7 @@ export const cossui: UIEntry[] = [
     description:
       '8 pre-styled toggle particles from the COSS registry — e.g. "Toggle with outline". Every variant installs individually; the preview shows toggle-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/toggle",
     sourceCategory: "Particles",
     category: "forms",
     tags: ["coss", "particle", "variants"],
@@ -1583,7 +1583,7 @@ export const cossui: UIEntry[] = [
     description:
       '9 pre-styled toggle group particles from the COSS registry — e.g. "Small toggle group". Every variant installs individually; the preview shows toggle-group-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/toggle-group",
     sourceCategory: "Particles",
     category: "forms",
     tags: ["coss", "particle", "variants"],
@@ -1598,7 +1598,7 @@ export const cossui: UIEntry[] = [
     description:
       '1 pre-styled toolbar particles from the COSS registry — e.g. "Toolbar with toggles, buttons, and select". Every variant installs individually; the preview shows toolbar-1.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/toolbar",
     sourceCategory: "Particles",
     category: "navigation",
     tags: ["coss", "particle", "variants"],
@@ -1613,7 +1613,7 @@ export const cossui: UIEntry[] = [
     description:
       '4 pre-styled tooltip particles from the COSS registry — e.g. "Grouped tooltips". Every variant installs individually; the preview shows tooltip-2.',
     source: "cossui",
-    sourceUrl: "https://coss.com/ui/particles",
+    sourceUrl: "https://coss.com/ui/docs/components/tooltip",
     sourceCategory: "Particles",
     category: "overlays",
     tags: ["coss", "particle", "variants"],
