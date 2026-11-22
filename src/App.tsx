@@ -1,10 +1,11 @@
-import { lazy, Suspense, useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Sidebar } from "@/components/sidebar";
 import { Topbar } from "@/components/topbar";
 import { CommandPalette } from "@/components/command-palette";
 import { Home } from "@/pages/home";
 import { RouteFallback } from "@/components/route-fallback";
+import { pageName, pageTitle } from "@/lib/page-title";
 
 const Browse = lazy(() => import("@/pages/browse").then((m) => ({ default: m.Browse })));
 const CategoryPage = lazy(() =>
@@ -20,6 +21,8 @@ const NotFound = lazy(() => import("@/pages/not-found").then((m) => ({ default: 
 export default function App() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const [paletteOpen, setPaletteOpen] = useState(false);
+  const [announcement, setAnnouncement] = useState("");
+  const lastPathname = useRef<string | null>(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -36,6 +39,11 @@ export default function App() {
   useEffect(() => {
     window.scrollTo(0, 0);
     setMobileNavOpen(false);
+    document.title = pageTitle(location.pathname);
+    if (lastPathname.current !== null && lastPathname.current !== location.pathname) {
+      setAnnouncement(`Navigated to ${pageName(location.pathname)}`);
+    }
+    lastPathname.current = location.pathname;
   }, [location.pathname]);
 
   return (
@@ -65,6 +73,10 @@ export default function App() {
       </div>
 
       <CommandPalette open={paletteOpen} onClose={() => setPaletteOpen(false)} />
+
+      <div aria-live="polite" aria-atomic="true" className="sr-only">
+        {announcement}
+      </div>
     </div>
   );
 }
