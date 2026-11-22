@@ -55,3 +55,4 @@
 - **Cosmic Button** https://cult-ui.com/docs/components/cosmic-button — An animated button/link with a cosmic gradient border effect [MIT, live-previewable, category: buttons]
 - **Gradient Button Group** https://cult-ui.com/docs/components/gradient-button-group — Premium, layered button group navigation with animated active states and a theme-toggle underlay. [MIT, live-previewable, category: buttons]
 - **Theme Switcher** https://www.kibo-ui.com/components/theme-switcher — A component to switch between light, dark and system theme. [MIT, live-previewable, category: buttons]
+- **Button** https://ui-sdk.dev/docs/react/components/button — Run an action, show that it's working, and keep it reachable when disabled. Headless and styling-agnostic — bring your own Tailwind classes. [Free, live-previewable, category: buttons]

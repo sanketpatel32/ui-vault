@@ -61,6 +61,11 @@ Fresh checkout: `npm install` (or `vp install`) first.
 | coss.com/ui            | `cossui`           | MIT (apps/ui carve-out)         | ✅ yes (111, v0.6.0)  |
 | cult-ui.com            | `cultui`           | MIT (Cult Pro is paid)          | ✅ free set only (77) |
 | kibo-ui.com            | `kiboui`           | MIT (shadcnblocks/kibo)         | ✅ yes (40, v0.6.0)   |
+| streamdown.ai          | `streamdown`       | Apache-2.0                      | ✅ yes (5, v0.8.0)    |
+| generativeloaders.com  | `genloaders`       | MIT                             | ✅ yes (46, v0.8.0)   |
+| ui-sdk.dev             | `uisdk`            | Apache-2.0 (beta)               | ✅ yes (55, v0.8.0)   |
+| wterm.dev              | `wterm`            | Apache-2.0                      | ✅ yes (1, v0.8.0)    |
+| skullet.lochie.me      | `skullet`          | MIT                             | ✅ yes (1, v0.8.0)    |
 | 21st.dev               | `21st`             | Freemium (2 copies/day)         | ❌ removed in v0.3.0  |
 | shadcnstudio.com       | `shadcnstudio`     | Free tier + $249 Pro            | ❌ removed in v0.3.0  |
 | pro.ui-layouts.com     | `uilayouts`        | Paid ($139+)                    | ❌ removed in v0.3.0  |
@@ -68,11 +73,13 @@ Fresh checkout: `npm install` (or `vp install`) first.
 | collectui.com          | `collectui`        | Free gallery                    | ❌ removed in v0.3.0  |
 | component.gallery      | `componentgallery` | Free reference                  | ❌ removed in v0.3.0  |
 
-Install commands for the vendorable sources: `npx shadcn@latest add @react-bits/<Name>-TS-TW` (suffix = JS|TS + CSS|TW) · `npx motion-primitives@latest add <name>` · shadcn registry `@fancy` (fancycomponents.dev/r/{name}.json) · `npm i @number-flow/react` · watermelon: `npx shadcn@latest add https://registry.watermelon.sh/r/<name>.json` · aceternity: `npx shadcn@latest add @aceternity/<name>` · shadcn: `npx shadcn@latest add <component>` · magicui: `npx shadcn@latest add @magicui/<component>` · animata: `npx shadcn@latest add https://animata.design/r/<section>/<name>.json` · animateui: `npx shadcn@latest add @animate-ui/<slug>` · launchui: `npx shadcn@latest add @launchui/<block>` · originui: `npx shadcn@latest add https://coss.com/origin/r/<family>.json` · cossui: `npx shadcn@latest add @coss/<component>` · cultui: `npx shadcn@latest add https://cult-ui.com/r/<name>.json` · kiboui: `npx kibo-ui add <component>`.
+Install commands for the vendorable sources: `npx shadcn@latest add @react-bits/<Name>-TS-TW` (suffix = JS|TS + CSS|TW) · `npx motion-primitives@latest add <name>` · shadcn registry `@fancy` (fancycomponents.dev/r/{name}.json) · `npm i @number-flow/react` · watermelon: `npx shadcn@latest add https://registry.watermelon.sh/r/<name>.json` · aceternity: `npx shadcn@latest add @aceternity/<name>` · shadcn: `npx shadcn@latest add <component>` · magicui: `npx shadcn@latest add @magicui/<component>` · animata: `npx shadcn@latest add https://animata.design/r/<section>/<name>.json` · animateui: `npx shadcn@latest add @animate-ui/<slug>` · launchui: `npx shadcn@latest add @launchui/<block>` · originui: `npx shadcn@latest add https://coss.com/origin/r/<family>.json` · cossui: `npx shadcn@latest add @coss/<component>` · cultui: `npx shadcn@latest add https://cult-ui.com/r/<name>.json` · kiboui: `npx kibo-ui add <component>` · streamdown: `npm install streamdown` (+ `@streamdown/<plugin>`) · genloaders: `npm install generative-loaders` · uisdk: `npm install @ui-sdk/react @ui-sdk/core` · wterm: `npm install @wterm/dom @wterm/react` · skullet: `npm install skullet`.
 
 v0.4.0 research notes (research/*.json has the full extracted sets): Animata carries its 154 _published_ components only — the repo documents 198 but 44 have no live docs page yet. Animate UI names Radix/Base UI/Headless UI variants with a suffix ("Accordion (Radix)") — ids carry the section prefix. Origin UI is family-granularity (31 families ≈ 599 variants; per-variant registry files exist at coss.com/origin/r/).
 
 v0.6.0/v0.7.0 notes: COSS UI (Origin UI's successor) carries 55 components + 2 hooks + 54 particle families (508 particles, cataloged per family) — MIT because `apps/ui` is carved out of the AGPL cosscom/coss monorepo by its root LICENSING.md. Cult UI carries the 77 MIT repo components only (Cult Pro is a separate paid product); its site sits behind a bot challenge, so code is vendored from the identical registry JSON in github.com/nolly-studio/cult-ui (`apps/www/public/r`). Kibo UI carries its 40 registry components; the 28 site blocks are CLI-only (no registry endpoint) and not cataloged. v0.7.0 brought live-preview coverage to 814/814.
+
+v0.8.0 notes (2026-11-22, issues #68–#72): Streamdown, Generative Loaders, UI SDK, wterm and Skullet are registry-only — no vendored previews yet (entries render the "No local preview yet" fallback). Apache-2.0 sources use `license: "free"` with the exact license in the source notes. UI SDK is beta (0.1.0-beta.14) and Skullet/Generative Loaders are pre-1.0 — re-verify names on upgrade. Prerequisites (Tailwind `@source` lines, own CSS imports, React 19 for UI SDK) live in the source notes, not as dependencies.
 
 ## Adding a component (the standard workflow)
 

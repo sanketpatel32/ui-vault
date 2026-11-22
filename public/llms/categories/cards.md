@@ -38,3 +38,4 @@
 - **Neumorph Eyebrow** https://cult-ui.com/docs/components/neumorph-eyebrow — A neumorphic eyebrow text component with subtle animation effects. [MIT, live-previewable, category: cards]
 - **Texture Card** https://cult-ui.com/docs/components/texture-card — A well designed card with numorphic undertones [MIT, live-previewable, category: cards]
 - **Shift Card** https://cult-ui.com/docs/components/shift-card — A card that shows more detail on hover [MIT, live-previewable, category: cards]
+- **Carousel** https://ui-sdk.dev/docs/react/components/carousel — Page through slides with native scrolling, keyboard controls, and optional rotation. Headless and styling-agnostic — bring your own Tailwind classes. [Free, live-previewable, category: cards]

@@ -13,7 +13,12 @@ export type SourceId =
   | "originui"
   | "cossui"
   | "cultui"
-  | "kiboui";
+  | "kiboui"
+  | "streamdown"
+  | "genloaders"
+  | "uisdk"
+  | "wterm"
+  | "skullet";
 
 export type License = "mit" | "mit-commons-clause" | "free" | "freemium" | "paid";
 export type PreviewMode = "live" | "linkout";
