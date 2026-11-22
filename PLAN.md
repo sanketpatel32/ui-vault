@@ -175,7 +175,7 @@ Registry files: one file per source (`src/data/components/<source>.ts`), merged 
 ├── PLAN.md                 # this file — checklist of record
 ├── README.md               # human-facing intro
 ├── source.txt              # original inspiration list (provenance — keep forever)
-├── package.json            # scripts: dev/build/preview/lint/check/format/llms/registry:check (vp-powered)
+├── package.json            # scripts: dev/build/preview/lint/check/format/test/llms/registry:check (vp-powered)
 ├── vite.config.ts          # Vite+ unified config: plugins + fmt + lint (oxlint) settings
 ├── tsconfig.json           # references: app / node / scripts
 ├── scripts/
