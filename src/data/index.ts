@@ -19,6 +19,11 @@ import { genloaders } from "./components/genloaders";
 import { uisdk } from "./components/uisdk";
 import { wterm } from "./components/wterm";
 import { skullet } from "./components/skullet";
+import { easyui } from "./components/easyui";
+import { editorcn } from "./components/editorcn";
+import { loadingdev } from "./components/loadingdev";
+import { itshover } from "./components/itshover";
+import { amicro } from "./components/amicro";
 
 // Registry policy (v0.3.0): only vendorable sources — every entry ships free code
 // with an install command. Paid/gated/gallery sources are not carried as entries.
@@ -43,6 +48,11 @@ export const entries: UIEntry[] = [
   ...uisdk,
   ...wterm,
   ...skullet,
+  ...easyui,
+  ...editorcn,
+  ...loadingdev,
+  ...itshover,
+  ...amicro,
 ];
 
 export { sources } from "./sources";

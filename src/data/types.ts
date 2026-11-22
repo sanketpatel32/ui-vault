@@ -18,7 +18,12 @@ export type SourceId =
   | "genloaders"
   | "uisdk"
   | "wterm"
-  | "skullet";
+  | "skullet"
+  | "easyui"
+  | "editorcn"
+  | "loadingdev"
+  | "itshover"
+  | "amicro";
 
 export type License = "mit" | "mit-commons-clause" | "free" | "freemium" | "paid";
 export type PreviewMode = "live" | "linkout";

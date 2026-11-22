@@ -4,7 +4,7 @@
 > (open-source animated React libraries and component registries), organized into one
 > categorized, searchable library. Every entry ships free code with its source, license,
 > install command and — where vendored — a live React preview. No backend: the catalog itself
-> lives in TypeScript files under src/data (922 entries, 20 sources, 23 categories).
+> lives in TypeScript files under src/data (1548 entries, 25 sources, 23 categories).
 
 ## Sources
 
@@ -28,37 +28,42 @@
 - [UI SDK](https://ui-sdk.dev) — A library of behaviors to build your components. (Free, live-previewable, 55 cataloged)
 - [wterm](https://wterm.dev) — A terminal emulator for the web. (Free, live-previewable, 1 cataloged)
 - [Skullet](https://skullet.lochie.me) — Smart skeleton states for React, Vue, Svelte, and vanilla JavaScript. (MIT, live-previewable, 1 cataloged)
+- [EasyUI](https://easyui.site) — Micro-animated, physics-based, dark-mode-first React components. (MIT, live-previewable, 137 cataloged)
+- [editorcn](https://www.rtecn.space) — Rich text editors for React, built on Tiptap with shadcn/ui tokens. (MIT, live-previewable, 16 cataloged)
+- [loading.dev](https://loading.dev) — Beautiful loading indicators for React. (MIT, live-previewable, 36 cataloged)
+- [Its Hover](https://itshover.com) — Animated icons that come alive on hover. (Free, live-previewable, 263 cataloged)
+- [Amicro](https://amicro.vercel.app) — Open-source React micro-interactions and transitions powered by Motion. (MIT, live-previewable, 174 cataloged)
 
 ## Categories
 
 ### Components
-- `text-animation` Text & Typography (113) — Animated text reveals, scrambles, gradients and typographic effects.
-- `backgrounds` Backgrounds (61) — Shader, gradient and generative backgrounds for heroes and panels.
-- `3d-webgl` 3D & WebGL (6) — Globes, physics and Three.js scenes that drop into a page.
-- `buttons` Buttons & Actions (52) — Buttons with borders, magnets and sparks — actions that feel alive.
-- `cards` Cards & Bento (35) — Spotlight, tilt, bento and stacking card treatments.
-- `navigation` Navigation (51) — Navbars, docks, sidebars, tabs, breadcrumbs and scroll progress.
-- `forms` Forms & Inputs (140) — Inputs, selects, OTP, uploads, sliders, toggles and date pickers.
-- `overlays` Overlays (95) — Dialogs, drawers, popovers, tooltips, toasts and command bars.
-- `numbers` Numbers & Counters (14) — Animated numbers, tickers and odometers.
-- `micro-interactions` Micro-interactions (115) — Cursor tricks, physics toys and small moments of delight.
-- `feedback` Feedback & Status (77) — Spinners, progress, skeletons, empty states and notifications.
-- `data-display` Data Display (62) — Tables, charts, stats, badges and avatars for showing data.
-- `chat` Chat & AI (12) — Chat and AI conversation UI — bubbles, message streams, attachments.
+- `text-animation` Text & Typography (120) — Animated text reveals, scrambles, gradients and typographic effects.
+- `backgrounds` Backgrounds (69) — Shader, gradient and generative backgrounds for heroes and panels.
+- `3d-webgl` 3D & WebGL (7) — Globes, physics and Three.js scenes that drop into a page.
+- `buttons` Buttons & Actions (64) — Buttons with borders, magnets and sparks — actions that feel alive.
+- `cards` Cards & Bento (54) — Spotlight, tilt, bento and stacking card treatments.
+- `navigation` Navigation (65) — Navbars, docks, sidebars, tabs, breadcrumbs and scroll progress.
+- `forms` Forms & Inputs (170) — Inputs, selects, OTP, uploads, sliders, toggles and date pickers.
+- `overlays` Overlays (106) — Dialogs, drawers, popovers, tooltips, toasts and command bars.
+- `numbers` Numbers & Counters (16) — Animated numbers, tickers and odometers.
+- `micro-interactions` Micro-interactions (413) — Cursor tricks, physics toys and small moments of delight.
+- `feedback` Feedback & Status (259) — Spinners, progress, skeletons, empty states and notifications.
+- `data-display` Data Display (84) — Tables, charts, stats, badges and avatars for showing data.
+- `chat` Chat & AI (23) — Chat and AI conversation UI — bubbles, message streams, attachments.
 
 ### Blocks
 - `hero` Hero Sections (13) — Above-the-fold sections that set the tone of a page.
 - `features` Feature Sections (8) — Feature grids, bento layouts and product story sections.
-- `pricing` Pricing (2) — Pricing tables, plan comparisons and checkout prompts.
+- `pricing` Pricing (4) — Pricing tables, plan comparisons and checkout prompts.
 - `testimonials` Testimonials & Social Proof (4) — Quotes, marquees, logos and proof sections.
 - `cta` CTA Sections (3) — Big closing calls-to-action and conversion moments.
-- `faq` FAQ (12) — Frequently-asked-question sections and accordion groups.
+- `faq` FAQ (15) — Frequently-asked-question sections and accordion groups.
 - `footers` Footers (2) — Multi-column footers, sitemaps and newsletter captures.
-- `sections-misc` Other Sections (41) — Team, blog, contact, stats, onboarding and everything else.
+- `sections-misc` Other Sections (43) — Team, blog, contact, stats, onboarding and everything else.
 
 ### Templates
 - `dashboards` Dashboards (3) — Complete admin and analytics app layouts.
-- `auth` Login & Signup (1) — Auth screens, OTP flows and onboarding.
+- `auth` Login & Signup (3) — Auth screens, OTP flows and onboarding.
 
 ## Links
 

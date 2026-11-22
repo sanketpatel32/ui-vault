@@ -18,3 +18,5 @@
 - **Sliding Number** https://animate-ui.com/docs/primitives/texts/sliding-number — A sliding number animation. [MIT + Commons Clause, live-previewable, category: numbers]
 - **Animated Number** https://cult-ui.com/docs/components/animated-number — A simple animated number animation [MIT, live-previewable, category: numbers]
 - **Ticker** https://www.kibo-ui.com/components/ticker — A composable finance ticker for displaying symbols, prices and changes. [MIT, live-previewable, category: numbers]
+- **Airport Matrix Clock** https://easyui.site/components/airport-matrix-clock — A live world clock that renders local times and city names as crisp dot-matrix characters with restrained, character-level rolling transitions. [MIT, live-previewable, category: numbers]
+- **Animated Number Morph** https://easyui.site/components/animated-number — An Apple-grade smooth rolling digit counter that independently morphs individual numerical columns with physics-based springs, locale commas, currencies, and compact notation. [MIT, live-previewable, category: numbers]
