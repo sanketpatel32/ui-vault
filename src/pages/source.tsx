@@ -65,7 +65,7 @@ export function SourcePage() {
         )}
 
         {source.notes && (
-          <p className="mt-4 flex max-w-2xl items-start gap-2 rounded-lg border border-amber-500/20 bg-amber-500/5 px-3 py-2 text-xs leading-relaxed text-amber-200/90">
+          <p className="mt-4 flex max-w-2xl items-start gap-2 rounded-lg border border-amber-500/20 bg-amber-500/5 px-3 py-2 text-xs leading-relaxed text-warning-text">
             <ShieldCheck size={14} className="mt-0.5 shrink-0" />
             {source.notes}
           </p>
