@@ -285,4 +285,20 @@ export const sources: Source[] = [
       "Apache-2.0 (github.com/vercel-labs/ui). BETA (cataloged at 0.1.0-beta.14) — expect breaking changes before 1.0. React 19 required (peer >=19). Headless and styling-agnostic. Core behaviors are documented as a group at ui-sdk.dev/docs/core/behaviors and are not cataloged as entries.",
     color: "#d4d4d8",
   },
+  {
+    id: "wterm",
+    name: "wterm",
+    url: "https://wterm.dev",
+    tagline: "A terminal emulator for the web.",
+    description:
+      "Vercel Labs' web terminal that renders rows as DOM text, so native selection, find and screen readers just work. A Zig VT parser compiled to a ~49 KB WASM core, an optional libghostty core and an opt-in WebGL renderer.",
+    license: "free",
+    previewMode: "live",
+    stack: ["react", "typescript", "css", "wasm"],
+    install: "npm install @wterm/dom @wterm/react",
+    installLabel: "npm",
+    notes:
+      'Apache-2.0 (github.com/vercel-labs/wterm). React 18/19; own CSS (import "@wterm/react/css"), not Tailwind. Vue (@wterm/vue), Svelte (@wterm/svelte) and vanilla (@wterm/dom) bindings; @wterm/ghostty swaps in libghostty for fuller VT support. Needs a PTY/WebSocket backend for a real shell.',
+    color: "#4ade80",
+  },
 ];

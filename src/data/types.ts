@@ -16,7 +16,8 @@ export type SourceId =
   | "kiboui"
   | "streamdown"
   | "genloaders"
-  | "uisdk";
+  | "uisdk"
+  | "wterm";
 
 export type License = "mit" | "free" | "freemium" | "paid";
 export type PreviewMode = "live" | "linkout";
