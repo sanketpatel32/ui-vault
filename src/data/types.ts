@@ -16,7 +16,8 @@ export type SourceId =
   | "kiboui"
   | "easyui"
   | "editorcn"
-  | "loadingdev";
+  | "loadingdev"
+  | "itshover";
 
 export type License = "mit" | "free" | "freemium" | "paid";
 export type PreviewMode = "live" | "linkout";

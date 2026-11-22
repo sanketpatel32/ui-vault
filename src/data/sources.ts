@@ -285,4 +285,20 @@ export const sources: Source[] = [
       'MIT (github.com/jakubkrehel/loading). Requires React 19 (peer react >=19.0.0). Import by name: import { Arc } from "loading-dev".',
     color: "#a3e635",
   },
+  {
+    id: "itshover",
+    name: "Its Hover",
+    url: "https://itshover.com",
+    tagline: "Animated icons that come alive on hover.",
+    description:
+      "263 hover-triggered animated icon components built with Motion, each installable as its own shadcn registry item. Sponsor-funded, no paid tier.",
+    license: "free",
+    previewMode: "live",
+    stack: ["react", "typescript", "tailwind", "shadcn", "motion"],
+    install: "npx shadcn@latest add https://itshover.com/r/<icon-name>.json",
+    installLabel: "shadcn registry",
+    notes:
+      "Apache-2.0 (github.com/itshover/itshover, default branch master) \u2014 vendor freely, keep the license notice. Icons animate on pointer hover only; they stay static on touch devices.",
+    color: "#f59e0b",
+  },
 ];
