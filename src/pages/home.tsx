@@ -61,17 +61,17 @@ export function Home() {
             categorized, searchable, and {s.livePreviews} of them preview live right here.
           </p>
           <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
-            <Link to="/browse">
-              <Button>
+            <Button asChild>
+              <Link to="/browse">
                 Start browsing <ArrowRight size={15} />
-              </Button>
-            </Link>
-            <Link to="/c/text-animation">
-              <Button variant="outline">Text effects</Button>
-            </Link>
-            <Link to="/c/hero">
-              <Button variant="outline">Hero sections</Button>
-            </Link>
+              </Link>
+            </Button>
+            <Button asChild variant="outline">
+              <Link to="/c/text-animation">Text effects</Link>
+            </Button>
+            <Button asChild variant="outline">
+              <Link to="/c/hero">Hero sections</Link>
+            </Button>
           </div>
           <div className="mx-auto mt-10 grid max-w-md grid-cols-3 divide-x divide-border rounded-xl border border-border bg-bg/70 backdrop-blur-sm">
             <Stat value={s.entries} label="Components" />

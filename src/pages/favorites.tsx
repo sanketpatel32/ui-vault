@@ -33,11 +33,9 @@ export function Favorites() {
           title="No favorites yet"
           description="Star components as you browse and they’ll collect here for quick pickup."
           action={
-            <Link to="/browse">
-              <Button variant="outline" size="sm">
-                Browse components
-              </Button>
-            </Link>
+            <Button asChild variant="outline" size="sm">
+              <Link to="/browse">Browse components</Link>
+            </Button>
           }
         />
       )}

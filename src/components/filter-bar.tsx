@@ -28,8 +28,14 @@ export function FilterBar({
     <div className="space-y-3">
       <div className="flex flex-wrap items-center gap-2">
         <div className="relative min-w-52 flex-1">
-          <Search size={14} className="absolute top-1/2 left-3 -translate-y-1/2 text-muted-fg" />
+          <Search
+            size={14}
+            aria-hidden="true"
+            className="absolute top-1/2 left-3 -translate-y-1/2 text-muted-fg"
+          />
           <Input
+            type="search"
+            aria-label="Search components by name, description, or tag"
             value={filters.q}
             onChange={(e) => set({ q: e.target.value })}
             placeholder="Search name, description, tags…"
@@ -76,6 +82,8 @@ export function FilterBar({
           <button
             key={tag}
             type="button"
+            aria-pressed={filters.tag === tag}
+            aria-label={`Filter by tag ${tag} (${count})`}
             onClick={() => set({ tag: filters.tag === tag ? "" : tag })}
             className={cn(
               "cursor-pointer rounded-full border px-2.5 py-1 text-[11px] transition-colors",
