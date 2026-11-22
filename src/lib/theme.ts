@@ -17,6 +17,18 @@ function notify() {
   listeners.forEach((l) => l());
 }
 
+const THEME_KEY = "ui-vault:theme";
+
+if (typeof window !== "undefined") {
+  window.addEventListener("storage", (e) => {
+    if (e.key !== THEME_KEY || (e.newValue !== "dark" && e.newValue !== "light")) return;
+    if (e.newValue === current) return;
+    current = e.newValue;
+    document.documentElement.classList.toggle("dark", current === "dark");
+    notify();
+  });
+}
+
 export function toggleTheme() {
   current = current === "dark" ? "light" : "dark";
   const root = document.documentElement;
@@ -24,7 +36,7 @@ export function toggleTheme() {
   root.classList.toggle("dark", current === "dark");
   window.setTimeout(() => root.classList.remove("theme-anim"), 400);
   try {
-    localStorage.setItem("ui-vault:theme", current);
+    localStorage.setItem(THEME_KEY, current);
   } catch {
     // ignore
   }

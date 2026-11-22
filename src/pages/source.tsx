@@ -23,7 +23,7 @@ export function SourcePage() {
     <div className="space-y-6">
       <Link
         to="/browse"
-        className="inline-flex items-center gap-1 text-xs text-muted-fg transition-colors hover:text-accent"
+        className="inline-flex items-center gap-1 text-xs text-muted-fg transition-colors hover:text-accent-text"
       >
         <ArrowLeft size={12} /> All components
       </Link>
@@ -59,7 +59,7 @@ export function SourcePage() {
 
         {source.install && (
           <div className="mt-4 max-w-xl">
-            <p className="mb-1.5 text-[11px] font-semibold tracking-[0.14em] text-muted-fg/70 uppercase">
+            <p className="mb-1.5 text-[11px] font-semibold tracking-[0.14em] text-faint-fg uppercase">
               {source.installLabel ?? "Install"}
             </p>
             <CodeBlock code={source.install} />
@@ -67,7 +67,7 @@ export function SourcePage() {
         )}
 
         {source.notes && (
-          <p className="mt-4 flex max-w-2xl items-start gap-2 rounded-lg border border-amber-500/20 bg-amber-500/5 px-3 py-2 text-xs leading-relaxed text-amber-200/90">
+          <p className="mt-4 flex max-w-2xl items-start gap-2 rounded-lg border border-amber-500/20 bg-amber-500/5 px-3 py-2 text-xs leading-relaxed text-warning-text">
             <ShieldCheck size={14} className="mt-0.5 shrink-0" />
             {source.notes}
           </p>

@@ -80,7 +80,7 @@ export function FilterBar({
             className={cn(
               "cursor-pointer rounded-full border px-2.5 py-1 text-[11px] transition-colors",
               filters.tag === tag
-                ? "border-accent bg-accent text-accent-fg"
+                ? "border-accent bg-accent-solid text-accent-fg"
                 : "border-border text-muted-fg hover:border-accent/40 hover:text-fg",
             )}
           >
