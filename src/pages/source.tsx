@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ArrowLeft, ExternalLink, ShieldCheck } from "lucide-react";
 import type { SourceId } from "@/data";
@@ -12,12 +13,12 @@ import { Badge } from "@/components/ui/badge";
 export function SourcePage() {
   const { id = "" } = useParams();
   const source = sourceById.get(id as SourceId);
+  // Stable identity across unrelated re-renders so EntryGrid keeps its page window.
+  const items = useMemo(() => (source ? entriesBySource(source.id) : []), [source]);
 
   if (!source) {
     return <EmptyState title="Unknown source" description={`No source named “${id}” exists.`} />;
   }
-
-  const items = entriesBySource(source.id);
 
   return (
     <div className="space-y-6">

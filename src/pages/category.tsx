@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { categoryBySlug, entriesByCategory } from "@/lib/registry";
@@ -7,14 +8,14 @@ import { EmptyState } from "@/components/empty-state";
 export function CategoryPage() {
   const { slug = "" } = useParams();
   const category = categoryBySlug.get(slug);
+  // Stable identity across unrelated re-renders so EntryGrid keeps its page window.
+  const items = useMemo(() => (category ? entriesByCategory(slug) : []), [category, slug]);
 
   if (!category) {
     return (
       <EmptyState title="Unknown category" description={`No category named “${slug}” exists.`} />
     );
   }
-
-  const items = entriesByCategory(slug);
 
   return (
     <div className="space-y-5">
