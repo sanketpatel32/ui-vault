@@ -22,6 +22,7 @@ Personal, frontend-only React hub that aggregates UI components from the 6 free,
 | `npm run build`              | `tsc -b && vp build` (runs `llms` first)                     |
 | `npm run check` / `vp check` | Format + lint + type checks together (oxfmt/oxlint/tsgolint) |
 | `npm run format` / `vp fmt`  | Format everything (oxfmt — double quotes)                    |
+| `npm test`                   | Unit tests via `vp test run` (Vitest, `src/**/*.test.ts`)    |
 | `npm run llms`               | Regenerate all llms.txt artifacts from `src/data/`           |
 | `npm run registry:check`     | Validate registry ids/slugs/sources/licensing/loaders        |
 
