@@ -82,7 +82,8 @@ v0.6.0/v0.7.0 notes: COSS UI (Origin UI's successor) carries 55 components + 2 h
 ## File map
 
 ```
-src/data/        sources.ts, categories.ts, types.ts, components/*.ts (6)   ← the "backend"
+src/data/        sources.ts, categories.ts, types.ts, index.ts (merger),
+                 components/*.ts (15)                                     ← the "backend"
 src/lib/         utils (cn), registry selectors, search (fuse), store (localStorage), theme
 src/components/  hub's own UI: ui/ primitives, sidebar, topbar, command-palette,
                  entry-card, preview-frame, filter-bar, badges, code-block
