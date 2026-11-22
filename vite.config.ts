@@ -17,6 +17,13 @@ export default defineConfig(({ command }) => ({
       "react/only-export-components": ["warn", { allowConstantExport: true }],
       "vite-plus/prefer-vite-plus-imports": "error",
     },
+    overrides: [
+      {
+        // Vendored snapshot: its useSwipe is a plain helper (no React hooks inside).
+        files: ["src/showcase/cultui/intro-disclosure/intro-disclosure.tsx"],
+        rules: { "react/rules-of-hooks": "off" },
+      },
+    ],
     options: {
       typeAware: true,
       typeCheck: true,
@@ -36,6 +43,9 @@ export default defineConfig(({ command }) => ({
       "next/link": fileURLToPath(new URL("./src/lib/shims/next-link.tsx", import.meta.url)),
       "next/font/google": fileURLToPath(
         new URL("./src/lib/shims/next-font-google.ts", import.meta.url),
+      ),
+      "next/navigation": fileURLToPath(
+        new URL("./src/lib/shims/next-navigation.tsx", import.meta.url),
       ),
       "next-themes": fileURLToPath(new URL("./src/lib/shims/next-themes.tsx", import.meta.url)),
     },
