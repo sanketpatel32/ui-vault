@@ -44,7 +44,7 @@ export function Topbar({
             className="relative rounded-lg p-2 text-muted-fg transition-colors hover:bg-muted hover:text-amber-400"
           >
             <Heart size={17} />
-            <span className="absolute top-1 right-1 flex h-3.5 min-w-3.5 items-center justify-center rounded-full bg-accent px-0.5 text-[9px] font-semibold text-accent-fg tabular-nums">
+            <span className="absolute top-1 right-1 flex h-3.5 min-w-3.5 items-center justify-center rounded-full bg-accent-solid px-0.5 text-[9px] font-semibold text-accent-fg tabular-nums">
               {favCount}
             </span>
           </Link>

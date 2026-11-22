@@ -26,7 +26,7 @@ function SideLink({
         cn(
           "flex items-center gap-2.5 rounded-lg px-2.5 py-1.5 text-[13px] transition-colors",
           isActive
-            ? "bg-accent-soft font-medium text-accent"
+            ? "bg-accent-soft font-medium text-accent-text"
             : "text-muted-fg hover:bg-muted hover:text-fg",
         )
       }
@@ -139,7 +139,7 @@ export function Sidebar({ mobileOpen, onClose }: { mobileOpen: boolean; onClose:
         <div className="border-t border-border px-4 py-3 text-[11px] text-faint-fg">
           <a
             href={`${import.meta.env.BASE_URL}llms.txt`}
-            className="transition-colors hover:text-accent"
+            className="transition-colors hover:text-accent-text"
             target="_blank"
             rel="noreferrer"
           >

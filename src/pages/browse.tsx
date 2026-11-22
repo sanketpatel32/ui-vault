@@ -104,7 +104,7 @@ export function Browse() {
               onClick={() =>
                 f.key === "cat" ? setParam("cat", "") : onChange({ ...filters, [f.key]: "" })
               }
-              className="inline-flex cursor-pointer items-center gap-1 rounded-full border border-accent/30 bg-accent-soft px-2.5 py-1 text-[11px] font-medium text-accent transition-colors hover:border-accent/60"
+              className="inline-flex cursor-pointer items-center gap-1 rounded-full border border-accent/30 bg-accent-soft px-2.5 py-1 text-[11px] font-medium text-accent-text transition-colors hover:border-accent/60"
             >
               {f.label}
               <X size={11} className="opacity-70" />

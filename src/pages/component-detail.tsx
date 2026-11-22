@@ -34,13 +34,13 @@ export function ComponentDetail() {
     <div className="space-y-8">
       {/* breadcrumb */}
       <nav className="flex flex-wrap items-center gap-1.5 text-xs text-muted-fg">
-        <Link to="/browse" className="transition-colors hover:text-accent">
+        <Link to="/browse" className="transition-colors hover:text-accent-text">
           Browse
         </Link>
         <span>/</span>
         {category && (
           <>
-            <Link to={`/c/${category.slug}`} className="transition-colors hover:text-accent">
+            <Link to={`/c/${category.slug}`} className="transition-colors hover:text-accent-text">
               {category.name}
             </Link>
             <span>/</span>
@@ -55,13 +55,11 @@ export function ComponentDetail() {
           <h1 className="text-3xl font-semibold tracking-tight">{entry.name}</h1>
           <div className="mt-3 flex flex-wrap items-center gap-2">
             <Link to={`/source/${entry.source}`}>
-              <SourceBadge source={entry.source} className="text-xs hover:text-accent" />
+              <SourceBadge source={entry.source} className="text-xs hover:text-accent-text" />
             </Link>
             <LicenseBadge license={entry.license} />
             <PreviewBadge entry={entry} />
-            <span className="text-[11px] text-faint-fg">
-              in “{entry.sourceCategory}” at source
-            </span>
+            <span className="text-[11px] text-faint-fg">in “{entry.sourceCategory}” at source</span>
           </div>
         </div>
         <StarButton id={entry.id} className="h-10 w-10 rounded-lg hover:bg-muted" />
@@ -81,7 +79,7 @@ export function ComponentDetail() {
                 <Link
                   key={tag}
                   to={`/browse?tag=${encodeURIComponent(tag)}`}
-                  className="inline-flex items-center gap-1 rounded-md bg-muted px-1.5 py-0.5 text-[11px] text-muted-fg transition-colors hover:bg-accent-soft hover:text-accent"
+                  className="inline-flex items-center gap-1 rounded-md bg-muted px-1.5 py-0.5 text-[11px] text-muted-fg transition-colors hover:bg-accent-soft hover:text-accent-text"
                 >
                   <Tag size={9} />
                   {tag}

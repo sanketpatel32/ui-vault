@@ -95,7 +95,7 @@ export function CommandPalette({ open, onClose }: { open: boolean; onClose: () =
                 <p
                   className={cn(
                     "truncate text-sm font-medium",
-                    i === active ? "text-accent" : "text-fg",
+                    i === active ? "text-accent-text" : "text-fg",
                   )}
                 >
                   {entry.name}

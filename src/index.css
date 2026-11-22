@@ -15,6 +15,8 @@
   --accent: #7c3aed;
   --accent-fg: #ffffff;
   --accent-soft: #f1ecfd;
+  --accent-text: #7c3aed;
+  --accent-solid: #7c3aed;
   --ring: #7c3aed;
   --destructive: #dc2626;
   --destructive-fg: #ffffff;
@@ -54,6 +56,8 @@
   --accent: #7c3aed;
   --accent-fg: #ffffff;
   --accent-soft: #f1ecfd;
+  --accent-text: #7c3aed;
+  --accent-solid: #7c3aed;
   --ring: #7c3aed;
   --destructive: #dc2626;
   --destructive-fg: #ffffff;
@@ -92,6 +96,8 @@
   --accent: #8b5cf6;
   --accent-fg: #ffffff;
   --accent-soft: #1a1523;
+  --accent-text: #9373f8;
+  --accent-solid: #7c3aed;
   --ring: #8b5cf6;
   --destructive: #ef4444;
   --destructive-fg: #ffffff;
@@ -132,6 +138,8 @@
   --color-accent: var(--accent);
   --color-accent-fg: var(--accent-fg);
   --color-accent-soft: var(--accent-soft);
+  --color-accent-text: var(--accent-text);
+  --color-accent-solid: var(--accent-solid);
   --color-ring: var(--ring);
 
   --color-background: var(--bg);

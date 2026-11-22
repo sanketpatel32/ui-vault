@@ -20,7 +20,7 @@ export function CategoryPage() {
     <div className="space-y-5">
       <Link
         to="/browse"
-        className="inline-flex items-center gap-1 text-xs text-muted-fg transition-colors hover:text-accent"
+        className="inline-flex items-center gap-1 text-xs text-muted-fg transition-colors hover:text-accent-text"
       >
         <ArrowLeft size={12} /> All components
       </Link>
