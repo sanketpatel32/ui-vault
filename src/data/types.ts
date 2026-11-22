@@ -17,7 +17,8 @@ export type SourceId =
   | "streamdown"
   | "genloaders"
   | "uisdk"
-  | "wterm";
+  | "wterm"
+  | "skullet";
 
 export type License = "mit" | "free" | "freemium" | "paid";
 export type PreviewMode = "live" | "linkout";

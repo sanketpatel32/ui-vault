@@ -301,4 +301,20 @@ export const sources: Source[] = [
       'Apache-2.0 (github.com/vercel-labs/wterm). React 18/19; own CSS (import "@wterm/react/css"), not Tailwind. Vue (@wterm/vue), Svelte (@wterm/svelte) and vanilla (@wterm/dom) bindings; @wterm/ghostty swaps in libghostty for fuller VT support. Needs a PTY/WebSocket backend for a real shell.',
     color: "#4ade80",
   },
+  {
+    id: "skullet",
+    name: "Skullet",
+    url: "https://skullet.lochie.me",
+    tagline: "Smart skeleton states for React, Vue, Svelte, and vanilla JavaScript.",
+    description:
+      "Auto-skeletons: wrap the component you'd render once data arrives and Skullet measures it and draws an exact skeleton over it, so nothing shifts on reveal. One component with React, Vue, Svelte and vanilla exports.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "css"],
+    install: "npm install skullet",
+    installLabel: "npm",
+    notes:
+      "MIT (github.com/lochie/skullet). React >=18. Draws in a shadow root with its own CSS, not Tailwind. Very early (v0.0.3) — expect churn.",
+    color: "#f5f5f4",
+  },
 ];
