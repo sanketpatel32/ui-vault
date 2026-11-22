@@ -15,7 +15,7 @@ export const fancy: UIEntry[] = [
     tags: ["text", "hover", "scramble", "letters"],
     license: "mit",
     previewMode: "live",
-    install: "pnpm dlx shadcn add @fancy/letter-swap",
+    install: "pnpm dlx shadcn add @fancy/letter-swap-forward-anim",
     previewKey: "fancy-letter-swap",
     featured: true,
   },
@@ -74,7 +74,7 @@ export const fancy: UIEntry[] = [
     tags: ["number", "scroll", "counter", "spring"],
     license: "mit",
     previewMode: "live",
-    install: "pnpm dlx shadcn add @fancy/number-ticker",
+    install: "pnpm dlx shadcn add @fancy/basic-number-ticker",
   },
   {
     previewKey: "fancy-gravity",
