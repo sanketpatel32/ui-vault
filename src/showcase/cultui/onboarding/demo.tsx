@@ -1,3 +1,4 @@
+import { useSafeTimeout } from "@/showcase/_shared/use-safe-timeout";
 import { useState } from "react";
 import Image from "next/image";
 import {
@@ -255,6 +256,7 @@ function HeadlessRoleStep({
 }) {
   const { handleNext } = useOnboarding();
   const [question, setQuestion] = useState(selectedGoal ? 2 : 1);
+  const safeTimeout = useSafeTimeout();
 
   return (
     <div className="flex flex-col gap-4">
@@ -271,7 +273,7 @@ function HeadlessRoleStep({
             name="Select your role"
             onValueChange={(v) => {
               onRoleSelect(v);
-              setTimeout(() => setQuestion(2), 300);
+              safeTimeout(() => setQuestion(2), 300);
             }}
             orientation="grid"
             value={selectedRole}
@@ -313,7 +315,7 @@ function HeadlessRoleStep({
             name="Select your goal"
             onValueChange={(v) => {
               onGoalSelect(v);
-              setTimeout(() => handleNext(), 300);
+              safeTimeout(() => handleNext(), 300);
             }}
             orientation="grid"
             value={selectedGoal}

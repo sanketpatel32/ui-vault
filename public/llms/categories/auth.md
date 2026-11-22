@@ -5,6 +5,8 @@
 ## Entries
 
 - **Auth Blocks** https://ui.watermelon.sh/blocks/auth — 13 login/signup/auth layouts — split screens, centered cards, social-first. [Free, live-previewable, category: auth]
+- **Login** https://easyui.site/components/login — A production-ready authentication card built with the EasyUI form system, featuring password show/hide, remember me, validation states, and social logins. [MIT, live-previewable, category: auth]
+- **Sign Up** https://easyui.site/components/sign-up — A comprehensive registration card with live password strength metrics, password confirmation matching, terms validation, and social onboarding. [MIT, live-previewable, category: auth]
 - **Sign up form** https://uiarc.dev/components/blocks/signup-form — An account creation flow with field validation, password strength, and a clear completion state. [MIT, live-previewable, category: auth]
 - **OTP input** https://uiarc.dev/components/blocks/otp-input — A six digit verification flow with paste support and keyboard navigation. [MIT, live-previewable, category: auth]
 - **Sign in** https://uiarc.dev/components/blocks/sign-in — A sign in card that morphs from email to a six digit code to your account. [MIT, live-previewable, category: auth]

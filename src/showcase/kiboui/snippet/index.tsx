@@ -1,3 +1,4 @@
+import { useSafeTimeout } from "@/showcase/_shared/use-safe-timeout";
 import { CheckIcon, CopyIcon } from "lucide-react";
 import {
   type ComponentProps,
@@ -49,6 +50,8 @@ export const SnippetCopyButton = ({
 }: SnippetCopyButtonProps) => {
   const [isCopied, setIsCopied] = useState(false);
 
+  const safeTimeout = useSafeTimeout();
+
   const copyToClipboard = () => {
     if (typeof window === "undefined" || !navigator.clipboard.writeText || !value) {
       return;
@@ -58,7 +61,7 @@ export const SnippetCopyButton = ({
       setIsCopied(true);
       onCopy?.();
 
-      setTimeout(() => setIsCopied(false), timeout);
+      safeTimeout(() => setIsCopied(false), timeout);
     }, onError);
   };
 

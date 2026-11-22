@@ -1,0 +1,2373 @@
+{
+  "source": "itshover",
+  "count": 263,
+  "items": [
+    {
+      "id": "itshover-accessibility",
+      "name": "Accessibility Icon",
+      "description": "Hover-animated \"accessibility\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/accessibility-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/accessibility-icon.json"
+    },
+    {
+      "id": "itshover-airplane",
+      "name": "Airplane Icon",
+      "description": "Hover-animated \"airplane\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/airplane-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/airplane-icon.json"
+    },
+    {
+      "id": "itshover-alarm-clock-plus",
+      "name": "Alarm Clock Plus Icon",
+      "description": "Hover-animated \"alarm clock plus\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/alarm-clock-plus-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/alarm-clock-plus-icon.json"
+    },
+    {
+      "id": "itshover-align-center",
+      "name": "Align Center Icon",
+      "description": "Hover-animated \"align center\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/align-center-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/align-center-icon.json"
+    },
+    {
+      "id": "itshover-align-vertical-space-around",
+      "name": "Align Vertical Space Around Icon",
+      "description": "Hover-animated \"align vertical space around\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/align-vertical-space-around-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/align-vertical-space-around-icon.json"
+    },
+    {
+      "id": "itshover-ambulance",
+      "name": "Ambulance Icon",
+      "description": "Hover-animated \"ambulance\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/ambulance-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/ambulance-icon.json"
+    },
+    {
+      "id": "itshover-ampersand",
+      "name": "Ampersand Icon",
+      "description": "Hover-animated \"ampersand\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/ampersand-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/ampersand-icon.json"
+    },
+    {
+      "id": "itshover-angry",
+      "name": "Angry Icon",
+      "description": "Hover-animated \"angry\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/angry-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/angry-icon.json"
+    },
+    {
+      "id": "itshover-annoyed",
+      "name": "Annoyed Icon",
+      "description": "Hover-animated \"annoyed\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/annoyed-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/annoyed-icon.json"
+    },
+    {
+      "id": "itshover-apple-brand-logo",
+      "name": "Apple Brand Logo Icon",
+      "description": "Hover-animated \"apple brand logo\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/apple-brand-logo",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/apple-brand-logo.json"
+    },
+    {
+      "id": "itshover-arrow-back",
+      "name": "Arrow Back Icon",
+      "description": "Hover-animated \"arrow back\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/arrow-back-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/arrow-back-icon.json"
+    },
+    {
+      "id": "itshover-arrow-back-up",
+      "name": "Arrow Back Up Icon",
+      "description": "Hover-animated \"arrow back up\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/arrow-back-up-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/arrow-back-up-icon.json"
+    },
+    {
+      "id": "itshover-arrow-big-down-dash",
+      "name": "Arrow Big Down Dash Icon",
+      "description": "Hover-animated \"arrow big down dash\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/arrow-big-down-dash-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/arrow-big-down-dash-icon.json"
+    },
+    {
+      "id": "itshover-arrow-big-down",
+      "name": "Arrow Big Down Icon",
+      "description": "Hover-animated \"arrow big down\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/arrow-big-down-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/arrow-big-down-icon.json"
+    },
+    {
+      "id": "itshover-arrow-big-left-dash",
+      "name": "Arrow Big Left Dash Icon",
+      "description": "Hover-animated \"arrow big left dash\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/arrow-big-left-dash-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/arrow-big-left-dash-icon.json"
+    },
+    {
+      "id": "itshover-arrow-big-left",
+      "name": "Arrow Big Left Icon",
+      "description": "Hover-animated \"arrow big left\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/arrow-big-left-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/arrow-big-left-icon.json"
+    },
+    {
+      "id": "itshover-arrow-big-right-dash",
+      "name": "Arrow Big Right Dash Icon",
+      "description": "Hover-animated \"arrow big right dash\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/arrow-big-right-dash-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/arrow-big-right-dash-icon.json"
+    },
+    {
+      "id": "itshover-arrow-big-right",
+      "name": "Arrow Big Right Icon",
+      "description": "Hover-animated \"arrow big right\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/arrow-big-right-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/arrow-big-right-icon.json"
+    },
+    {
+      "id": "itshover-arrow-big-up-dash",
+      "name": "Arrow Big Up Dash Icon",
+      "description": "Hover-animated \"arrow big up dash\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/arrow-big-up-dash-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/arrow-big-up-dash-icon.json"
+    },
+    {
+      "id": "itshover-arrow-big-up",
+      "name": "Arrow Big Up Icon",
+      "description": "Hover-animated \"arrow big up\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/arrow-big-up-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/arrow-big-up-icon.json"
+    },
+    {
+      "id": "itshover-arrow-down-0-1",
+      "name": "Arrow Down 0 1 Icon",
+      "description": "Hover-animated \"arrow down 0 1\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/arrow-down-0-1-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/arrow-down-0-1-icon.json"
+    },
+    {
+      "id": "itshover-arrow-down-1-0",
+      "name": "Arrow Down 1 0 Icon",
+      "description": "Hover-animated \"arrow down 1 0\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/arrow-down-1-0-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/arrow-down-1-0-icon.json"
+    },
+    {
+      "id": "itshover-arrow-down-a-z",
+      "name": "Arrow Down A Z Icon",
+      "description": "Hover-animated \"arrow down a z\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/arrow-down-a-z-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/arrow-down-a-z-icon.json"
+    },
+    {
+      "id": "itshover-arrow-narrow-down-dashed",
+      "name": "Arrow Narrow Down Dashed Icon",
+      "description": "Hover-animated \"arrow narrow down dashed\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/arrow-narrow-down-dashed-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/arrow-narrow-down-dashed-icon.json"
+    },
+    {
+      "id": "itshover-arrow-narrow-down",
+      "name": "Arrow Narrow Down Icon",
+      "description": "Hover-animated \"arrow narrow down\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/arrow-narrow-down-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/arrow-narrow-down-icon.json"
+    },
+    {
+      "id": "itshover-arrow-narrow-left-dashed",
+      "name": "Arrow Narrow Left Dashed Icon",
+      "description": "Hover-animated \"arrow narrow left dashed\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/arrow-narrow-left-dashed-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/arrow-narrow-left-dashed-icon.json"
+    },
+    {
+      "id": "itshover-arrow-narrow-left",
+      "name": "Arrow Narrow Left Icon",
+      "description": "Hover-animated \"arrow narrow left\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/arrow-narrow-left-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/arrow-narrow-left-icon.json"
+    },
+    {
+      "id": "itshover-arrow-narrow-right-dashed",
+      "name": "Arrow Narrow Right Dashed Icon",
+      "description": "Hover-animated \"arrow narrow right dashed\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/arrow-narrow-right-dashed-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/arrow-narrow-right-dashed-icon.json"
+    },
+    {
+      "id": "itshover-arrow-narrow-right",
+      "name": "Arrow Narrow Right Icon",
+      "description": "Hover-animated \"arrow narrow right\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/arrow-narrow-right-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/arrow-narrow-right-icon.json"
+    },
+    {
+      "id": "itshover-arrow-narrow-up-dashed",
+      "name": "Arrow Narrow Up Dashed Icon",
+      "description": "Hover-animated \"arrow narrow up dashed\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/arrow-narrow-up-dashed-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/arrow-narrow-up-dashed-icon.json"
+    },
+    {
+      "id": "itshover-arrow-narrow-up",
+      "name": "Arrow Narrow Up Icon",
+      "description": "Hover-animated \"arrow narrow up\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/arrow-narrow-up-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/arrow-narrow-up-icon.json"
+    },
+    {
+      "id": "itshover-at-sign",
+      "name": "At Sign Icon",
+      "description": "Hover-animated \"at sign\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/at-sign-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/at-sign-icon.json"
+    },
+    {
+      "id": "itshover-banana",
+      "name": "Banana Icon",
+      "description": "Hover-animated \"banana\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/banana-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/banana-icon.json"
+    },
+    {
+      "id": "itshover-battery-charging",
+      "name": "Battery Charging Icon",
+      "description": "Hover-animated \"battery charging\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/battery-charging-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/battery-charging-icon.json"
+    },
+    {
+      "id": "itshover-battery",
+      "name": "Battery Icon",
+      "description": "Hover-animated \"battery\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/battery-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/battery-icon.json"
+    },
+    {
+      "id": "itshover-battery-pause",
+      "name": "Battery Pause Icon",
+      "description": "Hover-animated \"battery pause\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/battery-pause-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/battery-pause-icon.json"
+    },
+    {
+      "id": "itshover-bell-off",
+      "name": "Bell Off Icon",
+      "description": "Hover-animated \"bell off\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/bell-off-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/bell-off-icon.json"
+    },
+    {
+      "id": "itshover-bluetooth-connected",
+      "name": "Bluetooth Connected Icon",
+      "description": "Hover-animated \"bluetooth connected\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/bluetooth-connected-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/bluetooth-connected-icon.json"
+    },
+    {
+      "id": "itshover-book",
+      "name": "Book Icon",
+      "description": "Hover-animated \"book\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/book-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/book-icon.json"
+    },
+    {
+      "id": "itshover-bookmark",
+      "name": "Bookmark Icon",
+      "description": "Hover-animated \"bookmark\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/bookmark-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/bookmark-icon.json"
+    },
+    {
+      "id": "itshover-brain-circuit",
+      "name": "Brain Circuit Icon",
+      "description": "Hover-animated \"brain circuit\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brain-circuit-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brain-circuit-icon.json"
+    },
+    {
+      "id": "itshover-brand-aistudio",
+      "name": "Brand Aistudio Icon",
+      "description": "Hover-animated \"brand aistudio\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-aistudio-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-aistudio-icon.json"
+    },
+    {
+      "id": "itshover-brand-anthropic",
+      "name": "Brand Anthropic Icon",
+      "description": "Hover-animated \"brand anthropic\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-anthropic-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-anthropic-icon.json"
+    },
+    {
+      "id": "itshover-brand-aws",
+      "name": "Brand Aws Icon",
+      "description": "Hover-animated \"brand aws\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-aws-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-aws-icon.json"
+    },
+    {
+      "id": "itshover-brand-bags-fm",
+      "name": "Brand Bags Fm Icon",
+      "description": "Hover-animated \"brand bags fm\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-bags-fm-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-bags-fm-icon.json"
+    },
+    {
+      "id": "itshover-brand-chrome",
+      "name": "Brand Chrome Icon",
+      "description": "Hover-animated \"brand chrome\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-chrome-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-chrome-icon.json"
+    },
+    {
+      "id": "itshover-brand-cursor",
+      "name": "Brand Cursor Icon",
+      "description": "Hover-animated \"brand cursor\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-cursor-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-cursor-icon.json"
+    },
+    {
+      "id": "itshover-brand-gemini",
+      "name": "Brand Gemini Icon",
+      "description": "Hover-animated \"brand gemini\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-gemini-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-gemini-icon.json"
+    },
+    {
+      "id": "itshover-brand-google",
+      "name": "Brand Google Icon",
+      "description": "Hover-animated \"brand google\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-google-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-google-icon.json"
+    },
+    {
+      "id": "itshover-brand-grok",
+      "name": "Brand Grok Icon",
+      "description": "Hover-animated \"brand grok\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-grok-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-grok-icon.json"
+    },
+    {
+      "id": "itshover-brand-lmstudio",
+      "name": "Brand Lmstudio Icon",
+      "description": "Hover-animated \"brand lmstudio\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-lmstudio-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-lmstudio-icon.json"
+    },
+    {
+      "id": "itshover-brand-midjourney",
+      "name": "Brand Midjourney Icon",
+      "description": "Hover-animated \"brand midjourney\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-midjourney-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-midjourney-icon.json"
+    },
+    {
+      "id": "itshover-brand-nextjs",
+      "name": "Brand Nextjs Icon",
+      "description": "Hover-animated \"brand nextjs\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-nextjs-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-nextjs-icon.json"
+    },
+    {
+      "id": "itshover-brand-notion",
+      "name": "Brand Notion Icon",
+      "description": "Hover-animated \"brand notion\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-notion-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-notion-icon.json"
+    },
+    {
+      "id": "itshover-brand-ollama",
+      "name": "Brand Ollama Icon",
+      "description": "Hover-animated \"brand ollama\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-ollama-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-ollama-icon.json"
+    },
+    {
+      "id": "itshover-brand-openai",
+      "name": "Brand Openai Icon",
+      "description": "Hover-animated \"brand openai\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-openai-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-openai-icon.json"
+    },
+    {
+      "id": "itshover-brand-paypal",
+      "name": "Brand Paypal Icon",
+      "description": "Hover-animated \"brand paypal\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-paypal-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-paypal-icon.json"
+    },
+    {
+      "id": "itshover-brand-qwen",
+      "name": "Brand Qwen Icon",
+      "description": "Hover-animated \"brand qwen\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-qwen-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-qwen-icon.json"
+    },
+    {
+      "id": "itshover-brand-railway",
+      "name": "Brand Railway Icon",
+      "description": "Hover-animated \"brand railway\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-railway-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-railway-icon.json"
+    },
+    {
+      "id": "itshover-brand-react",
+      "name": "Brand React Icon",
+      "description": "Hover-animated \"brand react\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-react-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-react-icon.json"
+    },
+    {
+      "id": "itshover-brand-react-native",
+      "name": "Brand React Native Icon",
+      "description": "Hover-animated \"brand react native\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-react-native-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-react-native-icon.json"
+    },
+    {
+      "id": "itshover-brand-stripe",
+      "name": "Brand Stripe Icon",
+      "description": "Hover-animated \"brand stripe\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-stripe-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-stripe-icon.json"
+    },
+    {
+      "id": "itshover-brand-telegram",
+      "name": "Brand Telegram Icon",
+      "description": "Hover-animated \"brand telegram\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-telegram-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-telegram-icon.json"
+    },
+    {
+      "id": "itshover-brand-threads",
+      "name": "Brand Threads Icon",
+      "description": "Hover-animated \"brand threads\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-threads-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-threads-icon.json"
+    },
+    {
+      "id": "itshover-brand-twitch",
+      "name": "Brand Twitch Icon",
+      "description": "Hover-animated \"brand twitch\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-twitch-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-twitch-icon.json"
+    },
+    {
+      "id": "itshover-brand-vercel",
+      "name": "Brand Vercel Icon",
+      "description": "Hover-animated \"brand vercel\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-vercel-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-vercel-icon.json"
+    },
+    {
+      "id": "itshover-brand-windows",
+      "name": "Brand Windows Icon",
+      "description": "Hover-animated \"brand windows\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-windows-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-windows-icon.json"
+    },
+    {
+      "id": "itshover-brand-wordpress",
+      "name": "Brand Wordpress Icon",
+      "description": "Hover-animated \"brand wordpress\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-wordpress-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-wordpress-icon.json"
+    },
+    {
+      "id": "itshover-brand-xai",
+      "name": "Brand Xai Icon",
+      "description": "Hover-animated \"brand xai\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-xai-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-xai-icon.json"
+    },
+    {
+      "id": "itshover-brand-zoom",
+      "name": "Brand Zoom Icon",
+      "description": "Hover-animated \"brand zoom\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brand-zoom-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brand-zoom-icon.json"
+    },
+    {
+      "id": "itshover-brightness-down",
+      "name": "Brightness Down Icon",
+      "description": "Hover-animated \"brightness down\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/brightness-down-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/brightness-down-icon.json"
+    },
+    {
+      "id": "itshover-bug",
+      "name": "Bug Icon",
+      "description": "Hover-animated \"bug\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/bug-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/bug-icon.json"
+    },
+    {
+      "id": "itshover-bulb-svg",
+      "name": "Bulb Svg Icon",
+      "description": "Hover-animated \"bulb svg\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/bulb-svg",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/bulb-svg.json"
+    },
+    {
+      "id": "itshover-camera",
+      "name": "Camera Icon",
+      "description": "Hover-animated \"camera\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/camera-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/camera-icon.json"
+    },
+    {
+      "id": "itshover-camera-off",
+      "name": "Camera Off Icon",
+      "description": "Hover-animated \"camera off\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/camera-off-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/camera-off-icon.json"
+    },
+    {
+      "id": "itshover-candy-cane",
+      "name": "Candy Cane Icon",
+      "description": "Hover-animated \"candy cane\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/candy-cane-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/candy-cane-icon.json"
+    },
+    {
+      "id": "itshover-cart",
+      "name": "Cart Icon",
+      "description": "Hover-animated \"cart\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/cart-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/cart-icon.json"
+    },
+    {
+      "id": "itshover-chart-bar",
+      "name": "Chart Bar Icon",
+      "description": "Hover-animated \"chart bar\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/chart-bar-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/chart-bar-icon.json"
+    },
+    {
+      "id": "itshover-chart-covariate",
+      "name": "Chart Covariate Icon",
+      "description": "Hover-animated \"chart covariate\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/chart-covariate-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/chart-covariate-icon.json"
+    },
+    {
+      "id": "itshover-chart-histogram",
+      "name": "Chart Histogram Icon",
+      "description": "Hover-animated \"chart histogram\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/chart-histogram-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/chart-histogram-icon.json"
+    },
+    {
+      "id": "itshover-chart-line",
+      "name": "Chart Line Icon",
+      "description": "Hover-animated \"chart line\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/chart-line-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/chart-line-icon.json"
+    },
+    {
+      "id": "itshover-chart-pie",
+      "name": "Chart Pie Icon",
+      "description": "Hover-animated \"chart pie\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/chart-pie-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/chart-pie-icon.json"
+    },
+    {
+      "id": "itshover-checked",
+      "name": "Checked Icon",
+      "description": "Hover-animated \"checked\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/checked-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/checked-icon.json"
+    },
+    {
+      "id": "itshover-clock",
+      "name": "Clock Icon",
+      "description": "Hover-animated \"clock\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/clock-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/clock-icon.json"
+    },
+    {
+      "id": "itshover-cloud-1",
+      "name": "Cloud 1 Icon",
+      "description": "Hover-animated \"cloud 1\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/cloud-1-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/cloud-1-icon.json"
+    },
+    {
+      "id": "itshover-cloud-2",
+      "name": "Cloud 2 Icon",
+      "description": "Hover-animated \"cloud 2\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/cloud-2-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/cloud-2-icon.json"
+    },
+    {
+      "id": "itshover-cloud-3",
+      "name": "Cloud 3 Icon",
+      "description": "Hover-animated \"cloud 3\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/cloud-3-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/cloud-3-icon.json"
+    },
+    {
+      "id": "itshover-code",
+      "name": "Code Icon",
+      "description": "Hover-animated \"code\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/code-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/code-icon.json"
+    },
+    {
+      "id": "itshover-code-xml",
+      "name": "Code Xml Icon",
+      "description": "Hover-animated \"code xml\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/code-xml-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/code-xml-icon.json"
+    },
+    {
+      "id": "itshover-coffee",
+      "name": "Coffee Icon",
+      "description": "Hover-animated \"coffee\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/coffee-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/coffee-icon.json"
+    },
+    {
+      "id": "itshover-coin-bitcoin",
+      "name": "Coin Bitcoin Icon",
+      "description": "Hover-animated \"coin bitcoin\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/coin-bitcoin-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/coin-bitcoin-icon.json"
+    },
+    {
+      "id": "itshover-copy",
+      "name": "Copy Icon",
+      "description": "Hover-animated \"copy\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/copy-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/copy-icon.json"
+    },
+    {
+      "id": "itshover-copy-off",
+      "name": "Copy Off Icon",
+      "description": "Hover-animated \"copy off\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/copy-off-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/copy-off-icon.json"
+    },
+    {
+      "id": "itshover-copyright",
+      "name": "Copyright Icon",
+      "description": "Hover-animated \"copyright\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/copyright-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/copyright-icon.json"
+    },
+    {
+      "id": "itshover-cpu",
+      "name": "CPU Icon",
+      "description": "Hover-animated \"cpu\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/cpu-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/cpu-icon.json"
+    },
+    {
+      "id": "itshover-credit-card",
+      "name": "Credit Card Icon",
+      "description": "Hover-animated \"credit card\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/credit-card",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/credit-card.json"
+    },
+    {
+      "id": "itshover-currency-bitcoin",
+      "name": "Currency Bitcoin Icon",
+      "description": "Hover-animated \"currency bitcoin\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/currency-bitcoin-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/currency-bitcoin-icon.json"
+    },
+    {
+      "id": "itshover-currency-dollar",
+      "name": "Currency Dollar Icon",
+      "description": "Hover-animated \"currency dollar\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/currency-dollar-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/currency-dollar-icon.json"
+    },
+    {
+      "id": "itshover-currency-ethereum",
+      "name": "Currency Ethereum Icon",
+      "description": "Hover-animated \"currency ethereum\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/currency-ethereum-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/currency-ethereum-icon.json"
+    },
+    {
+      "id": "itshover-currency-euro",
+      "name": "Currency Euro Icon",
+      "description": "Hover-animated \"currency euro\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/currency-euro-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/currency-euro-icon.json"
+    },
+    {
+      "id": "itshover-currency-rupee",
+      "name": "Currency Rupee Icon",
+      "description": "Hover-animated \"currency rupee\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/currency-rupee-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/currency-rupee-icon.json"
+    },
+    {
+      "id": "itshover-device-airpods",
+      "name": "Device Airpods Icon",
+      "description": "Hover-animated \"device airpods\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/device-airpods-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/device-airpods-icon.json"
+    },
+    {
+      "id": "itshover-dialpad",
+      "name": "Dialpad Icon",
+      "description": "Hover-animated \"dialpad\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/dialpad-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/dialpad-icon.json"
+    },
+    {
+      "id": "itshover-dino",
+      "name": "Dino Icon",
+      "description": "Hover-animated \"dino\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/dino-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/dino-icon.json"
+    },
+    {
+      "id": "itshover-discord",
+      "name": "Discord Icon",
+      "description": "Hover-animated \"discord\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/discord-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/discord-icon.json"
+    },
+    {
+      "id": "itshover-docker",
+      "name": "Docker Icon",
+      "description": "Hover-animated \"docker\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/docker-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/docker-icon.json"
+    },
+    {
+      "id": "itshover-dots-horizontal",
+      "name": "Dots Horizontal Icon",
+      "description": "Hover-animated \"dots horizontal\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/dots-horizontal-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/dots-horizontal-icon.json"
+    },
+    {
+      "id": "itshover-dots-vertical",
+      "name": "Dots Vertical Icon",
+      "description": "Hover-animated \"dots vertical\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/dots-vertical-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/dots-vertical-icon.json"
+    },
+    {
+      "id": "itshover-double-check",
+      "name": "Double Check Icon",
+      "description": "Hover-animated \"double check\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/double-check-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/double-check-icon.json"
+    },
+    {
+      "id": "itshover-down-chevron",
+      "name": "Down Chevron Icon",
+      "description": "Hover-animated \"down chevron\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/down-chevron",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/down-chevron.json"
+    },
+    {
+      "id": "itshover-download",
+      "name": "Download Icon",
+      "description": "Hover-animated \"download\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/download-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/download-icon.json"
+    },
+    {
+      "id": "itshover-drum",
+      "name": "Drum Icon",
+      "description": "Hover-animated \"drum\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/drum-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/drum-icon.json"
+    },
+    {
+      "id": "itshover-expand",
+      "name": "Expand Icon",
+      "description": "Hover-animated \"expand\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/expand-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/expand-icon.json"
+    },
+    {
+      "id": "itshover-external-link",
+      "name": "External Link Icon",
+      "description": "Hover-animated \"external link\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/external-link-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/external-link-icon.json"
+    },
+    {
+      "id": "itshover-eye",
+      "name": "Eye Icon",
+      "description": "Hover-animated \"eye\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/eye-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/eye-icon.json"
+    },
+    {
+      "id": "itshover-eye-off",
+      "name": "Eye Off Icon",
+      "description": "Hover-animated \"eye off\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/eye-off-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/eye-off-icon.json"
+    },
+    {
+      "id": "itshover-facebook",
+      "name": "Facebook Icon",
+      "description": "Hover-animated \"facebook\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/facebook-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/facebook-icon.json"
+    },
+    {
+      "id": "itshover-figma",
+      "name": "Figma Icon",
+      "description": "Hover-animated \"figma\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/figma-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/figma-icon.json"
+    },
+    {
+      "id": "itshover-file-description",
+      "name": "File Description Icon",
+      "description": "Hover-animated \"file description\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/file-description-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/file-description-icon.json"
+    },
+    {
+      "id": "itshover-filled-bell",
+      "name": "Filled Bell Icon",
+      "description": "Hover-animated \"filled bell\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/filled-bell-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/filled-bell-icon.json"
+    },
+    {
+      "id": "itshover-filled-checked",
+      "name": "Filled Checked Icon",
+      "description": "Hover-animated \"filled checked\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/filled-checked-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/filled-checked-icon.json"
+    },
+    {
+      "id": "itshover-filter",
+      "name": "Filter Icon",
+      "description": "Hover-animated \"filter\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/filter-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/filter-icon.json"
+    },
+    {
+      "id": "itshover-flame",
+      "name": "Flame Icon",
+      "description": "Hover-animated \"flame\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/flame-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/flame-icon.json"
+    },
+    {
+      "id": "itshover-focus",
+      "name": "Focus Icon",
+      "description": "Hover-animated \"focus\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/focus-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/focus-icon.json"
+    },
+    {
+      "id": "itshover-gamepad",
+      "name": "Gamepad Icon",
+      "description": "Hover-animated \"gamepad\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/gamepad-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/gamepad-icon.json"
+    },
+    {
+      "id": "itshover-gauge",
+      "name": "Gauge Icon",
+      "description": "Hover-animated \"gauge\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/gauge-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/gauge-icon.json"
+    },
+    {
+      "id": "itshover-gear",
+      "name": "Gear Icon",
+      "description": "Hover-animated \"gear\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/gear-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/gear-icon.json"
+    },
+    {
+      "id": "itshover-ghost",
+      "name": "Ghost Icon",
+      "description": "Hover-animated \"ghost\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/ghost-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/ghost-icon.json"
+    },
+    {
+      "id": "itshover-github-copilot",
+      "name": "Github Copilot Icon",
+      "description": "Hover-animated \"github copilot\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/github-copilot-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/github-copilot-icon.json"
+    },
+    {
+      "id": "itshover-github",
+      "name": "Github Icon",
+      "description": "Hover-animated \"github\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/github-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/github-icon.json"
+    },
+    {
+      "id": "itshover-gitlab",
+      "name": "Gitlab Icon",
+      "description": "Hover-animated \"gitlab\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/gitlab-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/gitlab-icon.json"
+    },
+    {
+      "id": "itshover-globe",
+      "name": "Globe Icon",
+      "description": "Hover-animated \"globe\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/globe-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/globe-icon.json"
+    },
+    {
+      "id": "itshover-gmail",
+      "name": "Gmail Icon",
+      "description": "Hover-animated \"gmail\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/gmail-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/gmail-icon.json"
+    },
+    {
+      "id": "itshover-golang",
+      "name": "Golang Icon",
+      "description": "Hover-animated \"golang\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/golang-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/golang-icon.json"
+    },
+    {
+      "id": "itshover-hand-heart",
+      "name": "Hand Heart Icon",
+      "description": "Hover-animated \"hand heart\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/hand-heart-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/hand-heart-icon.json"
+    },
+    {
+      "id": "itshover-hashtag",
+      "name": "Hashtag Icon",
+      "description": "Hover-animated \"hashtag\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/hashtag-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/hashtag-icon.json"
+    },
+    {
+      "id": "itshover-heart",
+      "name": "Heart Icon",
+      "description": "Hover-animated \"heart\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/heart-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/heart-icon.json"
+    },
+    {
+      "id": "itshover-history-circle",
+      "name": "History Circle Icon",
+      "description": "Hover-animated \"history circle\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/history-circle-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/history-circle-icon.json"
+    },
+    {
+      "id": "itshover-home",
+      "name": "Home Icon",
+      "description": "Hover-animated \"home\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/home-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/home-icon.json"
+    },
+    {
+      "id": "itshover-hotel",
+      "name": "Hotel Icon",
+      "description": "Hover-animated \"hotel\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/hotel-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/hotel-icon.json"
+    },
+    {
+      "id": "itshover-info-circle",
+      "name": "Info Circle Icon",
+      "description": "Hover-animated \"info circle\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/info-circle-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/info-circle-icon.json"
+    },
+    {
+      "id": "itshover-instagram",
+      "name": "Instagram Icon",
+      "description": "Hover-animated \"instagram\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/instagram-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/instagram-icon.json"
+    },
+    {
+      "id": "itshover-javascript",
+      "name": "Javascript Icon",
+      "description": "Hover-animated \"javascript\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/javascript-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/javascript-icon.json"
+    },
+    {
+      "id": "itshover-keyframes",
+      "name": "Keyframes Icon",
+      "description": "Hover-animated \"keyframes\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/keyframes-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/keyframes-icon.json"
+    },
+    {
+      "id": "itshover-layers",
+      "name": "Layers Icon",
+      "description": "Hover-animated \"layers\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/layers-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/layers-icon.json"
+    },
+    {
+      "id": "itshover-layout-bottombar-collapse",
+      "name": "Layout Bottombar Collapse Icon",
+      "description": "Hover-animated \"layout bottombar collapse\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/layout-bottombar-collapse-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/layout-bottombar-collapse-icon.json"
+    },
+    {
+      "id": "itshover-layout-dashboard",
+      "name": "Layout Dashboard Icon",
+      "description": "Hover-animated \"layout dashboard\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/layout-dashboard-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/layout-dashboard-icon.json"
+    },
+    {
+      "id": "itshover-layout-sidebar-right-collapse",
+      "name": "Layout Sidebar Right Collapse Icon",
+      "description": "Hover-animated \"layout sidebar right collapse\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/layout-sidebar-right-collapse-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/layout-sidebar-right-collapse-icon.json"
+    },
+    {
+      "id": "itshover-layout-sidebar-right",
+      "name": "Layout Sidebar Right Icon",
+      "description": "Hover-animated \"layout sidebar right\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/layout-sidebar-right-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/layout-sidebar-right-icon.json"
+    },
+    {
+      "id": "itshover-letter-a",
+      "name": "Letter A Icon",
+      "description": "Hover-animated \"letter a\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/letter-a-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/letter-a-icon.json"
+    },
+    {
+      "id": "itshover-letter-b",
+      "name": "Letter B Icon",
+      "description": "Hover-animated \"letter b\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/letter-b-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/letter-b-icon.json"
+    },
+    {
+      "id": "itshover-letter-c",
+      "name": "Letter C Icon",
+      "description": "Hover-animated \"letter c\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/letter-c-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/letter-c-icon.json"
+    },
+    {
+      "id": "itshover-letter-d",
+      "name": "Letter D Icon",
+      "description": "Hover-animated \"letter d\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/letter-d-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/letter-d-icon.json"
+    },
+    {
+      "id": "itshover-letter-e",
+      "name": "Letter E Icon",
+      "description": "Hover-animated \"letter e\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/letter-e-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/letter-e-icon.json"
+    },
+    {
+      "id": "itshover-letter-f",
+      "name": "Letter F Icon",
+      "description": "Hover-animated \"letter f\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/letter-f-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/letter-f-icon.json"
+    },
+    {
+      "id": "itshover-letter-g",
+      "name": "Letter G Icon",
+      "description": "Hover-animated \"letter g\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/letter-g-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/letter-g-icon.json"
+    },
+    {
+      "id": "itshover-letter-h",
+      "name": "Letter H Icon",
+      "description": "Hover-animated \"letter h\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/letter-h-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/letter-h-icon.json"
+    },
+    {
+      "id": "itshover-letter-i",
+      "name": "Letter I Icon",
+      "description": "Hover-animated \"letter i\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/letter-i-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/letter-i-icon.json"
+    },
+    {
+      "id": "itshover-letter-j",
+      "name": "Letter J Icon",
+      "description": "Hover-animated \"letter j\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/letter-j-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/letter-j-icon.json"
+    },
+    {
+      "id": "itshover-letter-k",
+      "name": "Letter K Icon",
+      "description": "Hover-animated \"letter k\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/letter-k-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/letter-k-icon.json"
+    },
+    {
+      "id": "itshover-letter-l",
+      "name": "Letter L Icon",
+      "description": "Hover-animated \"letter l\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/letter-l-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/letter-l-icon.json"
+    },
+    {
+      "id": "itshover-letter-m",
+      "name": "Letter M Icon",
+      "description": "Hover-animated \"letter m\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/letter-m-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/letter-m-icon.json"
+    },
+    {
+      "id": "itshover-letter-n",
+      "name": "Letter N Icon",
+      "description": "Hover-animated \"letter n\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/letter-n-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/letter-n-icon.json"
+    },
+    {
+      "id": "itshover-letter-o",
+      "name": "Letter O Icon",
+      "description": "Hover-animated \"letter o\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/letter-o-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/letter-o-icon.json"
+    },
+    {
+      "id": "itshover-letter-p",
+      "name": "Letter P Icon",
+      "description": "Hover-animated \"letter p\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/letter-p-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/letter-p-icon.json"
+    },
+    {
+      "id": "itshover-letter-q",
+      "name": "Letter Q Icon",
+      "description": "Hover-animated \"letter q\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/letter-q-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/letter-q-icon.json"
+    },
+    {
+      "id": "itshover-letter-r",
+      "name": "Letter R Icon",
+      "description": "Hover-animated \"letter r\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/letter-r-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/letter-r-icon.json"
+    },
+    {
+      "id": "itshover-letter-s",
+      "name": "Letter S Icon",
+      "description": "Hover-animated \"letter s\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/letter-s-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/letter-s-icon.json"
+    },
+    {
+      "id": "itshover-letter-t",
+      "name": "Letter T Icon",
+      "description": "Hover-animated \"letter t\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/letter-t-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/letter-t-icon.json"
+    },
+    {
+      "id": "itshover-letter-u",
+      "name": "Letter U Icon",
+      "description": "Hover-animated \"letter u\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/letter-u-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/letter-u-icon.json"
+    },
+    {
+      "id": "itshover-letter-v",
+      "name": "Letter V Icon",
+      "description": "Hover-animated \"letter v\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/letter-v-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/letter-v-icon.json"
+    },
+    {
+      "id": "itshover-letter-w",
+      "name": "Letter W Icon",
+      "description": "Hover-animated \"letter w\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/letter-w-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/letter-w-icon.json"
+    },
+    {
+      "id": "itshover-letter-x",
+      "name": "Letter X Icon",
+      "description": "Hover-animated \"letter x\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/letter-x-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/letter-x-icon.json"
+    },
+    {
+      "id": "itshover-letter-y",
+      "name": "Letter Y Icon",
+      "description": "Hover-animated \"letter y\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/letter-y-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/letter-y-icon.json"
+    },
+    {
+      "id": "itshover-letter-z",
+      "name": "Letter Z Icon",
+      "description": "Hover-animated \"letter z\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/letter-z-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/letter-z-icon.json"
+    },
+    {
+      "id": "itshover-library",
+      "name": "Library Icon",
+      "description": "Hover-animated \"library\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/library-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/library-icon.json"
+    },
+    {
+      "id": "itshover-like",
+      "name": "Like Icon",
+      "description": "Hover-animated \"like\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/like-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/like-icon.json"
+    },
+    {
+      "id": "itshover-link",
+      "name": "Link Icon",
+      "description": "Hover-animated \"link\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/link-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/link-icon.json"
+    },
+    {
+      "id": "itshover-linkedin",
+      "name": "Linkedin Icon",
+      "description": "Hover-animated \"linkedin\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/linkedin-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/linkedin-icon.json"
+    },
+    {
+      "id": "itshover-locate",
+      "name": "Locate Icon",
+      "description": "Hover-animated \"locate\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/locate-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/locate-icon.json"
+    },
+    {
+      "id": "itshover-lock",
+      "name": "Lock Icon",
+      "description": "Hover-animated \"lock\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/lock-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/lock-icon.json"
+    },
+    {
+      "id": "itshover-logout",
+      "name": "Logout Icon",
+      "description": "Hover-animated \"logout\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/logout-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/logout-icon.json"
+    },
+    {
+      "id": "itshover-magnifier",
+      "name": "Magnifier Icon",
+      "description": "Hover-animated \"magnifier\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/magnifier-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/magnifier-icon.json"
+    },
+    {
+      "id": "itshover-mail-filled",
+      "name": "Mail Filled Icon",
+      "description": "Hover-animated \"mail filled\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/mail-filled-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/mail-filled-icon.json"
+    },
+    {
+      "id": "itshover-map-pin",
+      "name": "Map Pin Icon",
+      "description": "Hover-animated \"map pin\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/map-pin-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/map-pin-icon.json"
+    },
+    {
+      "id": "itshover-meh",
+      "name": "Meh Icon",
+      "description": "Hover-animated \"meh\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/meh-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/meh-icon.json"
+    },
+    {
+      "id": "itshover-message-circle",
+      "name": "Message Circle Icon",
+      "description": "Hover-animated \"message circle\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/message-circle-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/message-circle-icon.json"
+    },
+    {
+      "id": "itshover-moon",
+      "name": "Moon Icon",
+      "description": "Hover-animated \"moon\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/moon-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/moon-icon.json"
+    },
+    {
+      "id": "itshover-mouse-pointer-2",
+      "name": "Mouse Pointer 2 Icon",
+      "description": "Hover-animated \"mouse pointer 2\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/mouse-pointer-2-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/mouse-pointer-2-icon.json"
+    },
+    {
+      "id": "itshover-mysql",
+      "name": "Mysql Icon",
+      "description": "Hover-animated \"mysql\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/mysql-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/mysql-icon.json"
+    },
+    {
+      "id": "itshover-nodejs",
+      "name": "Nodejs Icon",
+      "description": "Hover-animated \"nodejs\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/nodejs-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/nodejs-icon.json"
+    },
+    {
+      "id": "itshover-paint",
+      "name": "Paint Icon",
+      "description": "Hover-animated \"paint\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/paint-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/paint-icon.json"
+    },
+    {
+      "id": "itshover-party-popper",
+      "name": "Party Popper Icon",
+      "description": "Hover-animated \"party popper\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/party-popper-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/party-popper-icon.json"
+    },
+    {
+      "id": "itshover-passport",
+      "name": "Passport Icon",
+      "description": "Hover-animated \"passport\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/passport-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/passport-icon.json"
+    },
+    {
+      "id": "itshover-paw-print",
+      "name": "Paw Print Icon",
+      "description": "Hover-animated \"paw print\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/paw-print-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/paw-print-icon.json"
+    },
+    {
+      "id": "itshover-pen",
+      "name": "Pen Icon",
+      "description": "Hover-animated \"pen\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/pen-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/pen-icon.json"
+    },
+    {
+      "id": "itshover-phone-volume",
+      "name": "Phone Volume Icon",
+      "description": "Hover-animated \"phone volume\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/phone-volume",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/phone-volume.json"
+    },
+    {
+      "id": "itshover-pinterest",
+      "name": "Pinterest Icon",
+      "description": "Hover-animated \"pinterest\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/pinterest-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/pinterest-icon.json"
+    },
+    {
+      "id": "itshover-player",
+      "name": "Player Icon",
+      "description": "Hover-animated \"player\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/player-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/player-icon.json"
+    },
+    {
+      "id": "itshover-plug-connected",
+      "name": "Plug Connected Icon",
+      "description": "Hover-animated \"plug connected\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/plug-connected-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/plug-connected-icon.json"
+    },
+    {
+      "id": "itshover-plug-connected-x",
+      "name": "Plug Connected X Icon",
+      "description": "Hover-animated \"plug connected x\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/plug-connected-x-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/plug-connected-x-icon.json"
+    },
+    {
+      "id": "itshover-python",
+      "name": "Python Icon",
+      "description": "Hover-animated \"python\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/python-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/python-icon.json"
+    },
+    {
+      "id": "itshover-qrcode",
+      "name": "Qrcode Icon",
+      "description": "Hover-animated \"qrcode\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/qrcode-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/qrcode-icon.json"
+    },
+    {
+      "id": "itshover-question-mark",
+      "name": "Question Mark Icon",
+      "description": "Hover-animated \"question mark\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/question-mark",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/question-mark.json"
+    },
+    {
+      "id": "itshover-radio",
+      "name": "Radio Icon",
+      "description": "Hover-animated \"radio\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/radio-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/radio-icon.json"
+    },
+    {
+      "id": "itshover-rainbow",
+      "name": "Rainbow Icon",
+      "description": "Hover-animated \"rainbow\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/rainbow-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/rainbow-icon.json"
+    },
+    {
+      "id": "itshover-refresh",
+      "name": "Refresh Icon",
+      "description": "Hover-animated \"refresh\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/refresh-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/refresh-icon.json"
+    },
+    {
+      "id": "itshover-right-chevron",
+      "name": "Right Chevron Icon",
+      "description": "Hover-animated \"right chevron\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/right-chevron",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/right-chevron.json"
+    },
+    {
+      "id": "itshover-rocket",
+      "name": "Rocket Icon",
+      "description": "Hover-animated \"rocket\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/rocket-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/rocket-icon.json"
+    },
+    {
+      "id": "itshover-rosette-discount-check",
+      "name": "Rosette Discount Check Icon",
+      "description": "Hover-animated \"rosette discount check\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/rosette-discount-check-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/rosette-discount-check-icon.json"
+    },
+    {
+      "id": "itshover-rosette-discount",
+      "name": "Rosette Discount Icon",
+      "description": "Hover-animated \"rosette discount\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/rosette-discount-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/rosette-discount-icon.json"
+    },
+    {
+      "id": "itshover-router",
+      "name": "Router Icon",
+      "description": "Hover-animated \"router\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/router-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/router-icon.json"
+    },
+    {
+      "id": "itshover-satellite-dish",
+      "name": "Satellite Dish Icon",
+      "description": "Hover-animated \"satellite dish\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/satellite-dish-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/satellite-dish-icon.json"
+    },
+    {
+      "id": "itshover-save",
+      "name": "Save Icon",
+      "description": "Hover-animated \"save\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/save-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/save-icon.json"
+    },
+    {
+      "id": "itshover-scan-barcode",
+      "name": "Scan Barcode Icon",
+      "description": "Hover-animated \"scan barcode\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/scan-barcode-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/scan-barcode-icon.json"
+    },
+    {
+      "id": "itshover-scan-heart",
+      "name": "Scan Heart Icon",
+      "description": "Hover-animated \"scan heart\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/scan-heart-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/scan-heart-icon.json"
+    },
+    {
+      "id": "itshover-send-horizontal",
+      "name": "Send Horizontal Icon",
+      "description": "Hover-animated \"send horizontal\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/send-horizontal-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/send-horizontal-icon.json"
+    },
+    {
+      "id": "itshover-send",
+      "name": "Send Icon",
+      "description": "Hover-animated \"send\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/send-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/send-icon.json"
+    },
+    {
+      "id": "itshover-shield-check",
+      "name": "Shield Check Icon",
+      "description": "Hover-animated \"shield check\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/shield-check",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/shield-check.json"
+    },
+    {
+      "id": "itshover-shopping-cart",
+      "name": "Shopping Cart Icon",
+      "description": "Hover-animated \"shopping cart\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/shopping-cart-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/shopping-cart-icon.json"
+    },
+    {
+      "id": "itshover-simple-checked",
+      "name": "Simple Checked Icon",
+      "description": "Hover-animated \"simple checked\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/simple-checked-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/simple-checked-icon.json"
+    },
+    {
+      "id": "itshover-skull-emoji",
+      "name": "Skull Emoji Icon",
+      "description": "Hover-animated \"skull emoji\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/skull-emoji",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/skull-emoji.json"
+    },
+    {
+      "id": "itshover-slack",
+      "name": "Slack Icon",
+      "description": "Hover-animated \"slack\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/slack-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/slack-icon.json"
+    },
+    {
+      "id": "itshover-sliders-horizontal",
+      "name": "Sliders Horizontal Icon",
+      "description": "Hover-animated \"sliders horizontal\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/sliders-horizontal-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/sliders-horizontal-icon.json"
+    },
+    {
+      "id": "itshover-snapchat",
+      "name": "Snapchat Icon",
+      "description": "Hover-animated \"snapchat\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/snapchat-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/snapchat-icon.json"
+    },
+    {
+      "id": "itshover-soup",
+      "name": "Soup Icon",
+      "description": "Hover-animated \"soup\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/soup-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/soup-icon.json"
+    },
+    {
+      "id": "itshover-sparkles",
+      "name": "Sparkles Icon",
+      "description": "Hover-animated \"sparkles\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/sparkles-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/sparkles-icon.json"
+    },
+    {
+      "id": "itshover-spotify",
+      "name": "Spotify Icon",
+      "description": "Hover-animated \"spotify\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/spotify-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/spotify-icon.json"
+    },
+    {
+      "id": "itshover-stack-3",
+      "name": "Stack 3 Icon",
+      "description": "Hover-animated \"stack 3\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/stack-3-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/stack-3-icon.json"
+    },
+    {
+      "id": "itshover-stack",
+      "name": "Stack Icon",
+      "description": "Hover-animated \"stack\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/stack-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/stack-icon.json"
+    },
+    {
+      "id": "itshover-star",
+      "name": "Star Icon",
+      "description": "Hover-animated \"star\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/star-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/star-icon.json"
+    },
+    {
+      "id": "itshover-subscript",
+      "name": "Subscript Icon",
+      "description": "Hover-animated \"subscript\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/subscript-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/subscript-icon.json"
+    },
+    {
+      "id": "itshover-target",
+      "name": "Target Icon",
+      "description": "Hover-animated \"target\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/target-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/target-icon.json"
+    },
+    {
+      "id": "itshover-telephone",
+      "name": "Telephone Icon",
+      "description": "Hover-animated \"telephone\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/telephone-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/telephone-icon.json"
+    },
+    {
+      "id": "itshover-terminal",
+      "name": "Terminal Icon",
+      "description": "Hover-animated \"terminal\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/terminal-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/terminal-icon.json"
+    },
+    {
+      "id": "itshover-toggle",
+      "name": "Toggle Icon",
+      "description": "Hover-animated \"toggle\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/toggle-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/toggle-icon.json"
+    },
+    {
+      "id": "itshover-trash",
+      "name": "Trash Icon",
+      "description": "Hover-animated \"trash\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/trash-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/trash-icon.json"
+    },
+    {
+      "id": "itshover-travel-bag",
+      "name": "Travel Bag Icon",
+      "description": "Hover-animated \"travel bag\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/travel-bag",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/travel-bag.json"
+    },
+    {
+      "id": "itshover-triangle-alert",
+      "name": "Triangle Alert Icon",
+      "description": "Hover-animated \"triangle alert\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/triangle-alert-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/triangle-alert-icon.json"
+    },
+    {
+      "id": "itshover-trophy",
+      "name": "Trophy Icon",
+      "description": "Hover-animated \"trophy\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/trophy-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/trophy-icon.json"
+    },
+    {
+      "id": "itshover-truck-electric",
+      "name": "Truck Electric Icon",
+      "description": "Hover-animated \"truck electric\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/truck-electric-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/truck-electric-icon.json"
+    },
+    {
+      "id": "itshover-twitter",
+      "name": "Twitter Icon",
+      "description": "Hover-animated \"twitter\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/twitter-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/twitter-icon.json"
+    },
+    {
+      "id": "itshover-twitter-x",
+      "name": "Twitter X Icon",
+      "description": "Hover-animated \"twitter x\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/twitter-x-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/twitter-x-icon.json"
+    },
+    {
+      "id": "itshover-typescript",
+      "name": "Typescript Icon",
+      "description": "Hover-animated \"typescript\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/typescript-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/typescript-icon.json"
+    },
+    {
+      "id": "itshover-unlink",
+      "name": "Unlink Icon",
+      "description": "Hover-animated \"unlink\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/unlink-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/unlink-icon.json"
+    },
+    {
+      "id": "itshover-unordered-list",
+      "name": "Unordered List Icon",
+      "description": "Hover-animated \"unordered list\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/unordered-list-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/unordered-list-icon.json"
+    },
+    {
+      "id": "itshover-upload",
+      "name": "Upload Icon",
+      "description": "Hover-animated \"upload\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/upload-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/upload-icon.json"
+    },
+    {
+      "id": "itshover-user-check",
+      "name": "User Check Icon",
+      "description": "Hover-animated \"user check\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/user-check-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/user-check-icon.json"
+    },
+    {
+      "id": "itshover-user",
+      "name": "User Icon",
+      "description": "Hover-animated \"user\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/user-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/user-icon.json"
+    },
+    {
+      "id": "itshover-user-plus",
+      "name": "User Plus Icon",
+      "description": "Hover-animated \"user plus\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/user-plus-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/user-plus-icon.json"
+    },
+    {
+      "id": "itshover-users-group",
+      "name": "Users Group Icon",
+      "description": "Hover-animated \"users group\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/users-group-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/users-group-icon.json"
+    },
+    {
+      "id": "itshover-users",
+      "name": "Users Icon",
+      "description": "Hover-animated \"users\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/users-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/users-icon.json"
+    },
+    {
+      "id": "itshover-vinyl",
+      "name": "Vinyl Icon",
+      "description": "Hover-animated \"vinyl\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/vinyl-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/vinyl-icon.json"
+    },
+    {
+      "id": "itshover-volume-2",
+      "name": "Volume 2 Icon",
+      "description": "Hover-animated \"volume 2\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/volume-2-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/volume-2-icon.json"
+    },
+    {
+      "id": "itshover-volume-x",
+      "name": "Volume X Icon",
+      "description": "Hover-animated \"volume x\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/volume-x-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/volume-x-icon.json"
+    },
+    {
+      "id": "itshover-wallet",
+      "name": "Wallet Icon",
+      "description": "Hover-animated \"wallet\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/wallet-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/wallet-icon.json"
+    },
+    {
+      "id": "itshover-washing-machine",
+      "name": "Washing Machine Icon",
+      "description": "Hover-animated \"washing machine\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/washing-machine-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/washing-machine-icon.json"
+    },
+    {
+      "id": "itshover-whatsapp",
+      "name": "Whatsapp Icon",
+      "description": "Hover-animated \"whatsapp\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/whatsapp-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/whatsapp-icon.json"
+    },
+    {
+      "id": "itshover-wifi",
+      "name": "Wi-Fi Icon",
+      "description": "Hover-animated \"wi-fi\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/wifi-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/wifi-icon.json"
+    },
+    {
+      "id": "itshover-wifi-off",
+      "name": "Wi-Fi Off Icon",
+      "description": "Hover-animated \"wi-fi off\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/wifi-off-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/wifi-off-icon.json"
+    },
+    {
+      "id": "itshover-world",
+      "name": "World Icon",
+      "description": "Hover-animated \"world\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/world-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/world-icon.json"
+    },
+    {
+      "id": "itshover-x",
+      "name": "X Icon",
+      "description": "Hover-animated \"x\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/x-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/x-icon.json"
+    },
+    {
+      "id": "itshover-youtube",
+      "name": "Youtube Icon",
+      "description": "Hover-animated \"youtube\" icon built with Motion — the glyph animates on pointer hover (pointer-only interaction; static on touch).",
+      "sourceUrl": "https://itshover.com/icons/youtube-icon",
+      "sourceCategory": "Icons",
+      "category": "micro-interactions",
+      "install": "npx shadcn@latest add https://itshover.com/r/youtube-icon.json"
+    }
+  ]
+}

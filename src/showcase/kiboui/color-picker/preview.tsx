@@ -1,5 +1,5 @@
 import Color from "color";
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import {
   ColorPicker,
   ColorPickerAlpha,
@@ -44,12 +44,13 @@ export default function Preview() {
   const [rgba, setRgba] = useState<[number, number, number, number]>([124, 58, 237, 1]);
 
   // The picker calls back with a rgba array ([r, g, b, a]) — see ColorPickerProps.onChange.
-  const handleColorChange = (value: unknown) => {
+  // It lists onChange in an effect's deps, so the handler must be referentially stable.
+  const handleColorChange = useCallback((value: unknown) => {
     if (Array.isArray(value)) {
       const [r = 0, g = 0, b = 0, a = 1] = value as number[];
       setRgba([r, g, b, a]);
     }
-  };
+  }, []);
 
   return (
     <div className="w-full">
@@ -70,10 +71,12 @@ export default function Preview() {
                 <span className="text-muted-fg">alpha {Math.round(rgba[3] * 100)}%</span>
               </div>
             </div>
-            <ColorPickerOutput />
           </div>
 
           <ColorPicker defaultValue="#7c3aed" onChange={handleColorChange}>
+            <div className="flex justify-end">
+              <ColorPickerOutput />
+            </div>
             <div className="h-28">
               <ColorPickerSelection className="size-full" />
             </div>

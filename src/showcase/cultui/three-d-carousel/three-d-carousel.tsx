@@ -164,10 +164,6 @@ function ThreeDPhotoCarousel() {
     [],
   );
 
-  useEffect(() => {
-    console.log("Cards loaded:", cards);
-  }, [cards]);
-
   const handleClick = (imgUrl: string) => {
     setActiveImg(imgUrl);
     setIsCarouselActive(false);

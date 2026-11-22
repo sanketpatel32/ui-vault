@@ -48,7 +48,6 @@ export const motionprimitives: UIEntry[] = [
     install: "npx motion-primitives@latest add text-morph",
   },
   {
-    previewKey: "motionprimitives-text-roll",
     id: "motionprimitives-text-roll",
     name: "Text Roll",
     description: "Rolling column of words that cycles with a vertical roll transition.",
@@ -165,7 +164,6 @@ export const motionprimitives: UIEntry[] = [
     install: "npx motion-primitives@latest add tilt",
   },
   {
-    previewKey: "motionprimitives-magnetic",
     id: "motionprimitives-magnetic",
     name: "Magnetic",
     description:
@@ -180,7 +178,6 @@ export const motionprimitives: UIEntry[] = [
     install: "npx motion-primitives@latest add magnetic",
   },
   {
-    previewKey: "motionprimitives-dock",
     id: "motionprimitives-dock",
     name: "Dock",
     description: "macOS-style magnifying dock with spring scaling on hover.",
@@ -194,7 +191,6 @@ export const motionprimitives: UIEntry[] = [
     install: "npx motion-primitives@latest add dock",
   },
   {
-    previewKey: "motionprimitives-morphing-dialog",
     id: "motionprimitives-morphing-dialog",
     name: "Morphing Dialog",
     description:
@@ -210,7 +206,6 @@ export const motionprimitives: UIEntry[] = [
     featured: true,
   },
   {
-    previewKey: "motionprimitives-morphing-popover",
     id: "motionprimitives-morphing-popover",
     name: "Morphing Popover",
     description:
@@ -239,7 +234,6 @@ export const motionprimitives: UIEntry[] = [
     install: "npx motion-primitives@latest add infinite-slider",
   },
   {
-    previewKey: "motionprimitives-scroll-progress",
     id: "motionprimitives-scroll-progress",
     name: "Scroll Progress",
     description: "Slim progress bar tracking page or container scroll position.",
@@ -253,7 +247,6 @@ export const motionprimitives: UIEntry[] = [
     install: "npx motion-primitives@latest add scroll-progress",
   },
   {
-    previewKey: "motionprimitives-cursor",
     id: "motionprimitives-cursor",
     name: "Cursor",
     description:

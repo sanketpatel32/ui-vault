@@ -3,6 +3,8 @@
 //   published package ships no types for its main entry.
 // - react-image-crop CSS: side-effect import in the kiboui image-crop
 //   component; Vite resolves the real stylesheet from node_modules.
+// - *.css: co-located side-effect stylesheets in vendored animata components,
+//   reached by the scripts project through src/showcase/index.ts (no vite/client types there).
 declare module "culori" {
   export type Color = {
     mode?: string;
@@ -16,3 +18,4 @@ declare module "culori" {
 }
 
 declare module "react-image-crop/dist/ReactCrop.css";
+declare module "*.css";

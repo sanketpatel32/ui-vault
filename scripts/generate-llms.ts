@@ -9,7 +9,13 @@ import { categories, entries, GROUP_LABELS, sources } from "../src/data/index";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const publicDir = join(root, "public");
 
-const LICENSE_LABEL = { mit: "MIT", free: "Free", freemium: "Freemium", paid: "Paid" } as const;
+const LICENSE_LABEL = {
+  mit: "MIT",
+  "mit-commons-clause": "MIT + Commons Clause",
+  free: "Free",
+  freemium: "Freemium",
+  paid: "Paid",
+} as const;
 const MODE_LABEL = { live: "live-previewable", linkout: "link-out only" } as const;
 
 function entryLine(e: (typeof entries)[number]): string {

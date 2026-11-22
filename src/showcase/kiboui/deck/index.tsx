@@ -1,3 +1,4 @@
+import { useSafeTimeout } from "@/showcase/_shared/use-safe-timeout";
 import { useControllableState } from "@radix-ui/react-use-controllable-state";
 import { motion, type PanInfo, useMotionValue, useTransform } from "motion/react";
 import {
@@ -58,6 +59,7 @@ export const DeckCards = ({
   const [displayIndex, setDisplayIndex] = useState(currentIndex);
   const isInternalChangeRef = useRef(false);
   const prevIndexRef = useRef(currentIndex);
+  const safeTimeout = useSafeTimeout();
 
   // Detect external currentIndex changes and trigger animation
   useEffect(() => {
@@ -76,7 +78,7 @@ export const DeckCards = ({
       setExitDirection(indexChangeDirection);
 
       // Update display index after animation completes
-      setTimeout(() => {
+      safeTimeout(() => {
         setExitDirection(null);
         setDisplayIndex(currentIndex);
       }, 300);
@@ -86,7 +88,7 @@ export const DeckCards = ({
     }
 
     prevIndexRef.current = currentIndex;
-  }, [currentIndex, animateOnIndexChange, indexChangeDirection, childrenArray.length]);
+  }, [currentIndex, animateOnIndexChange, indexChangeDirection, childrenArray.length, safeTimeout]);
 
   const handleSwipe = useCallback(
     (direction: "left" | "right") => {
@@ -105,7 +107,7 @@ export const DeckCards = ({
       onSwipeEnd?.(displayIndex, direction);
 
       // Move to next card after animation
-      setTimeout(() => {
+      safeTimeout(() => {
         isInternalChangeRef.current = true;
         const newIndex = displayIndex + 1;
         setCurrentIndex(newIndex);
@@ -113,7 +115,7 @@ export const DeckCards = ({
         setExitDirection(null);
       }, 300);
     },
-    [displayIndex, childrenArray.length, onSwipe, onSwipeEnd, setCurrentIndex],
+    [displayIndex, childrenArray.length, onSwipe, onSwipeEnd, setCurrentIndex, safeTimeout],
   );
 
   const visibleCards = childrenArray.slice(displayIndex, displayIndex + stackSize);

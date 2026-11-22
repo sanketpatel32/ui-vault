@@ -1,3 +1,4 @@
+import { useSafeTimeout } from "@/showcase/_shared/use-safe-timeout";
 import { useState } from "react";
 import { ChevronDown, Copy, ClipboardPaste, Printer, Share2 } from "lucide-react";
 import { Group, GroupSeparator } from "./group";
@@ -7,6 +8,7 @@ const actionClass =
 
 export default function Preview() {
   const [copied, setCopied] = useState(false);
+  const safeTimeout = useSafeTimeout();
 
   return (
     <div className="w-full">
@@ -18,7 +20,7 @@ export default function Preview() {
             className={actionClass}
             onClick={() => {
               setCopied(true);
-              window.setTimeout(() => setCopied(false), 1500);
+              safeTimeout(() => setCopied(false), 1500);
             }}
           >
             <Copy className="size-4 opacity-70" />

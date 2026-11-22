@@ -1,4 +1,5 @@
 // Validates the registry in src/data. Run: npm run registry:check
+import { readFileSync } from "node:fs";
 import { categories, entries, sources } from "../src/data/index";
 import { showcaseLoaders } from "../src/showcase/index";
 import { checkAllPreviews } from "./check-previews.mts";
@@ -43,6 +44,22 @@ for (const e of entries) {
 }
 for (const key of loaderKeys) {
   if (!entries.some((e) => e.previewKey === key)) warnings.push(`orphan showcase loader: ${key}`);
+}
+
+// provenance: every previewKey has an origin/copy-date row in src/showcase/README.md (golden rule 5)
+const provenanceRows = new Set(
+  [
+    ...readFileSync(new URL("../src/showcase/README.md", import.meta.url), "utf8").matchAll(
+      /^\| `([^`]+)`/gm,
+    ),
+  ].map((m) => m[1]),
+);
+for (const e of entries) {
+  if (e.previewKey && !provenanceRows.has(e.previewKey)) {
+    errors.push(
+      `${e.id}: previewKey "${e.previewKey}" has no origin row in src/showcase/README.md`,
+    );
+  }
 }
 
 // empty categories

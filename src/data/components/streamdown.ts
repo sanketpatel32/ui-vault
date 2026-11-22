@@ -1,0 +1,76 @@
+// https://streamdown.ai — Apache-2.0 (github.com/vercel/streamdown). Cataloged 2026-11-22.
+// 1 core component + 4 official plugins. remend (the Markdown "healer") is a parser utility, not UI — noted on the source.
+import type { UIEntry } from "../types";
+
+export const streamdown: UIEntry[] = [
+  {
+    id: "streamdown-markdown",
+    name: "Streamdown",
+    description:
+      'Drop-in react-markdown replacement built for streaming AI output — parses incomplete/unterminated Markdown gracefully (via remend), GFM tables and task lists, hardened rendering, memoized updates. Powers AI Elements Message/Response. Add `@source "../node_modules/streamdown/dist/*.js"` to your Tailwind CSS.',
+    source: "streamdown",
+    sourceUrl: "https://streamdown.ai/docs",
+    sourceCategory: "Core",
+    category: "chat",
+    tags: ["streamdown", "markdown", "streaming", "ai"],
+    license: "free",
+    previewMode: "live",
+    install: "npm install streamdown",
+  },
+  {
+    id: "streamdown-code",
+    name: "Code Plugin",
+    description:
+      "@streamdown/code — Shiki syntax highlighting for fenced code blocks inside streamed Markdown, with copy/download controls. Needs its own Tailwind `@source` line.",
+    source: "streamdown",
+    sourceUrl: "https://streamdown.ai/docs/plugins/code",
+    sourceCategory: "Plugins",
+    category: "chat",
+    tags: ["streamdown", "markdown", "code", "shiki", "plugin"],
+    license: "free",
+    previewMode: "live",
+    install: "npm install streamdown @streamdown/code",
+  },
+  {
+    id: "streamdown-math",
+    name: "Math Plugin",
+    description:
+      "@streamdown/math — KaTeX rendering for inline and block LaTeX equations in streamed Markdown.",
+    source: "streamdown",
+    sourceUrl: "https://streamdown.ai/docs/plugins/math",
+    sourceCategory: "Plugins",
+    category: "chat",
+    tags: ["streamdown", "markdown", "math", "katex", "plugin"],
+    license: "free",
+    previewMode: "live",
+    install: "npm install streamdown @streamdown/math",
+  },
+  {
+    id: "streamdown-mermaid",
+    name: "Mermaid Plugin",
+    description:
+      "@streamdown/mermaid — renders ```mermaid code blocks as diagrams (flowcharts, sequence diagrams) in streamed Markdown.",
+    source: "streamdown",
+    sourceUrl: "https://streamdown.ai/docs/plugins/mermaid",
+    sourceCategory: "Plugins",
+    category: "chat",
+    tags: ["streamdown", "markdown", "mermaid", "diagrams", "plugin"],
+    license: "free",
+    previewMode: "live",
+    install: "npm install streamdown @streamdown/mermaid",
+  },
+  {
+    id: "streamdown-cjk",
+    name: "CJK Plugin",
+    description:
+      "@streamdown/cjk — correct emphasis/line-break handling for Chinese, Japanese and Korean text in streamed Markdown.",
+    source: "streamdown",
+    sourceUrl: "https://streamdown.ai/docs/plugins/cjk",
+    sourceCategory: "Plugins",
+    category: "chat",
+    tags: ["streamdown", "markdown", "cjk", "i18n", "plugin"],
+    license: "free",
+    previewMode: "live",
+    install: "npm install streamdown @streamdown/cjk",
+  },
+];

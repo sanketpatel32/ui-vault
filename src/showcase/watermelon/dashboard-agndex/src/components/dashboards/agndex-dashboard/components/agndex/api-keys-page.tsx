@@ -1,3 +1,4 @@
+import { useSafeTimeout } from "@/showcase/_shared/use-safe-timeout";
 import { useState } from "react";
 import {
   CheckIcon,
@@ -48,10 +49,12 @@ export function ApiKeysPage() {
   const [keyCopied, setKeyCopied] = useState(false);
   const [envCopied, setEnvCopied] = useState(false);
 
+  const safeTimeout = useSafeTimeout();
+
   function copyWithFeedback(value: string, setCopied: (copied: boolean) => void) {
     copyText(value);
     setCopied(true);
-    window.setTimeout(() => setCopied(false), 1500);
+    safeTimeout(() => setCopied(false), 1500);
   }
 
   function copyEnv() {

@@ -22,6 +22,7 @@
       "@/*": ["./src/*"],
       "next/image": ["./src/lib/shims/next-image.tsx"],
       "next/link": ["./src/lib/shims/next-link.tsx"],
+      "next/font/google": ["./src/lib/shims/next-font-google.ts"],
       "next/navigation": ["./src/lib/shims/next-navigation.tsx"],
       "next-themes": ["./src/lib/shims/next-themes.tsx"]
     },
