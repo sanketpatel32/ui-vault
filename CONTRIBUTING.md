@@ -1,7 +1,7 @@
 # Contributing to UI Vault
 
 UI Vault is a personal, frontend-only React hub that aggregates UI components from
-15 free, vendorable sources into one categorized, searchable, previewable library.
+33 free, vendorable sources into one categorized, searchable, previewable library.
 There is no backend and there never will be one. Before contributing, read
 [AGENTS.md](AGENTS.md) (operating guide) and [PLAN.md](PLAN.md) (build plan of record).
 
