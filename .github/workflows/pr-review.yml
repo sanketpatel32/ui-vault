@@ -1,0 +1,115 @@
+name: PR review bots
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, edited]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: pr-review-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  # Inline review annotations: oxlint findings become line-anchored PR
+  # annotations (Warnings view / "Files changed" gutter). Non-blocking by
+  # design — vendored showcase code carries pre-existing warnings, tracked in
+  # the Nov 2026 audit issues.
+  inline-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Inline lint annotations
+        run: npx oxlint src scripts --format=github
+
+  # Hygiene bot: sizes the PR, nudges on missing descriptions, and explains
+  # the llms.txt rule when the registry changed without regenerating
+  # artifacts (the CI "stale llms" check will also fail — this comment makes
+  # the fix obvious).
+  pr-hygiene:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Size label, description check, llms guard
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+          MARKER: "<!-- pr-hygiene-bot -->"
+        run: |
+          set -euo pipefail
+
+          pr_comment() {
+            local body="$1"
+            local existing
+            existing="$(gh api "repos/$REPO/issues/$PR/comments" --jq \
+              ".[] | select(.body startswith \"$MARKER\") | .id" | head -1 || true)"
+            if [ -n "$existing" ]; then
+              gh api -X PATCH "repos/$REPO/issues/comments/$existing" \
+                -f body="$MARKER
+          $body" >/dev/null
+            else
+              gh pr comment "$PR" --body "$MARKER
+          $body" >/dev/null
+            fi
+          }
+
+          # --- size label ---
+          ADDS="$(gh api "repos/$REPO/pulls/$PR" --jq '.additions + .deletions')"
+          SIZE="size:XL"
+          if   [ "$ADDS" -le 9 ];    then SIZE="size:XS"
+          elif [ "$ADDS" -le 49 ];   then SIZE="size:S"
+          elif [ "$ADDS" -le 299 ];  then SIZE="size:M"
+          elif [ "$ADDS" -le 999 ];  then SIZE="size:L"
+          fi
+          for old in "size:XS" "size:S" "size:M" "size:L" "size:XL"; do
+            if [ "$old" != "$SIZE" ]; then
+              gh pr remove-label "$PR" "$old" --yes >/dev/null 2>&1 || true
+            fi
+          done
+          gh pr edit "$PR" --add-label "$SIZE" >/dev/null
+
+          # --- changed files ---
+          FILES="$(gh api "repos/$REPO/pulls/$PR/files?per_page=300" --paginate \
+            --jq '.[].filename')"
+
+          NOTES=""
+          BODY="$(gh pr view "$PR" --json body --jq .body | tr -d '[:space:]')"
+          if [ -z "$BODY" ]; then
+            NOTES="${NOTES}- **Missing description** — add a body describing what changed and why (screenshots welcome for UI changes).
+          "
+          fi
+
+          if echo "$FILES" | grep -q "^src/data/" && ! echo "$FILES" | grep -q "^public/llms"; then
+            NOTES="${NOTES}- **Registry changed without regenerating artifacts** — run \`npm run llms\` and commit the \`public/llms*\` changes (AGENTS.md golden rule 3). The CI \"stale llms artifacts\" check will fail until then.
+          "
+          fi
+
+          if echo "$FILES" | grep -q "^src/showcase/" && ! echo "$FILES" | grep -q "^src/showcase/README.md"; then
+            NOTES="${NOTES}- **Vendored showcase files changed** — remember to record origin + copy date in \`src/showcase/README.md\` if new folders were added (golden rule 5).
+          "
+          fi
+
+          if [ -n "$NOTES" ]; then
+            pr_comment "Automated PR review notes:
+
+          $NOTES
+          Size: **$SIZE** ($ADDS changed lines). Lint findings are posted as inline annotations by the \`inline-lint\` job; CI gates typecheck, build, registry guard and llms freshness."
+          else
+            # all clean: collapse any earlier bot comment to a passing note
+            pr_comment "Automated PR review notes: all clear ✓ (Size: **$SIZE**, $ADDS changed lines)."
+          fi
