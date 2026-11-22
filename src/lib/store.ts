@@ -11,7 +11,8 @@ export function createLocalStore(key: string, cap?: number) {
   function load(): string[] {
     try {
       const raw = localStorage.getItem(key);
-      return raw ? (JSON.parse(raw) as string[]) : [];
+      const parsed: unknown = raw ? JSON.parse(raw) : [];
+      return Array.isArray(parsed) ? parsed.filter((x): x is string => typeof x === "string") : [];
     } catch {
       return [];
     }
