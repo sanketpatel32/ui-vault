@@ -253,4 +253,20 @@ export const sources: Source[] = [
       'Apache-2.0 (github.com/vercel/streamdown; the GitHub API reports NOASSERTION but the LICENSE file is Apache-2.0). React 18/19. Styling is Tailwind classes + shadcn CSS variables — add @source "../node_modules/streamdown/dist/*.js" (and one per installed @streamdown/* plugin) to your Tailwind CSS. The remend Markdown-healing parser ships alongside and is not cataloged as UI.',
     color: "#e5e7eb",
   },
+  {
+    id: "genloaders",
+    name: "Generative Loaders",
+    url: "https://generativeloaders.com",
+    tagline: "React loaders for generative UI.",
+    description:
+      "46 accessible loading states for AI interfaces from 3 primitives: 16 append-aware TextLoader reveals for streaming responses, 18 compact InlineLoader activity indicators and 12 ImageLoader image-generation placeholders. All reduced-motion aware and SSR-safe.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "css"],
+    install: "npm install generative-loaders",
+    installLabel: "npm",
+    notes:
+      'MIT (github.com/kasturibuilds/generative-loaders; the npm repo field still points at the old kasturikhanke account). React >=18. Plain CSS — import "generative-loaders/styles.css" once. Young project (v0.1.1) — expect API churn. Entries are one per variant prop value.',
+    color: "#c084fc",
+  },
 ];
