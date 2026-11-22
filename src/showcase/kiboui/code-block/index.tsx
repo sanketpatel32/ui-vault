@@ -1,3 +1,4 @@
+import { useSafeTimeout } from "@/showcase/_shared/use-safe-timeout";
 import { useControllableState } from "@radix-ui/react-use-controllable-state";
 import {
   transformerNotationDiff,
@@ -438,6 +439,8 @@ export const CodeBlockCopyButton = ({
   const { data, value } = useContext(CodeBlockContext);
   const code = data.find((item) => item.language === value)?.code;
 
+  const safeTimeout = useSafeTimeout();
+
   const copyToClipboard = () => {
     if (typeof window === "undefined" || !navigator.clipboard.writeText || !code) {
       return;
@@ -447,7 +450,7 @@ export const CodeBlockCopyButton = ({
       setIsCopied(true);
       onCopy?.();
 
-      setTimeout(() => setIsCopied(false), timeout);
+      safeTimeout(() => setIsCopied(false), timeout);
     }, onError);
   };
 

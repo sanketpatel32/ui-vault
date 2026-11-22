@@ -1,3 +1,4 @@
+import { useSafeTimeout } from "@/showcase/_shared/use-safe-timeout";
 import { useState } from "react";
 import { UserIcon } from "lucide-react";
 import { Skeleton } from "./skeleton";
@@ -5,9 +6,11 @@ import { Skeleton } from "./skeleton";
 export default function Preview() {
   const [loading, setLoading] = useState(true);
 
+  const safeTimeout = useSafeTimeout();
+
   const reload = () => {
     setLoading(true);
-    window.setTimeout(() => setLoading(false), 1800);
+    safeTimeout(() => setLoading(false), 1800);
   };
 
   return (

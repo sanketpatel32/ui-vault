@@ -1,3 +1,4 @@
+import { useSafeTimeout } from "@/showcase/_shared/use-safe-timeout";
 import { useState } from "react";
 import { Check, Copy } from "lucide-react";
 
@@ -47,6 +48,8 @@ export function ConfigurableFractalDotGridDemo() {
     setConfig((prev) => ({ ...prev, [key]: value }));
   };
 
+  const safeTimeout = useSafeTimeout();
+
   const copyConfigToClipboard = () => {
     const configString = `
 "use client"
@@ -80,7 +83,7 @@ export function FractalDotGridExample() {
         title: "Configuration Copied",
         description: "The current configuration has been copied to your clipboard.",
       });
-      setTimeout(() => setIsCopied(false), 2000);
+      safeTimeout(() => setIsCopied(false), 2000);
     });
   };
 
