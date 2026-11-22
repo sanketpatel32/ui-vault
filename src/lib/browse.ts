@@ -1,4 +1,4 @@
-import { entries, type UIEntry } from "@/data";
+import { entries, type EntrySummary } from "@/data";
 import { searchEntries } from "@/lib/search";
 
 export interface BrowseFilters {
@@ -12,9 +12,9 @@ export interface BrowseFilters {
 
 export const SEARCH_RESULT_LIMIT = 24;
 
-export function browseResults(filters: BrowseFilters): UIEntry[] {
+export function browseResults(filters: BrowseFilters): EntrySummary[] {
   const q = filters.q.trim();
-  let list: UIEntry[];
+  let list: EntrySummary[];
 
   if (q) {
     // A search starts from fuse's relevance-ranked results and keeps that order.
