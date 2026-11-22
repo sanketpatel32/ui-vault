@@ -6,15 +6,15 @@
 
 [Live catalog](https://sanketpatel32.github.io/ui-vault/) · [Browse source](src/data/) · [Operating guide](AGENTS.md)
 
-**896 entries · 24 categories · 17 sources · 814 live previews**
+**1821 entries · 25 categories · 18 sources · 814 live previews**
 
 </div>
 
-UI Vault brings vendorable components from seventeen open-source libraries into a consistent taxonomy. It is frontend-only, keeps favorites locally, and publishes machine-readable indexes for developers and AI agents.
+UI Vault brings vendorable components from eighteen open-source libraries into a consistent taxonomy. It is frontend-only, keeps favorites locally, and publishes machine-readable indexes for developers and AI agents.
 
 ## What it does
 
-- **One registry** — every component from the 17 vendorable sources, categorized into a
+- **One registry** — every component from the 18 vendorable sources, categorized into a
   unified taxonomy (text effects, backgrounds, buttons, cards, forms, overlays, data display,
   chat, heroes, dashboards, …), each with description, tags, license, deep link and install
   command. Every entry ships free code — paid/gated/gallery sources are not carried as
@@ -37,7 +37,8 @@ All vendorable (free code + install command): [React Bits](https://reactbits.dev
 [shadcn/ui](https://ui.shadcn.com) · [Magic UI](https://magicui.design) ·
 [Animata](https://animata.design) · [Animate UI](https://animate-ui.com) (MIT + Commons Clause) ·
 [Launch UI](https://www.launchuicomponents.com) (free sections) ·
-[Origin UI](https://coss.com/origin) (MIT legacy snapshot, 599 variants) · ·
+[Origin UI](https://coss.com/origin) (MIT legacy snapshot, 599 variants) · · ·
+[Remocn](https://remocn.dev) (Remotion video components)
 [pdfcn](https://pdfcn.dev) (PDF components, Takumi/Forme)
 [Bklit UI](https://bklit.com) (d3 + Motion charts)
 

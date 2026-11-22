@@ -269,4 +269,20 @@ export const sources: Source[] = [
       'MIT (github.com/shadcn-labs/pdfcn). Prerequisite: a React project running the Takumi (takumi-pdf + @takumi-rs/helpers) or Forme PDF renderer. Forme variants install as @pdfcn/forme/<name>; if the CLI does not resolve @pdfcn, add {"registries": {"@pdfcn": "https://pdfcn.dev/r/{name}.json"}} to components.json. Theme presets (9) and lib items are not cataloged; no vendored previews.',
     color: "#ef4444",
   },
+  {
+    id: "remocn",
+    name: "Remocn",
+    url: "https://remocn.dev",
+    tagline: "shadcn/ui for video — MIT Remotion components you own.",
+    description:
+      "925 Remotion components: 256 text animations, 124 number animations, 66 product scenes, 59 transitions, 59 shaders, 45 logo stings, 75 UI primitives and flows, 31 caption styles, 100 animated icons and full video templates — installed through the @remocn shadcn registry.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "remotion", "tailwind", "motion"],
+    install: "npx shadcn@latest add @remocn/<name>",
+    installLabel: "shadcn registry (@remocn)",
+    notes:
+      "MIT (github.com/Remocn/remocn). Hard prerequisite: Remotion — every component renders video frames inside a Remotion composition, not interactive web UI. Cataloged from the official llms-components.txt index plus the icons gallery; no vendored previews (they need a Remotion player).",
+    color: "#8b5cf6",
+  },
 ];

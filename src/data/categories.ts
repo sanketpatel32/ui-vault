@@ -92,6 +92,13 @@ export const categories: Category[] = [
     group: "components",
     description: "Components and templates that render PDF documents (invoices, reports, tickets).",
   },
+  {
+    slug: "video",
+    name: "Video & Remotion",
+    group: "components",
+    description:
+      "Programmatic video components — scenes, transitions, captions and stings rendered with Remotion.",
+  },
 
   // ---- Blocks ----
   {

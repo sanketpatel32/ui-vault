@@ -57,6 +57,7 @@ Fresh checkout: `npm install` (or `vp install`) first.
 | coss.com/origin        | `originui`         | MIT (legacy snapshot in coss)   | ✅ yes (31 families)  |
 | bklit.com              | `bklit`            | MIT (Studio app excluded)       | ✅ yes (38, v0.8.0)   |
 | pdfcn.dev              | `pdfcn`            | MIT (needs Takumi/Forme)        | ✅ yes (44, v0.8.0)   |
+| remocn.dev             | `remocn`           | MIT (needs Remotion)            | ✅ yes (925, v0.8.0)  |
 | 21st.dev               | `21st`             | Freemium (2 copies/day)         | ❌ removed in v0.3.0  |
 | shadcnstudio.com       | `shadcnstudio`     | Free tier + $249 Pro            | ❌ removed in v0.3.0  |
 | pro.ui-layouts.com     | `uilayouts`        | Paid ($139+)                    | ❌ removed in v0.3.0  |
@@ -64,7 +65,7 @@ Fresh checkout: `npm install` (or `vp install`) first.
 | collectui.com          | `collectui`        | Free gallery                    | ❌ removed in v0.3.0  |
 | component.gallery      | `componentgallery` | Free reference                  | ❌ removed in v0.3.0  |
 
-Install commands for the vendorable sources: `npx jsrepo add react-bits/<Name>` · `npx motion-primitives@latest add <name>` · shadcn registry `@fancy` (fancycomponents.dev/r/{name}.json) · `npm i @number-flow/react` · watermelon: `npx shadcn@latest add https://registry.watermelon.sh/r/<name>.json` · aceternity: `npx aceternity-ui@latest add <name>` · shadcn: `npx shadcn@latest add <component>` · magicui: `npx shadcn@latest add @magicui/<component>` · animata: `npx shadcn@latest add https://animata.design/r/<name>.json` · animateui: `npx shadcn@latest add @animate-ui/<slug>` · launchui: `npx shadcn@latest add @launchui/<block>` · originui: `npx shadcn@latest add https://coss.com/origin/r/<family>.json` · bklit: `npx shadcn@latest add @bklit/<chart>` · pdfcn: `npx shadcn@latest add @pdfcn/takumi/<name>` (or `@pdfcn/forme/<name>`).
+Install commands for the vendorable sources: `npx jsrepo add react-bits/<Name>` · `npx motion-primitives@latest add <name>` · shadcn registry `@fancy` (fancycomponents.dev/r/{name}.json) · `npm i @number-flow/react` · watermelon: `npx shadcn@latest add https://registry.watermelon.sh/r/<name>.json` · aceternity: `npx aceternity-ui@latest add <name>` · shadcn: `npx shadcn@latest add <component>` · magicui: `npx shadcn@latest add @magicui/<component>` · animata: `npx shadcn@latest add https://animata.design/r/<name>.json` · animateui: `npx shadcn@latest add @animate-ui/<slug>` · launchui: `npx shadcn@latest add @launchui/<block>` · originui: `npx shadcn@latest add https://coss.com/origin/r/<family>.json` · bklit: `npx shadcn@latest add @bklit/<chart>` · pdfcn: `npx shadcn@latest add @pdfcn/takumi/<name>` (or `@pdfcn/forme/<name>`) · remocn: `npx shadcn@latest add @remocn/<name>`.
 
 v0.4.0 research notes (research/*.json has the full extracted sets): Animata carries its 154 _published_ components only — the repo documents 198 but 44 have no live docs page yet. Animate UI names Radix/Base UI/Headless UI variants with a suffix ("Accordion (Radix)") — ids carry the section prefix. Origin UI is family-granularity (31 families ≈ 599 variants; per-variant registry files exist at coss.com/origin/r/).
 
