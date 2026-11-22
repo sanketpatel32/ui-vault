@@ -71,6 +71,8 @@ Install commands for the vendorable sources: `npx jsrepo add react-bits/<Name>` 
 
 v0.4.0 research notes (research/*.json has the full extracted sets): Animata carries its 154 _published_ components only — the repo documents 198 but 44 have no live docs page yet. Animate UI names Radix/Base UI/Headless UI variants with a suffix ("Accordion (Radix)") — ids carry the section prefix. Origin UI is family-granularity (31 families ≈ 599 variants; per-variant registry files exist at coss.com/origin/r/).
 
+v0.8.0 notes (2026-11-22, issues #68–#72): Streamdown, Generative Loaders, UI SDK, wterm and Skullet are registry-only — no vendored previews yet (entries render the "No local preview yet" fallback). Apache-2.0 sources use `license: "free"` with the exact license in the source notes. UI SDK is beta (0.1.0-beta.14) and Skullet/Generative Loaders are pre-1.0 — re-verify names on upgrade. Prerequisites (Tailwind `@source` lines, own CSS imports, React 19 for UI SDK) live in the source notes, not as dependencies.
+
 ## Adding a component (the standard workflow)
 
 1. Create/extend `src/data/components/<source>.ts` — one `UIEntry` per component. Fields: see `src/data/types.ts`. `id` format: `<sourceid>-<kebab-name>`. Write `description` for future-you (what it is, when to reach for it).
