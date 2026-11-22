@@ -264,7 +264,7 @@ export const beui: UIEntry[] = [
     license: "mit",
     previewMode: "live",
     install:
-      "npx shadcn@latest add @beui/button-base @beui/button-stateful @beui/button-magnetic @beui/button-metallic",
+      "npx shadcn@latest add @beui/button-base @beui/button-magnetic @beui/button-metallic @beui/button-stateful",
   },
   {
     id: "beui-expanding-arrow-button",
@@ -277,7 +277,8 @@ export const beui: UIEntry[] = [
     tags: ["beui", "components"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add @beui/expanding-arrow-button",
+    install:
+      "npx shadcn@latest add @beui/expanding-arrow-button @beui/hold-action-button @beui/slide-action-button",
   },
   {
     id: "beui-expandable-control",
@@ -373,7 +374,7 @@ export const beui: UIEntry[] = [
     tags: ["beui", "components"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add @beui/select",
+    install: "npx shadcn@latest add @beui/select @beui/select-morph",
   },
   {
     id: "beui-combobox",
@@ -582,7 +583,7 @@ export const beui: UIEntry[] = [
     tags: ["beui", "components"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add @beui/popover",
+    install: "npx shadcn@latest add @beui/popover @beui/popover-morph",
   },
   {
     id: "beui-morphing-modal",
@@ -625,7 +626,7 @@ export const beui: UIEntry[] = [
     license: "mit",
     previewMode: "live",
     install:
-      "npx shadcn@latest add @beui/text-reveal @beui/chromatic-text-reveal @beui/text-shimmer @beui/text-cascade @beui/text-scramble",
+      "npx shadcn@latest add @beui/chromatic-text-reveal @beui/text-cascade @beui/text-reveal @beui/text-scramble @beui/text-shimmer",
   },
   {
     id: "beui-number",
@@ -639,7 +640,7 @@ export const beui: UIEntry[] = [
     tags: ["beui", "components"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add @beui/animated-number @beui/number-ticker @beui/digit-swap",
+    install: "npx shadcn@latest add @beui/animated-number @beui/digit-swap @beui/number-ticker",
   },
   {
     id: "beui-animated-badge",
@@ -738,7 +739,7 @@ export const beui: UIEntry[] = [
     license: "mit",
     previewMode: "live",
     install:
-      "npx shadcn@latest add @beui/smooth-scroll @beui/scroll-progress @beui/scroll-reveal @beui/scroll-to @beui/parallax",
+      "npx shadcn@latest add @beui/parallax @beui/scroll-progress @beui/scroll-reveal @beui/scroll-to @beui/smooth-scroll",
   },
   {
     id: "beui-range-slider",
@@ -752,7 +753,8 @@ export const beui: UIEntry[] = [
     tags: ["beui", "components"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add @beui/range-slider",
+    install:
+      "npx shadcn@latest add @beui/range-slider @beui/range-slider-bubble @beui/range-slider-fluid @beui/range-slider-inline @beui/range-slider-ruler @beui/range-slider-wave",
   },
   {
     id: "beui-wheel-picker",
@@ -780,7 +782,7 @@ export const beui: UIEntry[] = [
     tags: ["beui", "components"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add @beui/table",
+    install: "npx shadcn@latest add @beui/table @beui/table-async @beui/table-editable",
   },
   {
     id: "beui-shader-background",
@@ -1065,7 +1067,7 @@ export const beui: UIEntry[] = [
     tags: ["beui", "casino"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add @beui/crash",
+    install: "npx shadcn@latest add @beui/crash @beui/crash-balloon @beui/crash-tower",
   },
   {
     id: "beui-mines",
@@ -1332,7 +1334,7 @@ export const beui: UIEntry[] = [
     license: "mit",
     previewMode: "live",
     install:
-      "npx shadcn@latest add @beui/thinking-shimmer @beui/agent-progress @beui/reasoning-text",
+      "npx shadcn@latest add @beui/agent-progress @beui/reasoning-text @beui/thinking-shimmer",
   },
   {
     id: "beui-ai-sidebar",
@@ -1430,7 +1432,7 @@ export const beui: UIEntry[] = [
     tags: ["beui", "blocks"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add @beui/knockout-bracket",
+    install: "npx shadcn@latest add @beui/knockout-bracket @beui/knockout-wheel",
   },
   {
     id: "beui-availability-scheduler",
@@ -1499,7 +1501,7 @@ export const beui: UIEntry[] = [
     tags: ["beui", "blocks"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add @beui/morphing-search",
+    install: "npx shadcn@latest add @beui/morphing-search @beui/morphing-search-chips",
   },
   {
     id: "beui-expandable-action-bar",
@@ -1583,7 +1585,7 @@ export const beui: UIEntry[] = [
     tags: ["beui", "blocks"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add @beui/file-upload",
+    install: "npx shadcn@latest add @beui/file-upload @beui/attachment-upload",
   },
   {
     id: "beui-prediction-market",
@@ -1597,7 +1599,7 @@ export const beui: UIEntry[] = [
     tags: ["beui", "blocks"],
     license: "mit",
     previewMode: "live",
-    install: "npx shadcn@latest add @beui/prediction-market",
+    install: "npx shadcn@latest add @beui/prediction-market @beui/prediction-market-card",
   },
   {
     id: "beui-wallet-card",
