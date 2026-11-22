@@ -2,77 +2,55 @@
 
 # UI Vault
 
-**Browse, compare, and reuse free React components from one searchable catalog.**
+**One searchable catalog of free, copy-pasteable React components from 33 open-source libraries.**
 
-[Live catalog](https://sanketpatel32.github.io/ui-vault/) · [Browse source](src/data/) · [Operating guide](AGENTS.md)
+[**Open the live catalog →**](https://sanketpatel32.github.io/ui-vault/)
 
-**3157 entries · 25 categories · 33 sources · 814 live previews**
+3157 components · 25 categories · 33 sources · 766 live previews
+
+[![UI Vault home page](docs/screenshot.png)](https://sanketpatel32.github.io/ui-vault/)
 
 </div>
 
-UI Vault brings vendorable components from thirty-three open-source libraries into a consistent taxonomy. It is frontend-only, keeps favorites locally, and publishes machine-readable indexes for developers and AI agents.
-
 ## What it does
 
-- **One registry** — every component from the 33 vendorable sources, categorized into a
-  unified taxonomy (text effects, backgrounds, buttons, cards, forms, overlays, data display,
-  chat, heroes, dashboards, …), each with description, tags, license, deep link and install
-  command. Every entry ships free code — paid/gated/gallery sources are not carried as
-  entries (v0.3.0 policy).
-- **Live previews** — components are vendored into `src/showcase/` and render live on
-  their detail page (lazy-loaded, reduced-motion aware); the rest show their install
-  command and source link.
-- **Search & filter** — fuzzy search (⌘K / Ctrl-K palette), filter by source, license and tag;
-  filter state lives in the URL so views are shareable.
-- **Favorites & recents** — star anything; stored in localStorage. There is no backend.
-- **llms.txt for everything** — `/llms.txt`, `/llms-full.txt`, `/llms/sources/*`, `/llms/categories/*`
-  are generated from the registry on every `npm run llms` (runs automatically before dev/build).
+- **Find** — fuzzy search (<kbd>Ctrl</kbd>/<kbd>⌘</kbd> <kbd>K</kbd>) and filters by category, source, license and tag; filters live in the URL so views are shareable.
+- **Preview** — 766 components render live on their detail page (lazy-loaded, reduced-motion aware); every entry shows its license, source link and install command.
+- **Reuse** — copy the install command, star favorites (stored in your browser), or feed the generated [`llms.txt`](https://sanketpatel32.github.io/ui-vault/llms.txt) to an AI agent.
 
 ## Sources
 
-All vendorable (free code + install command): [React Bits](https://reactbits.dev) ·
-[Motion Primitives](https://motion-primitives.com) ·
-[FancyComponents](https://fancycomponents.dev) · [NumberFlow](https://number-flow.barvian.me) ·
-[Watermelon UI](https://watermelon.sh) · [Aceternity UI](https://ui.aceternity.com) (free tier) ·
-[shadcn/ui](https://ui.shadcn.com) · [Magic UI](https://magicui.design) ·
-[Animata](https://animata.design) · [Animate UI](https://animate-ui.com) (MIT + Commons Clause) ·
-[Launch UI](https://www.launchuicomponents.com) (free sections) ·
-[Origin UI](https://coss.com/origin) (MIT legacy snapshot, 599 variants) ·
-[COSS UI](https://coss.com/ui) · [Cult UI](https://cult-ui.com) (MIT set; Cult Pro excluded) · [Kibo UI](https://www.kibo-ui.com) ·
-[Streamdown](https://streamdown.ai) (Apache-2.0) · [Generative Loaders](https://generativeloaders.com) ·
-[UI SDK](https://ui-sdk.dev) (Apache-2.0, beta) · [wterm](https://wterm.dev) (Apache-2.0) ·
-[Skullet](https://skullet.lochie.me) ·
-[EasyUI](https://easyui.site) · [editorcn](https://www.rtecn.space) (Tiptap) ·
-[loading.dev](https://loading.dev) · [Its Hover](https://itshover.com) (Apache-2.0) ·
-[Amicro](https://amicro.vercel.app) ·
-[Kokonut UI](https://kokonutui.com) (free set, AI chat) ·
-[Arc UI](https://uiarc.dev) (free set) ·
-[snapcn](https://snapcn.dev) (free set, Remotion video) ·
-[beUI](https://beui.dev) (free set) ·
-[assistant-ui](https://www.assistant-ui.com) (AI chat) ·
-[Remocn](https://remocn.dev) (Remotion video components) ·
-[pdfcn](https://pdfcn.dev) (PDF components, Takumi/Forme) ·
-[Bklit UI](https://bklit.com) (d3 + Motion charts)
+33 free, vendorable libraries — including React Bits, shadcn/ui, Magic UI, Aceternity UI (free tier), Animata, Animate UI, COSS UI and assistant-ui.
 
-Not carried as entries (paid/gated/gallery — see `AGENTS.md`): 21st.dev, shadcnStudio,
-UI Layouts Pro, Cue, CollectUI, The Component Gallery; Launch UI Pro sections; Cult Pro.
+<details>
+<summary>Where to find the full list</summary>
 
-## Tech
+- On the site: every source has its own page, linked from the sidebar.
+- As text: [`llms.txt`](https://sanketpatel32.github.io/ui-vault/llms.txt) lists each source with its license and entry count.
+- In code: [`src/data/sources.ts`](src/data/sources.ts). Licensing per source is in [`AGENTS.md`](AGENTS.md#sources--licensing-researched-2026-08-29).
 
-[Vite+](https://viteplus.dev) (`vp` unified toolchain) · React 19 · TypeScript · Tailwind CSS v4 ·
-Motion · fuse.js · React Router v7. The catalog itself is TypeScript data in `src/data/` — see
-`AGENTS.md` for the full operating guide and `PLAN.md` for the build plan.
+Only sources with free code and an install command are included. Paid, gated or gallery-only sources are left out on purpose.
+
+</details>
 
 ## Commands
 
-```bash
-npm install          # first time
-npm run dev          # dev server (regenerates llms.txt first)
-npm run build        # typecheck + production build
-npm run check        # format + lint + typecheck (vp check)
-npm run llms         # regenerate llms.txt artifacts
-npm run registry:check
-```
+| Command                  | What it does                                             |
+| ------------------------ | -------------------------------------------------------- |
+| `npm install`            | Install dependencies (first time)                        |
+| `npm run dev`            | Start the dev server (regenerates `llms.txt` first)      |
+| `npm run build`          | Typecheck and build for production into `dist/`          |
+| `npm run check`          | Format, lint and typecheck (`vp check`)                  |
+| `npm test`               | Run unit tests (Vitest)                                  |
+| `npm run llms`           | Regenerate the `public/llms*` files from `src/data/`     |
+| `npm run registry:check` | Validate registry ids, categories, sources and licensing |
 
-Deploy: it's a static SPA — `npm run build` and point any static host at `dist/`
-(remember the SPA fallback to `index.html`).
+## Deploy
+
+Every push to `main` builds and publishes the site to GitHub Pages via [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). It is a static SPA with no backend: to host it elsewhere, run `npm run build` and serve `dist/` with a fallback to `index.html`.
+
+## Contributing
+
+The catalog is TypeScript data in [`src/data/`](src/data/); the UI is only a view over it. Read [`AGENTS.md`](AGENTS.md) and [`CONTRIBUTING.md`](CONTRIBUTING.md) before adding a component.
+
+Built with [Vite+](https://viteplus.dev), React 19, TypeScript, Tailwind CSS v4, Motion and fuse.js.
