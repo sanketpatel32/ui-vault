@@ -41,6 +41,9 @@ export default defineConfig(({ command }) => ({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
       "next/image": fileURLToPath(new URL("./src/lib/shims/next-image.tsx", import.meta.url)),
       "next/link": fileURLToPath(new URL("./src/lib/shims/next-link.tsx", import.meta.url)),
+      "next/font/google": fileURLToPath(
+        new URL("./src/lib/shims/next-font-google.ts", import.meta.url),
+      ),
       "next/navigation": fileURLToPath(
         new URL("./src/lib/shims/next-navigation.tsx", import.meta.url),
       ),
