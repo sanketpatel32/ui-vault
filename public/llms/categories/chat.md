@@ -38,3 +38,5 @@
 - **AI Redact** https://kokonutui.com/docs/ai/ai-redact — Masks names, emails, card numbers and keys as placeholders before a prompt is sent, then fills the real values back into the reply. [MIT, live-previewable, category: chat]
 - **AI Memory** https://kokonutui.com/docs/ai/ai-memory — An assistant that saves what it learns about you into a memory list. New facts replace the ones they contradict, and you can edit or forget any of them. [MIT, live-previewable, category: chat]
 - **AI Autocomplete** https://kokonutui.com/docs/ai/ai-autocomplete — A text box that suggests how your sentence ends in grey after the caret. Tab takes it all, the right arrow takes one word, and typing the same letters keeps it. [MIT, live-previewable, category: chat]
+- **Chat thread** https://uiarc.dev/components/chat-thread — A chat thread with grouped messages, reactions, read receipts, typing, and a composer with attachments. [MIT, live-previewable, category: chat]
+- **Comment thread** https://uiarc.dev/components/comment-thread — Threaded comments with replies, reactions, mentions, inline edit, and resolve. [MIT, live-previewable, category: chat]

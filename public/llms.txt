@@ -4,7 +4,7 @@
 > (open-source animated React libraries and component registries), organized into one
 > categorized, searchable library. Every entry ships free code with its source, license,
 > install command and — where vendored — a live React preview. No backend: the catalog itself
-> lives in TypeScript files under src/data (930 entries, 16 sources, 23 categories).
+> lives in TypeScript files under src/data (1073 entries, 17 sources, 23 categories).
 
 ## Sources
 
@@ -24,37 +24,38 @@
 - [Cult UI](https://cult-ui.com) — Animated, modern components designed for effortless integration. (MIT, live-previewable, 77 cataloged)
 - [Kibo UI](https://www.kibo-ui.com) — The shadcn registry for everything that doesn't exist yet. (MIT, live-previewable, 40 cataloged)
 - [Kokonut UI](https://kokonutui.com) — Free open-source React components for AI chat and agents. (MIT, live-previewable, 116 cataloged)
+- [Arc UI](https://uiarc.dev) — Components and blocks designed for AI-assisted frontend development. (MIT, live-previewable, 143 cataloged)
 
 ## Categories
 
 ### Components
-- `text-animation` Text & Typography (107) — Animated text reveals, scrambles, gradients and typographic effects.
+- `text-animation` Text & Typography (113) — Animated text reveals, scrambles, gradients and typographic effects.
 - `backgrounds` Backgrounds (70) — Shader, gradient and generative backgrounds for heroes and panels.
 - `3d-webgl` 3D & WebGL (6) — Globes, physics and Three.js scenes that drop into a page.
-- `buttons` Buttons & Actions (66) — Buttons with borders, magnets and sparks — actions that feel alive.
-- `cards` Cards & Bento (44) — Spotlight, tilt, bento and stacking card treatments.
-- `navigation` Navigation (53) — Navbars, docks, sidebars, tabs, breadcrumbs and scroll progress.
-- `forms` Forms & Inputs (133) — Inputs, selects, OTP, uploads, sliders, toggles and date pickers.
-- `overlays` Overlays (88) — Dialogs, drawers, popovers, tooltips, toasts and command bars.
-- `numbers` Numbers & Counters (14) — Animated numbers, tickers and odometers.
-- `micro-interactions` Micro-interactions (115) — Cursor tricks, physics toys and small moments of delight.
-- `feedback` Feedback & Status (51) — Spinners, progress, skeletons, empty states and notifications.
-- `data-display` Data Display (64) — Tables, charts, stats, badges and avatars for showing data.
-- `chat` Chat & AI (34) — Chat and AI conversation UI — bubbles, message streams, attachments.
+- `buttons` Buttons & Actions (81) — Buttons with borders, magnets and sparks — actions that feel alive.
+- `cards` Cards & Bento (49) — Spotlight, tilt, bento and stacking card treatments.
+- `navigation` Navigation (57) — Navbars, docks, sidebars, tabs, breadcrumbs and scroll progress.
+- `forms` Forms & Inputs (173) — Inputs, selects, OTP, uploads, sliders, toggles and date pickers.
+- `overlays` Overlays (99) — Dialogs, drawers, popovers, tooltips, toasts and command bars.
+- `numbers` Numbers & Counters (15) — Animated numbers, tickers and odometers.
+- `micro-interactions` Micro-interactions (118) — Cursor tricks, physics toys and small moments of delight.
+- `feedback` Feedback & Status (64) — Spinners, progress, skeletons, empty states and notifications.
+- `data-display` Data Display (87) — Tables, charts, stats, badges and avatars for showing data.
+- `chat` Chat & AI (36) — Chat and AI conversation UI — bubbles, message streams, attachments.
 
 ### Blocks
-- `hero` Hero Sections (14) — Above-the-fold sections that set the tone of a page.
+- `hero` Hero Sections (15) — Above-the-fold sections that set the tone of a page.
 - `features` Feature Sections (8) — Feature grids, bento layouts and product story sections.
-- `pricing` Pricing (2) — Pricing tables, plan comparisons and checkout prompts.
-- `testimonials` Testimonials & Social Proof (4) — Quotes, marquees, logos and proof sections.
-- `cta` CTA Sections (3) — Big closing calls-to-action and conversion moments.
-- `faq` FAQ (11) — Frequently-asked-question sections and accordion groups.
-- `footers` Footers (2) — Multi-column footers, sitemaps and newsletter captures.
-- `sections-misc` Other Sections (37) — Team, blog, contact, stats, onboarding and everything else.
+- `pricing` Pricing (4) — Pricing tables, plan comparisons and checkout prompts.
+- `testimonials` Testimonials & Social Proof (5) — Quotes, marquees, logos and proof sections.
+- `cta` CTA Sections (5) — Big closing calls-to-action and conversion moments.
+- `faq` FAQ (13) — Frequently-asked-question sections and accordion groups.
+- `footers` Footers (3) — Multi-column footers, sitemaps and newsletter captures.
+- `sections-misc` Other Sections (44) — Team, blog, contact, stats, onboarding and everything else.
 
 ### Templates
 - `dashboards` Dashboards (3) — Complete admin and analytics app layouts.
-- `auth` Login & Signup (1) — Auth screens, OTP flows and onboarding.
+- `auth` Login & Signup (5) — Auth screens, OTP flows and onboarding.
 
 ## Links
 

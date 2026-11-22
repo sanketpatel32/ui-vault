@@ -253,4 +253,20 @@ export const sources: Source[] = [
       'MIT (github.com/kokonut-labs/kokonutui). Free set only — the 10 items marked "Part of Kokonut UI Pro" and the Pro templates are paid and excluded. Registry is per-item (kokonutui.com/r/<name>.json; /r/index.json 404s) — the list comes from kokonutui.com/llms.txt. Catalog-only: no vendored previews yet.',
     color: "#f59e0b",
   },
+  {
+    id: "arcui",
+    name: "Arc UI",
+    url: "https://uiarc.dev",
+    tagline: "Components and blocks designed for AI-assisted frontend development.",
+    description:
+      "121 free components + 22 free blocks — inputs, data-viz charts, disclosure, feedback, and auth/marketing blocks. Styled with CSS modules and CSS variables (not Tailwind classes), Motion presets and reduced-motion support throughout.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "css-modules", "motion"],
+    install: "npx shadcn@latest add @uiarc/<name>",
+    installLabel: "shadcn registry (@uiarc)",
+    notes:
+      "MIT (github.com/kuratlielia/arc-library). Free set only — Arc Pro (131 components + 122 blocks; $149/yr or $249 lifetime) installs from the token-gated @uiarc-pro registry and is excluded. Install the design tokens once first (npx shadcn@latest add @uiarc/arc-foundation) and import components/arc/foundation.css. Catalog-only: no vendored previews yet.",
+    color: "#2dd4bf",
+  },
 ];

@@ -8,3 +8,4 @@
 - **Testimonial Blocks** https://ui.watermelon.sh/blocks/testimonials — 4 testimonial section blocks — quotes, marquees and grids. [Free, live-previewable, category: testimonials]
 - **Logos** https://www.launchuicomponents.com/docs/sections/logos — A versatile logo showcase component following shadcn's design principles. [MIT, live-previewable, category: testimonials]
 - **Tweet Grid** https://cult-ui.com/docs/components/tweet-grid — A masonry grid full of tweets [MIT, live-previewable, category: testimonials]
+- **Logo marquee** https://uiarc.dev/components/blocks/logo-marquee — A quiet, continuously moving row of brand marks with a pause control. [MIT, live-previewable, category: testimonials]

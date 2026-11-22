@@ -57,3 +57,7 @@
 - **Marking Menu** https://kokonutui.com/docs/navigation/marking-menu — A radial menu you hold to open or flick to pick blind, built with React and Motion. [MIT, live-previewable, category: navigation]
 - **Scroll Index** https://kokonutui.com/docs/navigation/scroll-index — A section rail for long pages, with a tick per heading that you can hover, click or drag to scrub, built with React. [MIT, live-previewable, category: navigation]
 - **Stack Panel** https://kokonutui.com/docs/navigation/stack-panel — A panel that drills into pages like settings on a phone. The tapped row's label flies up into the title, and a swipe right takes you back. [MIT, live-previewable, category: navigation]
+- **Tabs** https://uiarc.dev/components/tabs — Switch between related content in the same context. [MIT, live-previewable, category: navigation]
+- **Breadcrumb** https://uiarc.dev/components/breadcrumb — Show where a page sits in a hierarchy. [MIT, live-previewable, category: navigation]
+- **Pagination** https://uiarc.dev/components/pagination — Move through a long collection with clear bounds. [MIT, live-previewable, category: navigation]
+- **Site header** https://uiarc.dev/components/blocks/site-header — A sticky website header that turns solid on scroll, with a gliding active link, mega menu panels, and a mobile sheet. [MIT, live-previewable, category: navigation]

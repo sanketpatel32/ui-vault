@@ -48,3 +48,8 @@
 - **Receipt Printer** https://kokonutui.com/docs/cards/receipt-printer — A receipt that prints line by line, then tears off and falls when you pull it, built with React. [MIT, live-previewable, category: cards]
 - **Boarding Pass** https://kokonutui.com/docs/cards/boarding-pass — A boarding pass that keeps itself current. When the gate or times change, only the changed characters roll over, the old value struck through. [MIT, live-previewable, category: cards]
 - **Lightbox Grid** https://kokonutui.com/docs/cards/lightbox-grid — A photo grid whose thumbnails grow into a full view and fly back to their slot when you drag them down. [MIT, live-previewable, category: cards]
+- **Expandable card** https://uiarc.dev/components/expandable-card — Give a dense card more room when requested. [MIT, live-previewable, category: cards]
+- **Card** https://uiarc.dev/components/card — A contained group of related content and actions. [MIT, live-previewable, category: cards]
+- **Metric card** https://uiarc.dev/components/metric-card — A compact summary for a number that needs context. [MIT, live-previewable, category: cards]
+- **Carousel** https://uiarc.dev/components/carousel — Browse a row of slides by dragging, flicking, or arrowing through them. [MIT, live-previewable, category: cards]
+- **Card stack** https://uiarc.dev/components/card-stack — Review a deck one card at a time, with a throw and an undo. [MIT, live-previewable, category: cards]

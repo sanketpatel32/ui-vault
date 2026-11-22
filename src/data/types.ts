@@ -14,7 +14,8 @@ export type SourceId =
   | "cossui"
   | "cultui"
   | "kiboui"
-  | "kokonutui";
+  | "kokonutui"
+  | "arcui";
 
 export type License = "mit" | "free" | "freemium" | "paid";
 export type PreviewMode = "live" | "linkout";

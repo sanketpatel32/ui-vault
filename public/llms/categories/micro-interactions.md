@@ -119,3 +119,6 @@
 - **Deck** https://www.kibo-ui.com/components/deck — A Tinder-like swipeable card stack component with smooth animations. [MIT, live-previewable, category: micro-interactions]
 - **Glimpse** https://www.kibo-ui.com/components/glimpse — A component that shows a preview of a URL when hovering over a link. [MIT, live-previewable, category: micro-interactions]
 - **Marquee** https://www.kibo-ui.com/components/marquee — Marquees are a great way to show a list of items in a horizontal scrolling motion. [MIT, live-previewable, category: micro-interactions]
+- **Swipe actions** https://uiarc.dev/components/swipe-actions — Reveal row actions with a swipe, or from the same actions in a menu. [MIT, live-previewable, category: micro-interactions]
+- **Reactions** https://uiarc.dev/components/reactions — Acknowledge a post in one tap, with counts that roll. [MIT, live-previewable, category: micro-interactions]
+- **Image compare** https://uiarc.dev/components/image-compare — Drag a divider across two images to see what changed. [MIT, live-previewable, category: micro-interactions]
