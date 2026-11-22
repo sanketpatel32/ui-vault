@@ -6,15 +6,15 @@
 
 [Live catalog](https://sanketpatel32.github.io/ui-vault/) · [Browse source](src/data/) · [Operating guide](AGENTS.md)
 
-**1548 entries · 23 categories · 25 sources · 814 live previews**
+**1991 entries · 23 categories · 29 sources · 814 live previews**
 
 </div>
 
-UI Vault brings vendorable components from twenty-five open-source libraries into a consistent taxonomy. It is frontend-only, keeps favorites locally, and publishes machine-readable indexes for developers and AI agents.
+UI Vault brings vendorable components from twenty-nine open-source libraries into a consistent taxonomy. It is frontend-only, keeps favorites locally, and publishes machine-readable indexes for developers and AI agents.
 
 ## What it does
 
-- **One registry** — every component from the 25 vendorable sources, categorized into a
+- **One registry** — every component from the 29 vendorable sources, categorized into a
   unified taxonomy (text effects, backgrounds, buttons, cards, forms, overlays, data display,
   chat, heroes, dashboards, …), each with description, tags, license, deep link and install
   command. Every entry ships free code — paid/gated/gallery sources are not carried as
@@ -44,7 +44,11 @@ All vendorable (free code + install command): [React Bits](https://reactbits.dev
 [Skullet](https://skullet.lochie.me) ·
 [EasyUI](https://easyui.site) · [editorcn](https://www.rtecn.space) (Tiptap) ·
 [loading.dev](https://loading.dev) · [Its Hover](https://itshover.com) (Apache-2.0) ·
-[Amicro](https://amicro.vercel.app)
+[Amicro](https://amicro.vercel.app) ·
+[Kokonut UI](https://kokonutui.com) (free set, AI chat) ·
+[Arc UI](https://uiarc.dev) (free set) ·
+[snapcn](https://snapcn.dev) (free set, Remotion video) ·
+[beUI](https://beui.dev) (free set)
 
 Not carried as entries (paid/gated/gallery — see `AGENTS.md`): 21st.dev, shadcnStudio,
 UI Layouts Pro, Cue, CollectUI, The Component Gallery; Launch UI Pro sections; Cult Pro.

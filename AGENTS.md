@@ -1,6 +1,6 @@
 # AGENTS.md — UI Vault
 
-Personal, frontend-only React hub that aggregates UI components from 25 free, vendorable sources into one categorized, searchable, previewable library. **The owner is the only user.** There is no backend and there never will be one.
+Personal, frontend-only React hub that aggregates UI components from 29 free, vendorable sources into one categorized, searchable, previewable library. **The owner is the only user.** There is no backend and there never will be one.
 
 **Registry policy (v0.3.0, owner decision 2026-08-29): the registry carries ONLY vendorable sources.** Paid/gated/gallery sources (21st.dev, shadcnStudio, UI Layouts Pro, Cue, CollectUI, The Component Gallery) were removed from `src/data/` entirely — every entry must be something we can actually show (free code + install command). Do not re-add link-out entries or link-out-only sources; if the owner asks for a paid/gated source, surface the policy before doing it.
 
@@ -44,41 +44,45 @@ Fresh checkout: `npm install` (or `vp install`) first.
 
 ## Sources & licensing (researched 2026-08-29)
 
-| Source                 | SourceId           | License                         | In registry?          |
-| ---------------------- | ------------------ | ------------------------------- | --------------------- |
-| reactbits.dev          | `reactbits`        | MIT (free tier)                 | ✅ yes                |
-| motion-primitives.com  | `motionprimitives` | MIT (free tier)                 | ✅ yes                |
-| fancycomponents.dev    | `fancy`            | MIT                             | ✅ yes                |
-| number-flow.barvian.me | `numberflow`       | MIT (npm: `@number-flow/react`) | ✅ yes                |
-| watermelon.sh          | `watermelon`       | Open source, free               | ✅ yes                |
-| ui.aceternity.com      | `aceternity`       | Free tier + paid Pro            | ✅ free tier only     |
-| ui.shadcn.com          | `shadcn`           | MIT                             | ✅ yes (65, v0.4.0)   |
-| magicui.design         | `magicui`          | MIT (templates paid)            | ✅ yes (76, v0.4.0)   |
-| animata.design         | `animata`          | MIT (codse/animata)             | ✅ yes (154, v0.4.0)  |
-| animate-ui.com         | `animateui`        | MIT + Commons Clause            | ✅ yes (154, v0.4.0)  |
-| launchuicomponents.com | `launchui`         | MIT (+ $99 Pro sections)        | ✅ free set only (16) |
-| coss.com/origin        | `originui`         | MIT (legacy snapshot in coss)   | ✅ yes (31 families)  |
-| coss.com/ui            | `cossui`           | MIT (apps/ui carve-out)         | ✅ yes (111, v0.6.0)  |
-| cult-ui.com            | `cultui`           | MIT (Cult Pro is paid)          | ✅ free set only (77) |
-| kibo-ui.com            | `kiboui`           | MIT (shadcnblocks/kibo)         | ✅ yes (40, v0.6.0)   |
-| streamdown.ai          | `streamdown`       | Apache-2.0                      | ✅ yes (5, v0.8.0)    |
-| generativeloaders.com  | `genloaders`       | MIT                             | ✅ yes (46, v0.8.0)   |
-| ui-sdk.dev             | `uisdk`            | Apache-2.0 (beta)               | ✅ yes (55, v0.8.0)   |
-| wterm.dev              | `wterm`            | Apache-2.0                      | ✅ yes (1, v0.8.0)    |
-| skullet.lochie.me      | `skullet`          | MIT                             | ✅ yes (1, v0.8.0)    |
-| easyui.site            | `easyui`           | MIT (Surajmaurya1/easyui)       | ✅ yes (137)          |
-| rtecn.space            | `editorcn`         | MIT (shadcn-labs/editorcn)      | ✅ yes (16)           |
-| loading.dev            | `loadingdev`       | MIT (npm: `loading-dev`)        | ✅ yes (36)           |
-| itshover.com           | `itshover`         | Apache-2.0                      | ✅ yes (263)          |
-| amicro.vercel.app      | `amicro`           | MIT (Subhan-code/Amicro)        | ✅ yes (174)          |
-| 21st.dev               | `21st`             | Freemium (2 copies/day)         | ❌ removed in v0.3.0  |
-| shadcnstudio.com       | `shadcnstudio`     | Free tier + $249 Pro            | ❌ removed in v0.3.0  |
-| pro.ui-layouts.com     | `uilayouts`        | Paid ($139+)                    | ❌ removed in v0.3.0  |
-| cuedesign.space        | `cue`              | Free tier + Cue+                | ❌ removed in v0.3.0  |
-| collectui.com          | `collectui`        | Free gallery                    | ❌ removed in v0.3.0  |
-| component.gallery      | `componentgallery` | Free reference                  | ❌ removed in v0.3.0  |
+| Source                 | SourceId           | License                         | In registry?           |
+| ---------------------- | ------------------ | ------------------------------- | ---------------------- |
+| reactbits.dev          | `reactbits`        | MIT (free tier)                 | ✅ yes                 |
+| motion-primitives.com  | `motionprimitives` | MIT (free tier)                 | ✅ yes                 |
+| fancycomponents.dev    | `fancy`            | MIT                             | ✅ yes                 |
+| number-flow.barvian.me | `numberflow`       | MIT (npm: `@number-flow/react`) | ✅ yes                 |
+| watermelon.sh          | `watermelon`       | Open source, free               | ✅ yes                 |
+| ui.aceternity.com      | `aceternity`       | Free tier + paid Pro            | ✅ free tier only      |
+| ui.shadcn.com          | `shadcn`           | MIT                             | ✅ yes (65, v0.4.0)    |
+| magicui.design         | `magicui`          | MIT (templates paid)            | ✅ yes (76, v0.4.0)    |
+| animata.design         | `animata`          | MIT (codse/animata)             | ✅ yes (154, v0.4.0)   |
+| animate-ui.com         | `animateui`        | MIT + Commons Clause            | ✅ yes (154, v0.4.0)   |
+| launchuicomponents.com | `launchui`         | MIT (+ $99 Pro sections)        | ✅ free set only (16)  |
+| coss.com/origin        | `originui`         | MIT (legacy snapshot in coss)   | ✅ yes (31 families)   |
+| coss.com/ui            | `cossui`           | MIT (apps/ui carve-out)         | ✅ yes (111, v0.6.0)   |
+| cult-ui.com            | `cultui`           | MIT (Cult Pro is paid)          | ✅ free set only (77)  |
+| kibo-ui.com            | `kiboui`           | MIT (shadcnblocks/kibo)         | ✅ yes (40, v0.6.0)    |
+| streamdown.ai          | `streamdown`       | Apache-2.0                      | ✅ yes (5, v0.8.0)     |
+| generativeloaders.com  | `genloaders`       | MIT                             | ✅ yes (46, v0.8.0)    |
+| ui-sdk.dev             | `uisdk`            | Apache-2.0 (beta)               | ✅ yes (55, v0.8.0)    |
+| wterm.dev              | `wterm`            | Apache-2.0                      | ✅ yes (1, v0.8.0)     |
+| skullet.lochie.me      | `skullet`          | MIT                             | ✅ yes (1, v0.8.0)     |
+| easyui.site            | `easyui`           | MIT (Surajmaurya1/easyui)       | ✅ yes (137)           |
+| rtecn.space            | `editorcn`         | MIT (shadcn-labs/editorcn)      | ✅ yes (16)            |
+| loading.dev            | `loadingdev`       | MIT (npm: `loading-dev`)        | ✅ yes (36)            |
+| itshover.com           | `itshover`         | Apache-2.0                      | ✅ yes (263)           |
+| amicro.vercel.app      | `amicro`           | MIT (Subhan-code/Amicro)        | ✅ yes (174)           |
+| kokonutui.com          | `kokonutui`        | MIT (+ paid Pro)                | ✅ free set only (116) |
+| uiarc.dev              | `arcui`            | MIT (+ $249 Pro)                | ✅ free set only (143) |
+| snapcn.dev             | `snapcn`           | MIT (+ $179/yr Pro)             | ✅ free set only (62)  |
+| beui.dev               | `beui`             | MIT (+ paid Pro blocks)         | ✅ free set only (122) |
+| 21st.dev               | `21st`             | Freemium (2 copies/day)         | ❌ removed in v0.3.0   |
+| shadcnstudio.com       | `shadcnstudio`     | Free tier + $249 Pro            | ❌ removed in v0.3.0   |
+| pro.ui-layouts.com     | `uilayouts`        | Paid ($139+)                    | ❌ removed in v0.3.0   |
+| cuedesign.space        | `cue`              | Free tier + Cue+                | ❌ removed in v0.3.0   |
+| collectui.com          | `collectui`        | Free gallery                    | ❌ removed in v0.3.0   |
+| component.gallery      | `componentgallery` | Free reference                  | ❌ removed in v0.3.0   |
 
-Install commands for the vendorable sources: `npx shadcn@latest add @react-bits/<Name>-TS-TW` (suffix = JS|TS + CSS|TW) · `npx motion-primitives@latest add <name>` · shadcn registry `@fancy` (fancycomponents.dev/r/{name}.json) · `npm i @number-flow/react` · watermelon: `npx shadcn@latest add https://registry.watermelon.sh/r/<name>.json` · aceternity: `npx shadcn@latest add @aceternity/<name>` · shadcn: `npx shadcn@latest add <component>` · magicui: `npx shadcn@latest add @magicui/<component>` · animata: `npx shadcn@latest add https://animata.design/r/<section>/<name>.json` · animateui: `npx shadcn@latest add @animate-ui/<slug>` · launchui: `npx shadcn@latest add @launchui/<block>` · originui: `npx shadcn@latest add https://coss.com/origin/r/<family>.json` · cossui: `npx shadcn@latest add @coss/<component>` · cultui: `npx shadcn@latest add https://cult-ui.com/r/<name>.json` · kiboui: `npx kibo-ui add <component>` · streamdown: `npm install streamdown` (+ `@streamdown/<plugin>`) · genloaders: `npm install generative-loaders` · uisdk: `npm install @ui-sdk/react @ui-sdk/core` · wterm: `npm install @wterm/dom @wterm/react` · skullet: `npm install skullet` · easyui: `npx shadcn@latest add Surajmaurya1/easyui/<name>` · editorcn: `npx shadcn@latest add https://www.rtecn.space/r/<name>.json` (Tiptap) · loadingdev: `npm install loading-dev` (React 19) · itshover: `npx shadcn@latest add https://itshover.com/r/<icon-name>.json` · amicro: `npx shadcn@latest add https://raw.githubusercontent.com/Subhan-code/Amicro--Micro-transitions-/main/registry/ui/<name>.json`.
+Install commands for the vendorable sources: `npx shadcn@latest add @react-bits/<Name>-TS-TW` (suffix = JS|TS + CSS|TW) · `npx motion-primitives@latest add <name>` · shadcn registry `@fancy` (fancycomponents.dev/r/{name}.json) · `npm i @number-flow/react` · watermelon: `npx shadcn@latest add https://registry.watermelon.sh/r/<name>.json` · aceternity: `npx shadcn@latest add @aceternity/<name>` · shadcn: `npx shadcn@latest add <component>` · magicui: `npx shadcn@latest add @magicui/<component>` · animata: `npx shadcn@latest add https://animata.design/r/<section>/<name>.json` · animateui: `npx shadcn@latest add @animate-ui/<slug>` · launchui: `npx shadcn@latest add @launchui/<block>` · originui: `npx shadcn@latest add https://coss.com/origin/r/<family>.json` · cossui: `npx shadcn@latest add @coss/<component>` · cultui: `npx shadcn@latest add https://cult-ui.com/r/<name>.json` · kiboui: `npx kibo-ui add <component>` · streamdown: `npm install streamdown` (+ `@streamdown/<plugin>`) · genloaders: `npm install generative-loaders` · uisdk: `npm install @ui-sdk/react @ui-sdk/core` · wterm: `npm install @wterm/dom @wterm/react` · skullet: `npm install skullet` · easyui: `npx shadcn@latest add Surajmaurya1/easyui/<name>` · editorcn: `npx shadcn@latest add https://www.rtecn.space/r/<name>.json` (Tiptap) · loadingdev: `npm install loading-dev` (React 19) · itshover: `npx shadcn@latest add https://itshover.com/r/<icon-name>.json` · amicro: `npx shadcn@latest add https://raw.githubusercontent.com/Subhan-code/Amicro--Micro-transitions-/main/registry/ui/<name>.json` · kokonutui: `npx shadcn@latest add @kokonutui/<name>` · arcui: `npx shadcn@latest add @uiarc/<name>` · snapcn: `npx shadcn@latest add @snapcn/<name>` (needs a Remotion project) · beui: `npx shadcn@latest add @beui/<name>`.
 
 v0.4.0 research notes (research/*.json has the full extracted sets): Animata carries its 154 _published_ components only — the repo documents 198 but 44 have no live docs page yet. Animate UI names Radix/Base UI/Headless UI variants with a suffix ("Accordion (Radix)") — ids carry the section prefix. Origin UI is family-granularity (31 families ≈ 599 variants; per-variant registry files exist at coss.com/origin/r/).
 

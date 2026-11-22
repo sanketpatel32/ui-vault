@@ -19,3 +19,6 @@
 - **FAQ** https://easyui.site/components/faq — An expandable accordion FAQ component with smooth spring height calculation, single/multi-open modes, category filtering, search, and full ARIA keyboard accessibility. [MIT, live-previewable, category: faq]
 - **Smooth Accordion** https://easyui.site/components/smooth-accordion — An accordion component with physics height transition, rotating chevron indicators, and accessible keyboard toggles. [MIT, live-previewable, category: faq]
 - **UnfoldAccordion** https://easyui.site/components/unfold-accordion — An accordion whose content unfolds with the chevron and spacing moving together. The chevron rotates 180° while the content height expands and the inner content slides up to close the gap, producing a single, fluid motion. [MIT, live-previewable, category: faq]
+- **Accordion** https://uiarc.dev/components/accordion — Progressively reveal supporting information in place. [MIT, live-previewable, category: faq]
+- **FAQ section** https://uiarc.dev/components/blocks/faq-section — FAQs as an accordion, a topic rail, or a searchable list that highlights matches. [MIT, live-previewable, category: faq]
+- **Bouncy Accordion** https://beui.dev/components/motion/bouncy-accordion — Single-open accordion with weighted spring layout, icon rows and reduced-motion-safe content reveals. [MIT, live-previewable, category: faq]

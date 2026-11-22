@@ -398,4 +398,68 @@ export const sources: Source[] = [
       "MIT (github.com/Subhan-code/Amicro--Micro-transitions-). Own CLI: npx @subhanhq/amicro@latest add <name>. The hosted @amicro registry at amicro.vercel.app rate-limits (429), so entries install from GitHub-raw URLs (hooks live under registry/hooks/). The 2 registry:lib utilities (presets, utils) are not cataloged.",
     color: "#2dd4bf",
   },
+  {
+    id: "kokonutui",
+    name: "Kokonut UI",
+    url: "https://kokonutui.com",
+    tagline: "Free open-source React components for AI chat and agents.",
+    description:
+      "116 free MIT components — 27 AI chat/agent pieces (tool approvals, tool calls, diff review, inline citations, voice, checkout) plus inputs, cards, buttons, backgrounds, navigation and text effects. Kokonut UI Pro (heroes, sections, templates) is paid and excluded.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "nextjs", "typescript", "tailwind", "motion"],
+    install: "npx shadcn@latest add @kokonutui/<name>",
+    installLabel: "shadcn registry (@kokonutui)",
+    notes:
+      'MIT (github.com/kokonut-labs/kokonutui). Free set only — the 10 items marked "Part of Kokonut UI Pro" and the Pro templates are paid and excluded. Registry is per-item (kokonutui.com/r/<name>.json; /r/index.json 404s) — the list comes from kokonutui.com/llms.txt. Catalog-only: no vendored previews yet.',
+    color: "#f59e0b",
+  },
+  {
+    id: "arcui",
+    name: "Arc UI",
+    url: "https://uiarc.dev",
+    tagline: "Components and blocks designed for AI-assisted frontend development.",
+    description:
+      "121 free components + 22 free blocks — inputs, data-viz charts, disclosure, feedback, and auth/marketing blocks. Styled with CSS modules and CSS variables (not Tailwind classes), Motion presets and reduced-motion support throughout.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "css-modules", "motion"],
+    install: "npx shadcn@latest add @uiarc/<name>",
+    installLabel: "shadcn registry (@uiarc)",
+    notes:
+      "MIT (github.com/kuratlielia/arc-library). Free set only — Arc Pro (131 components + 122 blocks; $149/yr or $249 lifetime) installs from the token-gated @uiarc-pro registry and is excluded. Install the design tokens once first (npx shadcn@latest add @uiarc/arc-foundation) and import components/arc/foundation.css. Catalog-only: no vendored previews yet.",
+    color: "#2dd4bf",
+  },
+  {
+    id: "snapcn",
+    name: "snapcn",
+    url: "https://snapcn.dev",
+    tagline: "shadcn-style video components for Remotion.",
+    description:
+      "62 free MIT components for programmatic video — kinetic titles, captions, logo stings, device frames, cursor clicks, AI-chat input scenes and launch scenes, all rendered with Remotion.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "remotion"],
+    install: "npx shadcn@latest add @snapcn/<name>",
+    installLabel: "shadcn registry (@snapcn)",
+    notes:
+      "MIT (github.com/shadcn-labs/snapcn). Prerequisite: an existing Remotion project (npx create-video@latest) — components render inside Remotion compositions, not as page UI. Free renders export at 720p with a small watermark; snapcn Pro ($179/yr or $279 once — 81+ components, 1080p, MCP) is excluded. The namespace is @snapcn (the old @snap-cn no longer resolves). Catalog-only: no previews (Remotion is not a hub dependency).",
+    color: "#ef4444",
+  },
+  {
+    id: "beui",
+    name: "beUI",
+    url: "https://beui.dev",
+    tagline: "Animated components for React and Next.js.",
+    description:
+      "122 free component pages — 59 Motion components, 24 blocks, 18 AI-agent pieces, 17 animated charts and 4 casino games. React 19, Tailwind v4, Motion 12.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "nextjs", "typescript", "tailwind", "motion"],
+    install: "npx shadcn@latest add @beui/<name>",
+    installLabel: "shadcn registry (@beui)",
+    notes:
+      "MIT (github.com/starc007/ui-components). Free set only — the 350+ Pro blocks (paid lifetime) and the separate beui-native set are excluded. Docs show bunx --bun shadcn add @beui/<name>; npx works the same. The research quoted 157 free components; the public index (beui.dev/r) lists 122 pages, some of which (button, number, text-animation, not-found…) bundle several registry items that install together. Catalog-only: no vendored previews yet.",
+    color: "#c084fc",
+  },
 ];

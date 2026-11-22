@@ -23,7 +23,11 @@ export type SourceId =
   | "editorcn"
   | "loadingdev"
   | "itshover"
-  | "amicro";
+  | "amicro"
+  | "kokonutui"
+  | "arcui"
+  | "snapcn"
+  | "beui";
 
 export type License = "mit" | "mit-commons-clause" | "free" | "freemium" | "paid";
 export type PreviewMode = "live" | "linkout";
