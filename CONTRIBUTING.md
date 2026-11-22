@@ -12,7 +12,7 @@ There is no backend and there never will be one. Before contributing, read
    hardcode a component into a page.
 2. **Vendorable sources only.** The registry carries only free, vendorable sources
    (free code + install command). Never vendor paid or gated code. `npm run
-   registry:check` enforces the licensing guard; never re-add link-out entries or
+registry:check` enforces the licensing guard; never re-add link-out entries or
    link-out-only sources.
 3. **Vendored previews are frozen snapshots.** Each `src/showcase/<source>/<component>/`
    folder must record its origin URL and copy date in `src/showcase/README.md`.
@@ -41,16 +41,16 @@ The `vp` CLI lives at `~/AppData/Local/vite-plus/bin/vp`; in Git Bash it may nee
 
 ## Commands
 
-| Command                  | Purpose                                              |
-| ------------------------ | ---------------------------------------------------- |
-| `npm run dev`            | Dev server (`vp dev`, runs `llms` first)             |
-| `npm run build`          | `tsc -b && vp build` (runs `llms` first)             |
-| `npm run preview`        | Preview the production build (`vp preview`)          |
+| Command                  | Purpose                                                      |
+| ------------------------ | ------------------------------------------------------------ |
+| `npm run dev`            | Dev server (`vp dev`, runs `llms` first)                     |
+| `npm run build`          | `tsc -b && vp build` (runs `llms` first)                     |
+| `npm run preview`        | Preview the production build (`vp preview`)                  |
 | `npm run check`          | Format + lint + type checks together (oxfmt/oxlint/tsgolint) |
-| `npm run format`         | Format everything (oxfmt — double quotes)            |
-| `npm run lint`           | Lint only (oxlint)                                   |
-| `npm run llms`           | Regenerate all `public/llms*` artifacts from `src/data/` |
-| `npm run registry:check` | Validate registry ids/slugs/sources/licensing/loaders |
+| `npm run format`         | Format everything (oxfmt — double quotes)                    |
+| `npm run lint`           | Lint only (oxlint)                                           |
+| `npm run llms`           | Regenerate all `public/llms*` artifacts from `src/data/`     |
+| `npm run registry:check` | Validate registry ids/slugs/sources/licensing/loaders        |
 
 **Before every commit:** run `npm run check` and, if you touched `src/data/`,
 `npm run registry:check` + `npm run llms`.
@@ -75,16 +75,16 @@ The label scheme has three axes:
 
 **Type**
 
-| Label            | Meaning                                    |
-| ---------------- | ------------------------------------------ |
-| `bug`            | Something is broken or misbehaving         |
-| `enhancement`    | New feature or capability                  |
-| `documentation`  | Docs inaccurate, stale, or missing         |
-| `accessibility`  | WCAG/ARIA/keyboard/contrast problem        |
-| `ux`             | Works, but the experience is wrong         |
-| `performance`    | Slow loads, big bundles, wasted work       |
-| `data-registry`  | Registry data: entries, install commands, metadata |
-| `security`       | Dependency/supply-chain hygiene            |
+| Label           | Meaning                                            |
+| --------------- | -------------------------------------------------- |
+| `bug`           | Something is broken or misbehaving                 |
+| `enhancement`   | New feature or capability                          |
+| `documentation` | Docs inaccurate, stale, or missing                 |
+| `accessibility` | WCAG/ARIA/keyboard/contrast problem                |
+| `ux`            | Works, but the experience is wrong                 |
+| `performance`   | Slow loads, big bundles, wasted work               |
+| `data-registry` | Registry data: entries, install commands, metadata |
+| `security`      | Dependency/supply-chain hygiene                    |
 
 **Area** — where the issue lives: `area:home`, `area:browse`, `area:category-page`,
 `area:source-page`, `area:component-detail`, `area:favorites`, `area:not-found`,
@@ -94,11 +94,11 @@ The label scheme has three axes:
 
 **Priority**
 
-| Label | Meaning                                                        |
-| ----- | -------------------------------------------------------------- |
+| Label | Meaning                                                                           |
+| ----- | --------------------------------------------------------------------------------- |
 | `P1`  | Broken for real use now (dead install commands, unreadable UI, policy violations) |
 | `P2`  | Should fix soon (visible defects, stale docs on load-bearing claims, crash paths) |
-| `P3`  | Nice to fix (polish, robustness, hygiene)                      |
+| `P3`  | Nice to fix (polish, robustness, hygiene)                                         |
 
 Issues marked `good first issue` are small, self-contained fixes with the
 evidence and suggested fix already written out — good starting points.
@@ -113,7 +113,7 @@ behavior claims. Verify twice before filing — every issue should be reproducib
   commit message; don't ship unversioned.
 - Commit message style: `feat:`, `fix:`, `docs:`, `release:` (optionally with a
   `(vX.Y.Z)` scope), e.g. `fix(v0.6.1): style compat layer so vendored previews
-  render fully themed`.
+render fully themed`.
 - The deploy to GitHub Pages runs automatically on every push to `main`
   (`.github/workflows/deploy.yml`), including a SPA fallback (`404.html`), so
   deep links keep working. Don't add a second deploy path.
