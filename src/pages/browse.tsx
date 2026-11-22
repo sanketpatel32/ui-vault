@@ -5,7 +5,7 @@ import { entries } from "@/data";
 import { sourceById, categoryBySlug } from "@/lib/registry";
 import { searchEntries } from "@/lib/search";
 import { FilterBar, type Filters } from "@/components/filter-bar";
-import { EntryCard } from "@/components/entry-card";
+import { EntryGrid } from "@/components/entry-grid";
 import { EmptyState } from "@/components/empty-state";
 import { Button } from "@/components/ui/button";
 import { Select } from "@/components/ui/input";
@@ -59,7 +59,8 @@ export function Browse() {
         (a, b) => Number(Boolean(b.previewKey)) - Number(Boolean(a.previewKey)),
       );
     return list;
-  }, [cat, filters, sort]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- keyed on filter fields, not the object
+  }, [cat, filters.q, filters.src, filters.lic, filters.tag, sort]);
 
   const activeFilters: { key: keyof Filters | "cat"; label: string }[] = [];
   if (cat) {
@@ -134,11 +135,7 @@ export function Browse() {
       )}
 
       {results.length > 0 ? (
-        <div className="grid animate-rise gap-4 sm:grid-cols-2 xl:grid-cols-3">
-          {results.map((entry) => (
-            <EntryCard key={entry.id} entry={entry} />
-          ))}
-        </div>
+        <EntryGrid items={results} className="animate-rise" />
       ) : (
         <EmptyState
           title="No components match"

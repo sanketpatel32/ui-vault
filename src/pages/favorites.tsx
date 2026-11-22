@@ -1,15 +1,19 @@
+import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import { Heart } from "lucide-react";
 import type { UIEntry } from "@/data";
 import { entryById } from "@/lib/registry";
 import { favorites, useStore } from "@/lib/store";
-import { EntryCard } from "@/components/entry-card";
+import { EntryGrid } from "@/components/entry-grid";
 import { EmptyState } from "@/components/empty-state";
 import { Button } from "@/components/ui/button";
 
 export function Favorites() {
   const ids = useStore(favorites);
-  const items = ids.map((id) => entryById.get(id)).filter((e): e is UIEntry => !!e);
+  const items = useMemo(
+    () => ids.map((id) => entryById.get(id)).filter((e): e is UIEntry => !!e),
+    [ids],
+  );
 
   return (
     <div className="space-y-5">
@@ -23,11 +27,7 @@ export function Favorites() {
       </div>
 
       {items.length > 0 ? (
-        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-          {items.map((entry) => (
-            <EntryCard key={entry.id} entry={entry} />
-          ))}
-        </div>
+        <EntryGrid items={items} />
       ) : (
         <EmptyState
           title="No favorites yet"

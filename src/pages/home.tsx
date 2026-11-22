@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Clock, Sparkles } from "lucide-react";
 import { type UIEntry } from "@/data";
@@ -34,6 +35,8 @@ function Stat({ value, label }: { value: number; label: string }) {
   );
 }
 
+const HOME_SOURCES = 9;
+
 export function Home() {
   const s = stats();
   const featured = featuredEntries();
@@ -41,6 +44,7 @@ export function Home() {
   const sources = sourcesWithCounts();
   const recentIds = useStore(recents);
   const recent = recentIds.map((id) => entryById.get(id)).filter((e): e is UIEntry => !!e);
+  const [sourcesExpanded, setSourcesExpanded] = useState(false);
 
   return (
     <div className="space-y-14">
@@ -135,9 +139,21 @@ export function Home() {
 
       {/* sources */}
       <section>
-        <h2 className="mb-4 text-lg font-semibold tracking-tight">Sources</h2>
+        <div className="mb-4 flex items-end justify-between">
+          <h2 className="text-lg font-semibold tracking-tight">Sources</h2>
+          {sources.length > HOME_SOURCES && (
+            <button
+              type="button"
+              onClick={() => setSourcesExpanded((v) => !v)}
+              aria-expanded={sourcesExpanded}
+              className="cursor-pointer text-sm text-muted-fg transition-colors hover:text-accent-text"
+            >
+              {sourcesExpanded ? "Show fewer" : `All ${sources.length} sources →`}
+            </button>
+          )}
+        </div>
         <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-          {sources.map((src) => (
+          {(sourcesExpanded ? sources : sources.slice(0, HOME_SOURCES)).map((src) => (
             <Link
               key={src.id}
               to={`/source/${src.id}`}

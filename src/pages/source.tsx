@@ -1,9 +1,10 @@
+import { useMemo } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ArrowLeft, ExternalLink, ShieldCheck } from "lucide-react";
 import type { SourceId } from "@/data";
 import { entriesBySource, sourceById } from "@/lib/registry";
 import { LicenseBadge } from "@/components/license-badge";
-import { EntryCard } from "@/components/entry-card";
+import { EntryGrid } from "@/components/entry-grid";
 import { CodeBlock } from "@/components/code-block";
 import { EmptyState } from "@/components/empty-state";
 import { Button } from "@/components/ui/button";
@@ -12,12 +13,11 @@ import { Badge } from "@/components/ui/badge";
 export function SourcePage() {
   const { id = "" } = useParams();
   const source = sourceById.get(id as SourceId);
+  const items = useMemo(() => entriesBySource(id as SourceId), [id]);
 
   if (!source) {
     return <EmptyState title="Unknown source" description={`No source named “${id}” exists.`} />;
   }
-
-  const items = entriesBySource(source.id);
 
   return (
     <div className="space-y-6">
@@ -78,11 +78,7 @@ export function SourcePage() {
         <h2 className="mb-4 text-lg font-semibold tracking-tight">
           {items.length} cataloged from {source.name}
         </h2>
-        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-          {items.map((entry) => (
-            <EntryCard key={entry.id} entry={entry} />
-          ))}
-        </div>
+        <EntryGrid items={items} />
       </div>
     </div>
   );
