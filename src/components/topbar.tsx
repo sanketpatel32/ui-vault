@@ -27,11 +27,11 @@ export function Topbar({
       <button
         type="button"
         onClick={onOpenPalette}
-        className="flex h-9 max-w-md flex-1 cursor-pointer items-center gap-2.5 rounded-lg border border-border bg-muted/40 px-3 text-sm text-muted-fg/80 transition-all hover:border-accent/40 hover:bg-muted hover:text-fg hover:shadow-sm hover:shadow-accent/10"
+        className="flex h-9 max-w-md flex-1 cursor-pointer items-center gap-2.5 rounded-lg border border-border bg-muted/40 px-3 text-sm text-faint-fg transition-all hover:border-accent/40 hover:bg-muted hover:text-fg hover:shadow-sm hover:shadow-accent/10"
       >
         <Search size={15} className="shrink-0" />
         <span className="flex-1 truncate text-left">Search components, sources, tags…</span>
-        <kbd className="hidden shrink-0 rounded border border-border bg-bg px-1.5 py-0.5 font-mono text-[10px] text-muted-fg/80 shadow-sm sm:block">
+        <kbd className="hidden shrink-0 rounded border border-border bg-bg px-1.5 py-0.5 font-mono text-[10px] text-faint-fg shadow-sm sm:block">
           Ctrl K
         </kbd>
       </button>

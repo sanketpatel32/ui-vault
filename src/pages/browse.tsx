@@ -121,7 +121,7 @@ export function Browse() {
               p.delete("cat");
               setParams(p, { replace: true });
             }}
-            className="ml-1 cursor-pointer px-1.5 text-[11px] text-muted-fg/80 transition-colors hover:text-fg"
+            className="ml-1 cursor-pointer px-1.5 text-[11px] text-faint-fg transition-colors hover:text-fg"
           >
             Clear all
           </button>

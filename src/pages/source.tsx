@@ -57,7 +57,7 @@ export function SourcePage() {
 
         {source.install && (
           <div className="mt-4 max-w-xl">
-            <p className="mb-1.5 text-[11px] font-semibold tracking-[0.14em] text-muted-fg/70 uppercase">
+            <p className="mb-1.5 text-[11px] font-semibold tracking-[0.14em] text-faint-fg uppercase">
               {source.installLabel ?? "Install"}
             </p>
             <CodeBlock code={source.install} />

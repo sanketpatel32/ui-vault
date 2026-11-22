@@ -11,6 +11,7 @@
   --fg: #18181b;
   --muted: #ededf0;
   --muted-fg: #66666e;
+  --faint-fg: #6a6a72;
   --accent: #7c3aed;
   --accent-fg: #ffffff;
   --accent-soft: #f1ecfd;
@@ -49,6 +50,7 @@
   --fg: #18181b;
   --muted: #ededf0;
   --muted-fg: #66666e;
+  --faint-fg: #6a6a72;
   --accent: #7c3aed;
   --accent-fg: #ffffff;
   --accent-soft: #f1ecfd;
@@ -86,6 +88,7 @@
   --fg: #fafafa;
   --muted: #18181b;
   --muted-fg: #a1a1aa;
+  --faint-fg: #8b8b94;
   --accent: #8b5cf6;
   --accent-fg: #ffffff;
   --accent-soft: #1a1523;
@@ -125,6 +128,7 @@
   --color-fg: var(--fg);
   --color-muted: var(--muted);
   --color-muted-fg: var(--muted-fg);
+  --color-faint-fg: var(--faint-fg);
   --color-accent: var(--accent);
   --color-accent-fg: var(--accent-fg);
   --color-accent-soft: var(--accent-soft);

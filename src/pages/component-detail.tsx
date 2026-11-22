@@ -59,7 +59,7 @@ export function ComponentDetail() {
             </Link>
             <LicenseBadge license={entry.license} />
             <PreviewBadge entry={entry} />
-            <span className="text-[11px] text-muted-fg/70">
+            <span className="text-[11px] text-faint-fg">
               in “{entry.sourceCategory}” at source
             </span>
           </div>
@@ -72,7 +72,7 @@ export function ComponentDetail() {
 
         <aside className="space-y-4">
           <div className="rounded-xl border border-border bg-panel p-4">
-            <p className="mb-2 text-[11px] font-semibold tracking-[0.14em] text-muted-fg/70 uppercase">
+            <p className="mb-2 text-[11px] font-semibold tracking-[0.14em] text-faint-fg uppercase">
               About
             </p>
             <p className="text-sm leading-relaxed text-muted-fg">{entry.description}</p>
@@ -92,7 +92,7 @@ export function ComponentDetail() {
 
           {entry.install && (
             <div className="rounded-xl border border-border bg-panel p-4">
-              <p className="mb-2 text-[11px] font-semibold tracking-[0.14em] text-muted-fg/70 uppercase">
+              <p className="mb-2 text-[11px] font-semibold tracking-[0.14em] text-faint-fg uppercase">
                 Install
               </p>
               <CodeBlock code={entry.install} />

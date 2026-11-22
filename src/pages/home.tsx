@@ -29,7 +29,7 @@ function Stat({ value, label }: { value: number; label: string }) {
   return (
     <div className="flex flex-col items-center gap-0.5 px-4 py-3.5">
       <span className="text-2xl font-semibold tracking-tight text-fg tabular-nums">{n}</span>
-      <span className="text-[11px] font-medium tracking-wide text-muted-fg/80 uppercase">
+      <span className="text-[11px] font-medium tracking-wide text-faint-fg uppercase">
         {label}
       </span>
     </div>
@@ -110,7 +110,7 @@ export function Home() {
         <div className="space-y-5">
           {groups.map((g) => (
             <div key={g.group}>
-              <p className="mb-2 text-[11px] font-semibold tracking-[0.14em] text-muted-fg/70 uppercase">
+              <p className="mb-2 text-[11px] font-semibold tracking-[0.14em] text-faint-fg uppercase">
                 {g.label}
               </p>
               <div className="flex flex-wrap gap-2">
@@ -121,7 +121,7 @@ export function Home() {
                     className="group flex items-center gap-2 rounded-lg border border-border bg-panel px-3 py-1.5 text-[13px] text-fg transition-all hover:-translate-y-px hover:border-accent/40 hover:text-accent hover:shadow-sm hover:shadow-accent/10"
                   >
                     {cat.name}
-                    <span className="rounded bg-muted px-1 py-0.5 text-[10.5px] tabular-nums text-muted-fg/80 transition-colors group-hover:bg-accent-soft group-hover:text-accent">
+                    <span className="rounded bg-muted px-1 py-0.5 text-[10.5px] tabular-nums text-faint-fg transition-colors group-hover:bg-accent-soft group-hover:text-accent">
                       {cat.count}
                     </span>
                   </Link>
@@ -144,9 +144,9 @@ export function Home() {
             >
               <div className="min-w-0">
                 <SourceBadge source={src.id} className="text-xs" />
-                <p className="mt-0.5 truncate text-xs text-muted-fg/80">{src.tagline}</p>
+                <p className="mt-0.5 truncate text-xs text-faint-fg">{src.tagline}</p>
               </div>
-              <span className="ml-3 shrink-0 text-xs tabular-nums text-muted-fg/70 transition-colors group-hover:text-accent">
+              <span className="ml-3 shrink-0 text-xs tabular-nums text-faint-fg transition-colors group-hover:text-accent">
                 {src.count}
               </span>
             </Link>

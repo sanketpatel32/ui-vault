@@ -35,7 +35,7 @@ function SideLink({
       {dot && <span className="h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: dot }} />}
       <span className="truncate">{label}</span>
       {count !== undefined && (
-        <span className="ml-auto text-[11px] tabular-nums text-muted-fg/70">{count}</span>
+        <span className="ml-auto text-[11px] tabular-nums text-faint-fg">{count}</span>
       )}
     </NavLink>
   );
@@ -100,7 +100,7 @@ export function Sidebar({ mobileOpen, onClose }: { mobileOpen: boolean; onClose:
 
           {groups.map((group) => (
             <div key={group.group}>
-              <p className="mb-1 px-2.5 text-[10px] font-semibold tracking-[0.14em] text-muted-fg/60 uppercase">
+              <p className="mb-1 px-2.5 text-[10px] font-semibold tracking-[0.14em] text-faint-fg uppercase">
                 {group.label}
               </p>
               <div className="space-y-0.5">
@@ -118,7 +118,7 @@ export function Sidebar({ mobileOpen, onClose }: { mobileOpen: boolean; onClose:
           ))}
 
           <div>
-            <p className="mb-1 flex items-center gap-1 px-2.5 text-[10px] font-semibold tracking-[0.14em] text-muted-fg/60 uppercase">
+            <p className="mb-1 flex items-center gap-1 px-2.5 text-[10px] font-semibold tracking-[0.14em] text-faint-fg uppercase">
               Sources <ChevronRight size={10} />
             </p>
             <div className="space-y-0.5">
@@ -136,7 +136,7 @@ export function Sidebar({ mobileOpen, onClose }: { mobileOpen: boolean; onClose:
           </div>
         </nav>
 
-        <div className="border-t border-border px-4 py-3 text-[11px] text-muted-fg/70">
+        <div className="border-t border-border px-4 py-3 text-[11px] text-faint-fg">
           <a
             href={`${import.meta.env.BASE_URL}llms.txt`}
             className="transition-colors hover:text-accent"

@@ -25,12 +25,12 @@ export function CategoryPage() {
         <ArrowLeft size={12} /> All components
       </Link>
       <div>
-        <p className="text-[11px] font-semibold tracking-[0.14em] text-muted-fg/70 uppercase">
+        <p className="text-[11px] font-semibold tracking-[0.14em] text-faint-fg uppercase">
           {category.group}
         </p>
         <h1 className="mt-1 text-2xl font-semibold tracking-tight">{category.name}</h1>
         <p className="mt-1.5 max-w-xl text-sm text-muted-fg">{category.description}</p>
-        <p className="mt-1 text-sm text-muted-fg/70">{items.length} entries</p>
+        <p className="mt-1 text-sm text-faint-fg">{items.length} entries</p>
       </div>
 
       {items.length > 0 ? (
