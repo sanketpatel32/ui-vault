@@ -16,7 +16,8 @@ export type SourceId =
   | "kiboui"
   | "kokonutui"
   | "arcui"
-  | "snapcn";
+  | "snapcn"
+  | "beui";
 
 export type License = "mit" | "free" | "freemium" | "paid";
 export type PreviewMode = "live" | "linkout";

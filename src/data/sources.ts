@@ -285,4 +285,20 @@ export const sources: Source[] = [
       "MIT (github.com/shadcn-labs/snapcn). Prerequisite: an existing Remotion project (npx create-video@latest) — components render inside Remotion compositions, not as page UI. Free renders export at 720p with a small watermark; snapcn Pro ($179/yr or $279 once — 81+ components, 1080p, MCP) is excluded. The namespace is @snapcn (the old @snap-cn no longer resolves). Catalog-only: no previews (Remotion is not a hub dependency).",
     color: "#ef4444",
   },
+  {
+    id: "beui",
+    name: "beUI",
+    url: "https://beui.dev",
+    tagline: "Animated components for React and Next.js.",
+    description:
+      "122 free component pages — 59 Motion components, 24 blocks, 18 AI-agent pieces, 17 animated charts and 4 casino games. React 19, Tailwind v4, Motion 12.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "nextjs", "typescript", "tailwind", "motion"],
+    install: "npx shadcn@latest add @beui/<name>",
+    installLabel: "shadcn registry (@beui)",
+    notes:
+      "MIT (github.com/starc007/ui-components). Free set only — the 350+ Pro blocks (paid lifetime) and the separate beui-native set are excluded. Docs show bunx --bun shadcn add @beui/<name>; npx works the same. The research quoted 157 free components; the public index (beui.dev/r) lists 122 pages, some of which (button, number, text-animation, not-found…) bundle several registry items that install together. Catalog-only: no vendored previews yet.",
+    color: "#c084fc",
+  },
 ];

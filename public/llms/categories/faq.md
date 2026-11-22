@@ -17,3 +17,4 @@
 - **Accordion Particles** https://coss.com/ui/particles — 4 pre-styled accordion particles from the COSS registry — e.g. "Accordion with one panel open". Every variant installs individually; the preview shows accordion-2. [MIT, live-previewable, category: faq]
 - **Accordion** https://uiarc.dev/components/accordion — Progressively reveal supporting information in place. [MIT, live-previewable, category: faq]
 - **FAQ section** https://uiarc.dev/components/blocks/faq-section — FAQs as an accordion, a topic rail, or a searchable list that highlights matches. [MIT, live-previewable, category: faq]
+- **Bouncy Accordion** https://beui.dev/components/motion/bouncy-accordion — Single-open accordion with weighted spring layout, icon rows and reduced-motion-safe content reveals. [MIT, live-previewable, category: faq]

@@ -48,3 +48,4 @@
 - **Contact section** https://uiarc.dev/components/blocks/contact-section — A validated contact form that morphs into a confirmation, support channels, and office cards with local times. [MIT, live-previewable, category: sections-misc]
 - **Blog grid** https://uiarc.dev/components/blocks/blog-grid — A blog index with a featured post, category filter, post cards, pagination and an in-place reader. [MIT, live-previewable, category: sections-misc]
 - **Stats band** https://uiarc.dev/components/blocks/stats-band — Headline numbers that count up in view, each with a tiny visual that proves it and a context line on hover, plain or in a hairline grid. [MIT, live-previewable, category: sections-misc]
+- **404 / Not Found** https://beui.dev/components/blocks/not-found — Animated 404 pages in five styles: glitch scramble, magnetic digits, cursor spotlight, a fanning card stack and a typed terminal. [MIT, live-previewable, category: sections-misc]

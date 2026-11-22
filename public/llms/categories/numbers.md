@@ -20,3 +20,4 @@
 - **Ticker** https://www.kibo-ui.com/components/ticker — A composable finance ticker for displaying symbols, prices and changes. [MIT, live-previewable, category: numbers]
 - **Animated counter** https://uiarc.dev/components/animated-counter — Give changing totals a clear sense of movement. [MIT, live-previewable, category: numbers]
 - **Count Grid** https://snapcn.dev/docs/scenes/count-grid — A grid of cards rushes in under a horizontal smear and settles on five, then the camera pulls back a fraction while every empty cell fills in from the middle out and the count jumps from five to five hundred [MIT, live-previewable, category: numbers]
+- **Number Animation** https://beui.dev/components/motion/number — Animated number primitives for count-up values, rolling tickers, and fixed-slot digit swaps. [MIT, live-previewable, category: numbers]

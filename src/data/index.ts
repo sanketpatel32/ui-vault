@@ -17,6 +17,7 @@ import { kiboui } from "./components/kiboui";
 import { kokonutui } from "./components/kokonutui";
 import { arcui } from "./components/arcui";
 import { snapcn } from "./components/snapcn";
+import { beui } from "./components/beui";
 
 // Registry policy (v0.3.0): only vendorable sources — every entry ships free code
 // with an install command. Paid/gated/gallery sources are not carried as entries.
@@ -39,6 +40,7 @@ export const entries: UIEntry[] = [
   ...kokonutui,
   ...arcui,
   ...snapcn,
+  ...beui,
 ];
 
 export { sources } from "./sources";
