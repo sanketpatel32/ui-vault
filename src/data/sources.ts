@@ -269,4 +269,20 @@ export const sources: Source[] = [
       'MIT (github.com/kasturibuilds/generative-loaders; the npm repo field still points at the old kasturikhanke account). React >=18. Plain CSS — import "generative-loaders/styles.css" once. Young project (v0.1.1) — expect API churn. Entries are one per variant prop value.',
     color: "#c084fc",
   },
+  {
+    id: "uisdk",
+    name: "UI SDK",
+    url: "https://ui-sdk.dev",
+    tagline: "A library of behaviors to build your components.",
+    description:
+      "Vercel Labs' headless UI SDK — 50+ behavior primitives (createPopup, createTypeahead, createRovingFocus, createReorder, createVirtualizer …) and 55 unstyled React components built on them, from Accordion to Color Picker, Token Input, Tree and Waterfall. Also ships Vue, Svelte, Solid and Web Components bindings.",
+    license: "free",
+    previewMode: "live",
+    stack: ["react", "typescript", "headless"],
+    install: "npm install @ui-sdk/react @ui-sdk/core",
+    installLabel: "npm",
+    notes:
+      "Apache-2.0 (github.com/vercel-labs/ui). BETA (cataloged at 0.1.0-beta.14) — expect breaking changes before 1.0. React 19 required (peer >=19). Headless and styling-agnostic. Core behaviors are documented as a group at ui-sdk.dev/docs/core/behaviors and are not cataloged as entries.",
+    color: "#d4d4d8",
+  },
 ];

@@ -15,3 +15,4 @@
 - **Accordion** https://coss.com/origin/accordion — Vertically collapsible content panels for grouping and revealing related information. 20 variants. [MIT, live-previewable, category: faq]
 - **Accordion** https://coss.com/ui/docs/components/accordion — A set of collapsible panels with headings and content. [MIT, live-previewable, category: faq]
 - **Accordion Particles** https://coss.com/ui/particles — 4 pre-styled accordion particles from the COSS registry — e.g. "Accordion with one panel open". Every variant installs individually; the preview shows accordion-2. [MIT, live-previewable, category: faq]
+- **Accordion** https://ui-sdk.dev/docs/react/components/accordion — Show and hide sections of content from their headings. Headless and styling-agnostic — bring your own Tailwind classes. [Free, live-previewable, category: faq]
