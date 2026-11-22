@@ -1,9 +1,8 @@
 import { useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
 import { X } from "lucide-react";
-import { entries } from "@/data";
 import { sourceById, categoryBySlug } from "@/lib/registry";
-import { searchEntries } from "@/lib/search";
+import { browseResults } from "@/lib/browse";
 import { FilterBar, type Filters } from "@/components/filter-bar";
 import { EntryGrid } from "@/components/entry-grid";
 import { EmptyState } from "@/components/empty-state";
@@ -38,30 +37,7 @@ export function Browse() {
     setParams(p, { replace: true });
   };
 
-  const results = useMemo(() => {
-    let list = entries;
-    if (cat) list = list.filter((e) => e.category === cat);
-    if (src) list = list.filter((e) => e.source === src);
-    if (lic) list = list.filter((e) => e.license === lic);
-    if (tag) list = list.filter((e) => e.tags.includes(tag));
-    if (q.trim()) {
-      const ranked = searchEntries(q, entries.length);
-      if (sort === "default") {
-        // Default sort during a search is the fuse relevance ranking itself.
-        const allowed = new Set(list.map((e) => e.id));
-        list = ranked.filter((e) => allowed.has(e.id));
-      } else {
-        const ids = new Set(ranked.map((e) => e.id));
-        list = list.filter((e) => ids.has(e.id));
-      }
-    }
-    if (sort === "name") list = [...list].sort((a, b) => a.name.localeCompare(b.name));
-    if (sort === "source")
-      list = [...list].sort(
-        (a, b) => a.source.localeCompare(b.source) || a.name.localeCompare(b.name),
-      );
-    return list;
-  }, [cat, q, src, lic, tag, sort]);
+  const results = useMemo(() => browseResults({ ...filters, cat, sort }), [cat, filters, sort]);
 
   const activeFilters: { key: keyof Filters | "cat"; label: string }[] = [];
   if (cat) {
