@@ -6,7 +6,7 @@
 
 ### React Bits — https://reactbits.dev
 134 free MIT components across text animations, backgrounds, animations and interactive components, with TypeScript/JavaScript and Tailwind/CSS variants per component. Pro tier adds blocks and templates.
-License: MIT. Install: npx jsrepo add react-bits/<Component>.
+License: MIT. Install: npx shadcn@latest add @react-bits/<Component>-TS-TW.
 ### Motion Primitives — https://motion-primitives.com
 ~35 minimalist motion components by ibelick, built entirely on Motion (motion.dev). Every component is a copy-paste primitive with a dedicated CLI. Pro adds 50+ premium components and sections.
 License: MIT. Install: npx motion-primitives@latest add <name>.

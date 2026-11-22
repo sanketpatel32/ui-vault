@@ -11,8 +11,8 @@ export const sources: Source[] = [
     license: "mit",
     previewMode: "live",
     stack: ["react", "typescript", "tailwind", "motion", "gsap", "webgl"],
-    install: "npx jsrepo add react-bits/<Component>",
-    installLabel: "jsrepo CLI",
+    install: "npx shadcn@latest add @react-bits/<Component>-TS-TW",
+    installLabel: "shadcn registry (@react-bits; suffix picks JS|TS + CSS|TW)",
     notes:
       "Free tier is MIT (github.com/DavidHDev/react-bits). Pro is a separate paid tier — link-out only.",
     color: "#38bdf8",
