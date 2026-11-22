@@ -31,8 +31,8 @@ const fullBySource = new Map<string, Promise<UIEntry[]>>();
 export function loadSourceEntries(source: string): Promise<UIEntry[]> {
   let p = fullBySource.get(source);
   if (!p) {
-    p = fetch(`${import.meta.env.BASE_URL}registry/${source}.json`)
-      .then(async (r) => {
+    const fetchJson = () =>
+      fetch(`${import.meta.env.BASE_URL}registry/${source}.json`).then(async (r) => {
         const json = (r.headers.get("content-type") ?? "").includes("json");
         if (!r.ok || !json) {
           // Dev server mounts public/ at root, not under the deploy base.
@@ -43,7 +43,16 @@ export function loadSourceEntries(source: string): Promise<UIEntry[]> {
           return fallback.json() as Promise<UIEntry[]>;
         }
         return r.json() as Promise<UIEntry[]>;
-      })
+      });
+
+    p = fetchJson()
+      // One retry for transient failures before surfacing the error.
+      .catch(
+        () =>
+          new Promise<UIEntry[]>((resolve, reject) =>
+            setTimeout(() => fetchJson().then(resolve, reject), 1200),
+          ),
+      )
       .catch((err) => {
         // Don't cache failures — a retry should refetch.
         fullBySource.delete(source);
@@ -54,23 +63,38 @@ export function loadSourceEntries(source: string): Promise<UIEntry[]> {
   return p;
 }
 
+interface FullEntryResult {
+  entry?: UIEntry;
+  /** True once the fetch failed (after retry) — the caller should show the miss. */
+  failed: boolean;
+}
+
 /** Resolves a summary to its full registry record (with install + sourceUrl). */
-export function useFullEntry(summary: EntrySummary | undefined): UIEntry | undefined {
-  const [full, setFull] = useState<{ id: string; entry: UIEntry } | null>(null);
+export function useFullEntry(summary: EntrySummary | undefined): FullEntryResult {
+  const [state, setState] = useState<{
+    id: string;
+    entry?: UIEntry;
+    failed?: boolean;
+  } | null>(null);
   useEffect(() => {
     if (!summary) return;
     let alive = true;
     loadSourceEntries(summary.source)
       .then((list) => {
+        if (!alive) return;
         const entry = list.find((e) => e.id === summary.id);
-        if (alive && entry) setFull({ id: summary.id, entry });
+        setState(entry ? { id: summary.id, entry } : { id: summary.id, failed: true });
       })
-      .catch(() => {});
+      .catch(() => {
+        if (alive) setState({ id: summary.id, failed: true });
+      });
     return () => {
       alive = false;
     };
   }, [summary]);
-  return full && full.id === summary?.id ? full.entry : undefined;
+  return state && state.id === summary?.id
+    ? { entry: state.entry, failed: state.failed === true }
+    : { failed: false };
 }
 
 export function categoryCount(slug: string): number {

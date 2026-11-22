@@ -23,7 +23,7 @@ export function ComponentDetail() {
   const { id = "" } = useParams();
   const summary = entryById.get(id);
   // Full record (install command + deep link) loads from public/registry/<source>.json.
-  const fullEntry = useFullEntry(summary);
+  const { entry: fullEntry, failed } = useFullEntry(summary);
 
   useEffect(() => {
     if (summary) recents.push(summary.id);
@@ -99,14 +99,23 @@ export function ComponentDetail() {
             </div>
           </div>
 
-          {entry.install && (
+          {entry.install ? (
             <div className="rounded-xl border border-border bg-panel p-4">
               <p className="mb-2 text-[11px] font-semibold tracking-[0.14em] text-faint-fg uppercase">
                 Install
               </p>
               <CodeBlock code={entry.install} />
             </div>
-          )}
+          ) : failed ? (
+            <div className="rounded-xl border border-border bg-panel p-4">
+              <p className="mb-2 text-[11px] font-semibold tracking-[0.14em] text-faint-fg uppercase">
+                Install
+              </p>
+              <p className="text-xs text-muted-fg">
+                Couldn&rsquo;t load the install command — refresh to retry.
+              </p>
+            </div>
+          ) : null}
 
           <Button
             variant="outline"
