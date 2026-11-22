@@ -39,7 +39,7 @@
 - **Ripple Button** https://animate-ui.com/docs/components/buttons/ripple — A button that animates on tap with a ripple effect. [MIT + Commons Clause, live-previewable, category: buttons]
 - **Theme Toggler Button** https://animate-ui.com/docs/components/buttons/theme-toggler — A button that toggles the theme gradually. [MIT + Commons Clause, live-previewable, category: buttons]
 - **Share Button** https://animate-ui.com/docs/components/community/share-button — A share button component with animated icons. [MIT + Commons Clause, live-previewable, category: buttons]
-- **Button** https://animate-ui.com/docs/primitives/buttons/button — A simple button that animates on hover and tap. [MIT + Commons Clause, live-previewable, category: buttons]
+- **Button (Primitives)** https://animate-ui.com/docs/primitives/buttons/button — A simple button that animates on hover and tap. [MIT + Commons Clause, live-previewable, category: buttons]
 - **Flip** https://animate-ui.com/docs/primitives/buttons/flip — A button that flips between two states on hover. [MIT + Commons Clause, live-previewable, category: buttons]
 - **Liquid** https://animate-ui.com/docs/primitives/buttons/liquid — A button that fills on hover. [MIT + Commons Clause, live-previewable, category: buttons]
 - **Ripple** https://animate-ui.com/docs/primitives/buttons/ripple — A button that creates a ripple effect on tap. [MIT + Commons Clause, live-previewable, category: buttons]

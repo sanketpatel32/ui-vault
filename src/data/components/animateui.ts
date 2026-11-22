@@ -1062,7 +1062,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-animate-avatar-group",
     id: "animateui-primitives-animate-avatar-group",
-    name: "Avatar Group (Animate UI)",
+    name: "Avatar Group (Animate UI, Primitives)",
     description:
       "An animated avatar group that displays overlapping user images and smoothly shifts each avatar forward on hover to highlight it.",
     source: "animateui",
@@ -1091,7 +1091,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-animate-cursor",
     id: "animateui-primitives-animate-cursor",
-    name: "Cursor (Animate UI)",
+    name: "Cursor (Animate UI, Primitives)",
     description:
       "An animated cursor component that allows you to customize both the cursor and cursor follow elements with smooth animations.",
     source: "animateui",
@@ -1193,7 +1193,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-animate-tabs",
     id: "animateui-primitives-animate-tabs",
-    name: "Tabs (Animate UI)",
+    name: "Tabs (Animate UI, Primitives)",
     description:
       "A set of layered sections with the same height of content—known as tab panels—that are displayed one at a time.",
     source: "animateui",
@@ -1208,7 +1208,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-animate-tooltip",
     id: "animateui-primitives-animate-tooltip",
-    name: "Tooltip (Animate UI)",
+    name: "Tooltip (Animate UI, Primitives)",
     description: "A tooltip is a small box that appears when hovering over an element.",
     source: "animateui",
     sourceUrl: "https://animate-ui.com/docs/primitives/animate/tooltip",
@@ -1222,7 +1222,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-radix-accordion",
     id: "animateui-primitives-radix-accordion",
-    name: "Accordion (Radix)",
+    name: "Accordion (Radix, Primitives)",
     description:
       "A vertically stacked set of interactive headings that each reveal an associated section of content.",
     source: "animateui",
@@ -1237,7 +1237,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-radix-alert-dialog",
     id: "animateui-primitives-radix-alert-dialog",
-    name: "Alert Dialog (Radix)",
+    name: "Alert Dialog (Radix, Primitives)",
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
     source: "animateui",
@@ -1252,7 +1252,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-radix-checkbox",
     id: "animateui-primitives-radix-checkbox",
-    name: "Checkbox (Radix)",
+    name: "Checkbox (Radix, Primitives)",
     description: "A control that allows the user to toggle between checked and not checked.",
     source: "animateui",
     sourceUrl: "https://animate-ui.com/docs/primitives/radix/checkbox",
@@ -1280,7 +1280,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-radix-dialog",
     id: "animateui-primitives-radix-dialog",
-    name: "Dialog (Radix)",
+    name: "Dialog (Radix, Primitives)",
     description:
       "A window overlaid on either the primary window or another dialog window, rendering the content underneath inert.",
     source: "animateui",
@@ -1295,7 +1295,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-radix-dropdown-menu",
     id: "animateui-primitives-radix-dropdown-menu",
-    name: "Dropdown Menu (Radix)",
+    name: "Dropdown Menu (Radix, Primitives)",
     description:
       "Displays a menu to the user — such as a set of actions or functions — triggered by a button.",
     source: "animateui",
@@ -1310,7 +1310,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-radix-files",
     id: "animateui-primitives-radix-files",
-    name: "Files (Radix)",
+    name: "Files (Radix, Primitives)",
     description: "A component that allows you to display a list of files and folders.",
     source: "animateui",
     sourceUrl: "https://animate-ui.com/docs/primitives/radix/files",
@@ -1324,7 +1324,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-radix-hover-card",
     id: "animateui-primitives-radix-hover-card",
-    name: "Hover Card (Radix)",
+    name: "Hover Card (Radix, Primitives)",
     description: "For sighted users to preview content available behind a link.",
     source: "animateui",
     sourceUrl: "https://animate-ui.com/docs/primitives/radix/hover-card",
@@ -1338,7 +1338,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-radix-popover",
     id: "animateui-primitives-radix-popover",
-    name: "Popover (Radix)",
+    name: "Popover (Radix, Primitives)",
     description: "Displays rich content in a portal, triggered by a button.",
     source: "animateui",
     sourceUrl: "https://animate-ui.com/docs/primitives/radix/popover",
@@ -1352,7 +1352,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-radix-preview-link-card",
     id: "animateui-primitives-radix-preview-link-card",
-    name: "Preview Link Card (Radix)",
+    name: "Preview Link Card (Radix, Primitives)",
     description: "Displays a preview image of a link when hovered.",
     source: "animateui",
     sourceUrl: "https://animate-ui.com/docs/primitives/radix/preview-link-card",
@@ -1366,7 +1366,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-radix-progress",
     id: "animateui-primitives-radix-progress",
-    name: "Progress (Radix)",
+    name: "Progress (Radix, Primitives)",
     description:
       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
     source: "animateui",
@@ -1381,7 +1381,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-radix-radio-group",
     id: "animateui-primitives-radix-radio-group",
-    name: "Radio Group (Radix)",
+    name: "Radio Group (Radix, Primitives)",
     description:
       "A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time.",
     source: "animateui",
@@ -1396,7 +1396,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-radix-sheet",
     id: "animateui-primitives-radix-sheet",
-    name: "Sheet (Radix)",
+    name: "Sheet (Radix, Primitives)",
     description:
       "Extends the Dialog component to display content that complements the main content of the screen.",
     source: "animateui",
@@ -1411,7 +1411,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-radix-switch",
     id: "animateui-primitives-radix-switch",
-    name: "Switch (Radix)",
+    name: "Switch (Radix, Primitives)",
     description: "A control that allows the user to toggle between checked and not checked.",
     source: "animateui",
     sourceUrl: "https://animate-ui.com/docs/primitives/radix/switch",
@@ -1425,7 +1425,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-radix-tabs",
     id: "animateui-primitives-radix-tabs",
-    name: "Tabs (Radix)",
+    name: "Tabs (Radix, Primitives)",
     description:
       "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
     source: "animateui",
@@ -1440,7 +1440,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-radix-toggle",
     id: "animateui-primitives-radix-toggle",
-    name: "Toggle (Radix)",
+    name: "Toggle (Radix, Primitives)",
     description: "A two-state button that can be either on or off.",
     source: "animateui",
     sourceUrl: "https://animate-ui.com/docs/primitives/radix/toggle",
@@ -1454,7 +1454,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-radix-toggle-group",
     id: "animateui-primitives-radix-toggle-group",
-    name: "Toggle Group (Radix)",
+    name: "Toggle Group (Radix, Primitives)",
     description: "A set of two-state buttons that can be toggled on or off.",
     source: "animateui",
     sourceUrl: "https://animate-ui.com/docs/primitives/radix/toggle-group",
@@ -1468,7 +1468,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-radix-tooltip",
     id: "animateui-primitives-radix-tooltip",
-    name: "Tooltip (Radix)",
+    name: "Tooltip (Radix, Primitives)",
     description:
       "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
     source: "animateui",
@@ -1483,7 +1483,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-base-accordion",
     id: "animateui-primitives-base-accordion",
-    name: "Accordion (Base UI)",
+    name: "Accordion (Base UI, Primitives)",
     description: "A set of collapsible panels with headings.",
     source: "animateui",
     sourceUrl: "https://animate-ui.com/docs/primitives/base/accordion",
@@ -1497,7 +1497,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-base-alert-dialog",
     id: "animateui-primitives-base-alert-dialog",
-    name: "Alert Dialog (Base UI)",
+    name: "Alert Dialog (Base UI, Primitives)",
     description: "A dialog that requires user response to proceed.",
     source: "animateui",
     sourceUrl: "https://animate-ui.com/docs/primitives/base/alert-dialog",
@@ -1511,7 +1511,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-base-checkbox",
     id: "animateui-primitives-base-checkbox",
-    name: "Checkbox (Base UI)",
+    name: "Checkbox (Base UI, Primitives)",
     description: "An easily stylable checkbox component.",
     source: "animateui",
     sourceUrl: "https://animate-ui.com/docs/primitives/base/checkbox",
@@ -1539,7 +1539,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-base-dialog",
     id: "animateui-primitives-base-dialog",
-    name: "Dialog (Base UI)",
+    name: "Dialog (Base UI, Primitives)",
     description: "A popup that opens on top of the entire page.",
     source: "animateui",
     sourceUrl: "https://animate-ui.com/docs/primitives/base/dialog",
@@ -1553,7 +1553,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-base-files",
     id: "animateui-primitives-base-files",
-    name: "Files (Base UI)",
+    name: "Files (Base UI, Primitives)",
     description: "A component that allows you to display a list of files and folders.",
     source: "animateui",
     sourceUrl: "https://animate-ui.com/docs/primitives/base/files",
@@ -1567,7 +1567,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-base-menu",
     id: "animateui-primitives-base-menu",
-    name: "Menu (Base UI)",
+    name: "Menu (Base UI, Primitives)",
     description: "A list of actions in a dropdown, enhanced with keyboard navigation.",
     source: "animateui",
     sourceUrl: "https://animate-ui.com/docs/primitives/base/menu",
@@ -1581,7 +1581,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-base-popover",
     id: "animateui-primitives-base-popover",
-    name: "Popover (Base UI)",
+    name: "Popover (Base UI, Primitives)",
     description: "An accessible popup anchored to a button.",
     source: "animateui",
     sourceUrl: "https://animate-ui.com/docs/primitives/base/popover",
@@ -1595,7 +1595,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-base-preview-card",
     id: "animateui-primitives-base-preview-card",
-    name: "Preview Card (Base UI)",
+    name: "Preview Card (Base UI, Primitives)",
     description:
       "A popup that appears when a link is hovered, showing a preview for sighted users.",
     source: "animateui",
@@ -1610,7 +1610,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-base-preview-link-card",
     id: "animateui-primitives-base-preview-link-card",
-    name: "Preview Link Card (Base UI)",
+    name: "Preview Link Card (Base UI, Primitives)",
     description: "Displays a preview image of a link when hovered.",
     source: "animateui",
     sourceUrl: "https://animate-ui.com/docs/primitives/base/preview-link-card",
@@ -1624,7 +1624,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-base-progress",
     id: "animateui-primitives-base-progress",
-    name: "Progress (Base UI)",
+    name: "Progress (Base UI, Primitives)",
     description: "Displays the status of a task that takes a long time.",
     source: "animateui",
     sourceUrl: "https://animate-ui.com/docs/primitives/base/progress",
@@ -1638,7 +1638,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-base-radio",
     id: "animateui-primitives-base-radio",
-    name: "Radio (Base UI)",
+    name: "Radio (Base UI, Primitives)",
     description: "An easily stylable radio button component.",
     source: "animateui",
     sourceUrl: "https://animate-ui.com/docs/primitives/base/radio",
@@ -1652,7 +1652,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-base-switch",
     id: "animateui-primitives-base-switch",
-    name: "Switch (Base UI)",
+    name: "Switch (Base UI, Primitives)",
     description: "A control that indicates whether a setting is on or off.",
     source: "animateui",
     sourceUrl: "https://animate-ui.com/docs/primitives/base/switch",
@@ -1666,7 +1666,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-base-tabs",
     id: "animateui-primitives-base-tabs",
-    name: "Tabs (Base UI)",
+    name: "Tabs (Base UI, Primitives)",
     description:
       "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
     source: "animateui",
@@ -1681,7 +1681,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-base-toggle",
     id: "animateui-primitives-base-toggle",
-    name: "Toggle (Base UI)",
+    name: "Toggle (Base UI, Primitives)",
     description: "A two-state button that can be on or off.",
     source: "animateui",
     sourceUrl: "https://animate-ui.com/docs/primitives/base/toggle",
@@ -1695,7 +1695,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-base-toggle-group",
     id: "animateui-primitives-base-toggle-group",
-    name: "Toggle Group (Base UI)",
+    name: "Toggle Group (Base UI, Primitives)",
     description: "Provides a shared state to a series of toggle buttons.",
     source: "animateui",
     sourceUrl: "https://animate-ui.com/docs/primitives/base/toggle-group",
@@ -1709,7 +1709,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-base-tooltip",
     id: "animateui-primitives-base-tooltip",
-    name: "Tooltip (Base UI)",
+    name: "Tooltip (Base UI, Primitives)",
     description:
       "A popup that appears when an element is hovered or focused, showing a hint for sighted users.",
     source: "animateui",
@@ -1724,7 +1724,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-headless-checkbox",
     id: "animateui-primitives-headless-checkbox",
-    name: "Checkbox (Headless UI)",
+    name: "Checkbox (Headless UI, Primitives)",
     description:
       "Checkboxes provide the same functionality as native HTML checkboxes, without any of the styling, giving you a clean slate to design them however you'd like.",
     source: "animateui",
@@ -1739,7 +1739,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-headless-dialog",
     id: "animateui-primitives-headless-dialog",
-    name: "Dialog (Headless UI)",
+    name: "Dialog (Headless UI, Primitives)",
     description:
       "A fully-managed, renderless dialog component jam-packed with accessibility and keyboard features, perfect for building completely custom dialogs and alerts.",
     source: "animateui",
@@ -1769,7 +1769,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-headless-popover",
     id: "animateui-primitives-headless-popover",
-    name: "Popover (Headless UI)",
+    name: "Popover (Headless UI, Primitives)",
     description:
       "Popovers are perfect for floating panels with arbitrary content like navigation menus, mobile menus and flyout menus.",
     source: "animateui",
@@ -1784,7 +1784,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-headless-switch",
     id: "animateui-primitives-headless-switch",
-    name: "Switch (Headless UI)",
+    name: "Switch (Headless UI, Primitives)",
     description:
       "Switches are a pleasant interface for toggling a value between two states, and offer the same semantics and keyboard navigation as native checkbox elements.",
     source: "animateui",
@@ -1799,7 +1799,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-headless-tabs",
     id: "animateui-primitives-headless-tabs",
-    name: "Tabs (Headless UI)",
+    name: "Tabs (Headless UI, Primitives)",
     description:
       "Easily create accessible, fully customizable tab interfaces, with robust focus management and keyboard navigation support.",
     source: "animateui",
@@ -1814,7 +1814,7 @@ export const animateui: UIEntry[] = [
   {
     previewKey: "animateui-primitives-buttons-button",
     id: "animateui-primitives-buttons-button",
-    name: "Button",
+    name: "Button (Primitives)",
     description: "A simple button that animates on hover and tap.",
     source: "animateui",
     sourceUrl: "https://animate-ui.com/docs/primitives/buttons/button",
