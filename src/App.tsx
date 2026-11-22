@@ -40,10 +40,17 @@ export default function App() {
     window.scrollTo(0, 0);
     setMobileNavOpen(false);
     document.title = pageTitle(location.pathname);
-    if (lastPathname.current !== null && lastPathname.current !== location.pathname) {
-      setAnnouncement(`Navigated to ${pageName(location.pathname)}`);
-    }
+    const isNavigation =
+      lastPathname.current !== null && lastPathname.current !== location.pathname;
     lastPathname.current = location.pathname;
+    if (!isNavigation) return;
+    // clear first so repeated identical messages (e.g. two "Accordion" pages) are re-announced
+    setAnnouncement("");
+    const id = window.setTimeout(
+      () => setAnnouncement(`Navigated to ${pageName(location.pathname)}`),
+      100,
+    );
+    return () => window.clearTimeout(id);
   }, [location.pathname]);
 
   return (
