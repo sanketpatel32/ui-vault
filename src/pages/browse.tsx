@@ -1,9 +1,8 @@
 import { useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
 import { X } from "lucide-react";
-import { entries } from "@/data";
 import { sourceById, categoryBySlug } from "@/lib/registry";
-import { searchEntries } from "@/lib/search";
+import { browseResults } from "@/lib/browse";
 import { FilterBar, type Filters } from "@/components/filter-bar";
 import { EntryCard } from "@/components/entry-card";
 import { EmptyState } from "@/components/empty-state";
@@ -39,23 +38,7 @@ export function Browse() {
     setParams(p, { replace: true });
   };
 
-  const results = useMemo(() => {
-    let list = entries;
-    if (cat) list = list.filter((e) => e.category === cat);
-    if (filters.src) list = list.filter((e) => e.source === filters.src);
-    if (filters.lic) list = list.filter((e) => e.license === filters.lic);
-    if (filters.tag) list = list.filter((e) => e.tags.includes(filters.tag));
-    if (filters.q.trim()) {
-      const ids = new Set(searchEntries(filters.q, entries.length).map((e) => e.id));
-      list = list.filter((e) => ids.has(e.id));
-    }
-    if (sort === "name") list = [...list].sort((a, b) => a.name.localeCompare(b.name));
-    if (sort === "source")
-      list = [...list].sort(
-        (a, b) => a.source.localeCompare(b.source) || a.name.localeCompare(b.name),
-      );
-    return list;
-  }, [cat, filters, sort]);
+  const results = useMemo(() => browseResults({ ...filters, cat, sort }), [cat, filters, sort]);
 
   const activeFilters: { key: keyof Filters | "cat"; label: string }[] = [];
   if (cat) {
