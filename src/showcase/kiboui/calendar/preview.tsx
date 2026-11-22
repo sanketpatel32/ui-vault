@@ -72,7 +72,7 @@ export default function Preview() {
             </CalendarDate>
             <CalendarHeader />
             <CalendarBody features={features}>
-              {({ feature }) => <CalendarItem feature={feature} />}
+              {({ feature }) => <CalendarItem feature={feature} key={feature.id} />}
             </CalendarBody>
           </CalendarProvider>
         </div>
