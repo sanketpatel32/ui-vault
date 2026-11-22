@@ -48,32 +48,13 @@ The `vp` CLI lives at `~/AppData/Local/vite-plus/bin/vp`; in Git Bash it may nee
 | `npm run preview`        | Preview the production build (`vp preview`)                  |
 | `npm run check`          | Format + lint + type checks together (oxfmt/oxlint/tsgolint) |
 | `npm run format`         | Format everything (oxfmt — double quotes)                    |
+| `npm test`               | Unit tests via `vp test run` (Vitest, `src/**/*.test.ts`)    |
 | `npm run lint`           | Lint only (oxlint)                                           |
 | `npm run llms`           | Regenerate all `public/llms*` artifacts from `src/data/`     |
 | `npm run registry:check` | Validate registry ids/slugs/sources/licensing/loaders        |
 
 **Before every commit:** run `npm run check` and, if you touched `src/data/`,
 `npm run registry:check` + `npm run llms`.
-
-## Automated PR checks (bots)
-
-Every PR runs three free, key-less workflows:
-
-| Workflow                        | What it does                                                                                     |
-| ------------------------------- | ------------------------------------------------------------------------------------------------ |
-| **CI** (`.github/workflows/ci.yml`) | Regenerates llms artifacts and **fails if the committed ones are stale** (golden rule 3), then `tsc -b` typecheck, `npm run registry:check`, and a full production build. |
-| **PR review bots** (`.github/workflows/pr-review.yml`) | Posts oxlint findings as **inline line-annotated review comments** (non-blocking — vendored code carries pre-existing warnings, tracked via audit issues), and a hygiene bot that applies a `size:XS…XL` label, nudges on missing PR descriptions, and explains the `llms.txt` regeneration rule if `src/data/` changed without artifacts. |
-| **CodeQL** (repo default setup) | Free GitHub security analysis for JavaScript/TypeScript on every PR and push to `main`.            |
-
-Notes:
-
-- CI does **not** gate on `npm run check` (the full vp lint/type stack reports 4
-  pre-existing errors inside vendored showcase files — tracked in the Nov 2026
-  audit issues). Until those are resolved, CI gates on what deploy proves green:
-  typecheck + build + registry guard + llms freshness.
-- AI-assisted review (CodeRabbit / Qodo PR-Agent / Gemini CLI action) needs
-  either a third-party GitHub App install or an API key secret — see the
-  tracking issue for the exact setup steps before adding one.
 
 ## Adding a component (the standard workflow)
 
