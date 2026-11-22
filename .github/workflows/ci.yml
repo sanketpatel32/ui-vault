@@ -34,11 +34,17 @@ jobs:
       - name: Fail if committed llms artifacts are stale
         run: git diff --exit-code public/
 
+      - name: Format + lint + typecheck (oxfmt / oxlint / tsgolint)
+        run: npm run check
+
       - name: Typecheck (tsc -b)
         run: npx tsc -b
 
       - name: Registry guard (ids, slugs, sources, licensing, loaders)
         run: npm run registry:check
+
+      - name: Tests
+        run: npm test
 
       - name: Production build
         run: npm run build
