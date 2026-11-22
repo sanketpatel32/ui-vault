@@ -16,7 +16,7 @@ interface ErrorBoundaryState {
   hasError: boolean;
 }
 
-class PreviewErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
+export class PreviewErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
   constructor(props: ErrorBoundaryProps) {
     super(props);
     this.state = { hasError: false };
