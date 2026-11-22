@@ -12,6 +12,7 @@
     "lint": "vp lint",
     "check": "vp check",
     "format": "vp fmt",
+    "test": "vp test run",
     "llms": "tsx scripts/generate-llms.ts",
     "registry:check": "tsx scripts/registry-check.ts"
   },

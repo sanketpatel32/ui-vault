@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Format + lint + typecheck (oxfmt / oxlint / tsgolint)
+        run: npm run check
+
+      - name: Registry check (ids, slugs, licensing guard)
+        run: npm run registry:check
+
+      - name: Tests
+        run: npm test
+
+      - name: Build (regenerates llms.txt first via prebuild hook)
+        run: npm run build
