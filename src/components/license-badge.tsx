@@ -34,7 +34,7 @@ export function PreviewBadge({ entry, className }: { entry: UIEntry; className?:
   if (!entry.previewKey) return null;
   return (
     <Badge
-      className={cn("border-accent/30 bg-accent-soft text-accent", className)}
+      className={cn("border-accent/30 bg-accent-soft text-accent-text", className)}
       title="Vendored — renders live in UI Vault"
     >
       Preview

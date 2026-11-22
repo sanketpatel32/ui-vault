@@ -11,7 +11,7 @@ export function StarButton({ id, className }: { id: string; className?: string }
       aria-pressed={active}
       className={cn(
         "inline-flex h-7 w-7 cursor-pointer items-center justify-center rounded-md transition-colors",
-        active ? "text-amber-400" : "text-muted-fg/60 hover:text-amber-300",
+        active ? "text-amber-400" : "text-faint-fg hover:text-amber-300",
         className,
       )}
       onClick={(e) => {
