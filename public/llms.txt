@@ -4,7 +4,7 @@
 > (open-source animated React libraries and component registries), organized into one
 > categorized, searchable library. Every entry ships free code with its source, license,
 > install command and — where vendored — a live React preview. No backend: the catalog itself
-> lives in TypeScript files under src/data (967 entries, 17 sources, 23 categories).
+> lives in TypeScript files under src/data (1003 entries, 18 sources, 23 categories).
 
 ## Sources
 
@@ -25,6 +25,7 @@
 - [Kibo UI](https://www.kibo-ui.com) — The shadcn registry for everything that doesn't exist yet. (MIT, live-previewable, 40 cataloged)
 - [EasyUI](https://easyui.site) — Micro-animated, physics-based, dark-mode-first React components. (MIT, live-previewable, 137 cataloged)
 - [editorcn](https://www.rtecn.space) — Rich text editors for React, built on Tiptap with shadcn/ui tokens. (MIT, live-previewable, 16 cataloged)
+- [loading.dev](https://loading.dev) — Beautiful loading indicators for React. (MIT, live-previewable, 36 cataloged)
 
 ## Categories
 
@@ -39,7 +40,7 @@
 - `overlays` Overlays (96) — Dialogs, drawers, popovers, tooltips, toasts and command bars.
 - `numbers` Numbers & Counters (16) — Animated numbers, tickers and odometers.
 - `micro-interactions` Micro-interactions (130) — Cursor tricks, physics toys and small moments of delight.
-- `feedback` Feedback & Status (54) — Spinners, progress, skeletons, empty states and notifications.
+- `feedback` Feedback & Status (90) — Spinners, progress, skeletons, empty states and notifications.
 - `data-display` Data Display (75) — Tables, charts, stats, badges and avatars for showing data.
 - `chat` Chat & AI (13) — Chat and AI conversation UI — bubbles, message streams, attachments.
 

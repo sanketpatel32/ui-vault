@@ -269,4 +269,20 @@ export const sources: Source[] = [
       "MIT (github.com/shadcn-labs/editorcn). Prerequisite: Tiptap (@tiptap/* >=2.11.5 <4, pulled in as item dependencies). The @editorcn namespace (npx shadcn@latest add @editorcn/<name>) needs a components.json registries entry; the URL form works without config. The 8 icon-pack variants (Phosphor, Tabler, HugeIcons, Remix Icon for editor and block-editor) only overwrite icons.tsx and are not cataloged separately.",
     color: "#c084fc",
   },
+  {
+    id: "loadingdev",
+    name: "loading.dev",
+    url: "https://loading.dev",
+    tagline: "Beautiful loading indicators for React.",
+    description:
+      "36 lightweight spinner and loading-indicator components (Arc, Atom, Blocks \u2026 Wave) shipped as one npm package. Every indicator takes size, color and duration props, exposes playState and respects reduced motion \u2014 pure CSS/SVG, no Tailwind needed.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "css", "svg"],
+    install: "npm install loading-dev",
+    installLabel: "npm",
+    notes:
+      'MIT (github.com/jakubkrehel/loading). Requires React 19 (peer react >=19.0.0). Import by name: import { Arc } from "loading-dev".',
+    color: "#a3e635",
+  },
 ];
