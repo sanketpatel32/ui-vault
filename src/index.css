@@ -605,6 +605,15 @@ body {
   .theme-anim * {
     transition: none !important;
   }
+  /* live previews: finish CSS keyframes/transitions instantly (incl. looping --animate-* utilities) */
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* home hero — quiet dot grid, fading toward the fold */
