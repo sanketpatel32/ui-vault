@@ -1,17 +1,15 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
-/** Counts from 0 to `target` once, eased; instant when reduced motion is preferred. */
+const prefersReducedMotion = () =>
+  typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/** Counts from 0 to `target`, eased; instant when reduced motion is preferred. */
 export function useCountUp(target: number, duration = 900): number {
+  const [reduced] = useState(prefersReducedMotion);
   const [value, setValue] = useState(0);
-  const started = useRef(false);
 
   useEffect(() => {
-    if (started.current) return;
-    started.current = true;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setValue(target);
-      return;
-    }
+    if (reduced) return;
     let raf = 0;
     const t0 = performance.now();
     const tick = (t: number) => {
@@ -21,7 +19,7 @@ export function useCountUp(target: number, duration = 900): number {
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [target, duration]);
+  }, [target, duration, reduced]);
 
-  return value;
+  return reduced ? target : value;
 }

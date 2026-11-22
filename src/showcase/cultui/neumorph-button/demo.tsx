@@ -1,3 +1,4 @@
+import { useSafeTimeout } from "@/showcase/_shared/use-safe-timeout";
 import type _React from "react";
 import { useState } from "react";
 
@@ -6,9 +7,11 @@ import NeumorphButton from "./neumorph-button";
 export default function NeumorphButtonDemo() {
   const [loading, setLoading] = useState(false);
 
+  const safeTimeout = useSafeTimeout();
+
   const handleClick = () => {
     setLoading(true);
-    setTimeout(() => setLoading(false), 2000);
+    safeTimeout(() => setLoading(false), 2000);
   };
 
   return (

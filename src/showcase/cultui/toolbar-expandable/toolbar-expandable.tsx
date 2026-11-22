@@ -1,3 +1,4 @@
+import { useSafeTimeout } from "@/showcase/_shared/use-safe-timeout";
 import React, { useCallback, useEffect, useMemo, useRef, useState, type RefObject } from "react";
 import * as ScrollAreaPrimitive from "@radix-ui/react-scroll-area";
 import { AnimatePresence, motion, MotionConfig } from "motion/react";
@@ -127,6 +128,8 @@ const DynamicToolbarExpandable = React.memo<DynamicToolbarExpandableProps>(
       [steps.length],
     );
 
+    const safeTimeout = useSafeTimeout();
+
     const handleNavClick = useCallback(
       (item: string) => {
         if (active === item && isOpen) {
@@ -140,14 +143,23 @@ const DynamicToolbarExpandable = React.memo<DynamicToolbarExpandableProps>(
         setIsOpen(true);
 
         if (currentIndex >= 0) {
-          setTimeout(() => {
+          safeTimeout(() => {
             scrollButtonIntoView(currentIndex, previousIndex);
           }, 100);
 
           setPreviousIndex(currentIndex);
         }
       },
-      [active, isOpen, steps, scrollButtonIntoView, previousIndex, setActive, setIsOpen],
+      [
+        active,
+        isOpen,
+        steps,
+        scrollButtonIntoView,
+        previousIndex,
+        setActive,
+        setIsOpen,
+        safeTimeout,
+      ],
     );
 
     const renderContent = useCallback(() => {

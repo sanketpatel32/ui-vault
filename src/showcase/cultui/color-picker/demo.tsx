@@ -1,3 +1,4 @@
+import { useSafeTimeout } from "@/showcase/_shared/use-safe-timeout";
 import { useCallback, useState } from "react";
 import { Check, Copy, Lock, LockOpen, RefreshCw } from "lucide-react";
 import { motion } from "motion/react";
@@ -112,6 +113,8 @@ export default function ColorPickerDemo() {
     setLockedColor(null);
   }, []);
 
+  const safeTimeout = useSafeTimeout();
+
   const copyColorScheme = useCallback(() => {
     const cssVariables = Object.entries(colorScheme)
       .map(([key, value]) => `--${key}: ${value};`)
@@ -125,8 +128,8 @@ export default function ColorPickerDemo() {
 
     navigator.clipboard.writeText(fullCss);
     setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  }, [colorScheme]);
+    safeTimeout(() => setCopied(false), 2000);
+  }, [colorScheme, safeTimeout]);
 
   const getContrastColor = useCallback((color: string) => {
     const [, , lightness] = color.split(" ").map(parseFloat);
@@ -221,7 +224,7 @@ export default function ColorPickerDemo() {
                           onClick={() => {
                             navigator.clipboard.writeText(`--${key}: ${value};`);
                             setCopied(true);
-                            setTimeout(() => setCopied(false), 2000);
+                            safeTimeout(() => setCopied(false), 2000);
                           }}
                           style={{
                             backgroundColor: `hsl(${value})`,

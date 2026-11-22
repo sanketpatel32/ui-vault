@@ -3,7 +3,7 @@
 - URL: https://animata.design
 - License: MIT — live-previewable
 - Stack: react, typescript, tailwind, motion
-- Install: `npx shadcn@latest add https://animata.design/r/<name>.json`
+- Install: `npx shadcn@latest add https://animata.design/r/<section>/<name>.json`
 - Notes: MIT (github.com/codse/animata). Catalog carries the published set only — every source link resolves on the live site.
 - Cataloged in UI Vault: 154 entries
 ## Entries

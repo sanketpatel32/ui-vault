@@ -1,6 +1,6 @@
 # AGENTS.md — UI Vault
 
-Personal, frontend-only React hub that aggregates UI components from the 6 free, vendorable sources into one categorized, searchable, previewable library. **The owner is the only user.** There is no backend and there never will be one.
+Personal, frontend-only React hub that aggregates UI components from the 15 free, vendorable sources into one categorized, searchable, previewable library. **The owner is the only user.** There is no backend and there never will be one.
 
 **Registry policy (v0.3.0, owner decision 2026-08-29): the registry carries ONLY vendorable sources.** Paid/gated/gallery sources (21st.dev, shadcnStudio, UI Layouts Pro, Cue, CollectUI, The Component Gallery) were removed from `src/data/` entirely — every entry must be something we can actually show (free code + install command). Do not re-add link-out entries or link-out-only sources; if the owner asks for a paid/gated source, surface the policy before doing it.
 
@@ -20,7 +20,9 @@ Personal, frontend-only React hub that aggregates UI components from the 6 free,
 | ---------------------------- | ------------------------------------------------------------ |
 | `npm run dev`                | Dev server via `vp dev` (runs `llms` first via predev hook)  |
 | `npm run build`              | `tsc -b && vp build` (runs `llms` first)                     |
+| `npm run preview`            | Serve the production build locally (`vp preview`)            |
 | `npm run check` / `vp check` | Format + lint + type checks together (oxfmt/oxlint/tsgolint) |
+| `npm run lint` / `vp lint`   | Lint only (oxlint)                                           |
 | `npm run format` / `vp fmt`  | Format everything (oxfmt — double quotes)                    |
 | `npm test`                   | Unit tests via `vp test run` (Vitest, `src/**/*.test.ts`)    |
 | `npm run llms`               | Regenerate all llms.txt artifacts from `src/data/`           |
@@ -56,6 +58,9 @@ Fresh checkout: `npm install` (or `vp install`) first.
 | animate-ui.com         | `animateui`        | MIT + Commons Clause            | ✅ yes (154, v0.4.0)  |
 | launchuicomponents.com | `launchui`         | MIT (+ $99 Pro sections)        | ✅ free set only (16) |
 | coss.com/origin        | `originui`         | MIT (legacy snapshot in coss)   | ✅ yes (31 families)  |
+| coss.com/ui            | `cossui`           | MIT (apps/ui carve-out)         | ✅ yes (111, v0.6.0)  |
+| cult-ui.com            | `cultui`           | MIT (Cult Pro is paid)          | ✅ free set only (77) |
+| kibo-ui.com            | `kiboui`           | MIT (shadcnblocks/kibo)         | ✅ yes (40, v0.6.0)   |
 | 21st.dev               | `21st`             | Freemium (2 copies/day)         | ❌ removed in v0.3.0  |
 | shadcnstudio.com       | `shadcnstudio`     | Free tier + $249 Pro            | ❌ removed in v0.3.0  |
 | pro.ui-layouts.com     | `uilayouts`        | Paid ($139+)                    | ❌ removed in v0.3.0  |
@@ -63,9 +68,11 @@ Fresh checkout: `npm install` (or `vp install`) first.
 | collectui.com          | `collectui`        | Free gallery                    | ❌ removed in v0.3.0  |
 | component.gallery      | `componentgallery` | Free reference                  | ❌ removed in v0.3.0  |
 
-Install commands for the vendorable sources: `npx jsrepo add react-bits/<Name>` · `npx motion-primitives@latest add <name>` · shadcn registry `@fancy` (fancycomponents.dev/r/{name}.json) · `npm i @number-flow/react` · watermelon: `npx shadcn@latest add https://registry.watermelon.sh/r/<name>.json` · aceternity: `npx aceternity-ui@latest add <name>` · shadcn: `npx shadcn@latest add <component>` · magicui: `npx shadcn@latest add @magicui/<component>` · animata: `npx shadcn@latest add https://animata.design/r/<name>.json` · animateui: `npx shadcn@latest add @animate-ui/<slug>` · launchui: `npx shadcn@latest add @launchui/<block>` · originui: `npx shadcn@latest add https://coss.com/origin/r/<family>.json`.
+Install commands for the vendorable sources: `npx shadcn@latest add @react-bits/<Name>-TS-TW` (suffix = JS|TS + CSS|TW) · `npx motion-primitives@latest add <name>` · shadcn registry `@fancy` (fancycomponents.dev/r/{name}.json) · `npm i @number-flow/react` · watermelon: `npx shadcn@latest add https://registry.watermelon.sh/r/<name>.json` · aceternity: `npx shadcn@latest add @aceternity/<name>` · shadcn: `npx shadcn@latest add <component>` · magicui: `npx shadcn@latest add @magicui/<component>` · animata: `npx shadcn@latest add https://animata.design/r/<section>/<name>.json` · animateui: `npx shadcn@latest add @animate-ui/<slug>` · launchui: `npx shadcn@latest add @launchui/<block>` · originui: `npx shadcn@latest add https://coss.com/origin/r/<family>.json` · cossui: `npx shadcn@latest add @coss/<component>` · cultui: `npx shadcn@latest add https://cult-ui.com/r/<name>.json` · kiboui: `npx kibo-ui add <component>`.
 
 v0.4.0 research notes (research/*.json has the full extracted sets): Animata carries its 154 _published_ components only — the repo documents 198 but 44 have no live docs page yet. Animate UI names Radix/Base UI/Headless UI variants with a suffix ("Accordion (Radix)") — ids carry the section prefix. Origin UI is family-granularity (31 families ≈ 599 variants; per-variant registry files exist at coss.com/origin/r/).
+
+v0.6.0/v0.7.0 notes: COSS UI (Origin UI's successor) carries 55 components + 2 hooks + 54 particle families (508 particles, cataloged per family) — MIT because `apps/ui` is carved out of the AGPL cosscom/coss monorepo by its root LICENSING.md. Cult UI carries the 77 MIT repo components only (Cult Pro is a separate paid product); its site sits behind a bot challenge, so code is vendored from the identical registry JSON in github.com/nolly-studio/cult-ui (`apps/www/public/r`). Kibo UI carries its 40 registry components; the 28 site blocks are CLI-only (no registry endpoint) and not cataloged. v0.7.0 brought live-preview coverage to 814/814.
 
 ## Adding a component (the standard workflow)
 
@@ -78,7 +85,8 @@ v0.4.0 research notes (research/*.json has the full extracted sets): Animata car
 ## File map
 
 ```
-src/data/        sources.ts, categories.ts, types.ts, components/*.ts (6)   ← the "backend"
+src/data/        sources.ts, categories.ts, types.ts, index.ts (merger),
+                 components/*.ts (15)                                     ← the "backend"
 src/lib/         utils (cn), registry selectors, search (fuse), store (localStorage), theme
 src/components/  hub's own UI: ui/ primitives, sidebar, topbar, command-palette,
                  entry-card, preview-frame, filter-bar, badges, code-block
