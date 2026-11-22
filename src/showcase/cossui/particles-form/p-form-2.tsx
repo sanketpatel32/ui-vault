@@ -1,3 +1,4 @@
+import { useSafeTimeout } from "@/showcase/_shared/use-safe-timeout";
 import type { FormEvent } from "react";
 import { useState } from "react";
 import { z } from "zod";
@@ -35,12 +36,14 @@ export default function Particle() {
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState<Errors>({});
 
+  const safeTimeout = useSafeTimeout();
+
   const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
     setLoading(true);
     const response = await submitForm(event);
-    await new Promise((r) => setTimeout(r, 800));
+    await new Promise((r) => safeTimeout(() => r(undefined), 800));
     setErrors(response.errors);
     setLoading(false);
     if (Object.keys(response.errors).length === 0) {

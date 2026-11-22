@@ -14,6 +14,11 @@ import { originui } from "./components/originui";
 import { cossui } from "./components/cossui";
 import { cultui } from "./components/cultui";
 import { kiboui } from "./components/kiboui";
+import { streamdown } from "./components/streamdown";
+import { genloaders } from "./components/genloaders";
+import { uisdk } from "./components/uisdk";
+import { wterm } from "./components/wterm";
+import { skullet } from "./components/skullet";
 import { easyui } from "./components/easyui";
 import { editorcn } from "./components/editorcn";
 import { loadingdev } from "./components/loadingdev";
@@ -38,6 +43,11 @@ export const entries: UIEntry[] = [
   ...cossui,
   ...cultui,
   ...kiboui,
+  ...streamdown,
+  ...genloaders,
+  ...uisdk,
+  ...wterm,
+  ...skullet,
   ...easyui,
   ...editorcn,
   ...loadingdev,

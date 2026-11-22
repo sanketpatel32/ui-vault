@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const TARGET = "SECURITY_PROTOCOL_ACTIVATED";
 const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*";
@@ -6,7 +6,10 @@ const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*";
 export default function Preview() {
   const [text, setText] = useState(TARGET);
 
+  const timerRef = useRef<ReturnType<typeof setInterval> | undefined>(undefined);
+
   const scramble = () => {
+    clearInterval(timerRef.current);
     let iteration = 0;
     const interval = setInterval(() => {
       setText(
@@ -22,10 +25,12 @@ export default function Preview() {
       if (iteration >= TARGET.length) clearInterval(interval);
       iteration += 1 / 2;
     }, 30);
+    timerRef.current = interval;
   };
 
   useEffect(() => {
     scramble();
+    return () => clearInterval(timerRef.current);
   }, []);
 
   return (

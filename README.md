@@ -6,15 +6,15 @@
 
 [Live catalog](https://sanketpatel32.github.io/ui-vault/) · [Browse source](src/data/) · [Operating guide](AGENTS.md)
 
-**1440 entries · 23 categories · 20 sources · 814 live previews**
+**1548 entries · 23 categories · 25 sources · 814 live previews**
 
 </div>
 
-UI Vault brings vendorable components from twenty open-source libraries into a consistent taxonomy. It is frontend-only, keeps favorites locally, and publishes machine-readable indexes for developers and AI agents.
+UI Vault brings vendorable components from twenty-five open-source libraries into a consistent taxonomy. It is frontend-only, keeps favorites locally, and publishes machine-readable indexes for developers and AI agents.
 
 ## What it does
 
-- **One registry** — every component from the 20 vendorable sources, categorized into a
+- **One registry** — every component from the 25 vendorable sources, categorized into a
   unified taxonomy (text effects, backgrounds, buttons, cards, forms, overlays, data display,
   chat, heroes, dashboards, …), each with description, tags, license, deep link and install
   command. Every entry ships free code — paid/gated/gallery sources are not carried as
@@ -38,13 +38,16 @@ All vendorable (free code + install command): [React Bits](https://reactbits.dev
 [Animata](https://animata.design) · [Animate UI](https://animate-ui.com) (MIT + Commons Clause) ·
 [Launch UI](https://www.launchuicomponents.com) (free sections) ·
 [Origin UI](https://coss.com/origin) (MIT legacy snapshot, 599 variants) ·
-[COSS UI](https://coss.com/ui) · [Cult UI](https://cult-ui.com) · [Kibo UI](https://www.kibo-ui.com) ·
+[COSS UI](https://coss.com/ui) · [Cult UI](https://cult-ui.com) (MIT set; Cult Pro excluded) · [Kibo UI](https://www.kibo-ui.com) ·
+[Streamdown](https://streamdown.ai) (Apache-2.0) · [Generative Loaders](https://generativeloaders.com) ·
+[UI SDK](https://ui-sdk.dev) (Apache-2.0, beta) · [wterm](https://wterm.dev) (Apache-2.0) ·
+[Skullet](https://skullet.lochie.me) ·
 [EasyUI](https://easyui.site) · [editorcn](https://www.rtecn.space) (Tiptap) ·
 [loading.dev](https://loading.dev) · [Its Hover](https://itshover.com) (Apache-2.0) ·
 [Amicro](https://amicro.vercel.app)
 
 Not carried as entries (paid/gated/gallery — see `AGENTS.md`): 21st.dev, shadcnStudio,
-UI Layouts Pro, Cue, CollectUI, The Component Gallery; Launch UI Pro sections.
+UI Layouts Pro, Cue, CollectUI, The Component Gallery; Launch UI Pro sections; Cult Pro.
 
 ## Tech
 

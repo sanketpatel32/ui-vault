@@ -12,25 +12,30 @@ export function CopyButton({ text, className }: { text: string; className?: stri
   }, [copied]);
 
   return (
-    <button
-      type="button"
-      aria-label="Copy to clipboard"
-      className={cn(
-        "inline-flex h-7 w-7 cursor-pointer items-center justify-center rounded-md text-muted-fg transition-colors",
-        "hover:bg-muted hover:text-fg",
-        className,
-      )}
-      onClick={async (e) => {
-        e.stopPropagation();
-        try {
-          await navigator.clipboard.writeText(text);
-          setCopied(true);
-        } catch {
-          // clipboard unavailable — ignore
-        }
-      }}
-    >
-      {copied ? <Check size={14} className="text-emerald-400" /> : <Copy size={14} />}
-    </button>
+    <>
+      <button
+        type="button"
+        aria-label={copied ? "Copied" : "Copy to clipboard"}
+        className={cn(
+          "inline-flex h-7 w-7 cursor-pointer items-center justify-center rounded-md text-muted-fg transition-colors",
+          "hover:bg-muted hover:text-fg",
+          className,
+        )}
+        onClick={async (e) => {
+          e.stopPropagation();
+          try {
+            await navigator.clipboard.writeText(text);
+            setCopied(true);
+          } catch {
+            // clipboard unavailable — ignore
+          }
+        }}
+      >
+        {copied ? <Check size={14} className="text-emerald-400" /> : <Copy size={14} />}
+      </button>
+      <span role="status" className="sr-only">
+        {copied ? "Copied to clipboard" : ""}
+      </span>
+    </>
   );
 }

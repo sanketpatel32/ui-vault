@@ -1,6 +1,9 @@
+import { useSafeTimeout } from "@/showcase/_shared/use-safe-timeout";
 import { toastManager, ToastProvider } from "./toast";
 
 export default function Preview() {
+  const safeTimeout = useSafeTimeout();
+
   return (
     <ToastProvider position="bottom-right">
       <div className="w-full">
@@ -51,7 +54,7 @@ export default function Preview() {
               type="button"
               onClick={() =>
                 toastManager.promise(
-                  new Promise<string>((resolve) => window.setTimeout(() => resolve("ok"), 2000)),
+                  new Promise<string>((resolve) => safeTimeout(() => resolve("ok"), 2000)),
                   {
                     loading: "Saving your changes…",
                     success: "All changes saved",

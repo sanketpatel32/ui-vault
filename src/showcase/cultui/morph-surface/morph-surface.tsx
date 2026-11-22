@@ -1,3 +1,4 @@
+import { useSafeTimeout } from "@/showcase/_shared/use-safe-timeout";
 import React, {
   createContext,
   useContext,
@@ -134,6 +135,8 @@ function useMorphSurfaceLogic({
   const isOpen = controlledIsOpen !== undefined ? controlledIsOpen : internalIsOpen;
   const showFeedback = isOpen;
 
+  const safeTimeout = useSafeTimeout();
+
   function closeFeedback() {
     if (controlledIsOpen !== undefined) {
       onOpenChange?.(false);
@@ -150,7 +153,7 @@ function useMorphSurfaceLogic({
       setInternalIsOpen((prev) => !prev);
     }
     if (!showFeedback) {
-      setTimeout(() => {
+      safeTimeout(() => {
         inputRef.current?.focus();
       });
     }
@@ -224,10 +227,12 @@ export function MorphSurface({
     collapsedHeight: hookCollapsedHeight,
   } = hookLogic;
 
+  const safeTimeout = useSafeTimeout();
+
   function onFeedbackSuccess() {
     closeFeedback();
     setSuccess(true);
-    setTimeout(() => {
+    safeTimeout(() => {
       setSuccess(false);
     }, 1500);
     onSuccess?.();
