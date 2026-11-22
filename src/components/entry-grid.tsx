@@ -10,14 +10,24 @@ const PAGE_SIZE = 60;
  * Grid of entry cards that renders incrementally — only the first PAGE_SIZE
  * cards mount up front, with a "Show more" button revealing the next page.
  * Rendering thousands of cards at once made every filter change repaint
- * the whole catalog.
+ * the whole catalog. Pagination resets when `resetKey` changes.
  */
-export function EntryGrid({ items, className }: { items: UIEntry[]; className?: string }) {
+export function EntryGrid({
+  items,
+  resetKey,
+  className,
+}: {
+  items: UIEntry[];
+  /** Pagination resets only when this changes — not on every new array identity
+   *  (e.g. removing a favorite must not collapse the list). */
+  resetKey?: string;
+  className?: string;
+}) {
   const [shown, setShown] = useState(PAGE_SIZE);
 
   useEffect(() => {
     setShown(PAGE_SIZE);
-  }, [items]);
+  }, [resetKey]);
 
   const visible = items.length > shown ? items.slice(0, shown) : items;
   const remaining = items.length - visible.length;

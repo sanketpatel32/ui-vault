@@ -78,7 +78,7 @@ export function SourcePage() {
         <h2 className="mb-4 text-lg font-semibold tracking-tight">
           {items.length} cataloged from {source.name}
         </h2>
-        <EntryGrid items={items} />
+        <EntryGrid items={items} resetKey={source.id} />
       </div>
     </div>
   );

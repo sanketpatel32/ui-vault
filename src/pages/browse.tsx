@@ -135,7 +135,7 @@ export function Browse() {
       )}
 
       {results.length > 0 ? (
-        <EntryGrid items={results} className="animate-rise" />
+        <EntryGrid items={results} resetKey={params.toString()} className="animate-rise" />
       ) : (
         <EmptyState
           title="No components match"

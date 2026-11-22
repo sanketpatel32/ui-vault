@@ -34,7 +34,7 @@ export function CategoryPage() {
       </div>
 
       {items.length > 0 ? (
-        <EntryGrid items={items} />
+        <EntryGrid items={items} resetKey={slug} />
       ) : (
         <EmptyState
           title="Nothing here yet"
