@@ -237,4 +237,20 @@ export const sources: Source[] = [
       "MIT (github.com/shadcnblocks/kibo). Registry at kibo-ui.com/r/<name>.json; the 28 site blocks are CLI-only (no registry endpoint) and not cataloged. Sandboxed previews run in-browser; glimpse fetches meta tags only in their hosted demo.",
     color: "#fb923c",
   },
+  {
+    id: "streamdown",
+    name: "Streamdown",
+    url: "https://streamdown.ai",
+    tagline: "A drop-in replacement for react-markdown, designed for AI-powered streaming.",
+    description:
+      "Vercel's streaming-Markdown renderer — the engine behind AI Elements Message/Response. 1 core component that handles incomplete, unterminated Markdown mid-stream, plus 4 official plugins for Shiki code, KaTeX math, Mermaid diagrams and CJK text.",
+    license: "free",
+    previewMode: "live",
+    stack: ["react", "typescript", "tailwind", "shadcn"],
+    install: "npm install streamdown",
+    installLabel: "npm",
+    notes:
+      'Apache-2.0 (github.com/vercel/streamdown; the GitHub API reports NOASSERTION but the LICENSE file is Apache-2.0). React 18/19. Styling is Tailwind classes + shadcn CSS variables — add @source "../node_modules/streamdown/dist/*.js" (and one per installed @streamdown/* plugin) to your Tailwind CSS. The remend Markdown-healing parser ships alongside and is not cataloged as UI.',
+    color: "#e5e7eb",
+  },
 ];
