@@ -46,7 +46,7 @@ export function Browse() {
     if (filters.lic) list = list.filter((e) => e.license === filters.lic);
     if (filters.tag) list = list.filter((e) => e.tags.includes(filters.tag));
     if (filters.q.trim()) {
-      const ids = new Set(searchEntries(filters.q, 200).map((e) => e.id));
+      const ids = new Set(searchEntries(filters.q, entries.length).map((e) => e.id));
       list = list.filter((e) => ids.has(e.id));
     }
     if (sort === "name") list = [...list].sort((a, b) => a.name.localeCompare(b.name));
