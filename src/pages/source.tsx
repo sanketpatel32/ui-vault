@@ -48,8 +48,10 @@ export function SourcePage() {
               </div>
             </div>
           </div>
-          <Button variant="outline" size="sm" onClick={() => window.open(source.url, "_blank")}>
-            Visit site <ExternalLink size={12} />
+          <Button variant="outline" size="sm" asChild>
+            <a href={source.url} target="_blank" rel="noopener noreferrer">
+              Visit site <ExternalLink size={12} />
+            </a>
           </Button>
         </div>
 
