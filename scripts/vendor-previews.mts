@@ -1,6 +1,6 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
-import { entries } from "../src/data/index";
+import { fullEntries as entries } from "../src/data/all";
 import { fetchCachedJson, fetchCachedText, SHOWCASE_DIR } from "./vendor-utils.mts";
 import { vendorNumberFlow, cleanImports, results, EXISTING_KEYS } from "./vendor-numberflow.mts";
 

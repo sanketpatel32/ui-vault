@@ -1,4 +1,4 @@
-import type { License, UIEntry } from "@/data";
+import type { EntrySummary, License } from "@/data";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import { LICENSE_LABEL } from "@/lib/license";
@@ -24,9 +24,19 @@ export function LicenseBadge({ license, className }: { license: License; classNa
   );
 }
 
-/** Shown only when the component is actually vendored and renders live here. */
-export function PreviewBadge({ entry, className }: { entry: UIEntry; className?: string }) {
-  if (!entry.previewKey) return null;
+/** Marks whether the component is vendored (renders live here) or cataloged only. */
+export function PreviewBadge({ entry, className }: { entry: EntrySummary; className?: string }) {
+  if (!entry.previewKey) {
+    return (
+      <Badge
+        variant="outline"
+        className={cn("bg-transparent font-medium text-faint-fg", className)}
+        title="Cataloged — install command and source link only, no live preview yet"
+      >
+        No preview
+      </Badge>
+    );
+  }
   return (
     <Badge
       className={cn("border-accent/30 bg-accent-soft text-accent-text", className)}

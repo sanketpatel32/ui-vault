@@ -91,7 +91,7 @@
 - **Rotating Text** https://animate-ui.com/docs/primitives/texts/rotating — A rotating text animation. [MIT + Commons Clause, live-previewable, category: text-animation]
 - **Shimmering Text** https://animate-ui.com/docs/primitives/texts/shimmering — A shimmering text animation. [MIT + Commons Clause, live-previewable, category: text-animation]
 - **Splitting Text** https://animate-ui.com/docs/primitives/texts/splitting — A splitting text animation. [MIT + Commons Clause, live-previewable, category: text-animation]
-- **Typing Text** https://animate-ui.com/docs/primitives/texts/typing — A typing text animation. [MIT + Commons Clause, live-previewable, category: text-animation]
+- **Typing Text** https://animate-ui.com/docs/primitives/texts/typing — A typing text animation that types out a string character by character. [MIT + Commons Clause, live-previewable, category: text-animation]
 - **Gradient Heading** https://cult-ui.com/docs/components/gradient-heading — A cool gradient heading component [MIT, live-previewable, category: text-animation]
 - **Text Animate** https://cult-ui.com/docs/components/text-animate — A framer motion text animation component [MIT, live-previewable, category: text-animation]
 - **Typewriter** https://cult-ui.com/docs/components/typewriter — A repeating typewriter effect [MIT, live-previewable, category: text-animation]

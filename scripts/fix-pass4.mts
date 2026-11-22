@@ -1,6 +1,6 @@
 // Pass 4: shims for unpublished wm deps (input-group, carousel), dashboard prop micro-fixes,
 // comp-variant previews for tree + image-cropper, prop'd block previews.
-import { existsSync, readFileSync, rmSync, writeFileSync, mkdirSync } from "node:fs";
+import { readFileSync, rmSync, writeFileSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
 
 const put = (f: string, c: string) => writeFileSync(f, c);

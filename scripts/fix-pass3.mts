@@ -82,7 +82,7 @@ for (const [folder, item] of Object.entries(DASH)) {
     if (/demo/i.test(base) && /export default/.test(content)) demoRel = rel.replace(/\.tsx?$/, "");
     if (!demoRel && /export default/.test(content)) demoRel = rel.replace(/\.tsx?$/, "");
   }
-  for (const d of json.dependencies ?? []) {
+  for (const _d of json.dependencies ?? []) {
     /* handled by npm install earlier */
   }
   if (demoRel) {
@@ -117,7 +117,7 @@ for (const name of wmSharedQueue) {
     }
     console.log(`wm shared OK ${name}`);
   } catch (e) {
-    console.log(`wm shared ERR ${name} ${e}`);
+    console.log(`wm shared ERR ${name} ${e instanceof Error ? e.message : String(e)}`);
   }
 }
 

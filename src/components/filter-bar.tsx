@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import { Search, X } from "lucide-react";
 import { licensesWithCounts, sourcesWithCounts, topTags } from "@/lib/registry";
 import { LICENSE_LABEL } from "@/lib/license";
@@ -24,6 +25,25 @@ export function FilterBar({
   const set = (patch: Partial<Filters>) => onChange({ ...filters, ...patch });
   const dirty = filters.q || filters.src || filters.lic || filters.tag;
 
+  // Debounce the search box — writing `q` to the URL on every keystroke re-runs
+  // the fuse scan and re-renders the whole grid per character.
+  const [q, setQ] = useState(filters.q);
+  const filtersRef = useRef(filters);
+  const [prevFiltersQ, setPrevFiltersQ] = useState(filters.q);
+  useEffect(() => {
+    filtersRef.current = filters;
+  });
+  if (filters.q !== prevFiltersQ) {
+    // External change (chip removal, clear-all, URL nav) — resync during render.
+    setPrevFiltersQ(filters.q);
+    setQ(filters.q);
+  }
+  useEffect(() => {
+    if (q === filtersRef.current.q) return;
+    const t = setTimeout(() => onChange({ ...filtersRef.current, q }), 200);
+    return () => clearTimeout(t);
+  }, [q, onChange]);
+
   return (
     <div className="space-y-3">
       <div className="flex flex-wrap items-center gap-2">
@@ -36,8 +56,8 @@ export function FilterBar({
           <Input
             type="search"
             aria-label="Search components by name, description, or tag"
-            value={filters.q}
-            onChange={(e) => set({ q: e.target.value })}
+            value={q}
+            onChange={(e) => setQ(e.target.value)}
             placeholder="Search name, description, tags…"
             className="pl-8.5"
           />

@@ -1,6 +1,6 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
-import { entries } from "../src/data/index.ts";
+import { fullEntries as entries } from "../src/data/all.ts";
 import { fetchCachedJson, SHOWCASE_DIR } from "./vendor-utils.mts";
 
 const launchEntries = entries.filter((e) => e.source === "launchui");
@@ -51,7 +51,7 @@ export async function vendorLaunchUI() {
   console.log("Launch UI vendoring complete ✓");
 }
 
-function getLaunchPreview(slug: string, mainFile: string): string {
+function getLaunchPreview(slug: string, _mainFile: string): string {
   switch (slug) {
     case "hero":
       return `import { Button } from "@/components/ui/button";

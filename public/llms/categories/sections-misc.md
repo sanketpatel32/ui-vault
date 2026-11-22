@@ -20,7 +20,7 @@
 - **Animated Border Trail** https://animata.design/docs/container/animated-border-trail — A container with animated border trail, this can be used for buttons as well as cards. [MIT, live-previewable, category: sections-misc]
 - **Announcement Ribbon** https://animata.design/docs/container/announcement-ribbon — A sticky scrolling banner for top-of-page announcements. [MIT, live-previewable, category: sections-misc]
 - **Cursor Tracker** https://animata.design/docs/container/cursor-tracker — A wrapper component that tracks the cursor moving within it [MIT, live-previewable, category: sections-misc]
-- **Marquee** https://animata.design/docs/container/marquee — A marquee component [MIT, live-previewable, category: sections-misc]
+- **Marquee** https://animata.design/docs/container/marquee — An infinite-scrolling marquee strip for logos, tickers, or announcement text. [MIT, live-previewable, category: sections-misc]
 - **Sibling Focus Nav** https://animata.design/docs/container/sibling-focus-nav — A nav row that dims or blurs sibling links when one item is hovered or focused — padding-based spacing keeps the effect alive between items. [MIT, live-previewable, category: sections-misc]
 - **Code (Animate UI)** https://animate-ui.com/docs/components/animate/code — A code component that animates the code as it is written. [MIT + Commons Clause, live-previewable, category: sections-misc]
 - **Code Tabs (Animate UI)** https://animate-ui.com/docs/components/animate/code-tabs — A tabs component that displays code for different languages. [MIT + Commons Clause, live-previewable, category: sections-misc]

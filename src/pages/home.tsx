@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Clock, Sparkles } from "lucide-react";
-import { type UIEntry } from "@/data";
+import { type EntrySummary } from "@/data";
 import {
   featuredEntries,
   groupedCategories,
@@ -14,7 +14,7 @@ import { EntryCard } from "@/components/entry-card";
 import { Button } from "@/components/ui/button";
 import { SourceBadge } from "@/components/source-badge";
 
-function Grid({ items }: { items: UIEntry[] }) {
+function Grid({ items }: { items: EntrySummary[] }) {
   return (
     <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
       {items.map((e) => (
@@ -40,7 +40,7 @@ export function Home() {
   const groups = groupedCategories();
   const sources = sourcesWithCounts();
   const recentIds = useStore(recents);
-  const recent = recentIds.map((id) => entryById.get(id)).filter((e): e is UIEntry => !!e);
+  const recent = recentIds.map((id) => entryById.get(id)).filter((e): e is EntrySummary => !!e);
 
   return (
     <div className="space-y-14">

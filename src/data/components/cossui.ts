@@ -361,7 +361,8 @@ export const cossui: UIEntry[] = [
   {
     id: "cossui-input",
     name: "Input",
-    description: "A native input element.",
+    description:
+      "A styled native text input — the base field the other COSS form controls build on.",
     source: "cossui",
     sourceUrl: "https://coss.com/ui/docs/components/input",
     sourceCategory: "Components",

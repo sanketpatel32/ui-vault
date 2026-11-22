@@ -25,6 +25,12 @@ export default function App() {
   const lastPathname = useRef<string | null>(null);
   const location = useLocation();
 
+  const [prevPathname, setPrevPathname] = useState(location.pathname);
+  if (location.pathname !== prevPathname) {
+    setPrevPathname(location.pathname);
+    setMobileNavOpen(false);
+  }
+
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
@@ -38,7 +44,6 @@ export default function App() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    setMobileNavOpen(false);
     document.title = pageTitle(location.pathname);
     const isNavigation =
       lastPathname.current !== null && lastPathname.current !== location.pathname;

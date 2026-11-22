@@ -1,6 +1,6 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
-import { entries } from "../src/data/index.ts";
+import { fullEntries as entries } from "../src/data/all.ts";
 import { SHOWCASE_DIR } from "./vendor-utils.mts";
 
 const animateEntries = entries.filter((e) => e.source === "animateui");
@@ -155,7 +155,7 @@ export default AnimateComponent;
 `;
 }
 
-function getAnimatePreviewCode(slug: string): string {
+function getAnimatePreviewCode(_slug: string): string {
   return `import Component from "./index";
 
 export default function Preview() {

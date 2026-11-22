@@ -5,7 +5,7 @@ import { entries } from "@/data";
 import { sourceById, categoryBySlug } from "@/lib/registry";
 import { searchEntries } from "@/lib/search";
 import { FilterBar, type Filters } from "@/components/filter-bar";
-import { EntryCard } from "@/components/entry-card";
+import { EntryGrid } from "@/components/entry-grid";
 import { EmptyState } from "@/components/empty-state";
 import { Button } from "@/components/ui/button";
 import { Select } from "@/components/ui/input";
@@ -13,15 +13,14 @@ import { Select } from "@/components/ui/input";
 export function Browse() {
   const [params, setParams] = useSearchParams();
 
-  const filters: Filters = {
-    q: params.get("q") ?? "",
-    src: params.get("src") ?? "",
-    lic: params.get("lic") ?? "",
-    tag: params.get("tag") ?? "",
-  };
-
+  const q = params.get("q") ?? "";
+  const src = params.get("src") ?? "";
+  const lic = params.get("lic") ?? "";
+  const tag = params.get("tag") ?? "";
   const cat = params.get("cat") ?? "";
   const sort = params.get("sort") ?? "default";
+
+  const filters: Filters = useMemo(() => ({ q, src, lic, tag }), [q, src, lic, tag]);
 
   const onChange = (next: Filters) => {
     const p = new URLSearchParams(params);
@@ -42,12 +41,19 @@ export function Browse() {
   const results = useMemo(() => {
     let list = entries;
     if (cat) list = list.filter((e) => e.category === cat);
-    if (filters.src) list = list.filter((e) => e.source === filters.src);
-    if (filters.lic) list = list.filter((e) => e.license === filters.lic);
-    if (filters.tag) list = list.filter((e) => e.tags.includes(filters.tag));
-    if (filters.q.trim()) {
-      const ids = new Set(searchEntries(filters.q, entries.length).map((e) => e.id));
-      list = list.filter((e) => ids.has(e.id));
+    if (src) list = list.filter((e) => e.source === src);
+    if (lic) list = list.filter((e) => e.license === lic);
+    if (tag) list = list.filter((e) => e.tags.includes(tag));
+    if (q.trim()) {
+      const ranked = searchEntries(q, entries.length);
+      if (sort === "default") {
+        // Default sort during a search is the fuse relevance ranking itself.
+        const allowed = new Set(list.map((e) => e.id));
+        list = ranked.filter((e) => allowed.has(e.id));
+      } else {
+        const ids = new Set(ranked.map((e) => e.id));
+        list = list.filter((e) => ids.has(e.id));
+      }
     }
     if (sort === "name") list = [...list].sort((a, b) => a.name.localeCompare(b.name));
     if (sort === "source")
@@ -55,7 +61,7 @@ export function Browse() {
         (a, b) => a.source.localeCompare(b.source) || a.name.localeCompare(b.name),
       );
     return list;
-  }, [cat, filters, sort]);
+  }, [cat, q, src, lic, tag, sort]);
 
   const activeFilters: { key: keyof Filters | "cat"; label: string }[] = [];
   if (cat) {
@@ -87,7 +93,7 @@ export function Browse() {
           aria-label="Sort results"
           className="w-40"
         >
-          <option value="default">Curated order</option>
+          <option value="default">{q.trim() ? "Relevance" : "Curated order"}</option>
           <option value="name">Name A–Z</option>
           <option value="source">By source</option>
         </Select>
@@ -129,10 +135,8 @@ export function Browse() {
       )}
 
       {results.length > 0 ? (
-        <div className="grid animate-rise gap-4 sm:grid-cols-2 xl:grid-cols-3">
-          {results.map((entry) => (
-            <EntryCard key={entry.id} entry={entry} />
-          ))}
+        <div className="animate-rise">
+          <EntryGrid items={results} />
         </div>
       ) : (
         <EmptyState

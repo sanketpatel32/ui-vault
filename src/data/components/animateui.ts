@@ -2011,7 +2011,7 @@ export const animateui: UIEntry[] = [
     previewKey: "animateui-primitives-texts-typing",
     id: "animateui-primitives-texts-typing",
     name: "Typing Text",
-    description: "A typing text animation.",
+    description: "A typing text animation that types out a string character by character.",
     source: "animateui",
     sourceUrl: "https://animate-ui.com/docs/primitives/texts/typing",
     sourceCategory: "Primitives / Texts",

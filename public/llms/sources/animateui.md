@@ -146,7 +146,7 @@
 - **Shimmering Text** https://animate-ui.com/docs/primitives/texts/shimmering — A shimmering text animation. [MIT + Commons Clause, live-previewable, category: text-animation]
 - **Sliding Number** https://animate-ui.com/docs/primitives/texts/sliding-number — A sliding number animation. [MIT + Commons Clause, live-previewable, category: numbers]
 - **Splitting Text** https://animate-ui.com/docs/primitives/texts/splitting — A splitting text animation. [MIT + Commons Clause, live-previewable, category: text-animation]
-- **Typing Text** https://animate-ui.com/docs/primitives/texts/typing — A typing text animation. [MIT + Commons Clause, live-previewable, category: text-animation]
+- **Typing Text** https://animate-ui.com/docs/primitives/texts/typing — A typing text animation that types out a string character by character. [MIT + Commons Clause, live-previewable, category: text-animation]
 - **Auto Height** https://animate-ui.com/docs/primitives/effects/auto-height — An effect that automatically adjusts the height of an element based on its content. [MIT + Commons Clause, live-previewable, category: micro-interactions]
 - **Blur** https://animate-ui.com/docs/primitives/effects/blur — An effect that allows you to animate elements with a blur effect on first view or load. [MIT + Commons Clause, live-previewable, category: micro-interactions]
 - **Click** https://animate-ui.com/docs/primitives/effects/click — An effect that creates animated effects at the click position, adding interactive feedback to user actions. [MIT + Commons Clause, live-previewable, category: micro-interactions]

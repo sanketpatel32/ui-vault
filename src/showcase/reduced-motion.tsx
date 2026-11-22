@@ -60,6 +60,7 @@ const FRAME_LOOP_PREVIEWS = new Set([
   "magicui-particles",
   "magicui-pulsating-button",
   "magicui-smooth-cursor",
+  "magicui-video-text",
   "watermelon-dashboard-agndex",
   "watermelon-dashboard-astrix",
   "watermelon-dashboard-jobtracker",

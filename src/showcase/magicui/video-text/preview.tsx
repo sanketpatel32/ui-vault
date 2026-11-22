@@ -1,11 +1,13 @@
-import * as ComponentModule from "./video-text";
+import { VideoText } from "./video-text";
+
+const VIDEO = "https://cdn.magicui.design/ocean-small.webm";
 
 export default function Preview() {
-  const Component = (ComponentModule as any).default || (Object.values(ComponentModule)[0] as any);
-  if (!Component) return <div className="text-xs text-muted-fg">Component loaded</div>;
   return (
     <div className="flex items-center justify-center p-4">
-      <Component />
+      <div className="h-28 w-full max-w-sm">
+        <VideoText src={VIDEO}>WAVE</VideoText>
+      </div>
     </div>
   );
 }
