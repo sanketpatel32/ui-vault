@@ -61,7 +61,9 @@ export default function Preview() {
             <CodeBlockHeader>
               <CodeBlockFiles>
                 {(item) => (
-                  <CodeBlockFilename value={item.language}>{item.filename}</CodeBlockFilename>
+                  <CodeBlockFilename key={item.language} value={item.language}>
+                    {item.filename}
+                  </CodeBlockFilename>
                 )}
               </CodeBlockFiles>
               <CodeBlockSelect>
