@@ -4,7 +4,7 @@
 > (open-source animated React libraries and component registries), organized into one
 > categorized, searchable library. Every entry ships free code with its source, license,
 > install command and — where vendored — a live React preview. No backend: the catalog itself
-> lives in TypeScript files under src/data (814 entries, 15 sources, 23 categories).
+> lives in TypeScript files under src/data (852 entries, 16 sources, 23 categories).
 
 ## Sources
 
@@ -23,6 +23,7 @@
 - [COSS UI](https://coss.com/ui) — Origin UI's actively developed successor — Base UI primitives plus 500+ particles. (MIT, live-previewable, 111 cataloged)
 - [Cult UI](https://cult-ui.com) — Animated, modern components designed for effortless integration. (MIT, live-previewable, 77 cataloged)
 - [Kibo UI](https://www.kibo-ui.com) — The shadcn registry for everything that doesn't exist yet. (MIT, live-previewable, 40 cataloged)
+- [Bklit UI](https://bklit.com) — Composable d3 + Motion chart components for React. (MIT, live-previewable, 38 cataloged)
 
 ## Categories
 
@@ -31,14 +32,14 @@
 - `backgrounds` Backgrounds (61) — Shader, gradient and generative backgrounds for heroes and panels.
 - `3d-webgl` 3D & WebGL (6) — Globes, physics and Three.js scenes that drop into a page.
 - `buttons` Buttons & Actions (51) — Buttons with borders, magnets and sparks — actions that feel alive.
-- `cards` Cards & Bento (34) — Spotlight, tilt, bento and stacking card treatments.
+- `cards` Cards & Bento (37) — Spotlight, tilt, bento and stacking card treatments.
 - `navigation` Navigation (46) — Navbars, docks, sidebars, tabs, breadcrumbs and scroll progress.
 - `forms` Forms & Inputs (114) — Inputs, selects, OTP, uploads, sliders, toggles and date pickers.
 - `overlays` Overlays (85) — Dialogs, drawers, popovers, tooltips, toasts and command bars.
 - `numbers` Numbers & Counters (14) — Animated numbers, tickers and odometers.
 - `micro-interactions` Micro-interactions (115) — Cursor tricks, physics toys and small moments of delight.
 - `feedback` Feedback & Status (43) — Spinners, progress, skeletons, empty states and notifications.
-- `data-display` Data Display (57) — Tables, charts, stats, badges and avatars for showing data.
+- `data-display` Data Display (92) — Tables, charts, stats, badges and avatars for showing data.
 - `chat` Chat & AI (7) — Chat and AI conversation UI — bubbles, message streams, attachments.
 
 ### Blocks

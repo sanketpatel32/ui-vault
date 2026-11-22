@@ -38,3 +38,6 @@
 - **Neumorph Eyebrow** https://cult-ui.com/docs/components/neumorph-eyebrow — A neumorphic eyebrow text component with subtle animation effects. [MIT, live-previewable, category: cards]
 - **Texture Card** https://cult-ui.com/docs/components/texture-card — A well designed card with numorphic undertones [MIT, live-previewable, category: cards]
 - **Shift Card** https://cult-ui.com/docs/components/shift-card — A card that shows more detail on hover [MIT, live-previewable, category: cards]
+- **Stat Card Area** https://bklit.com/blocks — Revenue stat card with a gradient area sparkline, hover-to-read values, NumberFlow, and trend badge [MIT, live-previewable, category: cards]
+- **Stat Card Line** https://bklit.com/blocks — Sessions stat card with a line sparkline, hover-to-read values, overlaid NumberFlow, and trend badge [MIT, live-previewable, category: cards]
+- **Stat Card Choropleth** https://bklit.com/blocks — Visitor map stat card with choropleth sparkline, NumberFlow, and trend badge [MIT, live-previewable, category: cards]

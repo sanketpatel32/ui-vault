@@ -237,4 +237,20 @@ export const sources: Source[] = [
       "MIT (github.com/shadcnblocks/kibo). Registry at kibo-ui.com/r/<name>.json; the 28 site blocks are CLI-only (no registry endpoint) and not cataloged. Sandboxed previews run in-browser; glimpse fetches meta tags only in their hosted demo.",
     color: "#fb923c",
   },
+  {
+    id: "bklit",
+    name: "Bklit UI",
+    url: "https://bklit.com",
+    tagline: "Composable d3 + Motion chart components for React.",
+    description:
+      "20 chart types — line, area, bar, candlestick, choropleth, composed, funnel, gauge, heatmap, pie, radar, radial, ring, sankey, scatter, sparkline, sunburst — plus 15 chart utilities (legend, tooltip, brush, trend line, deadline …) and 3 stat-card blocks, installed through the @bklit shadcn registry. Tailwind v4.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "tailwind", "d3", "motion"],
+    install: "npx shadcn@latest add @bklit/<chart-name>",
+    installLabel: "shadcn registry (@bklit)",
+    notes:
+      "MIT (github.com/bklit/bklit-ui) for the chart components + registry; the Studio app carries a separate all-rights-reserved LICENSE-STUDIO.md and is not cataloged. Registry entries only — no vendored previews yet.",
+    color: "#2dd4bf",
+  },
 ];
