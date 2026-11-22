@@ -29,9 +29,7 @@ function Stat({ value, label }: { value: number; label: string }) {
   return (
     <div className="flex flex-col items-center gap-0.5 px-4 py-3.5">
       <span className="text-2xl font-semibold tracking-tight text-fg tabular-nums">{n}</span>
-      <span className="text-[11px] font-medium tracking-wide text-muted-fg/80 uppercase">
-        {label}
-      </span>
+      <span className="text-[11px] font-medium tracking-wide text-faint-fg uppercase">{label}</span>
     </div>
   );
 }
@@ -52,7 +50,7 @@ export function Home() {
         <div aria-hidden className="vault-glow pointer-events-none absolute inset-0" />
         <div className="relative">
           <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-bg/70 px-3 py-1 text-xs text-muted-fg backdrop-blur-sm">
-            <Sparkles size={12} className="text-accent" />
+            <Sparkles size={12} className="text-accent-text" />
             {s.entries} components · {s.sources} sources · {s.categories} categories
           </span>
           <h1 className="mx-auto mt-5 max-w-2xl text-4xl font-semibold tracking-tight text-fg sm:text-[3.25rem] sm:leading-[1.08]">
@@ -97,7 +95,10 @@ export function Home() {
       <section>
         <div className="mb-4 flex items-end justify-between">
           <h2 className="text-lg font-semibold tracking-tight">Featured picks</h2>
-          <Link to="/browse" className="text-sm text-muted-fg transition-colors hover:text-accent">
+          <Link
+            to="/browse"
+            className="text-sm text-muted-fg transition-colors hover:text-accent-text"
+          >
             View all →
           </Link>
         </div>
@@ -110,7 +111,7 @@ export function Home() {
         <div className="space-y-5">
           {groups.map((g) => (
             <div key={g.group}>
-              <p className="mb-2 text-[11px] font-semibold tracking-[0.14em] text-muted-fg/70 uppercase">
+              <p className="mb-2 text-[11px] font-semibold tracking-[0.14em] text-faint-fg uppercase">
                 {g.label}
               </p>
               <div className="flex flex-wrap gap-2">
@@ -118,10 +119,10 @@ export function Home() {
                   <Link
                     key={cat.slug}
                     to={`/c/${cat.slug}`}
-                    className="group flex items-center gap-2 rounded-lg border border-border bg-panel px-3 py-1.5 text-[13px] text-fg transition-all hover:-translate-y-px hover:border-accent/40 hover:text-accent hover:shadow-sm hover:shadow-accent/10"
+                    className="group flex items-center gap-2 rounded-lg border border-border bg-panel px-3 py-1.5 text-[13px] text-fg transition-all hover:-translate-y-px hover:border-accent/40 hover:text-accent-text hover:shadow-sm hover:shadow-accent/10"
                   >
                     {cat.name}
-                    <span className="rounded bg-muted px-1 py-0.5 text-[10.5px] tabular-nums text-muted-fg/80 transition-colors group-hover:bg-accent-soft group-hover:text-accent">
+                    <span className="rounded bg-muted px-1 py-0.5 text-[10.5px] tabular-nums text-faint-fg transition-colors group-hover:bg-accent-soft group-hover:text-accent-text">
                       {cat.count}
                     </span>
                   </Link>
@@ -144,9 +145,9 @@ export function Home() {
             >
               <div className="min-w-0">
                 <SourceBadge source={src.id} className="text-xs" />
-                <p className="mt-0.5 truncate text-xs text-muted-fg/80">{src.tagline}</p>
+                <p className="mt-0.5 truncate text-xs text-faint-fg">{src.tagline}</p>
               </div>
-              <span className="ml-3 shrink-0 text-xs tabular-nums text-muted-fg/70 transition-colors group-hover:text-accent">
+              <span className="ml-3 shrink-0 text-xs tabular-nums text-faint-fg transition-colors group-hover:text-accent-text">
                 {src.count}
               </span>
             </Link>

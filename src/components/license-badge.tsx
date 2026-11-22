@@ -1,13 +1,7 @@
 import type { License, UIEntry } from "@/data";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
-
-const LICENSE_LABEL: Record<License, string> = {
-  mit: "MIT",
-  free: "Free",
-  freemium: "Freemium",
-  paid: "Paid",
-};
+import { LICENSE_LABEL } from "@/lib/license";
 
 const LICENSE_COLOR: Record<License, string> = {
   mit: "bg-emerald-400",
@@ -34,7 +28,7 @@ export function PreviewBadge({ entry, className }: { entry: UIEntry; className?:
   if (!entry.previewKey) return null;
   return (
     <Badge
-      className={cn("border-accent/30 bg-accent-soft text-accent", className)}
+      className={cn("border-accent/30 bg-accent-soft text-accent-text", className)}
       title="Vendored — renders live in UI Vault"
     >
       Preview

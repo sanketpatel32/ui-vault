@@ -24,7 +24,7 @@ export function EntryCard({ entry }: { entry: UIEntry }) {
         </div>
 
         <div>
-          <h3 className="font-semibold leading-tight text-fg transition-colors group-hover:text-accent">
+          <h3 className="font-semibold leading-tight text-fg transition-colors group-hover:text-accent-text">
             {entry.name}
           </h3>
           <p className="mt-1 line-clamp-2 text-sm leading-snug text-muted-fg">
@@ -39,7 +39,7 @@ export function EntryCard({ entry }: { entry: UIEntry }) {
             </span>
             <ArrowUpRight
               size={14}
-              className="text-accent opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100"
+              className="text-accent-text opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100"
             />
           </div>
         )}
