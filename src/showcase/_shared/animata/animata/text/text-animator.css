@@ -1,0 +1,36 @@
+/* Vendored from https://github.com/codse/animata/blob/25c27e5a874c60a56dcc1609df3b2c4f5f8456f8/animata/text/text-animator.css (MIT, codse/animata) on 2026-11-22. */
+@reference "tailwindcss";
+
+@layer components {
+  .text-animation-stage {
+    @apply @container grid h-full min-h-0 w-full place-items-center [grid-template-areas:'title'];
+  }
+
+  .text-animation-title {
+    @apply m-0 pointer-events-none transform-3d [grid-area:title];
+  }
+
+  .text-animation-unit {
+    @apply inline-block whitespace-pre backface-hidden origin-[50%_55%] [will-change:transform,opacity,filter];
+  }
+
+  .text-animation-unit.line {
+    @apply block;
+  }
+
+  .text-animation-kinetic-line {
+    @apply relative h-[72px] w-[min(92%,270px)];
+  }
+
+  .text-animation-kinetic-stack {
+    @apply relative h-[132px] w-[min(92%,270px)];
+  }
+
+  .text-animation-kinetic-word {
+    @apply absolute top-1/2 left-1/2 whitespace-nowrap backface-hidden [will-change:transform,opacity,filter];
+  }
+
+  .text-animation-fallback {
+    @apply opacity-[0.74];
+  }
+}

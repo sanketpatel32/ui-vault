@@ -1,3 +1,4 @@
+import { useSafeTimeout } from "@/showcase/_shared/use-safe-timeout";
 import { useState } from "react";
 import { Check, Copy, Minus, Plus, Trash2 } from "lucide-react";
 
@@ -105,6 +106,8 @@ export function ConfigurableCanvasFractalGrid() {
     updateConfig("gradients", newGradients);
   };
 
+  const safeTimeout = useSafeTimeout();
+
   const copyConfigToClipboard = () => {
     const configString = `
 "use client"
@@ -140,7 +143,7 @@ export function CanvasFractalGridExample() {
         title: "Configuration Copied",
         description: "The current configuration has been copied to your clipboard.",
       });
-      setTimeout(() => setIsCopied(false), 2000);
+      safeTimeout(() => setIsCopied(false), 2000);
     });
   };
 

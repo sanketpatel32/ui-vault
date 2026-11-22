@@ -48,6 +48,10 @@ export default defineConfig(({ command }) => ({
         replacement: fileURLToPath(new URL("./src/lib/shims/next-link.tsx", import.meta.url)),
       },
       {
+        find: "next/font/google",
+        replacement: fileURLToPath(new URL("./src/lib/shims/next-font-google.ts", import.meta.url)),
+      },
+      {
         find: "next/navigation",
         replacement: fileURLToPath(new URL("./src/lib/shims/next-navigation.tsx", import.meta.url)),
       },

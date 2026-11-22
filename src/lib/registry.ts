@@ -5,6 +5,7 @@ import {
   sources,
   type Category,
   type CategoryGroup,
+  type License,
   type Source,
   type UIEntry,
 } from "@/data";
@@ -51,6 +52,13 @@ export function sourcesWithCounts(): (Source & { count: number })[] {
     ...s,
     count: entries.filter((e) => e.source === s.id).length,
   }));
+}
+
+/** Licenses actually present in the registry, with entry counts (registry order of first use). */
+export function licensesWithCounts(): { license: License; count: number }[] {
+  const counts = new Map<License, number>();
+  for (const e of entries) counts.set(e.license, (counts.get(e.license) ?? 0) + 1);
+  return [...counts.entries()].map(([license, count]) => ({ license, count }));
 }
 
 export function featuredEntries(): UIEntry[] {

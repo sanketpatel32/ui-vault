@@ -93,8 +93,11 @@ export function Globe({
       },
     } as any);
 
-    setTimeout(() => (canvasRef.current!.style.opacity = "1"), 0);
+    const opacityTimer = setTimeout(() => {
+      if (canvasRef.current) canvasRef.current.style.opacity = "1";
+    }, 0);
     return () => {
+      clearTimeout(opacityTimer);
       globe.destroy();
       window.removeEventListener("resize", onResize);
     };

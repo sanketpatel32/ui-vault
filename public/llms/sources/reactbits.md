@@ -3,7 +3,7 @@
 - URL: https://reactbits.dev
 - License: MIT — live-previewable
 - Stack: react, typescript, tailwind, motion, gsap, webgl
-- Install: `npx jsrepo add react-bits/<Component>`
+- Install: `npx shadcn@latest add @react-bits/<Component>-TS-TW`
 - Notes: Free tier is MIT (github.com/DavidHDev/react-bits). Pro is a separate paid tier — link-out only.
 - Cataloged in UI Vault: 25 entries
 ## Entries

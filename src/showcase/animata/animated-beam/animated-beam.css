@@ -1,0 +1,29 @@
+/* Vendored from https://github.com/codse/animata/blob/25c27e5a874c60a56dcc1609df3b2c4f5f8456f8/animata/background/animated-beam.css (MIT, codse/animata) on 2026-11-22. */
+@layer components {
+  @keyframes meteor {
+    0% {
+      transform: translateY(-20%) translateX(-50%);
+      opacity: 0;
+    }
+
+    12% {
+      opacity: var(--opacity, 1);
+    }
+
+    88% {
+      opacity: var(--opacity, 1);
+    }
+
+    100% {
+      transform: translateY(300%) translateX(-50%);
+      opacity: 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ab-beam {
+      animation: none !important;
+      opacity: 0 !important;
+    }
+  }
+}

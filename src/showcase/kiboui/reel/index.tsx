@@ -1,3 +1,4 @@
+import { useSafeTimeout } from "@/showcase/_shared/use-safe-timeout";
 import { useControllableState } from "@radix-ui/react-use-controllable-state";
 import { ChevronLeft, ChevronRight, Pause, Play, Volume2, VolumeX } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
@@ -470,11 +471,13 @@ export const ReelPreviousButton = ({ className, children, ...props }: ReelPrevio
   const { currentIndex, setCurrentIndex, setIsNavigating } = useReelContext();
   const NAVIGATION_RESET_DELAY = 50;
 
+  const safeTimeout = useSafeTimeout();
+
   const handlePrevious = () => {
     if (currentIndex > 0) {
       setIsNavigating(true);
       setCurrentIndex(currentIndex - 1);
-      setTimeout(() => setIsNavigating(false), NAVIGATION_RESET_DELAY);
+      safeTimeout(() => setIsNavigating(false), NAVIGATION_RESET_DELAY);
     }
   };
 
@@ -501,11 +504,13 @@ export const ReelNextButton = ({ className, children, ...props }: ReelNextButton
   const totalItems = data?.length || 0;
   const NAVIGATION_RESET_DELAY = 50;
 
+  const safeTimeout = useSafeTimeout();
+
   const handleNext = () => {
     if (currentIndex < totalItems - 1) {
       setIsNavigating(true);
       setCurrentIndex(currentIndex + 1);
-      setTimeout(() => setIsNavigating(false), NAVIGATION_RESET_DELAY);
+      safeTimeout(() => setIsNavigating(false), NAVIGATION_RESET_DELAY);
     }
   };
 
@@ -571,6 +576,8 @@ export const ReelNavigation = ({ className, ...props }: ReelNavigationProps) => 
   const NAVIGATION_RESET_DELAY = 50;
   const HALF_WIDTH_DIVISOR = 2;
 
+  const safeTimeout = useSafeTimeout();
+
   const handleClick: MouseEventHandler<HTMLButtonElement> = (e) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const x = e.clientX - rect.left;
@@ -580,12 +587,12 @@ export const ReelNavigation = ({ className, ...props }: ReelNavigationProps) => 
       if (currentIndex > 0) {
         setIsNavigating(true);
         setCurrentIndex(currentIndex - 1);
-        setTimeout(() => setIsNavigating(false), NAVIGATION_RESET_DELAY);
+        safeTimeout(() => setIsNavigating(false), NAVIGATION_RESET_DELAY);
       }
     } else if (currentIndex < totalItems - 1) {
       setIsNavigating(true);
       setCurrentIndex(currentIndex + 1);
-      setTimeout(() => setIsNavigating(false), NAVIGATION_RESET_DELAY);
+      safeTimeout(() => setIsNavigating(false), NAVIGATION_RESET_DELAY);
     }
   };
 

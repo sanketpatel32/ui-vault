@@ -211,9 +211,14 @@ const DynamicIslandProvider: React.FC<DynamicIslandProviderProps> = ({
   const [state, dispatch] = useReducer(blobReducer, initialState);
 
   useEffect(() => {
+    let cancelled = false;
+    let timer: ReturnType<typeof setTimeout> | undefined;
     const processQueue = async () => {
       for (const step of state.animationQueue) {
-        await new Promise((resolve) => setTimeout(resolve, step.delay));
+        await new Promise((resolve) => {
+          timer = setTimeout(resolve, step.delay);
+        });
+        if (cancelled) return;
         dispatch({ type: "SET_SIZE", newSize: step.size });
       }
       dispatch({ type: "ANIMATION_END" });
@@ -222,6 +227,10 @@ const DynamicIslandProvider: React.FC<DynamicIslandProviderProps> = ({
     if (state.animationQueue.length > 0) {
       processQueue();
     }
+    return () => {
+      cancelled = true;
+      clearTimeout(timer);
+    };
   }, [state.animationQueue]);
 
   // biome-ignore lint/correctness/useExhaustiveDependencies: needed for dispatch
