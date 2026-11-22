@@ -18,3 +18,5 @@
 - **Sliding Number** https://animate-ui.com/docs/primitives/texts/sliding-number — A sliding number animation. [MIT, live-previewable, category: numbers]
 - **Animated Number** https://cult-ui.com/docs/components/animated-number — A simple animated number animation [MIT, live-previewable, category: numbers]
 - **Ticker** https://www.kibo-ui.com/components/ticker — A composable finance ticker for displaying symbols, prices and changes. [MIT, live-previewable, category: numbers]
+- **Number ticker** https://www.assistant-ui.com/elements/number-ticker — Digits that roll into place as a count updates in real time. [MIT, live-previewable, category: numbers]
+- **Number Roll** https://www.assistant-ui.com/elements — Animated number that rolls its digits odometer style when the value changes. [MIT, live-previewable, category: numbers]

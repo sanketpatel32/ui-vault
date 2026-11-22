@@ -16,7 +16,8 @@ export type SourceId =
   | "kiboui"
   | "bklit"
   | "pdfcn"
-  | "remocn";
+  | "remocn"
+  | "assistantui";
 
 export type License = "mit" | "free" | "freemium" | "paid";
 export type PreviewMode = "live" | "linkout";

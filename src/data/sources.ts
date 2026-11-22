@@ -285,4 +285,20 @@ export const sources: Source[] = [
       "MIT (github.com/Remocn/remocn). Hard prerequisite: Remotion — every component renders video frames inside a Remotion composition, not interactive web UI. Cataloged from the official llms-components.txt index plus the icons gallery; no vendored previews (they need a Remotion player).",
     color: "#8b5cf6",
   },
+  {
+    id: "assistantui",
+    name: "assistant-ui",
+    url: "https://www.assistant-ui.com",
+    tagline: "Composable React primitives for AI chat.",
+    description:
+      "147 AI-chat components — threads, composers, message parts, tool UIs, reasoning, attachments, model pickers, voice — in two tiers: 36 runtime-bound components and 111 props-driven elements. The de-facto standard chat-UI library (Vercel AI SDK, LangGraph and more).",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "tailwind", "radix"],
+    install: "npx shadcn@latest add https://r.assistant-ui.com/<name>",
+    installLabel: "shadcn registry",
+    notes:
+      "MIT (github.com/assistant-ui/assistant-ui). Runtime components need @assistant-ui/react plus a runtime adapter (npm install @assistant-ui/react); elements-* items are props-driven and render without one. Also published as @assistant-ui/<name>. No vendored previews.",
+    color: "#0ea5e9",
+  },
 ];
