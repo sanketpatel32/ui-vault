@@ -237,4 +237,20 @@ export const sources: Source[] = [
       "MIT (github.com/shadcnblocks/kibo). Registry at kibo-ui.com/r/<name>.json; the 28 site blocks are CLI-only (no registry endpoint) and not cataloged. Sandboxed previews run in-browser; glimpse fetches meta tags only in their hosted demo.",
     color: "#fb923c",
   },
+  {
+    id: "easyui",
+    name: "EasyUI",
+    url: "https://easyui.site",
+    tagline: "Micro-animated, physics-based, dark-mode-first React components.",
+    description:
+      "137 MIT components distributed through the shadcn GitHub-registry pattern \u2014 spring buttons, morphing dialogs, gliding navigation pills, hand-written SVG charts, AI chat surfaces, canvas backgrounds and wallet/payment cards. React 19 + Tailwind v4.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "tailwind", "shadcn", "motion"],
+    install: "npx shadcn@latest add Surajmaurya1/easyui/<name>",
+    installLabel: "shadcn GitHub registry",
+    notes:
+      "MIT (github.com/Surajmaurya1/easyui). Registry index at raw.githubusercontent.com/Surajmaurya1/easyui/main/registry.json; items depend on framer-motion + lucide-react. Not to be confused with easeui.dev or jQuery EasyUI (jeasyui).",
+    color: "#34d399",
+  },
 ];
