@@ -77,7 +77,6 @@ export const fancy: UIEntry[] = [
     install: "pnpm dlx shadcn add @fancy/number-ticker",
   },
   {
-    previewKey: "fancy-gravity",
     id: "fancy-gravity",
     name: "Gravity",
     description:
@@ -93,7 +92,6 @@ export const fancy: UIEntry[] = [
     featured: true,
   },
   {
-    previewKey: "fancy-elastic-line",
     id: "fancy-elastic-line",
     name: "Elastic Line",
     description:
@@ -108,7 +106,6 @@ export const fancy: UIEntry[] = [
     install: "pnpm dlx shadcn add @fancy/elastic-line",
   },
   {
-    previewKey: "fancy-image-trail",
     id: "fancy-image-trail",
     name: "Image Trail",
     description:
@@ -123,7 +120,6 @@ export const fancy: UIEntry[] = [
     install: "pnpm dlx shadcn add @fancy/image-trail",
   },
   {
-    previewKey: "fancy-pixel-trail",
     id: "fancy-pixel-trail",
     name: "Pixel Trail",
     description: "Pixelated squares trail the cursor and fade — retro cursor confetti.",
@@ -137,7 +133,6 @@ export const fancy: UIEntry[] = [
     install: "pnpm dlx shadcn add @fancy/pixel-trail",
   },
   {
-    previewKey: "fancy-gooey-svg-filter",
     id: "fancy-gooey-svg-filter",
     name: "Gooey SVG Filter",
     description:
@@ -152,7 +147,6 @@ export const fancy: UIEntry[] = [
     install: "pnpm dlx shadcn add @fancy/gooey-svg-filter",
   },
   {
-    previewKey: "fancy-pixelate-svg-filter",
     id: "fancy-pixelate-svg-filter",
     name: "Pixelate SVG Filter",
     description: "Pixelation filter for images — hover to pixelate/de-pixelate transitions.",
@@ -166,7 +160,6 @@ export const fancy: UIEntry[] = [
     install: "pnpm dlx shadcn add @fancy/pixelate-svg-filter",
   },
   {
-    previewKey: "fancy-css-box",
     id: "fancy-css-box",
     name: "CSS Box",
     description:
@@ -181,7 +174,6 @@ export const fancy: UIEntry[] = [
     install: "pnpm dlx shadcn add @fancy/css-box",
   },
   {
-    previewKey: "fancy-screensaver",
     id: "fancy-screensaver",
     name: "Screensaver",
     description: "DVD-logo-style bouncing screensaver for any element — nostalgia as a service.",
@@ -195,7 +187,6 @@ export const fancy: UIEntry[] = [
     install: "pnpm dlx shadcn add @fancy/screensaver",
   },
   {
-    previewKey: "fancy-stacking-cards",
     id: "fancy-stacking-cards",
     name: "Stacking Cards",
     description:
@@ -210,7 +201,6 @@ export const fancy: UIEntry[] = [
     install: "pnpm dlx shadcn add @fancy/stacking-cards",
   },
   {
-    previewKey: "fancy-marquee-along-svg-path",
     id: "fancy-marquee-along-svg-path",
     name: "Marquee Along SVG Path",
     description: "Content marquees along any SVG path — text or images flowing along a curve.",

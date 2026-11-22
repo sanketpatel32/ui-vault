@@ -17,7 +17,6 @@ export const aceternity: UIEntry[] = [
     previewKey: "aceternity-moving-border",
   },
   {
-    previewKey: "aceternity-3d-pin",
     id: "aceternity-3d-pin",
     name: "3D Pin",
     description: "Card that tilts in 3D around a fixed pin point on hover — dimensional depth cue.",
@@ -46,7 +45,6 @@ export const aceternity: UIEntry[] = [
     install: "npx aceternity-ui@latest add 3d-card-effect",
   },
   {
-    previewKey: "aceternity-hero-parallax",
     id: "aceternity-hero-parallax",
     name: "Hero Parallax",
     description: "Multi-layer parallax hero with 3D image columns drifting at different depths.",
@@ -74,7 +72,6 @@ export const aceternity: UIEntry[] = [
     install: "npx aceternity-ui@latest add lamp-effect",
   },
   {
-    previewKey: "aceternity-macbook-scroll",
     id: "aceternity-macbook-scroll",
     name: "Macbook Scroll",
     description: "A 3D Macbook lid opens as you scroll — the infamous product-reveal section.",
@@ -88,7 +85,6 @@ export const aceternity: UIEntry[] = [
     install: "npx aceternity-ui@latest add macbook-scroll",
   },
   {
-    previewKey: "aceternity-background-beams",
     id: "aceternity-background-beams",
     name: "Background Beams",
     description: "Sharp light beams streak across a dark background along SVG trajectories.",
@@ -116,7 +112,6 @@ export const aceternity: UIEntry[] = [
     install: "npx aceternity-ui@latest add aurora-background",
   },
   {
-    previewKey: "aceternity-wavy-background",
     id: "aceternity-wavy-background",
     name: "Wavy Background",
     description: "Undulating wave canvas background — flowing, generative calm.",
@@ -130,7 +125,6 @@ export const aceternity: UIEntry[] = [
     install: "npx aceternity-ui@latest add wavy-background",
   },
   {
-    previewKey: "aceternity-infinite-moving-cards",
     id: "aceternity-infinite-moving-cards",
     name: "Infinite Moving Cards",
     description: "Testimonial cards marquee in both directions, pausable on hover.",
@@ -144,7 +138,6 @@ export const aceternity: UIEntry[] = [
     install: "npx aceternity-ui@latest add infinite-moving-cards",
   },
   {
-    previewKey: "aceternity-tracing-beam",
     id: "aceternity-tracing-beam",
     name: "Tracing Beam",
     description: "A vertical beam traces your reading progress alongside article content.",
@@ -158,7 +151,6 @@ export const aceternity: UIEntry[] = [
     install: "npx aceternity-ui@latest add tracing-beam",
   },
   {
-    previewKey: "aceternity-text-generate-effect",
     id: "aceternity-text-generate-effect",
     name: "Text Generate Effect",
     description: "Words materialize from blur one by one — the classic AI-reveal heading.",
@@ -172,7 +164,6 @@ export const aceternity: UIEntry[] = [
     install: "npx aceternity-ui@latest add text-generate-effect",
   },
   {
-    previewKey: "aceternity-floating-dock",
     id: "aceternity-floating-dock",
     name: "Floating Dock",
     description: "macOS dock that magnifies icons on hover and floats on the page edge.",
@@ -187,7 +178,6 @@ export const aceternity: UIEntry[] = [
     featured: true,
   },
   {
-    previewKey: "aceternity-bento-grid",
     id: "aceternity-bento-grid",
     name: "Bento Grid",
     description: "The Apple-style bento grid with spotlight hover and staggered item motion.",
@@ -202,7 +192,6 @@ export const aceternity: UIEntry[] = [
     featured: true,
   },
   {
-    previewKey: "aceternity-github-globe",
     id: "aceternity-github-globe",
     name: "GitHub Globe",
     description: "3D globe with animated visit arcs — the open-source repo showpiece.",

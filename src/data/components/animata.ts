@@ -189,7 +189,6 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/three.json",
   },
   {
-    previewKey: "animata-ai-button",
     id: "animata-ai-button",
     name: "AI Button",
     description: "Animated AI button with shimmer effect for loading and idle states.",
@@ -588,7 +587,6 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/marquee.json",
   },
   {
-    previewKey: "animata-sibling-focus-nav",
     id: "animata-sibling-focus-nav",
     name: "Sibling Focus Nav",
     description:
@@ -603,7 +601,6 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/sibling-focus-nav.json",
   },
   {
-    previewKey: "animata-flower-menu",
     id: "animata-flower-menu",
     name: "Flower Menu",
     description:
@@ -1145,7 +1142,6 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/fluid-tabs.json",
   },
   {
-    previewKey: "animata-gooey-tabs",
     id: "animata-gooey-tabs",
     name: "Gooey Tabs",
     description:
@@ -2006,7 +2002,6 @@ export const animata: UIEntry[] = [
     install: "npx shadcn@latest add https://animata.design/r/notes.json",
   },
   {
-    previewKey: "animata-profile",
     id: "animata-profile",
     name: "Profile",
     description: "A widget that shows user profile",
