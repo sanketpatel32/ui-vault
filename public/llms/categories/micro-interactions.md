@@ -122,3 +122,6 @@
 - **Swipe actions** https://uiarc.dev/components/swipe-actions — Reveal row actions with a swipe, or from the same actions in a menu. [MIT, live-previewable, category: micro-interactions]
 - **Reactions** https://uiarc.dev/components/reactions — Acknowledge a post in one tap, with counts that roll. [MIT, live-previewable, category: micro-interactions]
 - **Image compare** https://uiarc.dev/components/image-compare — Drag a divider across two images to see what changed. [MIT, live-previewable, category: micro-interactions]
+- **Cursor Track** https://snapcn.dev/docs/screens/cursor-track — A synthetic cursor that walks a path of waypoints over any children and pulses a click ring on arrival — for sims, and for recordings whose cursor never made the file [MIT, live-previewable, category: micro-interactions]
+- **Button Press** https://snapcn.dev/docs/cursor/button-press — A cursor walks onto a split action button: hover, press, a spinner while it works, then a drawn tick. The deploy beat of every launch video [MIT, live-previewable, category: micro-interactions]
+- **Click Type** https://snapcn.dev/docs/cursor/click-type — A prompt composer writes its own placeholder while a cursor flies in and clicks the field, then a hard cut into the field where the prompt types at the caret [MIT, live-previewable, category: micro-interactions]

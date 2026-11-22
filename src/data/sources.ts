@@ -269,4 +269,20 @@ export const sources: Source[] = [
       "MIT (github.com/kuratlielia/arc-library). Free set only — Arc Pro (131 components + 122 blocks; $149/yr or $249 lifetime) installs from the token-gated @uiarc-pro registry and is excluded. Install the design tokens once first (npx shadcn@latest add @uiarc/arc-foundation) and import components/arc/foundation.css. Catalog-only: no vendored previews yet.",
     color: "#2dd4bf",
   },
+  {
+    id: "snapcn",
+    name: "snapcn",
+    url: "https://snapcn.dev",
+    tagline: "shadcn-style video components for Remotion.",
+    description:
+      "62 free MIT components for programmatic video — kinetic titles, captions, logo stings, device frames, cursor clicks, AI-chat input scenes and launch scenes, all rendered with Remotion.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "remotion"],
+    install: "npx shadcn@latest add @snapcn/<name>",
+    installLabel: "shadcn registry (@snapcn)",
+    notes:
+      "MIT (github.com/shadcn-labs/snapcn). Prerequisite: an existing Remotion project (npx create-video@latest) — components render inside Remotion compositions, not as page UI. Free renders export at 720p with a small watermark; snapcn Pro ($179/yr or $279 once — 81+ components, 1080p, MCP) is excluded. The namespace is @snapcn (the old @snap-cn no longer resolves). Catalog-only: no previews (Remotion is not a hub dependency).",
+    color: "#ef4444",
+  },
 ];
