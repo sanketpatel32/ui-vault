@@ -49,7 +49,13 @@ class PreviewErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
 const lazyMap: Record<string, React.LazyExoticComponent<React.ComponentType>> = {};
 
 for (const key of Object.keys(showcaseLoaders)) {
-  lazyMap[key] = lazy(showcaseLoaders[key]);
+  lazyMap[key] = lazy(async () => {
+    const [mod, { withReducedMotion }] = await Promise.all([
+      showcaseLoaders[key](),
+      import("@/showcase/reduced-motion"),
+    ]);
+    return { default: withReducedMotion(mod.default, key) };
+  });
 }
 
 function PreviewRenderer({ previewKey }: { previewKey: string }) {
