@@ -1,8 +1,8 @@
 # UI Vault — Build Plan
 
-> A personal, frontend-only React hub that aggregates UI components from 12 hand-picked sources (see `source.txt`) into one categorized, searchable, previewable library. No backend — all data lives in static TypeScript registry files, all personal state in localStorage.
+> A personal, frontend-only React hub that aggregates UI components from 15 free, vendorable sources (originally 12 hand-picked in `source.txt`) into one categorized, searchable, previewable library. No backend — all data lives in static TypeScript registry files, all personal state in localStorage.
 
-**Status: v0.5.2 SHIPPED (2026-08-29) — 100% Real Vendored Previews with local `./` component imports across ALL 586 entries (zero stubs, zero substitutes). Clean Vite+ build, oxlint/oxfmt green, type-safe, lazy-loaded, ErrorBoundary wrapped.**
+**Status: v0.7.0 SHIPPED (2026-08-30) — 814 entries · 15 sources · 23 categories, 100% live-preview coverage (814/814 real vendored previews). Clean Vite+ build, oxlint/oxfmt green, type-safe, lazy-loaded, ErrorBoundary wrapped. Later 0.7.x releases are docs-only; `package.json` holds the current version.**
 
 ---
 
@@ -10,28 +10,33 @@
 
 Full research is summarized in `AGENTS.md` → "Sources & licensing". The decisions that follow from it:
 
-1. **Not everything can be embedded.** Only 6 sources ship free, legally vendorable code. The hub therefore has two kinds of entries:
-   - **Live entries** — component code vendored into the app, rendered as a live preview.
-   - **Link-out entries** — metadata card + deep link to the source (paid/gated/gallery sources).
+1. **Not everything can be embedded.** The original research found only 6 of the 12 `source.txt` sources ship free, legally vendorable code, so v0.1–v0.2 carried two kinds of entries (live entries + link-out metadata cards). **Since v0.3.0 the registry carries only vendorable sources** — the link-out sources were removed from `src/data/` entirely, and every entry is a live entry (free code + install command + vendored preview). v0.4.0 added 6 more MIT libraries and v0.6.0 added 3 more, for 15 sources.
 2. **The ecosystem is homogeneous**: React + TypeScript + Tailwind CSS + Motion (Framer Motion) + shadcn-style copy-paste/CLI distribution. Building the hub on the same stack means vendored components drop in with near-zero adaptation.
 3. **Every source has its own taxonomy.** We define ONE unified taxonomy (§4) and map every entry into it; the source's own category is kept as a tag (`sourceCategory`).
 
 ### Source classification
 
-| Source                 | Type                           | License                 | Policy in this app                       |
-| ---------------------- | ------------------------------ | ----------------------- | ---------------------------------------- |
-| reactbits.dev          | Code (134 free)                | MIT (free tier)         | ✅ Vendor & preview                      |
-| motion-primitives.com  | Code (~35 free)                | MIT (free tier)         | ✅ Vendor & preview                      |
-| fancycomponents.dev    | Code (~46)                     | MIT                     | ✅ Vendor & preview                      |
-| number-flow.barvian.me | Code (npm)                     | MIT                     | ✅ Vendor & preview                      |
-| watermelon.sh          | Code (600+)                    | Open source, free       | ✅ Vendor & preview (curated subset)     |
-| ui.aceternity.com      | Code (free tier)               | Free tier + paid Pro    | ✅ Vendor free tier only; Pro = link-out |
-| 21st.dev               | Community registry (12k+)      | Freemium (2 copies/day) | 🔗 Link-out only (gated)                 |
-| shadcnstudio.com       | Blocks (800+)                  | Free tier + $249 Pro    | 🔗 Link-out only                         |
-| pro.ui-layouts.com     | Layout blocks (150+)           | Paid ($139+)            | 🔗 Link-out only                         |
-| cuedesign.space        | Prompt/reference (92)          | Free tier + Cue+ $99    | 🔗 Link-out only                         |
-| collectui.com          | Inspiration gallery (147 cats) | Free to browse          | 🔗 Link-out only                         |
-| component.gallery      | Pattern reference (60/95 DS)   | Free                    | 🔗 Link-out only                         |
+Current registry (see `AGENTS.md` → "Sources & licensing" for install commands and notes):
+
+| Source                 | SourceId           | License                         | Entries | Policy in this app              |
+| ---------------------- | ------------------ | ------------------------------- | ------- | ------------------------------- |
+| reactbits.dev          | `reactbits`        | MIT (free tier)                 | 25      | ✅ Vendor & preview             |
+| motion-primitives.com  | `motionprimitives` | MIT (free tier)                 | 18      | ✅ Vendor & preview             |
+| fancycomponents.dev    | `fancy`            | MIT                             | 16      | ✅ Vendor & preview             |
+| number-flow.barvian.me | `numberflow`       | MIT (npm: `@number-flow/react`) | 4       | ✅ Vendor & preview             |
+| watermelon.sh          | `watermelon`       | Open source, free               | 12      | ✅ Vendor & preview (curated)   |
+| ui.aceternity.com      | `aceternity`       | Free tier + paid Pro            | 15      | ✅ Free tier only; Pro excluded |
+| ui.shadcn.com          | `shadcn`           | MIT                             | 65      | ✅ Vendor & preview             |
+| magicui.design         | `magicui`          | MIT (templates paid)            | 76      | ✅ Vendor & preview             |
+| animata.design         | `animata`          | MIT                             | 154     | ✅ Vendor & preview             |
+| animate-ui.com         | `animateui`        | MIT + Commons Clause            | 154     | ✅ Vendor & preview             |
+| launchuicomponents.com | `launchui`         | MIT (+ $99 Pro sections)        | 16      | ✅ Free set only                |
+| coss.com/origin        | `originui`         | MIT (legacy snapshot in coss)   | 31      | ✅ Vendor & preview (families)  |
+| coss.com/ui            | `cossui`           | MIT (apps/ui carve-out)         | 111     | ✅ Vendor & preview             |
+| cult-ui.com            | `cultui`           | MIT (Cult Pro is paid)          | 77      | ✅ Free set only                |
+| kibo-ui.com            | `kiboui`           | MIT                             | 40      | ✅ Vendor & preview             |
+
+Removed in v0.3.0 (paid/gated/gallery — not carried as entries): 21st.dev, shadcnstudio.com, pro.ui-layouts.com, cuedesign.space, collectui.com, component.gallery.
 
 ---
 
@@ -57,10 +62,10 @@ App name (changeable): **UI Vault**.
 
 ```
 /                        Home — stats (N components, M sources), favorites, recently viewed, category grid
-/browse                  All entries + filters (category, source, license, type live/link-out, tags) + search
+/browse                  All entries + filters (category, source, license, tags) + search
 /c/:category             Category page (reuses browse view, pre-filtered)
 /source/:sourceId        Source page — what it is, license, install command, its entries, outbound link
-/component/:id           Detail page — live preview OR link-out card, install command w/ copy,
+/component/:id           Detail page — live preview, install command w/ copy,
                          tags, source, license, related entries
 /favorites               Saved entries (localStorage)
 ```
@@ -71,7 +76,7 @@ Global chrome: left sidebar (category tree grouped by section), top bar (search 
 
 ## 4. Unified category taxonomy
 
-Four groups → categories. Slugs are permanent IDs. Lives in `src/data/categories.ts`.
+Three groups → 23 categories. Slugs are permanent IDs. Lives in `src/data/categories.ts`.
 
 **Group: Components**
 
@@ -89,15 +94,15 @@ Four groups → categories. Slugs are permanent IDs. Lives in `src/data/categori
 | `data-display`       | Data Display              | Tables, charts, badges, avatars, stats/KPI                     |
 | `numbers`            | Numbers & Counters        | NumberFlow, NumberFlowGroup, Number Ticker, Animated Number    |
 | `micro-interactions` | Micro-interactions & Fun  | Gravity, Elastic Line, Gooey Filter, Cursor, Screensaver       |
+| `chat`               | Chat & AI                 | Chat bubbles, message streams, attachments, AI prompt inputs   |
 
 **Group: Blocks (page sections)**
-`hero` · `features` · `pricing` · `testimonials` · `cta` · `faq` · `footers` · `navbars` · `sections-misc` (team, blog, contact, stats, logo clouds, announcements)
+`hero` · `features` · `pricing` · `testimonials` · `cta` · `faq` · `footers` · `sections-misc` (team, blog, contact, stats, logo clouds, announcements)
 
 **Group: Templates**
-`dashboards` · `landing-pages` · `auth` (login/signup) · `full-templates`
+`dashboards` · `auth` (login/signup)
 
-**Group: Inspiration**
-`galleries` (CollectUI, Component Gallery, Cue — reference-only patterns & screenshots)
+(The early `navbars`, `landing-pages`, `full-templates` and Inspiration/`galleries` slugs were never shipped / were dropped with the v0.3.0 link-out removal.)
 
 Rules: an entry has exactly ONE primary category + any number of tags. The source's own category name is preserved as the `sourceCategory` field. New categories require editing `categories.ts` deliberately — never invent slugs inline.
 
@@ -110,21 +115,24 @@ Rules: an entry has exactly ONE primary category + any number of tags. The sourc
 ```ts
 // src/data/types.ts
 type SourceId =
-  | "aceternity"
   | "reactbits"
   | "motionprimitives"
   | "fancy"
   | "numberflow"
   | "watermelon"
-  | "21st"
-  | "shadcnstudio"
-  | "uilayouts"
-  | "cue"
-  | "collectui"
-  | "componentgallery";
+  | "aceternity"
+  | "shadcn"
+  | "magicui"
+  | "animata"
+  | "animateui"
+  | "launchui"
+  | "originui"
+  | "cossui"
+  | "cultui"
+  | "kiboui";
 
 type License = "mit" | "free" | "freemium" | "paid";
-type PreviewMode = "live" | "linkout";
+type PreviewMode = "live" | "linkout"; // every registry entry is "live" since v0.3.0
 
 interface Source {
   id: SourceId;
@@ -155,7 +163,7 @@ interface UIEntry {
 }
 ```
 
-Registry files: one file per source (`src/data/components/<source>.ts`), merged by `src/data/index.ts`. Seed target for v1: **~150–200 entries** (flagships from research + top categories), grown over time.
+Registry files: one file per source (`src/data/components/<source>.ts`), merged by `src/data/index.ts`. Seed target for v1 was ~150–200 entries; the registry now holds 814.
 
 ---
 
@@ -167,7 +175,7 @@ Registry files: one file per source (`src/data/components/<source>.ts`), merged 
 ├── PLAN.md                 # this file — checklist of record
 ├── README.md               # human-facing intro
 ├── source.txt              # original inspiration list (provenance — keep forever)
-├── package.json            # scripts: dev/build/lint/check/fmt/llms/registry:check (vp-powered)
+├── package.json            # scripts: dev/build/preview/lint/check/format/llms/registry:check (vp-powered)
 ├── vite.config.ts          # Vite+ unified config: plugins + fmt + lint (oxlint) settings
 ├── tsconfig.json           # references: app / node / scripts
 ├── scripts/
@@ -175,7 +183,7 @@ Registry files: one file per source (`src/data/components/<source>.ts`), merged 
 │   └── registry-check.ts   # validates ids, categories, licensing policy, preview loaders
 ├── src/
 │   ├── main.tsx  App.tsx   # router + layout shell (sidebar, topbar, ⌘K palette)
-│   ├── data/               # types.ts, sources.ts, categories.ts, components/*.ts (12), index.ts
+│   ├── data/               # types.ts, sources.ts, categories.ts, components/*.ts (15), index.ts
 │   ├── lib/                # utils (cn), registry (queries), search (fuse), store (favorites/recents), theme
 │   ├── components/         # hub's own UI: ui/ primitives, sidebar, topbar, command-palette,
 │   │                       # entry-card, preview-frame, filter-bar, badges…
@@ -195,7 +203,7 @@ Machine-readable docs for the whole site, **generated — never hand-edited** �
 
 | Artifact                           | Content                                                                                                  |
 | ---------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| `public/llms.txt`                  | Site index (llmstxt.org format): what the hub is, all 12 sources + licenses, all categories, links below |
+| `public/llms.txt`                  | Site index (llmstxt.org format): what the hub is, all 15 sources + licenses, all categories, links below |
 | `public/llms/sources/<id>.md`      | One page per source: entries, install commands, licensing policy                                         |
 | `public/llms/categories/<slug>.md` | One page per category: every entry, source, links                                                        |
 | `public/llms-full.txt`             | Everything concatenated in one file                                                                      |
@@ -210,15 +218,15 @@ Machine-readable docs for the whole site, **generated — never hand-edited** �
 
 - [x] `npm create vite@latest . -- --template react-ts`
 - [x] Tailwind v4 (`@tailwindcss/vite`), `src/index.css` with theme tokens (dark default)
-- [x] shadcn/ui init (`npx shadcn@latest init`); add: button, badge, card, dialog, command, dropdown-menu, input, tabs, tooltip, separator, sheet, scroll-area, sonner
+- [x] shadcn-style hand-rolled kit in `src/components/ui/` instead of `npx shadcn@latest init` (no shadcn CLI installed): button, badge, card, dialog, input, tabs, tooltip, separator, sheet, scroll-area, popover, …
 - [x] Deps: `react-router`, `motion`, `lucide-react`, `fuse.js`, `clsx`, `tailwind-merge`
-- [x] ESLint + Prettier; `engines.node >= 20`
+- [x] Lint/format via Vite+ (oxlint + oxfmt + tsgolint — replaced the initial ESLint + Prettier); `engines.node >= 20`
 - [x] App shell renders: sidebar + topbar + router with stub pages
 - [x] Init git; first commit
 
 ### Phase 1 — Data layer (the real work)
 
-- [x] `types.ts`, `sources.ts` (all 12, from research table §1), `categories.ts` (§4)
+- [x] `types.ts`, `sources.ts` (originally 12, now 15 — table §1), `categories.ts` (§4)
 - [x] Registry seed files per source — flagships + top categories (~150–200 entries):
   - [x] reactbits (~25: SplitText, BlurText, Glitch, Decrypted, Circular Text, Meta Balls, Silk, Liquid Chrome, Hyperspeed, Iridescence, Ballpit, Dither, Lanyard, Star Border, Magnet, Click Spark, Elastic Mesh…)
   - [x] motionprimitives (~15: Text Effect/Scramble/Morph, Border Trail, Spotlight, Tilt, Magnetic, Dock, Infinite Slider, Morphing Dialog, Progressive Blur, Glow, Scroll Progress, Cursor)
@@ -226,7 +234,7 @@ Machine-readable docs for the whole site, **generated — never hand-edited** �
   - [x] aceternity free (~15: 3D Pin, 3D Card, Hero Parallax, Lamp, Macbook Scroll, Moving Border, Background Beams, Aurora, Wavy, Infinite Moving Cards, Tracing Beam, Text Generate, Floating Dock, Bento Grid, GitHub Globe)
   - [x] numberflow (4: NumberFlow, NumberFlowGroup, Input stepper, Countdown/Activity recipes)
   - [x] watermelon (curated ~15 from Hero/Footer families + micro-interactions)
-  - [x] Link-out seeds: 21st.dev (~20 top by category), shadcnstudio (~15 blocks), uilayouts (~10 heroes + templates), cue (~10), collectui (~15 top categories), componentgallery (~15 largest patterns)
+  - [x] Link-out seeds: 21st.dev, shadcnstudio, uilayouts, cue, collectui, componentgallery — **removed in v0.3.0** (registry is vendorable-only)
 - [x] `lib/registry.ts`: selectors (byCategory, bySource, byTag, search, stats, related)
 - [x] `lib/search.ts`: fuse.js index
 - [x] Unit-check script (`npm run registry:check`): unique ids, valid category slugs, valid source ids, live entries have previewKey
@@ -258,7 +266,7 @@ Machine-readable docs for the whole site, **generated — never hand-edited** �
 
 ### Phase 5 — llms.txt generation
 
-- [x] `scripts/generate-llms.mjs` → all artifacts in §7
+- [x] `scripts/generate-llms.ts` → all artifacts in §7
 - [x] Wire `predev`/`prebuild` npm hooks + `npm run llms`
 - [x] Regenerate root `llms.txt` seed into `public/` (replacing the hand-written one)
 - [x] Footer link to `/llms.txt` (humans too can read it)
@@ -284,7 +292,7 @@ Machine-readable docs for the whole site, **generated — never hand-edited** �
 ## 9. Non-goals / constraints (do not drift)
 
 - **No backend, ever.** No API, no DB, no auth. Static build + localStorage.
-- **Never vendor paid/gated code.** 21st.dev, Cue+, Aceternity Pro, ui-layouts Pro, shadcnstudio Pro are link-out metadata only. When in doubt, link out.
+- **Never vendor paid/gated code.** 21st.dev, Cue+, Aceternity Pro, ui-layouts Pro, shadcnstudio Pro, Launch UI Pro and Cult Pro are not carried at all (v0.3.0 policy). When in doubt, leave it out.
 - **Don't scrape builds a crawler** — the registry is hand-curated from research/docs, not auto-scraped.
 - **Vendored components are frozen snapshots** — we don't maintain forks; we record origin + date.
 
