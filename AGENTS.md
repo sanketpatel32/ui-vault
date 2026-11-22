@@ -20,7 +20,9 @@ Personal, frontend-only React hub that aggregates UI components from the 15 free
 | ---------------------------- | ------------------------------------------------------------ |
 | `npm run dev`                | Dev server via `vp dev` (runs `llms` first via predev hook)  |
 | `npm run build`              | `tsc -b && vp build` (runs `llms` first)                     |
+| `npm run preview`            | Serve the production build locally (`vp preview`)            |
 | `npm run check` / `vp check` | Format + lint + type checks together (oxfmt/oxlint/tsgolint) |
+| `npm run lint` / `vp lint`   | Lint only (oxlint)                                           |
 | `npm run format` / `vp fmt`  | Format everything (oxfmt — double quotes)                    |
 | `npm run llms`               | Regenerate all llms.txt artifacts from `src/data/`           |
 | `npm run registry:check`     | Validate registry ids/slugs/sources/licensing/loaders        |
