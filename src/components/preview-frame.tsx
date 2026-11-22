@@ -146,10 +146,11 @@ export function PreviewFrame({ entry }: { entry: UIEntry }) {
         </div>
       </div>
 
-      <div className="preview-dots relative flex min-h-[340px] items-center justify-center overflow-hidden p-6">
+      {/* Wide previews scroll horizontally inside the frame instead of being clipped. */}
+      <div className="preview-dots relative flex min-h-[340px] items-center justify-center-safe overflow-x-auto overflow-y-hidden p-6">
         <div
           className={cn(
-            "flex w-full items-center justify-center transition-all duration-300",
+            "flex w-full min-w-0 items-center justify-center-safe transition-all duration-300",
             scoped && "rounded-xl border border-border shadow-lg shadow-black/5",
             scoped && (canvasTheme === "dark" ? "dark bg-bg" : "light bg-bg"),
             narrow ? "max-w-[400px] p-5" : scoped ? "p-6" : "",
