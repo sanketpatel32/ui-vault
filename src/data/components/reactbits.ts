@@ -16,7 +16,7 @@ export const reactbits: UIEntry[] = [
     tags: ["text", "scroll", "stagger", "reveal"],
     license: "mit",
     previewMode: "live",
-    install: "npx jsrepo add react-bits/SplitText",
+    install: "npx shadcn@latest add @react-bits/SplitText-TS-TW",
   },
   {
     id: "reactbits-blur-text",
@@ -30,7 +30,7 @@ export const reactbits: UIEntry[] = [
     tags: ["text", "blur", "scroll", "reveal"],
     license: "mit",
     previewMode: "live",
-    install: "npx jsrepo add react-bits/BlurText",
+    install: "npx shadcn@latest add @react-bits/BlurText-TS-TW",
     previewKey: "reactbits-blur-text",
     featured: true,
   },
@@ -46,7 +46,7 @@ export const reactbits: UIEntry[] = [
     tags: ["text", "glitch", "rgb"],
     license: "mit",
     previewMode: "live",
-    install: "npx jsrepo add react-bits/GlitchText",
+    install: "npx shadcn@latest add @react-bits/GlitchText-TS-TW",
   },
   {
     previewKey: "reactbits-decrypted-text",
@@ -61,7 +61,7 @@ export const reactbits: UIEntry[] = [
     tags: ["text", "scramble", "decode"],
     license: "mit",
     previewMode: "live",
-    install: "npx jsrepo add react-bits/DecryptedText",
+    install: "npx shadcn@latest add @react-bits/DecryptedText-TS-TW",
   },
   {
     previewKey: "reactbits-gradient-text",
@@ -75,7 +75,7 @@ export const reactbits: UIEntry[] = [
     tags: ["text", "gradient", "css"],
     license: "mit",
     previewMode: "live",
-    install: "npx jsrepo add react-bits/GradientText",
+    install: "npx shadcn@latest add @react-bits/GradientText-TS-TW",
   },
   {
     previewKey: "reactbits-circular-text",
@@ -90,7 +90,7 @@ export const reactbits: UIEntry[] = [
     tags: ["text", "circle", "svg", "rotation"],
     license: "mit",
     previewMode: "live",
-    install: "npx jsrepo add react-bits/CircularText",
+    install: "npx shadcn@latest add @react-bits/CircularText-TS-TW",
   },
   {
     id: "reactbits-shiny-text",
@@ -104,7 +104,7 @@ export const reactbits: UIEntry[] = [
     tags: ["text", "shine", "sweep", "css"],
     license: "mit",
     previewMode: "live",
-    install: "npx jsrepo add react-bits/ShinyText",
+    install: "npx shadcn@latest add @react-bits/ShinyText-TS-TW",
     previewKey: "reactbits-shiny-text",
   },
   {
@@ -118,11 +118,10 @@ export const reactbits: UIEntry[] = [
     tags: ["number", "counter", "scroll", "stats"],
     license: "mit",
     previewMode: "live",
-    install: "npx jsrepo add react-bits/CountUp",
+    install: "npx shadcn@latest add @react-bits/CountUp-TS-TW",
     previewKey: "reactbits-count-up",
   },
   {
-    previewKey: "reactbits-scroll-reveal",
     id: "reactbits-scroll-reveal",
     name: "ScrollReveal",
     description:
@@ -134,10 +133,9 @@ export const reactbits: UIEntry[] = [
     tags: ["scroll", "reveal", "wrapper"],
     license: "mit",
     previewMode: "live",
-    install: "npx jsrepo add react-bits/ScrollReveal",
+    install: "npx shadcn@latest add @react-bits/ScrollReveal-TS-TW",
   },
   {
-    previewKey: "reactbits-fade-content",
     id: "reactbits-fade-content",
     name: "FadeContent",
     description: "Fade any content in/out on visibility change — the utility transition wrapper.",
@@ -148,10 +146,9 @@ export const reactbits: UIEntry[] = [
     tags: ["fade", "visibility", "wrapper"],
     license: "mit",
     previewMode: "live",
-    install: "npx jsrepo add react-bits/FadeContent",
+    install: "npx shadcn@latest add @react-bits/FadeContent-TS-TW",
   },
   {
-    previewKey: "reactbits-click-spark",
     id: "reactbits-click-spark",
     name: "ClickSpark",
     description:
@@ -163,10 +160,9 @@ export const reactbits: UIEntry[] = [
     tags: ["click", "particles", "feedback"],
     license: "mit",
     previewMode: "live",
-    install: "npx jsrepo add react-bits/ClickSpark",
+    install: "npx shadcn@latest add @react-bits/ClickSpark-TS-TW",
   },
   {
-    previewKey: "reactbits-splash-cursor",
     id: "reactbits-splash-cursor",
     name: "SplashCursor",
     description: "Fluid simulation that splashes and follows the cursor — WebGL ink in a backdrop.",
@@ -177,10 +173,9 @@ export const reactbits: UIEntry[] = [
     tags: ["cursor", "fluid", "webgl", "simulation"],
     license: "mit",
     previewMode: "live",
-    install: "npx jsrepo add react-bits/SplashCursor",
+    install: "npx shadcn@latest add @react-bits/SplashCursor-TS-TW",
   },
   {
-    previewKey: "reactbits-meta-balls",
     id: "reactbits-meta-balls",
     name: "Meta Balls",
     description:
@@ -192,11 +187,10 @@ export const reactbits: UIEntry[] = [
     tags: ["webgl", "gooey", "organic", "shader"],
     license: "mit",
     previewMode: "live",
-    install: "npx jsrepo add react-bits/MetaBalls",
+    install: "npx shadcn@latest add @react-bits/MetaBalls-TS-TW",
     featured: true,
   },
   {
-    previewKey: "reactbits-silk",
     id: "reactbits-silk",
     name: "Silk",
     description: "Smooth, flowing silk-like gradient waves in WebGL. Calm and mesmerizing.",
@@ -207,10 +201,9 @@ export const reactbits: UIEntry[] = [
     tags: ["webgl", "gradient", "waves"],
     license: "mit",
     previewMode: "live",
-    install: "npx jsrepo add react-bits/Silk",
+    install: "npx shadcn@latest add @react-bits/Silk-TS-TW",
   },
   {
-    previewKey: "reactbits-liquid-chrome",
     id: "reactbits-liquid-chrome",
     name: "Liquid Chrome",
     description: "Molten, reflective chrome surface that ripples — cyberpunk hero background.",
@@ -221,10 +214,9 @@ export const reactbits: UIEntry[] = [
     tags: ["webgl", "chrome", "3d", "shader"],
     license: "mit",
     previewMode: "live",
-    install: "npx jsrepo add react-bits/LiquidChrome",
+    install: "npx shadcn@latest add @react-bits/LiquidChrome-TS-TW",
   },
   {
-    previewKey: "reactbits-hyperspeed",
     id: "reactbits-hyperspeed",
     name: "Hyperspeed",
     description:
@@ -236,10 +228,9 @@ export const reactbits: UIEntry[] = [
     tags: ["webgl", "synthwave", "tunnel", "retro"],
     license: "mit",
     previewMode: "live",
-    install: "npx jsrepo add react-bits/Hyperspeed",
+    install: "npx shadcn@latest add @react-bits/Hyperspeed-TS-TW",
   },
   {
-    previewKey: "reactbits-iridescence",
     id: "reactbits-iridescence",
     name: "Iridescence",
     description:
@@ -251,10 +242,9 @@ export const reactbits: UIEntry[] = [
     tags: ["webgl", "shader", "holo", "material"],
     license: "mit",
     previewMode: "live",
-    install: "npx jsrepo add react-bits/Iridescence",
+    install: "npx shadcn@latest add @react-bits/Iridescence-TS-TW",
   },
   {
-    previewKey: "reactbits-ballpit",
     id: "reactbits-ballpit",
     name: "Ballpit",
     description: "A pit of physics balls that react to pointer movement — playful and interactive.",
@@ -265,10 +255,9 @@ export const reactbits: UIEntry[] = [
     tags: ["physics", "particles", "playful", "matter"],
     license: "mit",
     previewMode: "live",
-    install: "npx jsrepo add react-bits/Ballpit",
+    install: "npx shadcn@latest add @react-bits/Ballpit-TS-TW",
   },
   {
-    previewKey: "reactbits-dither",
     id: "reactbits-dither",
     name: "Dither",
     description: "Retro dithering shader over imagery or gradients — 1-bit nostalgia, modern GPU.",
@@ -279,10 +268,9 @@ export const reactbits: UIEntry[] = [
     tags: ["webgl", "retro", "texture", "shader"],
     license: "mit",
     previewMode: "live",
-    install: "npx jsrepo add react-bits/Dither",
+    install: "npx shadcn@latest add @react-bits/Dither-TS-TW",
   },
   {
-    previewKey: "reactbits-ribbons",
     id: "reactbits-ribbons",
     name: "Ribbons",
     description: "Flowing 3D ribbons drifting through space — elegant WebGL motion backdrop.",
@@ -293,10 +281,9 @@ export const reactbits: UIEntry[] = [
     tags: ["3d", "webgl", "flow", "shader"],
     license: "mit",
     previewMode: "live",
-    install: "npx jsrepo add react-bits/Ribbons",
+    install: "npx shadcn@latest add @react-bits/Ribbons-TS-TW",
   },
   {
-    previewKey: "reactbits-particles",
     id: "reactbits-particles",
     name: "Particles",
     description: "Classic lightweight canvas particle field — the dependable ambient background.",
@@ -307,10 +294,9 @@ export const reactbits: UIEntry[] = [
     tags: ["canvas", "lightweight", "ambient"],
     license: "mit",
     previewMode: "live",
-    install: "npx jsrepo add react-bits/Particles",
+    install: "npx shadcn@latest add @react-bits/Particles-TS-TW",
   },
   {
-    previewKey: "reactbits-elastic-mesh",
     id: "reactbits-elastic-mesh",
     name: "Elastic Mesh",
     description:
@@ -322,10 +308,9 @@ export const reactbits: UIEntry[] = [
     tags: ["webgl", "mesh", "physics", "pointer"],
     license: "mit",
     previewMode: "live",
-    install: "npx jsrepo add react-bits/ElasticMesh",
+    install: "npx shadcn@latest add @react-bits/ElasticMesh-TS-TW",
   },
   {
-    previewKey: "reactbits-lanyard",
     id: "reactbits-lanyard",
     name: "Lanyard",
     description:
@@ -337,7 +322,7 @@ export const reactbits: UIEntry[] = [
     tags: ["three", "physics", "3d", "badge"],
     license: "mit",
     previewMode: "live",
-    install: "npx jsrepo add react-bits/Lanyard",
+    install: "npx shadcn@latest add @react-bits/Lanyard-TS-TW",
   },
   {
     previewKey: "reactbits-magnet",
@@ -351,7 +336,7 @@ export const reactbits: UIEntry[] = [
     tags: ["magnetic", "hover", "pointer", "spring"],
     license: "mit",
     previewMode: "live",
-    install: "npx jsrepo add react-bits/Magnet",
+    install: "npx shadcn@latest add @react-bits/Magnet-TS-TW",
   },
   {
     previewKey: "reactbits-star-border",
@@ -365,6 +350,6 @@ export const reactbits: UIEntry[] = [
     tags: ["border", "glow", "gradient", "cta"],
     license: "mit",
     previewMode: "live",
-    install: "npx jsrepo add react-bits/StarBorder",
+    install: "npx shadcn@latest add @react-bits/StarBorder-TS-TW",
   },
 ];

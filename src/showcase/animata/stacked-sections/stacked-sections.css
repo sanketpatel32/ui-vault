@@ -1,0 +1,6 @@
+/* Vendored from https://github.com/codse/animata/blob/25c27e5a874c60a56dcc1609df3b2c4f5f8456f8/animata/scroll/stacked-sections.css (MIT, codse/animata) on 2026-11-22. */
+@layer components {
+  [data-stacked-content][data-stacked-covered] {
+    transform-origin: 50% 0%;
+  }
+}

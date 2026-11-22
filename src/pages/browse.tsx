@@ -46,7 +46,7 @@ export function Browse() {
     if (filters.lic) list = list.filter((e) => e.license === filters.lic);
     if (filters.tag) list = list.filter((e) => e.tags.includes(filters.tag));
     if (filters.q.trim()) {
-      const ids = new Set(searchEntries(filters.q, 200).map((e) => e.id));
+      const ids = new Set(searchEntries(filters.q, entries.length).map((e) => e.id));
       list = list.filter((e) => ids.has(e.id));
     }
     if (sort === "name") list = [...list].sort((a, b) => a.name.localeCompare(b.name));
@@ -104,7 +104,7 @@ export function Browse() {
               onClick={() =>
                 f.key === "cat" ? setParam("cat", "") : onChange({ ...filters, [f.key]: "" })
               }
-              className="inline-flex cursor-pointer items-center gap-1 rounded-full border border-accent/30 bg-accent-soft px-2.5 py-1 text-[11px] font-medium text-accent transition-colors hover:border-accent/60"
+              className="inline-flex cursor-pointer items-center gap-1 rounded-full border border-accent/30 bg-accent-soft px-2.5 py-1 text-[11px] font-medium text-accent-text transition-colors hover:border-accent/60"
             >
               {f.label}
               <X size={11} className="opacity-70" />
@@ -121,7 +121,7 @@ export function Browse() {
               p.delete("cat");
               setParams(p, { replace: true });
             }}
-            className="ml-1 cursor-pointer px-1.5 text-[11px] text-muted-fg/80 transition-colors hover:text-fg"
+            className="ml-1 cursor-pointer px-1.5 text-[11px] text-faint-fg transition-colors hover:text-fg"
           >
             Clear all
           </button>

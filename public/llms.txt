@@ -4,7 +4,7 @@
 > (open-source animated React libraries and component registries), organized into one
 > categorized, searchable library. Every entry ships free code with its source, license,
 > install command and — where vendored — a live React preview. No backend: the catalog itself
-> lives in TypeScript files under src/data (1980 entries, 19 sources, 25 categories).
+> lives in TypeScript files under src/data (3157 entries, 33 sources, 25 categories).
 
 ## Sources
 
@@ -17,12 +17,26 @@
 - [shadcn/ui](https://ui.shadcn.com) — The canonical copy-paste component collection you own outright. (MIT, live-previewable, 77 cataloged)
 - [Magic UI](https://magicui.design) — UI library for design engineers. (MIT, live-previewable, 76 cataloged)
 - [Animata](https://animata.design) — Move, scale, rotate and animate with real components. (MIT, live-previewable, 154 cataloged)
-- [Animate UI](https://animate-ui.com) — Animated components for your next project. (Free, live-previewable, 154 cataloged)
+- [Animate UI](https://animate-ui.com) — Animated components for your next project. (MIT + Commons Clause, live-previewable, 154 cataloged)
 - [Launch UI](https://www.launchuicomponents.com) — Open-source components for your next launch. (MIT, live-previewable, 16 cataloged)
 - [Origin UI](https://coss.com/origin) — 600+ copy-paste components, 30 families — the deepest form catalog anywhere. (MIT, live-previewable, 31 cataloged)
 - [COSS UI](https://coss.com/ui) — Origin UI's actively developed successor — Base UI primitives plus 500+ particles. (MIT, live-previewable, 111 cataloged)
 - [Cult UI](https://cult-ui.com) — Animated, modern components designed for effortless integration. (MIT, live-previewable, 77 cataloged)
 - [Kibo UI](https://www.kibo-ui.com) — The shadcn registry for everything that doesn't exist yet. (MIT, live-previewable, 40 cataloged)
+- [Streamdown](https://streamdown.ai) — A drop-in replacement for react-markdown, designed for AI-powered streaming. (Free, live-previewable, 5 cataloged)
+- [Generative Loaders](https://generativeloaders.com) — React loaders for generative UI. (MIT, live-previewable, 46 cataloged)
+- [UI SDK](https://ui-sdk.dev) — A library of behaviors to build your components. (Free, live-previewable, 55 cataloged)
+- [wterm](https://wterm.dev) — A terminal emulator for the web. (Free, live-previewable, 1 cataloged)
+- [Skullet](https://skullet.lochie.me) — Smart skeleton states for React, Vue, Svelte, and vanilla JavaScript. (MIT, live-previewable, 1 cataloged)
+- [EasyUI](https://easyui.site) — Micro-animated, physics-based, dark-mode-first React components. (MIT, live-previewable, 137 cataloged)
+- [editorcn](https://www.rtecn.space) — Rich text editors for React, built on Tiptap with shadcn/ui tokens. (MIT, live-previewable, 16 cataloged)
+- [loading.dev](https://loading.dev) — Beautiful loading indicators for React. (MIT, live-previewable, 36 cataloged)
+- [Its Hover](https://itshover.com) — Animated icons that come alive on hover. (Free, live-previewable, 263 cataloged)
+- [Amicro](https://amicro.vercel.app) — Open-source React micro-interactions and transitions powered by Motion. (MIT, live-previewable, 174 cataloged)
+- [Kokonut UI](https://kokonutui.com) — Free open-source React components for AI chat and agents. (MIT, live-previewable, 116 cataloged)
+- [Arc UI](https://uiarc.dev) — Components and blocks designed for AI-assisted frontend development. (MIT, live-previewable, 143 cataloged)
+- [snapcn](https://snapcn.dev) — shadcn-style video components for Remotion. (MIT, live-previewable, 62 cataloged)
+- [beUI](https://beui.dev) — Animated components for React and Next.js. (MIT, live-previewable, 122 cataloged)
 - [Bklit UI](https://bklit.com) — Composable d3 + Motion chart components for React. (MIT, live-previewable, 38 cataloged)
 - [pdfcn](https://pdfcn.dev) — Copy-paste PDF components for React, built on Takumi and Forme. (MIT, live-previewable, 44 cataloged)
 - [Remocn](https://remocn.dev) — shadcn/ui for video — MIT Remotion components you own. (MIT, live-previewable, 925 cataloged)
@@ -31,35 +45,35 @@
 ## Categories
 
 ### Components
-- `text-animation` Text & Typography (97) — Animated text reveals, scrambles, gradients and typographic effects.
-- `backgrounds` Backgrounds (61) — Shader, gradient and generative backgrounds for heroes and panels.
-- `3d-webgl` 3D & WebGL (6) — Globes, physics and Three.js scenes that drop into a page.
-- `buttons` Buttons & Actions (51) — Buttons with borders, magnets and sparks — actions that feel alive.
-- `cards` Cards & Bento (37) — Spotlight, tilt, bento and stacking card treatments.
-- `navigation` Navigation (46) — Navbars, docks, sidebars, tabs, breadcrumbs and scroll progress.
-- `forms` Forms & Inputs (116) — Inputs, selects, OTP, uploads, sliders, toggles and date pickers.
-- `overlays` Overlays (85) — Dialogs, drawers, popovers, tooltips, toasts and command bars.
-- `numbers` Numbers & Counters (16) — Animated numbers, tickers and odometers.
-- `micro-interactions` Micro-interactions (115) — Cursor tricks, physics toys and small moments of delight.
-- `feedback` Feedback & Status (43) — Spinners, progress, skeletons, empty states and notifications.
-- `data-display` Data Display (92) — Tables, charts, stats, badges and avatars for showing data.
-- `chat` Chat & AI (152) — Chat and AI conversation UI — bubbles, message streams, attachments.
+- `text-animation` Text & Typography (163) — Animated text reveals, scrambles, gradients and typographic effects.
+- `backgrounds` Backgrounds (80) — Shader, gradient and generative backgrounds for heroes and panels.
+- `3d-webgl` 3D & WebGL (7) — Globes, physics and Three.js scenes that drop into a page.
+- `buttons` Buttons & Actions (100) — Buttons with borders, magnets and sparks — actions that feel alive.
+- `cards` Cards & Bento (83) — Spotlight, tilt, bento and stacking card treatments.
+- `navigation` Navigation (86) — Navbars, docks, sidebars, tabs, breadcrumbs and scroll progress.
+- `forms` Forms & Inputs (248) — Inputs, selects, OTP, uploads, sliders, toggles and date pickers.
+- `overlays` Overlays (130) — Dialogs, drawers, popovers, tooltips, toasts and command bars.
+- `numbers` Numbers & Counters (21) — Animated numbers, tickers and odometers.
+- `micro-interactions` Micro-interactions (429) — Cursor tricks, physics toys and small moments of delight.
+- `feedback` Feedback & Status (287) — Spinners, progress, skeletons, empty states and notifications.
+- `data-display` Data Display (174) — Tables, charts, stats, badges and avatars for showing data.
+- `chat` Chat & AI (223) — Chat and AI conversation UI — bubbles, message streams, attachments.
 - `pdf` PDF Documents (44) — Components and templates that render PDF documents (invoices, reports, tickets).
 - `video` Video & Remotion (925) — Programmatic video components — scenes, transitions, captions and stings rendered with Remotion.
 
 ### Blocks
-- `hero` Hero Sections (13) — Above-the-fold sections that set the tone of a page.
-- `features` Feature Sections (8) — Feature grids, bento layouts and product story sections.
-- `pricing` Pricing (2) — Pricing tables, plan comparisons and checkout prompts.
-- `testimonials` Testimonials & Social Proof (4) — Quotes, marquees, logos and proof sections.
-- `cta` CTA Sections (3) — Big closing calls-to-action and conversion moments.
-- `faq` FAQ (11) — Frequently-asked-question sections and accordion groups.
-- `footers` Footers (2) — Multi-column footers, sitemaps and newsletter captures.
-- `sections-misc` Other Sections (37) — Team, blog, contact, stats, onboarding and everything else.
+- `hero` Hero Sections (31) — Above-the-fold sections that set the tone of a page.
+- `features` Feature Sections (14) — Feature grids, bento layouts and product story sections.
+- `pricing` Pricing (6) — Pricing tables, plan comparisons and checkout prompts.
+- `testimonials` Testimonials & Social Proof (7) — Quotes, marquees, logos and proof sections.
+- `cta` CTA Sections (5) — Big closing calls-to-action and conversion moments.
+- `faq` FAQ (18) — Frequently-asked-question sections and accordion groups.
+- `footers` Footers (3) — Multi-column footers, sitemaps and newsletter captures.
+- `sections-misc` Other Sections (51) — Team, blog, contact, stats, onboarding and everything else.
 
 ### Templates
 - `dashboards` Dashboards (3) — Complete admin and analytics app layouts.
-- `auth` Login & Signup (11) — Auth screens, OTP flows and onboarding.
+- `auth` Login & Signup (19) — Auth screens, OTP flows and onboarding.
 
 ## Links
 

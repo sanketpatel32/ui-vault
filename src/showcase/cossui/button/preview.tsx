@@ -1,3 +1,4 @@
+import { useSafeTimeout } from "@/showcase/_shared/use-safe-timeout";
 import { useState } from "react";
 import { Loader2, Plus, Send } from "lucide-react";
 import { Button, type ButtonProps } from "./button";
@@ -17,9 +18,11 @@ const sizes: ButtonProps["size"][] = ["xs", "sm", "default", "lg", "xl"];
 export default function Preview() {
   const [saving, setSaving] = useState(false);
 
+  const safeTimeout = useSafeTimeout();
+
   const fakeSave = () => {
     setSaving(true);
-    window.setTimeout(() => setSaving(false), 1600);
+    safeTimeout(() => setSaving(false), 1600);
   };
 
   return (

@@ -1,0 +1,34 @@
+/* Vendored from https://github.com/codse/animata/blob/25c27e5a874c60a56dcc1609df3b2c4f5f8456f8/animata/container/marquee.css (MIT, codse/animata) on 2026-11-22. */
+@layer components {
+  @keyframes marquee-x {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+
+  @keyframes marquee-y {
+    from {
+      transform: translateY(0);
+    }
+
+    to {
+      transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
+
+  .marquee-horizontal {
+    animation: marquee-x var(--duration) infinite linear;
+  }
+
+  .marquee-vertical {
+    animation: marquee-y var(--duration) infinite linear;
+  }
+
+  .group\/marquee:hover .marquee-pause-on-hover {
+    animation-play-state: paused;
+  }
+}

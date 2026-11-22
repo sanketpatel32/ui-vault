@@ -31,6 +31,8 @@ export const watermelon: UIEntry[] = [
     tags: ["pack", "motion", "micro-interactions"],
     license: "free",
     previewMode: "live",
+    install:
+      "npx shadcn@latest add https://registry.watermelon.sh/r/shimmer-button.json https://registry.watermelon.sh/r/flip.json",
   },
   {
     previewKey: "watermelon-hero-blocks",
@@ -44,6 +46,7 @@ export const watermelon: UIEntry[] = [
     tags: ["hero", "pack", "sections"],
     license: "free",
     previewMode: "live",
+    install: "npx shadcn@latest add https://registry.watermelon.sh/r/hero-1.json",
     featured: true,
   },
   {
@@ -58,6 +61,7 @@ export const watermelon: UIEntry[] = [
     tags: ["footer", "pack", "sections"],
     license: "free",
     previewMode: "live",
+    install: "npx shadcn@latest add https://registry.watermelon.sh/r/footer-1.json",
   },
   {
     previewKey: "watermelon-auth-blocks",
@@ -71,6 +75,7 @@ export const watermelon: UIEntry[] = [
     tags: ["auth", "login", "signup", "pack"],
     license: "free",
     previewMode: "live",
+    install: "npx shadcn@latest add https://registry.watermelon.sh/r/auth-01.json",
   },
   {
     previewKey: "watermelon-pricing-blocks",
@@ -84,6 +89,7 @@ export const watermelon: UIEntry[] = [
     tags: ["pricing", "plans", "sections"],
     license: "free",
     previewMode: "live",
+    install: "npx shadcn@latest add https://registry.watermelon.sh/r/pricing-1.json",
   },
   {
     previewKey: "watermelon-faq-blocks",
@@ -97,6 +103,7 @@ export const watermelon: UIEntry[] = [
     tags: ["faq", "accordion", "sections"],
     license: "free",
     previewMode: "live",
+    install: "npx shadcn@latest add https://registry.watermelon.sh/r/faq-1.json",
   },
   {
     previewKey: "watermelon-testimonial-blocks",
@@ -110,6 +117,7 @@ export const watermelon: UIEntry[] = [
     tags: ["testimonials", "social-proof", "sections"],
     license: "free",
     previewMode: "live",
+    install: "npx shadcn@latest add https://registry.watermelon.sh/r/testimonials-1.json",
   },
   {
     previewKey: "watermelon-cta-blocks",
@@ -123,6 +131,7 @@ export const watermelon: UIEntry[] = [
     tags: ["cta", "conversion", "sections"],
     license: "free",
     previewMode: "live",
+    install: "npx shadcn@latest add https://registry.watermelon.sh/r/cta-1.json",
   },
   {
     previewKey: "watermelon-dashboard-agndex",
@@ -130,12 +139,13 @@ export const watermelon: UIEntry[] = [
     name: "Agndex Dashboard",
     description: "Complete scheduling/agenda dashboard layout from the 11-dashboard collection.",
     source: "watermelon",
-    sourceUrl: "https://ui.watermelon.sh/dashboards",
+    sourceUrl: "https://ui.watermelon.sh/dashboard/agndex-dashboard",
     sourceCategory: "Dashboards",
     category: "dashboards",
     tags: ["dashboard", "admin", "layout"],
     license: "free",
     previewMode: "live",
+    install: "npx shadcn@latest add https://registry.watermelon.sh/r/agndex-dashboard.json",
   },
   {
     previewKey: "watermelon-dashboard-astrix",
@@ -143,12 +153,13 @@ export const watermelon: UIEntry[] = [
     name: "Astrix Dashboard",
     description: "Analytics dashboard layout with sidebar and data cards.",
     source: "watermelon",
-    sourceUrl: "https://ui.watermelon.sh/dashboards",
+    sourceUrl: "https://ui.watermelon.sh/dashboard/astrix-dashboard",
     sourceCategory: "Dashboards",
     category: "dashboards",
     tags: ["dashboard", "analytics", "layout"],
     license: "free",
     previewMode: "live",
+    install: "npx shadcn@latest add https://registry.watermelon.sh/r/astrix-dashboard.json",
   },
   {
     previewKey: "watermelon-dashboard-jobtracker",
@@ -156,11 +167,12 @@ export const watermelon: UIEntry[] = [
     name: "Jobtracker Dashboard",
     description: "Job-application tracker dashboard — kanban lists, stats and status flows.",
     source: "watermelon",
-    sourceUrl: "https://ui.watermelon.sh/dashboards",
+    sourceUrl: "https://ui.watermelon.sh/dashboard/jobtracker-dashboard",
     sourceCategory: "Dashboards",
     category: "dashboards",
     tags: ["dashboard", "kanban", "tracker"],
     license: "free",
     previewMode: "live",
+    install: "npx shadcn@latest add https://registry.watermelon.sh/r/jobtracker-dashboard.json",
   },
 ];

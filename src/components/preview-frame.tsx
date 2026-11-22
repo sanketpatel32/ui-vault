@@ -49,7 +49,13 @@ class PreviewErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
 const lazyMap: Record<string, React.LazyExoticComponent<React.ComponentType>> = {};
 
 for (const key of Object.keys(showcaseLoaders)) {
-  lazyMap[key] = lazy(showcaseLoaders[key]);
+  lazyMap[key] = lazy(async () => {
+    const [mod, { withReducedMotion }] = await Promise.all([
+      showcaseLoaders[key](),
+      import("@/showcase/reduced-motion"),
+    ]);
+    return { default: withReducedMotion(mod.default, key) };
+  });
 }
 
 function PreviewRenderer({ previewKey }: { previewKey: string }) {
@@ -78,7 +84,7 @@ function ToolbarButton({
       onClick={onClick}
       className={cn(
         "inline-flex h-6.5 w-6.5 cursor-pointer items-center justify-center rounded-md transition-colors",
-        active ? "bg-accent-soft text-accent" : "text-muted-fg hover:bg-muted hover:text-fg",
+        active ? "bg-accent-soft text-accent-text" : "text-muted-fg hover:bg-muted hover:text-fg",
       )}
     >
       {children}
@@ -139,17 +145,18 @@ export function PreviewFrame({ entry }: { entry: UIEntry }) {
             href={entry.sourceUrl}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-1 rounded-md px-1 py-1 text-xs text-muted-fg transition-colors hover:text-accent"
+            className="inline-flex items-center gap-1 rounded-md px-1 py-1 text-xs text-muted-fg transition-colors hover:text-accent-text"
           >
             Open at {source?.name} <ExternalLink size={11} />
           </a>
         </div>
       </div>
 
-      <div className="preview-dots relative flex min-h-[340px] items-center justify-center overflow-hidden p-6">
+      {/* Wide previews scroll horizontally inside the frame instead of being clipped. */}
+      <div className="preview-dots relative flex min-h-[340px] items-center justify-center-safe overflow-x-auto overflow-y-hidden p-6">
         <div
           className={cn(
-            "flex w-full items-center justify-center transition-all duration-300",
+            "flex w-full min-w-0 items-center justify-center-safe transition-all duration-300",
             scoped && "rounded-xl border border-border shadow-lg shadow-black/5",
             scoped && (canvasTheme === "dark" ? "dark bg-bg" : "light bg-bg"),
             narrow ? "max-w-[400px] p-5" : scoped ? "p-6" : "",

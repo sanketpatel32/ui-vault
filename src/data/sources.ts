@@ -11,8 +11,8 @@ export const sources: Source[] = [
     license: "mit",
     previewMode: "live",
     stack: ["react", "typescript", "tailwind", "motion", "gsap", "webgl"],
-    install: "npx jsrepo add react-bits/<Component>",
-    installLabel: "jsrepo CLI",
+    install: "npx shadcn@latest add @react-bits/<Component>-TS-TW",
+    installLabel: "shadcn registry (@react-bits; suffix picks JS|TS + CSS|TW)",
     notes:
       "Free tier is MIT (github.com/DavidHDev/react-bits). Pro is a separate paid tier — link-out only.",
     color: "#38bdf8",
@@ -88,8 +88,8 @@ export const sources: Source[] = [
     license: "freemium",
     previewMode: "live",
     stack: ["react", "nextjs", "typescript", "tailwind", "motion", "three"],
-    install: "npx aceternity-ui@latest add <name>",
-    installLabel: "aceternity CLI",
+    install: "npx shadcn@latest add @aceternity/<name>",
+    installLabel: "shadcn registry (@aceternity)",
     notes: "Free components only may be vendored. Premium blocks/templates are paid — link-out.",
     color: "#e879f9",
   },
@@ -135,7 +135,7 @@ export const sources: Source[] = [
     license: "mit",
     previewMode: "live",
     stack: ["react", "typescript", "tailwind", "motion"],
-    install: "npx shadcn@latest add https://animata.design/r/<name>.json",
+    install: "npx shadcn@latest add https://animata.design/r/<section>/<name>.json",
     installLabel: "shadcn registry",
     notes:
       "MIT (github.com/codse/animata). Catalog carries the published set only — every source link resolves on the live site.",
@@ -148,7 +148,7 @@ export const sources: Source[] = [
     tagline: "Animated components for your next project.",
     description:
       "154 animated components in your choice of headless flavor — Radix UI, Base UI, Headless UI or native — plus 11 text animations and 14 effect primitives. All Motion-powered, installed via shadcn registry.",
-    license: "free",
+    license: "mit-commons-clause",
     previewMode: "live",
     stack: ["react", "typescript", "tailwind", "motion", "radix"],
     install: "npx shadcn@latest add @animate-ui/<slug>",
@@ -186,7 +186,7 @@ export const sources: Source[] = [
     install: "npx shadcn@latest add https://coss.com/origin/r/<family>.json",
     installLabel: "shadcn registry",
     notes:
-      "originui.com now redirects to COSS — this is the maintained MIT snapshot at coss.com/origin (apps/origin in github.com/cosscom/coss). Entries are family-granularity; registry files cover each variant.",
+      "originui.com now redirects to COSS — this is the maintained MIT snapshot at coss.com/origin (apps/origin in github.com/cosscom/ui). Entries are family-granularity; registry files cover each variant.",
     color: "#94a3b8",
   },
   {
@@ -202,7 +202,7 @@ export const sources: Source[] = [
     install: "npx shadcn@latest add @coss/<component>",
     installLabel: "shadcn registry (@coss)",
     notes:
-      "MIT — apps/ui is carved out of the AGPL cosscom/coss monorepo by the root LICENSING.md. Particles are cataloged per family (p-<component>-N); every variant installs individually. date-picker ships as calendar+popover+button per its docs.",
+      "MIT (apps/ui in github.com/cosscom/ui, MIT-licensed at the repo root). Particles are cataloged per family (p-<component>-N); every variant installs individually. date-picker ships as calendar+popover+button per its docs.",
     color: "#60a5fa",
   },
   {
@@ -236,6 +236,231 @@ export const sources: Source[] = [
     notes:
       "MIT (github.com/shadcnblocks/kibo). Registry at kibo-ui.com/r/<name>.json; the 28 site blocks are CLI-only (no registry endpoint) and not cataloged. Sandboxed previews run in-browser; glimpse fetches meta tags only in their hosted demo.",
     color: "#fb923c",
+  },
+  {
+    id: "streamdown",
+    name: "Streamdown",
+    url: "https://streamdown.ai",
+    tagline: "A drop-in replacement for react-markdown, designed for AI-powered streaming.",
+    description:
+      "Vercel's streaming-Markdown renderer — the engine behind AI Elements Message/Response. 1 core component that handles incomplete, unterminated Markdown mid-stream, plus 4 official plugins for Shiki code, KaTeX math, Mermaid diagrams and CJK text.",
+    license: "free",
+    previewMode: "live",
+    stack: ["react", "typescript", "tailwind", "shadcn"],
+    install: "npm install streamdown",
+    installLabel: "npm",
+    notes:
+      'Apache-2.0 (github.com/vercel/streamdown; the GitHub API reports NOASSERTION but the LICENSE file is Apache-2.0). React 18/19. Styling is Tailwind classes + shadcn CSS variables — add @source "../node_modules/streamdown/dist/*.js" (and one per installed @streamdown/* plugin) to your Tailwind CSS. The remend Markdown-healing parser ships alongside and is not cataloged as UI.',
+    color: "#e5e7eb",
+  },
+  {
+    id: "genloaders",
+    name: "Generative Loaders",
+    url: "https://generativeloaders.com",
+    tagline: "React loaders for generative UI.",
+    description:
+      "46 accessible loading states for AI interfaces from 3 primitives: 16 append-aware TextLoader reveals for streaming responses, 18 compact InlineLoader activity indicators and 12 ImageLoader image-generation placeholders. All reduced-motion aware and SSR-safe.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "css"],
+    install: "npm install generative-loaders",
+    installLabel: "npm",
+    notes:
+      'MIT (github.com/kasturibuilds/generative-loaders; the npm repo field still points at the old kasturikhanke account). React >=18. Plain CSS — import "generative-loaders/styles.css" once. Young project (v0.1.1) — expect API churn. Entries are one per variant prop value.',
+    color: "#c084fc",
+  },
+  {
+    id: "uisdk",
+    name: "UI SDK",
+    url: "https://ui-sdk.dev",
+    tagline: "A library of behaviors to build your components.",
+    description:
+      "Vercel Labs' headless UI SDK — 50+ behavior primitives (createPopup, createTypeahead, createRovingFocus, createReorder, createVirtualizer …) and 55 unstyled React components built on them, from Accordion to Color Picker, Token Input, Tree and Waterfall. Also ships Vue, Svelte, Solid and Web Components bindings.",
+    license: "free",
+    previewMode: "live",
+    stack: ["react", "typescript", "headless"],
+    install: "npm install @ui-sdk/react @ui-sdk/core",
+    installLabel: "npm",
+    notes:
+      "Apache-2.0 (github.com/vercel-labs/ui). BETA (cataloged at 0.1.0-beta.14) — expect breaking changes before 1.0. React 19 required (peer >=19). Headless and styling-agnostic. Core behaviors are documented as a group at ui-sdk.dev/docs/core/behaviors and are not cataloged as entries.",
+    color: "#d4d4d8",
+  },
+  {
+    id: "wterm",
+    name: "wterm",
+    url: "https://wterm.dev",
+    tagline: "A terminal emulator for the web.",
+    description:
+      "Vercel Labs' web terminal that renders rows as DOM text, so native selection, find and screen readers just work. A Zig VT parser compiled to a ~49 KB WASM core, an optional libghostty core and an opt-in WebGL renderer.",
+    license: "free",
+    previewMode: "live",
+    stack: ["react", "typescript", "css", "wasm"],
+    install: "npm install @wterm/dom @wterm/react",
+    installLabel: "npm",
+    notes:
+      'Apache-2.0 (github.com/vercel-labs/wterm). React 18/19; own CSS (import "@wterm/react/css"), not Tailwind. Vue (@wterm/vue), Svelte (@wterm/svelte) and vanilla (@wterm/dom) bindings; @wterm/ghostty swaps in libghostty for fuller VT support. Needs a PTY/WebSocket backend for a real shell.',
+    color: "#4ade80",
+  },
+  {
+    id: "skullet",
+    name: "Skullet",
+    url: "https://skullet.lochie.me",
+    tagline: "Smart skeleton states for React, Vue, Svelte, and vanilla JavaScript.",
+    description:
+      "Auto-skeletons: wrap the component you'd render once data arrives and Skullet measures it and draws an exact skeleton over it, so nothing shifts on reveal. One component with React, Vue, Svelte and vanilla exports.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "css"],
+    install: "npm install skullet",
+    installLabel: "npm",
+    notes:
+      "MIT (github.com/lochie/skullet). React >=18. Draws in a shadow root with its own CSS, not Tailwind. Very early (v0.0.3) — expect churn.",
+    color: "#f5f5f4",
+  },
+  {
+    id: "easyui",
+    name: "EasyUI",
+    url: "https://easyui.site",
+    tagline: "Micro-animated, physics-based, dark-mode-first React components.",
+    description:
+      "137 MIT components distributed through the shadcn GitHub-registry pattern \u2014 spring buttons, morphing dialogs, gliding navigation pills, hand-written SVG charts, AI chat surfaces, canvas backgrounds and wallet/payment cards. React 19 + Tailwind v4.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "tailwind", "shadcn", "motion"],
+    install: "npx shadcn@latest add Surajmaurya1/easyui/<name>",
+    installLabel: "shadcn GitHub registry",
+    notes:
+      "MIT (github.com/Surajmaurya1/easyui). Registry index at raw.githubusercontent.com/Surajmaurya1/easyui/main/registry.json; items depend on framer-motion + lucide-react. Not to be confused with easeui.dev or jQuery EasyUI (jeasyui).",
+    color: "#34d399",
+  },
+  {
+    id: "editorcn",
+    name: "editorcn",
+    url: "https://www.rtecn.space",
+    tagline: "Rich text editors for React, built on Tiptap with shadcn/ui tokens.",
+    description:
+      "Tiptap-based rich text editing as shadcn registry items: a toolbar Rich Text Editor, a Notion-style Block Editor, a static renderer, 8 drop-in extensions (tables, mentions, callouts, code blocks, markdown, paste cleanup\u2026) and 5 templates (comment box, email composer, document editor, full editors).",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "tailwind", "shadcn", "tiptap", "base-ui"],
+    install: "npx shadcn@latest add https://www.rtecn.space/r/<name>.json",
+    installLabel: "shadcn registry",
+    notes:
+      "MIT (github.com/shadcn-labs/editorcn). Prerequisite: Tiptap (@tiptap/* >=2.11.5 <4, pulled in as item dependencies). The @editorcn namespace (npx shadcn@latest add @editorcn/<name>) needs a components.json registries entry; the URL form works without config. The 8 icon-pack variants (Phosphor, Tabler, HugeIcons, Remix Icon for editor and block-editor) only overwrite icons.tsx and are not cataloged separately.",
+    color: "#c084fc",
+  },
+  {
+    id: "loadingdev",
+    name: "loading.dev",
+    url: "https://loading.dev",
+    tagline: "Beautiful loading indicators for React.",
+    description:
+      "36 lightweight spinner and loading-indicator components (Arc, Atom, Blocks \u2026 Wave) shipped as one npm package. Every indicator takes size, color and duration props, exposes playState and respects reduced motion \u2014 pure CSS/SVG, no Tailwind needed.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "css", "svg"],
+    install: "npm install loading-dev",
+    installLabel: "npm",
+    notes:
+      'MIT (github.com/jakubkrehel/loading). Requires React 19 (peer react >=19.0.0). Import by name: import { Arc } from "loading-dev".',
+    color: "#a3e635",
+  },
+  {
+    id: "itshover",
+    name: "Its Hover",
+    url: "https://itshover.com",
+    tagline: "Animated icons that come alive on hover.",
+    description:
+      "263 hover-triggered animated icon components built with Motion, each installable as its own shadcn registry item. Sponsor-funded, no paid tier.",
+    license: "free",
+    previewMode: "live",
+    stack: ["react", "typescript", "tailwind", "shadcn", "motion"],
+    install: "npx shadcn@latest add https://itshover.com/r/<icon-name>.json",
+    installLabel: "shadcn registry",
+    notes:
+      "Apache-2.0 (github.com/itshover/itshover, default branch master) \u2014 vendor freely, keep the license notice. Icons animate on pointer hover only; they stay static on touch devices.",
+    color: "#f59e0b",
+  },
+  {
+    id: "amicro",
+    name: "Amicro",
+    url: "https://amicro.vercel.app",
+    tagline: "Open-source React micro-interactions and transitions powered by Motion.",
+    description:
+      "174 micro-interaction registry items \u2014 135 loaders, entrance/scroll/hover/cursor transitions, text reveals, magnetic and glow buttons, 3D card carousels, dither charts, AI prompt surfaces and 5 motion hooks.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "tailwind", "shadcn", "motion"],
+    install:
+      "npx shadcn@latest add https://raw.githubusercontent.com/Subhan-code/Amicro--Micro-transitions-/main/registry/ui/<name>.json",
+    installLabel: "shadcn registry (GitHub raw)",
+    notes:
+      "MIT (github.com/Subhan-code/Amicro--Micro-transitions-). Own CLI: npx @subhanhq/amicro@latest add <name>. The hosted @amicro registry at amicro.vercel.app rate-limits (429), so entries install from GitHub-raw URLs (hooks live under registry/hooks/). The 2 registry:lib utilities (presets, utils) are not cataloged.",
+    color: "#2dd4bf",
+  },
+  {
+    id: "kokonutui",
+    name: "Kokonut UI",
+    url: "https://kokonutui.com",
+    tagline: "Free open-source React components for AI chat and agents.",
+    description:
+      "116 free MIT components — 27 AI chat/agent pieces (tool approvals, tool calls, diff review, inline citations, voice, checkout) plus inputs, cards, buttons, backgrounds, navigation and text effects. Kokonut UI Pro (heroes, sections, templates) is paid and excluded.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "nextjs", "typescript", "tailwind", "motion"],
+    install: "npx shadcn@latest add @kokonutui/<name>",
+    installLabel: "shadcn registry (@kokonutui)",
+    notes:
+      'MIT (github.com/kokonut-labs/kokonutui). Free set only — the 10 items marked "Part of Kokonut UI Pro" and the Pro templates are paid and excluded. Registry is per-item (kokonutui.com/r/<name>.json; /r/index.json 404s) — the list comes from kokonutui.com/llms.txt. Catalog-only: no vendored previews yet.',
+    color: "#f59e0b",
+  },
+  {
+    id: "arcui",
+    name: "Arc UI",
+    url: "https://uiarc.dev",
+    tagline: "Components and blocks designed for AI-assisted frontend development.",
+    description:
+      "121 free components + 22 free blocks — inputs, data-viz charts, disclosure, feedback, and auth/marketing blocks. Styled with CSS modules and CSS variables (not Tailwind classes), Motion presets and reduced-motion support throughout.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "css-modules", "motion"],
+    install: "npx shadcn@latest add @uiarc/<name>",
+    installLabel: "shadcn registry (@uiarc)",
+    notes:
+      "MIT (github.com/kuratlielia/arc-library). Free set only — Arc Pro (131 components + 122 blocks; $149/yr or $249 lifetime) installs from the token-gated @uiarc-pro registry and is excluded. Install the design tokens once first (npx shadcn@latest add @uiarc/arc-foundation) and import components/arc/foundation.css. Catalog-only: no vendored previews yet.",
+    color: "#2dd4bf",
+  },
+  {
+    id: "snapcn",
+    name: "snapcn",
+    url: "https://snapcn.dev",
+    tagline: "shadcn-style video components for Remotion.",
+    description:
+      "62 free MIT components for programmatic video — kinetic titles, captions, logo stings, device frames, cursor clicks, AI-chat input scenes and launch scenes, all rendered with Remotion.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "remotion"],
+    install: "npx shadcn@latest add @snapcn/<name>",
+    installLabel: "shadcn registry (@snapcn)",
+    notes:
+      "MIT (github.com/shadcn-labs/snapcn). Prerequisite: an existing Remotion project (npx create-video@latest) — components render inside Remotion compositions, not as page UI. Free renders export at 720p with a small watermark; snapcn Pro ($179/yr or $279 once — 81+ components, 1080p, MCP) is excluded. The namespace is @snapcn (the old @snap-cn no longer resolves). Catalog-only: no previews (Remotion is not a hub dependency).",
+    color: "#ef4444",
+  },
+  {
+    id: "beui",
+    name: "beUI",
+    url: "https://beui.dev",
+    tagline: "Animated components for React and Next.js.",
+    description:
+      "122 free component pages — 59 Motion components, 24 blocks, 18 AI-agent pieces, 17 animated charts and 4 casino games. React 19, Tailwind v4, Motion 12.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "nextjs", "typescript", "tailwind", "motion"],
+    install: "npx shadcn@latest add @beui/<name>",
+    installLabel: "shadcn registry (@beui)",
+    notes:
+      "MIT (github.com/starc007/ui-components). Free set only — the 350+ Pro blocks (paid lifetime) and the separate beui-native set are excluded. Docs show bunx --bun shadcn add @beui/<name>; npx works the same. The research quoted 157 free components; the public index (beui.dev/r) lists 122 pages, some of which (button, number, text-animation, not-found…) bundle several registry items that install together. Catalog-only: no vendored previews yet.",
+    color: "#c084fc",
   },
   {
     id: "bklit",

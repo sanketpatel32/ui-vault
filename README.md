@@ -6,15 +6,15 @@
 
 [Live catalog](https://sanketpatel32.github.io/ui-vault/) · [Browse source](src/data/) · [Operating guide](AGENTS.md)
 
-**1980 entries · 25 categories · 19 sources · 814 live previews**
+**3157 entries · 25 categories · 33 sources · 814 live previews**
 
 </div>
 
-UI Vault brings vendorable components from nineteen open-source libraries into a consistent taxonomy. It is frontend-only, keeps favorites locally, and publishes machine-readable indexes for developers and AI agents.
+UI Vault brings vendorable components from thirty-three open-source libraries into a consistent taxonomy. It is frontend-only, keeps favorites locally, and publishes machine-readable indexes for developers and AI agents.
 
 ## What it does
 
-- **One registry** — every component from the 19 vendorable sources, categorized into a
+- **One registry** — every component from the 33 vendorable sources, categorized into a
   unified taxonomy (text effects, backgrounds, buttons, cards, forms, overlays, data display,
   chat, heroes, dashboards, …), each with description, tags, license, deep link and install
   command. Every entry ships free code — paid/gated/gallery sources are not carried as
@@ -37,14 +37,25 @@ All vendorable (free code + install command): [React Bits](https://reactbits.dev
 [shadcn/ui](https://ui.shadcn.com) · [Magic UI](https://magicui.design) ·
 [Animata](https://animata.design) · [Animate UI](https://animate-ui.com) (MIT + Commons Clause) ·
 [Launch UI](https://www.launchuicomponents.com) (free sections) ·
-[Origin UI](https://coss.com/origin) (MIT legacy snapshot, 599 variants) · · · ·
-[assistant-ui](https://www.assistant-ui.com) (AI chat)
-[Remocn](https://remocn.dev) (Remotion video components)
-[pdfcn](https://pdfcn.dev) (PDF components, Takumi/Forme)
+[Origin UI](https://coss.com/origin) (MIT legacy snapshot, 599 variants) ·
+[COSS UI](https://coss.com/ui) · [Cult UI](https://cult-ui.com) (MIT set; Cult Pro excluded) · [Kibo UI](https://www.kibo-ui.com) ·
+[Streamdown](https://streamdown.ai) (Apache-2.0) · [Generative Loaders](https://generativeloaders.com) ·
+[UI SDK](https://ui-sdk.dev) (Apache-2.0, beta) · [wterm](https://wterm.dev) (Apache-2.0) ·
+[Skullet](https://skullet.lochie.me) ·
+[EasyUI](https://easyui.site) · [editorcn](https://www.rtecn.space) (Tiptap) ·
+[loading.dev](https://loading.dev) · [Its Hover](https://itshover.com) (Apache-2.0) ·
+[Amicro](https://amicro.vercel.app) ·
+[Kokonut UI](https://kokonutui.com) (free set, AI chat) ·
+[Arc UI](https://uiarc.dev) (free set) ·
+[snapcn](https://snapcn.dev) (free set, Remotion video) ·
+[beUI](https://beui.dev) (free set) ·
+[assistant-ui](https://www.assistant-ui.com) (AI chat) ·
+[Remocn](https://remocn.dev) (Remotion video components) ·
+[pdfcn](https://pdfcn.dev) (PDF components, Takumi/Forme) ·
 [Bklit UI](https://bklit.com) (d3 + Motion charts)
 
 Not carried as entries (paid/gated/gallery — see `AGENTS.md`): 21st.dev, shadcnStudio,
-UI Layouts Pro, Cue, CollectUI, The Component Gallery; Launch UI Pro sections.
+UI Layouts Pro, Cue, CollectUI, The Component Gallery; Launch UI Pro sections; Cult Pro.
 
 ## Tech
 

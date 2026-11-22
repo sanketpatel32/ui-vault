@@ -36,12 +36,12 @@ function Calendar({ className, classNames, showOutsideDays = true, ...props }: C
         range_start: "day-range-start",
         range_end: "day-range-end",
         selected:
-          "bg-accent text-accent-fg hover:bg-accent hover:text-accent-fg focus:bg-accent focus:text-accent-fg",
+          "bg-accent-solid text-accent-fg hover:bg-accent-solid hover:text-accent-fg focus:bg-accent-solid focus:text-accent-fg",
         today: "bg-muted text-fg",
         outside:
           "day-outside text-muted-fg opacity-50 aria-selected:bg-accent/50 aria-selected:text-muted-fg aria-selected:opacity-30",
         disabled: "text-muted-fg opacity-50",
-        range_middle: "aria-selected:bg-accent-soft aria-selected:text-accent",
+        range_middle: "aria-selected:bg-accent-soft aria-selected:text-accent-text",
         hidden: "invisible",
         ...classNames,
       }}
