@@ -1,0 +1,58 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Regenerate llms.txt artifacts
+        run: npm run llms
+
+      # Golden rule 3: generated files under public/llms* are never hand-edited
+      # and must be regenerated whenever the registry changes.
+      - name: Fail if committed llms artifacts are stale
+        run: git diff --exit-code public/
+
+      - name: Format + lint + typecheck (oxfmt / oxlint / tsgolint)
+        run: npm run check
+
+      - name: Typecheck (tsc -b)
+        run: npx tsc -b
+
+      - name: Registry guard (ids, slugs, sources, licensing, loaders)
+        run: npm run registry:check
+
+      - name: Tests
+        run: npm test
+
+      - name: Production build
+        run: npm run build
+
+      - name: Upload dist for inspection (on failure)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist-failed-build
+          path: dist
+          retention-days: 3
