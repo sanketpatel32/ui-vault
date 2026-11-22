@@ -1,3 +1,4 @@
+import { useEffect, useRef, useSyncExternalStore } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { ChevronRight, Heart, LayoutGrid, House, Vault, X } from "lucide-react";
 import { groupedCategories, sourcesWithCounts, stats } from "@/lib/registry";
@@ -41,10 +42,65 @@ function SideLink({
   );
 }
 
+const DESKTOP_QUERY = "(min-width: 64rem)";
+
+function subscribeDesktop(onChange: () => void) {
+  const mql = window.matchMedia(DESKTOP_QUERY);
+  mql.addEventListener("change", onChange);
+  return () => mql.removeEventListener("change", onChange);
+}
+
+function useIsDesktop() {
+  return useSyncExternalStore(subscribeDesktop, () => window.matchMedia(DESKTOP_QUERY).matches);
+}
+
+const FOCUSABLE = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
+
 export function Sidebar({ mobileOpen, onClose }: { mobileOpen: boolean; onClose: () => void }) {
   const groups = groupedCategories();
   const sources = sourcesWithCounts();
   const s = stats();
+  const isDesktop = useIsDesktop();
+  const drawerOpen = mobileOpen && !isDesktop;
+  const asideRef = useRef<HTMLElement>(null);
+  const closeRef = useRef<HTMLButtonElement>(null);
+  const onCloseRef = useRef(onClose);
+  useEffect(() => {
+    onCloseRef.current = onClose;
+  });
+
+  useEffect(() => {
+    if (!drawerOpen) return;
+    const returnFocusTo = document.activeElement as HTMLElement | null;
+    closeRef.current?.focus();
+
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        onCloseRef.current();
+        return;
+      }
+      if (e.key !== "Tab" || !asideRef.current) return;
+      const items = Array.from(asideRef.current.querySelectorAll<HTMLElement>(FOCUSABLE));
+      if (items.length === 0) return;
+      const first = items[0];
+      const last = items[items.length - 1];
+      const current = document.activeElement;
+      const inside = asideRef.current.contains(current);
+      if (e.shiftKey && (current === first || !inside)) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && (current === last || !inside)) {
+        e.preventDefault();
+        first.focus();
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      if (returnFocusTo?.isConnected) returnFocusTo.focus();
+    };
+  }, [drawerOpen]);
 
   return (
     <>
@@ -58,6 +114,11 @@ export function Sidebar({ mobileOpen, onClose }: { mobileOpen: boolean; onClose:
         aria-hidden
       />
       <aside
+        ref={asideRef}
+        inert={!mobileOpen && !isDesktop}
+        role={drawerOpen ? "dialog" : undefined}
+        aria-modal={drawerOpen ? true : undefined}
+        aria-label={drawerOpen ? "Navigation menu" : undefined}
         className={cn(
           "fixed inset-y-0 left-0 z-50 flex w-64 flex-col border-r border-border bg-bg transition-transform duration-200",
           "lg:translate-x-0",
@@ -72,6 +133,7 @@ export function Sidebar({ mobileOpen, onClose }: { mobileOpen: boolean; onClose:
             <span className="text-[15px] font-semibold tracking-tight">UI Vault</span>
           </Link>
           <button
+            ref={closeRef}
             type="button"
             aria-label="Close menu"
             className="cursor-pointer rounded-md p-1 text-muted-fg hover:bg-muted hover:text-fg lg:hidden"
