@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "@fontsource-variable/inter";
+@import "./showcase/_shared/animata/theme.css";
 
 @custom-variant dark (&:where(.dark, .dark *));
 

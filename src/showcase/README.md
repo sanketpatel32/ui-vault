@@ -579,4 +579,5 @@ Rules (see ../AGENTS.md):
 - Contains the upstream `animata/<category>/<name>.tsx` components, their `.stories.tsx` demos and the helpers they import; every file keeps a `Vendored from …` header.
 - Each `animata/<name>/preview.tsx` renders the upstream story through `story.tsx` (a minimal Storybook CSF runner; `storybook.ts` replaces the `@storybook/react` types).
 - Local changes: `@/` import aliases rewritten; `lib/utils.ts` `absoluteUrl` points at animata.design; a few compile-only fixes noted in the affected file headers (unused locals, one enum → const object).
+- `theme.css` (imported from `src/index.css`) carries the upstream `styles/globals.css` `@theme` animation/easing/duration tokens and `@keyframes` (e.g. `reveal-up`, `content-blur`) plus the `fill-mode-*` utilities upstream gets from `tw-animate-css`; tokens UI Vault already defines are skipped. Under `prefers-reduced-motion` it clamps CSS animations/transitions inside `.animata-preview` to their end state.
 - Not vendored (no `previewKey`, shown as install-only): `ai-button`, `sibling-focus-nav`, `gooey-tabs`, `flower-menu`, `profile`.
