@@ -6,9 +6,7 @@ import { MorphSurface } from "../morph-surface";
 export default function MorphSurfaceDemo() {
   const [isControlledOpen, setIsControlledOpen] = useState(false);
 
-  const handleSubmit = async (formData: FormData) => {
-    const message = formData.get("message") as string;
-    console.log("Submitted message:", message);
+  const handleSubmit = async (_formData: FormData) => {
     // Simulate API call
     await new Promise((resolve) => setTimeout(resolve, 500));
   };
@@ -37,9 +35,7 @@ export default function MorphSurfaceDemo() {
             triggerLabel="Send Feedback"
             placeholder="Share your thoughts..."
             onSubmit={handleSubmit}
-            onSuccess={() => {
-              console.log("Feedback submitted successfully!");
-            }}
+            onSuccess={() => {}}
           />
         </div>
       </section>

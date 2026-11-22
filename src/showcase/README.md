@@ -620,3 +620,11 @@ Rules (see ../AGENTS.md):
 - Each preview is self-contained: default-exported, no props, no cross-folder imports.
 - Previews must respect reduced motion where the effect allows it.
 - Record every addition in this file.
+
+## Local hygiene patches (deviations from upstream)
+
+Minimal leak/noise fixes applied on top of the frozen snapshots — re-apply them if a folder is re-copied:
+
+- Repeating timers are cleared on unmount and before re-runs (`motionprimitives/text-scramble`, `reactbits/decrypted-text`).
+- One-shot feedback timers go through `_shared/use-safe-timeout.ts` (or an effect cleanup) so they are cancelled on unmount.
+- Upstream debug `console.log` calls are stripped from `cultui` and `originui/event-calendar` demos.
