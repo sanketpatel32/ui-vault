@@ -3,7 +3,7 @@
 - URL: https://ui.aceternity.com
 - License: Freemium — live-previewable
 - Stack: react, nextjs, typescript, tailwind, motion, three
-- Install: `npx aceternity-ui@latest add <name>`
+- Install: `npx shadcn@latest add @aceternity/<name>`
 - Notes: Free components only may be vendored. Premium blocks/templates are paid — link-out.
 - Cataloged in UI Vault: 15 entries
 ## Entries

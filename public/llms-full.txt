@@ -21,7 +21,7 @@ Fully open-source shadcn-style library: components, animated micro-interactions,
 License: Free. Install: npx shadcn@latest add https://registry.watermelon.sh/r/<name>.json.
 ### Aceternity UI — https://ui.aceternity.com
 200+ production-ready components and blocks that "look expensive" — parallax heroes, beams, shaders, docks. Free tier covers ~100 components; premium adds 200+ blocks and full templates.
-License: Freemium. Install: npx aceternity-ui@latest add <name>.
+License: Freemium. Install: npx shadcn@latest add @aceternity/<name>.
 ### shadcn/ui — https://ui.shadcn.com
 65 Radix-based primitives — every install vendors the source into your project. Charts via Recharts, tables via TanStack, drawer via Vaul, carousel via Embla. The de-facto foundation most libraries below build on.
 License: MIT. Install: npx shadcn@latest add <component>.
