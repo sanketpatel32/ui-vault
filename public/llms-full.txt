@@ -30,7 +30,7 @@ License: MIT. Install: npx shadcn@latest add <component>.
 License: MIT. Install: npx shadcn@latest add @magicui/<component>.
 ### Animata — https://animata.design
 154 published motion components across text, widgets, cards, bento grids, buttons and heroes — every one installable through a shadcn-style registry. The repo documents 198; 44 are still unpublished.
-License: MIT. Install: npx shadcn@latest add https://animata.design/r/<name>.json.
+License: MIT. Install: npx shadcn@latest add https://animata.design/r/<section>/<name>.json.
 ### Animate UI — https://animate-ui.com
 154 animated components in your choice of headless flavor — Radix UI, Base UI, Headless UI or native — plus 11 text animations and 14 effect primitives. All Motion-powered, installed via shadcn registry.
 License: Free. Install: npx shadcn@latest add @animate-ui/<slug>.

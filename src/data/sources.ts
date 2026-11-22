@@ -135,7 +135,7 @@ export const sources: Source[] = [
     license: "mit",
     previewMode: "live",
     stack: ["react", "typescript", "tailwind", "motion"],
-    install: "npx shadcn@latest add https://animata.design/r/<name>.json",
+    install: "npx shadcn@latest add https://animata.design/r/<section>/<name>.json",
     installLabel: "shadcn registry",
     notes:
       "MIT (github.com/codse/animata). Catalog carries the published set only — every source link resolves on the live site.",
