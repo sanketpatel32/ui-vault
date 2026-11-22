@@ -4,7 +4,7 @@
 - License: MIT — live-previewable
 - Stack: react, typescript, tailwind, base-ui
 - Install: `npx shadcn@latest add @coss/<component>`
-- Notes: MIT — apps/ui is carved out of the AGPL cosscom/coss monorepo by the root LICENSING.md. Particles are cataloged per family (p-<component>-N); every variant installs individually. date-picker ships as calendar+popover+button per its docs.
+- Notes: MIT (apps/ui in github.com/cosscom/ui, MIT-licensed at the repo root). Particles are cataloged per family (p-<component>-N); every variant installs individually. date-picker ships as calendar+popover+button per its docs.
 - Cataloged in UI Vault: 111 entries
 ## Entries
 - **Accordion** https://coss.com/ui/docs/components/accordion — A set of collapsible panels with headings and content. [MIT, live-previewable, category: faq]
