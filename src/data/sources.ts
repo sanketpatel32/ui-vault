@@ -148,7 +148,7 @@ export const sources: Source[] = [
     tagline: "Animated components for your next project.",
     description:
       "154 animated components in your choice of headless flavor — Radix UI, Base UI, Headless UI or native — plus 11 text animations and 14 effect primitives. All Motion-powered, installed via shadcn registry.",
-    license: "free",
+    license: "mit-commons-clause",
     previewMode: "live",
     stack: ["react", "typescript", "tailwind", "motion", "radix"],
     install: "npx shadcn@latest add @animate-ui/<slug>",

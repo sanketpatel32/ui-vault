@@ -53,6 +53,7 @@ export function FilterBar({
         >
           <option value="">Any license</option>
           <option value="mit">MIT</option>
+          <option value="mit-commons-clause">MIT + Commons Clause</option>
           <option value="free">Free</option>
           <option value="freemium">Freemium</option>
           <option value="paid">Paid</option>
