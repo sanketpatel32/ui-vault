@@ -30,7 +30,10 @@ function usePrefersReducedMotion(): boolean {
   return useSyncExternalStore(subscribe, () => query.matches);
 }
 
-/** Previews animated by frame loops that the Motion/CSS guards cannot reach. */
+/**
+ * Previews animated by frame loops that the Motion/CSS guards cannot reach, or that
+ * restart from onAnimationComplete (skipped animations would make those spin).
+ */
 const FRAME_LOOP_PREVIEWS = new Set([
   "cultui-bg-animated-fractal-grid",
   "cultui-canvas-fractal-grid",
@@ -46,6 +49,7 @@ const FRAME_LOOP_PREVIEWS = new Set([
   "cultui-timer",
   "kiboui-reel",
   "kiboui-spinner",
+  "magicui-animated-grid-pattern",
   "magicui-cool-mode",
   "magicui-dotted-map",
   "magicui-flickering-grid",
