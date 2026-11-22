@@ -387,7 +387,7 @@ export const cultui: UIEntry[] = [
   {
     id: "cultui-minimal-card",
     name: "Minimal Card",
-    description: "A minimal image card",
+    description: "A minimal image card with a clean caption area — a quiet content tile.",
     source: "cultui",
     sourceUrl: "https://cult-ui.com/docs/components/minimal-card",
     sourceCategory: "Cards & Surfaces",
@@ -931,7 +931,8 @@ export const cultui: UIEntry[] = [
   {
     id: "cultui-three-d-carousel",
     name: "3D Carousel",
-    description: "A 3D image carousel",
+    description:
+      "A 3D image carousel that rotates cards through perspective — a hero showcase piece.",
     source: "cultui",
     sourceUrl: "https://cult-ui.com/docs/components/three-d-carousel",
     sourceCategory: "Media",

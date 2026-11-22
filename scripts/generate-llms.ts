@@ -4,7 +4,8 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { categories, entries, GROUP_LABELS, sources } from "../src/data/index";
+import { categories, GROUP_LABELS, sources } from "../src/data/index";
+import { fullEntries as entries } from "../src/data/all";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const publicDir = join(root, "public");

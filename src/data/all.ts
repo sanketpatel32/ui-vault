@@ -1,0 +1,78 @@
+import type { UIEntry } from "./types";
+import { reactbits } from "./components/reactbits";
+import { motionprimitives } from "./components/motionprimitives";
+import { fancy } from "./components/fancy";
+import { aceternity } from "./components/aceternity";
+import { numberflow } from "./components/numberflow";
+import { watermelon } from "./components/watermelon";
+import { shadcn } from "./components/shadcn";
+import { shadcnOidc } from "./components/shadcn-oidc";
+import { magicui } from "./components/magicui";
+import { animata } from "./components/animata";
+import { animateui } from "./components/animateui";
+import { launchui } from "./components/launchui";
+import { originui } from "./components/originui";
+import { cossui } from "./components/cossui";
+import { cultui } from "./components/cultui";
+import { kiboui } from "./components/kiboui";
+import { streamdown } from "./components/streamdown";
+import { genloaders } from "./components/genloaders";
+import { uisdk } from "./components/uisdk";
+import { wterm } from "./components/wterm";
+import { skullet } from "./components/skullet";
+import { easyui } from "./components/easyui";
+import { editorcn } from "./components/editorcn";
+import { loadingdev } from "./components/loadingdev";
+import { itshover } from "./components/itshover";
+import { amicro } from "./components/amicro";
+import { kokonutui } from "./components/kokonutui";
+import { arcui } from "./components/arcui";
+import { snapcn } from "./components/snapcn";
+import { beui } from "./components/beui";
+import { bklit } from "./components/bklit";
+import { pdfcn } from "./components/pdfcn";
+import { remocn } from "./components/remocn";
+import { assistantui } from "./components/assistantui";
+
+// The complete registry with every field. Imported ONLY by scripts and
+// scripts/generate-registry.ts — the app bundles the EntrySummary projection
+// (src/data/entries.generated.ts) and fetches per-source full records from
+// public/registry/<source>.json on demand (component detail pages).
+// Registry policy (v0.3.0): only vendorable sources — every entry ships free code
+// with an install command. Paid/gated/gallery sources are not carried as entries.
+export const fullEntries: UIEntry[] = [
+  ...reactbits,
+  ...motionprimitives,
+  ...fancy,
+  ...aceternity,
+  ...numberflow,
+  ...watermelon,
+  ...shadcn,
+  ...shadcnOidc,
+  ...magicui,
+  ...animata,
+  ...animateui,
+  ...launchui,
+  ...originui,
+  ...cossui,
+  ...cultui,
+  ...kiboui,
+  ...streamdown,
+  ...genloaders,
+  ...uisdk,
+  ...wterm,
+  ...skullet,
+  ...easyui,
+  ...editorcn,
+  ...loadingdev,
+  ...itshover,
+  ...amicro,
+  ...kokonutui,
+  ...arcui,
+  ...snapcn,
+  ...beui,
+  ...bklit,
+  ...pdfcn,
+  ...remocn,
+  ...assistantui,
+];

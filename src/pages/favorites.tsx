@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Heart } from "lucide-react";
-import type { UIEntry } from "@/data";
+import type { EntrySummary } from "@/data";
 import { entryById } from "@/lib/registry";
 import { favorites, useStore } from "@/lib/store";
 import { EntryCard } from "@/components/entry-card";
@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 
 export function Favorites() {
   const ids = useStore(favorites);
-  const items = ids.map((id) => entryById.get(id)).filter((e): e is UIEntry => !!e);
+  const items = ids.map((id) => entryById.get(id)).filter((e): e is EntrySummary => !!e);
 
   return (
     <div className="space-y-5">

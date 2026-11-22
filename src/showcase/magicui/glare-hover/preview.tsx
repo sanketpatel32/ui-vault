@@ -1,11 +1,11 @@
-import * as ComponentModule from "./glare-hover";
+import { GlareHover } from "./glare-hover";
 
 export default function Preview() {
-  const Component = (ComponentModule as any).default || (Object.values(ComponentModule)[0] as any);
-  if (!Component) return <div className="text-xs text-muted-fg">Component loaded</div>;
   return (
     <div className="flex items-center justify-center p-4">
-      <Component />
+      <GlareHover className="grid place-items-center rounded-xl border border-border bg-panel">
+        <span className="px-8 py-6 text-sm font-medium text-fg">Glare sweep on hover</span>
+      </GlareHover>
     </div>
   );
 }

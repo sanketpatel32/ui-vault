@@ -1,11 +1,11 @@
-import * as ComponentModule from "./text-3d-flip";
+import Text3DFlip from "./text-3d-flip";
 
 export default function Preview() {
-  const Component = (ComponentModule as any).default || (Object.values(ComponentModule)[0] as any);
-  if (!Component) return <div className="text-xs text-muted-fg">Component loaded</div>;
   return (
     <div className="flex items-center justify-center p-4">
-      <Component />
+      <Text3DFlip as="h2" className="text-3xl font-bold tracking-tight text-fg">
+        Flip the script
+      </Text3DFlip>
     </div>
   );
 }

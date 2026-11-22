@@ -1,11 +1,11 @@
-import * as ComponentModule from "./neon-gradient-card";
+import { NeonGradientCard } from "./neon-gradient-card";
 
 export default function Preview() {
-  const Component = (ComponentModule as any).default || (Object.values(ComponentModule)[0] as any);
-  if (!Component) return <div className="text-xs text-muted-fg">Component loaded</div>;
   return (
     <div className="flex items-center justify-center p-4">
-      <Component />
+      <NeonGradientCard neonColors={{ firstColor: "#00f1a1", secondColor: "#3b82f6" }}>
+        <span className="px-6 py-4 text-sm font-semibold text-fg">Neon border</span>
+      </NeonGradientCard>
     </div>
   );
 }

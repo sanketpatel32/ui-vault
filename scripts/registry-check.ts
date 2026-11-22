@@ -1,6 +1,7 @@
 // Validates the registry in src/data. Run: npm run registry:check
 import { readFileSync } from "node:fs";
-import { categories, entries, sources } from "../src/data/index";
+import { categories, sources } from "../src/data/index";
+import { fullEntries as entries } from "../src/data/all";
 import { showcaseLoaders } from "../src/showcase/index";
 import { checkAllPreviews } from "./check-previews.mts";
 
@@ -33,6 +34,13 @@ for (const e of entries) {
   // id prefix convention
   if (!e.id.startsWith(`${e.source}-`))
     warnings.push(`${e.id}: id does not start with source prefix "${e.source}-"`);
+
+  // descriptions must say what the component is, not just restate its name
+  if (e.description.trim().length < 25) {
+    errors.push(
+      `${e.id}: description too short (${e.description.trim().length} chars) — write one sentence on what it is and when to reach for it`,
+    );
+  }
 }
 
 // previewKeys resolve to showcase loaders, and no orphan loaders

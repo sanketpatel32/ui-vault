@@ -3,7 +3,8 @@ import { cn } from "./utils";
 
 describe("cn", () => {
   test("joins truthy class names", () => {
-    expect(cn("a", false && "b", undefined, "c")).toBe("a c");
+    const flag: boolean = false;
+    expect(cn("a", flag && "b", undefined, "c")).toBe("a c");
   });
 
   test("lets later Tailwind utilities win conflicts", () => {

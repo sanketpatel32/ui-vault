@@ -163,7 +163,7 @@ interface UIEntry {
 }
 ```
 
-Registry files: one file per source (`src/data/components/<source>.ts`), merged by `src/data/index.ts`. Seed target for v1 was ~150–200 entries; the registry now holds 814.
+Registry files: one file per source (`src/data/components/<source>.ts`), merged by `src/data/index.ts`. Seed target for v1 was ~150–200 entries; the registry now holds 3,157.
 
 ---
 

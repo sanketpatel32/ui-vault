@@ -1250,7 +1250,7 @@ export const amicro: UIEntry[] = [
   {
     id: "amicro-gears",
     name: "Gears",
-    description: "Gears loading animation.",
+    description: "A gears loading animation — a mechanical spinner for busy states.",
     source: "amicro",
     sourceUrl:
       "https://github.com/Subhan-code/Amicro--Micro-transitions-/blob/main/registry/ui/loading/gears.tsx",

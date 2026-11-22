@@ -1,11 +1,9 @@
-import * as ComponentModule from "./interactive-hover-button";
+import { InteractiveHoverButton } from "./interactive-hover-button";
 
 export default function Preview() {
-  const Component = (ComponentModule as any).default || (Object.values(ComponentModule)[0] as any);
-  if (!Component) return <div className="text-xs text-muted-fg">Component loaded</div>;
   return (
     <div className="flex items-center justify-center p-4">
-      <Component />
+      <InteractiveHoverButton>Hover me</InteractiveHoverButton>
     </div>
   );
 }

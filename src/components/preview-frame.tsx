@@ -1,12 +1,4 @@
-import {
-  Component,
-  lazy,
-  Suspense,
-  useEffect,
-  useState,
-  type ErrorInfo,
-  type ReactNode,
-} from "react";
+import { Component, lazy, Suspense, useState, type ErrorInfo, type ReactNode } from "react";
 import { AlertCircle, ExternalLink, Loader2, Monitor, Smartphone, Sun, Moon } from "lucide-react";
 import type { UIEntry } from "@/data";
 import { showcaseLoaders } from "@/showcase";
@@ -102,10 +94,13 @@ export function PreviewFrame({ entry }: { entry: UIEntry }) {
   const [forcedTheme, setForcedTheme] = useState<"light" | "dark" | null>(null);
   const canvasTheme = forcedTheme ?? appTheme;
 
-  useEffect(() => {
+  const [prevEntryId, setPrevEntryId] = useState(entry.id);
+  if (entry.id !== prevEntryId) {
+    // Navigated to another component — reset canvas controls during render.
+    setPrevEntryId(entry.id);
     setNarrow(false);
     setForcedTheme(null);
-  }, [entry.id]);
+  }
 
   const scoped = forcedTheme !== null || narrow;
 
@@ -208,24 +203,12 @@ export function PreviewFrame({ entry }: { entry: UIEntry }) {
                 <ExternalLink size={20} />
               </span>
               <div>
-                <p className="text-sm font-medium text-fg">No local preview yet</p>
+                <p className="text-sm font-medium text-fg">Cataloged — not vendored yet</p>
                 <p className="mt-1 text-xs leading-relaxed text-muted-fg">
-                  This component is free to vendor — the code just isn't copied into UI Vault yet.
-                  Take the install command or grab it at the source.
+                  This entry ships free code but hasn't been copied into UI Vault, so there's
+                  nothing to render here. The install command is in the sidebar.
                 </p>
-                {entry.install && (
-                  <code className="mt-3 inline-block rounded-md border border-border bg-muted px-2 py-1 font-mono text-[11px] text-muted-fg">
-                    {entry.install}
-                  </code>
-                )}
               </div>
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => window.open(entry.sourceUrl, "_blank")}
-              >
-                View at {source?.name} <ExternalLink size={12} />
-              </Button>
             </div>
           )}
         </div>

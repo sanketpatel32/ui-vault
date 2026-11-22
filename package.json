@@ -1,6 +1,6 @@
 {
   "name": "ui-vault",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -13,7 +13,8 @@
     "check": "vp check",
     "format": "vp fmt",
     "test": "vp test run",
-    "llms": "tsx scripts/generate-llms.ts",
+    "llms": "tsx scripts/generate-registry.ts && tsx scripts/generate-llms.ts",
+    "registry:gen": "tsx scripts/generate-registry.ts",
     "registry:check": "tsx scripts/registry-check.ts"
   },
   "dependencies": {

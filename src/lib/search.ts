@@ -1,9 +1,9 @@
 import Fuse from "fuse.js";
-import { entries, type UIEntry } from "@/data";
+import { entries, type EntrySummary } from "@/data";
 import { sourceById } from "@/lib/registry";
 
 // Extend entries with the source name so searches like "react bits" match by library.
-type SearchItem = UIEntry & { sourceName: string };
+type SearchItem = EntrySummary & { sourceName: string };
 const items: SearchItem[] = entries.map((e) => ({
   ...e,
   sourceName: sourceById.get(e.source)?.name ?? "",
@@ -22,7 +22,7 @@ const searchIndex = new Fuse(items, {
   minMatchCharLength: 2,
 });
 
-export function searchEntries(query: string, limit = 24): UIEntry[] {
+export function searchEntries(query: string, limit = 24): EntrySummary[] {
   const q = query.trim();
   if (!q) return [];
   // Fuzzy matching on one character matches nearly everything; use a name-prefix match instead.
@@ -30,5 +30,5 @@ export function searchEntries(query: string, limit = 24): UIEntry[] {
     const c = q.toLowerCase();
     return items.filter((e) => e.name.toLowerCase().startsWith(c)).slice(0, limit);
   }
-  return searchIndex.search(q, { limit }).map((r) => r.item as UIEntry);
+  return searchIndex.search(q, { limit }).map((r) => r.item as EntrySummary);
 }

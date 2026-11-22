@@ -1,7 +1,14 @@
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ExternalLink, Tag } from "lucide-react";
-import { categoryBySlug, entryById, relatedEntries, sourceById } from "@/lib/registry";
+import type { UIEntry } from "@/data";
+import {
+  categoryBySlug,
+  entryById,
+  relatedEntries,
+  sourceById,
+  useFullEntry,
+} from "@/lib/registry";
 import { recents } from "@/lib/store";
 import { SourceBadge } from "@/components/source-badge";
 import { LicenseBadge, PreviewBadge } from "@/components/license-badge";
@@ -14,21 +21,25 @@ import { Button } from "@/components/ui/button";
 
 export function ComponentDetail() {
   const { id = "" } = useParams();
-  const entry = entryById.get(id);
+  const summary = entryById.get(id);
+  // Full record (install command + deep link) loads from public/registry/<source>.json.
+  const fullEntry = useFullEntry(summary);
 
   useEffect(() => {
-    if (entry) recents.push(entry.id);
-  }, [entry]);
+    if (summary) recents.push(summary.id);
+  }, [summary]);
 
-  if (!entry) {
+  if (!summary) {
     return (
       <EmptyState title="Unknown component" description={`No component with id “${id}” exists.`} />
     );
   }
 
-  const source = sourceById.get(entry.source);
-  const category = categoryBySlug.get(entry.category);
-  const related = relatedEntries(entry);
+  const source = sourceById.get(summary.source);
+  const category = categoryBySlug.get(summary.category);
+  const related = relatedEntries(summary);
+  // Until the per-source JSON arrives, fall back to the source's own URL for links.
+  const entry: UIEntry = fullEntry ?? { ...summary, sourceUrl: source?.url ?? "" };
 
   return (
     <div className="space-y-8">

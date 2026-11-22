@@ -9,7 +9,7 @@
 - **Bento Grid** https://magicui.design/docs/components/bento-grid — Bento-style grid layout for elegantly showcasing product features. [MIT, live-previewable, category: features]
 - **Eight** https://animata.design/docs/bento-grid/eight — Bento grid with eight items [MIT, live-previewable, category: features]
 - **Gradient** https://animata.design/docs/bento-grid/gradient — Bento grid with gradient background cards [MIT, live-previewable, category: features]
-- **Three** https://animata.design/docs/bento-grid/three — Bento grid with 3 items [MIT, live-previewable, category: features]
+- **Three** https://animata.design/docs/bento-grid/three — A bento grid section with three animated items — a compact feature trio for landing pages. [MIT, live-previewable, category: features]
 - **Items** https://www.launchuicomponents.com/docs/sections/items — A flexible grid component for displaying items in shadcn's style. [MIT, live-previewable, category: features]
 - **Feature Carousel** https://cult-ui.com/docs/components/feature-carousel — An animated carousel component for showcasing features with smooth transitions and interactive elements. [MIT, live-previewable, category: features]
 - **Phone Frame** https://snapcn.dev/docs/screens/phone-frame — iPhone-style device frame with a dynamic island — sways in 3D showing off a glowing ride-summary map that draws itself [MIT, live-previewable, category: features]

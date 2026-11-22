@@ -23,6 +23,42 @@ export default defineConfig(({ command }) => ({
         files: ["src/showcase/cultui/intro-disclosure/intro-disclosure.tsx"],
         rules: { "react/rules-of-hooks": "off" },
       },
+      {
+        // Vendored previews are frozen upstream snapshots (AGENTS.md golden rule 5).
+        // Warn-level style rules fire hundreds of times on code we deliberately do
+        // not edit — suppress them here and fix upstream by re-copying instead.
+        files: ["src/showcase/**"],
+        rules: {
+          "react/only-export-components": "off",
+          "react/refs": "off",
+          "react/set-state-in-effect": "off",
+          "react/purity": "off",
+          "react/jsx-key": "off",
+          "react/immutability": "off",
+          "react/static-components": "off",
+          "react/incompatible-library": "off",
+          "react/use-memo": "off",
+          "react/preserve-manual-memoization": "off",
+          "react-hooks/exhaustive-deps": "off",
+          "typescript/no-useless-default-assignment": "off",
+          "typescript/no-floating-promises": "off",
+          "typescript/no-base-to-string": "off",
+          "typescript/restrict-template-expressions": "off",
+          "typescript/no-misused-spread": "off",
+          "typescript/unbound-method": "off",
+          "typescript/no-for-in-array": "off",
+          "typescript/no-redundant-type-constituents": "off",
+          "typescript/no-duplicate-type-constituents": "off",
+          "eslint/no-unused-vars": "off",
+          "eslint/no-unused-expressions": "off",
+          "eslint/no-empty-pattern": "off",
+        },
+      },
+      {
+        // shadcn-style kit files export cva variants beside the component by convention.
+        files: ["src/components/ui/**"],
+        rules: { "react/only-export-components": "off" },
+      },
     ],
     options: {
       typeAware: true,

@@ -2,13 +2,13 @@
 // Demos are the authentic compositions from the docs pages (apps/www/public/r/<name>-demo.json).
 // Writes <folder>/demo.tsx (rewritten imports) + <folder>/preview.tsx (thin wrapper).
 // Run: npx tsx scripts/fix-v06-cult-demos.mts
-import { existsSync, readFileSync, rmSync, writeFileSync, mkdirSync, readdirSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync, mkdirSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 
 const CULT_REPO = "https://raw.githubusercontent.com/nolly-studio/cult-ui/main/apps/www/public/r";
 const SHADCN = "https://ui.shadcn.com/r/styles/new-york-v4";
 
-async function fetchJSON(url: string, name: string): Promise<any | null> {
+async function fetchJSON(url: string, name: string): Promise<any> {
   const cf = `.vcache/v06-${name}.json`;
   if (existsSync(cf)) return JSON.parse(readFileSync(cf, "utf8"));
   for (let attempt = 0; attempt < 2; attempt++) {
@@ -172,4 +172,4 @@ async function main() {
   if (sharedReport.length) console.log("shared:\n" + sharedReport.join("\n"));
 }
 
-main();
+void main();

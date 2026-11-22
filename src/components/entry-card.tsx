@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
-import type { UIEntry } from "@/data";
+import type { EntrySummary } from "@/data";
 import { categoryBySlug } from "@/lib/registry";
 import { SourceBadge } from "@/components/source-badge";
 import { LicenseBadge, PreviewBadge } from "@/components/license-badge";
 import { StarButton } from "@/components/star-button";
 
-export function EntryCard({ entry }: { entry: UIEntry }) {
+export function EntryCard({ entry }: { entry: EntrySummary }) {
   const category = categoryBySlug.get(entry.category);
   return (
     <div className="relative transition-transform duration-200 hover:-translate-y-0.5">

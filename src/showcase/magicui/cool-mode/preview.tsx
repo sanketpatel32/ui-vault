@@ -1,11 +1,13 @@
-import * as ComponentModule from "./cool-mode";
+import { CoolMode } from "./cool-mode";
 
 export default function Preview() {
-  const Component = (ComponentModule as any).default || (Object.values(ComponentModule)[0] as any);
-  if (!Component) return <div className="text-xs text-muted-fg">Component loaded</div>;
   return (
     <div className="flex items-center justify-center p-4">
-      <Component />
+      <CoolMode>
+        <span className="inline-block cursor-pointer rounded-lg border border-border bg-panel px-5 py-2.5 text-sm font-medium text-fg">
+          Click me
+        </span>
+      </CoolMode>
     </div>
   );
 }
