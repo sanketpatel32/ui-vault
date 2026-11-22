@@ -19,10 +19,16 @@ const searchIndex = new Fuse(items, {
   ],
   threshold: 0.35,
   ignoreLocation: true,
+  minMatchCharLength: 2,
 });
 
 export function searchEntries(query: string, limit = 24): UIEntry[] {
   const q = query.trim();
   if (!q) return [];
+  // Fuzzy matching on one character matches nearly everything; use a name-prefix match instead.
+  if (q.length < 2) {
+    const c = q.toLowerCase();
+    return items.filter((e) => e.name.toLowerCase().startsWith(c)).slice(0, limit);
+  }
   return searchIndex.search(q, { limit }).map((r) => r.item as UIEntry);
 }

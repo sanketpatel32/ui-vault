@@ -64,13 +64,13 @@ export function CommandPalette({ open, onClose }: { open: boolean; onClose: () =
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search components, sources, tags…"
-            className="h-12 w-full bg-transparent text-sm text-fg outline-none placeholder:text-muted-fg/60"
+            className="h-12 w-full bg-transparent text-sm text-fg outline-none placeholder:text-faint-fg"
           />
         </div>
 
         <div className="max-h-[46vh] overflow-y-auto p-2">
           {!query.trim() && (
-            <p className="flex items-center gap-1.5 px-2 pb-1.5 text-[11px] font-medium text-muted-fg/70">
+            <p className="flex items-center gap-1.5 px-2 pb-1.5 text-[11px] font-medium text-faint-fg">
               <Flame size={11} /> Featured
             </p>
           )}
@@ -95,7 +95,7 @@ export function CommandPalette({ open, onClose }: { open: boolean; onClose: () =
                 <p
                   className={cn(
                     "truncate text-sm font-medium",
-                    i === active ? "text-accent" : "text-fg",
+                    i === active ? "text-accent-text" : "text-fg",
                   )}
                 >
                   {entry.name}
@@ -107,7 +107,7 @@ export function CommandPalette({ open, onClose }: { open: boolean; onClose: () =
           ))}
         </div>
 
-        <div className="flex items-center gap-4 border-t border-border px-4 py-2 text-[11px] text-muted-fg/70">
+        <div className="flex items-center gap-4 border-t border-border px-4 py-2 text-[11px] text-faint-fg">
           <span>↑↓ navigate</span>
           <span>↵ open</span>
           <span>esc close</span>
