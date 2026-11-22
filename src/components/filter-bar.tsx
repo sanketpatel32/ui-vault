@@ -1,5 +1,6 @@
 import { Search, X } from "lucide-react";
-import { sourcesWithCounts, topTags } from "@/lib/registry";
+import { licensesWithCounts, sourcesWithCounts, topTags } from "@/lib/registry";
+import { LICENSE_LABEL } from "@/lib/license";
 import { Input, Select } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 
@@ -18,6 +19,7 @@ export function FilterBar({
   onChange: (next: Filters) => void;
 }) {
   const sources = sourcesWithCounts();
+  const licenses = licensesWithCounts();
   const tags = topTags(14);
   const set = (patch: Partial<Filters>) => onChange({ ...filters, ...patch });
   const dirty = filters.q || filters.src || filters.lic || filters.tag;
@@ -26,8 +28,14 @@ export function FilterBar({
     <div className="space-y-3">
       <div className="flex flex-wrap items-center gap-2">
         <div className="relative min-w-52 flex-1">
-          <Search size={14} className="absolute top-1/2 left-3 -translate-y-1/2 text-muted-fg" />
+          <Search
+            size={14}
+            aria-hidden="true"
+            className="absolute top-1/2 left-3 -translate-y-1/2 text-muted-fg"
+          />
           <Input
+            type="search"
+            aria-label="Search components by name, description, or tag"
             value={filters.q}
             onChange={(e) => set({ q: e.target.value })}
             placeholder="Search name, description, tags…"
@@ -52,11 +60,11 @@ export function FilterBar({
           aria-label="Filter by license"
         >
           <option value="">Any license</option>
-          <option value="mit">MIT</option>
-          <option value="mit-commons-clause">MIT + Commons Clause</option>
-          <option value="free">Free</option>
-          <option value="freemium">Freemium</option>
-          <option value="paid">Paid</option>
+          {licenses.map((l) => (
+            <option key={l.license} value={l.license}>
+              {LICENSE_LABEL[l.license]} ({l.count})
+            </option>
+          ))}
         </Select>
         {dirty && (
           <button
@@ -74,11 +82,13 @@ export function FilterBar({
           <button
             key={tag}
             type="button"
+            aria-pressed={filters.tag === tag}
+            aria-label={`Filter by tag ${tag} (${count})`}
             onClick={() => set({ tag: filters.tag === tag ? "" : tag })}
             className={cn(
               "cursor-pointer rounded-full border px-2.5 py-1 text-[11px] transition-colors",
               filters.tag === tag
-                ? "border-accent bg-accent text-accent-fg"
+                ? "border-accent bg-accent-solid text-accent-fg"
                 : "border-border text-muted-fg hover:border-accent/40 hover:text-fg",
             )}
           >

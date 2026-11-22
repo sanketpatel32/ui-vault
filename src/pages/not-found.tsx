@@ -8,9 +8,9 @@ export function NotFound() {
       <p className="max-w-sm text-sm leading-relaxed text-muted-fg">
         This page fell into a WebGL background and never came back.
       </p>
-      <Link to="/">
-        <Button variant="outline">Back to safety</Button>
-      </Link>
+      <Button asChild variant="outline">
+        <Link to="/">Back to safety</Link>
+      </Button>
     </div>
   );
 }
