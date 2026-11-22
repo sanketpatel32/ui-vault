@@ -14,11 +14,7 @@ export function StarButton({ id, className }: { id: string; className?: string }
         active ? "text-amber-400" : "text-muted-fg/60 hover:text-amber-300",
         className,
       )}
-      onClick={(e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        favorites.toggle(id);
-      }}
+      onClick={() => favorites.toggle(id)}
     >
       <Star size={15} fill={active ? "currentColor" : "none"} />
     </button>
