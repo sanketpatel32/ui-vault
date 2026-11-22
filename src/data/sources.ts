@@ -99,14 +99,14 @@ export const sources: Source[] = [
     url: "https://ui.shadcn.com",
     tagline: "The canonical copy-paste component collection you own outright.",
     description:
-      "65 Radix-based primitives — every install vendors the source into your project. Charts via Recharts, tables via TanStack, drawer via Vaul, carousel via Embla. The de-facto foundation most libraries below build on.",
+      "65 Radix-based primitives — every install vendors the source into your project — plus 12 OIDC configuration entries from the official @oidc registry (policy form, settings page, 8 provider forms). Charts via Recharts, tables via TanStack, drawer via Vaul, carousel via Embla. The de-facto foundation most libraries below build on.",
     license: "mit",
     previewMode: "live",
     stack: ["react", "typescript", "tailwind", "radix"],
     install: "npx shadcn@latest add <component>",
     installLabel: "shadcn CLI",
     notes:
-      "MIT (github.com/shadcn-ui/ui). v4 docs ship radix/base/aria variants of every component; the catalog carries the radix set.",
+      "MIT (github.com/shadcn-ui/ui). v4 docs ship radix/base/aria variants of every component; the catalog carries the radix set. The @oidc namespace (ui.shadcn.com/oidc, same MIT repo) is cataloged as shadcn-oidc-* entries: npx shadcn@latest add @oidc/<name> (or register it first with npx shadcn@latest registry add @oidc=https://ui.shadcn.com/oidc/r/{name}.json); provider forms are family-granularity with 9 form-library variants each.",
     color: "#fafafa",
   },
   {

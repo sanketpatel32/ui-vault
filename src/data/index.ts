@@ -6,6 +6,7 @@ import { aceternity } from "./components/aceternity";
 import { numberflow } from "./components/numberflow";
 import { watermelon } from "./components/watermelon";
 import { shadcn } from "./components/shadcn";
+import { shadcnOidc } from "./components/shadcn-oidc";
 import { magicui } from "./components/magicui";
 import { animata } from "./components/animata";
 import { animateui } from "./components/animateui";
@@ -29,6 +30,7 @@ export const entries: UIEntry[] = [
   ...numberflow,
   ...watermelon,
   ...shadcn,
+  ...shadcnOidc,
   ...magicui,
   ...animata,
   ...animateui,
