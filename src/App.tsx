@@ -48,6 +48,12 @@ export default function App() {
 
   return (
     <div className="min-h-screen">
+      <a
+        href="#main"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:rounded-lg focus:bg-panel focus:px-3 focus:py-2 focus:text-sm focus:font-medium focus:text-fg focus:shadow-lg focus:ring-1 focus:ring-ring focus:outline-none"
+      >
+        Skip to content
+      </a>
       <Sidebar mobileOpen={mobileNavOpen} onClose={() => setMobileNavOpen(false)} />
 
       <div className="lg:pl-64">
@@ -55,7 +61,11 @@ export default function App() {
           onOpenMenu={() => setMobileNavOpen(true)}
           onOpenPalette={() => setPaletteOpen(true)}
         />
-        <main className="mx-auto max-w-6xl px-4 py-8 lg:px-8">
+        <main
+          id="main"
+          tabIndex={-1}
+          className="mx-auto max-w-6xl px-4 py-8 focus:outline-none lg:px-8"
+        >
           <div key={location.pathname} className="animate-rise">
             <Suspense fallback={<RouteFallback />}>
               <Routes>
