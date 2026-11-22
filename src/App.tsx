@@ -1,15 +1,21 @@
-import { useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Sidebar } from "@/components/sidebar";
 import { Topbar } from "@/components/topbar";
 import { CommandPalette } from "@/components/command-palette";
 import { Home } from "@/pages/home";
-import { Browse } from "@/pages/browse";
-import { CategoryPage } from "@/pages/category";
-import { SourcePage } from "@/pages/source";
-import { ComponentDetail } from "@/pages/component-detail";
-import { Favorites } from "@/pages/favorites";
-import { NotFound } from "@/pages/not-found";
+import { RouteFallback } from "@/components/route-fallback";
+
+const Browse = lazy(() => import("@/pages/browse").then((m) => ({ default: m.Browse })));
+const CategoryPage = lazy(() =>
+  import("@/pages/category").then((m) => ({ default: m.CategoryPage })),
+);
+const SourcePage = lazy(() => import("@/pages/source").then((m) => ({ default: m.SourcePage })));
+const ComponentDetail = lazy(() =>
+  import("@/pages/component-detail").then((m) => ({ default: m.ComponentDetail })),
+);
+const Favorites = lazy(() => import("@/pages/favorites").then((m) => ({ default: m.Favorites })));
+const NotFound = lazy(() => import("@/pages/not-found").then((m) => ({ default: m.NotFound })));
 
 export default function App() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -41,16 +47,20 @@ export default function App() {
           onOpenMenu={() => setMobileNavOpen(true)}
           onOpenPalette={() => setPaletteOpen(true)}
         />
-        <main key={location.pathname} className="animate-rise mx-auto max-w-6xl px-4 py-8 lg:px-8">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/browse" element={<Browse />} />
-            <Route path="/c/:slug" element={<CategoryPage />} />
-            <Route path="/source/:id" element={<SourcePage />} />
-            <Route path="/component/:id" element={<ComponentDetail />} />
-            <Route path="/favorites" element={<Favorites />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+        <main className="mx-auto max-w-6xl px-4 py-8 lg:px-8">
+          <div key={location.pathname} className="animate-rise">
+            <Suspense fallback={<RouteFallback />}>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/browse" element={<Browse />} />
+                <Route path="/c/:slug" element={<CategoryPage />} />
+                <Route path="/source/:id" element={<SourcePage />} />
+                <Route path="/component/:id" element={<ComponentDetail />} />
+                <Route path="/favorites" element={<Favorites />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </Suspense>
+          </div>
         </main>
       </div>
 
