@@ -31,6 +31,8 @@ export const watermelon: UIEntry[] = [
     tags: ["pack", "motion", "micro-interactions"],
     license: "free",
     previewMode: "live",
+    install:
+      "npx shadcn@latest add https://registry.watermelon.sh/r/shimmer-button.json https://registry.watermelon.sh/r/flip.json",
   },
   {
     previewKey: "watermelon-hero-blocks",
@@ -44,6 +46,7 @@ export const watermelon: UIEntry[] = [
     tags: ["hero", "pack", "sections"],
     license: "free",
     previewMode: "live",
+    install: "npx shadcn@latest add https://registry.watermelon.sh/r/hero-1.json",
     featured: true,
   },
   {
@@ -58,6 +61,7 @@ export const watermelon: UIEntry[] = [
     tags: ["footer", "pack", "sections"],
     license: "free",
     previewMode: "live",
+    install: "npx shadcn@latest add https://registry.watermelon.sh/r/footer-1.json",
   },
   {
     previewKey: "watermelon-auth-blocks",
@@ -71,6 +75,7 @@ export const watermelon: UIEntry[] = [
     tags: ["auth", "login", "signup", "pack"],
     license: "free",
     previewMode: "live",
+    install: "npx shadcn@latest add https://registry.watermelon.sh/r/auth-01.json",
   },
   {
     previewKey: "watermelon-pricing-blocks",
@@ -84,6 +89,7 @@ export const watermelon: UIEntry[] = [
     tags: ["pricing", "plans", "sections"],
     license: "free",
     previewMode: "live",
+    install: "npx shadcn@latest add https://registry.watermelon.sh/r/pricing-1.json",
   },
   {
     previewKey: "watermelon-faq-blocks",
@@ -97,6 +103,7 @@ export const watermelon: UIEntry[] = [
     tags: ["faq", "accordion", "sections"],
     license: "free",
     previewMode: "live",
+    install: "npx shadcn@latest add https://registry.watermelon.sh/r/faq-1.json",
   },
   {
     previewKey: "watermelon-testimonial-blocks",
@@ -110,6 +117,7 @@ export const watermelon: UIEntry[] = [
     tags: ["testimonials", "social-proof", "sections"],
     license: "free",
     previewMode: "live",
+    install: "npx shadcn@latest add https://registry.watermelon.sh/r/testimonials-1.json",
   },
   {
     previewKey: "watermelon-cta-blocks",
@@ -123,6 +131,7 @@ export const watermelon: UIEntry[] = [
     tags: ["cta", "conversion", "sections"],
     license: "free",
     previewMode: "live",
+    install: "npx shadcn@latest add https://registry.watermelon.sh/r/cta-1.json",
   },
   {
     previewKey: "watermelon-dashboard-agndex",
@@ -136,6 +145,7 @@ export const watermelon: UIEntry[] = [
     tags: ["dashboard", "admin", "layout"],
     license: "free",
     previewMode: "live",
+    install: "npx shadcn@latest add https://registry.watermelon.sh/r/agndex-dashboard.json",
   },
   {
     previewKey: "watermelon-dashboard-astrix",
@@ -149,6 +159,7 @@ export const watermelon: UIEntry[] = [
     tags: ["dashboard", "analytics", "layout"],
     license: "free",
     previewMode: "live",
+    install: "npx shadcn@latest add https://registry.watermelon.sh/r/astrix-dashboard.json",
   },
   {
     previewKey: "watermelon-dashboard-jobtracker",
@@ -162,5 +173,6 @@ export const watermelon: UIEntry[] = [
     tags: ["dashboard", "kanban", "tracker"],
     license: "free",
     previewMode: "live",
+    install: "npx shadcn@latest add https://registry.watermelon.sh/r/jobtracker-dashboard.json",
   },
 ];
