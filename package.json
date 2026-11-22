@@ -12,6 +12,7 @@
     "lint": "vp lint",
     "check": "vp check",
     "format": "vp fmt",
+    "test": "vp test run",
     "llms": "tsx scripts/generate-llms.ts",
     "registry:check": "tsx scripts/registry-check.ts"
   },
@@ -95,7 +96,6 @@
     "embla-carousel-react": "^8.6.0",
     "framer-motion": "^13.1.1",
     "fuse.js": "^7.5.0",
-    "geist": "^1.7.2",
     "input-otp": "^1.5.0",
     "jotai": "^2.20.3",
     "lodash.throttle": "^4.1.1",
@@ -135,7 +135,7 @@
     "tippy.js": "^6.3.7",
     "tunnel-rat": "^0.1.2",
     "vaul": "^1.1.2",
-    "zod": "^4.5.2"
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",
