@@ -48,6 +48,7 @@ The `vp` CLI lives at `~/AppData/Local/vite-plus/bin/vp`; in Git Bash it may nee
 | `npm run preview`        | Preview the production build (`vp preview`)                  |
 | `npm run check`          | Format + lint + type checks together (oxfmt/oxlint/tsgolint) |
 | `npm run format`         | Format everything (oxfmt — double quotes)                    |
+| `npm test`               | Unit tests via `vp test run` (Vitest, `src/**/*.test.ts`)    |
 | `npm run lint`           | Lint only (oxlint)                                           |
 | `npm run llms`           | Regenerate all `public/llms*` artifacts from `src/data/`     |
 | `npm run registry:check` | Validate registry ids/slugs/sources/licensing/loaders        |
