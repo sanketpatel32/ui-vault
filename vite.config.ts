@@ -8,7 +8,7 @@ export default defineConfig(({ command }) => ({
   // GitHub Pages serves this project at /ui-vault/ — only builds need the subpath base
   base: command === "build" ? "/ui-vault/" : "/",
   fmt: {
-    ignorePatterns: ["public/**"],
+    ignorePatterns: ["public/**", "src/data/entries.generated.ts"],
   },
   lint: {
     plugins: ["react", "typescript", "oxc"],
