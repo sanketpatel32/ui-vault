@@ -1,3 +1,4 @@
+import { useSafeTimeout } from "@/showcase/_shared/use-safe-timeout";
 import { useCallback, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { Check, Copy } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
@@ -101,10 +102,12 @@ export function CodeBlock({ tabs, code, language = "bash", className }: CodeBloc
     };
   }, [measureIndicator]);
 
+  const safeTimeout = useSafeTimeout();
+
   const handleCopy = async () => {
     await navigator.clipboard.writeText(currentCode);
     setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    safeTimeout(() => setCopied(false), 2000);
   };
 
   const handleTabChange = (index: number) => {

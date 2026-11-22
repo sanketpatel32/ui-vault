@@ -16,9 +16,7 @@ import {
 } from "./floating-panel";
 
 function FloatingPanelInput() {
-  const handleSubmit = (note: string) => {
-    console.log("Submitted note:", note);
-  };
+  const handleSubmit = (_note: string) => {};
 
   return (
     <FloatingPanelRoot>
@@ -64,7 +62,7 @@ const ColorPickerFloatingPanel = () => {
                   key={color}
                   className="w-12 h-12 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
                   style={{ backgroundColor: color }}
-                  onClick={() => console.log(`Selected color: ${color}`)}
+                  onClick={() => {}}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                   initial={{ opacity: 0, scale: 0.8 }}
@@ -89,17 +87,17 @@ const QuickActionsFloatingPanel = () => {
     {
       icon: <Plus className="w-4 h-4" />,
       label: "New File",
-      action: () => console.log("New File"),
+      action: () => {},
     },
     {
       icon: <ImageIcon className="w-4 h-4" />,
       label: "Upload Image",
-      action: () => console.log("Upload Image"),
+      action: () => {},
     },
     {
       icon: <Paintbrush className="w-4 h-4" />,
       label: "Edit Colors",
-      action: () => console.log("Edit Colors"),
+      action: () => {},
     },
   ];
 
@@ -172,7 +170,7 @@ const ImagePreviewFloatingPanel = () => {
         <FloatingPanelFooter>
           <FloatingPanelCloseButton />
           <FloatingPanelButton
-            onClick={() => console.log("Download clicked")}
+            onClick={() => {}}
             className="px-3 py-1 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors"
           >
             Download

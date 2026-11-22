@@ -1,3 +1,4 @@
+import { useSafeTimeout } from "@/showcase/_shared/use-safe-timeout";
 import React, { createContext, type ReactNode, useContext, useEffect, useState } from "react";
 import { AnimatePresence, motion, useMotionValue, useSpring } from "motion/react";
 import type { TargetAndTransition } from "motion/react";
@@ -363,17 +364,19 @@ const ExpandableCard = React.forwardRef<HTMLDivElement, ExpandableCardProps>(
       }
     }, [isExpanded, collapsedSize, expandedSize, width, height, animatedWidth, animatedHeight]);
 
+    const safeTimeout = useSafeTimeout();
+
     // Handler for hover start event
     const handleHover = () => {
       if (hoverToExpand && !isExpanded) {
-        setTimeout(toggleExpand, expandDelay);
+        safeTimeout(toggleExpand, expandDelay);
       }
     };
 
     // Handler for hover end event
     const handleHoverEnd = () => {
       if (hoverToExpand && isExpanded) {
-        setTimeout(toggleExpand, collapseDelay);
+        safeTimeout(toggleExpand, collapseDelay);
       }
     };
 

@@ -1,3 +1,4 @@
+import { useSafeTimeout } from "@/showcase/_shared/use-safe-timeout";
 import {
   createContext,
   useCallback,
@@ -326,35 +327,46 @@ export function PollWidgetRoot({
     [votes, totalVotes],
   );
 
+  const safeTimeout = useSafeTimeout();
+
   const submitVote = useCallback(() => {
     if (selected.length > 0 && onVote && animationPhase === "idle") {
       // Start animation sequence
       setAnimationPhase("voting");
 
       // Brief delay before showing results
-      setTimeout(() => {
+      safeTimeout(() => {
         onVote(selected);
         setAnimationPhase("results");
 
         // Show success after results
-        setTimeout(() => {
+        safeTimeout(() => {
           setAnimationPhase("success");
 
           // Auto-collapse after success (for popover/dialog modes)
           if (autoCollapseDelay > 0 && mode !== "inline") {
-            setTimeout(() => {
+            safeTimeout(() => {
               setOpen(false);
               // Reset animation phase after close
-              setTimeout(() => setAnimationPhase("idle"), 300);
+              safeTimeout(() => setAnimationPhase("idle"), 300);
             }, successDuration);
           } else if (autoCollapseDelay > 0 && mode === "inline") {
             // For inline mode, just go back to idle after showing success
-            setTimeout(() => setAnimationPhase("idle"), successDuration);
+            safeTimeout(() => setAnimationPhase("idle"), successDuration);
           }
         }, autoCollapseDelay);
       }, 400);
     }
-  }, [selected, onVote, animationPhase, autoCollapseDelay, successDuration, mode, setOpen]);
+  }, [
+    selected,
+    onVote,
+    animationPhase,
+    autoCollapseDelay,
+    successDuration,
+    mode,
+    setOpen,
+    safeTimeout,
+  ]);
 
   // Reset animation phase when opening
   useEffect(() => {
