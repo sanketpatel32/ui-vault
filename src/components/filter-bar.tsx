@@ -1,5 +1,6 @@
 import { Search, X } from "lucide-react";
-import { sourcesWithCounts, topTags } from "@/lib/registry";
+import { licensesWithCounts, sourcesWithCounts, topTags } from "@/lib/registry";
+import { LICENSE_LABEL } from "@/lib/license";
 import { Input, Select } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 
@@ -18,6 +19,7 @@ export function FilterBar({
   onChange: (next: Filters) => void;
 }) {
   const sources = sourcesWithCounts();
+  const licenses = licensesWithCounts();
   const tags = topTags(14);
   const set = (patch: Partial<Filters>) => onChange({ ...filters, ...patch });
   const dirty = filters.q || filters.src || filters.lic || filters.tag;
@@ -52,10 +54,11 @@ export function FilterBar({
           aria-label="Filter by license"
         >
           <option value="">Any license</option>
-          <option value="mit">MIT</option>
-          <option value="free">Free</option>
-          <option value="freemium">Freemium</option>
-          <option value="paid">Paid</option>
+          {licenses.map((l) => (
+            <option key={l.license} value={l.license}>
+              {LICENSE_LABEL[l.license]} ({l.count})
+            </option>
+          ))}
         </Select>
         {dirty && (
           <button

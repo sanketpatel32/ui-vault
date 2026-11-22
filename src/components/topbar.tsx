@@ -18,7 +18,7 @@ export function Topbar({
       <button
         type="button"
         aria-label="Open menu"
-        className="cursor-pointer rounded-lg p-2 text-muted-fg hover:bg-muted hover:text-fg lg:hidden"
+        className="shrink-0 cursor-pointer rounded-lg p-2 text-muted-fg hover:bg-muted hover:text-fg lg:hidden"
         onClick={onOpenMenu}
       >
         <Menu size={18} />
@@ -27,7 +27,7 @@ export function Topbar({
       <button
         type="button"
         onClick={onOpenPalette}
-        className="flex h-9 max-w-md flex-1 cursor-pointer items-center gap-2.5 rounded-lg border border-border bg-muted/40 px-3 text-sm text-faint-fg transition-all hover:border-accent/40 hover:bg-muted hover:text-fg hover:shadow-sm hover:shadow-accent/10"
+        className="flex h-9 max-w-md min-w-0 flex-1 cursor-pointer items-center gap-2.5 rounded-lg border border-border bg-muted/40 px-3 text-sm text-faint-fg transition-all hover:border-accent/40 hover:bg-muted hover:text-fg hover:shadow-sm hover:shadow-accent/10"
       >
         <Search size={15} className="shrink-0" />
         <span className="flex-1 truncate text-left">Search components, sources, tags…</span>
@@ -36,7 +36,7 @@ export function Topbar({
         </kbd>
       </button>
 
-      <div className="ml-auto flex items-center gap-1">
+      <div className="ml-auto flex shrink-0 items-center gap-1">
         {favCount > 0 && (
           <Link
             to="/favorites"
