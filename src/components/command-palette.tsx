@@ -87,6 +87,7 @@ export function CommandPalette({ open, onClose }: { open: boolean; onClose: () =
             aria-controls={listboxId}
             aria-autocomplete="list"
             aria-activedescendant={results[active] ? optionId(active) : undefined}
+            aria-label="Search components, sources, tags"
             placeholder="Search components, sources, tags…"
             className="h-12 w-full bg-transparent text-sm text-fg outline-none placeholder:text-muted-fg/60"
           />
