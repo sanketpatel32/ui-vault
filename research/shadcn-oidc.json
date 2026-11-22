@@ -1,0 +1,194 @@
+{
+  "id": "shadcn",
+  "namespace": "@oidc",
+  "name": "shadcn/ui OIDC registry",
+  "url": "https://ui.shadcn.com/oidc",
+  "license": "MIT",
+  "repo": "https://github.com/shadcn-ui/ui",
+  "install": {
+    "shadcnNamespace": "npx shadcn@latest add @oidc/<slug>",
+    "registryAdd": "npx shadcn@latest registry add @oidc=https://ui.shadcn.com/oidc/r/{name}.json",
+    "registryIndex": "https://ui.shadcn.com/oidc/r/registry.json"
+  },
+  "stack": ["React 19", "TypeScript", "Tailwind CSS v4", "shadcn/ui"],
+  "status": "ok",
+  "extracted": "2026-11-22",
+  "notes": [
+    "Registry index has 78 items: 2 blocks, 2 libs (policy, verify — server-side, not cataloged) and 74 components (claims, picker + 8 providers × 9 form-library variants).",
+    "Providers cataloged at family granularity (like Origin UI): each family ships plain, Zod, Valibot, React Hook Form (+Zod/+Valibot) and TanStack Form (+Zod/+Valibot) variants. Every install verified 200 at ui.shadcn.com/oidc/r/<name>.json."
+  ],
+  "components": [
+    {
+      "name": "OIDC Core",
+      "slug": "core",
+      "url": "https://ui.shadcn.com/oidc/docs/getting-started",
+      "category": "Blocks",
+      "description": "A starter policy form: GitHub Actions and Vercel behind a toggle picker, each form with its own submit. The file is yours — add providers, swap the picker, and wire onSubmit to your storage. The builder at the homepage generates this file for any provider combination."
+    },
+    {
+      "name": "OIDC Settings Page",
+      "slug": "page-actions",
+      "url": "https://ui.shadcn.com/oidc/docs/save-and-verify",
+      "category": "Blocks",
+      "description": "A working settings page: app/settings/oidc renders the policy form, and a server action validates with validateOidcPolicy before saving. Wire the form's onSubmit to savePolicy and replace the console.log with your storage."
+    },
+    {
+      "name": "OIDC Claims Pieces",
+      "slug": "claims",
+      "url": "https://ui.shadcn.com/oidc/docs/providers",
+      "category": "Components",
+      "description": "The shared pieces every provider form composes: the ClaimsList row editor for additional claims, the ClaimChip label marker, and the pure helpers that merge rows into a policy and read them back out."
+    },
+    {
+      "name": "OIDC Picker",
+      "slug": "picker",
+      "url": "https://ui.shadcn.com/oidc/docs/providers",
+      "category": "Components",
+      "description": "Single-select provider picker that adapts to the count: a toggle row for up to three providers, a select beyond that, nothing for one."
+    },
+    {
+      "name": "GitHub Actions Provider",
+      "slug": "provider-github",
+      "url": "https://ui.shadcn.com/oidc/docs/providers/github",
+      "category": "Providers",
+      "description": "A self-contained form component that emits an OidcPolicy for a GitHub Actions caller: a repository (owner/repo or a pasted URL) and branch/tag/environment scoping with derived audience.",
+      "variants": [
+        "provider-github",
+        "provider-github-zod",
+        "provider-github-valibot",
+        "provider-github-rhf",
+        "provider-github-rhf-zod",
+        "provider-github-rhf-valibot",
+        "provider-github-tanstack",
+        "provider-github-tanstack-zod",
+        "provider-github-tanstack-valibot"
+      ]
+    },
+    {
+      "name": "Vercel Provider",
+      "slug": "provider-vercel",
+      "url": "https://ui.shadcn.com/oidc/docs/providers/vercel",
+      "category": "Providers",
+      "description": "A self-contained form component that emits an OidcPolicy for a Vercel caller: team, project, and environment scoping with derived issuer, plus custom audiences via Vercel's OIDC token exchange.",
+      "variants": [
+        "provider-vercel",
+        "provider-vercel-zod",
+        "provider-vercel-valibot",
+        "provider-vercel-rhf",
+        "provider-vercel-rhf-zod",
+        "provider-vercel-rhf-valibot",
+        "provider-vercel-tanstack",
+        "provider-vercel-tanstack-zod",
+        "provider-vercel-tanstack-valibot"
+      ]
+    },
+    {
+      "name": "GitLab CI Provider",
+      "slug": "provider-gitlab",
+      "url": "https://ui.shadcn.com/oidc/docs/providers/gitlab",
+      "category": "Providers",
+      "description": "A self-contained form component that emits an OidcPolicy for a GitLab CI caller: instance (gitlab.com or self-hosted), group and project, job-requested audience, and branch/tag/environment scoping.",
+      "variants": [
+        "provider-gitlab",
+        "provider-gitlab-zod",
+        "provider-gitlab-valibot",
+        "provider-gitlab-rhf",
+        "provider-gitlab-rhf-zod",
+        "provider-gitlab-rhf-valibot",
+        "provider-gitlab-tanstack",
+        "provider-gitlab-tanstack-zod",
+        "provider-gitlab-tanstack-valibot"
+      ]
+    },
+    {
+      "name": "Google Provider",
+      "slug": "provider-google",
+      "url": "https://ui.shadcn.com/oidc/docs/providers/google",
+      "category": "Providers",
+      "description": "A self-contained form component that emits an OidcPolicy for a Google service account caller: account email, optional rename-proof unique ID, and audience.",
+      "variants": [
+        "provider-google",
+        "provider-google-zod",
+        "provider-google-valibot",
+        "provider-google-rhf",
+        "provider-google-rhf-zod",
+        "provider-google-rhf-valibot",
+        "provider-google-tanstack",
+        "provider-google-tanstack-zod",
+        "provider-google-tanstack-valibot"
+      ]
+    },
+    {
+      "name": "Bitbucket Provider",
+      "slug": "provider-bitbucket",
+      "url": "https://ui.shadcn.com/oidc/docs/providers/bitbucket",
+      "category": "Providers",
+      "description": "A self-contained form component that emits an OidcPolicy for a Bitbucket Pipelines caller: paste-in identity provider URL and audience from repository settings, plus repository UUID scoping. Note: the discovery document only exists after Pipelines OIDC is enabled and one pipeline has run.",
+      "variants": [
+        "provider-bitbucket",
+        "provider-bitbucket-zod",
+        "provider-bitbucket-valibot",
+        "provider-bitbucket-rhf",
+        "provider-bitbucket-rhf-zod",
+        "provider-bitbucket-rhf-valibot",
+        "provider-bitbucket-tanstack",
+        "provider-bitbucket-tanstack-zod",
+        "provider-bitbucket-tanstack-valibot"
+      ]
+    },
+    {
+      "name": "AWS EKS Provider",
+      "slug": "provider-aws",
+      "url": "https://ui.shadcn.com/oidc/docs/providers/aws",
+      "category": "Providers",
+      "description": "A self-contained form component that emits an OidcPolicy for an AWS EKS workload: cluster OIDC issuer URL, Kubernetes namespace and service account, and audience. EKS is AWS's OIDC workload identity — plain EC2 and Lambda do not mint identity tokens.",
+      "variants": [
+        "provider-aws",
+        "provider-aws-zod",
+        "provider-aws-valibot",
+        "provider-aws-rhf",
+        "provider-aws-rhf-zod",
+        "provider-aws-rhf-valibot",
+        "provider-aws-tanstack",
+        "provider-aws-tanstack-zod",
+        "provider-aws-tanstack-valibot"
+      ]
+    },
+    {
+      "name": "Azure Provider",
+      "slug": "provider-azure",
+      "url": "https://ui.shadcn.com/oidc/docs/providers/azure",
+      "category": "Providers",
+      "description": "A self-contained form component that emits an OidcPolicy for a Microsoft Entra ID workload: tenant, the caller's object ID, optional client ID, and audience.",
+      "variants": [
+        "provider-azure",
+        "provider-azure-zod",
+        "provider-azure-valibot",
+        "provider-azure-rhf",
+        "provider-azure-rhf-zod",
+        "provider-azure-rhf-valibot",
+        "provider-azure-tanstack",
+        "provider-azure-tanstack-zod",
+        "provider-azure-tanstack-valibot"
+      ]
+    },
+    {
+      "name": "Custom OIDC Provider",
+      "slug": "provider-custom",
+      "url": "https://ui.shadcn.com/oidc/docs/providers/custom",
+      "category": "Providers",
+      "description": "The escape hatch for any OIDC issuer without a dedicated provider: issuer, audience, optional subject, and free-form optional claims, with a warning when a rule would trust an entire issuer. List it last in the providers array — it matches broadly.",
+      "variants": [
+        "provider-custom",
+        "provider-custom-zod",
+        "provider-custom-valibot",
+        "provider-custom-rhf",
+        "provider-custom-rhf-zod",
+        "provider-custom-rhf-valibot",
+        "provider-custom-tanstack",
+        "provider-custom-tanstack-zod",
+        "provider-custom-tanstack-valibot"
+      ]
+    }
+  ]
+}

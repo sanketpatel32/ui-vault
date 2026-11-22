@@ -1,0 +1,1051 @@
+{
+  "id": "assistantui",
+  "name": "assistant-ui",
+  "url": "https://www.assistant-ui.com",
+  "license": "MIT",
+  "repo": "https://github.com/assistant-ui/assistant-ui",
+  "install": {
+    "npm": "npm install @assistant-ui/react",
+    "shadcn": "npx shadcn@latest add https://r.assistant-ui.com/<slug>",
+    "shadcnNamespace": "npx shadcn@latest add @assistant-ui/<slug>",
+    "registryIndex": "https://r.assistant-ui.com/registry.json"
+  },
+  "stack": ["React 18/19", "TypeScript", "Tailwind CSS v4", "Radix UI"],
+  "status": "ok",
+  "extracted": "2026-11-22",
+  "notes": [
+    "MIT. Runtime components (thread, assistant-modal, attachment …) need an assistant-ui runtime (@assistant-ui/react + an adapter such as the Vercel AI SDK); elements-* items are props-driven and render without one.",
+    "Registry index has 175 items. Skipped: lib/hook/style/page/item types, internal elements helpers (surfaces, tokens, range, href, task, *-state, modal-size, model-selection, receipt-focus), the provider logo set and the vendored shadcn primitives (accordion, badge, select, tabs, direction)."
+  ],
+  "components": [
+    {
+      "name": "Loading state",
+      "slug": "elements-loading-state",
+      "url": "https://www.assistant-ui.com/elements/loading-state",
+      "category": "Elements",
+      "description": "A pixel matrix that keeps time while the model has nothing to show yet."
+    },
+    {
+      "name": "Thinking indicator",
+      "slug": "elements-thinking-indicator",
+      "url": "https://www.assistant-ui.com/elements/thinking-indicator",
+      "category": "Elements",
+      "description": "A live status line that names what the agent is doing right now, with elapsed time."
+    },
+    {
+      "name": "Reasoning panel",
+      "slug": "elements-reasoning-panel",
+      "url": "https://www.assistant-ui.com/elements",
+      "category": "Elements",
+      "description": "A collapsible trace that streams reasoning steps along a timeline, then settles into a summary."
+    },
+    {
+      "name": "Streaming text",
+      "slug": "elements-streaming-text",
+      "url": "https://www.assistant-ui.com/elements/streaming-text",
+      "category": "Elements",
+      "description": "Tokens arrive softly: the newest words land in blue and settle into ink."
+    },
+    {
+      "name": "Typing indicator",
+      "slug": "elements-typing-indicator",
+      "url": "https://www.assistant-ui.com/elements/typing-indicator",
+      "category": "Elements",
+      "description": "The classic three dots, tuned to read as presence rather than noise."
+    },
+    {
+      "name": "Message pair",
+      "slug": "elements-message-pair",
+      "url": "https://www.assistant-ui.com/elements/message-pair",
+      "category": "Elements",
+      "description": "A user bubble and a streaming assistant reply, with actions that appear on hover."
+    },
+    {
+      "name": "Message branches",
+      "slug": "elements-message-branches",
+      "url": "https://www.assistant-ui.com/elements/message-branches",
+      "category": "Elements",
+      "description": "Navigate between regenerated versions of the same answer without losing your place."
+    },
+    {
+      "name": "Message actions",
+      "slug": "elements-message-actions",
+      "url": "https://www.assistant-ui.com/elements/message-actions",
+      "category": "Elements",
+      "description": "Copy, rate, and regenerate. Each action confirms itself with a small state change."
+    },
+    {
+      "name": "Follow-up suggestions",
+      "slug": "elements-suggestions",
+      "url": "https://www.assistant-ui.com/elements",
+      "category": "Elements",
+      "description": "Prompt pills that stagger in after a reply and invite the next turn."
+    },
+    {
+      "name": "Error state",
+      "slug": "elements-error-state",
+      "url": "https://www.assistant-ui.com/elements/error-state",
+      "category": "Elements",
+      "description": "A quiet failure banner with a retry path, not a modal in your face."
+    },
+    {
+      "name": "Tool call",
+      "slug": "elements-tool-call",
+      "url": "https://www.assistant-ui.com/elements/tool-call",
+      "category": "Elements",
+      "description": "One tool invocation with its request and result tucked behind a disclosure."
+    },
+    {
+      "name": "Run activity",
+      "slug": "elements-run-activity",
+      "url": "https://www.assistant-ui.com/elements/run-activity",
+      "category": "Elements",
+      "description": "Ordered commentary and tools, with a live summary and a final answer that stays visible."
+    },
+    {
+      "name": "Tool timeline",
+      "slug": "elements-tool-timeline",
+      "url": "https://www.assistant-ui.com/elements/tool-timeline",
+      "category": "Elements",
+      "description": "A whole working session summarized as verbs, targets, and file stats."
+    },
+    {
+      "name": "Terminal block",
+      "slug": "elements-terminal-block",
+      "url": "https://www.assistant-ui.com/elements/terminal-block",
+      "category": "Elements",
+      "description": "Command output that streams line by line and ends with an exit status."
+    },
+    {
+      "name": "Code diff",
+      "slug": "elements-code-diff",
+      "url": "https://www.assistant-ui.com/elements/code-diff",
+      "category": "Elements",
+      "description": "A unified diff with tinted additions and removals, sized for chat."
+    },
+    {
+      "name": "Web search",
+      "slug": "elements-web-search",
+      "url": "https://www.assistant-ui.com/elements/web-search",
+      "category": "Elements",
+      "description": "A search query and its results landing one by one as the agent reads."
+    },
+    {
+      "name": "Sources (props-driven)",
+      "slug": "elements-sources",
+      "url": "https://www.assistant-ui.com/elements/sources",
+      "category": "Elements",
+      "description": "Citations collapsed into a pill, expanding into scannable source cards."
+    },
+    {
+      "name": "Inline citation",
+      "slug": "elements-inline-citation",
+      "url": "https://www.assistant-ui.com/elements/inline-citation",
+      "category": "Elements",
+      "description": "Numbered references inside a sentence, each with a hover preview of its source."
+    },
+    {
+      "name": "Link preview",
+      "slug": "elements-link-preview",
+      "url": "https://www.assistant-ui.com/elements/link-preview",
+      "category": "Elements",
+      "description": "A returned URL unfurled into a card with enough context to decide whether to open it."
+    },
+    {
+      "name": "Image generation",
+      "slug": "elements-image-generation",
+      "url": "https://www.assistant-ui.com/elements/image-generation",
+      "category": "Elements",
+      "description": "A dot grid holds the frame while the image resolves out of a blur."
+    },
+    {
+      "name": "Image gallery",
+      "slug": "elements-image-gallery",
+      "url": "https://www.assistant-ui.com/elements/image-gallery",
+      "category": "Elements",
+      "description": "A compact grid of returned images that opens each one in a shared lightbox."
+    },
+    {
+      "name": "Data table",
+      "slug": "elements-data-table",
+      "url": "https://www.assistant-ui.com/elements/data-table",
+      "category": "Elements",
+      "description": "A tool's rows and columns with formatting, sorting, and a card layout in narrow columns."
+    },
+    {
+      "name": "Number ticker",
+      "slug": "elements-number-ticker",
+      "url": "https://www.assistant-ui.com/elements/number-ticker",
+      "category": "Elements",
+      "description": "Digits that roll into place as a count updates in real time."
+    },
+    {
+      "name": "Agent plan",
+      "slug": "elements-agent-plan",
+      "url": "https://www.assistant-ui.com/elements/agent-plan",
+      "category": "Elements",
+      "description": "A checklist the agent works through, with progress you can glance."
+    },
+    {
+      "name": "Subagent list",
+      "slug": "elements-subagent-list",
+      "url": "https://www.assistant-ui.com/elements/subagent-list",
+      "category": "Elements",
+      "description": "Parallel workers with their own progress, models, and completions."
+    },
+    {
+      "name": "Agent status (props-driven)",
+      "slug": "elements-agent-status",
+      "url": "https://www.assistant-ui.com/elements/agent-status",
+      "category": "Elements",
+      "description": "One pill that always answers: what is it doing, and for how long."
+    },
+    {
+      "name": "Task card (props-driven)",
+      "slug": "elements-task-card",
+      "url": "https://www.assistant-ui.com/elements/task-card",
+      "category": "Elements",
+      "description": "A delegated task with its state, timing, result, and transcript in one card."
+    },
+    {
+      "name": "Approval card",
+      "slug": "elements-approval-card",
+      "url": "https://www.assistant-ui.com/elements/approval-card",
+      "category": "Elements",
+      "description": "Human in the loop: the agent asks before it runs anything with side effects."
+    },
+    {
+      "name": "Option list",
+      "slug": "elements-option-list",
+      "url": "https://www.assistant-ui.com/elements/option-list",
+      "category": "Elements",
+      "description": "The agent asks a question with a few answers; the pick returns to it and stays as a receipt."
+    },
+    {
+      "name": "Question flow",
+      "slug": "elements-question-flow",
+      "url": "https://www.assistant-ui.com/elements/question-flow",
+      "category": "Elements",
+      "description": "A few short questions asked one at a time, answered together and kept as a receipt."
+    },
+    {
+      "name": "Recommendation card",
+      "slug": "elements-recommendation-card",
+      "url": "https://www.assistant-ui.com/elements/recommendation-card",
+      "category": "Elements",
+      "description": "The agent proposes a change with its confidence, and waits for a yes."
+    },
+    {
+      "name": "Artifact card",
+      "slug": "elements-artifact-card",
+      "url": "https://www.assistant-ui.com/elements/artifact-card",
+      "category": "Elements",
+      "description": "A generated document as a tangible object, written live and versioned."
+    },
+    {
+      "name": "Composer",
+      "slug": "elements-composer",
+      "url": "https://www.assistant-ui.com/elements/composer",
+      "category": "Elements",
+      "description": "The unified input: attachments, commands, mentions, models, voice, and context in one surface."
+    },
+    {
+      "name": "Chat panel",
+      "slug": "elements-chat-panel",
+      "url": "https://www.assistant-ui.com/elements/chat-panel",
+      "category": "Elements",
+      "description": "The whole family working together: a message, a pause, a streamed reply."
+    },
+    {
+      "name": "Empty state",
+      "slug": "elements-empty-state",
+      "url": "https://www.assistant-ui.com/elements/empty-state",
+      "category": "Elements",
+      "description": "The first screen: a greeting, three ways in, and the composer front and center."
+    },
+    {
+      "name": "Thread list (props-driven)",
+      "slug": "elements-thread-list",
+      "url": "https://www.assistant-ui.com/elements/thread-list",
+      "category": "Elements",
+      "description": "Conversation history with unread marks and actions that wait for hover."
+    },
+    {
+      "name": "Scroll anchor",
+      "slug": "elements-scroll-anchor",
+      "url": "https://www.assistant-ui.com/elements/scroll-anchor",
+      "category": "Elements",
+      "description": "Streaming never steals your scroll position; a pill offers the way back down."
+    },
+    {
+      "name": "Conversation map (props-driven)",
+      "slug": "elements-conversation-map",
+      "url": "https://www.assistant-ui.com/elements",
+      "category": "Elements",
+      "description": "A rail of the whole thread: one tick per turn, the turn being read marked and the ones on screen deepened, and a hover preview of what it says."
+    },
+    {
+      "name": "Todo list",
+      "slug": "elements-todo-list",
+      "url": "https://www.assistant-ui.com/elements/todo-list",
+      "category": "Elements",
+      "description": "The agent's own working list, rewritten mid-run as it discovers what else is needed."
+    },
+    {
+      "name": "Message queue",
+      "slug": "elements-message-queue",
+      "url": "https://www.assistant-ui.com/elements/message-queue",
+      "category": "Elements",
+      "description": "Turns you typed while a run was in flight, stacked and cancelable until it finishes."
+    },
+    {
+      "name": "Attachments in a message",
+      "slug": "elements-message-attachment",
+      "url": "https://www.assistant-ui.com/elements",
+      "category": "Elements",
+      "description": "Files as received rather than staged: an image to open, a document with its page count."
+    },
+    {
+      "name": "Reviewable diff",
+      "slug": "elements-reviewable-diff",
+      "url": "https://www.assistant-ui.com/elements/reviewable-diff",
+      "category": "Elements",
+      "description": "The same diff, but each hunk is a decision: keep it, discard it, apply what survived."
+    },
+    {
+      "name": "File tree",
+      "slug": "elements-file-tree",
+      "url": "https://www.assistant-ui.com/elements/file-tree",
+      "category": "Elements",
+      "description": "Everything a run touched, as a tree, with the churn spelled out per file."
+    },
+    {
+      "name": "Elicitation form",
+      "slug": "elements-elicitation-form",
+      "url": "https://www.assistant-ui.com/elements/elicitation-form",
+      "category": "Elements",
+      "description": "A server pausing mid-tool-call to ask you for the fields it still needs."
+    },
+    {
+      "name": "Retrieval chunks",
+      "slug": "elements-retrieval-chunks",
+      "url": "https://www.assistant-ui.com/elements/retrieval-chunks",
+      "category": "Elements",
+      "description": "The passages a retrieval answer stands on, scored, before the answer itself arrives."
+    },
+    {
+      "name": "Chart",
+      "slug": "elements-chart",
+      "url": "https://www.assistant-ui.com/elements/chart",
+      "category": "Elements",
+      "description": "Area, line, and bars, with points landing one at a time as the series streams in."
+    },
+    {
+      "name": "Media player",
+      "slug": "elements-media-player",
+      "url": "https://www.assistant-ui.com/elements/media-player",
+      "category": "Elements",
+      "description": "Audio and video a tool returned, played inline without leaving the thread."
+    },
+    {
+      "name": "Trace waterfall",
+      "slug": "elements-trace-waterfall",
+      "url": "https://www.assistant-ui.com/elements/trace-waterfall",
+      "category": "Elements",
+      "description": "Every span in a run on one time axis, nested, so you can see where it actually went."
+    },
+    {
+      "name": "Canvas",
+      "slug": "elements-canvas-split",
+      "url": "https://www.assistant-ui.com/elements/canvas-split",
+      "category": "Elements",
+      "description": "The thread steps aside and the document takes the room, still being written as you read."
+    },
+    {
+      "name": "Voice conversation (props-driven)",
+      "slug": "elements-voice-conversation",
+      "url": "https://www.assistant-ui.com/elements/voice-conversation",
+      "category": "Elements",
+      "description": "A live call: the orb tracks your voice, the caption names the turn, the transcript follows."
+    },
+    {
+      "name": "Read aloud",
+      "slug": "elements-read-aloud",
+      "url": "https://www.assistant-ui.com/elements/read-aloud",
+      "category": "Elements",
+      "description": "An answer played back, the spoken word lit as it goes, speed under your thumb."
+    },
+    {
+      "name": "Server panel",
+      "slug": "elements-mcp-server-panel",
+      "url": "https://www.assistant-ui.com/elements/mcp-server-panel",
+      "category": "Elements",
+      "description": "Which servers are connected, what each one brought, and which is still waiting on you."
+    },
+    {
+      "name": "Feedback dialog",
+      "slug": "elements-feedback-dialog",
+      "url": "https://www.assistant-ui.com/elements/feedback-dialog",
+      "category": "Elements",
+      "description": "A thumbs-down that asks why, so the signal arrives with a reason attached."
+    },
+    {
+      "name": "Quote reply",
+      "slug": "elements-quote-reply",
+      "url": "https://www.assistant-ui.com/elements",
+      "category": "Elements",
+      "description": "Select a phrase in an answer and a toolbar offers to quote, explain, or rewrite it."
+    },
+    {
+      "name": "Edit a sent message",
+      "slug": "elements-edit-message",
+      "url": "https://www.assistant-ui.com/elements/edit-message",
+      "category": "Elements",
+      "description": "Rewrite a turn in place as a new branch, told up front how many replies stay behind on the old one."
+    },
+    {
+      "name": "Stopped run",
+      "slug": "elements-stopped-run",
+      "url": "https://www.assistant-ui.com/elements/stopped-run",
+      "category": "Elements",
+      "description": "You pressed stop. The half-written answer stays, and continuing is one tap away."
+    },
+    {
+      "name": "Timing footer (props-driven)",
+      "slug": "elements-message-timing",
+      "url": "https://www.assistant-ui.com/elements/message-timing",
+      "category": "Elements",
+      "description": "What the turn cost: time to first token, throughput, tokens, money."
+    },
+    {
+      "name": "Connection state",
+      "slug": "elements-connection-state",
+      "url": "https://www.assistant-ui.com/elements/connection-state",
+      "category": "Elements",
+      "description": "The socket drops, the run keeps going on the server, and the stream is picked back up."
+    },
+    {
+      "name": "Agent card",
+      "slug": "elements-agent-card",
+      "url": "https://www.assistant-ui.com/elements/agent-card",
+      "category": "Elements",
+      "description": "Who you are about to talk to: its skills, its model, and the endpoint behind it."
+    },
+    {
+      "name": "Web preview",
+      "slug": "elements-web-preview",
+      "url": "https://www.assistant-ui.com/elements/web-preview",
+      "category": "Elements",
+      "description": "Chrome for a sandboxed preview: a URL bar, reload, and open-in-new around a frame you isolate."
+    },
+    {
+      "name": "Draft restore",
+      "slug": "elements-draft-restore",
+      "url": "https://www.assistant-ui.com/elements/draft-restore",
+      "category": "Elements",
+      "description": "Come back to a thread and the sentence you never sent is still waiting."
+    },
+    {
+      "name": "Diagram",
+      "slug": "elements-diagram",
+      "url": "https://www.assistant-ui.com/elements/diagram",
+      "category": "Elements",
+      "description": "A drawn answer with zoom, reset, and a full-bleed view; you hand it the rendered graphic."
+    },
+    {
+      "name": "Flow graph",
+      "slug": "elements-flow-graph",
+      "url": "https://www.assistant-ui.com/elements/flow-graph",
+      "category": "Elements",
+      "description": "Work as a graph rather than a list: branches that fan out and rejoin."
+    },
+    {
+      "name": "Activity graph",
+      "slug": "elements-activity-graph",
+      "url": "https://www.assistant-ui.com/elements/activity-graph",
+      "category": "Elements",
+      "description": "A half-year of runs as a calendar of cells, dense where the work was."
+    },
+    {
+      "name": "Parallel tools (props-driven)",
+      "slug": "elements-tool-group",
+      "url": "https://www.assistant-ui.com/elements/tool-group",
+      "category": "Elements",
+      "description": "Calls that went out together, collapsed to one row until you want the detail."
+    },
+    {
+      "name": "Context breakdown",
+      "slug": "elements-context-breakdown",
+      "url": "https://www.assistant-ui.com/elements/context-breakdown",
+      "category": "Elements",
+      "description": "Where the window actually went: prompt, tools, files, conversation, and what's left."
+    },
+    {
+      "name": "Model picker",
+      "slug": "elements-model-picker",
+      "url": "https://www.assistant-ui.com/elements",
+      "category": "Elements",
+      "description": "The full list rather than the rail: grouped by family, priced, with what each one can do."
+    },
+    {
+      "name": "Reasoning effort",
+      "slug": "elements-reasoning-effort",
+      "url": "https://www.assistant-ui.com/elements/reasoning-effort",
+      "category": "Elements",
+      "description": "How hard to think, and how much of that budget the run actually spent."
+    },
+    {
+      "name": "Guardrail notice",
+      "slug": "elements-guardrail-notice",
+      "url": "https://www.assistant-ui.com/elements/guardrail-notice",
+      "category": "Elements",
+      "description": "A refusal in its own shape, with the nearest thing it can do instead."
+    },
+    {
+      "name": "Timestamps",
+      "slug": "elements-day-separator",
+      "url": "https://www.assistant-ui.com/elements/day-separator",
+      "category": "Elements",
+      "description": "Chronology in a long thread: days marked, times on hover."
+    },
+    {
+      "name": "Speaker identity",
+      "slug": "elements-speaker-identity",
+      "url": "https://www.assistant-ui.com/elements/speaker-identity",
+      "category": "Elements",
+      "description": "Who is talking, once a thread holds more than a user and one model."
+    },
+    {
+      "name": "Regenerate with",
+      "slug": "elements-regenerate-menu",
+      "url": "https://www.assistant-ui.com/elements/regenerate-menu",
+      "category": "Elements",
+      "description": "Fork the same turn to a different model instead of rolling the same dice."
+    },
+    {
+      "name": "Confidence",
+      "slug": "elements-confidence-marker",
+      "url": "https://www.assistant-ui.com/elements/confidence-marker",
+      "category": "Elements",
+      "description": "Which claims came from a source, which were inferred, and which are guesses."
+    },
+    {
+      "name": "Tool failure",
+      "slug": "elements-tool-error",
+      "url": "https://www.assistant-ui.com/elements/tool-error",
+      "category": "Elements",
+      "description": "One call failed. The error, the attempt count, and a retry that doesn't restart the turn."
+    },
+    {
+      "name": "Permission grant",
+      "slug": "elements-permission-grant",
+      "url": "https://www.assistant-ui.com/elements/permission-grant",
+      "category": "Elements",
+      "description": "Granting a capability rather than approving one action, with the reach spelled out."
+    },
+    {
+      "name": "Computer use",
+      "slug": "elements-computer-use",
+      "url": "https://www.assistant-ui.com/elements/computer-use",
+      "category": "Elements",
+      "description": "The screen the agent is driving, with a cursor trail and what it is doing right now."
+    },
+    {
+      "name": "Code runner",
+      "slug": "elements-code-runner",
+      "url": "https://www.assistant-ui.com/elements/code-runner",
+      "category": "Elements",
+      "description": "A snippet with a run button, and the output it produced attached below it."
+    },
+    {
+      "name": "Document reference",
+      "slug": "elements-document-reference",
+      "url": "https://www.assistant-ui.com/elements/document-reference",
+      "category": "Elements",
+      "description": "A document the answer leans on, with the quoted passage and the page to jump to."
+    },
+    {
+      "name": "Memory",
+      "slug": "elements-memory-chips",
+      "url": "https://www.assistant-ui.com/elements/memory-chips",
+      "category": "Elements",
+      "description": "What it now remembers about you, written during the turn and removable."
+    },
+    {
+      "name": "Research report",
+      "slug": "elements-research-report",
+      "url": "https://www.assistant-ui.com/elements/research-report",
+      "category": "Elements",
+      "description": "An outline that fills in section by section, each carrying the sources behind it."
+    },
+    {
+      "name": "Map",
+      "slug": "elements-map-answer",
+      "url": "https://www.assistant-ui.com/elements/map-answer",
+      "category": "Elements",
+      "description": "A location answer: pins, a route between them, and the list they came from."
+    },
+    {
+      "name": "Geo map",
+      "slug": "elements-geo-map",
+      "url": "https://www.assistant-ui.com/elements/geo-map",
+      "category": "Elements",
+      "description": "Places and routes on a real tiled map, with an accessible list of every place."
+    },
+    {
+      "name": "Math",
+      "slug": "elements-math-block",
+      "url": "https://www.assistant-ui.com/elements/math-block",
+      "category": "Elements",
+      "description": "Rendered expressions with the working shown, one step at a time."
+    },
+    {
+      "name": "Spec sheet",
+      "slug": "elements-spec-sheet",
+      "url": "https://www.assistant-ui.com/elements/spec-sheet",
+      "category": "Elements",
+      "description": "The most common structured answer after a table: one object, labeled."
+    },
+    {
+      "name": "Comparison",
+      "slug": "elements-comparison-card",
+      "url": "https://www.assistant-ui.com/elements/comparison-card",
+      "category": "Elements",
+      "description": "Two options weighed side by side, with the pick named and argued."
+    },
+    {
+      "name": "Timeline",
+      "slug": "elements-timeline",
+      "url": "https://www.assistant-ui.com/elements/timeline",
+      "category": "Elements",
+      "description": "Events on a time axis, with what already happened and what is still coming."
+    },
+    {
+      "name": "Long job",
+      "slug": "elements-job-progress",
+      "url": "https://www.assistant-ui.com/elements/job-progress",
+      "category": "Elements",
+      "description": "Work measured in minutes: weighted stages, an ETA, and a way out."
+    },
+    {
+      "name": "Score breakdown",
+      "slug": "elements-score-breakdown",
+      "url": "https://www.assistant-ui.com/elements/score-breakdown",
+      "category": "Elements",
+      "description": "A verdict with its arithmetic shown: criteria, weights, and what pulled it down."
+    },
+    {
+      "name": "Cost meter",
+      "slug": "elements-cost-meter",
+      "url": "https://www.assistant-ui.com/elements/cost-meter",
+      "category": "Elements",
+      "description": "What the run spent, split by model, against the session total."
+    },
+    {
+      "name": "Quota",
+      "slug": "elements-quota-banner",
+      "url": "https://www.assistant-ui.com/elements/quota-banner",
+      "category": "Elements",
+      "description": "How much is left, when it comes back, and the way to get more."
+    },
+    {
+      "name": "Handoff",
+      "slug": "elements-agent-handoff",
+      "url": "https://www.assistant-ui.com/elements/agent-handoff",
+      "category": "Elements",
+      "description": "Control passing between agents, with the reason and what came along."
+    },
+    {
+      "name": "Background runs",
+      "slug": "elements-background-inbox",
+      "url": "https://www.assistant-ui.com/elements/background-inbox",
+      "category": "Elements",
+      "description": "Work still going somewhere else, and the results waiting to be collected."
+    },
+    {
+      "name": "Checkpoints",
+      "slug": "elements-checkpoint-history",
+      "url": "https://www.assistant-ui.com/elements/checkpoint-history",
+      "category": "Elements",
+      "description": "Points you can fall back to, with what each one would give back."
+    },
+    {
+      "name": "Schedule",
+      "slug": "elements-schedule-card",
+      "url": "https://www.assistant-ui.com/elements/schedule-card",
+      "category": "Elements",
+      "description": "A run that repeats on its own, with its cadence and how it has been doing."
+    },
+    {
+      "name": "Prompt library",
+      "slug": "elements-prompt-library",
+      "url": "https://www.assistant-ui.com/elements/prompt-library",
+      "category": "Elements",
+      "description": "Prompts you saved, searchable, with their variables shown before you insert one."
+    },
+    {
+      "name": "Command palette",
+      "slug": "elements-command-palette",
+      "url": "https://www.assistant-ui.com/elements/command-palette",
+      "category": "Elements",
+      "description": "Everything the app can do, one keystroke away and grouped by where it acts."
+    },
+    {
+      "name": "Shared conversation",
+      "slug": "elements-shared-conversation",
+      "url": "https://www.assistant-ui.com/elements/shared-conversation",
+      "category": "Elements",
+      "description": "A read-only transcript someone sent you, with a way to pick it up yourself."
+    },
+    {
+      "name": "Search in conversation",
+      "slug": "elements-conversation-search",
+      "url": "https://www.assistant-ui.com/elements/conversation-search",
+      "category": "Elements",
+      "description": "Find inside a long thread, with every hit marked down the scrollbar."
+    },
+    {
+      "name": "Thread search",
+      "slug": "elements-thread-search",
+      "url": "https://www.assistant-ui.com/elements/thread-search",
+      "category": "Elements",
+      "description": "History you can actually get back into: pinned first, then grouped by when."
+    },
+    {
+      "name": "Launcher",
+      "slug": "elements-launcher-bubble",
+      "url": "https://www.assistant-ui.com/elements/launcher-bubble",
+      "category": "Elements",
+      "description": "The floating entry point, and the panel it opens into."
+    },
+    {
+      "name": "Settings",
+      "slug": "elements-settings-panel",
+      "url": "https://www.assistant-ui.com/elements/settings-panel",
+      "category": "Elements",
+      "description": "Model, system prompt, temperature, and what the assistant is allowed to do."
+    },
+    {
+      "name": "Onboarding",
+      "slug": "elements-onboarding",
+      "url": "https://www.assistant-ui.com/elements/onboarding",
+      "category": "Elements",
+      "description": "First run: three moves that teach what this assistant is actually for."
+    },
+    {
+      "name": "Mobile composer",
+      "slug": "elements-mobile-composer",
+      "url": "https://www.assistant-ui.com/elements/mobile-composer",
+      "category": "Elements",
+      "description": "The bottom sheet: keyboard-aware, quick actions above, thumb-sized targets."
+    },
+    {
+      "name": "Eve Ask Question",
+      "slug": "eve-ask-question",
+      "url": "https://www.assistant-ui.com/elements",
+      "category": "Runtime components",
+      "description": "Renders Eve's built-in ask_question tool as a standalone question with answer controls, outside the collapsed tool group."
+    },
+    {
+      "name": "Thread",
+      "slug": "thread",
+      "url": "https://www.assistant-ui.com/elements/thread",
+      "category": "Runtime components",
+      "description": "Chat container with message list, composer, auto scroll, and accessibility built in."
+    },
+    {
+      "name": "Voice Orb (props-driven)",
+      "slug": "elements-voice",
+      "url": "https://www.assistant-ui.com/elements/orb",
+      "category": "Elements",
+      "description": "The props-driven voice orb: five session states and four palettes, no runtime required."
+    },
+    {
+      "name": "Context Display Core (props-driven)",
+      "slug": "elements-context-display",
+      "url": "https://www.assistant-ui.com/elements/context-display",
+      "category": "Elements",
+      "description": "The props-driven context usage display: ring, bar, and text presets with the usage popover, no runtime required."
+    },
+    {
+      "name": "Voice",
+      "slug": "voice",
+      "url": "https://www.assistant-ui.com/elements/orb",
+      "category": "Runtime components",
+      "description": "Realtime voice session controls with connect, mute, and a status indicator."
+    },
+    {
+      "name": "Voice conversation",
+      "slug": "voice-conversation",
+      "url": "https://www.assistant-ui.com/elements/voice-conversation",
+      "category": "Runtime components",
+      "description": "The live call screen bound to the thread's voice session: orb, caption, transcript, mute, and end call."
+    },
+    {
+      "name": "Task card",
+      "slug": "task-card",
+      "url": "https://www.assistant-ui.com/elements/task-card",
+      "category": "Runtime components",
+      "description": "A runtime task card with nested transcripts, timing, results, and grouped task lanes."
+    },
+    {
+      "name": "Agent status",
+      "slug": "agent-status",
+      "url": "https://www.assistant-ui.com/elements/agent-status",
+      "category": "Runtime components",
+      "description": "A runtime task summary chip with an optional tray for every task in the thread."
+    },
+    {
+      "name": "Markdown Text",
+      "slug": "markdown-text",
+      "url": "https://www.assistant-ui.com/elements/markdown-text",
+      "category": "Runtime components",
+      "description": "Render assistant markdown with headings, lists, links, and code blocks."
+    },
+    {
+      "name": "Reasoning",
+      "slug": "reasoning",
+      "url": "https://www.assistant-ui.com/elements/reasoning",
+      "category": "Runtime components",
+      "description": "Collapsible panel for assistant reasoning and thinking content."
+    },
+    {
+      "name": "Conversation Map",
+      "slug": "conversation-map",
+      "url": "https://www.assistant-ui.com/elements",
+      "category": "Runtime components",
+      "description": "Runtime-backed thread rail: a tick per turn, the turn being read marked and the ones on screen deepened, a hover preview, and a click that scrolls there."
+    },
+    {
+      "name": "Reasoning Panel (props-driven)",
+      "slug": "elements-reasoning",
+      "url": "https://www.assistant-ui.com/elements/reasoning",
+      "category": "Elements",
+      "description": "The props-driven reasoning disclosure: streaming preview, fades, and variants, no runtime required."
+    },
+    {
+      "name": "Message Timing",
+      "slug": "message-timing",
+      "url": "https://www.assistant-ui.com/elements/message-timing",
+      "category": "Runtime components",
+      "description": "Badge with streaming stats: time to first token, total time, and tokens per second."
+    },
+    {
+      "name": "Context Display",
+      "slug": "context-display",
+      "url": "https://www.assistant-ui.com/elements/context-display",
+      "category": "Runtime components",
+      "description": "Token usage against a model's context window as a ring, bar, or text, with a hover popover."
+    },
+    {
+      "name": "Thread List",
+      "slug": "thread-list",
+      "url": "https://www.assistant-ui.com/elements/thread-list",
+      "category": "Runtime components",
+      "description": "Sidebar or dropdown for switching conversations, with search and active selection."
+    },
+    {
+      "name": "MCP Config Dialog",
+      "slug": "mcp-config",
+      "url": "https://www.assistant-ui.com/elements/mcp-config",
+      "category": "Runtime components",
+      "description": "Dialog listing MCP connectors and custom servers, with OAuth and bearer auth controls."
+    },
+    {
+      "name": "Attachment",
+      "slug": "attachment",
+      "url": "https://www.assistant-ui.com/elements/attachment",
+      "category": "Runtime components",
+      "description": "Attach files from the composer and view them inside messages."
+    },
+    {
+      "name": "Follow Up Suggestions",
+      "slug": "follow-up-suggestions",
+      "url": "https://www.assistant-ui.com/elements/follow-up-suggestions",
+      "category": "Runtime components",
+      "description": "Prompt chips rendered from runtime generated follow up suggestions."
+    },
+    {
+      "name": "Tooltip Icon Button",
+      "slug": "tooltip-icon-button",
+      "url": "https://www.assistant-ui.com/elements/tooltip-icon-button",
+      "category": "Runtime components",
+      "description": "Icon button with an accessible tooltip label, shared across the assistant UI components."
+    },
+    {
+      "name": "Syntax Highlighter",
+      "slug": "syntax-highlighter",
+      "url": "https://www.assistant-ui.com/elements/syntax-highlighter",
+      "category": "Runtime components",
+      "description": "Code block highlighting powered by react-syntax-highlighter."
+    },
+    {
+      "name": "Assistant Modal",
+      "slug": "assistant-modal",
+      "url": "https://www.assistant-ui.com/elements/assistant-modal",
+      "category": "Runtime components",
+      "description": "Floating chat bubble for support widgets and help desks, with a thread list and a resizable window."
+    },
+    {
+      "name": "Assistant Sidebar",
+      "slug": "assistant-sidebar",
+      "url": "https://www.assistant-ui.com/elements/assistant-sidebar",
+      "category": "Runtime components",
+      "description": "Side panel chat for copilot experiences and inline assistance."
+    },
+    {
+      "name": "Tool Fallback",
+      "slug": "tool-fallback",
+      "url": "https://www.assistant-ui.com/elements/tool-fallback",
+      "category": "Runtime components",
+      "description": "Default renderer for tool calls that have no dedicated UI."
+    },
+    {
+      "name": "Tool Group",
+      "slug": "tool-group",
+      "url": "https://www.assistant-ui.com/elements/tool-group",
+      "category": "Runtime components",
+      "description": "Collapsible wrapper around consecutive tool calls."
+    },
+    {
+      "name": "Shiki Highlighter",
+      "slug": "shiki-highlighter",
+      "url": "https://www.assistant-ui.com/elements/shiki-highlighter",
+      "category": "Runtime components",
+      "description": "Code block highlighting powered by react-shiki."
+    },
+    {
+      "name": "Shiki Highlighter (props-driven)",
+      "slug": "elements-shiki-highlighter",
+      "url": "https://www.assistant-ui.com/elements/shiki-highlighter",
+      "category": "Elements",
+      "description": "The props-driven Shiki code block: streaming-aware highlighting, no runtime required."
+    },
+    {
+      "name": "Mermaid Diagram",
+      "slug": "mermaid-diagram",
+      "url": "https://www.assistant-ui.com/elements/mermaid-diagram",
+      "category": "Runtime components",
+      "description": "Render Mermaid diagrams in messages, including while they stream."
+    },
+    {
+      "name": "Mermaid Diagram (props-driven)",
+      "slug": "elements-mermaid-diagram",
+      "url": "https://www.assistant-ui.com/elements/mermaid-diagram",
+      "category": "Elements",
+      "description": "The props-driven Mermaid renderer: zoom overlay, skeleton, and error fallback, no runtime required."
+    },
+    {
+      "name": "Diff Viewer",
+      "slug": "diff-viewer",
+      "url": "https://www.assistant-ui.com/elements",
+      "category": "Runtime components",
+      "description": "Render code diffs with highlighted additions and deletions."
+    },
+    {
+      "name": "Thread List Sidebar",
+      "slug": "threadlist-sidebar",
+      "url": "https://www.assistant-ui.com/elements/thread-list-sidebar",
+      "category": "Runtime components",
+      "description": "Sidebar shell that hosts the thread list beside a thread."
+    },
+    {
+      "name": "Quote",
+      "slug": "quote",
+      "url": "https://www.assistant-ui.com/elements/quote",
+      "category": "Runtime components",
+      "description": "Select and quote message text with a floating toolbar and a composer preview."
+    },
+    {
+      "name": "Sources",
+      "slug": "sources",
+      "url": "https://www.assistant-ui.com/elements/sources",
+      "category": "Runtime components",
+      "description": "Display URL sources with favicon, title, and an external link."
+    },
+    {
+      "name": "Image",
+      "slug": "image",
+      "url": "https://www.assistant-ui.com/elements/image",
+      "category": "Runtime components",
+      "description": "Display image parts with preview, loading states, and a fullscreen dialog."
+    },
+    {
+      "name": "File",
+      "slug": "file",
+      "url": "https://www.assistant-ui.com/elements/file",
+      "category": "Runtime components",
+      "description": "Display file parts with icon, name, size, and a download button, playing audio and video inline."
+    },
+    {
+      "name": "Model Selector",
+      "slug": "model-selector",
+      "url": "https://www.assistant-ui.com/elements/model-selector",
+      "category": "Runtime components",
+      "description": "Model picker with reasoning effort levels, search, and runtime integration."
+    },
+    {
+      "name": "Model Selector (props-driven)",
+      "slug": "elements-model-selector",
+      "url": "https://www.assistant-ui.com/elements/model-selector",
+      "category": "Elements",
+      "description": "The props-driven model picker: search, groups, and reasoning effort levels, no runtime required."
+    },
+    {
+      "name": "Dot Matrix",
+      "slug": "dot-matrix",
+      "url": "https://www.assistant-ui.com/elements",
+      "category": "Runtime components",
+      "description": "5x5 dot matrix indicator with state specific blink patterns."
+    },
+    {
+      "name": "Number Roll",
+      "slug": "number-roll",
+      "url": "https://www.assistant-ui.com/elements",
+      "category": "Runtime components",
+      "description": "Animated number that rolls its digits odometer style when the value changes."
+    },
+    {
+      "name": "Heat Graph",
+      "slug": "heat-graph",
+      "url": "https://www.assistant-ui.com/elements/heat-graph",
+      "category": "Runtime components",
+      "description": "Activity heat map with month and weekday labels."
+    },
+    {
+      "name": "Composer Trigger Popover",
+      "slug": "composer-trigger-popover",
+      "url": "https://www.assistant-ui.com/elements/composer-trigger-popover",
+      "category": "Runtime components",
+      "description": "Character triggered picker for @ mentions, / commands, and similar popovers."
+    },
+    {
+      "name": "Directive Text",
+      "slug": "directive-text",
+      "url": "https://www.assistant-ui.com/elements/directive-text",
+      "category": "Runtime components",
+      "description": "Render mention directives as inline chips in user messages."
+    },
+    {
+      "name": "Directive Text (props-driven)",
+      "slug": "elements-directive-text",
+      "url": "https://www.assistant-ui.com/elements/directive-text",
+      "category": "Elements",
+      "description": "The props-driven directive chip renderer: bring your own formatter, no runtime required."
+    },
+    {
+      "name": "Generative Markdown",
+      "slug": "elements-generative-markdown",
+      "url": "https://www.assistant-ui.com/elements",
+      "category": "Elements",
+      "description": "Render streamed Markdown and nested generative UI content."
+    },
+    {
+      "name": "Generative UI",
+      "slug": "generative-ui",
+      "url": "https://www.assistant-ui.com/elements/generative-ui",
+      "category": "Runtime components",
+      "description": "Styled component library for rendering generative UI output."
+    }
+  ]
+}

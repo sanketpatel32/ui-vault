@@ -6,6 +6,7 @@ import { aceternity } from "./components/aceternity";
 import { numberflow } from "./components/numberflow";
 import { watermelon } from "./components/watermelon";
 import { shadcn } from "./components/shadcn";
+import { shadcnOidc } from "./components/shadcn-oidc";
 import { magicui } from "./components/magicui";
 import { animata } from "./components/animata";
 import { animateui } from "./components/animateui";
@@ -28,6 +29,10 @@ import { kokonutui } from "./components/kokonutui";
 import { arcui } from "./components/arcui";
 import { snapcn } from "./components/snapcn";
 import { beui } from "./components/beui";
+import { bklit } from "./components/bklit";
+import { pdfcn } from "./components/pdfcn";
+import { remocn } from "./components/remocn";
+import { assistantui } from "./components/assistantui";
 
 // Registry policy (v0.3.0): only vendorable sources — every entry ships free code
 // with an install command. Paid/gated/gallery sources are not carried as entries.
@@ -39,6 +44,7 @@ export const entries: UIEntry[] = [
   ...numberflow,
   ...watermelon,
   ...shadcn,
+  ...shadcnOidc,
   ...magicui,
   ...animata,
   ...animateui,
@@ -61,6 +67,10 @@ export const entries: UIEntry[] = [
   ...arcui,
   ...snapcn,
   ...beui,
+  ...bklit,
+  ...pdfcn,
+  ...remocn,
+  ...assistantui,
 ];
 
 export { sources } from "./sources";

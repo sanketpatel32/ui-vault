@@ -27,7 +27,11 @@ export type SourceId =
   | "kokonutui"
   | "arcui"
   | "snapcn"
-  | "beui";
+  | "beui"
+  | "bklit"
+  | "pdfcn"
+  | "remocn"
+  | "assistantui";
 
 export type License = "mit" | "mit-commons-clause" | "free" | "freemium" | "paid";
 export type PreviewMode = "live" | "linkout";

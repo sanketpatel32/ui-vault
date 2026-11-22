@@ -99,14 +99,14 @@ export const sources: Source[] = [
     url: "https://ui.shadcn.com",
     tagline: "The canonical copy-paste component collection you own outright.",
     description:
-      "65 Radix-based primitives — every install vendors the source into your project. Charts via Recharts, tables via TanStack, drawer via Vaul, carousel via Embla. The de-facto foundation most libraries below build on.",
+      "65 Radix-based primitives — every install vendors the source into your project — plus 12 OIDC configuration entries from the official @oidc registry (policy form, settings page, 8 provider forms). Charts via Recharts, tables via TanStack, drawer via Vaul, carousel via Embla. The de-facto foundation most libraries below build on.",
     license: "mit",
     previewMode: "live",
     stack: ["react", "typescript", "tailwind", "radix"],
     install: "npx shadcn@latest add <component>",
     installLabel: "shadcn CLI",
     notes:
-      "MIT (github.com/shadcn-ui/ui). v4 docs ship radix/base/aria variants of every component; the catalog carries the radix set.",
+      "MIT (github.com/shadcn-ui/ui). v4 docs ship radix/base/aria variants of every component; the catalog carries the radix set. The @oidc namespace (ui.shadcn.com/oidc, same MIT repo) is cataloged as shadcn-oidc-* entries: npx shadcn@latest add @oidc/<name> (or register it first with npx shadcn@latest registry add @oidc=https://ui.shadcn.com/oidc/r/{name}.json); provider forms are family-granularity with 9 form-library variants each.",
     color: "#fafafa",
   },
   {
@@ -461,5 +461,69 @@ export const sources: Source[] = [
     notes:
       "MIT (github.com/starc007/ui-components). Free set only — the 350+ Pro blocks (paid lifetime) and the separate beui-native set are excluded. Docs show bunx --bun shadcn add @beui/<name>; npx works the same. The research quoted 157 free components; the public index (beui.dev/r) lists 122 pages, some of which (button, number, text-animation, not-found…) bundle several registry items that install together. Catalog-only: no vendored previews yet.",
     color: "#c084fc",
+  },
+  {
+    id: "bklit",
+    name: "Bklit UI",
+    url: "https://bklit.com",
+    tagline: "Composable d3 + Motion chart components for React.",
+    description:
+      "20 chart types — line, area, bar, candlestick, choropleth, composed, funnel, gauge, heatmap, pie, radar, radial, ring, sankey, scatter, sparkline, sunburst — plus 15 chart utilities (legend, tooltip, brush, trend line, deadline …) and 3 stat-card blocks, installed through the @bklit shadcn registry. Tailwind v4.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "tailwind", "d3", "motion"],
+    install: "npx shadcn@latest add @bklit/<chart-name>",
+    installLabel: "shadcn registry (@bklit)",
+    notes:
+      "MIT (github.com/bklit/bklit-ui) for the chart components + registry; the Studio app carries a separate all-rights-reserved LICENSE-STUDIO.md and is not cataloged. Registry entries only — no vendored previews yet.",
+    color: "#2dd4bf",
+  },
+  {
+    id: "pdfcn",
+    name: "pdfcn",
+    url: "https://pdfcn.dev",
+    tagline: "Copy-paste PDF components for React, built on Takumi and Forme.",
+    description:
+      "24 PDF primitives (text, heading, data table, graph, QR code, signature, watermark, page header/footer …) and 20 document templates (invoices, reports, tickets, shipping labels, work orders) — every item ships for both the Takumi and Forme renderers.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "tailwind", "takumi", "forme"],
+    install: "npx shadcn@latest add @pdfcn/takumi/<name>",
+    installLabel: "shadcn registry (@pdfcn)",
+    notes:
+      'MIT (github.com/shadcn-labs/pdfcn). Prerequisite: a React project running the Takumi (takumi-pdf + @takumi-rs/helpers) or Forme PDF renderer. Forme variants install as @pdfcn/forme/<name>; if the CLI does not resolve @pdfcn, add {"registries": {"@pdfcn": "https://pdfcn.dev/r/{name}.json"}} to components.json. Theme presets (9) and lib items are not cataloged; no vendored previews.',
+    color: "#ef4444",
+  },
+  {
+    id: "remocn",
+    name: "Remocn",
+    url: "https://remocn.dev",
+    tagline: "shadcn/ui for video — MIT Remotion components you own.",
+    description:
+      "925 Remotion components: 256 text animations, 124 number animations, 66 product scenes, 59 transitions, 59 shaders, 45 logo stings, 75 UI primitives and flows, 31 caption styles, 100 animated icons and full video templates — installed through the @remocn shadcn registry.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "remotion", "tailwind", "motion"],
+    install: "npx shadcn@latest add @remocn/<name>",
+    installLabel: "shadcn registry (@remocn)",
+    notes:
+      "MIT (github.com/Remocn/remocn). Hard prerequisite: Remotion — every component renders video frames inside a Remotion composition, not interactive web UI. Cataloged from the official llms-components.txt index plus the icons gallery; no vendored previews (they need a Remotion player).",
+    color: "#8b5cf6",
+  },
+  {
+    id: "assistantui",
+    name: "assistant-ui",
+    url: "https://www.assistant-ui.com",
+    tagline: "Composable React primitives for AI chat.",
+    description:
+      "147 AI-chat components — threads, composers, message parts, tool UIs, reasoning, attachments, model pickers, voice — in two tiers: 36 runtime-bound components and 111 props-driven elements. The de-facto standard chat-UI library (Vercel AI SDK, LangGraph and more).",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "tailwind", "radix"],
+    install: "npx shadcn@latest add https://r.assistant-ui.com/<name>",
+    installLabel: "shadcn registry",
+    notes:
+      "MIT (github.com/assistant-ui/assistant-ui). Runtime components need @assistant-ui/react plus a runtime adapter (npm install @assistant-ui/react); elements-* items are props-driven and render without one. Also published as @assistant-ui/<name>. No vendored previews.",
+    color: "#0ea5e9",
   },
 ];

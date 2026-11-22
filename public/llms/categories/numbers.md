@@ -23,3 +23,5 @@
 - **Animated counter** https://uiarc.dev/components/animated-counter — Give changing totals a clear sense of movement. [MIT, live-previewable, category: numbers]
 - **Count Grid** https://snapcn.dev/docs/scenes/count-grid — A grid of cards rushes in under a horizontal smear and settles on five, then the camera pulls back a fraction while every empty cell fills in from the middle out and the count jumps from five to five hundred [MIT, live-previewable, category: numbers]
 - **Number Animation** https://beui.dev/components/motion/number — Animated number primitives for count-up values, rolling tickers, and fixed-slot digit swaps. [MIT, live-previewable, category: numbers]
+- **Number ticker** https://www.assistant-ui.com/elements/number-ticker — Digits that roll into place as a count updates in real time. [MIT, live-previewable, category: numbers]
+- **Number Roll** https://www.assistant-ui.com/elements — Animated number that rolls its digits odometer style when the value changes. [MIT, live-previewable, category: numbers]

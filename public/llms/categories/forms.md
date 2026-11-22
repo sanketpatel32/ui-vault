@@ -23,6 +23,8 @@
 - **Textarea** https://ui.shadcn.com/docs/components/textarea — Displays a form textarea or a component that looks like a textarea. [MIT, live-previewable, category: forms]
 - **Toggle** https://ui.shadcn.com/docs/components/toggle — A two-state button that can be either on or off. [MIT, live-previewable, category: forms]
 - **Toggle Group** https://ui.shadcn.com/docs/components/toggle-group — A set of two-state buttons that can be toggled on or off. [MIT, live-previewable, category: forms]
+- **OIDC Claims Pieces** https://ui.shadcn.com/oidc/docs/providers — The shared pieces every provider form composes: the ClaimsList row editor for additional claims, the ClaimChip label marker, and the pure helpers that merge rows into a policy and read them back out. [MIT, live-previewable, category: forms]
+- **OIDC Picker** https://ui.shadcn.com/oidc/docs/providers — Single-select provider picker that adapts to the count: a toggle row for up to three providers, a select beyond that, nothing for one. [MIT, live-previewable, category: forms]
 - **Checkbox (Radix)** https://animate-ui.com/docs/components/radix/checkbox — A control that allows the user to toggle between checked and not checked. [MIT + Commons Clause, live-previewable, category: forms]
 - **Files (Radix)** https://animate-ui.com/docs/components/radix/files — A component that allows you to display a list of files and folders. [MIT + Commons Clause, live-previewable, category: forms]
 - **Radio Group (Radix)** https://animate-ui.com/docs/components/radix/radio-group — A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time. [MIT + Commons Clause, live-previewable, category: forms]
