@@ -1,6 +1,6 @@
-import { useEffect, useRef, useSyncExternalStore } from "react";
+import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import { NavLink, Link } from "react-router-dom";
-import { ChevronRight, Heart, LayoutGrid, House, Vault, X } from "lucide-react";
+import { ChevronRight, Heart, LayoutGrid, House, Search, Vault, X } from "lucide-react";
 import { groupedCategories, sourcesWithCounts, stats } from "@/lib/registry";
 import { cn } from "@/lib/utils";
 
@@ -61,6 +61,15 @@ export function Sidebar({ mobileOpen, onClose }: { mobileOpen: boolean; onClose:
   const sources = sourcesWithCounts();
   const s = stats();
   const isDesktop = useIsDesktop();
+  const [filter, setFilter] = useState("");
+  const q = filter.trim().toLowerCase();
+  const filtered = useMemo(() => {
+    if (!q) return null;
+    return {
+      categories: groups.flatMap((g) => g.items).filter((c) => c.name.toLowerCase().includes(q)),
+      sources: sources.filter((src) => src.name.toLowerCase().includes(q)),
+    };
+  }, [q, groups, sources]);
   const drawerOpen = mobileOpen && !isDesktop;
   const asideRef = useRef<HTMLElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
@@ -160,42 +169,90 @@ export function Sidebar({ mobileOpen, onClose }: { mobileOpen: boolean; onClose:
             />
           </div>
 
-          {groups.map((group) => (
-            <div key={group.group}>
-              <p className="mb-1 px-2.5 text-[10px] font-semibold tracking-[0.14em] text-faint-fg uppercase">
-                {group.label}
-              </p>
-              <div className="space-y-0.5">
-                {group.items.map((cat) => (
-                  <SideLink
-                    key={cat.slug}
-                    to={`/c/${cat.slug}`}
-                    label={cat.name}
-                    count={cat.count}
-                    onNavigate={onClose}
-                  />
-                ))}
-              </div>
-            </div>
-          ))}
+          <div className="relative">
+            <Search
+              size={13}
+              className="pointer-events-none absolute top-1/2 left-2.5 -translate-y-1/2 text-faint-fg"
+            />
+            <input
+              type="search"
+              value={filter}
+              onChange={(e) => setFilter(e.target.value)}
+              placeholder="Filter categories & libraries…"
+              aria-label="Filter categories and libraries"
+              className="w-full rounded-lg border border-border bg-muted/40 py-1.5 pr-2.5 pl-8 text-[12.5px] text-fg placeholder:text-faint-fg focus:border-accent focus:outline-none"
+            />
+          </div>
 
-          <div>
-            <p className="mb-1 flex items-center gap-1 px-2.5 text-[10px] font-semibold tracking-[0.14em] text-faint-fg uppercase">
-              Sources <ChevronRight size={10} />
-            </p>
+          {filtered ? (
             <div className="space-y-0.5">
-              {sources.map((s) => (
+              {filtered.categories.length === 0 && filtered.sources.length === 0 && (
+                <p className="px-2.5 py-1.5 text-[12px] text-faint-fg">No matches.</p>
+              )}
+              {filtered.sources.map((src) => (
                 <SideLink
-                  key={s.id}
-                  to={`/source/${s.id}`}
-                  label={s.name}
-                  count={s.count}
-                  dot={s.color}
+                  key={src.id}
+                  to={`/source/${src.id}`}
+                  label={src.name}
+                  count={src.count}
+                  dot={src.color}
+                  onNavigate={onClose}
+                />
+              ))}
+              {filtered.categories.map((cat) => (
+                <SideLink
+                  key={cat.slug}
+                  to={`/c/${cat.slug}`}
+                  label={cat.name}
+                  count={cat.count}
                   onNavigate={onClose}
                 />
               ))}
             </div>
-          </div>
+          ) : (
+            <>
+              <div>
+                <p className="mb-1 px-2.5 text-[10px] font-semibold tracking-[0.14em] text-faint-fg uppercase">
+                  Libraries · {sources.length}
+                </p>
+                <div className="max-h-64 space-y-0.5 overflow-y-auto">
+                  {sources.map((src) => (
+                    <SideLink
+                      key={src.id}
+                      to={`/source/${src.id}`}
+                      label={src.name}
+                      count={src.count}
+                      dot={src.color}
+                      onNavigate={onClose}
+                    />
+                  ))}
+                </div>
+              </div>
+
+              {groups.map((group) => (
+                <details key={group.group} className="group/details" open>
+                  <summary className="mb-1 flex cursor-pointer list-none items-center gap-1 px-2.5 text-[10px] font-semibold tracking-[0.14em] text-faint-fg uppercase select-none [&::-webkit-details-marker]:hidden">
+                    <ChevronRight
+                      size={10}
+                      className="transition-transform group-open/details:rotate-90"
+                    />
+                    {group.label}
+                  </summary>
+                  <div className="space-y-0.5">
+                    {group.items.map((cat) => (
+                      <SideLink
+                        key={cat.slug}
+                        to={`/c/${cat.slug}`}
+                        label={cat.name}
+                        count={cat.count}
+                        onNavigate={onClose}
+                      />
+                    ))}
+                  </div>
+                </details>
+              ))}
+            </>
+          )}
         </nav>
 
         <div className="border-t border-border px-4 py-3 text-[11px] text-faint-fg">
