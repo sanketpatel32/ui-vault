@@ -14,7 +14,8 @@ export type SourceId =
   | "cossui"
   | "cultui"
   | "kiboui"
-  | "bklit";
+  | "bklit"
+  | "pdfcn";
 
 export type License = "mit" | "free" | "freemium" | "paid";
 export type PreviewMode = "live" | "linkout";

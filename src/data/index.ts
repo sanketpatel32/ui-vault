@@ -15,6 +15,7 @@ import { cossui } from "./components/cossui";
 import { cultui } from "./components/cultui";
 import { kiboui } from "./components/kiboui";
 import { bklit } from "./components/bklit";
+import { pdfcn } from "./components/pdfcn";
 
 // Registry policy (v0.3.0): only vendorable sources — every entry ships free code
 // with an install command. Paid/gated/gallery sources are not carried as entries.
@@ -35,6 +36,7 @@ export const entries: UIEntry[] = [
   ...cultui,
   ...kiboui,
   ...bklit,
+  ...pdfcn,
 ];
 
 export { sources } from "./sources";

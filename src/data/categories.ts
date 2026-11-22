@@ -86,6 +86,12 @@ export const categories: Category[] = [
     group: "components",
     description: "Chat and AI conversation UI — bubbles, message streams, attachments.",
   },
+  {
+    slug: "pdf",
+    name: "PDF Documents",
+    group: "components",
+    description: "Components and templates that render PDF documents (invoices, reports, tickets).",
+  },
 
   // ---- Blocks ----
   {

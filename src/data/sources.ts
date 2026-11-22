@@ -253,4 +253,20 @@ export const sources: Source[] = [
       "MIT (github.com/bklit/bklit-ui) for the chart components + registry; the Studio app carries a separate all-rights-reserved LICENSE-STUDIO.md and is not cataloged. Registry entries only — no vendored previews yet.",
     color: "#2dd4bf",
   },
+  {
+    id: "pdfcn",
+    name: "pdfcn",
+    url: "https://pdfcn.dev",
+    tagline: "Copy-paste PDF components for React, built on Takumi and Forme.",
+    description:
+      "24 PDF primitives (text, heading, data table, graph, QR code, signature, watermark, page header/footer …) and 20 document templates (invoices, reports, tickets, shipping labels, work orders) — every item ships for both the Takumi and Forme renderers.",
+    license: "mit",
+    previewMode: "live",
+    stack: ["react", "typescript", "tailwind", "takumi", "forme"],
+    install: "npx shadcn@latest add @pdfcn/takumi/<name>",
+    installLabel: "shadcn registry (@pdfcn)",
+    notes:
+      'MIT (github.com/shadcn-labs/pdfcn). Prerequisite: a React project running the Takumi (takumi-pdf + @takumi-rs/helpers) or Forme PDF renderer. Forme variants install as @pdfcn/forme/<name>; if the CLI does not resolve @pdfcn, add {"registries": {"@pdfcn": "https://pdfcn.dev/r/{name}.json"}} to components.json. Theme presets (9) and lib items are not cataloged; no vendored previews.',
+    color: "#ef4444",
+  },
 ];

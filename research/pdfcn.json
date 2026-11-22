@@ -1,0 +1,330 @@
+{
+  "id": "pdfcn",
+  "name": "pdfcn",
+  "url": "https://pdfcn.dev",
+  "license": "MIT",
+  "repo": "https://github.com/shadcn-labs/pdfcn",
+  "install": {
+    "shadcnNamespace": "npx shadcn@latest add @pdfcn/takumi/<slug>",
+    "forme": "npx shadcn@latest add @pdfcn/forme/<slug>",
+    "registryIndex": "https://pdfcn.dev/r/registry.json",
+    "registryItem": "https://pdfcn.dev/r/takumi/<slug>.json"
+  },
+  "stack": ["React 19", "TypeScript", "Tailwind CSS v4", "Takumi", "Forme"],
+  "status": "ok",
+  "extracted": "2026-11-22",
+  "notes": [
+    "MIT. Prerequisite: a React project running the Takumi (takumi-pdf + @takumi-rs/helpers) or Forme PDF renderer.",
+    "Registry index has 101 items (48 ui, 40 blocks, 9 themes, 4 lib). Every component/block ships for both renderers under takumi/ and forme/ — cataloged once per component (Takumi install; Forme variant named in the description). Theme token presets and lib items are not cataloged."
+  ],
+  "components": [
+    {
+      "name": "Alert",
+      "slug": "alert",
+      "url": "https://pdfcn.dev/docs/components/takumi/alert",
+      "category": "Components",
+      "description": "Alert box with info, success, warning, and error variants."
+    },
+    {
+      "name": "Badge",
+      "slug": "badge",
+      "url": "https://pdfcn.dev/docs/components/takumi/badge",
+      "category": "Components",
+      "description": "Compact status badge for labels and tags."
+    },
+    {
+      "name": "Card",
+      "slug": "card",
+      "url": "https://pdfcn.dev/docs/components/takumi/card",
+      "category": "Components",
+      "description": "Bordered content card with title and body."
+    },
+    {
+      "name": "Data Table",
+      "slug": "data-table",
+      "url": "https://pdfcn.dev/docs/components/takumi/data-table",
+      "category": "Components",
+      "description": "Tabular data with columns and rows."
+    },
+    {
+      "name": "Divider",
+      "slug": "divider",
+      "url": "https://pdfcn.dev/docs/components/takumi/divider",
+      "category": "Components",
+      "description": "Horizontal rule to separate sections."
+    },
+    {
+      "name": "Form",
+      "slug": "form",
+      "url": "https://pdfcn.dev/docs/components/takumi/form",
+      "category": "Components",
+      "description": "Labeled form groups for PDF inputs."
+    },
+    {
+      "name": "Graph",
+      "slug": "graph",
+      "url": "https://pdfcn.dev/docs/components/takumi/graph",
+      "category": "Components",
+      "description": "Bar, line, and area charts drawn with SVG."
+    },
+    {
+      "name": "Heading",
+      "slug": "heading",
+      "url": "https://pdfcn.dev/docs/components/takumi/heading",
+      "category": "Components",
+      "description": "Document headings with typographic scale."
+    },
+    {
+      "name": "Keep Together",
+      "slug": "keep-together",
+      "url": "https://pdfcn.dev/docs/components/takumi/keep-together",
+      "category": "Components",
+      "description": "Keeps children on the same PDF page."
+    },
+    {
+      "name": "Key Value",
+      "slug": "key-value",
+      "url": "https://pdfcn.dev/docs/components/takumi/key-value",
+      "category": "Components",
+      "description": "Definition list of keys and values."
+    },
+    {
+      "name": "Link",
+      "slug": "link",
+      "url": "https://pdfcn.dev/docs/components/takumi/link",
+      "category": "Components",
+      "description": "Clickable link styled for PDF documents."
+    },
+    {
+      "name": "List",
+      "slug": "list",
+      "url": "https://pdfcn.dev/docs/components/takumi/list",
+      "category": "Components",
+      "description": "Ordered and unordered lists."
+    },
+    {
+      "name": "Page Break",
+      "slug": "page-break",
+      "url": "https://pdfcn.dev/docs/components/takumi/page-break",
+      "category": "Components",
+      "description": "Forces a page break in the document."
+    },
+    {
+      "name": "Page Footer",
+      "slug": "page-footer",
+      "url": "https://pdfcn.dev/docs/components/takumi/page-footer",
+      "category": "Components",
+      "description": "Repeating page footer."
+    },
+    {
+      "name": "Page Header",
+      "slug": "page-header",
+      "url": "https://pdfcn.dev/docs/components/takumi/page-header",
+      "category": "Components",
+      "description": "Repeating page header."
+    },
+    {
+      "name": "Page Number",
+      "slug": "page-number",
+      "url": "https://pdfcn.dev/docs/components/takumi/page-number",
+      "category": "Components",
+      "description": "Current page number marker."
+    },
+    {
+      "name": "PDF Image",
+      "slug": "pdf-image",
+      "url": "https://pdfcn.dev/docs/components/takumi/pdf-image",
+      "category": "Components",
+      "description": "Embedded image with fit options."
+    },
+    {
+      "name": "QR Code",
+      "slug": "qrcode",
+      "url": "https://pdfcn.dev/docs/components/takumi/qrcode",
+      "category": "Components",
+      "description": "QR code generated from a string value."
+    },
+    {
+      "name": "Section",
+      "slug": "section",
+      "url": "https://pdfcn.dev/docs/components/takumi/section",
+      "category": "Components",
+      "description": "Section wrapper with optional title."
+    },
+    {
+      "name": "Signature",
+      "slug": "signature",
+      "url": "https://pdfcn.dev/docs/components/takumi/signature",
+      "category": "Components",
+      "description": "Signature block with name and label."
+    },
+    {
+      "name": "Stack",
+      "slug": "stack",
+      "url": "https://pdfcn.dev/docs/components/takumi/stack",
+      "category": "Components",
+      "description": "Vertical stack with spacing."
+    },
+    {
+      "name": "Table",
+      "slug": "table",
+      "url": "https://pdfcn.dev/docs/components/takumi/table",
+      "category": "Components",
+      "description": "Low-level table primitives."
+    },
+    {
+      "name": "Text",
+      "slug": "text",
+      "url": "https://pdfcn.dev/docs/components/takumi/text",
+      "category": "Components",
+      "description": "Body text with typography variants."
+    },
+    {
+      "name": "Watermark",
+      "slug": "watermark",
+      "url": "https://pdfcn.dev/docs/components/takumi/watermark",
+      "category": "Components",
+      "description": "Diagonal or centered watermark overlay."
+    },
+    {
+      "name": "Gift Certificate",
+      "slug": "gift-certificate",
+      "url": "https://pdfcn.dev/docs/blocks/takumi/gift-certificate",
+      "category": "Blocks",
+      "description": "Printable gift certificate template with decorative styling."
+    },
+    {
+      "name": "Event Agenda",
+      "slug": "event-agenda",
+      "url": "https://pdfcn.dev/docs/blocks/takumi/event-agenda",
+      "category": "Blocks",
+      "description": "Print-ready conference, summit, or meeting agenda template with multi-day support, track legend, and concurrent sessions."
+    },
+    {
+      "name": "Event Ticket",
+      "slug": "event-ticket",
+      "url": "https://pdfcn.dev/docs/blocks/takumi/event-ticket",
+      "category": "Blocks",
+      "description": "Print-ready event admission ticket with event details, seat info, QR code scan-in area, and branding strip."
+    },
+    {
+      "name": "Invoice Classic",
+      "slug": "invoice-classic",
+      "url": "https://pdfcn.dev/docs/blocks/takumi/invoice-classic",
+      "category": "Blocks",
+      "description": "Classic invoice document template."
+    },
+    {
+      "name": "Invoice Consultant",
+      "slug": "invoice-consultant",
+      "url": "https://pdfcn.dev/docs/blocks/takumi/invoice-consultant",
+      "category": "Blocks",
+      "description": "Consultant-style invoice template."
+    },
+    {
+      "name": "Invoice Corporate",
+      "slug": "invoice-corporate",
+      "url": "https://pdfcn.dev/docs/blocks/takumi/invoice-corporate",
+      "category": "Blocks",
+      "description": "Corporate invoice document template."
+    },
+    {
+      "name": "Invoice Creative",
+      "slug": "invoice-creative",
+      "url": "https://pdfcn.dev/docs/blocks/takumi/invoice-creative",
+      "category": "Blocks",
+      "description": "Creative invoice document template."
+    },
+    {
+      "name": "Invoice Minimal",
+      "slug": "invoice-minimal",
+      "url": "https://pdfcn.dev/docs/blocks/takumi/invoice-minimal",
+      "category": "Blocks",
+      "description": "Minimal invoice document template."
+    },
+    {
+      "name": "Invoice Modern",
+      "slug": "invoice-modern",
+      "url": "https://pdfcn.dev/docs/blocks/takumi/invoice-modern",
+      "category": "Blocks",
+      "description": "Modern invoice document template."
+    },
+    {
+      "name": "Lesson Plan",
+      "slug": "lesson-plan",
+      "url": "https://pdfcn.dev/docs/blocks/takumi/lesson-plan",
+      "category": "Blocks",
+      "description": "Printable lesson plan for teachers with objectives, standards, materials, activities, and assessment."
+    },
+    {
+      "name": "Medical Intake Form",
+      "slug": "medical-intake-form",
+      "url": "https://pdfcn.dev/docs/blocks/takumi/medical-intake-form",
+      "category": "Blocks",
+      "description": "Printable patient intake and registration form with personal, insurance, medical history, and consent sections."
+    },
+    {
+      "name": "Meeting Minutes",
+      "slug": "meeting-minutes",
+      "url": "https://pdfcn.dev/docs/blocks/takumi/meeting-minutes",
+      "category": "Blocks",
+      "description": "Printable meeting minutes document with attendees, agenda, discussions, decisions, and action items."
+    },
+    {
+      "name": "Packing Slip",
+      "slug": "packing-slip",
+      "url": "https://pdfcn.dev/docs/blocks/takumi/packing-slip",
+      "category": "Blocks",
+      "description": "Printable packing slip document with order details, itemized list, and shipping info."
+    },
+    {
+      "name": "Press Release",
+      "slug": "press-release",
+      "url": "https://pdfcn.dev/docs/blocks/takumi/press-release",
+      "category": "Blocks",
+      "description": "Printable press release document with headline, body, quotes, and media contact info."
+    },
+    {
+      "name": "Report Financial",
+      "slug": "report-financial",
+      "url": "https://pdfcn.dev/docs/blocks/takumi/report-financial",
+      "category": "Blocks",
+      "description": "Financial report document template."
+    },
+    {
+      "name": "Report Marketing",
+      "slug": "report-marketing",
+      "url": "https://pdfcn.dev/docs/blocks/takumi/report-marketing",
+      "category": "Blocks",
+      "description": "Marketing report document template."
+    },
+    {
+      "name": "Report Operations",
+      "slug": "report-operations",
+      "url": "https://pdfcn.dev/docs/blocks/takumi/report-operations",
+      "category": "Blocks",
+      "description": "Operations report document template."
+    },
+    {
+      "name": "Report Security",
+      "slug": "report-security",
+      "url": "https://pdfcn.dev/docs/blocks/takumi/report-security",
+      "category": "Blocks",
+      "description": "Security report document template."
+    },
+    {
+      "name": "Shipping Label",
+      "slug": "shipping-label",
+      "url": "https://pdfcn.dev/docs/blocks/takumi/shipping-label",
+      "category": "Blocks",
+      "description": "Print-ready 4x6 shipping label with sender, recipient, barcode area, and carrier info."
+    },
+    {
+      "name": "Work Order",
+      "slug": "work-order",
+      "url": "https://pdfcn.dev/docs/blocks/takumi/work-order",
+      "category": "Blocks",
+      "description": "Printable service/maintenance work order with job details, parts used, labor tracking, and customer sign-off."
+    }
+  ]
+}

@@ -4,7 +4,7 @@
 > (open-source animated React libraries and component registries), organized into one
 > categorized, searchable library. Every entry ships free code with its source, license,
 > install command and — where vendored — a live React preview. No backend: the catalog itself
-> lives in TypeScript files under src/data (852 entries, 16 sources, 23 categories).
+> lives in TypeScript files under src/data (896 entries, 17 sources, 24 categories).
 
 ## Sources
 
@@ -24,6 +24,7 @@
 - [Cult UI](https://cult-ui.com) — Animated, modern components designed for effortless integration. (MIT, live-previewable, 77 cataloged)
 - [Kibo UI](https://www.kibo-ui.com) — The shadcn registry for everything that doesn't exist yet. (MIT, live-previewable, 40 cataloged)
 - [Bklit UI](https://bklit.com) — Composable d3 + Motion chart components for React. (MIT, live-previewable, 38 cataloged)
+- [pdfcn](https://pdfcn.dev) — Copy-paste PDF components for React, built on Takumi and Forme. (MIT, live-previewable, 44 cataloged)
 
 ## Categories
 
@@ -41,6 +42,7 @@
 - `feedback` Feedback & Status (43) — Spinners, progress, skeletons, empty states and notifications.
 - `data-display` Data Display (92) — Tables, charts, stats, badges and avatars for showing data.
 - `chat` Chat & AI (7) — Chat and AI conversation UI — bubbles, message streams, attachments.
+- `pdf` PDF Documents (44) — Components and templates that render PDF documents (invoices, reports, tickets).
 
 ### Blocks
 - `hero` Hero Sections (13) — Above-the-fold sections that set the tone of a page.
